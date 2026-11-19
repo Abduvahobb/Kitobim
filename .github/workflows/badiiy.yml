@@ -1,0 +1,32 @@
+name: Badiiy va audiokitoblar
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: ['tools/badiiy.py', '.github/workflows/badiiy.yml']
+
+concurrency:
+  group: kitoblar
+  cancel-in-progress: false
+
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Manbalardagi kitoblarni ro'yxatlash
+        run: python tools/badiiy.py scan
+      - name: Natijani saqlash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add research/
+          git commit -m "Badiiy kitoblar ro'yxati [skip ci]" && git pull --rebase origin main && git push origin HEAD:main || true
