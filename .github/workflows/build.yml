@@ -3,7 +3,7 @@ on:
   workflow_dispatch:
   push:
     branches: [main]
-    paths-ignore: ['tools/**', '.github/workflows/books.yml', 'README.md']
+    paths-ignore: ['tools/**', 'research/**', '.github/workflows/books.yml', '.github/workflows/probe.yml', 'README.md']
 
 jobs:
   android:
