@@ -1,0 +1,24 @@
+{
+  "name": "kitobim-desktop",
+  "productName": "Kitobim",
+  "version": "0.1.0",
+  "description": "Kitobim — maktab darsliklari va kitoblar",
+  "author": "Kitobim",
+  "main": "main.cjs",
+  "private": true,
+  "build": {
+    "appId": "uz.kitobim.app",
+    "productName": "Kitobim",
+    "directories": { "output": "release" },
+    "files": ["main.cjs", "icon.ico", "web/**/*"],
+    "win": { "target": ["nsis", "portable"], "icon": "icon.ico" },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "shortcutName": "Kitobim",
+      "artifactName": "Kitobim-Setup.exe"
+    },
+    "portable": { "artifactName": "Kitobim-portable.exe" }
+  }
+}

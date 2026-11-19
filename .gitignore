@@ -1,0 +1,7 @@
+node_modules/
+dist/
+android/
+desktop/web/
+desktop/release/
+desktop/node_modules/
+desktop/icon.ico

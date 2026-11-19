@@ -1,0 +1,1095 @@
+{
+ "version": 1,
+ "note": "Kitoblar ro‘yxati. file — kitob faylining manzili (ilova ichidagi yo‘l yoki to‘liq https:// havola).",
+ "grades": [
+  {
+   "grade": 1,
+   "subjects": [
+    {
+     "id": "1-savod",
+     "name": {
+      "uz": "Ona tili va o‘qish savodxonligi",
+      "ru": "Родной язык и чтение",
+      "en": "Native language & reading"
+     },
+     "color": "#0F7A64",
+     "books": []
+    },
+    {
+     "id": "1-mat",
+     "name": {
+      "uz": "Matematika",
+      "ru": "Математика",
+      "en": "Mathematics"
+     },
+     "color": "#2563C9",
+     "books": []
+    },
+    {
+     "id": "1-tab",
+     "name": {
+      "uz": "Tabiiy fanlar",
+      "ru": "Естественные науки",
+      "en": "Natural science"
+     },
+     "color": "#1E7B4F",
+     "books": []
+    },
+    {
+     "id": "1-ingl",
+     "name": {
+      "uz": "Ingliz tili",
+      "ru": "Английский язык",
+      "en": "English"
+     },
+     "color": "#B42318",
+     "books": []
+    },
+    {
+     "id": "1-rus",
+     "name": {
+      "uz": "Rus tili",
+      "ru": "Русский язык",
+      "en": "Russian"
+     },
+     "color": "#9A4A00",
+     "books": []
+    },
+    {
+     "id": "1-tarb",
+     "name": {
+      "uz": "Tarbiya",
+      "ru": "Воспитание",
+      "en": "Upbringing"
+     },
+     "color": "#8A5410",
+     "books": []
+    }
+   ]
+  },
+  {
+   "grade": 2,
+   "subjects": [
+    {
+     "id": "2-savod",
+     "name": {
+      "uz": "Ona tili va o‘qish savodxonligi",
+      "ru": "Родной язык и чтение",
+      "en": "Native language & reading"
+     },
+     "color": "#0F7A64",
+     "books": []
+    },
+    {
+     "id": "2-mat",
+     "name": {
+      "uz": "Matematika",
+      "ru": "Математика",
+      "en": "Mathematics"
+     },
+     "color": "#2563C9",
+     "books": []
+    },
+    {
+     "id": "2-tab",
+     "name": {
+      "uz": "Tabiiy fanlar",
+      "ru": "Естественные науки",
+      "en": "Natural science"
+     },
+     "color": "#1E7B4F",
+     "books": []
+    },
+    {
+     "id": "2-ingl",
+     "name": {
+      "uz": "Ingliz tili",
+      "ru": "Английский язык",
+      "en": "English"
+     },
+     "color": "#B42318",
+     "books": []
+    },
+    {
+     "id": "2-rus",
+     "name": {
+      "uz": "Rus tili",
+      "ru": "Русский язык",
+      "en": "Russian"
+     },
+     "color": "#9A4A00",
+     "books": []
+    },
+    {
+     "id": "2-tarb",
+     "name": {
+      "uz": "Tarbiya",
+      "ru": "Воспитание",
+      "en": "Upbringing"
+     },
+     "color": "#8A5410",
+     "books": []
+    }
+   ]
+  },
+  {
+   "grade": 3,
+   "subjects": [
+    {
+     "id": "3-savod",
+     "name": {
+      "uz": "Ona tili va o‘qish savodxonligi",
+      "ru": "Родной язык и чтение",
+      "en": "Native language & reading"
+     },
+     "color": "#0F7A64",
+     "books": []
+    },
+    {
+     "id": "3-mat",
+     "name": {
+      "uz": "Matematika",
+      "ru": "Математика",
+      "en": "Mathematics"
+     },
+     "color": "#2563C9",
+     "books": []
+    },
+    {
+     "id": "3-tab",
+     "name": {
+      "uz": "Tabiiy fanlar",
+      "ru": "Естественные науки",
+      "en": "Natural science"
+     },
+     "color": "#1E7B4F",
+     "books": []
+    },
+    {
+     "id": "3-ingl",
+     "name": {
+      "uz": "Ingliz tili",
+      "ru": "Английский язык",
+      "en": "English"
+     },
+     "color": "#B42318",
+     "books": []
+    },
+    {
+     "id": "3-rus",
+     "name": {
+      "uz": "Rus tili",
+      "ru": "Русский язык",
+      "en": "Russian"
+     },
+     "color": "#9A4A00",
+     "books": []
+    },
+    {
+     "id": "3-tarb",
+     "name": {
+      "uz": "Tarbiya",
+      "ru": "Воспитание",
+      "en": "Upbringing"
+     },
+     "color": "#8A5410",
+     "books": []
+    }
+   ]
+  },
+  {
+   "grade": 4,
+   "subjects": [
+    {
+     "id": "4-savod",
+     "name": {
+      "uz": "Ona tili va o‘qish savodxonligi",
+      "ru": "Родной язык и чтение",
+      "en": "Native language & reading"
+     },
+     "color": "#0F7A64",
+     "books": []
+    },
+    {
+     "id": "4-mat",
+     "name": {
+      "uz": "Matematika",
+      "ru": "Математика",
+      "en": "Mathematics"
+     },
+     "color": "#2563C9",
+     "books": []
+    },
+    {
+     "id": "4-tab",
+     "name": {
+      "uz": "Tabiiy fanlar",
+      "ru": "Естественные науки",
+      "en": "Natural science"
+     },
+     "color": "#1E7B4F",
+     "books": []
+    },
+    {
+     "id": "4-ingl",
+     "name": {
+      "uz": "Ingliz tili",
+      "ru": "Английский язык",
+      "en": "English"
+     },
+     "color": "#B42318",
+     "books": []
+    },
+    {
+     "id": "4-rus",
+     "name": {
+      "uz": "Rus tili",
+      "ru": "Русский язык",
+      "en": "Russian"
+     },
+     "color": "#9A4A00",
+     "books": []
+    },
+    {
+     "id": "4-tarb",
+     "name": {
+      "uz": "Tarbiya",
+      "ru": "Воспитание",
+      "en": "Upbringing"
+     },
+     "color": "#8A5410",
+     "books": []
+    }
+   ]
+  },
+  {
+   "grade": 5,
+   "subjects": [
+    {
+     "id": "5-ona",
+     "name": {
+      "uz": "Ona tili",
+      "ru": "Родной язык",
+      "en": "Native language"
+     },
+     "color": "#0F7A64",
+     "books": [
+      {
+       "id": "namuna-ona-tili-5",
+       "title": {
+        "uz": "Ona tili · 5-sinf (namuna)",
+        "ru": "Родной язык · 5 класс (образец)",
+        "en": "Native language · Grade 5 (sample)"
+       },
+       "lang": "uz",
+       "sample": true,
+       "file": "books/namuna-ona-tili-5.pdf"
+      }
+     ]
+    },
+    {
+     "id": "5-adab",
+     "name": {
+      "uz": "Adabiyot",
+      "ru": "Литература",
+      "en": "Literature"
+     },
+     "color": "#7B3FB0",
+     "books": []
+    },
+    {
+     "id": "5-mat",
+     "name": {
+      "uz": "Matematika",
+      "ru": "Математика",
+      "en": "Mathematics"
+     },
+     "color": "#2563C9",
+     "books": []
+    },
+    {
+     "id": "5-tab",
+     "name": {
+      "uz": "Tabiiy fanlar",
+      "ru": "Естественные науки",
+      "en": "Natural science"
+     },
+     "color": "#1E7B4F",
+     "books": []
+    },
+    {
+     "id": "5-ingl",
+     "name": {
+      "uz": "Ingliz tili",
+      "ru": "Английский язык",
+      "en": "English"
+     },
+     "color": "#B42318",
+     "books": []
+    },
+    {
+     "id": "5-rus",
+     "name": {
+      "uz": "Rus tili",
+      "ru": "Русский язык",
+      "en": "Russian"
+     },
+     "color": "#9A4A00",
+     "books": []
+    },
+    {
+     "id": "5-tarix",
+     "name": {
+      "uz": "Tarix",
+      "ru": "История",
+      "en": "History"
+     },
+     "color": "#6D4C2F",
+     "books": []
+    },
+    {
+     "id": "5-inf",
+     "name": {
+      "uz": "Informatika",
+      "ru": "Информатика",
+      "en": "Computer science"
+     },
+     "color": "#1F6F8B",
+     "books": []
+    },
+    {
+     "id": "5-tarb",
+     "name": {
+      "uz": "Tarbiya",
+      "ru": "Воспитание",
+      "en": "Upbringing"
+     },
+     "color": "#8A5410",
+     "books": []
+    }
+   ]
+  },
+  {
+   "grade": 6,
+   "subjects": [
+    {
+     "id": "6-ona",
+     "name": {
+      "uz": "Ona tili",
+      "ru": "Родной язык",
+      "en": "Native language"
+     },
+     "color": "#0F7A64",
+     "books": []
+    },
+    {
+     "id": "6-adab",
+     "name": {
+      "uz": "Adabiyot",
+      "ru": "Литература",
+      "en": "Literature"
+     },
+     "color": "#7B3FB0",
+     "books": []
+    },
+    {
+     "id": "6-mat",
+     "name": {
+      "uz": "Matematika",
+      "ru": "Математика",
+      "en": "Mathematics"
+     },
+     "color": "#2563C9",
+     "books": []
+    },
+    {
+     "id": "6-tab",
+     "name": {
+      "uz": "Tabiiy fanlar",
+      "ru": "Естественные науки",
+      "en": "Natural science"
+     },
+     "color": "#1E7B4F",
+     "books": []
+    },
+    {
+     "id": "6-ingl",
+     "name": {
+      "uz": "Ingliz tili",
+      "ru": "Английский язык",
+      "en": "English"
+     },
+     "color": "#B42318",
+     "books": []
+    },
+    {
+     "id": "6-rus",
+     "name": {
+      "uz": "Rus tili",
+      "ru": "Русский язык",
+      "en": "Russian"
+     },
+     "color": "#9A4A00",
+     "books": []
+    },
+    {
+     "id": "6-tarix",
+     "name": {
+      "uz": "Tarix",
+      "ru": "История",
+      "en": "History"
+     },
+     "color": "#6D4C2F",
+     "books": []
+    },
+    {
+     "id": "6-inf",
+     "name": {
+      "uz": "Informatika",
+      "ru": "Информатика",
+      "en": "Computer science"
+     },
+     "color": "#1F6F8B",
+     "books": []
+    },
+    {
+     "id": "6-tarb",
+     "name": {
+      "uz": "Tarbiya",
+      "ru": "Воспитание",
+      "en": "Upbringing"
+     },
+     "color": "#8A5410",
+     "books": []
+    }
+   ]
+  },
+  {
+   "grade": 7,
+   "subjects": [
+    {
+     "id": "7-ona",
+     "name": {
+      "uz": "Ona tili",
+      "ru": "Родной язык",
+      "en": "Native language"
+     },
+     "color": "#0F7A64",
+     "books": []
+    },
+    {
+     "id": "7-adab",
+     "name": {
+      "uz": "Adabiyot",
+      "ru": "Литература",
+      "en": "Literature"
+     },
+     "color": "#7B3FB0",
+     "books": []
+    },
+    {
+     "id": "7-alg",
+     "name": {
+      "uz": "Algebra",
+      "ru": "Алгебра",
+      "en": "Algebra"
+     },
+     "color": "#2563C9",
+     "books": []
+    },
+    {
+     "id": "7-geom",
+     "name": {
+      "uz": "Geometriya",
+      "ru": "Геометрия",
+      "en": "Geometry"
+     },
+     "color": "#1F4FA8",
+     "books": []
+    },
+    {
+     "id": "7-fiz",
+     "name": {
+      "uz": "Fizika",
+      "ru": "Физика",
+      "en": "Physics"
+     },
+     "color": "#3949AB",
+     "books": []
+    },
+    {
+     "id": "7-kim",
+     "name": {
+      "uz": "Kimyo",
+      "ru": "Химия",
+      "en": "Chemistry"
+     },
+     "color": "#AD1457",
+     "books": []
+    },
+    {
+     "id": "7-bio",
+     "name": {
+      "uz": "Biologiya",
+      "ru": "Биология",
+      "en": "Biology"
+     },
+     "color": "#1E7B4F",
+     "books": []
+    },
+    {
+     "id": "7-geo",
+     "name": {
+      "uz": "Geografiya",
+      "ru": "География",
+      "en": "Geography"
+     },
+     "color": "#1F6F8B",
+     "books": []
+    },
+    {
+     "id": "7-tarix",
+     "name": {
+      "uz": "Tarix",
+      "ru": "История",
+      "en": "History"
+     },
+     "color": "#6D4C2F",
+     "books": []
+    },
+    {
+     "id": "7-ingl",
+     "name": {
+      "uz": "Ingliz tili",
+      "ru": "Английский язык",
+      "en": "English"
+     },
+     "color": "#B42318",
+     "books": []
+    },
+    {
+     "id": "7-rus",
+     "name": {
+      "uz": "Rus tili",
+      "ru": "Русский язык",
+      "en": "Russian"
+     },
+     "color": "#9A4A00",
+     "books": []
+    },
+    {
+     "id": "7-inf",
+     "name": {
+      "uz": "Informatika",
+      "ru": "Информатика",
+      "en": "Computer science"
+     },
+     "color": "#1F6F8B",
+     "books": []
+    }
+   ]
+  },
+  {
+   "grade": 8,
+   "subjects": [
+    {
+     "id": "8-ona",
+     "name": {
+      "uz": "Ona tili",
+      "ru": "Родной язык",
+      "en": "Native language"
+     },
+     "color": "#0F7A64",
+     "books": []
+    },
+    {
+     "id": "8-adab",
+     "name": {
+      "uz": "Adabiyot",
+      "ru": "Литература",
+      "en": "Literature"
+     },
+     "color": "#7B3FB0",
+     "books": []
+    },
+    {
+     "id": "8-alg",
+     "name": {
+      "uz": "Algebra",
+      "ru": "Алгебра",
+      "en": "Algebra"
+     },
+     "color": "#2563C9",
+     "books": []
+    },
+    {
+     "id": "8-geom",
+     "name": {
+      "uz": "Geometriya",
+      "ru": "Геометрия",
+      "en": "Geometry"
+     },
+     "color": "#1F4FA8",
+     "books": []
+    },
+    {
+     "id": "8-fiz",
+     "name": {
+      "uz": "Fizika",
+      "ru": "Физика",
+      "en": "Physics"
+     },
+     "color": "#3949AB",
+     "books": []
+    },
+    {
+     "id": "8-kim",
+     "name": {
+      "uz": "Kimyo",
+      "ru": "Химия",
+      "en": "Chemistry"
+     },
+     "color": "#AD1457",
+     "books": []
+    },
+    {
+     "id": "8-bio",
+     "name": {
+      "uz": "Biologiya",
+      "ru": "Биология",
+      "en": "Biology"
+     },
+     "color": "#1E7B4F",
+     "books": []
+    },
+    {
+     "id": "8-geo",
+     "name": {
+      "uz": "Geografiya",
+      "ru": "География",
+      "en": "Geography"
+     },
+     "color": "#1F6F8B",
+     "books": []
+    },
+    {
+     "id": "8-tarix",
+     "name": {
+      "uz": "Tarix",
+      "ru": "История",
+      "en": "History"
+     },
+     "color": "#6D4C2F",
+     "books": []
+    },
+    {
+     "id": "8-ingl",
+     "name": {
+      "uz": "Ingliz tili",
+      "ru": "Английский язык",
+      "en": "English"
+     },
+     "color": "#B42318",
+     "books": []
+    },
+    {
+     "id": "8-rus",
+     "name": {
+      "uz": "Rus tili",
+      "ru": "Русский язык",
+      "en": "Russian"
+     },
+     "color": "#9A4A00",
+     "books": []
+    },
+    {
+     "id": "8-inf",
+     "name": {
+      "uz": "Informatika",
+      "ru": "Информатика",
+      "en": "Computer science"
+     },
+     "color": "#1F6F8B",
+     "books": []
+    }
+   ]
+  },
+  {
+   "grade": 9,
+   "subjects": [
+    {
+     "id": "9-ona",
+     "name": {
+      "uz": "Ona tili",
+      "ru": "Родной язык",
+      "en": "Native language"
+     },
+     "color": "#0F7A64",
+     "books": []
+    },
+    {
+     "id": "9-adab",
+     "name": {
+      "uz": "Adabiyot",
+      "ru": "Литература",
+      "en": "Literature"
+     },
+     "color": "#7B3FB0",
+     "books": []
+    },
+    {
+     "id": "9-alg",
+     "name": {
+      "uz": "Algebra",
+      "ru": "Алгебра",
+      "en": "Algebra"
+     },
+     "color": "#2563C9",
+     "books": []
+    },
+    {
+     "id": "9-geom",
+     "name": {
+      "uz": "Geometriya",
+      "ru": "Геометрия",
+      "en": "Geometry"
+     },
+     "color": "#1F4FA8",
+     "books": []
+    },
+    {
+     "id": "9-fiz",
+     "name": {
+      "uz": "Fizika",
+      "ru": "Физика",
+      "en": "Physics"
+     },
+     "color": "#3949AB",
+     "books": []
+    },
+    {
+     "id": "9-kim",
+     "name": {
+      "uz": "Kimyo",
+      "ru": "Химия",
+      "en": "Chemistry"
+     },
+     "color": "#AD1457",
+     "books": []
+    },
+    {
+     "id": "9-bio",
+     "name": {
+      "uz": "Biologiya",
+      "ru": "Биология",
+      "en": "Biology"
+     },
+     "color": "#1E7B4F",
+     "books": []
+    },
+    {
+     "id": "9-geo",
+     "name": {
+      "uz": "Geografiya",
+      "ru": "География",
+      "en": "Geography"
+     },
+     "color": "#1F6F8B",
+     "books": []
+    },
+    {
+     "id": "9-tarix",
+     "name": {
+      "uz": "Tarix",
+      "ru": "История",
+      "en": "History"
+     },
+     "color": "#6D4C2F",
+     "books": []
+    },
+    {
+     "id": "9-ingl",
+     "name": {
+      "uz": "Ingliz tili",
+      "ru": "Английский язык",
+      "en": "English"
+     },
+     "color": "#B42318",
+     "books": []
+    },
+    {
+     "id": "9-rus",
+     "name": {
+      "uz": "Rus tili",
+      "ru": "Русский язык",
+      "en": "Russian"
+     },
+     "color": "#9A4A00",
+     "books": []
+    },
+    {
+     "id": "9-inf",
+     "name": {
+      "uz": "Informatika",
+      "ru": "Информатика",
+      "en": "Computer science"
+     },
+     "color": "#1F6F8B",
+     "books": []
+    }
+   ]
+  },
+  {
+   "grade": 10,
+   "subjects": [
+    {
+     "id": "10-ona",
+     "name": {
+      "uz": "Ona tili",
+      "ru": "Родной язык",
+      "en": "Native language"
+     },
+     "color": "#0F7A64",
+     "books": []
+    },
+    {
+     "id": "10-adab",
+     "name": {
+      "uz": "Adabiyot",
+      "ru": "Литература",
+      "en": "Literature"
+     },
+     "color": "#7B3FB0",
+     "books": []
+    },
+    {
+     "id": "10-alg",
+     "name": {
+      "uz": "Algebra",
+      "ru": "Алгебра",
+      "en": "Algebra"
+     },
+     "color": "#2563C9",
+     "books": []
+    },
+    {
+     "id": "10-geom",
+     "name": {
+      "uz": "Geometriya",
+      "ru": "Геометрия",
+      "en": "Geometry"
+     },
+     "color": "#1F4FA8",
+     "books": []
+    },
+    {
+     "id": "10-fiz",
+     "name": {
+      "uz": "Fizika",
+      "ru": "Физика",
+      "en": "Physics"
+     },
+     "color": "#3949AB",
+     "books": []
+    },
+    {
+     "id": "10-kim",
+     "name": {
+      "uz": "Kimyo",
+      "ru": "Химия",
+      "en": "Chemistry"
+     },
+     "color": "#AD1457",
+     "books": []
+    },
+    {
+     "id": "10-bio",
+     "name": {
+      "uz": "Biologiya",
+      "ru": "Биология",
+      "en": "Biology"
+     },
+     "color": "#1E7B4F",
+     "books": []
+    },
+    {
+     "id": "10-geo",
+     "name": {
+      "uz": "Geografiya",
+      "ru": "География",
+      "en": "Geography"
+     },
+     "color": "#1F6F8B",
+     "books": []
+    },
+    {
+     "id": "10-tarix",
+     "name": {
+      "uz": "Tarix",
+      "ru": "История",
+      "en": "History"
+     },
+     "color": "#6D4C2F",
+     "books": []
+    },
+    {
+     "id": "10-ingl",
+     "name": {
+      "uz": "Ingliz tili",
+      "ru": "Английский язык",
+      "en": "English"
+     },
+     "color": "#B42318",
+     "books": []
+    },
+    {
+     "id": "10-rus",
+     "name": {
+      "uz": "Rus tili",
+      "ru": "Русский язык",
+      "en": "Russian"
+     },
+     "color": "#9A4A00",
+     "books": []
+    },
+    {
+     "id": "10-inf",
+     "name": {
+      "uz": "Informatika",
+      "ru": "Информатика",
+      "en": "Computer science"
+     },
+     "color": "#1F6F8B",
+     "books": []
+    }
+   ]
+  },
+  {
+   "grade": 11,
+   "subjects": [
+    {
+     "id": "11-ona",
+     "name": {
+      "uz": "Ona tili",
+      "ru": "Родной язык",
+      "en": "Native language"
+     },
+     "color": "#0F7A64",
+     "books": []
+    },
+    {
+     "id": "11-adab",
+     "name": {
+      "uz": "Adabiyot",
+      "ru": "Литература",
+      "en": "Literature"
+     },
+     "color": "#7B3FB0",
+     "books": []
+    },
+    {
+     "id": "11-alg",
+     "name": {
+      "uz": "Algebra",
+      "ru": "Алгебра",
+      "en": "Algebra"
+     },
+     "color": "#2563C9",
+     "books": []
+    },
+    {
+     "id": "11-geom",
+     "name": {
+      "uz": "Geometriya",
+      "ru": "Геометрия",
+      "en": "Geometry"
+     },
+     "color": "#1F4FA8",
+     "books": []
+    },
+    {
+     "id": "11-fiz",
+     "name": {
+      "uz": "Fizika",
+      "ru": "Физика",
+      "en": "Physics"
+     },
+     "color": "#3949AB",
+     "books": []
+    },
+    {
+     "id": "11-kim",
+     "name": {
+      "uz": "Kimyo",
+      "ru": "Химия",
+      "en": "Chemistry"
+     },
+     "color": "#AD1457",
+     "books": []
+    },
+    {
+     "id": "11-bio",
+     "name": {
+      "uz": "Biologiya",
+      "ru": "Биология",
+      "en": "Biology"
+     },
+     "color": "#1E7B4F",
+     "books": []
+    },
+    {
+     "id": "11-geo",
+     "name": {
+      "uz": "Geografiya",
+      "ru": "География",
+      "en": "Geography"
+     },
+     "color": "#1F6F8B",
+     "books": []
+    },
+    {
+     "id": "11-tarix",
+     "name": {
+      "uz": "Tarix",
+      "ru": "История",
+      "en": "History"
+     },
+     "color": "#6D4C2F",
+     "books": []
+    },
+    {
+     "id": "11-ingl",
+     "name": {
+      "uz": "Ingliz tili",
+      "ru": "Английский язык",
+      "en": "English"
+     },
+     "color": "#B42318",
+     "books": []
+    },
+    {
+     "id": "11-rus",
+     "name": {
+      "uz": "Rus tili",
+      "ru": "Русский язык",
+      "en": "Russian"
+     },
+     "color": "#9A4A00",
+     "books": []
+    },
+    {
+     "id": "11-inf",
+     "name": {
+      "uz": "Informatika",
+      "ru": "Информатика",
+      "en": "Computer science"
+     },
+     "color": "#1F6F8B",
+     "books": []
+    }
+   ]
+  }
+ ],
+ "fiction": [],
+ "audio": []
+}

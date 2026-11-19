@@ -1,0 +1,40 @@
+{
+  "version": 1,
+  "passPercent": 70,
+  "tests": [
+    {
+      "id": "ona-tili-5-ot",
+      "grade": 5,
+      "subject": "5-ona",
+      "title": { "uz": "Ona tili, 5-sinf: Ot so‘z turkumi", "ru": "Родной язык, 5 класс: Имя существительное", "en": "Native language, Grade 5: Nouns" },
+      "questions": [
+        { "q": "Quyidagi so‘zlardan qaysi biri ot?", "options": ["Kitob", "Chiroyli", "Yugurmoq", "Tez"], "answer": 0, "why": "«Kitob» narsa nomini bildiradi va nima? so‘rog‘iga javob beradi." },
+        { "q": "Ot qaysi so‘roqlarga javob beradi?", "options": ["qanday? qanaqa?", "kim? nima? qayer?", "nima qildi? nima qilyapti?", "qachon? qancha?"], "answer": 1, "why": "Ot shaxs, narsa va joy nomini bildiradi, shuning uchun kim? nima? qayer? so‘roqlariga javob beradi." },
+        { "q": "Qaysi qatorda faqat atoqli otlar berilgan?", "options": ["daryo, shahar, shoir", "kitob, Toshkent, daftar", "Navoiy, Andijon, Sirdaryo", "bola, Amudaryo, tog‘"], "answer": 2, "why": "Navoiy, Andijon, Sirdaryo — kishi, shahar va daryoning maxsus nomlari." },
+        { "q": "Atoqli otlar qanday yoziladi?", "options": ["Bosh harf bilan", "Kichik harf bilan", "Hammasi bosh harflar bilan", "Qo‘shtirnoq ichida"], "answer": 0, "why": "Atoqli otlar doimo bosh harf bilan yoziladi." },
+        { "q": "«O‘quvchi» so‘zi qaysi so‘roqqa javob beradi?", "options": ["nima?", "qayer?", "kim?", "qanday?"], "answer": 2, "why": "Shaxs nomini bildiruvchi otlar kim? so‘rog‘iga javob beradi." },
+        { "q": "Qaysi so‘z turdosh ot?", "options": ["Samarqand", "shahar", "Farg‘ona", "Zarafshon"], "answer": 1, "why": "«Shahar» bir turdagi barcha narsalarning umumiy nomi, qolganlari esa atoqli otlar." },
+        { "q": "«Maktab» so‘zi qaysi so‘z turkumiga kiradi?", "options": ["Sifat", "Fe’l", "Ravish", "Ot"], "answer": 3, "why": "«Maktab» joy nomini bildiradi va nima? qayer? so‘roqlariga javob beradi." },
+        { "q": "Qaysi so‘z ot emas?", "options": ["Daraxt", "Yashil", "Bahor", "Do‘st"], "answer": 1, "why": "«Yashil» belgini bildiradi va qanday? so‘rog‘iga javob beradi — bu sifat." },
+        { "q": "Otning ko‘plik shakli qaysi qo‘shimcha bilan yasaladi?", "options": ["-chi", "-li", "-lar", "-dagi"], "answer": 2, "why": "Ko‘plik -lar qo‘shimchasi bilan yasaladi: kitoblar, maktablar." },
+        { "q": "«Daryo» so‘zi qaysi so‘roqqa javob beradi?", "options": ["nima?", "kim?", "qanday?", "nima qildi?"], "answer": 0, "why": "«Daryo» narsa (tabiat hodisasi) nomi, u nima? so‘rog‘iga javob beradi." }
+      ]
+    },
+    {
+      "id": "matematika-5-kasr",
+      "grade": 5,
+      "subject": "5-mat",
+      "title": { "uz": "Matematika, 5-sinf: Oddiy kasrlar", "ru": "Математика, 5 класс: Обыкновенные дроби", "en": "Mathematics, Grade 5: Fractions" },
+      "questions": [
+        { "q": "1/2 + 1/4 = ?", "options": ["2/6", "3/4", "1/6", "2/4"], "answer": 1, "why": "1/2 = 2/4, shuning uchun 2/4 + 1/4 = 3/4." },
+        { "q": "Qaysi kasr eng katta?", "options": ["2/3", "1/2", "3/4", "5/8"], "answer": 2, "why": "3/4 = 0,75; 2/3 ≈ 0,67; 5/8 = 0,625; 1/2 = 0,5." },
+        { "q": "6/8 kasrni qisqartiring.", "options": ["3/4", "2/3", "1/2", "4/6"], "answer": 0, "why": "Surat va maxrajni 2 ga bo‘lamiz: 6/8 = 3/4." },
+        { "q": "2/5 kasrning maxraji nechiga teng?", "options": ["2", "7", "3", "5"], "answer": 3, "why": "Kasr chizig‘i ostidagi son — maxraj, bu yerda 5." },
+        { "q": "1 butun 1/2 ni noto‘g‘ri kasr ko‘rinishida yozing.", "options": ["2/3", "3/2", "1/2", "4/2"], "answer": 1, "why": "1 butun 1/2 = 2/2 + 1/2 = 3/2." },
+        { "q": "3/10 kasr o‘nli kasr ko‘rinishida qanday yoziladi?", "options": ["0,3", "0,03", "3,0", "0,13"], "answer": 0, "why": "O‘ndan uch — 0,3." },
+        { "q": "5/6 − 1/6 = ?", "options": ["4/12", "1", "2/3", "5/36"], "answer": 2, "why": "5/6 − 1/6 = 4/6 = 2/3." },
+        { "q": "1/3 ni 2 ga ko‘paytiring.", "options": ["2/6", "1/6", "3/2", "2/3"], "answer": 3, "why": "1/3 · 2 = 2/3." }
+      ]
+    }
+  ]
+}
