@@ -5,7 +5,7 @@
     {
       "id": "ona-tili-5-ot",
       "grade": 5,
-      "subject": "5-ona",
+      "subject": "5-ona-tili",
       "title": { "uz": "Ona tili, 5-sinf: Ot so‘z turkumi", "ru": "Родной язык, 5 класс: Имя существительное", "en": "Native language, Grade 5: Nouns" },
       "questions": [
         { "q": "Quyidagi so‘zlardan qaysi biri ot?", "options": ["Kitob", "Chiroyli", "Yugurmoq", "Tez"], "answer": 0, "why": "«Kitob» narsa nomini bildiradi va nima? so‘rog‘iga javob beradi." },
@@ -23,7 +23,7 @@
     {
       "id": "matematika-5-kasr",
       "grade": 5,
-      "subject": "5-mat",
+      "subject": "5-matematika",
       "title": { "uz": "Matematika, 5-sinf: Oddiy kasrlar", "ru": "Математика, 5 класс: Обыкновенные дроби", "en": "Mathematics, Grade 5: Fractions" },
       "questions": [
         { "q": "1/2 + 1/4 = ?", "options": ["2/6", "3/4", "1/6", "2/4"], "answer": 1, "why": "1/2 = 2/4, shuning uchun 2/4 + 1/4 = 3/4." },

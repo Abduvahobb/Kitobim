@@ -1,5 +1,6 @@
 // Foydalanuvchi ma'lumotlari va o'qish holati telefonning o'zida saqlanadi.
 import { get as idbGet, set as idbSet, del as idbDel } from 'idb-keyval';
+import { isNative, nativeDelete, bookPath } from './net.js';
 
 const KEY = 'kitobim:v1';
 
@@ -59,9 +60,23 @@ export const store = {
     if (!data.saved[id]) return null;
     try { return (await idbGet('file:' + id)) || null; } catch (e) { return null; }
   },
+  // Android: fayl telefon xotirasiga yozilgan, bu yerda faqat belgilanadi
+  markSaved(id, meta) {
+    data.saved[id] = Object.assign({}, data.saved[id], meta, { at: Date.now() });
+    persist();
+  },
   async removeFile(id) {
+    if (isNative()) await nativeDelete(bookPath(id));
     try { await idbDel('file:' + id); } catch (e) { /* e'tiborsiz */ }
     delete data.saved[id];
     persist();
+  },
+
+  // Oxirgi olingan katalog (internet bo'lmaganda ishlatiladi)
+  cachedCatalog() {
+    try { const c = localStorage.getItem(KEY + ':catalog'); return c ? JSON.parse(c) : null; } catch (e) { return null; }
+  },
+  setCachedCatalog(c) {
+    try { localStorage.setItem(KEY + ':catalog', JSON.stringify(c)); } catch (e) { /* joy yetmasa ham ishlayveradi */ }
   }
 };

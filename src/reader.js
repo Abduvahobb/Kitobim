@@ -3,16 +3,22 @@ import * as pdfjsLib from 'pdfjs-dist/legacy/build/pdf';
 import workerUrl from 'pdfjs-dist/legacy/build/pdf.worker.min.js?url';
 import { store } from './store.js';
 import { I } from './icons.js';
+import { isNative, nativeBook, fetchBytes } from './net.js';
 
 pdfjsLib.GlobalWorkerOptions.workerSrc = workerUrl;
 
-// Kitob faylini olib kelish: avval telefondagi nusxadan, bo'lmasa internetdan.
-export async function fetchBook(book) {
+// Kitob faylini olib kelish: avval qurilmadagi nusxadan, bo'lmasa internetdan.
+export async function fetchBook(book, onProgress) {
+  if (isNative()) {
+    const r = await nativeBook(book, onProgress);
+    if (r.downloaded && !store.isSaved(book.id)) {
+      store.markSaved(book.id, { title: book.title, color: book.color, size: r.buffer.byteLength });
+    }
+    return r.buffer;
+  }
   const local = await store.loadFile(book.id);
   if (local) return local;
-  const res = await fetch(book.file);
-  if (!res.ok) throw new Error('HTTP ' + res.status);
-  return await res.arrayBuffer();
+  return fetchBytes(book.file, onProgress);
 }
 
 export function openReader(root, book, title, t, onClose, toast) {
@@ -59,9 +65,13 @@ export function openReader(root, book, title, t, onClose, toast) {
   updateSaveBtn();
 
   async function load() {
-    pagesEl.innerHTML = `<div class="reader-msg"><div class="spin"></div>${t.loading}</div>`;
+    pagesEl.innerHTML = `<div class="reader-msg"><div class="spin"></div><span data-r="pct">${t.loading}</span></div>`;
     try {
-      buffer = await fetchBook(book);
+      buffer = await fetchBook(book, (f) => {
+        const el = $('pct');
+        if (el) el.textContent = `${t.loading} ${Math.round(f * 100)}%`;
+      });
+      updateSaveBtn();
       pdf = await pdfjsLib.getDocument({ data: new Uint8Array(buffer.slice(0)) }).promise;
       if (closed) return;
       if (page > pdf.numPages) page = 1;

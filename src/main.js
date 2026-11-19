@@ -5,6 +5,7 @@ import { I, LOGO } from './icons.js';
 import { openReader, esc } from './reader.js';
 import { drawCertificate, saveImage } from './cert.js';
 import { REMOTE_CATALOG, APP_VERSION } from './config.js';
+import { getJson } from './net.js';
 
 const app = document.getElementById('app');
 const overlay = document.createElement('div');
@@ -25,13 +26,38 @@ async function loadJson(url) {
   return r.json();
 }
 
+function bookCount(c) {
+  let n = 0;
+  for (const g of (c && c.grades) || []) for (const s of g.subjects) n += s.books.length;
+  return n;
+}
+
+// Ilova darhol ichidagi yoki oxirgi saqlangan ro'yxat bilan ochiladi,
+// keyin internetdan yangi ro'yxatni oladi (refreshCatalog).
 async function loadData() {
-  let base = new URL('catalog.json', location.href).href;
-  if (REMOTE_CATALOG) {
-    try { catalog = await loadJson(REMOTE_CATALOG); base = REMOTE_CATALOG; } catch (e) { catalog = null; }
-  }
-  if (!catalog || !catalog.grades) catalog = await loadJson(base);
+  const local = await loadJson(new URL('catalog.json', location.href).href);
+  const cached = store.cachedCatalog();
+  const useCached = cached && cached.grades && bookCount(cached) >= bookCount(local);
+  indexCatalog(useCached ? cached : local, useCached ? REMOTE_CATALOG : new URL('catalog.json', location.href).href);
   try { tests = await loadJson(new URL('tests.json', location.href).href); } catch (e) { /* testlarsiz ham ishlaydi */ }
+}
+
+async function refreshCatalog() {
+  if (!REMOTE_CATALOG) return;
+  try {
+    const fresh = await getJson(REMOTE_CATALOG);
+    if (!fresh || !fresh.grades || !bookCount(fresh)) return;
+    if (catalog && fresh.updated === catalog.updated && bookCount(fresh) === bookCount(catalog)) return;
+    store.setCachedCatalog(fresh);
+    indexCatalog(fresh, REMOTE_CATALOG);
+    // O'qish yoki test paytida ekranni almashtirmaymiz
+    if (!/^#\/(read|test|cert|audio|login)/.test(location.hash)) render();
+  } catch (e) { /* internet yo'q — eski ro'yxat bilan davom etamiz */ }
+}
+
+function indexCatalog(c, base) {
+  catalog = c;
+  books.clear(); subjects.clear();
   catalog.fiction = catalog.fiction || [];
   catalog.audio = catalog.audio || [];
   for (const g of catalog.grades) {
@@ -82,6 +108,7 @@ function bookItem(b, extra = '') {
       <span class="t">${esc(bookTitle(b))}</span>
       ${b.sample ? `<span><span class="tag">${t().sample}</span></span>` : ''}
       ${b.author ? `<span class="s">${esc(pick(b.author, L()))}</span>` : ''}
+      ${!p && b.size ? `<span class="s">${b.lang ? b.lang.toUpperCase() + ' · ' : ''}${(b.size / 1048576).toFixed(1)} MB${store.isSaved(b.id) ? ' · ' + t().savedOffline : ''}</span>` : ''}
       ${p ? `<span class="row" style="gap:8px"><span class="bar"><i style="width:${pct}%"></i></span><span class="s">${p.page}/${p.pages}</span></span>` : ''}
       ${extra}
     </span>${I.chevron(20)}</button>`;
@@ -190,29 +217,55 @@ function scrHome() {
   };
 }
 
+// O'quvchining maktab tili: o'zbek yoki rus maktabi darsliklari
+function schoolLang() { return (store.user && store.user.school) || (L() === 'ru' ? 'ru' : 'uz'); }
+function setSchoolLang(v) { store.setUser(Object.assign({}, store.user, { school: v })); }
+function schoolPills() {
+  const s = t(), cur = schoolLang();
+  return `<div class="pills" role="group" aria-label="${s.schoolLang}">${[['uz', s.schoolUz], ['ru', s.schoolRu]].map(([k, lb]) =>
+    `<button class="pill green" data-school="${k}" aria-pressed="${k === cur}">${lb}</button>`).join('')}</div>`;
+}
+function booksFor(sb) {
+  const mine = sb.books.filter((b) => !b.lang || b.lang === schoolLang());
+  return mine.length ? mine : sb.books;
+}
+function bindSchoolPills() {
+  app.querySelectorAll('[data-school]').forEach((b) => b.onclick = () => { setSchoolLang(b.dataset.school); render(); });
+}
+
 function scrSchool(g) {
   const s = t();
   g = g || store.user.grade || 5;
   const gr = catalog.grades.find((x) => x.grade === g);
+  const list = (gr ? gr.subjects : []).filter((sb) => !sb.books.length || sb.books.some((b) => !b.lang || b.lang === schoolLang()));
   app.innerHTML = `<main class="screen">
     <div class="col" style="gap:4px"><h1>${s.schoolBooks}</h1><p class="sub">${s.chooseGrade}</p></div>
     ${gradeGrid(g, (n) => '#/school/' + n)}
+    ${schoolPills()}
     <h2>${g}-${s.subjectsOf}</h2>
-    <div class="subj-grid">${(gr ? gr.subjects : []).map((sb) => `<button class="subj" data-go="#/subject/${sb.id}">
+    ${list.length ? `<div class="subj-grid">${list.map((sb) => {
+      const n = sb.books.filter((b) => !b.lang || b.lang === schoolLang()).length;
+      return `<button class="subj" data-go="#/subject/${sb.id}">
       <span class="badge" style="background:${sb.color}">${esc(pick(sb.name, L())[0])}</span>
       <span class="col" style="gap:2px;min-width:0"><span class="name">${esc(pick(sb.name, L()))}</span>
-      <span class="cnt">${sb.books.length ? sb.books.length + ' ' + s.books : s.soon}</span></span></button>`).join('')}</div>
+      <span class="cnt">${n ? n + ' ' + s.books : s.soon}</span></span></button>`;
+    }).join('')}</div>` : `<div class="card empty">${s.soon}</div>`}
   </main>${nav('school')}`;
+  bindSchoolPills();
 }
 
 function scrSubject(id) {
   const s = t();
   const sb = subjects.get(id);
   if (!sb) return go('#/school');
+  const hasBoth = new Set(sb.books.map((b) => b.lang).filter(Boolean)).size > 1;
+  const list = booksFor(sb);
   app.innerHTML = `<main class="screen">
     ${backBar(pick(sb.name, L()), sb.grade + '-' + s.grade)}
-    ${sb.books.length ? `<div class="list">${sb.books.map((b) => bookItem(b)).join('')}</div>` : `<div class="card empty">${s.noBooks}</div>`}
+    ${hasBoth ? schoolPills() : ''}
+    ${list.length ? `<div class="list">${list.map((b) => bookItem(b)).join('')}</div>` : `<div class="card empty">${s.noBooks}</div>`}
   </main>${nav('school')}`;
+  bindSchoolPills();
 }
 
 function scrRead(id) {
@@ -352,6 +405,7 @@ function scrProfile() {
       <div class="col" style="gap:2px"><b style="font-size:17px">${esc(u.name)}</b><span class="sub">${u.grade}-${s.grade} · +998 ${esc(u.phone)}</span></div></div>
     <section class="col" style="gap:10px"><h2>${s.language}</h2>
       <div class="pills">${LANGS.map((l) => `<button class="pill green" data-lang="${l}" aria-pressed="${l === L()}">${STRINGS[l].langName}</button>`).join('')}</div></section>
+    <section class="col" style="gap:10px"><h2>${s.schoolLang}</h2>${schoolPills()}</section>
     <section class="col" style="gap:10px"><h2>${s.yourGrade}</h2>
       <div class="grade-grid">${Array.from({ length: 11 }, (_, i) => i + 1).map((g) => `<button class="grade" data-g="${g}" aria-pressed="${g === u.grade}">${g}</button>`).join('')}</div></section>
     <button class="btn ghost" data-logout>${I.logout(20)}${s.logout}</button>
@@ -359,6 +413,7 @@ function scrProfile() {
   app.querySelectorAll('[data-lang]').forEach((b) => b.onclick = () => { store.setLang(b.dataset.lang); render(); });
   app.querySelectorAll('[data-g]').forEach((b) => b.onclick = () => { store.setUser(Object.assign({}, u, { grade: +b.dataset.g })); render(); });
   app.querySelector('[data-logout]').onclick = () => { store.logout(); go('#/login'); };
+  bindSchoolPills();
 }
 
 let audioEl = null;
@@ -447,5 +502,5 @@ document.addEventListener('click', (e) => {
 window.addEventListener('hashchange', render);
 
 loadData()
-  .then(render)
+  .then(() => { render(); refreshCatalog(); })
   .catch((e) => { console.error(e); app.innerHTML = `<main class="screen no-nav"><div class="card empty">${t().loadError}</div></main>`; });

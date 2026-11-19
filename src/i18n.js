@@ -2,6 +2,9 @@
 // Yangi matn qo'shganda uchala tilga ham yozing.
 export const STRINGS = {
   uz: {
+    schoolLang: 'Maktab tili',
+    schoolUz: 'O‘zbek maktabi',
+    schoolRu: 'Rus maktabi',
     langName: 'O‘zbekcha',
     tagline: 'Darsliklar, kitoblar, audiokitoblar va testlar — hammasi bir joyda',
     yourPhone: 'Telefon raqamingiz',
@@ -92,6 +95,9 @@ export const STRINGS = {
     sample: 'Namuna'
   },
   ru: {
+    schoolLang: 'Язык обучения',
+    schoolUz: 'Узбекская школа',
+    schoolRu: 'Русская школа',
     langName: 'Русский',
     tagline: 'Учебники, книги, аудиокниги и тесты — всё в одном месте',
     yourPhone: 'Ваш номер телефона',
@@ -182,6 +188,9 @@ export const STRINGS = {
     sample: 'Образец'
   },
   en: {
+    schoolLang: 'Language of instruction',
+    schoolUz: 'Uzbek school',
+    schoolRu: 'Russian school',
     langName: 'English',
     tagline: 'Textbooks, books, audiobooks and quizzes — all in one place',
     yourPhone: 'Your phone number',

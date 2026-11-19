@@ -1,7 +1,7 @@
 // Kitobim — Windows (kompyuter) versiyasi.
 // Veb-ilova "app://" manzili orqali ochiladi, shunda kitob fayllari va
 // katalog xuddi telefondagidek yuklanadi.
-const { app, BrowserWindow, protocol, net, shell } = require('electron');
+const { app, BrowserWindow, protocol, net, shell, session } = require('electron');
 const path = require('path');
 const { pathToFileURL } = require('url');
 
@@ -32,6 +32,13 @@ function createWindow() {
 }
 
 app.whenReady().then(() => {
+  // Kitob fayllari GitHub'dan olinadi; ilova ularni o'qiy olishi uchun ruxsat sarlavhasini qo'shamiz
+  session.defaultSession.webRequest.onHeadersReceived((details, cb) => {
+    const h = Object.assign({}, details.responseHeaders);
+    for (const k of Object.keys(h)) if (k.toLowerCase() === 'access-control-allow-origin') delete h[k];
+    h['Access-Control-Allow-Origin'] = ['*'];
+    cb({ responseHeaders: h });
+  });
   protocol.handle('app', (req) => {
     const u = new URL(req.url);
     let p = decodeURIComponent(u.pathname);
