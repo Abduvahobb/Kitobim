@@ -12,21 +12,29 @@ export function isNative() {
 
 const isRemote = (url) => /^https?:/i.test(url) && !url.startsWith(location.origin);
 
-async function nativeDownload(url, path, onProgress) {
+async function nativeDownload(url, path, onProgress, quick) {
   const fs = FS();
   let handle = null;
   if (onProgress && fs.addListener) {
     try {
       handle = await fs.addListener('progress', (e) => {
-        if (e && e.contentLength) onProgress(Math.min(1, e.bytes / e.contentLength));
+        if (e && e.contentLength && (!e.url || e.url === url)) onProgress(Math.min(1, e.bytes / e.contentLength));
       });
     } catch (e) { handle = null; }
   }
   try {
-    await fs.downloadFile({ url, path, directory: 'DATA', recursive: true, progress: !!onProgress });
+    const opts = { url, path, directory: 'DATA', recursive: true, progress: !!onProgress };
+    // Asosiy server javob bermasa, uzoq kutmasdan zaxira serverga o'tamiz
+    if (quick) { opts.connectTimeout = 10000; opts.readTimeout = 20000; }
+    await fs.downloadFile(opts);
   } finally {
     if (handle && handle.remove) handle.remove();
   }
+}
+
+// Kitob manzillari: avval O'zbekistondagi server (src), keyin GitHub'dagi zaxira (file)
+export function bookUrls(book) {
+  return [book.src, book.file].filter((u, i, a) => u && a.indexOf(u) === i);
 }
 
 async function nativeRead(path) {
@@ -49,21 +57,53 @@ export const bookPath = (id) => `kitoblar/${id.replace(/[^a-zA-Z0-9._-]/g, '_')}
 // Kitobni olish (Android): telefonda bo'lsa — o'sha yerdan, bo'lmasa yuklab olib saqlaydi.
 export async function nativeBook(book, onProgress) {
   const path = bookPath(book.id);
-  if (!(await nativeExists(path))) {
-    if (!isRemote(book.file)) {
-      const r = await fetch(book.file);
-      if (!r.ok) throw new Error('HTTP ' + r.status);
-      return { buffer: await r.arrayBuffer(), downloaded: false };
-    }
-    await nativeDownload(book.file, path, onProgress);
-    return { buffer: await nativeRead(path), downloaded: true };
+  if (await nativeExists(path)) return { buffer: await nativeRead(path), downloaded: true };
+  if (!isRemote(book.file)) {
+    const r = await fetch(book.file);
+    if (!r.ok) throw new Error('HTTP ' + r.status);
+    return { buffer: await r.arrayBuffer(), downloaded: false };
   }
-  return { buffer: await nativeRead(path), downloaded: true };
+  const urls = bookUrls(book);
+  let lastErr = null;
+  for (let i = 0; i < urls.length; i++) {
+    try {
+      await nativeDownload(urls[i], path, onProgress, i < urls.length - 1);
+      const buffer = await nativeRead(path);
+      if (!isPdf(buffer)) throw new Error('PDF emas');
+      return { buffer, downloaded: true };
+    } catch (e) {
+      lastErr = e;
+      await nativeDelete(path);
+    }
+  }
+  throw lastErr || new Error('download failed');
 }
 
-// Oddiy yuklash, foizni ko'rsatib (kompyuter va brauzer uchun)
-export async function fetchBytes(url, onProgress) {
-  const res = await fetch(url);
+function isPdf(buf) {
+  const b = new Uint8Array(buf, 0, Math.min(5, buf.byteLength));
+  return b.length === 5 && String.fromCharCode(...b) === '%PDF-';
+}
+
+// Bir nechta manzildan navbat bilan urinib ko'rish (kompyuter va brauzer uchun)
+export async function fetchBook(book, onProgress) {
+  const urls = bookUrls(book);
+  let lastErr = null;
+  for (let i = 0; i < urls.length; i++) {
+    try {
+      const buf = await fetchBytes(urls[i], onProgress, i < urls.length - 1 ? 10000 : 0);
+      if (!isPdf(buf)) throw new Error('PDF emas');
+      return buf;
+    } catch (e) { lastErr = e; }
+  }
+  throw lastErr || new Error('download failed');
+}
+
+// Oddiy yuklash, foizni ko'rsatib. firstByteMs — server shuncha vaqtda javob bermasa, voz kechiladi.
+export async function fetchBytes(url, onProgress, firstByteMs = 0) {
+  const ctl = typeof AbortController !== 'undefined' ? new AbortController() : null;
+  const timer = firstByteMs && ctl ? setTimeout(() => ctl.abort(), firstByteMs) : null;
+  let res;
+  try { res = await fetch(url, ctl ? { signal: ctl.signal } : undefined); } finally { if (timer) clearTimeout(timer); }
   if (!res.ok) throw new Error('HTTP ' + res.status);
   const total = +res.headers.get('content-length') || 0;
   if (!res.body || !total || !onProgress) return res.arrayBuffer();

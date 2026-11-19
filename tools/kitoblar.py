@@ -240,6 +240,8 @@ def catalog():
                     'lang': b['lang'],
                     'part': p,
                     'size': have[b['asset']],
+                    # src — O'zbekistondagi asl server (tezroq), file — GitHub'dagi zaxira nusxa
+                    'src': b['url'],
                     'file': ASSET_BASE + b['asset']
                 })
             subjects.append({'id': f'{g}-{s}', 'name': {'uz': uz, 'ru': ru, 'en': en}, 'color': color, 'books': items})

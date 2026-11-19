@@ -3,7 +3,7 @@ import * as pdfjsLib from 'pdfjs-dist/legacy/build/pdf';
 import workerUrl from 'pdfjs-dist/legacy/build/pdf.worker.min.js?url';
 import { store } from './store.js';
 import { I } from './icons.js';
-import { isNative, nativeBook, fetchBytes } from './net.js';
+import { isNative, nativeBook, fetchBook as netFetchBook } from './net.js';
 
 pdfjsLib.GlobalWorkerOptions.workerSrc = workerUrl;
 
@@ -18,7 +18,7 @@ export async function fetchBook(book, onProgress) {
   }
   const local = await store.loadFile(book.id);
   if (local) return local;
-  return fetchBytes(book.file, onProgress);
+  return netFetchBook(book, onProgress);
 }
 
 export function openReader(root, book, title, t, onClose, toast) {
