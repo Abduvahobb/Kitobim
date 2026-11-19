@@ -1,6 +1,6 @@
 # Kitobim
 
-Maktab o‘quvchilari uchun bepul ilova: 1–11-sinf darsliklari, badiiy kitoblar, audiokitoblar, testlar va sertifikatlar. Uch tilda: o‘zbek, rus, ingliz.
+Maktab o‘quvchilari uchun bepul ilova: 1–11-sinf maktab darsliklari (o‘zbek va rus maktablari uchun), testlar va sertifikatlar. Uch tilda: o‘zbek, rus, ingliz.
 
 ## Yuklab olish
 

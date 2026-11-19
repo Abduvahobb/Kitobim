@@ -6,3 +6,4 @@ desktop/release/
 desktop/node_modules/
 desktop/icon.ico
 __pycache__/
+research/

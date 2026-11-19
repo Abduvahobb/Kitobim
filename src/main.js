@@ -51,15 +51,13 @@ async function refreshCatalog() {
     store.setCachedCatalog(fresh);
     indexCatalog(fresh, REMOTE_CATALOG);
     // O'qish yoki test paytida ekranni almashtirmaymiz
-    if (!/^#\/(read|test|cert|audio|login)/.test(location.hash)) render();
+    if (!/^#\/(read|test|cert|login)/.test(location.hash)) render();
   } catch (e) { /* internet yo'q — eski ro'yxat bilan davom etamiz */ }
 }
 
 function indexCatalog(c, base) {
   catalog = c;
   books.clear(); subjects.clear();
-  catalog.fiction = catalog.fiction || [];
-  catalog.audio = catalog.audio || [];
   for (const g of catalog.grades) {
     for (const s of g.subjects) {
       s.grade = g.grade;
@@ -71,8 +69,6 @@ function indexCatalog(c, base) {
       }
     }
   }
-  for (const b of catalog.fiction) { b.file = new URL(b.file, base).href; b.color = b.color || '#7A3E2E'; books.set(b.id, b); }
-  for (const a of catalog.audio) { (a.chapters || []).forEach((c) => { c.file = new URL(c.file, base).href; }); }
 }
 
 // ---------- Yordamchilar ----------
@@ -202,13 +198,8 @@ function scrHome() {
       <section class="col" style="gap:10px"><div class="row between"><h2>${s.schoolBooks}</h2>
         <button class="pill" data-go="#/school" style="height:36px">${s.all}</button></div>
         ${gradeGrid(store.user.grade, (g) => '#/school/' + g)}</section>
-      <section class="col" style="gap:10px"><h2>${s.fiction}</h2>
-        ${catalog.fiction.length ? `<div class="list">${catalog.fiction.map((b) => bookItem(b)).join('')}</div>` : `<div class="card empty">${s.soon}</div>`}</section>
-      <section class="col" style="gap:10px"><h2>${s.audiobooks}</h2>
-        ${catalog.audio.length ? `<div class="list">${catalog.audio.map((a) => `<button class="item" data-go="#/audio/${encodeURIComponent(a.id)}">
-          <span class="badge" style="background:${a.color || '#7A3E2E'}">${I.headphones(20)}</span>
-          <span class="grow col" style="gap:2px"><span class="t">${esc(pick(a.title, L()))}</span><span class="s">${esc(pick(a.author, L()))}</span></span>${I.chevron(20)}</button>`).join('')}</div>`
-          : `<div class="card empty">${s.soon}</div>`}</section>
+      <section class="col" style="gap:10px"><h2>${store.user.grade}-${s.subjectsOf}</h2>
+        ${subjectGrid(gradeSubjects(store.user.grade))}</section>
     </div></main>${nav('home')}`;
 
   const q = app.querySelector('#q');
@@ -244,23 +235,32 @@ function bindSchoolPills() {
   app.querySelectorAll('[data-school]').forEach((b) => b.onclick = () => { setSchoolLang(b.dataset.school); render(); });
 }
 
-function scrSchool(g) {
-  const s = t();
-  g = g || store.user.grade || 5;
+function gradeSubjects(g) {
   const gr = catalog.grades.find((x) => x.grade === g);
-  const list = (gr ? gr.subjects : []).filter((sb) => !sb.books.length || sb.books.some((b) => !b.lang || b.lang === schoolLang()));
-  app.innerHTML = `<main class="screen">
-    <div class="col" style="gap:4px"><h1>${s.schoolBooks}</h1><p class="sub">${s.chooseGrade}</p></div>
-    ${gradeGrid(g, (n) => '#/school/' + n)}
-    ${schoolPills()}
-    <h2>${g}-${s.subjectsOf}</h2>
-    ${list.length ? `<div class="subj-grid">${list.map((sb) => {
+  return (gr ? gr.subjects : []).filter((sb) => !sb.books.length || sb.books.some((b) => !b.lang || b.lang === schoolLang()));
+}
+function subjectGrid(list) {
+  const s = t();
+  return list.length ? `<div class="subj-grid">${list.map((sb) => {
       const n = sb.books.filter((b) => !b.lang || b.lang === schoolLang()).length;
       return `<button class="subj" data-go="#/subject/${sb.id}">
       <span class="badge" style="background:${sb.color}">${esc(pick(sb.name, L())[0])}</span>
       <span class="col" style="gap:2px;min-width:0"><span class="name">${esc(pick(sb.name, L()))}</span>
       <span class="cnt">${n ? n + ' ' + s.books : s.soon}</span></span></button>`;
-    }).join('')}</div>` : `<div class="card empty">${s.soon}</div>`}
+    }).join('')}</div>` : `<div class="card empty">${s.soon}</div>`;
+}
+
+function scrSchool(g) {
+  const s = t();
+  g = g || store.user.grade || 5;
+  const gr = catalog.grades.find((x) => x.grade === g);
+  const list = gradeSubjects(g);
+  app.innerHTML = `<main class="screen">
+    <div class="col" style="gap:4px"><h1>${s.schoolBooks}</h1><p class="sub">${s.chooseGrade}</p></div>
+    ${gradeGrid(g, (n) => '#/school/' + n)}
+    ${schoolPills()}
+    <h2>${g}-${s.subjectsOf}</h2>
+    ${subjectGrid(list)}
   </main>${nav('school')}`;
   bindSchoolPills();
 }
@@ -428,62 +428,9 @@ function scrProfile() {
   bindSchoolPills();
 }
 
-let audioEl = null;
-function scrAudio(id) {
-  const s = t();
-  const a = catalog.audio.find((x) => x.id === id);
-  if (!a || !(a.chapters || []).length) {
-    app.innerHTML = `<main class="screen no-nav">${backBar(s.audiobooks)}<div class="card empty">${s.noAudio}</div></main>`;
-    return;
-  }
-  const st = { ch: 0, speeds: [1, 1.25, 1.5, 2, 0.75], si: 0 };
-  if (audioEl) { audioEl.pause(); }
-  audioEl = new Audio();
-  const fmt = (x) => { x = Math.floor(x || 0); return Math.floor(x / 60) + ':' + String(x % 60).padStart(2, '0'); };
-  function draw() {
-    const ch = a.chapters[st.ch];
-    app.innerHTML = `<main class="screen no-nav">
-      <div class="row between"><button class="icon-btn" data-back aria-label="${s.back}">${I.back()}</button><span class="sub" style="font-weight:600">${s.nowPlaying}</span><span style="width:44px"></span></div>
-      <div class="au-cover" style="background:${a.color || '#7A3E2E'}"><b>${esc(pick(a.title, L()))}</b><span>${esc(pick(a.author, L()))}</span></div>
-      <div class="col" style="align-items:center;text-align:center;gap:4px"><h1 style="font-size:22px">${esc(pick(a.title, L()))}</h1><p class="sub">${esc(pick(ch.title, L()))}</p></div>
-      <div class="col"><label class="sr" for="pos">${s.page}</label><input id="pos" type="range" min="0" max="1000" value="0">
-        <div class="row between sub" style="font-size:12px"><span id="cur">0:00</span><span id="dur">0:00</span></div></div>
-      <div class="au-ctrl"><button class="s" data-a="b15" aria-label="${s.back15}">${I.rewind(20)}15</button>
-        <button class="m" data-a="pp" aria-label="${s.play}">${I.play()}</button>
-        <button class="s" data-a="f15" aria-label="${s.fwd15}">${I.forward(20)}15</button></div>
-      <button class="btn ghost" data-a="sp">${s.speed}: ${st.speeds[st.si]}x</button>
-      <div class="list">${a.chapters.map((c, k) => `<button class="item" data-ch="${k}" style="${k === st.ch ? 'border-color:#0F7A64' : ''}"><span class="grow t">${esc(pick(c.title, L()))}</span></button>`).join('')}</div></main>`;
-    const pos = app.querySelector('#pos'), pp = app.querySelector('[data-a="pp"]');
-    const key = a.id + ':' + st.ch;
-    if (!audioEl.src || audioEl.dataset.key !== key) {
-      audioEl.src = ch.file; audioEl.dataset.key = key;
-      audioEl.currentTime = store.audioPos(key);
-    }
-    audioEl.playbackRate = st.speeds[st.si];
-    const upd = () => {
-      if (!document.body.contains(pos)) return;
-      pos.value = audioEl.duration ? (audioEl.currentTime / audioEl.duration) * 1000 : 0;
-      app.querySelector('#cur').textContent = fmt(audioEl.currentTime);
-      app.querySelector('#dur').textContent = fmt(audioEl.duration);
-      pp.innerHTML = audioEl.paused ? I.play() : I.pause();
-      pp.setAttribute('aria-label', audioEl.paused ? s.play : s.pause);
-      store.setAudioPos(key, audioEl.currentTime);
-    };
-    audioEl.ontimeupdate = upd; audioEl.onplay = upd; audioEl.onpause = upd; audioEl.onloadedmetadata = upd;
-    pos.oninput = () => { if (audioEl.duration) audioEl.currentTime = (pos.value / 1000) * audioEl.duration; };
-    pp.onclick = () => (audioEl.paused ? audioEl.play().catch(() => toast(s.loadError)) : audioEl.pause());
-    app.querySelector('[data-a="b15"]').onclick = () => { audioEl.currentTime = Math.max(0, audioEl.currentTime - 15); };
-    app.querySelector('[data-a="f15"]').onclick = () => { audioEl.currentTime = audioEl.currentTime + 15; };
-    app.querySelector('[data-a="sp"]').onclick = () => { st.si = (st.si + 1) % st.speeds.length; draw(); };
-    app.querySelectorAll('[data-ch]').forEach((b) => b.onclick = () => { st.ch = +b.dataset.ch; audioEl.pause(); draw(); audioEl.play().catch(() => {}); });
-  }
-  draw();
-}
-
 // ---------- Marshrutlash ----------
 function render() {
   if (!/^#\/read\//.test(location.hash)) overlay.innerHTML = '';
-  if (audioEl && !/^#\/audio\//.test(location.hash)) { audioEl.pause(); }
   const [, route, arg] = (location.hash.match(/^#\/([^/]*)\/?(.*)$/) || []);
   const a = arg ? decodeURIComponent(arg) : '';
   if (!store.user && route !== 'login') return go('#/login');
@@ -500,7 +447,6 @@ function render() {
     case 'test': return scrTest(a);
     case 'cert': return scrCert(a);
     case 'profile': return scrProfile();
-    case 'audio': return scrAudio(a);
     default: return scrHome();
   }
 }

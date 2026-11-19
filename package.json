@@ -2,7 +2,7 @@
   "name": "kitobim",
   "version": "0.2.0",
   "private": true,
-  "description": "Kitobim — maktab darsliklari, kitoblar, audiokitoblar va testlar",
+  "description": "Kitobim — 1–11-sinf maktab darsliklari va testlar",
   "type": "module",
   "scripts": {
     "dev": "vite",
