@@ -1,0 +1,50 @@
+name: Darsliklarni joylash
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: ['tools/kitoblar.py', '.github/workflows/books.yml']
+
+concurrency:
+  group: kitoblar
+  cancel-in-progress: false
+
+jobs:
+  mirror:
+    runs-on: ubuntu-latest
+    timeout-minutes: 350
+    permissions:
+      contents: write
+      actions: write
+    env:
+      GH_TOKEN: ${{ github.token }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Darsliklar ro'yxatini olish
+        run: python tools/kitoblar.py collect
+      - name: "\"kitoblar\" release'ini tayyorlash"
+        run: |
+          gh release view kitoblar --repo "$GITHUB_REPOSITORY" >/dev/null 2>&1 || \
+            gh release create kitoblar --repo "$GITHUB_REPOSITORY" --title "Kitoblar (darsliklar)" \
+              --notes "Kitobim ilovasi uchun darsliklar. Ilova ularni shu yerdan oladi." --latest=false
+      - name: Darsliklarni yuklab olib joylash
+        run: python tools/kitoblar.py mirror
+      - name: Katalog
+        run: |
+          python tools/kitoblar.py catalog
+          gh release upload kitoblar public/catalog.json --repo "$GITHUB_REPOSITORY" --clobber
+      - name: Katalogni saqlash va ilovani qayta yig'ish
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add public/catalog.json
+          if git commit -m "Katalog yangilandi: darsliklar"; then
+            git pull --rebase origin main
+            git push origin HEAD:main
+            gh workflow run build.yml --repo "$GITHUB_REPOSITORY" --ref main
+          fi
