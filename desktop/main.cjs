@@ -29,6 +29,10 @@ function createWindow() {
     if (/^https?:/.test(url)) shell.openExternal(url);
     return { action: 'deny' };
   });
+  // Telegram kabi tashqi havolalar ilova oynasini almashtirmasdan brauzerda/ilovada ochiladi
+  win.webContents.on('will-navigate', (e, url) => {
+    if (/^https?:/.test(url)) { e.preventDefault(); shell.openExternal(url); }
+  });
 }
 
 app.whenReady().then(() => {

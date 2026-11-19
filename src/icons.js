@@ -25,6 +25,7 @@ export const I = {
   rewind: (z) => s('<path d="M4 12a8 8 0 1 0 3-6.2"/><path d="M4 4v4h4"/>', z),
   forward: (z) => s('<path d="M20 12a8 8 0 1 1-3-6.2"/><path d="M20 4v4h-4"/>', z),
   logout: (z) => s('<path d="M14 4h5a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1h-5"/><path d="M10 8l-4 4 4 4M6 12h10"/>', z),
+  telegram: (z) => s('<path d="M21 4 3 11l6 2.5L19 7l-7.5 8L18 20z"/><path d="M9 13.5V19l3-3"/>', z),
   trash: (z) => s('<path d="M4 7h16M10 11v6M14 11v6M6 7l1 13h10l1-13M9 7V4h6v3"/>', z),
   play: (z = 30) => `<svg width="${z}" height="${z}" viewBox="0 0 24 24" fill="#fff" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>`,
   pause: (z = 30) => `<svg width="${z}" height="${z}" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" aria-hidden="true"><path d="M8 5v14M16 5v14"/></svg>`

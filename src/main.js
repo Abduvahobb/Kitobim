@@ -4,7 +4,7 @@ import { store } from './store.js';
 import { I, LOGO } from './icons.js';
 import { openReader, esc } from './reader.js';
 import { drawCertificate, saveImage } from './cert.js';
-import { REMOTE_CATALOG, APP_VERSION } from './config.js';
+import { REMOTE_CATALOG, APP_VERSION, AUTHOR } from './config.js';
 import { getJson } from './net.js';
 
 const app = document.getElementById('app');
@@ -121,6 +121,16 @@ function gradeGrid(selected, hrefFor) {
   return h + '</div>';
 }
 
+function authorCard() {
+  const s = t();
+  return `<section class="card row" style="gap:14px">
+    <span class="badge" style="background:#1B2A41">${I.user(20)}</span>
+    <span class="grow col" style="gap:2px"><span class="sub" style="font-size:12px">${s.author}</span>
+      <b style="font-size:16px">${esc(AUTHOR.name)}</b>
+      <a href="https://t.me/${AUTHOR.telegram}" class="row" style="gap:6px;font-size:14px;font-weight:600;text-decoration:none;min-height:32px">${I.telegram(18)}Telegram: @${AUTHOR.telegram}</a></span>
+  </section>`;
+}
+
 // ---------- Ekranlar ----------
 function scrLogin() {
   const s = t();
@@ -143,7 +153,8 @@ function scrLogin() {
           `<button type="button" class="grade" data-g="${g}" aria-pressed="${g === grade}">${g}</button>`).join('')}</div></div>
       <button class="btn" type="submit">${s.start}</button>
     </form>
-    <p class="sub" style="font-size:12px;text-align:center">${s.terms}</p></main>`;
+    <p class="sub" style="font-size:12px;text-align:center">${s.terms}</p>
+    <p class="sub" style="font-size:12px;text-align:center">${s.author}: ${esc(AUTHOR.name)} · <a href="https://t.me/${AUTHOR.telegram}">@${AUTHOR.telegram}</a></p></main>`;
 
   app.querySelectorAll('[data-lang]').forEach((b) => b.onclick = () => { store.setLang(b.dataset.lang); scrLogin(); });
   app.querySelectorAll('[data-g]').forEach((b) => b.onclick = () => {
@@ -408,6 +419,7 @@ function scrProfile() {
     <section class="col" style="gap:10px"><h2>${s.schoolLang}</h2>${schoolPills()}</section>
     <section class="col" style="gap:10px"><h2>${s.yourGrade}</h2>
       <div class="grade-grid">${Array.from({ length: 11 }, (_, i) => i + 1).map((g) => `<button class="grade" data-g="${g}" aria-pressed="${g === u.grade}">${g}</button>`).join('')}</div></section>
+    ${authorCard()}
     <button class="btn ghost" data-logout>${I.logout(20)}${s.logout}</button>
     <p class="sub" style="text-align:center;font-size:12px">${s.about} · v${APP_VERSION}</p></main>${nav('profile')}`;
   app.querySelectorAll('[data-lang]').forEach((b) => b.onclick = () => { store.setLang(b.dataset.lang); render(); });

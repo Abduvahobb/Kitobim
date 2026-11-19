@@ -2,6 +2,7 @@
 // Yangi matn qo'shganda uchala tilga ham yozing.
 export const STRINGS = {
   uz: {
+    author: 'Muallif',
     schoolLang: 'Maktab tili',
     schoolUz: 'O‘zbek maktabi',
     schoolRu: 'Rus maktabi',
@@ -95,6 +96,7 @@ export const STRINGS = {
     sample: 'Namuna'
   },
   ru: {
+    author: 'Автор',
     schoolLang: 'Язык обучения',
     schoolUz: 'Узбекская школа',
     schoolRu: 'Русская школа',
@@ -188,6 +190,7 @@ export const STRINGS = {
     sample: 'Образец'
   },
   en: {
+    author: 'Author',
     schoolLang: 'Language of instruction',
     schoolUz: 'Uzbek school',
     schoolRu: 'Russian school',
