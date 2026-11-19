@@ -1,7 +1,7 @@
 {
  "version": 2,
  "note": "Avtomatik yasalgan (tools/kitoblar.py). Manba: oliygoh.uz",
- "updated": "2026-11-19 17:32",
+ "updated": "2026-11-19 17:40",
  "grades": [
   {
    "grade": 1,
@@ -25,6 +25,7 @@
        "lang": "ru",
        "part": null,
        "size": 14925048,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/1/alifbe-1-sinf-ru.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/alifbe-1-sinf-ru.pdf"
       },
       {
@@ -37,6 +38,7 @@
        "lang": "uz",
        "part": null,
        "size": 14731803,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/1/alifbe-1-sinf-uz.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/alifbe-1-sinf-uz.pdf"
       }
      ]
@@ -60,6 +62,7 @@
        "lang": "uz",
        "part": 1,
        "size": 3537206,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/1/ona-tili-1-sinf-uz-1-qism.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/ona-tili-1-sinf-uz-1-qism.pdf"
       },
       {
@@ -72,6 +75,7 @@
        "lang": "uz",
        "part": 2,
        "size": 3085529,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/1/ona-tili-1-sinf-uz-2-qism.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/ona-tili-1-sinf-uz-2-qism.pdf"
       }
      ]
@@ -95,6 +99,7 @@
        "lang": "ru",
        "part": 1,
        "size": 54768078,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/1/oqish-savodxonligi-1-sinf-ru-1-qism.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/oqish-savodxonligi-1-sinf-ru-1-qism.pdf"
       },
       {
@@ -107,6 +112,7 @@
        "lang": "ru",
        "part": 2,
        "size": 51295703,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/1/oqish-savodxonligi-1-sinf-ru-2-qism.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/oqish-savodxonligi-1-sinf-ru-2-qism.pdf"
       },
       {
@@ -119,6 +125,7 @@
        "lang": "uz",
        "part": 1,
        "size": 2256903,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/1/oqish-savodxonligi-1-sinf-uz-1-qism.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/oqish-savodxonligi-1-sinf-uz-1-qism.pdf"
       },
       {
@@ -131,6 +138,7 @@
        "lang": "uz",
        "part": 2,
        "size": 2476918,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/1/oqish-savodxonligi-1-sinf-uz-2-qism.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/oqish-savodxonligi-1-sinf-uz-2-qism.pdf"
       }
      ]
@@ -154,6 +162,7 @@
        "lang": "ru",
        "part": null,
        "size": 14213034,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/1/oqish-1-sinf-ru.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/oqish-1-sinf-ru.pdf"
       },
       {
@@ -166,6 +175,7 @@
        "lang": "uz",
        "part": null,
        "size": 18959547,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/1/oqish-1-sinf-uz.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/oqish-1-sinf-uz.pdf"
       }
      ]
@@ -189,6 +199,7 @@
        "lang": "ru",
        "part": 1,
        "size": 19480197,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/1/rus-tili-1-sinf-ru-1-qism.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/rus-tili-1-sinf-ru-1-qism.pdf"
       },
       {
@@ -201,6 +212,7 @@
        "lang": "ru",
        "part": 2,
        "size": 72751231,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/1/rus-tili-1-sinf-ru-2-qism.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/rus-tili-1-sinf-ru-2-qism.pdf"
       }
      ]
@@ -224,6 +236,7 @@
        "lang": "ru",
        "part": 1,
        "size": 14067923,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/1/matematika-1-sinf-ru-1-qism.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/matematika-1-sinf-ru-1-qism.pdf"
       },
       {
@@ -236,6 +249,7 @@
        "lang": "ru",
        "part": 2,
        "size": 63250834,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/1/matematika-1-sinf-ru-2-qism.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/matematika-1-sinf-ru-2-qism.pdf"
       },
       {
@@ -248,6 +262,7 @@
        "lang": "ru",
        "part": 3,
        "size": 67530566,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/1/matematika-1-sinf-ru-3-qism.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/matematika-1-sinf-ru-3-qism.pdf"
       },
       {
@@ -260,6 +275,7 @@
        "lang": "ru",
        "part": 4,
        "size": 48169027,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/1/matematika-1-sinf-ru-4-qism.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/matematika-1-sinf-ru-4-qism.pdf"
       },
       {
@@ -272,6 +288,7 @@
        "lang": "uz",
        "part": 3,
        "size": 8759242,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/1/matematika-1-sinf-uz-3-qism.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/matematika-1-sinf-uz-3-qism.pdf"
       }
      ]
@@ -295,6 +312,7 @@
        "lang": "uz",
        "part": 1,
        "size": 28968968,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/1/tabiiy-fanlar-1-sinf-uz-1-qism.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/tabiiy-fanlar-1-sinf-uz-1-qism.pdf"
       }
      ]
@@ -318,6 +336,7 @@
        "lang": "ru",
        "part": null,
        "size": 6779248,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/1/atrofimizdagi-olam-1-sinf-ru.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/atrofimizdagi-olam-1-sinf-ru.pdf"
       },
       {
@@ -330,6 +349,7 @@
        "lang": "uz",
        "part": null,
        "size": 11124784,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/1/atrofimizdagi-olam-1-sinf-uz.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/atrofimizdagi-olam-1-sinf-uz.pdf"
       }
      ]
@@ -353,6 +373,7 @@
        "lang": "ru",
        "part": 1,
        "size": 11289957,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/1/tabiatshunoslik-1-sinf-ru-1-qism.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/tabiatshunoslik-1-sinf-ru-1-qism.pdf"
       }
      ]
@@ -376,6 +397,7 @@
        "lang": "ru",
        "part": null,
        "size": 15862629,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/1/ingliz-tili-1-sinf-ru.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/ingliz-tili-1-sinf-ru.pdf"
       },
       {
@@ -388,6 +410,7 @@
        "lang": "uz",
        "part": null,
        "size": 15885417,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/1/ingliz-tili-1-sinf-uz.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/ingliz-tili-1-sinf-uz.pdf"
       }
      ]
@@ -411,6 +434,7 @@
        "lang": "ru",
        "part": null,
        "size": 10725741,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/1/nemis-tili-1-sinf-ru.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/nemis-tili-1-sinf-ru.pdf"
       },
       {
@@ -423,6 +447,7 @@
        "lang": "uz",
        "part": null,
        "size": 10733322,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/1/nemis-tili-1-sinf-uz.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/nemis-tili-1-sinf-uz.pdf"
       }
      ]
@@ -446,6 +471,7 @@
        "lang": "ru",
        "part": null,
        "size": 18749015,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/1/fransuz-tili-1-sinf-ru.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/fransuz-tili-1-sinf-ru.pdf"
       },
       {
@@ -458,6 +484,7 @@
        "lang": "uz",
        "part": null,
        "size": 18772872,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/1/fransuz-tili-1-sinf-uz.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/fransuz-tili-1-sinf-uz.pdf"
       }
      ]
@@ -481,6 +508,7 @@
        "lang": "ru",
        "part": null,
        "size": 12001238,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/1/informatika-1-sinf-ru.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/informatika-1-sinf-ru.pdf"
       },
       {
@@ -493,6 +521,7 @@
        "lang": "uz",
        "part": null,
        "size": 3024647,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/1/informatika-1-sinf-uz.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/informatika-1-sinf-uz.pdf"
       }
      ]
@@ -516,6 +545,7 @@
        "lang": "ru",
        "part": null,
        "size": 57190293,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/1/tarbiya-1-sinf-ru.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/tarbiya-1-sinf-ru.pdf"
       },
       {
@@ -528,6 +558,7 @@
        "lang": "uz",
        "part": null,
        "size": 4846689,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/1/tarbiya-1-sinf-uz.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/tarbiya-1-sinf-uz.pdf"
       }
      ]
@@ -551,6 +582,7 @@
        "lang": "ru",
        "part": null,
        "size": 5511604,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/1/jismoniy-tarbiya-1-sinf-ru.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/jismoniy-tarbiya-1-sinf-ru.pdf"
       },
       {
@@ -563,6 +595,7 @@
        "lang": "uz",
        "part": null,
        "size": 6403996,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/1/jismoniy-tarbiya-1-sinf-uz.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/jismoniy-tarbiya-1-sinf-uz.pdf"
       }
      ]
@@ -586,6 +619,7 @@
        "lang": "ru",
        "part": null,
        "size": 8461947,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/1/musiqa-1-sinf-ru.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/musiqa-1-sinf-ru.pdf"
       },
       {
@@ -598,6 +632,7 @@
        "lang": "uz",
        "part": null,
        "size": 2784900,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/1/musiqa-1-sinf-uz.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/musiqa-1-sinf-uz.pdf"
       }
      ]
@@ -621,6 +656,7 @@
        "lang": "uz",
        "part": null,
        "size": 43811015,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/1/nutq-ostirish-1-sinf-uz.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/nutq-ostirish-1-sinf-uz.pdf"
       }
      ]
@@ -644,6 +680,7 @@
        "lang": "ru",
        "part": null,
        "size": 4844440,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/1/odobnoma-1-sinf-ru.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/odobnoma-1-sinf-ru.pdf"
       },
       {
@@ -656,6 +693,7 @@
        "lang": "uz",
        "part": null,
        "size": 6458772,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/1/odobnoma-1-sinf-uz.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/odobnoma-1-sinf-uz.pdf"
       }
      ]
@@ -679,6 +717,7 @@
        "lang": "ru",
        "part": null,
        "size": 11659041,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/1/tasviriy-sanat-1-sinf-ru.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/tasviriy-sanat-1-sinf-ru.pdf"
       },
       {
@@ -691,6 +730,7 @@
        "lang": "uz",
        "part": null,
        "size": 3100488,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/1/tasviriy-sanat-1-sinf-uz.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/tasviriy-sanat-1-sinf-uz.pdf"
       }
      ]
@@ -714,6 +754,7 @@
        "lang": "ru",
        "part": null,
        "size": 64159246,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/1/texnologiya-1-sinf-ru.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/texnologiya-1-sinf-ru.pdf"
       },
       {
@@ -726,6 +767,7 @@
        "lang": "uz",
        "part": null,
        "size": 3245348,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/1/texnologiya-1-sinf-uz.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/texnologiya-1-sinf-uz.pdf"
       }
      ]
@@ -749,6 +791,7 @@
        "lang": "ru",
        "part": 1,
        "size": 11837063,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/1/yozuv-daftari-propis-1-sinf-ru-1-qism.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/yozuv-daftari-propis-1-sinf-ru-1-qism.pdf"
       }
      ]
@@ -777,6 +820,7 @@
        "lang": "uz",
        "part": 1,
        "size": 3123091,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/2/ona-tili-2-sinf-uz-1-qism.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/ona-tili-2-sinf-uz-1-qism.pdf"
       },
       {
@@ -789,6 +833,7 @@
        "lang": "uz",
        "part": 2,
        "size": 3222913,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/2/ona-tili-2-sinf-uz-2-qism.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/ona-tili-2-sinf-uz-2-qism.pdf"
       },
       {
@@ -801,6 +846,7 @@
        "lang": "uz",
        "part": 3,
        "size": 3409774,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/2/ona-tili-2-sinf-uz-3-qism.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/ona-tili-2-sinf-uz-3-qism.pdf"
       },
       {
@@ -813,6 +859,7 @@
        "lang": "uz",
        "part": 4,
        "size": 3021923,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/2/ona-tili-2-sinf-uz-4-qism.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/ona-tili-2-sinf-uz-4-qism.pdf"
       }
      ]
@@ -836,6 +883,7 @@
        "lang": "ru",
        "part": 1,
        "size": 93496686,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/2/oqish-savodxonligi-2-sinf-ru-1-qism.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/oqish-savodxonligi-2-sinf-ru-1-qism.pdf"
       },
       {
@@ -848,6 +896,7 @@
        "lang": "uz",
        "part": 1,
        "size": 2616854,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/2/oqish-savodxonligi-2-sinf-uz-1-qism.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/oqish-savodxonligi-2-sinf-uz-1-qism.pdf"
       },
       {
@@ -860,6 +909,7 @@
        "lang": "uz",
        "part": 2,
        "size": 3033583,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/2/oqish-savodxonligi-2-sinf-uz-2-qism.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/oqish-savodxonligi-2-sinf-uz-2-qism.pdf"
       },
       {
@@ -872,6 +922,7 @@
        "lang": "uz",
        "part": 3,
        "size": 2843906,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/2/oqish-savodxonligi-2-sinf-uz-3-qism.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/oqish-savodxonligi-2-sinf-uz-3-qism.pdf"
       },
       {
@@ -884,6 +935,7 @@
        "lang": "uz",
        "part": 4,
        "size": 2779136,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/2/oqish-savodxonligi-2-sinf-uz-4-qism.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/oqish-savodxonligi-2-sinf-uz-4-qism.pdf"
       }
      ]
@@ -907,6 +959,7 @@
        "lang": "ru",
        "part": null,
        "size": 33601548,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/2/ozbek-tili-2-sinf-ru.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/ozbek-tili-2-sinf-ru.pdf"
       }
      ]
@@ -930,6 +983,7 @@
        "lang": "ru",
        "part": 1,
        "size": 71952060,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/2/rus-tili-2-sinf-ru-1-qism.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/rus-tili-2-sinf-ru-1-qism.pdf"
       },
       {
@@ -942,6 +996,7 @@
        "lang": "uz",
        "part": null,
        "size": 16738145,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/2/rus-tili-2-sinf-uz.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/rus-tili-2-sinf-uz.pdf"
       }
      ]
@@ -965,6 +1020,7 @@
        "lang": "ru",
        "part": 1,
        "size": 2788583,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/2/matematika-2-sinf-ru-1-qism.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/matematika-2-sinf-ru-1-qism.pdf"
       },
       {
@@ -977,6 +1033,7 @@
        "lang": "ru",
        "part": 2,
        "size": 62673996,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/2/matematika-2-sinf-ru-2-qism.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/matematika-2-sinf-ru-2-qism.pdf"
       },
       {
@@ -989,6 +1046,7 @@
        "lang": "ru",
        "part": 3,
        "size": 89900164,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/2/matematika-2-sinf-ru-3-qism.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/matematika-2-sinf-ru-3-qism.pdf"
       },
       {
@@ -1001,6 +1059,7 @@
        "lang": "ru",
        "part": 4,
        "size": 73590159,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/2/matematika-2-sinf-ru-4-qism.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/matematika-2-sinf-ru-4-qism.pdf"
       },
       {
@@ -1013,6 +1072,7 @@
        "lang": "uz",
        "part": 1,
        "size": 2652400,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/2/matematika-2-sinf-uz-1-qism.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/matematika-2-sinf-uz-1-qism.pdf"
       },
       {
@@ -1025,6 +1085,7 @@
        "lang": "uz",
        "part": 2,
        "size": 2775580,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/2/matematika-2-sinf-uz-2-qism.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/matematika-2-sinf-uz-2-qism.pdf"
       },
       {
@@ -1037,6 +1098,7 @@
        "lang": "uz",
        "part": 3,
        "size": 3351875,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/2/matematika-2-sinf-uz-3-qism.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/matematika-2-sinf-uz-3-qism.pdf"
       },
       {
@@ -1049,6 +1111,7 @@
        "lang": "uz",
        "part": 4,
        "size": 2357102,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/2/matematika-2-sinf-uz-4-qism.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/matematika-2-sinf-uz-4-qism.pdf"
       }
      ]
@@ -1072,6 +1135,7 @@
        "lang": "ru",
        "part": null,
        "size": 34791814,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/2/tabiiy-fanlar-2-sinf-ru.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/tabiiy-fanlar-2-sinf-ru.pdf"
       },
       {
@@ -1084,6 +1148,7 @@
        "lang": "uz",
        "part": null,
        "size": 31689743,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/2/tabiiy-fanlar-2-sinf-uz.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/tabiiy-fanlar-2-sinf-uz.pdf"
       }
      ]
@@ -1107,6 +1172,7 @@
        "lang": "ru",
        "part": null,
        "size": 5386474,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/2/atrofimizdagi-olam-2-sinf-ru.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/atrofimizdagi-olam-2-sinf-ru.pdf"
       },
       {
@@ -1119,6 +1185,7 @@
        "lang": "uz",
        "part": null,
        "size": 5499520,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/2/atrofimizdagi-olam-2-sinf-uz.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/atrofimizdagi-olam-2-sinf-uz.pdf"
       }
      ]
@@ -1142,6 +1209,7 @@
        "lang": "ru",
        "part": null,
        "size": 44948098,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/2/tabiatshunoslik-2-sinf-ru.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/tabiatshunoslik-2-sinf-ru.pdf"
       }
      ]
@@ -1165,6 +1233,7 @@
        "lang": "ru",
        "part": null,
        "size": 26716645,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/2/ingliz-tili-2-sinf-ru.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/ingliz-tili-2-sinf-ru.pdf"
       },
       {
@@ -1177,6 +1246,7 @@
        "lang": "uz",
        "part": null,
        "size": 27691070,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/2/ingliz-tili-2-sinf-uz.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/ingliz-tili-2-sinf-uz.pdf"
       }
      ]
@@ -1200,6 +1270,7 @@
        "lang": "ru",
        "part": null,
        "size": 15588524,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/2/nemis-tili-2-sinf-ru.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/nemis-tili-2-sinf-ru.pdf"
       },
       {
@@ -1212,6 +1283,7 @@
        "lang": "uz",
        "part": null,
        "size": 15785623,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/2/nemis-tili-2-sinf-uz.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/nemis-tili-2-sinf-uz.pdf"
       }
      ]
@@ -1235,6 +1307,7 @@
        "lang": "ru",
        "part": null,
        "size": 13139209,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/2/fransuz-tili-2-sinf-ru.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/fransuz-tili-2-sinf-ru.pdf"
       },
       {
@@ -1247,6 +1320,7 @@
        "lang": "uz",
        "part": null,
        "size": 19903986,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/2/fransuz-tili-2-sinf-uz.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/fransuz-tili-2-sinf-uz.pdf"
       }
      ]
@@ -1270,6 +1344,7 @@
        "lang": "ru",
        "part": null,
        "size": 39292895,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/2/informatika-2-sinf-ru.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/informatika-2-sinf-ru.pdf"
       },
       {
@@ -1282,6 +1357,7 @@
        "lang": "uz",
        "part": null,
        "size": 7187934,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/2/informatika-2-sinf-uz.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/informatika-2-sinf-uz.pdf"
       }
      ]
@@ -1305,6 +1381,7 @@
        "lang": "ru",
        "part": null,
        "size": 24495073,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/2/tarbiya-2-sinf-ru.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/tarbiya-2-sinf-ru.pdf"
       },
       {
@@ -1317,6 +1394,7 @@
        "lang": "uz",
        "part": null,
        "size": 34821870,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/2/tarbiya-2-sinf-uz.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/tarbiya-2-sinf-uz.pdf"
       }
      ]
@@ -1340,6 +1418,7 @@
        "lang": "ru",
        "part": null,
        "size": 2681183,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/2/jismoniy-tarbiya-2-sinf-ru.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/jismoniy-tarbiya-2-sinf-ru.pdf"
       },
       {
@@ -1352,6 +1431,7 @@
        "lang": "uz",
        "part": null,
        "size": 2670577,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/2/jismoniy-tarbiya-2-sinf-uz.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/jismoniy-tarbiya-2-sinf-uz.pdf"
       }
      ]
@@ -1375,6 +1455,7 @@
        "lang": "ru",
        "part": null,
        "size": 7339966,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/2/musiqa-2-sinf-ru.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/musiqa-2-sinf-ru.pdf"
       },
       {
@@ -1387,6 +1468,7 @@
        "lang": "uz",
        "part": null,
        "size": 7145743,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/2/musiqa-2-sinf-uz.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/musiqa-2-sinf-uz.pdf"
       }
      ]
@@ -1410,6 +1492,7 @@
        "lang": "ru",
        "part": null,
        "size": 1919740,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/2/odobnoma-2-sinf-ru.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/odobnoma-2-sinf-ru.pdf"
       }
      ]
@@ -1433,6 +1516,7 @@
        "lang": "ru",
        "part": null,
        "size": 3587282,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/2/oqish-kitobi-2-sinf-ru.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/oqish-kitobi-2-sinf-ru.pdf"
       },
       {
@@ -1445,6 +1529,7 @@
        "lang": "uz",
        "part": null,
        "size": 2080304,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/2/oqish-kitobi-2-sinf-uz.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/oqish-kitobi-2-sinf-uz.pdf"
       }
      ]
@@ -1468,6 +1553,7 @@
        "lang": "ru",
        "part": null,
        "size": 22230409,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/2/tasviriy-sanat-2-sinf-ru.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/tasviriy-sanat-2-sinf-ru.pdf"
       },
       {
@@ -1480,6 +1566,7 @@
        "lang": "uz",
        "part": null,
        "size": 24182635,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/2/tasviriy-sanat-2-sinf-uz.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/tasviriy-sanat-2-sinf-uz.pdf"
       }
      ]
@@ -1503,6 +1590,7 @@
        "lang": "ru",
        "part": null,
        "size": 4889265,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/2/texnologiya-2-sinf-ru.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/texnologiya-2-sinf-ru.pdf"
       },
       {
@@ -1515,6 +1603,7 @@
        "lang": "uz",
        "part": null,
        "size": 38126705,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/2/texnologiya-2-sinf-uz.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/texnologiya-2-sinf-uz.pdf"
       }
      ]
@@ -1543,6 +1632,7 @@
        "lang": "ru",
        "part": null,
        "size": 5283271,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/3/ona-tili-3-sinf-ru.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/ona-tili-3-sinf-ru.pdf"
       },
       {
@@ -1555,6 +1645,7 @@
        "lang": "uz",
        "part": 1,
        "size": 2683404,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/3/ona-tili-3-sinf-uz-1-qism.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/ona-tili-3-sinf-uz-1-qism.pdf"
       },
       {
@@ -1567,6 +1658,7 @@
        "lang": "uz",
        "part": 2,
        "size": 2874407,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/3/ona-tili-3-sinf-uz-2-qism.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/ona-tili-3-sinf-uz-2-qism.pdf"
       },
       {
@@ -1579,6 +1671,7 @@
        "lang": "uz",
        "part": 3,
        "size": 3097297,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/3/ona-tili-3-sinf-uz-3-qism.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/ona-tili-3-sinf-uz-3-qism.pdf"
       },
       {
@@ -1591,6 +1684,7 @@
        "lang": "uz",
        "part": 4,
        "size": 2613741,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/3/ona-tili-3-sinf-uz-4-qism.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/ona-tili-3-sinf-uz-4-qism.pdf"
       }
      ]
@@ -1614,6 +1708,7 @@
        "lang": "ru",
        "part": 1,
        "size": 9903174,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/3/oqish-savodxonligi-3-sinf-ru-1-qism.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/oqish-savodxonligi-3-sinf-ru-1-qism.pdf"
       },
       {
@@ -1626,6 +1721,7 @@
        "lang": "uz",
        "part": 1,
        "size": 2625961,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/3/oqish-savodxonligi-3-sinf-uz-1-qism.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/oqish-savodxonligi-3-sinf-uz-1-qism.pdf"
       },
       {
@@ -1638,6 +1734,7 @@
        "lang": "uz",
        "part": 2,
        "size": 3164518,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/3/oqish-savodxonligi-3-sinf-uz-2-qism.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/oqish-savodxonligi-3-sinf-uz-2-qism.pdf"
       },
       {
@@ -1650,6 +1747,7 @@
        "lang": "uz",
        "part": 3,
        "size": 2245497,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/3/oqish-savodxonligi-3-sinf-uz-3-qism.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/oqish-savodxonligi-3-sinf-uz-3-qism.pdf"
       },
       {
@@ -1662,6 +1760,7 @@
        "lang": "uz",
        "part": 4,
        "size": 2303576,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/3/oqish-savodxonligi-3-sinf-uz-4-qism.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/oqish-savodxonligi-3-sinf-uz-4-qism.pdf"
       }
      ]
@@ -1685,6 +1784,7 @@
        "lang": "ru",
        "part": 1,
        "size": 6018514,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/3/ozbek-tili-3-sinf-ru-1-qism.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/ozbek-tili-3-sinf-ru-1-qism.pdf"
       },
       {
@@ -1697,6 +1797,7 @@
        "lang": "uz",
        "part": null,
        "size": 4618826,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/3/ozbek-tili-3-sinf-uz.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/ozbek-tili-3-sinf-uz.pdf"
       }
      ]
@@ -1720,6 +1821,7 @@
        "lang": "ru",
        "part": 1,
        "size": 35711955,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/3/rus-tili-3-sinf-ru-1-qism.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/rus-tili-3-sinf-ru-1-qism.pdf"
       },
       {
@@ -1732,6 +1834,7 @@
        "lang": "ru",
        "part": 2,
        "size": 77211608,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/3/rus-tili-3-sinf-ru-2-qism.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/rus-tili-3-sinf-ru-2-qism.pdf"
       },
       {
@@ -1744,6 +1847,7 @@
        "lang": "ru",
        "part": 4,
        "size": 81561881,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/3/rus-tili-3-sinf-ru-4-qism.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/rus-tili-3-sinf-ru-4-qism.pdf"
       },
       {
@@ -1756,6 +1860,7 @@
        "lang": "uz",
        "part": null,
        "size": 10276534,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/3/rus-tili-3-sinf-uz.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/rus-tili-3-sinf-uz.pdf"
       }
      ]
@@ -1779,6 +1884,7 @@
        "lang": "ru",
        "part": 1,
        "size": 51269889,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/3/matematika-3-sinf-ru-1-qism.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/matematika-3-sinf-ru-1-qism.pdf"
       },
       {
@@ -1791,6 +1897,7 @@
        "lang": "ru",
        "part": 2,
        "size": 41122275,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/3/matematika-3-sinf-ru-2-qism.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/matematika-3-sinf-ru-2-qism.pdf"
       },
       {
@@ -1803,6 +1910,7 @@
        "lang": "ru",
        "part": 3,
        "size": 75865626,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/3/matematika-3-sinf-ru-3-qism.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/matematika-3-sinf-ru-3-qism.pdf"
       },
       {
@@ -1815,6 +1923,7 @@
        "lang": "ru",
        "part": 4,
        "size": 46836267,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/3/matematika-3-sinf-ru-4-qism.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/matematika-3-sinf-ru-4-qism.pdf"
       },
       {
@@ -1827,6 +1936,7 @@
        "lang": "uz",
        "part": 1,
        "size": 3602559,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/3/matematika-3-sinf-uz-1-qism.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/matematika-3-sinf-uz-1-qism.pdf"
       },
       {
@@ -1839,6 +1949,7 @@
        "lang": "uz",
        "part": 2,
        "size": 2922856,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/3/matematika-3-sinf-uz-2-qism.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/matematika-3-sinf-uz-2-qism.pdf"
       },
       {
@@ -1851,6 +1962,7 @@
        "lang": "uz",
        "part": 3,
        "size": 3982220,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/3/matematika-3-sinf-uz-3-qism.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/matematika-3-sinf-uz-3-qism.pdf"
       },
       {
@@ -1863,6 +1975,7 @@
        "lang": "uz",
        "part": 4,
        "size": 3139412,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/3/matematika-3-sinf-uz-4-qism.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/matematika-3-sinf-uz-4-qism.pdf"
       }
      ]
@@ -1886,6 +1999,7 @@
        "lang": "ru",
        "part": null,
        "size": 38219261,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/3/tabiiy-fanlar-3-sinf-ru.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/tabiiy-fanlar-3-sinf-ru.pdf"
       },
       {
@@ -1898,6 +2012,7 @@
        "lang": "uz",
        "part": 1,
        "size": 4371285,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/3/tabiiy-fanlar-3-sinf-uz-1-qism.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/tabiiy-fanlar-3-sinf-uz-1-qism.pdf"
       },
       {
@@ -1910,6 +2025,7 @@
        "lang": "uz",
        "part": 2,
        "size": 3906327,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/3/tabiiy-fanlar-3-sinf-uz-2-qism.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/tabiiy-fanlar-3-sinf-uz-2-qism.pdf"
       }
      ]
@@ -1933,6 +2049,7 @@
        "lang": "ru",
        "part": null,
        "size": 6836144,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/3/tabiatshunoslik-3-sinf-ru.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/tabiatshunoslik-3-sinf-ru.pdf"
       },
       {
@@ -1945,6 +2062,7 @@
        "lang": "uz",
        "part": null,
        "size": 6514403,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/3/tabiatshunoslik-3-sinf-uz.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/tabiatshunoslik-3-sinf-uz.pdf"
       }
      ]
@@ -1968,6 +2086,7 @@
        "lang": "ru",
        "part": null,
        "size": 15943428,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/3/ingliz-tili-3-sinf-ru.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/ingliz-tili-3-sinf-ru.pdf"
       },
       {
@@ -1980,6 +2099,7 @@
        "lang": "uz",
        "part": null,
        "size": 32806227,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/3/ingliz-tili-3-sinf-uz.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/ingliz-tili-3-sinf-uz.pdf"
       }
      ]
@@ -2003,6 +2123,7 @@
        "lang": "ru",
        "part": null,
        "size": 4985226,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/3/nemis-tili-3-sinf-ru.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/nemis-tili-3-sinf-ru.pdf"
       },
       {
@@ -2015,6 +2136,7 @@
        "lang": "uz",
        "part": null,
        "size": 7514385,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/3/nemis-tili-3-sinf-uz.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/nemis-tili-3-sinf-uz.pdf"
       }
      ]
@@ -2038,6 +2160,7 @@
        "lang": "ru",
        "part": null,
        "size": 43897543,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/3/fransuz-tili-3-sinf-ru.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/fransuz-tili-3-sinf-ru.pdf"
       },
       {
@@ -2050,6 +2173,7 @@
        "lang": "uz",
        "part": null,
        "size": 41351589,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/3/fransuz-tili-3-sinf-uz.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/fransuz-tili-3-sinf-uz.pdf"
       }
      ]
@@ -2073,6 +2197,7 @@
        "lang": "ru",
        "part": null,
        "size": 12928545,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/3/informatika-3-sinf-ru.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/informatika-3-sinf-ru.pdf"
       },
       {
@@ -2085,6 +2210,7 @@
        "lang": "uz",
        "part": null,
        "size": 12940634,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/3/informatika-3-sinf-uz.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/informatika-3-sinf-uz.pdf"
       }
      ]
@@ -2108,6 +2234,7 @@
        "lang": "ru",
        "part": null,
        "size": 99580179,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/3/tarbiya-3-sinf-ru.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/tarbiya-3-sinf-ru.pdf"
       },
       {
@@ -2120,6 +2247,7 @@
        "lang": "uz",
        "part": null,
        "size": 4287591,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/3/tarbiya-3-sinf-uz.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/tarbiya-3-sinf-uz.pdf"
       }
      ]
@@ -2143,6 +2271,7 @@
        "lang": "ru",
        "part": null,
        "size": 2048303,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/3/jismoniy-tarbiya-3-sinf-ru.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/jismoniy-tarbiya-3-sinf-ru.pdf"
       },
       {
@@ -2155,6 +2284,7 @@
        "lang": "uz",
        "part": null,
        "size": 3672599,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/3/jismoniy-tarbiya-3-sinf-uz.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/jismoniy-tarbiya-3-sinf-uz.pdf"
       }
      ]
@@ -2178,6 +2308,7 @@
        "lang": "ru",
        "part": null,
        "size": 23781684,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/3/musiqa-3-sinf-ru.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/musiqa-3-sinf-ru.pdf"
       },
       {
@@ -2190,6 +2321,7 @@
        "lang": "uz",
        "part": null,
        "size": 2996844,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/3/musiqa-3-sinf-uz.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/musiqa-3-sinf-uz.pdf"
       }
      ]
@@ -2213,6 +2345,7 @@
        "lang": "ru",
        "part": null,
        "size": 2838418,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/3/odobnoma-3-sinf-ru.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/odobnoma-3-sinf-ru.pdf"
       },
       {
@@ -2225,6 +2358,7 @@
        "lang": "uz",
        "part": null,
        "size": 3753980,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/3/odobnoma-3-sinf-uz.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/odobnoma-3-sinf-uz.pdf"
       }
      ]
@@ -2248,6 +2382,7 @@
        "lang": "ru",
        "part": null,
        "size": 3736111,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/3/oqish-kitobi-3-sinf-ru.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/oqish-kitobi-3-sinf-ru.pdf"
       },
       {
@@ -2260,6 +2395,7 @@
        "lang": "uz",
        "part": null,
        "size": 25342339,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/3/oqish-kitobi-3-sinf-uz.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/oqish-kitobi-3-sinf-uz.pdf"
       }
      ]
@@ -2283,6 +2419,7 @@
        "lang": "ru",
        "part": null,
        "size": 32736822,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/3/tasviriy-sanat-3-sinf-ru.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/tasviriy-sanat-3-sinf-ru.pdf"
       },
       {
@@ -2295,6 +2432,7 @@
        "lang": "uz",
        "part": null,
        "size": 3480832,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/3/tasviriy-sanat-3-sinf-uz.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/tasviriy-sanat-3-sinf-uz.pdf"
       }
      ]
@@ -2318,6 +2456,7 @@
        "lang": "ru",
        "part": null,
        "size": 8015182,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/3/texnologiya-3-sinf-ru.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/texnologiya-3-sinf-ru.pdf"
       },
       {
@@ -2330,6 +2469,7 @@
        "lang": "uz",
        "part": null,
        "size": 2997051,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/3/texnologiya-3-sinf-uz.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/texnologiya-3-sinf-uz.pdf"
       }
      ]
@@ -2358,6 +2498,7 @@
        "lang": "uz",
        "part": 1,
        "size": 33905787,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/4/ona-tili-4-sinf-uz-1-qism.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/ona-tili-4-sinf-uz-1-qism.pdf"
       }
      ]
@@ -2381,6 +2522,7 @@
        "lang": "ru",
        "part": 1,
        "size": 61536092,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/4/oqish-savodxonligi-4-sinf-ru-1-qism.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/oqish-savodxonligi-4-sinf-ru-1-qism.pdf"
       },
       {
@@ -2393,6 +2535,7 @@
        "lang": "uz",
        "part": 1,
        "size": 48765523,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/4/oqish-savodxonligi-4-sinf-uz-1-qism.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/oqish-savodxonligi-4-sinf-uz-1-qism.pdf"
       }
      ]
@@ -2416,6 +2559,7 @@
        "lang": "ru",
        "part": null,
        "size": 4448900,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/4/oqish-4-sinf-ru.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/oqish-4-sinf-ru.pdf"
       },
       {
@@ -2428,6 +2572,7 @@
        "lang": "uz",
        "part": null,
        "size": 5820183,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/4/oqish-4-sinf-uz.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/oqish-4-sinf-uz.pdf"
       }
      ]
@@ -2451,6 +2596,7 @@
        "lang": "ru",
        "part": null,
        "size": 36173643,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/4/ozbek-tili-4-sinf-ru.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/ozbek-tili-4-sinf-ru.pdf"
       }
      ]
@@ -2474,6 +2620,7 @@
        "lang": "ru",
        "part": 1,
        "size": 35789975,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/4/rus-tili-4-sinf-ru-1-qism.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/rus-tili-4-sinf-ru-1-qism.pdf"
       },
       {
@@ -2486,6 +2633,7 @@
        "lang": "uz",
        "part": null,
        "size": 53963486,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/4/rus-tili-4-sinf-uz.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/rus-tili-4-sinf-uz.pdf"
       }
      ]
@@ -2509,6 +2657,7 @@
        "lang": "ru",
        "part": 1,
        "size": 27639039,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/4/matematika-4-sinf-ru-1-qism.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/matematika-4-sinf-ru-1-qism.pdf"
       },
       {
@@ -2521,6 +2670,7 @@
        "lang": "uz",
        "part": 1,
        "size": 30710509,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/4/matematika-4-sinf-uz-1-qism.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/matematika-4-sinf-uz-1-qism.pdf"
       }
      ]
@@ -2544,6 +2694,7 @@
        "lang": "uz",
        "part": 1,
        "size": 5012635,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/4/tabiiy-fanlar-4-sinf-uz-1-qism.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/tabiiy-fanlar-4-sinf-uz-1-qism.pdf"
       },
       {
@@ -2556,6 +2707,7 @@
        "lang": "uz",
        "part": 2,
        "size": 4882884,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/4/tabiiy-fanlar-4-sinf-uz-2-qism.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/tabiiy-fanlar-4-sinf-uz-2-qism.pdf"
       }
      ]
@@ -2579,6 +2731,7 @@
        "lang": "ru",
        "part": null,
        "size": 93462469,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/4/tabiatshunoslik-4-sinf-ru.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/tabiatshunoslik-4-sinf-ru.pdf"
       },
       {
@@ -2591,6 +2744,7 @@
        "lang": "uz",
        "part": null,
        "size": 17727272,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/4/tabiatshunoslik-4-sinf-uz.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/tabiatshunoslik-4-sinf-uz.pdf"
       }
      ]
@@ -2614,6 +2768,7 @@
        "lang": "uz",
        "part": null,
        "size": 16140391,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/4/ingliz-tili-4-sinf-uz.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/ingliz-tili-4-sinf-uz.pdf"
       }
      ]
@@ -2637,6 +2792,7 @@
        "lang": "ru",
        "part": null,
        "size": 4972803,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/4/nemis-tili-4-sinf-ru.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/nemis-tili-4-sinf-ru.pdf"
       },
       {
@@ -2649,6 +2805,7 @@
        "lang": "uz",
        "part": null,
        "size": 8097133,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/4/nemis-tili-4-sinf-uz.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/nemis-tili-4-sinf-uz.pdf"
       }
      ]
@@ -2672,6 +2829,7 @@
        "lang": "uz",
        "part": null,
        "size": 14550198,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/4/fransuz-tili-4-sinf-uz.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/fransuz-tili-4-sinf-uz.pdf"
       }
      ]
@@ -2695,6 +2853,7 @@
        "lang": "ru",
        "part": null,
        "size": 25340041,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/4/informatika-4-sinf-ru.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/informatika-4-sinf-ru.pdf"
       },
       {
@@ -2707,6 +2866,7 @@
        "lang": "uz",
        "part": null,
        "size": 23058465,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/4/informatika-4-sinf-uz.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/informatika-4-sinf-uz.pdf"
       }
      ]
@@ -2730,6 +2890,7 @@
        "lang": "ru",
        "part": null,
        "size": 11687016,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/4/tarbiya-4-sinf-ru.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/tarbiya-4-sinf-ru.pdf"
       },
       {
@@ -2742,6 +2903,7 @@
        "lang": "uz",
        "part": null,
        "size": 11399362,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/4/tarbiya-4-sinf-uz.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/tarbiya-4-sinf-uz.pdf"
       }
      ]
@@ -2765,6 +2927,7 @@
        "lang": "ru",
        "part": null,
        "size": 2957288,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/4/jismoniy-tarbiya-4-sinf-ru.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/jismoniy-tarbiya-4-sinf-ru.pdf"
       },
       {
@@ -2777,6 +2940,7 @@
        "lang": "uz",
        "part": null,
        "size": 3252125,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/4/jismoniy-tarbiya-4-sinf-uz.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/jismoniy-tarbiya-4-sinf-uz.pdf"
       }
      ]
@@ -2800,6 +2964,7 @@
        "lang": "ru",
        "part": null,
        "size": 44787185,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/4/musiqa-4-sinf-ru.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/musiqa-4-sinf-ru.pdf"
       },
       {
@@ -2812,6 +2977,7 @@
        "lang": "uz",
        "part": null,
        "size": 33606054,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/4/musiqa-4-sinf-uz.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/musiqa-4-sinf-uz.pdf"
       }
      ]
@@ -2835,6 +3001,7 @@
        "lang": "ru",
        "part": null,
        "size": 4115170,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/4/odobnoma-4-sinf-ru.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/odobnoma-4-sinf-ru.pdf"
       },
       {
@@ -2847,6 +3014,7 @@
        "lang": "uz",
        "part": null,
        "size": 5510434,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/4/odobnoma-4-sinf-uz.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/odobnoma-4-sinf-uz.pdf"
       }
      ]
@@ -2870,6 +3038,7 @@
        "lang": "ru",
        "part": null,
        "size": 33973132,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/4/tasviriy-sanat-4-sinf-ru.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/tasviriy-sanat-4-sinf-ru.pdf"
       },
       {
@@ -2882,6 +3051,7 @@
        "lang": "uz",
        "part": null,
        "size": 40423576,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/4/tasviriy-sanat-4-sinf-uz.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/tasviriy-sanat-4-sinf-uz.pdf"
       }
      ]
@@ -2905,6 +3075,7 @@
        "lang": "ru",
        "part": null,
        "size": 30107043,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/4/texnologiya-4-sinf-ru.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/texnologiya-4-sinf-ru.pdf"
       },
       {
@@ -2917,6 +3088,7 @@
        "lang": "uz",
        "part": null,
        "size": 10792175,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/4/texnologiya-4-sinf-uz.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/texnologiya-4-sinf-uz.pdf"
       }
      ]
@@ -2945,6 +3117,7 @@
        "lang": "uz",
        "part": 1,
        "size": 11006786,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/5/ona-tili-5-sinf-uz-1-qism.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/ona-tili-5-sinf-uz-1-qism.pdf"
       },
       {
@@ -2957,6 +3130,7 @@
        "lang": "uz",
        "part": 2,
        "size": 6040731,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/5/ona-tili-5-sinf-uz-2-qism.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/ona-tili-5-sinf-uz-2-qism.pdf"
       }
      ]
@@ -2980,6 +3154,7 @@
        "lang": "ru",
        "part": null,
        "size": 31597962,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/5/ozbek-tili-5-sinf-ru.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/ozbek-tili-5-sinf-ru.pdf"
       }
      ]
@@ -3003,6 +3178,7 @@
        "lang": "ru",
        "part": 1,
        "size": 12624061,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/5/rus-tili-5-sinf-ru-1-qism.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/rus-tili-5-sinf-ru-1-qism.pdf"
       },
       {
@@ -3015,6 +3191,7 @@
        "lang": "ru",
        "part": 2,
        "size": 10701147,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/5/rus-tili-5-sinf-ru-2-qism.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/rus-tili-5-sinf-ru-2-qism.pdf"
       },
       {
@@ -3027,6 +3204,7 @@
        "lang": "uz",
        "part": null,
        "size": 13735778,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/5/rus-tili-5-sinf-uz.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/rus-tili-5-sinf-uz.pdf"
       }
      ]
@@ -3050,6 +3228,7 @@
        "lang": "ru",
        "part": 1,
        "size": 6592160,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/5/adabiyot-5-sinf-ru-1-qism.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/adabiyot-5-sinf-ru-1-qism.pdf"
       },
       {
@@ -3062,6 +3241,7 @@
        "lang": "ru",
        "part": 2,
        "size": 12600660,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/5/adabiyot-5-sinf-ru-2-qism.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/adabiyot-5-sinf-ru-2-qism.pdf"
       },
       {
@@ -3074,6 +3254,7 @@
        "lang": "uz",
        "part": 1,
        "size": 17716303,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/5/adabiyot-5-sinf-uz-1-qism.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/adabiyot-5-sinf-uz-1-qism.pdf"
       },
       {
@@ -3086,6 +3267,7 @@
        "lang": "uz",
        "part": 2,
        "size": 11187256,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/5/adabiyot-5-sinf-uz-2-qism.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/adabiyot-5-sinf-uz-2-qism.pdf"
       }
      ]
@@ -3109,6 +3291,7 @@
        "lang": "ru",
        "part": 1,
        "size": 32570650,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/5/matematika-5-sinf-ru-1-qism.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/matematika-5-sinf-ru-1-qism.pdf"
       },
       {
@@ -3121,6 +3304,7 @@
        "lang": "ru",
        "part": 2,
        "size": 36825524,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/5/matematika-5-sinf-ru-2-qism.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/matematika-5-sinf-ru-2-qism.pdf"
       },
       {
@@ -3133,6 +3317,7 @@
        "lang": "uz",
        "part": 1,
        "size": 33302689,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/5/matematika-5-sinf-uz-1-qism.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/matematika-5-sinf-uz-1-qism.pdf"
       },
       {
@@ -3145,6 +3330,7 @@
        "lang": "uz",
        "part": 2,
        "size": 35373143,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/5/matematika-5-sinf-uz-2-qism.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/matematika-5-sinf-uz-2-qism.pdf"
       }
      ]
@@ -3168,6 +3354,7 @@
        "lang": "uz",
        "part": null,
        "size": 31425184,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/5/tabiiy-fanlar-5-sinf-uz.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/tabiiy-fanlar-5-sinf-uz.pdf"
       }
      ]
@@ -3191,6 +3378,7 @@
        "lang": "ru",
        "part": null,
        "size": 30773715,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/5/tabiatshunoslik-5-sinf-ru.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/tabiatshunoslik-5-sinf-ru.pdf"
       }
      ]
@@ -3214,6 +3402,7 @@
        "lang": "uz",
        "part": null,
        "size": 5164452,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/5/biologiya-5-sinf-uz.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/biologiya-5-sinf-uz.pdf"
       }
      ]
@@ -3237,6 +3426,7 @@
        "lang": "ru",
        "part": null,
        "size": 21835741,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/5/geografiya-5-sinf-ru.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/geografiya-5-sinf-ru.pdf"
       },
       {
@@ -3249,6 +3439,7 @@
        "lang": "uz",
        "part": null,
        "size": 3620897,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/5/geografiya-5-sinf-uz.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/geografiya-5-sinf-uz.pdf"
       }
      ]
@@ -3272,6 +3463,7 @@
        "lang": "ru",
        "part": null,
        "size": 13541317,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/5/ingliz-tili-5-sinf-ru.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/ingliz-tili-5-sinf-ru.pdf"
       },
       {
@@ -3284,6 +3476,7 @@
        "lang": "uz",
        "part": null,
        "size": 10365911,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/5/ingliz-tili-5-sinf-uz.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/ingliz-tili-5-sinf-uz.pdf"
       }
      ]
@@ -3307,6 +3500,7 @@
        "lang": "ru",
        "part": null,
        "size": 8464387,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/5/nemis-tili-5-sinf-ru.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/nemis-tili-5-sinf-ru.pdf"
       },
       {
@@ -3319,6 +3513,7 @@
        "lang": "uz",
        "part": null,
        "size": 8606447,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/5/nemis-tili-5-sinf-uz.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/nemis-tili-5-sinf-uz.pdf"
       }
      ]
@@ -3342,6 +3537,7 @@
        "lang": "ru",
        "part": null,
        "size": 89139377,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/5/fransuz-tili-5-sinf-ru.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/fransuz-tili-5-sinf-ru.pdf"
       },
       {
@@ -3354,6 +3550,7 @@
        "lang": "uz",
        "part": null,
        "size": 89024573,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/5/fransuz-tili-5-sinf-uz.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/fransuz-tili-5-sinf-uz.pdf"
       }
      ]
@@ -3377,6 +3574,7 @@
        "lang": "ru",
        "part": null,
        "size": 52565332,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/5/informatika-5-sinf-ru.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/informatika-5-sinf-ru.pdf"
       },
       {
@@ -3389,6 +3587,7 @@
        "lang": "uz",
        "part": null,
        "size": 6277254,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/5/informatika-5-sinf-uz.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/informatika-5-sinf-uz.pdf"
       }
      ]
@@ -3412,6 +3611,7 @@
        "lang": "ru",
        "part": null,
        "size": 18465026,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/5/tarbiya-5-sinf-ru.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/tarbiya-5-sinf-ru.pdf"
       },
       {
@@ -3424,6 +3624,7 @@
        "lang": "uz",
        "part": null,
        "size": 12380448,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/5/tarbiya-5-sinf-uz.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/tarbiya-5-sinf-uz.pdf"
       }
      ]
@@ -3447,6 +3648,7 @@
        "lang": "ru",
        "part": null,
        "size": 18860362,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/5/botanika-5-sinf-ru.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/botanika-5-sinf-ru.pdf"
       },
       {
@@ -3459,6 +3661,7 @@
        "lang": "uz",
        "part": null,
        "size": 3215370,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/5/botanika-5-sinf-uz.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/botanika-5-sinf-uz.pdf"
       }
      ]
@@ -3482,6 +3685,7 @@
        "lang": "ru",
        "part": null,
        "size": 1729790,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/5/jismoniy-tarbiya-5-sinf-ru.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/jismoniy-tarbiya-5-sinf-ru.pdf"
       },
       {
@@ -3494,6 +3698,7 @@
        "lang": "uz",
        "part": null,
        "size": 9947258,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/5/jismoniy-tarbiya-5-sinf-uz.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/jismoniy-tarbiya-5-sinf-uz.pdf"
       }
      ]
@@ -3517,6 +3722,7 @@
        "lang": "ru",
        "part": null,
        "size": 19257176,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/5/musiqa-5-sinf-ru.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/musiqa-5-sinf-ru.pdf"
       },
       {
@@ -3529,6 +3735,7 @@
        "lang": "uz",
        "part": null,
        "size": 17981566,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/5/musiqa-5-sinf-uz.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/musiqa-5-sinf-uz.pdf"
       }
      ]
@@ -3552,6 +3759,7 @@
        "lang": "ru",
        "part": null,
        "size": 6869139,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/5/tarixdan-hikoyalar-5-sinf-ru.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/tarixdan-hikoyalar-5-sinf-ru.pdf"
       },
       {
@@ -3564,6 +3772,7 @@
        "lang": "uz",
        "part": null,
        "size": 81750744,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/5/tarixdan-hikoyalar-5-sinf-uz.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/tarixdan-hikoyalar-5-sinf-uz.pdf"
       }
      ]
@@ -3587,6 +3796,7 @@
        "lang": "ru",
        "part": null,
        "size": 20194156,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/5/tasviriy-sanat-5-sinf-ru.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/tasviriy-sanat-5-sinf-ru.pdf"
       },
       {
@@ -3599,6 +3809,7 @@
        "lang": "uz",
        "part": null,
        "size": 12076469,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/5/tasviriy-sanat-5-sinf-uz.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/tasviriy-sanat-5-sinf-uz.pdf"
       }
      ]
@@ -3622,6 +3833,7 @@
        "lang": "ru",
        "part": null,
        "size": 22064217,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/5/texnologiya-5-sinf-ru.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/texnologiya-5-sinf-ru.pdf"
       },
       {
@@ -3634,6 +3846,7 @@
        "lang": "uz",
        "part": null,
        "size": 86932228,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/5/texnologiya-5-sinf-uz.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/texnologiya-5-sinf-uz.pdf"
       }
      ]
@@ -3657,6 +3870,7 @@
        "lang": "ru",
        "part": null,
        "size": 2818203,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/5/vatan-tuygusi-5-sinf-ru.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/vatan-tuygusi-5-sinf-ru.pdf"
       },
       {
@@ -3669,6 +3883,7 @@
        "lang": "uz",
        "part": null,
        "size": 4580304,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/5/vatan-tuygusi-5-sinf-uz.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/vatan-tuygusi-5-sinf-uz.pdf"
       }
      ]
@@ -3697,6 +3912,7 @@
        "lang": "uz",
        "part": null,
        "size": 30303354,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/6/ona-tili-6-sinf-uz.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/ona-tili-6-sinf-uz.pdf"
       }
      ]
@@ -3720,6 +3936,7 @@
        "lang": "ru",
        "part": null,
        "size": 34285642,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/6/ozbek-tili-6-sinf-ru.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/ozbek-tili-6-sinf-ru.pdf"
       },
       {
@@ -3732,6 +3949,7 @@
        "lang": "uz",
        "part": null,
        "size": 3231584,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/6/ozbek-tili-6-sinf-uz.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/ozbek-tili-6-sinf-uz.pdf"
       }
      ]
@@ -3755,6 +3973,7 @@
        "lang": "ru",
        "part": null,
        "size": 83016305,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/6/rus-tili-6-sinf-ru.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/rus-tili-6-sinf-ru.pdf"
       },
       {
@@ -3767,6 +3986,7 @@
        "lang": "uz",
        "part": null,
        "size": 12805738,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/6/rus-tili-6-sinf-uz.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/rus-tili-6-sinf-uz.pdf"
       }
      ]
@@ -3790,6 +4010,7 @@
        "lang": "ru",
        "part": null,
        "size": 44832003,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/6/adabiyot-6-sinf-ru.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/adabiyot-6-sinf-ru.pdf"
       },
       {
@@ -3802,6 +4023,7 @@
        "lang": "uz",
        "part": null,
        "size": 44688524,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/6/adabiyot-6-sinf-uz.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/adabiyot-6-sinf-uz.pdf"
       }
      ]
@@ -3825,6 +4047,7 @@
        "lang": "ru",
        "part": 1,
        "size": 25678522,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/6/matematika-6-sinf-ru-1-qism.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/matematika-6-sinf-ru-1-qism.pdf"
       },
       {
@@ -3837,6 +4060,7 @@
        "lang": "ru",
        "part": 2,
        "size": 27465063,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/6/matematika-6-sinf-ru-2-qism.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/matematika-6-sinf-ru-2-qism.pdf"
       },
       {
@@ -3849,6 +4073,7 @@
        "lang": "uz",
        "part": 1,
        "size": 25983999,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/6/matematika-6-sinf-uz-1-qism.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/matematika-6-sinf-uz-1-qism.pdf"
       },
       {
@@ -3861,6 +4086,7 @@
        "lang": "uz",
        "part": 2,
        "size": 27730013,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/6/matematika-6-sinf-uz-2-qism.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/matematika-6-sinf-uz-2-qism.pdf"
       }
      ]
@@ -3884,6 +4110,7 @@
        "lang": "ru",
        "part": null,
        "size": 17544339,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/6/tabiiy-fanlar-6-sinf-ru.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/tabiiy-fanlar-6-sinf-ru.pdf"
       },
       {
@@ -3896,6 +4123,7 @@
        "lang": "uz",
        "part": null,
        "size": 19112925,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/6/tabiiy-fanlar-6-sinf-uz.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/tabiiy-fanlar-6-sinf-uz.pdf"
       }
      ]
@@ -3919,6 +4147,7 @@
        "lang": "ru",
        "part": null,
        "size": 8898936,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/6/fizika-6-sinf-ru.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/fizika-6-sinf-ru.pdf"
       },
       {
@@ -3931,6 +4160,7 @@
        "lang": "uz",
        "part": null,
        "size": 1936727,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/6/fizika-6-sinf-uz.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/fizika-6-sinf-uz.pdf"
       }
      ]
@@ -3954,6 +4184,7 @@
        "lang": "ru",
        "part": null,
        "size": 2884457,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/6/geografiya-6-sinf-ru.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/geografiya-6-sinf-ru.pdf"
       },
       {
@@ -3966,6 +4197,7 @@
        "lang": "uz",
        "part": null,
        "size": 1704744,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/6/geografiya-6-sinf-uz.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/geografiya-6-sinf-uz.pdf"
       }
      ]
@@ -3989,6 +4221,7 @@
        "lang": "ru",
        "part": null,
        "size": 31133492,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/6/tarix-6-sinf-ru.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/tarix-6-sinf-ru.pdf"
       },
       {
@@ -4001,6 +4234,7 @@
        "lang": "uz",
        "part": null,
        "size": 30099689,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/6/tarix-6-sinf-uz.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/tarix-6-sinf-uz.pdf"
       }
      ]
@@ -4024,6 +4258,7 @@
        "lang": "ru",
        "part": null,
        "size": 13625896,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/6/ingliz-tili-6-sinf-ru.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/ingliz-tili-6-sinf-ru.pdf"
       },
       {
@@ -4036,6 +4271,7 @@
        "lang": "uz",
        "part": null,
        "size": 13485686,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/6/ingliz-tili-6-sinf-uz.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/ingliz-tili-6-sinf-uz.pdf"
       }
      ]
@@ -4059,6 +4295,7 @@
        "lang": "ru",
        "part": null,
        "size": 14202554,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/6/nemis-tili-6-sinf-ru.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/nemis-tili-6-sinf-ru.pdf"
       },
       {
@@ -4071,6 +4308,7 @@
        "lang": "uz",
        "part": null,
        "size": 14100260,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/6/nemis-tili-6-sinf-uz.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/nemis-tili-6-sinf-uz.pdf"
       }
      ]
@@ -4094,6 +4332,7 @@
        "lang": "ru",
        "part": null,
        "size": 50329649,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/6/fransuz-tili-6-sinf-ru.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/fransuz-tili-6-sinf-ru.pdf"
       },
       {
@@ -4106,6 +4345,7 @@
        "lang": "uz",
        "part": null,
        "size": 50727391,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/6/fransuz-tili-6-sinf-uz.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/fransuz-tili-6-sinf-uz.pdf"
       }
      ]
@@ -4129,6 +4369,7 @@
        "lang": "ru",
        "part": null,
        "size": 86396992,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/6/informatika-6-sinf-ru.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/informatika-6-sinf-ru.pdf"
       },
       {
@@ -4141,6 +4382,7 @@
        "lang": "uz",
        "part": null,
        "size": 12807048,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/6/informatika-6-sinf-uz.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/informatika-6-sinf-uz.pdf"
       }
      ]
@@ -4164,6 +4406,7 @@
        "lang": "ru",
        "part": null,
        "size": 54518261,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/6/tarbiya-6-sinf-ru.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/tarbiya-6-sinf-ru.pdf"
       },
       {
@@ -4176,6 +4419,7 @@
        "lang": "uz",
        "part": null,
        "size": 9495801,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/6/tarbiya-6-sinf-uz.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/tarbiya-6-sinf-uz.pdf"
       }
      ]
@@ -4199,6 +4443,7 @@
        "lang": "ru",
        "part": null,
        "size": 2684769,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/6/botanika-6-sinf-ru.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/botanika-6-sinf-ru.pdf"
       },
       {
@@ -4211,6 +4456,7 @@
        "lang": "uz",
        "part": null,
        "size": 79306874,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/6/botanika-6-sinf-uz.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/botanika-6-sinf-uz.pdf"
       }
      ]
@@ -4234,6 +4480,7 @@
        "lang": "ru",
        "part": null,
        "size": 28551672,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/6/musiqa-6-sinf-ru.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/musiqa-6-sinf-ru.pdf"
       },
       {
@@ -4246,6 +4493,7 @@
        "lang": "uz",
        "part": null,
        "size": 29347926,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/6/musiqa-6-sinf-uz.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/musiqa-6-sinf-uz.pdf"
       }
      ]
@@ -4269,6 +4517,7 @@
        "lang": "ru",
        "part": null,
        "size": 9454912,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/6/qadimgi-dunyo-tarixi-6-sinf-ru.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/qadimgi-dunyo-tarixi-6-sinf-ru.pdf"
       },
       {
@@ -4281,6 +4530,7 @@
        "lang": "uz",
        "part": null,
        "size": 8302713,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/6/qadimgi-dunyo-tarixi-6-sinf-uz.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/qadimgi-dunyo-tarixi-6-sinf-uz.pdf"
       }
      ]
@@ -4304,6 +4554,7 @@
        "lang": "ru",
        "part": null,
        "size": 20674890,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/6/tasviriy-sanat-6-sinf-ru.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/tasviriy-sanat-6-sinf-ru.pdf"
       },
       {
@@ -4316,6 +4567,7 @@
        "lang": "uz",
        "part": null,
        "size": 20523479,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/6/tasviriy-sanat-6-sinf-uz.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/tasviriy-sanat-6-sinf-uz.pdf"
       }
      ]
@@ -4339,6 +4591,7 @@
        "lang": "ru",
        "part": null,
        "size": 118583626,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/6/texnologiya-6-sinf-ru.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/texnologiya-6-sinf-ru.pdf"
       },
       {
@@ -4351,6 +4604,7 @@
        "lang": "uz",
        "part": null,
        "size": 49360830,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/6/texnologiya-6-sinf-uz.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/texnologiya-6-sinf-uz.pdf"
       }
      ]
@@ -4374,6 +4628,7 @@
        "lang": "ru",
        "part": null,
        "size": 3673692,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/6/vatan-tuygusi-6-sinf-ru.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/vatan-tuygusi-6-sinf-ru.pdf"
       },
       {
@@ -4386,6 +4641,7 @@
        "lang": "uz",
        "part": null,
        "size": 4509210,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/6/vatan-tuygusi-6-sinf-uz.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/vatan-tuygusi-6-sinf-uz.pdf"
       }
      ]
@@ -4414,6 +4670,7 @@
        "lang": "uz",
        "part": null,
        "size": 26930850,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/7/ona-tili-7-sinf-uz.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/ona-tili-7-sinf-uz.pdf"
       }
      ]
@@ -4437,6 +4694,7 @@
        "lang": "ru",
        "part": null,
        "size": 27299052,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/7/ozbek-tili-7-sinf-ru.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/ozbek-tili-7-sinf-ru.pdf"
       }
      ]
@@ -4460,6 +4718,7 @@
        "lang": "ru",
        "part": null,
        "size": 89386853,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/7/rus-tili-7-sinf-ru.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/rus-tili-7-sinf-ru.pdf"
       },
       {
@@ -4472,6 +4731,7 @@
        "lang": "uz",
        "part": null,
        "size": 5003096,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/7/rus-tili-7-sinf-uz.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/rus-tili-7-sinf-uz.pdf"
       }
      ]
@@ -4495,6 +4755,7 @@
        "lang": "ru",
        "part": null,
        "size": 138419901,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/7/adabiyot-7-sinf-ru.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/adabiyot-7-sinf-ru.pdf"
       },
       {
@@ -4507,6 +4768,7 @@
        "lang": "uz",
        "part": null,
        "size": 41877148,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/7/adabiyot-7-sinf-uz.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/adabiyot-7-sinf-uz.pdf"
       }
      ]
@@ -4530,6 +4792,7 @@
        "lang": "ru",
        "part": 1,
        "size": 21720967,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/7/matematika-7-sinf-ru-1-qism.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/matematika-7-sinf-ru-1-qism.pdf"
       },
       {
@@ -4542,6 +4805,7 @@
        "lang": "uz",
        "part": 1,
        "size": 21771637,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/7/matematika-7-sinf-uz-1-qism.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/matematika-7-sinf-uz-1-qism.pdf"
       }
      ]
@@ -4565,6 +4829,7 @@
        "lang": "ru",
        "part": null,
        "size": 7538418,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/7/algebra-7-sinf-ru.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/algebra-7-sinf-ru.pdf"
       },
       {
@@ -4577,6 +4842,7 @@
        "lang": "uz",
        "part": null,
        "size": 7805457,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/7/algebra-7-sinf-uz.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/algebra-7-sinf-uz.pdf"
       }
      ]
@@ -4600,6 +4866,7 @@
        "lang": "ru",
        "part": null,
        "size": 51635557,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/7/geometriya-7-sinf-ru.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/geometriya-7-sinf-ru.pdf"
       },
       {
@@ -4612,6 +4879,7 @@
        "lang": "uz",
        "part": null,
        "size": 51221081,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/7/geometriya-7-sinf-uz.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/geometriya-7-sinf-uz.pdf"
       }
      ]
@@ -4635,6 +4903,7 @@
        "lang": "ru",
        "part": null,
        "size": 33945771,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/7/fizika-7-sinf-ru.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/fizika-7-sinf-ru.pdf"
       },
       {
@@ -4647,6 +4916,7 @@
        "lang": "uz",
        "part": null,
        "size": 34759381,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/7/fizika-7-sinf-uz.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/fizika-7-sinf-uz.pdf"
       }
      ]
@@ -4670,6 +4940,7 @@
        "lang": "ru",
        "part": null,
        "size": 46456706,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/7/kimyo-7-sinf-ru.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/kimyo-7-sinf-ru.pdf"
       },
       {
@@ -4682,6 +4953,7 @@
        "lang": "uz",
        "part": null,
        "size": 46470808,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/7/kimyo-7-sinf-uz.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/kimyo-7-sinf-uz.pdf"
       }
      ]
@@ -4705,6 +4977,7 @@
        "lang": "ru",
        "part": null,
        "size": 58159733,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/7/biologiya-7-sinf-ru.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/biologiya-7-sinf-ru.pdf"
       },
       {
@@ -4717,6 +4990,7 @@
        "lang": "uz",
        "part": null,
        "size": 59046725,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/7/biologiya-7-sinf-uz.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/biologiya-7-sinf-uz.pdf"
       }
      ]
@@ -4740,6 +5014,7 @@
        "lang": "ru",
        "part": null,
        "size": 75660733,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/7/geografiya-7-sinf-ru.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/geografiya-7-sinf-ru.pdf"
       },
       {
@@ -4752,6 +5027,7 @@
        "lang": "uz",
        "part": null,
        "size": 30646091,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/7/geografiya-7-sinf-uz.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/geografiya-7-sinf-uz.pdf"
       }
      ]
@@ -4775,6 +5051,7 @@
        "lang": "ru",
        "part": null,
        "size": 21006857,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/7/ozbekiston-tarixi-7-sinf-ru.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/ozbekiston-tarixi-7-sinf-ru.pdf"
       },
       {
@@ -4787,6 +5064,7 @@
        "lang": "uz",
        "part": null,
        "size": 13905844,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/7/ozbekiston-tarixi-7-sinf-uz.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/ozbekiston-tarixi-7-sinf-uz.pdf"
       }
      ]
@@ -4810,6 +5088,7 @@
        "lang": "ru",
        "part": null,
        "size": 29296373,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/7/jahon-tarixi-7-sinf-ru.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/jahon-tarixi-7-sinf-ru.pdf"
       },
       {
@@ -4822,6 +5101,7 @@
        "lang": "uz",
        "part": null,
        "size": 15792748,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/7/jahon-tarixi-7-sinf-uz.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/jahon-tarixi-7-sinf-uz.pdf"
       }
      ]
@@ -4845,6 +5125,7 @@
        "lang": "ru",
        "part": null,
        "size": 7454410,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/7/ingliz-tili-7-sinf-ru.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/ingliz-tili-7-sinf-ru.pdf"
       },
       {
@@ -4857,6 +5138,7 @@
        "lang": "uz",
        "part": null,
        "size": 15704574,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/7/ingliz-tili-7-sinf-uz.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/ingliz-tili-7-sinf-uz.pdf"
       }
      ]
@@ -4880,6 +5162,7 @@
        "lang": "ru",
        "part": null,
        "size": 15400147,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/7/nemis-tili-7-sinf-ru.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/nemis-tili-7-sinf-ru.pdf"
       },
       {
@@ -4892,6 +5175,7 @@
        "lang": "uz",
        "part": null,
        "size": 28356737,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/7/nemis-tili-7-sinf-uz.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/nemis-tili-7-sinf-uz.pdf"
       }
      ]
@@ -4915,6 +5199,7 @@
        "lang": "ru",
        "part": null,
        "size": 9121000,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/7/fransuz-tili-7-sinf-ru.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/fransuz-tili-7-sinf-ru.pdf"
       },
       {
@@ -4927,6 +5212,7 @@
        "lang": "uz",
        "part": null,
        "size": 9037244,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/7/fransuz-tili-7-sinf-uz.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/fransuz-tili-7-sinf-uz.pdf"
       }
      ]
@@ -4950,6 +5236,7 @@
        "lang": "ru",
        "part": null,
        "size": 67961861,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/7/informatika-7-sinf-ru.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/informatika-7-sinf-ru.pdf"
       },
       {
@@ -4962,6 +5249,7 @@
        "lang": "uz",
        "part": null,
        "size": 6408876,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/7/informatika-7-sinf-uz.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/informatika-7-sinf-uz.pdf"
       }
      ]
@@ -4985,6 +5273,7 @@
        "lang": "ru",
        "part": null,
        "size": 23079495,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/7/tarbiya-7-sinf-ru.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/tarbiya-7-sinf-ru.pdf"
       },
       {
@@ -4997,6 +5286,7 @@
        "lang": "uz",
        "part": null,
        "size": 18387371,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/7/tarbiya-7-sinf-uz.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/tarbiya-7-sinf-uz.pdf"
       }
      ]
@@ -5020,6 +5310,7 @@
        "lang": "ru",
        "part": null,
        "size": 2794791,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/7/jismoniy-tarbiya-7-sinf-ru.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/jismoniy-tarbiya-7-sinf-ru.pdf"
       },
       {
@@ -5032,6 +5323,7 @@
        "lang": "uz",
        "part": null,
        "size": 2737334,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/7/jismoniy-tarbiya-7-sinf-uz.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/jismoniy-tarbiya-7-sinf-uz.pdf"
       }
      ]
@@ -5055,6 +5347,7 @@
        "lang": "ru",
        "part": null,
        "size": 2392380,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/7/milliy-istiqlol-goyasi-va-manaviyat-asoslari-7-sinf-ru.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/milliy-istiqlol-goyasi-va-manaviyat-asoslari-7-sinf-ru.pdf"
       },
       {
@@ -5067,6 +5360,7 @@
        "lang": "uz",
        "part": null,
        "size": 1847333,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/7/milliy-istiqlol-goyasi-va-manaviyat-asoslari-7-sinf-uz.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/milliy-istiqlol-goyasi-va-manaviyat-asoslari-7-sinf-uz.pdf"
       }
      ]
@@ -5090,6 +5384,7 @@
        "lang": "ru",
        "part": null,
        "size": 39706519,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/7/musiqa-7-sinf-ru.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/musiqa-7-sinf-ru.pdf"
       },
       {
@@ -5102,6 +5397,7 @@
        "lang": "uz",
        "part": null,
        "size": 46653785,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/7/musiqa-7-sinf-uz.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/musiqa-7-sinf-uz.pdf"
       }
      ]
@@ -5125,6 +5421,7 @@
        "lang": "ru",
        "part": null,
        "size": 20482117,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/7/tasviriy-sanat-7-sinf-ru.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/tasviriy-sanat-7-sinf-ru.pdf"
       },
       {
@@ -5137,6 +5434,7 @@
        "lang": "uz",
        "part": null,
        "size": 24029538,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/7/tasviriy-sanat-7-sinf-uz.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/tasviriy-sanat-7-sinf-uz.pdf"
       }
      ]
@@ -5160,6 +5458,7 @@
        "lang": "ru",
        "part": null,
        "size": 21068566,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/7/texnologiya-7-sinf-ru.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/texnologiya-7-sinf-ru.pdf"
       },
       {
@@ -5172,6 +5471,7 @@
        "lang": "uz",
        "part": null,
        "size": 22422810,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/7/texnologiya-7-sinf-uz.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/texnologiya-7-sinf-uz.pdf"
       }
      ]
@@ -5195,6 +5495,7 @@
        "lang": "ru",
        "part": null,
        "size": 5420349,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/7/zoologiya-7-sinf-ru.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/zoologiya-7-sinf-ru.pdf"
       },
       {
@@ -5207,6 +5508,7 @@
        "lang": "uz",
        "part": null,
        "size": 5437531,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/7/zoologiya-7-sinf-uz.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/zoologiya-7-sinf-uz.pdf"
       }
      ]
@@ -5235,6 +5537,7 @@
        "lang": "uz",
        "part": null,
        "size": 30016511,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/8/ona-tili-8-sinf-uz.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/ona-tili-8-sinf-uz.pdf"
       }
      ]
@@ -5258,6 +5561,7 @@
        "lang": "ru",
        "part": null,
        "size": 143317935,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/8/ozbek-tili-8-sinf-ru.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/ozbek-tili-8-sinf-ru.pdf"
       }
      ]
@@ -5281,6 +5585,7 @@
        "lang": "ru",
        "part": null,
        "size": 27252948,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/8/rus-tili-8-sinf-ru.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/rus-tili-8-sinf-ru.pdf"
       },
       {
@@ -5293,6 +5598,7 @@
        "lang": "uz",
        "part": null,
        "size": 6775893,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/8/rus-tili-8-sinf-uz.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/rus-tili-8-sinf-uz.pdf"
       }
      ]
@@ -5316,6 +5622,7 @@
        "lang": "ru",
        "part": null,
        "size": 29200929,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/8/adabiyot-8-sinf-ru.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/adabiyot-8-sinf-ru.pdf"
       },
       {
@@ -5328,6 +5635,7 @@
        "lang": "uz",
        "part": null,
        "size": 30915806,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/8/adabiyot-8-sinf-uz.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/adabiyot-8-sinf-uz.pdf"
       }
      ]
@@ -5351,6 +5659,7 @@
        "lang": "ru",
        "part": null,
        "size": 62979336,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/8/algebra-8-sinf-ru.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/algebra-8-sinf-ru.pdf"
       },
       {
@@ -5363,6 +5672,7 @@
        "lang": "uz",
        "part": null,
        "size": 31104544,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/8/algebra-8-sinf-uz.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/algebra-8-sinf-uz.pdf"
       }
      ]
@@ -5386,6 +5696,7 @@
        "lang": "ru",
        "part": null,
        "size": 4529746,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/8/geometriya-8-sinf-ru.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/geometriya-8-sinf-ru.pdf"
       },
       {
@@ -5398,6 +5709,7 @@
        "lang": "uz",
        "part": null,
        "size": 2944734,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/8/geometriya-8-sinf-uz.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/geometriya-8-sinf-uz.pdf"
       }
      ]
@@ -5421,6 +5733,7 @@
        "lang": "ru",
        "part": null,
        "size": 83091760,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/8/fizika-8-sinf-ru.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/fizika-8-sinf-ru.pdf"
       },
       {
@@ -5433,6 +5746,7 @@
        "lang": "uz",
        "part": null,
        "size": 40019078,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/8/fizika-8-sinf-uz.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/fizika-8-sinf-uz.pdf"
       }
      ]
@@ -5456,6 +5770,7 @@
        "lang": "ru",
        "part": null,
        "size": 5379346,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/8/kimyo-8-sinf-ru.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/kimyo-8-sinf-ru.pdf"
       },
       {
@@ -5468,6 +5783,7 @@
        "lang": "uz",
        "part": null,
        "size": 4735863,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/8/kimyo-8-sinf-uz.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/kimyo-8-sinf-uz.pdf"
       }
      ]
@@ -5491,6 +5807,7 @@
        "lang": "ru",
        "part": null,
        "size": 51327413,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/8/biologiya-8-sinf-ru.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/biologiya-8-sinf-ru.pdf"
       },
       {
@@ -5503,6 +5820,7 @@
        "lang": "uz",
        "part": null,
        "size": 35135052,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/8/biologiya-8-sinf-uz.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/biologiya-8-sinf-uz.pdf"
       }
      ]
@@ -5526,6 +5844,7 @@
        "lang": "ru",
        "part": null,
        "size": 10703763,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/8/geografiya-8-sinf-ru.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/geografiya-8-sinf-ru.pdf"
       },
       {
@@ -5538,6 +5857,7 @@
        "lang": "uz",
        "part": null,
        "size": 9963699,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/8/geografiya-8-sinf-uz.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/geografiya-8-sinf-uz.pdf"
       }
      ]
@@ -5561,6 +5881,7 @@
        "lang": "ru",
        "part": null,
        "size": 4370726,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/8/ozbekiston-tarixi-8-sinf-ru.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/ozbekiston-tarixi-8-sinf-ru.pdf"
       },
       {
@@ -5573,6 +5894,7 @@
        "lang": "uz",
        "part": null,
        "size": 38212500,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/8/ozbekiston-tarixi-8-sinf-uz.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/ozbekiston-tarixi-8-sinf-uz.pdf"
       }
      ]
@@ -5596,6 +5918,7 @@
        "lang": "ru",
        "part": null,
        "size": 18494794,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/8/jahon-tarixi-8-sinf-ru.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/jahon-tarixi-8-sinf-ru.pdf"
       },
       {
@@ -5608,6 +5931,7 @@
        "lang": "uz",
        "part": null,
        "size": 13427550,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/8/jahon-tarixi-8-sinf-uz.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/jahon-tarixi-8-sinf-uz.pdf"
       }
      ]
@@ -5631,6 +5955,7 @@
        "lang": "ru",
        "part": null,
        "size": 7522868,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/8/ingliz-tili-8-sinf-ru.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/ingliz-tili-8-sinf-ru.pdf"
       },
       {
@@ -5643,6 +5968,7 @@
        "lang": "uz",
        "part": null,
        "size": 15203882,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/8/ingliz-tili-8-sinf-uz.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/ingliz-tili-8-sinf-uz.pdf"
       }
      ]
@@ -5666,6 +5992,7 @@
        "lang": "ru",
        "part": null,
        "size": 22868017,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/8/nemis-tili-8-sinf-ru.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/nemis-tili-8-sinf-ru.pdf"
       },
       {
@@ -5678,6 +6005,7 @@
        "lang": "uz",
        "part": null,
        "size": 22868017,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/8/nemis-tili-8-sinf-uz.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/nemis-tili-8-sinf-uz.pdf"
       }
      ]
@@ -5701,6 +6029,7 @@
        "lang": "ru",
        "part": null,
        "size": 6475768,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/8/fransuz-tili-8-sinf-ru.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/fransuz-tili-8-sinf-ru.pdf"
       },
       {
@@ -5713,6 +6042,7 @@
        "lang": "uz",
        "part": null,
        "size": 6949342,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/8/fransuz-tili-8-sinf-uz.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/fransuz-tili-8-sinf-uz.pdf"
       }
      ]
@@ -5736,6 +6066,7 @@
        "lang": "ru",
        "part": null,
        "size": 74834385,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/8/informatika-8-sinf-ru.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/informatika-8-sinf-ru.pdf"
       },
       {
@@ -5748,6 +6079,7 @@
        "lang": "uz",
        "part": null,
        "size": 9470984,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/8/informatika-8-sinf-uz.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/informatika-8-sinf-uz.pdf"
       }
      ]
@@ -5771,6 +6103,7 @@
        "lang": "ru",
        "part": null,
        "size": 178038409,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/8/tarbiya-8-sinf-ru.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/tarbiya-8-sinf-ru.pdf"
       },
       {
@@ -5783,6 +6116,7 @@
        "lang": "uz",
        "part": null,
        "size": 41907345,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/8/tarbiya-8-sinf-uz.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/tarbiya-8-sinf-uz.pdf"
       }
      ]
@@ -5806,6 +6140,7 @@
        "lang": "ru",
        "part": null,
        "size": 38599725,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/8/chizmachilik-8-sinf-ru.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/chizmachilik-8-sinf-ru.pdf"
       },
       {
@@ -5818,6 +6153,7 @@
        "lang": "uz",
        "part": null,
        "size": 43399700,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/8/chizmachilik-8-sinf-uz.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/chizmachilik-8-sinf-uz.pdf"
       }
      ]
@@ -5841,6 +6177,7 @@
        "lang": "ru",
        "part": null,
        "size": 5777639,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/8/davlat-va-huquq-asoslari-8-sinf-ru.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/davlat-va-huquq-asoslari-8-sinf-ru.pdf"
       },
       {
@@ -5853,6 +6190,7 @@
        "lang": "uz",
        "part": null,
        "size": 19562504,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/8/davlat-va-huquq-asoslari-8-sinf-uz.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/davlat-va-huquq-asoslari-8-sinf-uz.pdf"
       }
      ]
@@ -5876,6 +6214,7 @@
        "lang": "ru",
        "part": null,
        "size": 8786471,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/8/iqtisodiy-bilim-asoslari-8-sinf-ru.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/iqtisodiy-bilim-asoslari-8-sinf-ru.pdf"
       },
       {
@@ -5888,6 +6227,7 @@
        "lang": "uz",
        "part": null,
        "size": 7692599,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/8/iqtisodiy-bilim-asoslari-8-sinf-uz.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/iqtisodiy-bilim-asoslari-8-sinf-uz.pdf"
       }
      ]
@@ -5911,6 +6251,7 @@
        "lang": "ru",
        "part": null,
        "size": 7916418,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/8/iqtisodiyot-8-sinf-ru.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/iqtisodiyot-8-sinf-ru.pdf"
       },
       {
@@ -5923,6 +6264,7 @@
        "lang": "uz",
        "part": null,
        "size": 6981717,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/8/iqtisodiyot-8-sinf-uz.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/iqtisodiyot-8-sinf-uz.pdf"
       }
      ]
@@ -5946,6 +6288,7 @@
        "lang": "ru",
        "part": null,
        "size": 2794791,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/8/jismoniy-tarbiya-8-sinf-ru.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/jismoniy-tarbiya-8-sinf-ru.pdf"
       },
       {
@@ -5958,6 +6301,7 @@
        "lang": "uz",
        "part": null,
        "size": 2737334,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/8/jismoniy-tarbiya-8-sinf-uz.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/jismoniy-tarbiya-8-sinf-uz.pdf"
       }
      ]
@@ -5981,6 +6325,7 @@
        "lang": "ru",
        "part": null,
        "size": 2266833,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/8/milliy-istiqlol-goyasi-va-manaviyat-asoslari-8-sinf-ru.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/milliy-istiqlol-goyasi-va-manaviyat-asoslari-8-sinf-ru.pdf"
       },
       {
@@ -5993,6 +6338,7 @@
        "lang": "uz",
        "part": null,
        "size": 1849184,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/8/milliy-istiqlol-goyasi-va-manaviyat-asoslari-8-sinf-uz.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/milliy-istiqlol-goyasi-va-manaviyat-asoslari-8-sinf-uz.pdf"
       }
      ]
@@ -6016,6 +6362,7 @@
        "lang": "ru",
        "part": null,
        "size": 105915379,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/8/odam-va-uning-salomatligi-8-sinf-ru.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/odam-va-uning-salomatligi-8-sinf-ru.pdf"
       },
       {
@@ -6028,6 +6375,7 @@
        "lang": "uz",
        "part": null,
        "size": 50604510,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/8/odam-va-uning-salomatligi-8-sinf-uz.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/odam-va-uning-salomatligi-8-sinf-uz.pdf"
       }
      ]
@@ -6051,6 +6399,7 @@
        "lang": "ru",
        "part": null,
        "size": 10794416,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/8/ozbekistonning-iqtisodiy-va-ijtimoiy-geografiyasi-8-sinf-ru.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/ozbekistonning-iqtisodiy-va-ijtimoiy-geografiyasi-8-sinf-ru.pdf"
       },
       {
@@ -6063,6 +6412,7 @@
        "lang": "uz",
        "part": null,
        "size": 11135655,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/8/ozbekistonning-iqtisodiy-va-ijtimoiy-geografiyasi-8-sinf-uz.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/ozbekistonning-iqtisodiy-va-ijtimoiy-geografiyasi-8-sinf-uz.pdf"
       }
      ]
@@ -6086,6 +6436,7 @@
        "lang": "ru",
        "part": null,
        "size": 26618896,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/8/texnologiya-8-sinf-ru.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/texnologiya-8-sinf-ru.pdf"
       },
       {
@@ -6098,6 +6449,7 @@
        "lang": "uz",
        "part": null,
        "size": 9441250,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/8/texnologiya-8-sinf-uz.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/texnologiya-8-sinf-uz.pdf"
       }
      ]
@@ -6126,6 +6478,7 @@
        "lang": "uz",
        "part": null,
        "size": 30508962,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/9/ona-tili-9-sinf-uz.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/ona-tili-9-sinf-uz.pdf"
       }
      ]
@@ -6149,6 +6502,7 @@
        "lang": "ru",
        "part": null,
        "size": 1658438,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/9/ozbek-tili-9-sinf-ru.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/ozbek-tili-9-sinf-ru.pdf"
       }
      ]
@@ -6172,6 +6526,7 @@
        "lang": "ru",
        "part": null,
        "size": 27198320,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/9/rus-tili-9-sinf-ru.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/rus-tili-9-sinf-ru.pdf"
       },
       {
@@ -6184,6 +6539,7 @@
        "lang": "uz",
        "part": null,
        "size": 5322948,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/9/rus-tili-9-sinf-uz.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/rus-tili-9-sinf-uz.pdf"
       }
      ]
@@ -6207,6 +6563,7 @@
        "lang": "ru",
        "part": null,
        "size": 28981078,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/9/adabiyot-9-sinf-ru.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/adabiyot-9-sinf-ru.pdf"
       },
       {
@@ -6219,6 +6576,7 @@
        "lang": "uz",
        "part": null,
        "size": 37017348,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/9/adabiyot-9-sinf-uz.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/adabiyot-9-sinf-uz.pdf"
       }
      ]
@@ -6242,6 +6600,7 @@
        "lang": "ru",
        "part": null,
        "size": 70695566,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/9/algebra-9-sinf-ru.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/algebra-9-sinf-ru.pdf"
       },
       {
@@ -6254,6 +6613,7 @@
        "lang": "uz",
        "part": null,
        "size": 47240296,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/9/algebra-9-sinf-uz.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/algebra-9-sinf-uz.pdf"
       }
      ]
@@ -6277,6 +6637,7 @@
        "lang": "ru",
        "part": null,
        "size": 9118527,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/9/geometriya-9-sinf-ru.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/geometriya-9-sinf-ru.pdf"
       },
       {
@@ -6289,6 +6650,7 @@
        "lang": "uz",
        "part": null,
        "size": 7918450,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/9/geometriya-9-sinf-uz.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/geometriya-9-sinf-uz.pdf"
       }
      ]
@@ -6312,6 +6674,7 @@
        "lang": "ru",
        "part": null,
        "size": 84853767,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/9/fizika-9-sinf-ru.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/fizika-9-sinf-ru.pdf"
       },
       {
@@ -6324,6 +6687,7 @@
        "lang": "uz",
        "part": null,
        "size": 93158993,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/9/fizika-9-sinf-uz.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/fizika-9-sinf-uz.pdf"
       }
      ]
@@ -6347,6 +6711,7 @@
        "lang": "ru",
        "part": null,
        "size": 3403150,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/9/kimyo-9-sinf-ru.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/kimyo-9-sinf-ru.pdf"
       },
       {
@@ -6359,6 +6724,7 @@
        "lang": "uz",
        "part": null,
        "size": 3248347,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/9/kimyo-9-sinf-uz.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/kimyo-9-sinf-uz.pdf"
       }
      ]
@@ -6382,6 +6748,7 @@
        "lang": "ru",
        "part": null,
        "size": 5531332,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/9/biologiya-9-sinf-ru.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/biologiya-9-sinf-ru.pdf"
       },
       {
@@ -6394,6 +6761,7 @@
        "lang": "uz",
        "part": null,
        "size": 4399043,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/9/biologiya-9-sinf-uz.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/biologiya-9-sinf-uz.pdf"
       }
      ]
@@ -6417,6 +6785,7 @@
        "lang": "ru",
        "part": null,
        "size": 5703015,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/9/geografiya-9-sinf-ru.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/geografiya-9-sinf-ru.pdf"
       },
       {
@@ -6429,6 +6798,7 @@
        "lang": "uz",
        "part": null,
        "size": 5298220,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/9/geografiya-9-sinf-uz.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/geografiya-9-sinf-uz.pdf"
       }
      ]
@@ -6452,6 +6822,7 @@
        "lang": "ru",
        "part": null,
        "size": 33040718,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/9/ozbekiston-tarixi-9-sinf-ru.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/ozbekiston-tarixi-9-sinf-ru.pdf"
       },
       {
@@ -6464,6 +6835,7 @@
        "lang": "uz",
        "part": null,
        "size": 13156935,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/9/ozbekiston-tarixi-9-sinf-uz.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/ozbekiston-tarixi-9-sinf-uz.pdf"
       }
      ]
@@ -6487,6 +6859,7 @@
        "lang": "ru",
        "part": null,
        "size": 64790637,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/9/jahon-tarixi-9-sinf-ru.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/jahon-tarixi-9-sinf-ru.pdf"
       },
       {
@@ -6499,6 +6872,7 @@
        "lang": "uz",
        "part": null,
        "size": 15819103,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/9/jahon-tarixi-9-sinf-uz.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/jahon-tarixi-9-sinf-uz.pdf"
       }
      ]
@@ -6522,6 +6896,7 @@
        "lang": "uz",
        "part": null,
        "size": 4065530,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/9/ingliz-tili-9-sinf-uz.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/ingliz-tili-9-sinf-uz.pdf"
       }
      ]
@@ -6545,6 +6920,7 @@
        "lang": "ru",
        "part": null,
        "size": 2824929,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/9/nemis-tili-9-sinf-ru.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/nemis-tili-9-sinf-ru.pdf"
       },
       {
@@ -6557,6 +6933,7 @@
        "lang": "uz",
        "part": null,
        "size": 2824929,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/9/nemis-tili-9-sinf-uz.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/nemis-tili-9-sinf-uz.pdf"
       }
      ]
@@ -6580,6 +6957,7 @@
        "lang": "uz",
        "part": null,
        "size": 4921817,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/9/fransuz-tili-9-sinf-uz.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/fransuz-tili-9-sinf-uz.pdf"
       }
      ]
@@ -6603,6 +6981,7 @@
        "lang": "ru",
        "part": null,
        "size": 254682056,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/9/informatika-9-sinf-ru.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/informatika-9-sinf-ru.pdf"
       },
       {
@@ -6615,6 +6994,7 @@
        "lang": "uz",
        "part": null,
        "size": 104396929,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/9/informatika-9-sinf-uz.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/informatika-9-sinf-uz.pdf"
       }
      ]
@@ -6638,6 +7018,7 @@
        "lang": "ru",
        "part": null,
        "size": 75887993,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/9/tarbiya-9-sinf-ru.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/tarbiya-9-sinf-ru.pdf"
       },
       {
@@ -6650,6 +7031,7 @@
        "lang": "uz",
        "part": null,
        "size": 238459808,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/9/tarbiya-9-sinf-uz.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/tarbiya-9-sinf-uz.pdf"
       }
      ]
@@ -6673,6 +7055,7 @@
        "lang": "ru",
        "part": null,
        "size": 7836834,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/9/chizmachilik-9-sinf-ru.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/chizmachilik-9-sinf-ru.pdf"
       },
       {
@@ -6685,6 +7068,7 @@
        "lang": "uz",
        "part": null,
        "size": 6389712,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/9/chizmachilik-9-sinf-uz.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/chizmachilik-9-sinf-uz.pdf"
       }
      ]
@@ -6708,6 +7092,7 @@
        "lang": "ru",
        "part": null,
        "size": 5359334,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/9/davlat-va-huquq-asoslari-9-sinf-ru.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/davlat-va-huquq-asoslari-9-sinf-ru.pdf"
       },
       {
@@ -6720,6 +7105,7 @@
        "lang": "uz",
        "part": null,
        "size": 4343439,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/9/davlat-va-huquq-asoslari-9-sinf-uz.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/davlat-va-huquq-asoslari-9-sinf-uz.pdf"
       }
      ]
@@ -6743,6 +7129,7 @@
        "lang": "ru",
        "part": null,
        "size": 11378609,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/9/iqtisodiy-bilim-asoslari-9-sinf-ru.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/iqtisodiy-bilim-asoslari-9-sinf-ru.pdf"
       },
       {
@@ -6755,6 +7142,7 @@
        "lang": "uz",
        "part": null,
        "size": 7399609,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/9/iqtisodiy-bilim-asoslari-9-sinf-uz.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/iqtisodiy-bilim-asoslari-9-sinf-uz.pdf"
       }
      ]
@@ -6778,6 +7166,7 @@
        "lang": "ru",
        "part": null,
        "size": 11378609,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/9/iqtisodiyot-9-sinf-ru.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/iqtisodiyot-9-sinf-ru.pdf"
       },
       {
@@ -6790,6 +7179,7 @@
        "lang": "uz",
        "part": null,
        "size": 7479292,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/9/iqtisodiyot-9-sinf-uz.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/iqtisodiyot-9-sinf-uz.pdf"
       }
      ]
@@ -6813,6 +7203,7 @@
        "lang": "ru",
        "part": null,
        "size": 5703015,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/9/jahon-ijtimoiy-iqtisodiy-geografiyasi-9-sinf-ru.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/jahon-ijtimoiy-iqtisodiy-geografiyasi-9-sinf-ru.pdf"
       },
       {
@@ -6825,6 +7216,7 @@
        "lang": "uz",
        "part": null,
        "size": 5674892,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/9/jahon-ijtimoiy-iqtisodiy-geografiyasi-9-sinf-uz.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/jahon-ijtimoiy-iqtisodiy-geografiyasi-9-sinf-uz.pdf"
       }
      ]
@@ -6848,6 +7240,7 @@
        "lang": "ru",
        "part": null,
        "size": 4738813,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/9/konstitutsiyaviy-huquq-asoslari-9-sinf-ru.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/konstitutsiyaviy-huquq-asoslari-9-sinf-ru.pdf"
       },
       {
@@ -6860,6 +7253,7 @@
        "lang": "uz",
        "part": null,
        "size": 4755404,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/9/konstitutsiyaviy-huquq-asoslari-9-sinf-uz.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/konstitutsiyaviy-huquq-asoslari-9-sinf-uz.pdf"
       }
      ]
@@ -6883,6 +7277,7 @@
        "lang": "ru",
        "part": null,
        "size": 1898968,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/9/milliy-istiqlol-goyasi-va-manaviyat-asoslari-9-sinf-ru.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/milliy-istiqlol-goyasi-va-manaviyat-asoslari-9-sinf-ru.pdf"
       },
       {
@@ -6895,6 +7290,7 @@
        "lang": "uz",
        "part": null,
        "size": 2674366,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/9/milliy-istiqlol-goyasi-va-manaviyat-asoslari-9-sinf-uz.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/milliy-istiqlol-goyasi-va-manaviyat-asoslari-9-sinf-uz.pdf"
       }
      ]
@@ -6918,6 +7314,7 @@
        "lang": "ru",
        "part": null,
        "size": 5620648,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/9/sitologiya-va-genetika-asoslari-9-sinf-ru.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/sitologiya-va-genetika-asoslari-9-sinf-ru.pdf"
       },
       {
@@ -6930,6 +7327,7 @@
        "lang": "uz",
        "part": null,
        "size": 5164413,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/9/sitologiya-va-genetika-asoslari-9-sinf-uz.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/sitologiya-va-genetika-asoslari-9-sinf-uz.pdf"
       }
      ]
@@ -6953,6 +7351,7 @@
        "lang": "ru",
        "part": null,
        "size": 6008205,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/9/texnologiya-9-sinf-ru.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/texnologiya-9-sinf-ru.pdf"
       },
       {
@@ -6965,6 +7364,7 @@
        "lang": "uz",
        "part": null,
        "size": 4856333,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/9/texnologiya-9-sinf-uz.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/texnologiya-9-sinf-uz.pdf"
       }
      ]
@@ -6993,6 +7393,7 @@
        "lang": "uz",
        "part": null,
        "size": 9033098,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/10/ona-tili-10-sinf-uz.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/ona-tili-10-sinf-uz.pdf"
       }
      ]
@@ -7016,6 +7417,7 @@
        "lang": "ru",
        "part": null,
        "size": 14577338,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/10/ozbek-tili-10-sinf-ru.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/ozbek-tili-10-sinf-ru.pdf"
       },
       {
@@ -7028,6 +7430,7 @@
        "lang": "uz",
        "part": null,
        "size": 2984540,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/10/ozbek-tili-10-sinf-uz.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/ozbek-tili-10-sinf-uz.pdf"
       }
      ]
@@ -7051,6 +7454,7 @@
        "lang": "ru",
        "part": null,
        "size": 75734006,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/10/rus-tili-10-sinf-ru.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/rus-tili-10-sinf-ru.pdf"
       },
       {
@@ -7063,6 +7467,7 @@
        "lang": "uz",
        "part": null,
        "size": 6040235,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/10/rus-tili-10-sinf-uz.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/rus-tili-10-sinf-uz.pdf"
       }
      ]
@@ -7086,6 +7491,7 @@
        "lang": "ru",
        "part": null,
        "size": 248285670,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/10/adabiyot-10-sinf-ru.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/adabiyot-10-sinf-ru.pdf"
       },
       {
@@ -7098,6 +7504,7 @@
        "lang": "uz",
        "part": null,
        "size": 5018100,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/10/adabiyot-10-sinf-uz.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/adabiyot-10-sinf-uz.pdf"
       }
      ]
@@ -7121,6 +7528,7 @@
        "lang": "ru",
        "part": null,
        "size": 7385356,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/10/algebra-10-sinf-ru.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/algebra-10-sinf-ru.pdf"
       },
       {
@@ -7133,6 +7541,7 @@
        "lang": "uz",
        "part": null,
        "size": 18793016,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/10/algebra-10-sinf-uz.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/algebra-10-sinf-uz.pdf"
       }
      ]
@@ -7156,6 +7565,7 @@
        "lang": "ru",
        "part": null,
        "size": 37800208,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/10/geometriya-10-sinf-ru.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/geometriya-10-sinf-ru.pdf"
       },
       {
@@ -7168,6 +7578,7 @@
        "lang": "uz",
        "part": null,
        "size": 61010418,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/10/geometriya-10-sinf-uz.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/geometriya-10-sinf-uz.pdf"
       }
      ]
@@ -7191,6 +7602,7 @@
        "lang": "ru",
        "part": null,
        "size": 6125494,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/10/fizika-10-sinf-ru.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/fizika-10-sinf-ru.pdf"
       },
       {
@@ -7203,6 +7615,7 @@
        "lang": "uz",
        "part": null,
        "size": 68301438,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/10/fizika-10-sinf-uz.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/fizika-10-sinf-uz.pdf"
       }
      ]
@@ -7226,6 +7639,7 @@
        "lang": "ru",
        "part": null,
        "size": 13270685,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/10/kimyo-10-sinf-ru.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/kimyo-10-sinf-ru.pdf"
       },
       {
@@ -7238,6 +7652,7 @@
        "lang": "uz",
        "part": null,
        "size": 63585023,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/10/kimyo-10-sinf-uz.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/kimyo-10-sinf-uz.pdf"
       }
      ]
@@ -7261,6 +7676,7 @@
        "lang": "ru",
        "part": null,
        "size": 37526551,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/10/biologiya-10-sinf-ru.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/biologiya-10-sinf-ru.pdf"
       },
       {
@@ -7273,6 +7689,7 @@
        "lang": "uz",
        "part": null,
        "size": 39588661,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/10/biologiya-10-sinf-uz.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/biologiya-10-sinf-uz.pdf"
       }
      ]
@@ -7296,6 +7713,7 @@
        "lang": "ru",
        "part": null,
        "size": 70042953,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/10/geografiya-10-sinf-ru.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/geografiya-10-sinf-ru.pdf"
       },
       {
@@ -7308,6 +7726,7 @@
        "lang": "uz",
        "part": null,
        "size": 188126604,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/10/geografiya-10-sinf-uz.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/geografiya-10-sinf-uz.pdf"
       }
      ]
@@ -7331,6 +7750,7 @@
        "lang": "ru",
        "part": null,
        "size": 24032397,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/10/ozbekiston-tarixi-10-sinf-ru.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/ozbekiston-tarixi-10-sinf-ru.pdf"
       },
       {
@@ -7343,6 +7763,7 @@
        "lang": "uz",
        "part": null,
        "size": 30056449,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/10/ozbekiston-tarixi-10-sinf-uz.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/ozbekiston-tarixi-10-sinf-uz.pdf"
       }
      ]
@@ -7366,6 +7787,7 @@
        "lang": "ru",
        "part": null,
        "size": 20167678,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/10/jahon-tarixi-10-sinf-ru.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/jahon-tarixi-10-sinf-ru.pdf"
       },
       {
@@ -7378,6 +7800,7 @@
        "lang": "uz",
        "part": null,
        "size": 13927225,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/10/jahon-tarixi-10-sinf-uz.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/jahon-tarixi-10-sinf-uz.pdf"
       }
      ]
@@ -7401,6 +7824,7 @@
        "lang": "ru",
        "part": null,
        "size": 5997270,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/10/ingliz-tili-10-sinf-ru.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/ingliz-tili-10-sinf-ru.pdf"
       },
       {
@@ -7413,6 +7837,7 @@
        "lang": "uz",
        "part": null,
        "size": 5037377,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/10/ingliz-tili-10-sinf-uz.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/ingliz-tili-10-sinf-uz.pdf"
       }
      ]
@@ -7436,6 +7861,7 @@
        "lang": "ru",
        "part": null,
        "size": 25822377,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/10/nemis-tili-10-sinf-ru.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/nemis-tili-10-sinf-ru.pdf"
       },
       {
@@ -7448,6 +7874,7 @@
        "lang": "uz",
        "part": null,
        "size": 25822377,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/10/nemis-tili-10-sinf-uz.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/nemis-tili-10-sinf-uz.pdf"
       }
      ]
@@ -7471,6 +7898,7 @@
        "lang": "ru",
        "part": null,
        "size": 82282869,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/10/fransuz-tili-10-sinf-ru.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/fransuz-tili-10-sinf-ru.pdf"
       },
       {
@@ -7483,6 +7911,7 @@
        "lang": "uz",
        "part": null,
        "size": 82464315,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/10/fransuz-tili-10-sinf-uz.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/fransuz-tili-10-sinf-uz.pdf"
       }
      ]
@@ -7506,6 +7935,7 @@
        "lang": "ru",
        "part": null,
        "size": 60261418,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/10/informatika-10-sinf-ru.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/informatika-10-sinf-ru.pdf"
       },
       {
@@ -7518,6 +7948,7 @@
        "lang": "uz",
        "part": null,
        "size": 14743849,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/10/informatika-10-sinf-uz.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/informatika-10-sinf-uz.pdf"
       }
      ]
@@ -7541,6 +7972,7 @@
        "lang": "ru",
        "part": null,
        "size": 43783320,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/10/tarbiya-10-sinf-ru.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/tarbiya-10-sinf-ru.pdf"
       },
       {
@@ -7553,6 +7985,7 @@
        "lang": "uz",
        "part": null,
        "size": 32001946,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/10/tarbiya-10-sinf-uz.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/tarbiya-10-sinf-uz.pdf"
       }
      ]
@@ -7576,6 +8009,7 @@
        "lang": "ru",
        "part": null,
        "size": 5351862,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/10/algebra-va-analiz-asoslari-10-sinf-ru.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/algebra-va-analiz-asoslari-10-sinf-ru.pdf"
       }
      ]
@@ -7599,6 +8033,7 @@
        "lang": "ru",
        "part": null,
        "size": 56541426,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/10/algebra-va-analiz-asoslari-geometriya-10-sinf-ru.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/algebra-va-analiz-asoslari-geometriya-10-sinf-ru.pdf"
       },
       {
@@ -7611,6 +8046,7 @@
        "lang": "ru",
        "part": 2,
        "size": 5351862,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/10/algebra-va-analiz-asoslari-geometriya-10-sinf-ru-2-qism.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/algebra-va-analiz-asoslari-geometriya-10-sinf-ru-2-qism.pdf"
       },
       {
@@ -7623,6 +8059,7 @@
        "lang": "uz",
        "part": null,
        "size": 49024575,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/10/algebra-va-analiz-asoslari-geometriya-10-sinf-uz.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/algebra-va-analiz-asoslari-geometriya-10-sinf-uz.pdf"
       },
       {
@@ -7635,6 +8072,7 @@
        "lang": "uz",
        "part": 2,
        "size": 60359566,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/10/algebra-va-analiz-asoslari-geometriya-10-sinf-uz-2-qism.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/algebra-va-analiz-asoslari-geometriya-10-sinf-uz-2-qism.pdf"
       }
      ]
@@ -7658,6 +8096,7 @@
        "lang": "ru",
        "part": null,
        "size": 7631543,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/10/chaqiruvga-qadar-boshlangich-tayyorgarlik-10-sinf-ru.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/chaqiruvga-qadar-boshlangich-tayyorgarlik-10-sinf-ru.pdf"
       },
       {
@@ -7670,6 +8109,7 @@
        "lang": "uz",
        "part": null,
        "size": 38770626,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/10/chaqiruvga-qadar-boshlangich-tayyorgarlik-10-sinf-uz.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/chaqiruvga-qadar-boshlangich-tayyorgarlik-10-sinf-uz.pdf"
       }
      ]
@@ -7693,6 +8133,7 @@
        "lang": "ru",
        "part": null,
        "size": 7060472,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/10/davlat-va-huquq-asoslari-10-sinf-ru.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/davlat-va-huquq-asoslari-10-sinf-ru.pdf"
       },
       {
@@ -7705,6 +8146,7 @@
        "lang": "uz",
        "part": null,
        "size": 2149542,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/10/davlat-va-huquq-asoslari-10-sinf-uz.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/davlat-va-huquq-asoslari-10-sinf-uz.pdf"
       }
      ]
@@ -7728,6 +8170,7 @@
        "lang": "ru",
        "part": null,
        "size": 2087518,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/10/dunyo-dinlari-tarixi-10-sinf-ru.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/dunyo-dinlari-tarixi-10-sinf-ru.pdf"
       },
       {
@@ -7740,6 +8183,7 @@
        "lang": "uz",
        "part": null,
        "size": 2436500,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/10/dunyo-dinlari-tarixi-10-sinf-uz.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/dunyo-dinlari-tarixi-10-sinf-uz.pdf"
       }
      ]
@@ -7763,6 +8207,7 @@
        "lang": "uz",
        "part": null,
        "size": 12030294,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/10/huquq-10-sinf-uz.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/huquq-10-sinf-uz.pdf"
       }
      ]
@@ -7786,6 +8231,7 @@
        "lang": "ru",
        "part": null,
        "size": 2106543,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/10/manaviyat-asoslari-10-sinf-ru.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/manaviyat-asoslari-10-sinf-ru.pdf"
       },
       {
@@ -7798,6 +8244,7 @@
        "lang": "uz",
        "part": null,
        "size": 1607089,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/10/manaviyat-asoslari-10-sinf-uz.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/manaviyat-asoslari-10-sinf-uz.pdf"
       }
      ]
@@ -7821,6 +8268,7 @@
        "lang": "ru",
        "part": null,
        "size": 1961078,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/10/organik-kimyo-10-sinf-ru.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/organik-kimyo-10-sinf-ru.pdf"
       },
       {
@@ -7833,6 +8281,7 @@
        "lang": "uz",
        "part": null,
        "size": 53642029,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/10/organik-kimyo-10-sinf-uz.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/organik-kimyo-10-sinf-uz.pdf"
       }
      ]
@@ -7861,6 +8310,7 @@
        "lang": "uz",
        "part": null,
        "size": 7104694,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/11/ona-tili-11-sinf-uz.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/ona-tili-11-sinf-uz.pdf"
       }
      ]
@@ -7884,6 +8334,7 @@
        "lang": "ru",
        "part": null,
        "size": 2614967,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/11/ozbek-tili-11-sinf-ru.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/ozbek-tili-11-sinf-ru.pdf"
       },
       {
@@ -7896,6 +8347,7 @@
        "lang": "uz",
        "part": null,
        "size": 2614967,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/11/ozbek-tili-11-sinf-uz.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/ozbek-tili-11-sinf-uz.pdf"
       }
      ]
@@ -7919,6 +8371,7 @@
        "lang": "ru",
        "part": null,
        "size": 831940,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/11/rus-tili-11-sinf-ru.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/rus-tili-11-sinf-ru.pdf"
       },
       {
@@ -7931,6 +8384,7 @@
        "lang": "uz",
        "part": null,
        "size": 5360533,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/11/rus-tili-11-sinf-uz.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/rus-tili-11-sinf-uz.pdf"
       }
      ]
@@ -7954,6 +8408,7 @@
        "lang": "ru",
        "part": 1,
        "size": 1495414,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/11/adabiyot-11-sinf-ru-1-qism.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/adabiyot-11-sinf-ru-1-qism.pdf"
       },
       {
@@ -7966,6 +8421,7 @@
        "lang": "ru",
        "part": 2,
        "size": 1007365,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/11/adabiyot-11-sinf-ru-2-qism.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/adabiyot-11-sinf-ru-2-qism.pdf"
       },
       {
@@ -7978,6 +8434,7 @@
        "lang": "uz",
        "part": 1,
        "size": 4741984,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/11/adabiyot-11-sinf-uz-1-qism.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/adabiyot-11-sinf-uz-1-qism.pdf"
       },
       {
@@ -7990,6 +8447,7 @@
        "lang": "uz",
        "part": 2,
        "size": 3511122,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/11/adabiyot-11-sinf-uz-2-qism.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/adabiyot-11-sinf-uz-2-qism.pdf"
       }
      ]
@@ -8013,6 +8471,7 @@
        "lang": "ru",
        "part": 1,
        "size": 65491417,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/11/matematika-11-sinf-ru-1-qism.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/matematika-11-sinf-ru-1-qism.pdf"
       },
       {
@@ -8025,6 +8484,7 @@
        "lang": "uz",
        "part": 1,
        "size": 70222441,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/11/matematika-11-sinf-uz-1-qism.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/matematika-11-sinf-uz-1-qism.pdf"
       },
       {
@@ -8037,6 +8497,7 @@
        "lang": "uz",
        "part": 2,
        "size": 4103891,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/11/matematika-11-sinf-uz-2-qism.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/matematika-11-sinf-uz-2-qism.pdf"
       }
      ]
@@ -8060,6 +8521,7 @@
        "lang": "ru",
        "part": null,
        "size": 65491417,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/11/algebra-11-sinf-ru.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/algebra-11-sinf-ru.pdf"
       },
       {
@@ -8072,6 +8534,7 @@
        "lang": "uz",
        "part": null,
        "size": 70222441,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/11/algebra-11-sinf-uz.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/algebra-11-sinf-uz.pdf"
       }
      ]
@@ -8095,6 +8558,7 @@
        "lang": "ru",
        "part": null,
        "size": 4411310,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/11/fizika-11-sinf-ru.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/fizika-11-sinf-ru.pdf"
       },
       {
@@ -8107,6 +8571,7 @@
        "lang": "uz",
        "part": null,
        "size": 4365986,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/11/fizika-11-sinf-uz.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/fizika-11-sinf-uz.pdf"
       }
      ]
@@ -8130,6 +8595,7 @@
        "lang": "ru",
        "part": null,
        "size": 73905424,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/11/kimyo-11-sinf-ru.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/kimyo-11-sinf-ru.pdf"
       },
       {
@@ -8142,6 +8608,7 @@
        "lang": "uz",
        "part": null,
        "size": 80927697,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/11/kimyo-11-sinf-uz.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/kimyo-11-sinf-uz.pdf"
       }
      ]
@@ -8165,6 +8632,7 @@
        "lang": "ru",
        "part": null,
        "size": 5983411,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/11/biologiya-11-sinf-ru.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/biologiya-11-sinf-ru.pdf"
       },
       {
@@ -8177,6 +8645,7 @@
        "lang": "uz",
        "part": null,
        "size": 5009826,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/11/biologiya-11-sinf-uz.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/biologiya-11-sinf-uz.pdf"
       }
      ]
@@ -8200,6 +8669,7 @@
        "lang": "ru",
        "part": null,
        "size": 77047391,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/11/ozbekiston-tarixi-11-sinf-ru.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/ozbekiston-tarixi-11-sinf-ru.pdf"
       },
       {
@@ -8212,6 +8682,7 @@
        "lang": "uz",
        "part": null,
        "size": 91855880,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/11/ozbekiston-tarixi-11-sinf-uz.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/ozbekiston-tarixi-11-sinf-uz.pdf"
       }
      ]
@@ -8235,6 +8706,7 @@
        "lang": "ru",
        "part": null,
        "size": 15590308,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/11/jahon-tarixi-11-sinf-ru.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/jahon-tarixi-11-sinf-ru.pdf"
       },
       {
@@ -8247,6 +8719,7 @@
        "lang": "uz",
        "part": null,
        "size": 37345853,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/11/jahon-tarixi-11-sinf-uz.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/jahon-tarixi-11-sinf-uz.pdf"
       }
      ]
@@ -8270,6 +8743,7 @@
        "lang": "ru",
        "part": null,
        "size": 72426614,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/11/ingliz-tili-11-sinf-ru.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/ingliz-tili-11-sinf-ru.pdf"
       },
       {
@@ -8282,6 +8756,7 @@
        "lang": "uz",
        "part": null,
        "size": 72667238,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/11/ingliz-tili-11-sinf-uz.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/ingliz-tili-11-sinf-uz.pdf"
       }
      ]
@@ -8305,6 +8780,7 @@
        "lang": "ru",
        "part": null,
        "size": 47445724,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/11/nemis-tili-11-sinf-ru.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/nemis-tili-11-sinf-ru.pdf"
       },
       {
@@ -8317,6 +8793,7 @@
        "lang": "uz",
        "part": null,
        "size": 47289893,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/11/nemis-tili-11-sinf-uz.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/nemis-tili-11-sinf-uz.pdf"
       }
      ]
@@ -8340,6 +8817,7 @@
        "lang": "ru",
        "part": null,
        "size": 69649788,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/11/fransuz-tili-11-sinf-ru.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/fransuz-tili-11-sinf-ru.pdf"
       },
       {
@@ -8352,6 +8830,7 @@
        "lang": "uz",
        "part": null,
        "size": 69629153,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/11/fransuz-tili-11-sinf-uz.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/fransuz-tili-11-sinf-uz.pdf"
       }
      ]
@@ -8375,6 +8854,7 @@
        "lang": "ru",
        "part": null,
        "size": 56336043,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/11/informatika-11-sinf-ru.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/informatika-11-sinf-ru.pdf"
       },
       {
@@ -8387,6 +8867,7 @@
        "lang": "uz",
        "part": null,
        "size": 14743849,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/11/informatika-11-sinf-uz.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/informatika-11-sinf-uz.pdf"
       }
      ]
@@ -8410,6 +8891,7 @@
        "lang": "ru",
        "part": null,
        "size": 30324931,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/11/tarbiya-11-sinf-ru.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/tarbiya-11-sinf-ru.pdf"
       },
       {
@@ -8422,6 +8904,7 @@
        "lang": "uz",
        "part": null,
        "size": 30443573,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/11/tarbiya-11-sinf-uz.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/tarbiya-11-sinf-uz.pdf"
       }
      ]
@@ -8445,6 +8928,7 @@
        "lang": "ru",
        "part": null,
        "size": 13674426,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/11/astronomiya-11-sinf-ru.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/astronomiya-11-sinf-ru.pdf"
       },
       {
@@ -8457,6 +8941,7 @@
        "lang": "uz",
        "part": null,
        "size": 12477329,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/11/astronomiya-11-sinf-uz.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/astronomiya-11-sinf-uz.pdf"
       }
      ]
@@ -8480,6 +8965,7 @@
        "lang": "ru",
        "part": null,
        "size": 2149261,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/11/chaqiruvga-qadar-boshlangich-tayyorgarlik-11-sinf-ru.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/chaqiruvga-qadar-boshlangich-tayyorgarlik-11-sinf-ru.pdf"
       },
       {
@@ -8492,6 +8978,7 @@
        "lang": "uz",
        "part": null,
        "size": 24531419,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/11/chaqiruvga-qadar-boshlangich-tayyorgarlik-11-sinf-uz.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/chaqiruvga-qadar-boshlangich-tayyorgarlik-11-sinf-uz.pdf"
       }
      ]
@@ -8515,6 +9002,7 @@
        "lang": "ru",
        "part": null,
        "size": 23136979,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/11/davlat-va-huquq-asoslari-11-sinf-ru.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/davlat-va-huquq-asoslari-11-sinf-ru.pdf"
       },
       {
@@ -8527,6 +9015,7 @@
        "lang": "uz",
        "part": null,
        "size": 22550591,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/11/davlat-va-huquq-asoslari-11-sinf-uz.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/davlat-va-huquq-asoslari-11-sinf-uz.pdf"
       }
      ]
@@ -8550,6 +9039,7 @@
        "lang": "ru",
        "part": null,
        "size": 1788147,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/11/dunyo-dinlari-tarixi-11-sinf-ru.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/dunyo-dinlari-tarixi-11-sinf-ru.pdf"
       },
       {
@@ -8562,6 +9052,7 @@
        "lang": "uz",
        "part": null,
        "size": 1678691,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/11/dunyo-dinlari-tarixi-11-sinf-uz.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/dunyo-dinlari-tarixi-11-sinf-uz.pdf"
       }
      ]
@@ -8585,6 +9076,7 @@
        "lang": "ru",
        "part": null,
        "size": 2106543,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/11/manaviyat-asoslari-11-sinf-ru.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/manaviyat-asoslari-11-sinf-ru.pdf"
       },
       {
@@ -8597,6 +9089,7 @@
        "lang": "uz",
        "part": null,
        "size": 1607089,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/11/manaviyat-asoslari-11-sinf-uz.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/manaviyat-asoslari-11-sinf-uz.pdf"
       }
      ]
@@ -8620,6 +9113,7 @@
        "lang": "ru",
        "part": null,
        "size": 1763108,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/11/tadbirkorlik-asoslari-11-sinf-ru.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/tadbirkorlik-asoslari-11-sinf-ru.pdf"
       },
       {
@@ -8632,6 +9126,7 @@
        "lang": "uz",
        "part": null,
        "size": 1747509,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/11/tadbirkorlik-asoslari-11-sinf-uz.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/tadbirkorlik-asoslari-11-sinf-uz.pdf"
       }
      ]
@@ -8655,6 +9150,7 @@
        "lang": "ru",
        "part": null,
        "size": 73905424,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/11/umumiy-kimyo-11-sinf-ru.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/umumiy-kimyo-11-sinf-ru.pdf"
       },
       {
@@ -8667,6 +9163,7 @@
        "lang": "uz",
        "part": null,
        "size": 80927697,
+       "src": "https://static.oliygoh.uz/uploads/darsliklar/11/umumiy-kimyo-11-sinf-uz.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/umumiy-kimyo-11-sinf-uz.pdf"
       }
      ]
