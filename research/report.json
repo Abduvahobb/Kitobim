@@ -1,0 +1,398 @@
+{
+ "mul_search": {
+  "error": "<HTTPError 429: 'Too Many Requests'>"
+ },
+ "mul_cats": {
+  "error": "<HTTPError 429: 'Too Many Requests'>"
+ },
+ "wsexport_mul": {
+  "error": "<HTTPError 403: 'Forbidden'>"
+ },
+ "wsexport_ru": {
+  "error": "<HTTPError 403: 'Forbidden'>"
+ },
+ "ru_check": {
+  "error": "<HTTPError 429: 'Too Many Requests'>"
+ },
+ "ziyouz_audio": {
+  "status": 200,
+  "type": "audio/mpeg",
+  "length": "16447547",
+  "disposition": null,
+  "head": "4944330300000000205c54414c420000"
+ },
+ "librivox": {
+  "Pushkin": [
+   [
+    "Krasavitse",
+    "Russian",
+    "00:02:14",
+    "https://archive.org/compress/krasavitse-librivox/formats=64KBPS MP3&file=/krasavitse-librivox.zip"
+   ],
+   [
+    "Dubrowskij",
+    "German",
+    "2:52:57",
+    "https://archive.org/compress/dubrowskij_0806_librivox/formats=64KBPS MP3&file=/dubrowskij_0806_librivox.zip"
+   ],
+   [
+    "Поэмы (Poems)",
+    "Russian",
+    "7:42:07",
+    "https://archive.org/compress/poemi_1111_librivox/formats=64KBPS MP3&file=/poemi_1111_librivox.zip"
+   ],
+   [
+    "Pique-Dame",
+    "German",
+    "1:03:12",
+    "https://archive.org/compress/pique_dame_0812_librivox/formats=64KBPS MP3&file=/pique_dame_0812_librivox.zip"
+   ],
+   [
+    "Schuss",
+    "German",
+    "0:34:54",
+    "https://archive.org/compress/schuss_hk_librivox/formats=64KBPS MP3&file=/schuss_hk_librivox.zip"
+   ],
+   [
+    "Eugene Onéguine",
+    "English",
+    "4:26:23",
+    "https://archive.org/compress/eugene_oneguine_ma_librivox/formats=64KBPS MP3&file=/eugene_oneguine_ma_librivox.zip"
+   ],
+   [
+    "Daughter of the Commandant",
+    "English",
+    "3:57:47",
+    "https://archive.org/compress/daughter_commandant_kd/formats=64KBPS MP3&file=/daughter_commandant_kd.zip"
+   ],
+   [
+    "Ausgewählte Erzählungen",
+    "German",
+    "05:48:00",
+    "https://archive.org/compress/ausgewahlte_erzahlungen_puschkin_1505_librivox/formats=64KBPS MP3&file=/ausgewahlte_erzahlungen_puschkin_1505_librivox.zip"
+   ],
+   [
+    "Повести покойного Ивана Петровича Белкина",
+    "Russian",
+    "02:24:20",
+    "https://archive.org/compress/belkintales_1406_librivox/formats=64KBPS MP3&file=/belkintales_1406_librivox.zip"
+   ],
+   [
+    "Дубровский (Dubrovsky)",
+    "Russian",
+    "02:17:20",
+    "https://archive.org/compress/dubrovsky_1411_librivox/formats=64KBPS MP3&file=/dubrovsky_1411_librivox.zip"
+   ]
+  ],
+  "Tolstoy": [
+   [
+    "Childhood",
+    "English",
+    "4:06:36",
+    "https://archive.org/compress/childhood_english_librivox/formats=64KBPS MP3&file=/childhood_english_librivox.zip"
+   ],
+   [
+    "Childhood - Детство",
+    "Russian",
+    "3:30:37",
+    "https://archive.org/compress/childhood_russian_librivox/formats=64KBPS MP3&file=/childhood_russian_librivox.zip"
+   ],
+   [
+    "What Men Live By and Other Tales",
+    "English",
+    "2:01:15",
+    "https://archive.org/compress/what_men_live_by_librivox/formats=64KBPS MP3&file=/what_men_live_by_librivox.zip"
+   ],
+   [
+    "War and Peace, Book 01: 1805",
+    "English",
+    "5:31:39",
+    "https://archive.org/compress/war_and_peace_01_librivox/formats=64KBPS MP3&file=/war_and_peace_01_librivox.zip"
+   ],
+   [
+    "Death of Ivan Ilyitch",
+    "English",
+    "2:32:14",
+    "https://archive.org/compress/deathivanilyitch_1104_librivox/formats=64KBPS MP3&file=/deathivanilyitch_1104_librivox.zip"
+   ],
+   [
+    "Master and Man",
+    "English",
+    "2:23:26",
+    "https://archive.org/compress/master_and_man/formats=64KBPS MP3&file=/master_and_man.zip"
+   ],
+   [
+    "War and Peace, Book 02: 1805",
+    "English",
+    "4:31:27",
+    "https://archive.org/compress/war_and_peace_02_0801_librivox/formats=64KBPS MP3&file=/war_and_peace_02_0801_librivox.zip"
+   ],
+   [
+    "War and Peace, Book 03: 1805",
+    "English",
+    "5:02:22",
+    "https://archive.org/compress/war_and_peace_03_0712_librivox/formats=64KBPS MP3&file=/war_and_peace_03_0712_librivox.zip"
+   ],
+   [
+    "Anna Karenina, Book 1",
+    "English",
+    "4:25:30",
+    "https://archive.org/compress/annakarenina1_1011_librivox/formats=64KBPS MP3&file=/annakarenina1_1011_librivox.zip"
+   ],
+   [
+    "War and Peace, Book 04: 1806",
+    "English",
+    "3:02:01",
+    "https://archive.org/compress/war_and_peace_04_0802_librivox/formats=64KBPS MP3&file=/war_and_peace_04_0802_librivox.zip"
+   ]
+  ],
+  "Chekhov": [
+   [
+    "Tales of Chekhov Vol. 01",
+    "English",
+    "2:01:50",
+    "https://archive.org/compress/tales_chekhov_vol01_0906_librivox/formats=64KBPS MP3&file=/tales_chekhov_vol01_0906_librivox.zip"
+   ],
+   [
+    "Proposal",
+    "English",
+    "0:31:47",
+    "https://archive.org/compress/proposal_0901_librivox/formats=64KBPS MP3&file=/proposal_0901_librivox.zip"
+   ],
+   [
+    "Seagull",
+    "English",
+    "2:07:37",
+    "https://archive.org/compress/seagull_0903_librivox/formats=64KBPS MP3&file=/seagull_0903_librivox.zip"
+   ],
+   [
+    "Uncle Vanya",
+    "English",
+    "1:52:36",
+    "https://archive.org/compress/uncle_vanya_1006_librivox/formats=64KBPS MP3&file=/uncle_vanya_1006_librivox.zip"
+   ],
+   [
+    "Cherry Orchard",
+    "English",
+    "2:01:24",
+    "https://archive.org/compress/cherry_orchard_1008_librivox/formats=64KBPS MP3&file=/cherry_orchard_1008_librivox.zip"
+   ],
+   [
+    "Duel",
+    "English",
+    "5:13:07",
+    "https://archive.org/compress/duel_pg_1007_librivox/formats=64KBPS MP3&file=/duel_pg_1007_librivox.zip"
+   ],
+   [
+    "Three Sisters",
+    "English",
+    "2:21:35",
+    "https://archive.org/compress/three_sisters_1101_librivox/formats=64KBPS MP3&file=/three_sisters_1101_librivox.zip"
+   ],
+   [
+    "Swan Song",
+    "English",
+    "0:18:26",
+    "https://archive.org/compress/swansong_1107_librivox/formats=64KBPS MP3&file=/swansong_1107_librivox.zip"
+   ],
+   [
+    "Bär",
+    "German",
+    "0:35:25",
+    "https://archive.org/compress/baer_1208_librivox/formats=64KBPS MP3&file=/baer_1208_librivox.zip"
+   ],
+   [
+    "Ivanov",
+    "English",
+    "2:31:23",
+    "https://archive.org/compress/ivanov_1211_librivox/formats=64KBPS MP3&file=/ivanov_1211_librivox.zip"
+   ]
+  ],
+  "Andersen": [
+   [
+    "Andersen's Fairy Tales",
+    "English",
+    "5:51:04",
+    "https://archive.org/compress/andersens_fairytales_librivox/formats=64KBPS MP3&file=/andersens_fairytales_librivox.zip"
+   ],
+   [
+    "Udvalgte Danske Eventyr 001",
+    "Danish",
+    "3:04:00",
+    "https://archive.org/compress/danish_fairytales_0805_librivox/formats=64KBPS MP3&file=/danish_fairytales_0805_librivox.zip"
+   ],
+   [
+    "Andersens Sproken en vertellingen",
+    "Dutch",
+    "16:17:42",
+    "https://archive.org/compress/sproken_andersen_0906_librivox/formats=64KBPS MP3&file=/sproken_andersen_0906_librivox.zip"
+   ],
+   [
+    "Hans Christian Andersen Fairy Tale Collection",
+    "English",
+    "4:39:21",
+    "https://archive.org/compress/andersen_fairy_tale_collection_0907_librivox/formats=64KBPS MP3&file=/andersen_fairy_tale_collection_0907_librivox.zip"
+   ],
+   [
+    "Märchen",
+    "German",
+    "15:43:17",
+    "https://archive.org/compress/maerchen_andersen_1004_librivox/formats=64KBPS MP3&file=/maerchen_andersen_1004_librivox.zip"
+   ],
+   [
+    "Il était une fois... - 001 (contes pour enfants)",
+    "French",
+    "3:59:53",
+    "https://archive.org/compress/contesethistoirespreferesdesenfants_001_1003_librivox/formats=64KBPS MP3&file=/contesethistoirespreferesdesenfants_001_1003_librivox.zip"
+   ],
+   [
+    "Snow Queen and Other Stories",
+    "English",
+    "2:24:31",
+    "https://archive.org/compress/snow_queen_1212_librivox/formats=64KBPS MP3&file=/snow_queen_1212_librivox.zip"
+   ],
+   [
+    "Hans Christian Andersen: Fairytales and Short Stories Volume 1, 1835 to 1842",
+    "English",
+    "9:41:13",
+    "https://archive.org/compress/andersenfairytalesvol1_1204_librivox/formats=64KBPS MP3&file=/andersenfairytalesvol1_1204_librivox.zip"
+   ],
+   [
+    "Hans Christian Andersen: Fairytales and Short Stories Volume 2, 1844 to 1847",
+    "English",
+    "6:16:51",
+    "https://archive.org/compress/andersenfairytales_vol2_1208_librivox/formats=64KBPS MP3&file=/andersenfairytales_vol2_1208_librivox.zip"
+   ],
+   [
+    "Hans Christian Andersen: Fairytales and Short Stories Volume 3, 1848 to 1853",
+    "English",
+    "4:23:44",
+    "https://archive.org/compress/andersenfairytales_vol3_1212_librivox/formats=64KBPS MP3&file=/andersenfairytales_vol3_1212_librivox.zip"
+   ]
+  ],
+  "Grimm": [
+   [
+    "Märchen (Index aller Märchen)",
+    "German",
+    "0",
+    ""
+   ],
+   [
+    "Grimms' Fairy Tales",
+    "English",
+    "10:32:32",
+    "https://archive.org/compress/grimms_english_librivox/formats=64KBPS MP3&file=/grimms_english_librivox.zip"
+   ],
+   [
+    "Märchen 2",
+    "German",
+    "8:26:19",
+    "https://archive.org/compress/grimm_maerchen2_librivox/formats=64KBPS MP3&file=/grimm_maerchen2_librivox.zip"
+   ],
+   [
+    "Märchen 1",
+    "German",
+    "4:55:03",
+    "https://archive.org/compress/grimm_maerchen_1_librivox/formats=64KBPS MP3&file=/grimm_maerchen_1_librivox.zip"
+   ],
+   [
+    "Personal Collection of Short Tales compiled by Carmie",
+    "English",
+    "0:44:33",
+    "https://archive.org/compress/personal_collection_tales/formats=64KBPS MP3&file=/personal_collection_tales.zip"
+   ],
+   [
+    "Märchen 3",
+    "German",
+    "6:07:44",
+    "https://archive.org/compress/grimms_maerchen-3_librivox/formats=64KBPS MP3&file=/grimms_maerchen-3_librivox.zip"
+   ],
+   [
+    "Märchen 4",
+    "German",
+    "4:29:16",
+    "https://archive.org/compress/maerchen4_0712_librivox/formats=64KBPS MP3&file=/maerchen4_0712_librivox.zip"
+   ],
+   [
+    "Märchen 5",
+    "German",
+    "6:33:39",
+    "https://archive.org/compress/maerchen5_0803_librivox/formats=64KBPS MP3&file=/maerchen5_0803_librivox.zip"
+   ],
+   [
+    "Grimms eventyr I udvalg",
+    "Danish",
+    "1:59:48",
+    "https://archive.org/compress/grimms_eventyr_kh_librivox/formats=64KBPS MP3&file=/grimms_eventyr_kh_librivox.zip"
+   ],
+   [
+    "Il était une fois... - 001 (contes pour enfants)",
+    "French",
+    "3:59:53",
+    "https://archive.org/compress/contesethistoirespreferesdesenfants_001_1003_librivox/formats=64KBPS MP3&file=/contesethistoirespreferesdesenfants_001_1003_librivox.zip"
+   ]
+  ],
+  "Aesop": [
+   [
+    "Fábulas de Esopo, Vol. 1",
+    "Spanish",
+    "00:41:37",
+    "https://archive.org/compress/fabulas_esopo_01_librivox/formats=64KBPS MP3&file=/fabulas_esopo_01_librivox.zip"
+   ],
+   [
+    "Fábulas de Esopo, Vol. 2",
+    "Spanish",
+    "0:49:28",
+    "https://archive.org/compress/fabulas_esopo_02_librivox/formats=64KBPS MP3&file=/fabulas_esopo_02_librivox.zip"
+   ],
+   [
+    "Fábulas de Esopo, Vol. 3",
+    "Spanish",
+    "0:34:16",
+    "https://archive.org/compress/fabulas_esopo_03_librivox/formats=64KBPS MP3&file=/fabulas_esopo_03_librivox.zip"
+   ],
+   [
+    "Aesop's Fables, Volume 03 (Fables 51-75)",
+    "English",
+    "0:29:24",
+    "https://archive.org/compress/aesop_fables_volume_three_librivox/formats=64KBPS MP3&file=/aesop_fables_volume_three_librivox.zip"
+   ],
+   [
+    "Aesop's Fables, Volume 04 (Fables 76-100)",
+    "English",
+    " 0:27:58",
+    "https://archive.org/compress/aesop_fables_volume_four_librivox/formats=64KBPS MP3&file=/aesop_fables_volume_four_librivox.zip"
+   ],
+   [
+    "Aesop's Fables, Volume 05 (Fables 101-125)",
+    "English",
+    "0:32:17",
+    "https://archive.org/compress/aesop_fables_volume_five_librivox/formats=64KBPS MP3&file=/aesop_fables_volume_five_librivox.zip"
+   ],
+   [
+    "Aesop's Fables, Volume 06 (Fables 126-150)",
+    "English",
+    "0:31:09",
+    "https://archive.org/compress/aesop_fables_volume_six_librivox/formats=64KBPS MP3&file=/aesop_fables_volume_six_librivox.zip"
+   ],
+   [
+    "Aesop's Fables, Volume 07 (Fables 151-175)",
+    "English",
+    "0:33:33",
+    "https://archive.org/compress/aesop_fables_volume_seven_librivox/formats=64KBPS MP3&file=/aesop_fables_volume_seven_librivox.zip"
+   ],
+   [
+    "Aesop's Fables, Volume 08 (Fables 176-200)",
+    "English",
+    "0:31:22",
+    "https://archive.org/compress/aesop_fables_volume_eight_librivox/formats=64KBPS MP3&file=/aesop_fables_volume_eight_librivox.zip"
+   ],
+   [
+    "Aesop's Fables, Volume 09 (Fables 201-225)",
+    "English",
+    "0:30:37",
+    "https://archive.org/compress/aesop_fables_volume_nine_librivox/formats=64KBPS MP3&file=/aesop_fables_volume_nine_librivox.zip"
+   ]
+  ]
+ }
+}
