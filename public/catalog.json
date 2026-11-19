@@ -1,7 +1,7 @@
 {
  "version": 2,
  "note": "Avtomatik yasalgan (tools/kitoblar.py). Manba: oliygoh.uz",
- "updated": "2026-11-19",
+ "updated": "2026-11-19 17:32",
  "grades": [
   {
    "grade": 1,
@@ -733,18 +733,18 @@
     {
      "id": "1-yozuv-daftari-propis",
      "name": {
-      "uz": "Yozuv daftari propis",
-      "ru": "Yozuv daftari propis",
-      "en": "Yozuv daftari propis"
+      "uz": "Yozuv daftari (propis)",
+      "ru": "Пропись",
+      "en": "Handwriting workbook"
      },
      "color": "#AD1457",
      "books": [
       {
        "id": "yozuv-daftari-propis-1-sinf-ru-1-qism",
        "title": {
-        "uz": "Yozuv daftari propis · 1-sinf · 1-qism",
-        "ru": "Yozuv daftari propis · 1 класс · 1 часть",
-        "en": "Yozuv daftari propis · Grade 1 · Part 1"
+        "uz": "Yozuv daftari (propis) · 1-sinf · 1-qism",
+        "ru": "Пропись · 1 класс · 1 часть",
+        "en": "Handwriting workbook · Grade 1 · Part 1"
        },
        "lang": "ru",
        "part": 1,
@@ -1417,18 +1417,18 @@
     {
      "id": "2-oqish-kitobi",
      "name": {
-      "uz": "Oqish kitobi",
-      "ru": "Oqish kitobi",
-      "en": "Oqish kitobi"
+      "uz": "O‘qish kitobi",
+      "ru": "Книга для чтения",
+      "en": "Reading book"
      },
      "color": "#7B3FB0",
      "books": [
       {
        "id": "oqish-kitobi-2-sinf-ru",
        "title": {
-        "uz": "Oqish kitobi · 2-sinf",
-        "ru": "Oqish kitobi · 2 класс",
-        "en": "Oqish kitobi · Grade 2"
+        "uz": "O‘qish kitobi · 2-sinf",
+        "ru": "Книга для чтения · 2 класс",
+        "en": "Reading book · Grade 2"
        },
        "lang": "ru",
        "part": null,
@@ -1438,9 +1438,9 @@
       {
        "id": "oqish-kitobi-2-sinf-uz",
        "title": {
-        "uz": "Oqish kitobi · 2-sinf",
-        "ru": "Oqish kitobi · 2 класс",
-        "en": "Oqish kitobi · Grade 2"
+        "uz": "O‘qish kitobi · 2-sinf",
+        "ru": "Книга для чтения · 2 класс",
+        "en": "Reading book · Grade 2"
        },
        "lang": "uz",
        "part": null,
@@ -2232,18 +2232,18 @@
     {
      "id": "3-oqish-kitobi",
      "name": {
-      "uz": "Oqish kitobi",
-      "ru": "Oqish kitobi",
-      "en": "Oqish kitobi"
+      "uz": "O‘qish kitobi",
+      "ru": "Книга для чтения",
+      "en": "Reading book"
      },
      "color": "#7B3FB0",
      "books": [
       {
        "id": "oqish-kitobi-3-sinf-ru",
        "title": {
-        "uz": "Oqish kitobi · 3-sinf",
-        "ru": "Oqish kitobi · 3 класс",
-        "en": "Oqish kitobi · Grade 3"
+        "uz": "O‘qish kitobi · 3-sinf",
+        "ru": "Книга для чтения · 3 класс",
+        "en": "Reading book · Grade 3"
        },
        "lang": "ru",
        "part": null,
@@ -2253,9 +2253,9 @@
       {
        "id": "oqish-kitobi-3-sinf-uz",
        "title": {
-        "uz": "Oqish kitobi · 3-sinf",
-        "ru": "Oqish kitobi · 3 класс",
-        "en": "Oqish kitobi · Grade 3"
+        "uz": "O‘qish kitobi · 3-sinf",
+        "ru": "Книга для чтения · 3 класс",
+        "en": "Reading book · Grade 3"
        },
        "lang": "uz",
        "part": null,
@@ -3432,8 +3432,8 @@
      "id": "5-botanika",
      "name": {
       "uz": "Botanika",
-      "ru": "Botanika",
-      "en": "Botanika"
+      "ru": "Ботаника",
+      "en": "Botany"
      },
      "color": "#1F6F8B",
      "books": [
@@ -3441,8 +3441,8 @@
        "id": "botanika-5-sinf-ru",
        "title": {
         "uz": "Botanika · 5-sinf",
-        "ru": "Botanika · 5 класс",
-        "en": "Botanika · Grade 5"
+        "ru": "Ботаника · 5 класс",
+        "en": "Botany · Grade 5"
        },
        "lang": "ru",
        "part": null,
@@ -3453,8 +3453,8 @@
        "id": "botanika-5-sinf-uz",
        "title": {
         "uz": "Botanika · 5-sinf",
-        "ru": "Botanika · 5 класс",
-        "en": "Botanika · Grade 5"
+        "ru": "Ботаника · 5 класс",
+        "en": "Botany · Grade 5"
        },
        "lang": "uz",
        "part": null,
@@ -3537,8 +3537,8 @@
      "id": "5-tarixdan-hikoyalar",
      "name": {
       "uz": "Tarixdan hikoyalar",
-      "ru": "Tarixdan hikoyalar",
-      "en": "Tarixdan hikoyalar"
+      "ru": "Рассказы из истории",
+      "en": "Stories from history"
      },
      "color": "#2563C9",
      "books": [
@@ -3546,8 +3546,8 @@
        "id": "tarixdan-hikoyalar-5-sinf-ru",
        "title": {
         "uz": "Tarixdan hikoyalar · 5-sinf",
-        "ru": "Tarixdan hikoyalar · 5 класс",
-        "en": "Tarixdan hikoyalar · Grade 5"
+        "ru": "Рассказы из истории · 5 класс",
+        "en": "Stories from history · Grade 5"
        },
        "lang": "ru",
        "part": null,
@@ -3558,8 +3558,8 @@
        "id": "tarixdan-hikoyalar-5-sinf-uz",
        "title": {
         "uz": "Tarixdan hikoyalar · 5-sinf",
-        "ru": "Tarixdan hikoyalar · 5 класс",
-        "en": "Tarixdan hikoyalar · Grade 5"
+        "ru": "Рассказы из истории · 5 класс",
+        "en": "Stories from history · Grade 5"
        },
        "lang": "uz",
        "part": null,
@@ -3641,18 +3641,18 @@
     {
      "id": "5-vatan-tuygusi",
      "name": {
-      "uz": "Vatan tuygusi",
-      "ru": "Vatan tuygusi",
-      "en": "Vatan tuygusi"
+      "uz": "Vatan tuyg‘usi",
+      "ru": "Чувство Родины",
+      "en": "Love for the homeland"
      },
      "color": "#2563C9",
      "books": [
       {
        "id": "vatan-tuygusi-5-sinf-ru",
        "title": {
-        "uz": "Vatan tuygusi · 5-sinf",
-        "ru": "Vatan tuygusi · 5 класс",
-        "en": "Vatan tuygusi · Grade 5"
+        "uz": "Vatan tuyg‘usi · 5-sinf",
+        "ru": "Чувство Родины · 5 класс",
+        "en": "Love for the homeland · Grade 5"
        },
        "lang": "ru",
        "part": null,
@@ -3662,9 +3662,9 @@
       {
        "id": "vatan-tuygusi-5-sinf-uz",
        "title": {
-        "uz": "Vatan tuygusi · 5-sinf",
-        "ru": "Vatan tuygusi · 5 класс",
-        "en": "Vatan tuygusi · Grade 5"
+        "uz": "Vatan tuyg‘usi · 5-sinf",
+        "ru": "Чувство Родины · 5 класс",
+        "en": "Love for the homeland · Grade 5"
        },
        "lang": "uz",
        "part": null,
@@ -4184,8 +4184,8 @@
      "id": "6-botanika",
      "name": {
       "uz": "Botanika",
-      "ru": "Botanika",
-      "en": "Botanika"
+      "ru": "Ботаника",
+      "en": "Botany"
      },
      "color": "#1F6F8B",
      "books": [
@@ -4193,8 +4193,8 @@
        "id": "botanika-6-sinf-ru",
        "title": {
         "uz": "Botanika · 6-sinf",
-        "ru": "Botanika · 6 класс",
-        "en": "Botanika · Grade 6"
+        "ru": "Ботаника · 6 класс",
+        "en": "Botany · Grade 6"
        },
        "lang": "ru",
        "part": null,
@@ -4205,8 +4205,8 @@
        "id": "botanika-6-sinf-uz",
        "title": {
         "uz": "Botanika · 6-sinf",
-        "ru": "Botanika · 6 класс",
-        "en": "Botanika · Grade 6"
+        "ru": "Ботаника · 6 класс",
+        "en": "Botany · Grade 6"
        },
        "lang": "uz",
        "part": null,
@@ -4254,8 +4254,8 @@
      "id": "6-qadimgi-dunyo-tarixi",
      "name": {
       "uz": "Qadimgi dunyo tarixi",
-      "ru": "Qadimgi dunyo tarixi",
-      "en": "Qadimgi dunyo tarixi"
+      "ru": "История Древнего мира",
+      "en": "Ancient history"
      },
      "color": "#6D4C2F",
      "books": [
@@ -4263,8 +4263,8 @@
        "id": "qadimgi-dunyo-tarixi-6-sinf-ru",
        "title": {
         "uz": "Qadimgi dunyo tarixi · 6-sinf",
-        "ru": "Qadimgi dunyo tarixi · 6 класс",
-        "en": "Qadimgi dunyo tarixi · Grade 6"
+        "ru": "История Древнего мира · 6 класс",
+        "en": "Ancient history · Grade 6"
        },
        "lang": "ru",
        "part": null,
@@ -4275,8 +4275,8 @@
        "id": "qadimgi-dunyo-tarixi-6-sinf-uz",
        "title": {
         "uz": "Qadimgi dunyo tarixi · 6-sinf",
-        "ru": "Qadimgi dunyo tarixi · 6 класс",
-        "en": "Qadimgi dunyo tarixi · Grade 6"
+        "ru": "История Древнего мира · 6 класс",
+        "en": "Ancient history · Grade 6"
        },
        "lang": "uz",
        "part": null,
@@ -4358,18 +4358,18 @@
     {
      "id": "6-vatan-tuygusi",
      "name": {
-      "uz": "Vatan tuygusi",
-      "ru": "Vatan tuygusi",
-      "en": "Vatan tuygusi"
+      "uz": "Vatan tuyg‘usi",
+      "ru": "Чувство Родины",
+      "en": "Love for the homeland"
      },
      "color": "#2563C9",
      "books": [
       {
        "id": "vatan-tuygusi-6-sinf-ru",
        "title": {
-        "uz": "Vatan tuygusi · 6-sinf",
-        "ru": "Vatan tuygusi · 6 класс",
-        "en": "Vatan tuygusi · Grade 6"
+        "uz": "Vatan tuyg‘usi · 6-sinf",
+        "ru": "Чувство Родины · 6 класс",
+        "en": "Love for the homeland · Grade 6"
        },
        "lang": "ru",
        "part": null,
@@ -4379,9 +4379,9 @@
       {
        "id": "vatan-tuygusi-6-sinf-uz",
        "title": {
-        "uz": "Vatan tuygusi · 6-sinf",
-        "ru": "Vatan tuygusi · 6 класс",
-        "en": "Vatan tuygusi · Grade 6"
+        "uz": "Vatan tuyg‘usi · 6-sinf",
+        "ru": "Чувство Родины · 6 класс",
+        "en": "Love for the homeland · Grade 6"
        },
        "lang": "uz",
        "part": null,
@@ -5039,18 +5039,18 @@
     {
      "id": "7-milliy-istiqlol-goyasi-va-manaviyat-asoslari",
      "name": {
-      "uz": "Milliy istiqlol goyasi va manaviyat asoslari",
-      "ru": "Milliy istiqlol goyasi va manaviyat asoslari",
-      "en": "Milliy istiqlol goyasi va manaviyat asoslari"
+      "uz": "Milliy istiqlol g‘oyasi va ma’naviyat asoslari",
+      "ru": "Идея национальной независимости и основы духовности",
+      "en": "National idea and spirituality"
      },
      "color": "#00796B",
      "books": [
       {
        "id": "milliy-istiqlol-goyasi-va-manaviyat-asoslari-7-sinf-ru",
        "title": {
-        "uz": "Milliy istiqlol goyasi va manaviyat asoslari · 7-sinf",
-        "ru": "Milliy istiqlol goyasi va manaviyat asoslari · 7 класс",
-        "en": "Milliy istiqlol goyasi va manaviyat asoslari · Grade 7"
+        "uz": "Milliy istiqlol g‘oyasi va ma’naviyat asoslari · 7-sinf",
+        "ru": "Идея национальной независимости и основы духовности · 7 класс",
+        "en": "National idea and spirituality · Grade 7"
        },
        "lang": "ru",
        "part": null,
@@ -5060,9 +5060,9 @@
       {
        "id": "milliy-istiqlol-goyasi-va-manaviyat-asoslari-7-sinf-uz",
        "title": {
-        "uz": "Milliy istiqlol goyasi va manaviyat asoslari · 7-sinf",
-        "ru": "Milliy istiqlol goyasi va manaviyat asoslari · 7 класс",
-        "en": "Milliy istiqlol goyasi va manaviyat asoslari · Grade 7"
+        "uz": "Milliy istiqlol g‘oyasi va ma’naviyat asoslari · 7-sinf",
+        "ru": "Идея национальной независимости и основы духовности · 7 класс",
+        "en": "National idea and spirituality · Grade 7"
        },
        "lang": "uz",
        "part": null,
@@ -5180,8 +5180,8 @@
      "id": "7-zoologiya",
      "name": {
       "uz": "Zoologiya",
-      "ru": "Zoologiya",
-      "en": "Zoologiya"
+      "ru": "Зоология",
+      "en": "Zoology"
      },
      "color": "#00796B",
      "books": [
@@ -5189,8 +5189,8 @@
        "id": "zoologiya-7-sinf-ru",
        "title": {
         "uz": "Zoologiya · 7-sinf",
-        "ru": "Zoologiya · 7 класс",
-        "en": "Zoologiya · Grade 7"
+        "ru": "Зоология · 7 класс",
+        "en": "Zoology · Grade 7"
        },
        "lang": "ru",
        "part": null,
@@ -5201,8 +5201,8 @@
        "id": "zoologiya-7-sinf-uz",
        "title": {
         "uz": "Zoologiya · 7-sinf",
-        "ru": "Zoologiya · 7 класс",
-        "en": "Zoologiya · Grade 7"
+        "ru": "Зоология · 7 класс",
+        "en": "Zoology · Grade 7"
        },
        "lang": "uz",
        "part": null,
@@ -5896,8 +5896,8 @@
      "id": "8-iqtisodiyot",
      "name": {
       "uz": "Iqtisodiyot",
-      "ru": "Iqtisodiyot",
-      "en": "Iqtisodiyot"
+      "ru": "Экономика",
+      "en": "Economics"
      },
      "color": "#3949AB",
      "books": [
@@ -5905,8 +5905,8 @@
        "id": "iqtisodiyot-8-sinf-ru",
        "title": {
         "uz": "Iqtisodiyot · 8-sinf",
-        "ru": "Iqtisodiyot · 8 класс",
-        "en": "Iqtisodiyot · Grade 8"
+        "ru": "Экономика · 8 класс",
+        "en": "Economics · Grade 8"
        },
        "lang": "ru",
        "part": null,
@@ -5917,8 +5917,8 @@
        "id": "iqtisodiyot-8-sinf-uz",
        "title": {
         "uz": "Iqtisodiyot · 8-sinf",
-        "ru": "Iqtisodiyot · 8 класс",
-        "en": "Iqtisodiyot · Grade 8"
+        "ru": "Экономика · 8 класс",
+        "en": "Economics · Grade 8"
        },
        "lang": "uz",
        "part": null,
@@ -5965,18 +5965,18 @@
     {
      "id": "8-milliy-istiqlol-goyasi-va-manaviyat-asoslari",
      "name": {
-      "uz": "Milliy istiqlol goyasi va manaviyat asoslari",
-      "ru": "Milliy istiqlol goyasi va manaviyat asoslari",
-      "en": "Milliy istiqlol goyasi va manaviyat asoslari"
+      "uz": "Milliy istiqlol g‘oyasi va ma’naviyat asoslari",
+      "ru": "Идея национальной независимости и основы духовности",
+      "en": "National idea and spirituality"
      },
      "color": "#00796B",
      "books": [
       {
        "id": "milliy-istiqlol-goyasi-va-manaviyat-asoslari-8-sinf-ru",
        "title": {
-        "uz": "Milliy istiqlol goyasi va manaviyat asoslari · 8-sinf",
-        "ru": "Milliy istiqlol goyasi va manaviyat asoslari · 8 класс",
-        "en": "Milliy istiqlol goyasi va manaviyat asoslari · Grade 8"
+        "uz": "Milliy istiqlol g‘oyasi va ma’naviyat asoslari · 8-sinf",
+        "ru": "Идея национальной независимости и основы духовности · 8 класс",
+        "en": "National idea and spirituality · Grade 8"
        },
        "lang": "ru",
        "part": null,
@@ -5986,9 +5986,9 @@
       {
        "id": "milliy-istiqlol-goyasi-va-manaviyat-asoslari-8-sinf-uz",
        "title": {
-        "uz": "Milliy istiqlol goyasi va manaviyat asoslari · 8-sinf",
-        "ru": "Milliy istiqlol goyasi va manaviyat asoslari · 8 класс",
-        "en": "Milliy istiqlol goyasi va manaviyat asoslari · Grade 8"
+        "uz": "Milliy istiqlol g‘oyasi va ma’naviyat asoslari · 8-sinf",
+        "ru": "Идея национальной независимости и основы духовности · 8 класс",
+        "en": "National idea and spirituality · Grade 8"
        },
        "lang": "uz",
        "part": null,
@@ -6001,8 +6001,8 @@
      "id": "8-odam-va-uning-salomatligi",
      "name": {
       "uz": "Odam va uning salomatligi",
-      "ru": "Odam va uning salomatligi",
-      "en": "Odam va uning salomatligi"
+      "ru": "Человек и его здоровье",
+      "en": "Human body and health"
      },
      "color": "#8A5410",
      "books": [
@@ -6010,8 +6010,8 @@
        "id": "odam-va-uning-salomatligi-8-sinf-ru",
        "title": {
         "uz": "Odam va uning salomatligi · 8-sinf",
-        "ru": "Odam va uning salomatligi · 8 класс",
-        "en": "Odam va uning salomatligi · Grade 8"
+        "ru": "Человек и его здоровье · 8 класс",
+        "en": "Human body and health · Grade 8"
        },
        "lang": "ru",
        "part": null,
@@ -6022,8 +6022,8 @@
        "id": "odam-va-uning-salomatligi-8-sinf-uz",
        "title": {
         "uz": "Odam va uning salomatligi · 8-sinf",
-        "ru": "Odam va uning salomatligi · 8 класс",
-        "en": "Odam va uning salomatligi · Grade 8"
+        "ru": "Человек и его здоровье · 8 класс",
+        "en": "Human body and health · Grade 8"
        },
        "lang": "uz",
        "part": null,
@@ -6035,18 +6035,18 @@
     {
      "id": "8-ozbekistonning-iqtisodiy-va-ijtimoiy-geografiyasi",
      "name": {
-      "uz": "Ozbekistonning iqtisodiy va ijtimoiy geografiyasi",
-      "ru": "Ozbekistonning iqtisodiy va ijtimoiy geografiyasi",
-      "en": "Ozbekistonning iqtisodiy va ijtimoiy geografiyasi"
+      "uz": "O‘zbekistonning iqtisodiy va ijtimoiy geografiyasi",
+      "ru": "Экономическая и социальная география Узбекистана",
+      "en": "Economic and social geography of Uzbekistan"
      },
      "color": "#6D4C2F",
      "books": [
       {
        "id": "ozbekistonning-iqtisodiy-va-ijtimoiy-geografiyasi-8-sinf-ru",
        "title": {
-        "uz": "Ozbekistonning iqtisodiy va ijtimoiy geografiyasi · 8-sinf",
-        "ru": "Ozbekistonning iqtisodiy va ijtimoiy geografiyasi · 8 класс",
-        "en": "Ozbekistonning iqtisodiy va ijtimoiy geografiyasi · Grade 8"
+        "uz": "O‘zbekistonning iqtisodiy va ijtimoiy geografiyasi · 8-sinf",
+        "ru": "Экономическая и социальная география Узбекистана · 8 класс",
+        "en": "Economic and social geography of Uzbekistan · Grade 8"
        },
        "lang": "ru",
        "part": null,
@@ -6056,9 +6056,9 @@
       {
        "id": "ozbekistonning-iqtisodiy-va-ijtimoiy-geografiyasi-8-sinf-uz",
        "title": {
-        "uz": "Ozbekistonning iqtisodiy va ijtimoiy geografiyasi · 8-sinf",
-        "ru": "Ozbekistonning iqtisodiy va ijtimoiy geografiyasi · 8 класс",
-        "en": "Ozbekistonning iqtisodiy va ijtimoiy geografiyasi · Grade 8"
+        "uz": "O‘zbekistonning iqtisodiy va ijtimoiy geografiyasi · 8-sinf",
+        "ru": "Экономическая и социальная география Узбекистана · 8 класс",
+        "en": "Economic and social geography of Uzbekistan · Grade 8"
        },
        "lang": "uz",
        "part": null,
@@ -6763,8 +6763,8 @@
      "id": "9-iqtisodiyot",
      "name": {
       "uz": "Iqtisodiyot",
-      "ru": "Iqtisodiyot",
-      "en": "Iqtisodiyot"
+      "ru": "Экономика",
+      "en": "Economics"
      },
      "color": "#3949AB",
      "books": [
@@ -6772,8 +6772,8 @@
        "id": "iqtisodiyot-9-sinf-ru",
        "title": {
         "uz": "Iqtisodiyot · 9-sinf",
-        "ru": "Iqtisodiyot · 9 класс",
-        "en": "Iqtisodiyot · Grade 9"
+        "ru": "Экономика · 9 класс",
+        "en": "Economics · Grade 9"
        },
        "lang": "ru",
        "part": null,
@@ -6784,8 +6784,8 @@
        "id": "iqtisodiyot-9-sinf-uz",
        "title": {
         "uz": "Iqtisodiyot · 9-sinf",
-        "ru": "Iqtisodiyot · 9 класс",
-        "en": "Iqtisodiyot · Grade 9"
+        "ru": "Экономика · 9 класс",
+        "en": "Economics · Grade 9"
        },
        "lang": "uz",
        "part": null,
@@ -6797,18 +6797,18 @@
     {
      "id": "9-jahon-ijtimoiy-iqtisodiy-geografiyasi",
      "name": {
-      "uz": "Jahon ijtimoiy iqtisodiy geografiyasi",
-      "ru": "Jahon ijtimoiy iqtisodiy geografiyasi",
-      "en": "Jahon ijtimoiy iqtisodiy geografiyasi"
+      "uz": "Jahon ijtimoiy-iqtisodiy geografiyasi",
+      "ru": "Социально-экономическая география мира",
+      "en": "World socio-economic geography"
      },
      "color": "#B42318",
      "books": [
       {
        "id": "jahon-ijtimoiy-iqtisodiy-geografiyasi-9-sinf-ru",
        "title": {
-        "uz": "Jahon ijtimoiy iqtisodiy geografiyasi · 9-sinf",
-        "ru": "Jahon ijtimoiy iqtisodiy geografiyasi · 9 класс",
-        "en": "Jahon ijtimoiy iqtisodiy geografiyasi · Grade 9"
+        "uz": "Jahon ijtimoiy-iqtisodiy geografiyasi · 9-sinf",
+        "ru": "Социально-экономическая география мира · 9 класс",
+        "en": "World socio-economic geography · Grade 9"
        },
        "lang": "ru",
        "part": null,
@@ -6818,9 +6818,9 @@
       {
        "id": "jahon-ijtimoiy-iqtisodiy-geografiyasi-9-sinf-uz",
        "title": {
-        "uz": "Jahon ijtimoiy iqtisodiy geografiyasi · 9-sinf",
-        "ru": "Jahon ijtimoiy iqtisodiy geografiyasi · 9 класс",
-        "en": "Jahon ijtimoiy iqtisodiy geografiyasi · Grade 9"
+        "uz": "Jahon ijtimoiy-iqtisodiy geografiyasi · 9-sinf",
+        "ru": "Социально-экономическая география мира · 9 класс",
+        "en": "World socio-economic geography · Grade 9"
        },
        "lang": "uz",
        "part": null,
@@ -6833,8 +6833,8 @@
      "id": "9-konstitutsiyaviy-huquq-asoslari",
      "name": {
       "uz": "Konstitutsiyaviy huquq asoslari",
-      "ru": "Konstitutsiyaviy huquq asoslari",
-      "en": "Konstitutsiyaviy huquq asoslari"
+      "ru": "Основы конституционного права",
+      "en": "Basics of constitutional law"
      },
      "color": "#2563C9",
      "books": [
@@ -6842,8 +6842,8 @@
        "id": "konstitutsiyaviy-huquq-asoslari-9-sinf-ru",
        "title": {
         "uz": "Konstitutsiyaviy huquq asoslari · 9-sinf",
-        "ru": "Konstitutsiyaviy huquq asoslari · 9 класс",
-        "en": "Konstitutsiyaviy huquq asoslari · Grade 9"
+        "ru": "Основы конституционного права · 9 класс",
+        "en": "Basics of constitutional law · Grade 9"
        },
        "lang": "ru",
        "part": null,
@@ -6854,8 +6854,8 @@
        "id": "konstitutsiyaviy-huquq-asoslari-9-sinf-uz",
        "title": {
         "uz": "Konstitutsiyaviy huquq asoslari · 9-sinf",
-        "ru": "Konstitutsiyaviy huquq asoslari · 9 класс",
-        "en": "Konstitutsiyaviy huquq asoslari · Grade 9"
+        "ru": "Основы конституционного права · 9 класс",
+        "en": "Basics of constitutional law · Grade 9"
        },
        "lang": "uz",
        "part": null,
@@ -6867,18 +6867,18 @@
     {
      "id": "9-milliy-istiqlol-goyasi-va-manaviyat-asoslari",
      "name": {
-      "uz": "Milliy istiqlol goyasi va manaviyat asoslari",
-      "ru": "Milliy istiqlol goyasi va manaviyat asoslari",
-      "en": "Milliy istiqlol goyasi va manaviyat asoslari"
+      "uz": "Milliy istiqlol g‘oyasi va ma’naviyat asoslari",
+      "ru": "Идея национальной независимости и основы духовности",
+      "en": "National idea and spirituality"
      },
      "color": "#00796B",
      "books": [
       {
        "id": "milliy-istiqlol-goyasi-va-manaviyat-asoslari-9-sinf-ru",
        "title": {
-        "uz": "Milliy istiqlol goyasi va manaviyat asoslari · 9-sinf",
-        "ru": "Milliy istiqlol goyasi va manaviyat asoslari · 9 класс",
-        "en": "Milliy istiqlol goyasi va manaviyat asoslari · Grade 9"
+        "uz": "Milliy istiqlol g‘oyasi va ma’naviyat asoslari · 9-sinf",
+        "ru": "Идея национальной независимости и основы духовности · 9 класс",
+        "en": "National idea and spirituality · Grade 9"
        },
        "lang": "ru",
        "part": null,
@@ -6888,9 +6888,9 @@
       {
        "id": "milliy-istiqlol-goyasi-va-manaviyat-asoslari-9-sinf-uz",
        "title": {
-        "uz": "Milliy istiqlol goyasi va manaviyat asoslari · 9-sinf",
-        "ru": "Milliy istiqlol goyasi va manaviyat asoslari · 9 класс",
-        "en": "Milliy istiqlol goyasi va manaviyat asoslari · Grade 9"
+        "uz": "Milliy istiqlol g‘oyasi va ma’naviyat asoslari · 9-sinf",
+        "ru": "Идея национальной независимости и основы духовности · 9 класс",
+        "en": "National idea and spirituality · Grade 9"
        },
        "lang": "uz",
        "part": null,
@@ -6903,8 +6903,8 @@
      "id": "9-sitologiya-va-genetika-asoslari",
      "name": {
       "uz": "Sitologiya va genetika asoslari",
-      "ru": "Sitologiya va genetika asoslari",
-      "en": "Sitologiya va genetika asoslari"
+      "ru": "Основы цитологии и генетики",
+      "en": "Cytology and genetics"
      },
      "color": "#2563C9",
      "books": [
@@ -6912,8 +6912,8 @@
        "id": "sitologiya-va-genetika-asoslari-9-sinf-ru",
        "title": {
         "uz": "Sitologiya va genetika asoslari · 9-sinf",
-        "ru": "Sitologiya va genetika asoslari · 9 класс",
-        "en": "Sitologiya va genetika asoslari · Grade 9"
+        "ru": "Основы цитологии и генетики · 9 класс",
+        "en": "Cytology and genetics · Grade 9"
        },
        "lang": "ru",
        "part": null,
@@ -6924,8 +6924,8 @@
        "id": "sitologiya-va-genetika-asoslari-9-sinf-uz",
        "title": {
         "uz": "Sitologiya va genetika asoslari · 9-sinf",
-        "ru": "Sitologiya va genetika asoslari · 9 класс",
-        "en": "Sitologiya va genetika asoslari · Grade 9"
+        "ru": "Основы цитологии и генетики · 9 класс",
+        "en": "Cytology and genetics · Grade 9"
        },
        "lang": "uz",
        "part": null,
@@ -7561,8 +7561,8 @@
      "id": "10-algebra-va-analiz-asoslari",
      "name": {
       "uz": "Algebra va analiz asoslari",
-      "ru": "Algebra va analiz asoslari",
-      "en": "Algebra va analiz asoslari"
+      "ru": "Алгебра и начала анализа",
+      "en": "Algebra and calculus basics"
      },
      "color": "#6D4C2F",
      "books": [
@@ -7570,8 +7570,8 @@
        "id": "algebra-va-analiz-asoslari-10-sinf-ru",
        "title": {
         "uz": "Algebra va analiz asoslari · 10-sinf",
-        "ru": "Algebra va analiz asoslari · 10 класс",
-        "en": "Algebra va analiz asoslari · Grade 10"
+        "ru": "Алгебра и начала анализа · 10 класс",
+        "en": "Algebra and calculus basics · Grade 10"
        },
        "lang": "ru",
        "part": null,
@@ -7583,18 +7583,18 @@
     {
      "id": "10-algebra-va-analiz-asoslari-geometriya",
      "name": {
-      "uz": "Algebra va analiz asoslari geometriya",
-      "ru": "Algebra va analiz asoslari geometriya",
-      "en": "Algebra va analiz asoslari geometriya"
+      "uz": "Algebra va analiz asoslari, geometriya",
+      "ru": "Алгебра и начала анализа, геометрия",
+      "en": "Algebra, calculus and geometry"
      },
      "color": "#AD1457",
      "books": [
       {
        "id": "algebra-va-analiz-asoslari-geometriya-10-sinf-ru",
        "title": {
-        "uz": "Algebra va analiz asoslari geometriya · 10-sinf",
-        "ru": "Algebra va analiz asoslari geometriya · 10 класс",
-        "en": "Algebra va analiz asoslari geometriya · Grade 10"
+        "uz": "Algebra va analiz asoslari, geometriya · 10-sinf",
+        "ru": "Алгебра и начала анализа, геометрия · 10 класс",
+        "en": "Algebra, calculus and geometry · Grade 10"
        },
        "lang": "ru",
        "part": null,
@@ -7604,9 +7604,9 @@
       {
        "id": "algebra-va-analiz-asoslari-geometriya-10-sinf-ru-2-qism",
        "title": {
-        "uz": "Algebra va analiz asoslari geometriya · 10-sinf · 2-qism",
-        "ru": "Algebra va analiz asoslari geometriya · 10 класс · 2 часть",
-        "en": "Algebra va analiz asoslari geometriya · Grade 10 · Part 2"
+        "uz": "Algebra va analiz asoslari, geometriya · 10-sinf · 2-qism",
+        "ru": "Алгебра и начала анализа, геометрия · 10 класс · 2 часть",
+        "en": "Algebra, calculus and geometry · Grade 10 · Part 2"
        },
        "lang": "ru",
        "part": 2,
@@ -7616,9 +7616,9 @@
       {
        "id": "algebra-va-analiz-asoslari-geometriya-10-sinf-uz",
        "title": {
-        "uz": "Algebra va analiz asoslari geometriya · 10-sinf",
-        "ru": "Algebra va analiz asoslari geometriya · 10 класс",
-        "en": "Algebra va analiz asoslari geometriya · Grade 10"
+        "uz": "Algebra va analiz asoslari, geometriya · 10-sinf",
+        "ru": "Алгебра и начала анализа, геометрия · 10 класс",
+        "en": "Algebra, calculus and geometry · Grade 10"
        },
        "lang": "uz",
        "part": null,
@@ -7628,9 +7628,9 @@
       {
        "id": "algebra-va-analiz-asoslari-geometriya-10-sinf-uz-2-qism",
        "title": {
-        "uz": "Algebra va analiz asoslari geometriya · 10-sinf · 2-qism",
-        "ru": "Algebra va analiz asoslari geometriya · 10 класс · 2 часть",
-        "en": "Algebra va analiz asoslari geometriya · Grade 10 · Part 2"
+        "uz": "Algebra va analiz asoslari, geometriya · 10-sinf · 2-qism",
+        "ru": "Алгебра и начала анализа, геометрия · 10 класс · 2 часть",
+        "en": "Algebra, calculus and geometry · Grade 10 · Part 2"
        },
        "lang": "uz",
        "part": 2,
@@ -7642,18 +7642,18 @@
     {
      "id": "10-chaqiruvga-qadar-boshlangich-tayyorgarlik",
      "name": {
-      "uz": "Chaqiruvga qadar boshlangich tayyorgarlik",
-      "ru": "Chaqiruvga qadar boshlangich tayyorgarlik",
-      "en": "Chaqiruvga qadar boshlangich tayyorgarlik"
+      "uz": "Chaqiruvga qadar boshlang‘ich tayyorgarlik",
+      "ru": "Начальная допризывная подготовка",
+      "en": "Pre-conscription training"
      },
      "color": "#2563C9",
      "books": [
       {
        "id": "chaqiruvga-qadar-boshlangich-tayyorgarlik-10-sinf-ru",
        "title": {
-        "uz": "Chaqiruvga qadar boshlangich tayyorgarlik · 10-sinf",
-        "ru": "Chaqiruvga qadar boshlangich tayyorgarlik · 10 класс",
-        "en": "Chaqiruvga qadar boshlangich tayyorgarlik · Grade 10"
+        "uz": "Chaqiruvga qadar boshlang‘ich tayyorgarlik · 10-sinf",
+        "ru": "Начальная допризывная подготовка · 10 класс",
+        "en": "Pre-conscription training · Grade 10"
        },
        "lang": "ru",
        "part": null,
@@ -7663,9 +7663,9 @@
       {
        "id": "chaqiruvga-qadar-boshlangich-tayyorgarlik-10-sinf-uz",
        "title": {
-        "uz": "Chaqiruvga qadar boshlangich tayyorgarlik · 10-sinf",
-        "ru": "Chaqiruvga qadar boshlangich tayyorgarlik · 10 класс",
-        "en": "Chaqiruvga qadar boshlangich tayyorgarlik · Grade 10"
+        "uz": "Chaqiruvga qadar boshlang‘ich tayyorgarlik · 10-sinf",
+        "ru": "Начальная допризывная подготовка · 10 класс",
+        "en": "Pre-conscription training · Grade 10"
        },
        "lang": "uz",
        "part": null,
@@ -7713,8 +7713,8 @@
      "id": "10-dunyo-dinlari-tarixi",
      "name": {
       "uz": "Dunyo dinlari tarixi",
-      "ru": "Dunyo dinlari tarixi",
-      "en": "Dunyo dinlari tarixi"
+      "ru": "История мировых религий",
+      "en": "History of world religions"
      },
      "color": "#00796B",
      "books": [
@@ -7722,8 +7722,8 @@
        "id": "dunyo-dinlari-tarixi-10-sinf-ru",
        "title": {
         "uz": "Dunyo dinlari tarixi · 10-sinf",
-        "ru": "Dunyo dinlari tarixi · 10 класс",
-        "en": "Dunyo dinlari tarixi · Grade 10"
+        "ru": "История мировых религий · 10 класс",
+        "en": "History of world religions · Grade 10"
        },
        "lang": "ru",
        "part": null,
@@ -7734,8 +7734,8 @@
        "id": "dunyo-dinlari-tarixi-10-sinf-uz",
        "title": {
         "uz": "Dunyo dinlari tarixi · 10-sinf",
-        "ru": "Dunyo dinlari tarixi · 10 класс",
-        "en": "Dunyo dinlari tarixi · Grade 10"
+        "ru": "История мировых религий · 10 класс",
+        "en": "History of world religions · Grade 10"
        },
        "lang": "uz",
        "part": null,
@@ -7770,18 +7770,18 @@
     {
      "id": "10-manaviyat-asoslari",
      "name": {
-      "uz": "Manaviyat asoslari",
-      "ru": "Manaviyat asoslari",
-      "en": "Manaviyat asoslari"
+      "uz": "Ma’naviyat asoslari",
+      "ru": "Основы духовности",
+      "en": "Basics of spirituality"
      },
      "color": "#1E7B4F",
      "books": [
       {
        "id": "manaviyat-asoslari-10-sinf-ru",
        "title": {
-        "uz": "Manaviyat asoslari · 10-sinf",
-        "ru": "Manaviyat asoslari · 10 класс",
-        "en": "Manaviyat asoslari · Grade 10"
+        "uz": "Ma’naviyat asoslari · 10-sinf",
+        "ru": "Основы духовности · 10 класс",
+        "en": "Basics of spirituality · Grade 10"
        },
        "lang": "ru",
        "part": null,
@@ -7791,9 +7791,9 @@
       {
        "id": "manaviyat-asoslari-10-sinf-uz",
        "title": {
-        "uz": "Manaviyat asoslari · 10-sinf",
-        "ru": "Manaviyat asoslari · 10 класс",
-        "en": "Manaviyat asoslari · Grade 10"
+        "uz": "Ma’naviyat asoslari · 10-sinf",
+        "ru": "Основы духовности · 10 класс",
+        "en": "Basics of spirituality · Grade 10"
        },
        "lang": "uz",
        "part": null,
@@ -7806,8 +7806,8 @@
      "id": "10-organik-kimyo",
      "name": {
       "uz": "Organik kimyo",
-      "ru": "Organik kimyo",
-      "en": "Organik kimyo"
+      "ru": "Органическая химия",
+      "en": "Organic chemistry"
      },
      "color": "#0F7A64",
      "books": [
@@ -7815,8 +7815,8 @@
        "id": "organik-kimyo-10-sinf-ru",
        "title": {
         "uz": "Organik kimyo · 10-sinf",
-        "ru": "Organik kimyo · 10 класс",
-        "en": "Organik kimyo · Grade 10"
+        "ru": "Органическая химия · 10 класс",
+        "en": "Organic chemistry · Grade 10"
        },
        "lang": "ru",
        "part": null,
@@ -7827,8 +7827,8 @@
        "id": "organik-kimyo-10-sinf-uz",
        "title": {
         "uz": "Organik kimyo · 10-sinf",
-        "ru": "Organik kimyo · 10 класс",
-        "en": "Organik kimyo · Grade 10"
+        "ru": "Органическая химия · 10 класс",
+        "en": "Organic chemistry · Grade 10"
        },
        "lang": "uz",
        "part": null,
@@ -8464,18 +8464,18 @@
     {
      "id": "11-chaqiruvga-qadar-boshlangich-tayyorgarlik",
      "name": {
-      "uz": "Chaqiruvga qadar boshlangich tayyorgarlik",
-      "ru": "Chaqiruvga qadar boshlangich tayyorgarlik",
-      "en": "Chaqiruvga qadar boshlangich tayyorgarlik"
+      "uz": "Chaqiruvga qadar boshlang‘ich tayyorgarlik",
+      "ru": "Начальная допризывная подготовка",
+      "en": "Pre-conscription training"
      },
      "color": "#2563C9",
      "books": [
       {
        "id": "chaqiruvga-qadar-boshlangich-tayyorgarlik-11-sinf-ru",
        "title": {
-        "uz": "Chaqiruvga qadar boshlangich tayyorgarlik · 11-sinf",
-        "ru": "Chaqiruvga qadar boshlangich tayyorgarlik · 11 класс",
-        "en": "Chaqiruvga qadar boshlangich tayyorgarlik · Grade 11"
+        "uz": "Chaqiruvga qadar boshlang‘ich tayyorgarlik · 11-sinf",
+        "ru": "Начальная допризывная подготовка · 11 класс",
+        "en": "Pre-conscription training · Grade 11"
        },
        "lang": "ru",
        "part": null,
@@ -8485,9 +8485,9 @@
       {
        "id": "chaqiruvga-qadar-boshlangich-tayyorgarlik-11-sinf-uz",
        "title": {
-        "uz": "Chaqiruvga qadar boshlangich tayyorgarlik · 11-sinf",
-        "ru": "Chaqiruvga qadar boshlangich tayyorgarlik · 11 класс",
-        "en": "Chaqiruvga qadar boshlangich tayyorgarlik · Grade 11"
+        "uz": "Chaqiruvga qadar boshlang‘ich tayyorgarlik · 11-sinf",
+        "ru": "Начальная допризывная подготовка · 11 класс",
+        "en": "Pre-conscription training · Grade 11"
        },
        "lang": "uz",
        "part": null,
@@ -8535,8 +8535,8 @@
      "id": "11-dunyo-dinlari-tarixi",
      "name": {
       "uz": "Dunyo dinlari tarixi",
-      "ru": "Dunyo dinlari tarixi",
-      "en": "Dunyo dinlari tarixi"
+      "ru": "История мировых религий",
+      "en": "History of world religions"
      },
      "color": "#00796B",
      "books": [
@@ -8544,8 +8544,8 @@
        "id": "dunyo-dinlari-tarixi-11-sinf-ru",
        "title": {
         "uz": "Dunyo dinlari tarixi · 11-sinf",
-        "ru": "Dunyo dinlari tarixi · 11 класс",
-        "en": "Dunyo dinlari tarixi · Grade 11"
+        "ru": "История мировых религий · 11 класс",
+        "en": "History of world religions · Grade 11"
        },
        "lang": "ru",
        "part": null,
@@ -8556,8 +8556,8 @@
        "id": "dunyo-dinlari-tarixi-11-sinf-uz",
        "title": {
         "uz": "Dunyo dinlari tarixi · 11-sinf",
-        "ru": "Dunyo dinlari tarixi · 11 класс",
-        "en": "Dunyo dinlari tarixi · Grade 11"
+        "ru": "История мировых религий · 11 класс",
+        "en": "History of world religions · Grade 11"
        },
        "lang": "uz",
        "part": null,
@@ -8569,18 +8569,18 @@
     {
      "id": "11-manaviyat-asoslari",
      "name": {
-      "uz": "Manaviyat asoslari",
-      "ru": "Manaviyat asoslari",
-      "en": "Manaviyat asoslari"
+      "uz": "Ma’naviyat asoslari",
+      "ru": "Основы духовности",
+      "en": "Basics of spirituality"
      },
      "color": "#1E7B4F",
      "books": [
       {
        "id": "manaviyat-asoslari-11-sinf-ru",
        "title": {
-        "uz": "Manaviyat asoslari · 11-sinf",
-        "ru": "Manaviyat asoslari · 11 класс",
-        "en": "Manaviyat asoslari · Grade 11"
+        "uz": "Ma’naviyat asoslari · 11-sinf",
+        "ru": "Основы духовности · 11 класс",
+        "en": "Basics of spirituality · Grade 11"
        },
        "lang": "ru",
        "part": null,
@@ -8590,9 +8590,9 @@
       {
        "id": "manaviyat-asoslari-11-sinf-uz",
        "title": {
-        "uz": "Manaviyat asoslari · 11-sinf",
-        "ru": "Manaviyat asoslari · 11 класс",
-        "en": "Manaviyat asoslari · Grade 11"
+        "uz": "Ma’naviyat asoslari · 11-sinf",
+        "ru": "Основы духовности · 11 класс",
+        "en": "Basics of spirituality · Grade 11"
        },
        "lang": "uz",
        "part": null,
@@ -8605,8 +8605,8 @@
      "id": "11-tadbirkorlik-asoslari",
      "name": {
       "uz": "Tadbirkorlik asoslari",
-      "ru": "Tadbirkorlik asoslari",
-      "en": "Tadbirkorlik asoslari"
+      "ru": "Основы предпринимательства",
+      "en": "Basics of entrepreneurship"
      },
      "color": "#6D4C2F",
      "books": [
@@ -8614,8 +8614,8 @@
        "id": "tadbirkorlik-asoslari-11-sinf-ru",
        "title": {
         "uz": "Tadbirkorlik asoslari · 11-sinf",
-        "ru": "Tadbirkorlik asoslari · 11 класс",
-        "en": "Tadbirkorlik asoslari · Grade 11"
+        "ru": "Основы предпринимательства · 11 класс",
+        "en": "Basics of entrepreneurship · Grade 11"
        },
        "lang": "ru",
        "part": null,
@@ -8626,8 +8626,8 @@
        "id": "tadbirkorlik-asoslari-11-sinf-uz",
        "title": {
         "uz": "Tadbirkorlik asoslari · 11-sinf",
-        "ru": "Tadbirkorlik asoslari · 11 класс",
-        "en": "Tadbirkorlik asoslari · Grade 11"
+        "ru": "Основы предпринимательства · 11 класс",
+        "en": "Basics of entrepreneurship · Grade 11"
        },
        "lang": "uz",
        "part": null,
@@ -8640,8 +8640,8 @@
      "id": "11-umumiy-kimyo",
      "name": {
       "uz": "Umumiy kimyo",
-      "ru": "Umumiy kimyo",
-      "en": "Umumiy kimyo"
+      "ru": "Общая химия",
+      "en": "General chemistry"
      },
      "color": "#1E7B4F",
      "books": [
@@ -8649,8 +8649,8 @@
        "id": "umumiy-kimyo-11-sinf-ru",
        "title": {
         "uz": "Umumiy kimyo · 11-sinf",
-        "ru": "Umumiy kimyo · 11 класс",
-        "en": "Umumiy kimyo · Grade 11"
+        "ru": "Общая химия · 11 класс",
+        "en": "General chemistry · Grade 11"
        },
        "lang": "ru",
        "part": null,
@@ -8661,8 +8661,8 @@
        "id": "umumiy-kimyo-11-sinf-uz",
        "title": {
         "uz": "Umumiy kimyo · 11-sinf",
-        "ru": "Umumiy kimyo · 11 класс",
-        "en": "Umumiy kimyo · Grade 11"
+        "ru": "Общая химия · 11 класс",
+        "en": "General chemistry · Grade 11"
        },
        "lang": "uz",
        "part": null,
