@@ -22,6 +22,9 @@ REPO = os.environ['GITHUB_REPOSITORY']
 KANAL = os.environ.get('KANAL', 'talimxabarlari_fayllar')
 IDLAR = os.environ.get('IDLAR', '540-780')
 FILTR = os.environ.get('FILTR', 'uzb').lower().split(',')
+REGEX = os.environ.get('REGEX', '')
+MIN_DATE = os.environ.get('MIN_DATE', '')
+MANIFEST = os.environ.get('MANIFEST', 'tg-manifest.json')
 RELEASE = 'kitoblar'
 OUT = 'tg'
 
@@ -97,9 +100,14 @@ async def main():
                     'text': (m.message or '')[:200]}
             manifest.append(item)
             low = name.lower()
-            if m.file.size > 1_000_000 and (FILTR == [''] or any(f in low for f in FILTR)):
+            ok = FILTR == [''] or any(f in low for f in FILTR)
+            if REGEX:
+                ok = bool(re.search(REGEX, name + ' ' + (m.message or ''), re.I))
+            if MIN_DATE and m.date.date().isoformat() < MIN_DATE:
+                ok = False
+            if m.file.size > 1_000_000 and ok:
                 todo.append(m)
-        json.dump(manifest, open(f'{OUT}/tg-manifest.json', 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
+        json.dump(manifest, open(f'{OUT}/{MANIFEST}', 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
         print(f'jami fayl: {len(manifest)}, yuklanadi: {len(todo)}', flush=True)
 
         sem = asyncio.Semaphore(4)
@@ -114,7 +122,7 @@ async def main():
                 await asyncio.to_thread(gh, 'release', 'upload', RELEASE, path, '--clobber', '--repo', REPO)
 
         await asyncio.gather(*(one(m) for m in todo))
-        gh('release', 'upload', RELEASE, f'{OUT}/tg-manifest.json', '--clobber', '--repo', REPO)
+        gh('release', 'upload', RELEASE, f'{OUT}/{MANIFEST}', '--clobber', '--repo', REPO)
     finally:
         if await client.is_user_authorized():
             await client.log_out()  # seans o'chiriladi, akkauntda qolmaydi
