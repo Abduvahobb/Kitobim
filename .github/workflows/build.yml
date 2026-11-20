@@ -38,7 +38,7 @@ jobs:
               echo "ichiga joylandi: $f ($(du -m public/books/$f | cut -f1) MB)"
             fi
           done < bundled.txt
-          echo "ichiga joylangan kitoblar ro'yxati tayyor
+          echo "ichiga joylangan kitoblar ro'yxati tayyor"
       - name: Veb-ilovani yig'ish
         run: |
           npm ci || npm install
