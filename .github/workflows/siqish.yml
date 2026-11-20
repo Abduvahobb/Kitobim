@@ -1,0 +1,40 @@
+name: Katta darsliklarni siqish
+# "kitoblar" release'idagi katta PDF'larni Ghostscript bilan siqib, "<nom>-s.pdf" bo'lib qayta joylaydi.
+# Asl fayllar o'chirilmaydi. Ro'yxat: FAYLLAR (bo'sh joy bilan).
+on:
+  push:
+    branches: [siqish]
+
+concurrency:
+  group: kitoblar
+  cancel-in-progress: false
+
+jobs:
+  siq:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    permissions:
+      contents: write
+    env:
+      GH_TOKEN: ${{ github.token }}
+      FAYLLAR: 'tg762.pdf tg754.pdf tg556.pdf tg671.pdf tg703.pdf'
+    steps:
+      - run: sudo apt-get install -y -q ghostscript poppler-utils >/dev/null
+      - name: Siqish
+        run: |
+          mkdir -p in out
+          for f in $FAYLLAR; do
+            gh release download kitoblar --repo "$GITHUB_REPOSITORY" --pattern "$f" --dir in --clobber
+            s="${f%.pdf}-s.pdf"
+            # 150 dpi rasmlar (telefon va kompyuter ekrani uchun yetarli), matn va chizmalar o'zgarmaydi
+            gs -q -dNOPAUSE -dBATCH -dSAFER -sDEVICE=pdfwrite -dCompatibilityLevel=1.6 \
+               -dPDFSETTINGS=/ebook -dColorImageResolution=150 -dGrayImageResolution=150 \
+               -dColorConversionStrategy=/sRGB -dProcessColorModel=/DeviceRGB \
+               -dDetectDuplicateImages=true -dCompressFonts=true \
+               -sOutputFile="out/$s" "in/$f"
+            a=$(pdfinfo "in/$f" | awk '/^Pages/{print $2}'); b=$(pdfinfo "out/$s" | awk '/^Pages/{print $2}')
+            echo "$f: $(du -m in/$f | cut -f1) MB -> $(du -m out/$s | cut -f1) MB, bet: $a -> $b"
+            if [ "$a" != "$b" ]; then echo "::error::$f bet soni mos emas"; exit 1; fi
+            gh release upload kitoblar "out/$s" --repo "$GITHUB_REPOSITORY" --clobber
+            rm -f "in/$f"
+          done
