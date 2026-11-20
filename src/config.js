@@ -4,10 +4,10 @@
 // Bo'sh qoldirilsa, faqat ilova ichidagi public/catalog.json ishlatiladi.
 export const REMOTE_CATALOG = 'https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/catalog.json';
 
-export const APP_VERSION = '0.5.0';
+export const APP_VERSION = '1.0.0';
 
 // Ilova muallifi
-export const AUTHOR = { name: 'Vahobjonov Abduvahob', telegram: 'Vakhobov47' };
+export const AUTHOR = { name: 'Vahobjonov Abduvahob', full: 'Vahobjonov Abduvahob Rustamjon o‘g‘li', phone: '+998 98 007 69 56', telegram: 'Vakhobov47' };
 
 // Firebase (SMS orqali kirish, muallif rejimi, ilova mazmunini bulutdan olish).
 // Bu kalitlar maxfiy emas: kim nimani o'qishi/yozishi Firestore qoidalarida belgilanadi.

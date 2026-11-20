@@ -132,7 +132,8 @@ function nav(active) {
     ['school', '#/school', I.school(22), t().school],
     ['library', '#/library', I.library(22), t().library],
     ['tests', '#/tests', I.test(22), t().tests],
-    ['profile', '#/profile', I.user(22), t().profile]
+    ['profile', '#/profile', I.user(22), t().profile],
+    ['info', '#/malumot', I.info(22), t().info]
   ];
   return `<nav class="tabs" aria-label="Menu"><div class="in">
     <div class="brand">${appLogo(38)}<span>${esc(appName())}</span></div>
@@ -605,6 +606,29 @@ function scrProfile() {
   bindSchoolPills();
 }
 
+// "Ma'lumot": ilova muallifi va bog'lanish
+function scrInfo() {
+  const s = t();
+  const initials = AUTHOR.name.split(' ').map((w) => w[0]).join('').slice(0, 2);
+  const tel = AUTHOR.phone.replace(/[^+\d]/g, '');
+  app.innerHTML = `<main class="screen">
+    <h1 style="font-size:24px">${esc(s.infoTitle)}</h1>
+    <section class="about-hero">
+      <div class="av">${esc(initials)}</div>
+      <h1>${esc(AUTHOR.full)}</h1>
+      <span class="role">${esc(s.appAuthor)}</span>
+    </section>
+    <section class="sec col" style="gap:10px"><h2>${esc(s.writeUs)}</h2>
+      <a class="contact" href="tel:${tel}"><span class="ic" style="background:#E7F6F1;color:#0F7A64">${I.phone(22)}</span>
+        <span class="grow"><small>${esc(s.phoneL)}</small><b>${esc(AUTHOR.phone)}</b></span>${I.chevron(20)}</a>
+      <a class="contact" href="https://t.me/${AUTHOR.telegram}" target="_blank" rel="noopener"><span class="ic" style="background:#E8F3FB;color:#1E6FA8">${I.telegram(22)}</span>
+        <span class="grow"><small>Telegram</small><b>@${esc(AUTHOR.telegram)}</b></span>${I.chevron(20)}</a>
+    </section>
+    <div class="card row" style="gap:14px;align-items:center">${appLogo(52)}
+      <span class="grow col" style="gap:2px"><b style="font-size:17px">${esc(appName())}</b><span class="sub">${esc(s.about)} · v${APP_VERSION}</span></span></div>
+  </main>${nav('info')}`;
+}
+
 // ---------- Marshrutlash ----------
 function render() {
   if (!/^#\/read\//.test(location.hash)) overlay.innerHTML = '';
@@ -625,6 +649,7 @@ function render() {
     case 'cert': return scrCert(a);
     case 'profile': return scrProfile();
     case 'muallif': return scrAuthor(panelCtx);
+    case 'malumot': return scrInfo();
     default: return scrHome();
   }
 }

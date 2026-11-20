@@ -2,6 +2,11 @@
 // Yangi matn qo'shganda uchala tilga ham yozing.
 export const STRINGS = {
   uz: {
+    info: 'Ma’lumot',
+    infoTitle: 'Ilova haqida',
+    phoneL: 'Telefon',
+    devBy: 'Ilovani ishlab chiqqan',
+    writeUs: 'Taklif va savollaringizni yozing',
     yourPass: 'Parol',
     passPh: 'Kamida 4 ta belgi',
     errPass: 'Parol kamida 4 ta belgidan iborat bo‘lsin',
@@ -130,6 +135,11 @@ export const STRINGS = {
     sample: 'Namuna'
   },
   ru: {
+    info: 'О нас',
+    infoTitle: 'О приложении',
+    phoneL: 'Телефон',
+    devBy: 'Разработчик приложения',
+    writeUs: 'Пишите нам свои предложения и вопросы',
     yourPass: 'Пароль',
     passPh: 'Не менее 4 символов',
     errPass: 'Пароль должен содержать не менее 4 символов',
@@ -258,6 +268,11 @@ export const STRINGS = {
     sample: 'Образец'
   },
   en: {
+    info: 'About',
+    infoTitle: 'About the app',
+    phoneL: 'Phone',
+    devBy: 'App developer',
+    writeUs: 'Send us your ideas and questions',
     yourPass: 'Password',
     passPh: 'At least 4 characters',
     errPass: 'The password must be at least 4 characters',
