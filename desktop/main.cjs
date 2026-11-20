@@ -13,16 +13,19 @@ protocol.registerSchemesAsPrivileged([
 
 function createWindow() {
   const win = new BrowserWindow({
-    width: 1100,
-    height: 820,
+    width: 1280,
+    height: 840,
+    show: false,
     minWidth: 380,
     minHeight: 600,
     title: 'Kitobim',
     icon: path.join(__dirname, 'icon.ico'),
     autoHideMenuBar: true,
-    backgroundColor: '#F6F8F7',
+    backgroundColor: '#F3F6F5',
     webPreferences: { contextIsolation: true, sandbox: true }
   });
+  win.setMenu(null);
+  win.once('ready-to-show', () => { win.maximize(); win.show(); });
   win.loadURL('app://kitobim/index.html');
   // Tashqi havolalar oddiy brauzerda ochiladi
   win.webContents.setWindowOpenHandler(({ url }) => {

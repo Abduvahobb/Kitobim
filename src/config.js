@@ -4,7 +4,7 @@
 // Bo'sh qoldirilsa, faqat ilova ichidagi public/catalog.json ishlatiladi.
 export const REMOTE_CATALOG = 'https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/catalog.json';
 
-export const APP_VERSION = '0.4.0';
+export const APP_VERSION = '0.5.0';
 
 // Ilova muallifi
 export const AUTHOR = { name: 'Vahobjonov Abduvahob', telegram: 'Vakhobov47' };

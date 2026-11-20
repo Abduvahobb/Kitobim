@@ -246,17 +246,16 @@ def catalog():
                 })
             subjects.append({'id': f'{g}-{s}', 'name': {'uz': uz, 'ru': ru, 'en': en}, 'color': color, 'books': items})
         grades.append({'grade': g, 'subjects': subjects})
-    old = {}
-    if os.path.exists('public/catalog.json'):
-        old = json.load(open('public/catalog.json'))
     cat = {
         'version': 2,
         'note': 'Avtomatik yasalgan (tools/kitoblar.py). Manba: oliygoh.uz',
         'updated': time.strftime('%Y-%m-%d %H:%M'),
-        'grades': grades,
-        'fiction': old.get('fiction', []),
-        'audio': old.get('audio', [])
+        'grades': grades
     }
+    # Takroriy/eskirgan nashrlarni olib tashlash, muqova va nashr yilini qo'shish
+    from tozalash import clean
+    cat, dropped, moved = clean(cat)
+    print('Tozalandi:', len(dropped), 'olib tashlandi,', len(moved), "ko'chirildi")
     json.dump(cat, open('public/catalog.json', 'w'), ensure_ascii=False, indent=1)
     total = sum(len(s['books']) for gr in grades for s in gr['subjects'])
     print('Katalogdagi kitoblar:', total)

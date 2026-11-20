@@ -59,6 +59,57 @@ jobs:
           os.makedirs(f'{res}/values', exist_ok=True)
           open(f'{res}/values/ic_launcher_background.xml', 'w').write('<?xml version="1.0" encoding="utf-8"?>\n<resources>\n    <color name="ic_launcher_background">#16A085</color>\n</resources>\n')
           PY
+      - name: Ochilish ekrani va status bar ranglari
+        run: |
+          python3 - <<'PY'
+          import glob, os
+          res = 'android/app/src/main/res'
+          # Capacitor'ning standart ochilish rasmlari o'rniga: firma rangi + logotip + "Kitobim"
+          for f in glob.glob(f'{res}/drawable*/splash.png'):
+              os.remove(f)
+          os.makedirs(f'{res}/drawable-xxhdpi', exist_ok=True)
+          import shutil
+          shutil.copy('assets/splash-mark.png', f'{res}/drawable-xxhdpi/splash_mark.png')
+          open(f'{res}/drawable/splash.xml', 'w').write('''<?xml version="1.0" encoding="utf-8"?>
+          <layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+              <item android:drawable="@color/kitobim_brand"/>
+              <item><bitmap android:gravity="center" android:src="@drawable/splash_mark"/></item>
+          </layer-list>
+          ''')
+          open(f'{res}/values/kitobim_colors.xml', 'w').write('''<?xml version="1.0" encoding="utf-8"?>
+          <resources>
+              <color name="kitobim_brand">#16A085</color>
+              <color name="kitobim_dark">#0F7A64</color>
+          </resources>
+          ''')
+          open(f'{res}/values/styles.xml', 'w').write('''<?xml version="1.0" encoding="utf-8"?>
+          <resources xmlns:tools="http://schemas.android.com/tools">
+              <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+                  <item name="colorPrimary">@color/kitobim_dark</item>
+                  <item name="colorPrimaryDark">@color/kitobim_dark</item>
+                  <item name="colorAccent">@color/kitobim_brand</item>
+              </style>
+              <style name="AppTheme.NoActionBar" parent="Theme.AppCompat.Light.NoActionBar">
+                  <item name="windowActionBar">false</item>
+                  <item name="windowNoTitle">true</item>
+                  <item name="android:background">@null</item>
+                  <item name="colorPrimary">@color/kitobim_dark</item>
+                  <item name="colorPrimaryDark">@color/kitobim_dark</item>
+                  <item name="colorAccent">@color/kitobim_brand</item>
+                  <item name="android:statusBarColor">@color/kitobim_dark</item>
+                  <item name="android:navigationBarColor">#FFFFFF</item>
+                  <item name="android:windowLightNavigationBar" tools:targetApi="27">true</item>
+              </style>
+              <style name="AppTheme.NoActionBarLaunch" parent="Theme.SplashScreen">
+                  <item name="android:background">@drawable/splash</item>
+                  <item name="windowSplashScreenBackground">@color/kitobim_brand</item>
+                  <item name="windowSplashScreenAnimatedIcon">@mipmap/ic_launcher_foreground</item>
+                  <item name="postSplashScreenTheme">@style/AppTheme.NoActionBar</item>
+                  <item name="android:statusBarColor">@color/kitobim_brand</item>
+              </style>
+          </resources>
+          ''')
+          PY
       - name: APK yig'ish
         env:
           KS_B64: ${{ secrets.KITOBIM_KEYSTORE }}
@@ -74,7 +125,7 @@ jobs:
           android {
               defaultConfig {
                   versionCode Integer.parseInt(System.getenv('VCODE') ?: '1') + 100
-                  versionName '0.4.' + (System.getenv('VCODE') ?: '0')
+                  versionName '0.5.' + (System.getenv('VCODE') ?: '0')
               }
           }
           GRADLE
@@ -158,8 +209,8 @@ jobs:
           GH_TOKEN: ${{ github.token }}
         run: |
           ls -R out
-          gh release create "v0.1.${{ github.run_number }}" \
+          gh release create "v0.5.${{ github.run_number }}" \
             out/android/Kitobim.apk out/windows/Kitobim-Setup.exe out/windows/Kitobim-portable.exe \
-            --title "Kitobim v0.1.${{ github.run_number }}" \
+            --title "Kitobim v0.5.${{ github.run_number }}" \
             --notes "Android uchun: Kitobim.apk. Kompyuter uchun: Kitobim-Setup.exe (o'rnatiladigan) yoki Kitobim-portable.exe (o'rnatmasdan ishlaydi)." \
             --latest --repo "$GITHUB_REPOSITORY"
