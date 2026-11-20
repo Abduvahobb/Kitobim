@@ -1,0 +1,71 @@
+name: Muallif ikonkasini APK'ga qo'shish
+# Muallif ilova ichidan yangi ikonka saqlasa, telefon ekranidagi belgi faqat yangi APK bilan almashadi.
+# Bu ish har 6 soatda Firestore'dagi ikonkani tekshiradi; o'zgargan bo'lsa, rasmlarni yangilab
+# main'ga yozadi — shundan so'ng "Ilovani yig'ish" yangi APK chiqaradi.
+on:
+  schedule:
+    - cron: '17 */6 * * *'
+  workflow_dispatch:
+
+concurrency:
+  group: ikonka
+  cancel-in-progress: false
+
+jobs:
+  icon:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      actions: write
+    env:
+      GH_TOKEN: ${{ github.token }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install --quiet pillow
+      - name: Ikonkani tekshirish va yangilash
+        id: ic
+        run: |
+          python3 - <<'PY'
+          import base64, hashlib, io, json, os, urllib.request
+          from PIL import Image
+          cfg = open('src/config.js').read()
+          key = cfg.split("apiKey: '")[1].split("'")[0]
+          pid = cfg.split("projectId: '")[1].split("'")[0]
+          url = f'https://firestore.googleapis.com/v1/projects/{pid}/databases/(default)/documents/kitobim/ilova?key={key}'
+          try:
+              d = json.load(urllib.request.urlopen(url, timeout=60))
+          except Exception as e:
+              print('ilova hujjati yo\'q yoki o\'qilmadi:', e); raise SystemExit(0)
+          data = json.loads(d['fields']['json']['stringValue'])
+          icon = data.get('icon')
+          if not icon or not icon.startswith('data:image'):
+              print('ikonka yo\'q'); raise SystemExit(0)
+          raw = base64.b64decode(icon.split(',', 1)[1])
+          h = hashlib.sha256(raw).hexdigest()[:16]
+          old = open('assets/icon.sha').read().strip() if os.path.exists('assets/icon.sha') else ''
+          if h == old:
+              print('ikonka o\'zgarmagan'); raise SystemExit(0)
+          im = Image.open(io.BytesIO(raw)).convert('RGBA')
+          side = max(im.size)
+          sq = Image.new('RGBA', (side, side), (0, 0, 0, 0)); sq.paste(im, ((side - im.width) // 2, (side - im.height) // 2))
+          big = sq.resize((1024, 1024), Image.LANCZOS)
+          big.save('assets/icon.png')
+          big.save('assets/icon-foreground.png')
+          big.resize((288, 288), Image.LANCZOS).save('assets/splash-mark.png')
+          big.save('assets/icon.ico', sizes=[(256, 256), (128, 128), (64, 64), (48, 48), (32, 32), (16, 16)])
+          open('assets/icon.sha', 'w').write(h + '\n')
+          open(os.environ['GITHUB_OUTPUT'], 'a').write('changed=1\n')
+          print('ikonka yangilandi', h)
+          PY
+      - name: Saqlash va APK'ni qayta yig'ish
+        if: steps.ic.outputs.changed == '1'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets
+          git commit -m "Ikonka muallif paneli orqali yangilandi"
+          git push origin HEAD:main
+          gh workflow run build.yml --repo "$GITHUB_REPOSITORY" --ref main

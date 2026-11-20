@@ -1,0 +1,12 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // Kitobim mazmuni: hamma o'qiydi, faqat muallif o'zgartiradi
+    match /kitobim/{doc} {
+      allow read: if true;
+      allow write: if request.auth != null
+                   && request.auth.token.email == 'muallif@kitobim.uz'
+                   && doc in ['ilova', 'matnlar', 'kitoblar', 'testlar'];
+    }
+  }
+}

@@ -1,0 +1,13 @@
+rules_version = '2';
+service firebase.storage {
+  match /b/{bucket}/o {
+    // Muallif yuklagan kitob fayllari: hamma o'qiydi, faqat muallif yuklaydi
+    match /kitoblar/{file} {
+      allow read: if true;
+      allow write: if request.auth != null
+                   && request.auth.token.email == 'muallif@kitobim.uz'
+                   && request.resource.size < 500 * 1024 * 1024
+                   && request.resource.contentType == 'application/pdf';
+    }
+  }
+}

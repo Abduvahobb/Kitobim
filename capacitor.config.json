@@ -2,6 +2,18 @@
   "appId": "uz.kitobim.app",
   "appName": "Kitobim",
   "webDir": "dist",
-  "android": { "allowMixedContent": false },
-  "server": { "androidScheme": "https" }
+  "android": {
+    "allowMixedContent": false
+  },
+  "server": {
+    "androidScheme": "https"
+  },
+  "plugins": {
+    "FirebaseAuthentication": {
+      "skipNativeAuth": false,
+      "providers": [
+        "phone"
+      ]
+    }
+  }
 }

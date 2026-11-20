@@ -6,6 +6,8 @@ import { openReader, esc, ensureSaved } from './reader.js';
 import { drawCertificate, saveImage } from './cert.js';
 import { REMOTE_CATALOG, APP_VERSION, AUTHOR } from './config.js';
 import { getJson } from './net.js';
+import { cloudReady, cachedCloud, fetchCloud, applyBooks, applyTexts, sendCode, isAuthorName, authorSignIn, authorSignOut } from './cloud.js';
+import { scrAuthor } from './panel.js';
 
 const app = document.getElementById('app');
 const overlay = document.createElement('div');
@@ -13,7 +15,12 @@ document.body.appendChild(overlay);
 
 let catalog = null;
 let catalogBase = '';
+let baseCatalog = null;        // asosiy ro'yxat (muallif o'zgartirishlarisiz)
 let tests = { tests: [], passPercent: 70 };
+let baseTests = null;          // ilova ichidagi testlar
+let cloud = {};                // muallif bulutga saqlagan mazmun
+// Matnlarning asl holati (muallif paneli "asl matn"ni ko'rsatishi uchun)
+const BASE_STRINGS = JSON.parse(JSON.stringify(STRINGS));
 const books = new Map();      // id -> kitob (fan va sinf ma'lumoti bilan)
 const subjects = new Map();   // id -> fan
 
@@ -41,10 +48,43 @@ async function loadData() {
   // Eng yangi ro'yxat ishlatiladi ("updated" sanasi bo'yicha), kitoblar soni bo'yicha emas:
   // takroriy kitoblar olib tashlanganda ro'yxat qisqaradi.
   const useCached = cached && cached.grades && bookCount(cached) && (cached.updated || '') > (local.updated || '');
-  catalog = useCached ? cached : local;
-  catalogBase = useCached ? REMOTE_CATALOG : new URL('catalog.json', location.href).href;
+  setCatalog(useCached ? cached : local, useCached ? REMOTE_CATALOG : new URL('catalog.json', location.href).href);
+  try { baseTests = await loadJson(new URL('tests.json', location.href).href); } catch (e) { /* testlarsiz ham ishlaydi */ }
+  applyCloud(cachedCloud());
+}
+
+// Asosiy ro'yxat ustiga muallifning o'zgartirishlari qo'yiladi
+function setCatalog(base, baseUrl) {
+  baseCatalog = base;
+  if (baseUrl) catalogBase = baseUrl;
+  catalog = applyBooks(base, cloud.kitoblar && cloud.kitoblar.json);
   reindex();
-  try { tests = await loadJson(new URL('tests.json', location.href).href); } catch (e) { /* testlarsiz ham ishlaydi */ }
+}
+
+// Muallif bulutga saqlagan mazmunni qo'llash: kitoblar, testlar, matnlar, ilova nomi va logotipi
+function applyCloud(c) {
+  cloud = c || {};
+  // Matnlar: avval asl holatga qaytarib, keyin muallif o'zgartirganlarini qo'yamiz
+  for (const l of Object.keys(BASE_STRINGS)) for (const [k, v] of Object.entries(BASE_STRINGS[l])) if (typeof v === 'string') STRINGS[l][k] = v;
+  applyTexts(STRINGS, cloud.matnlar && cloud.matnlar.json);
+  tests = (cloud.testlar && cloud.testlar.json && cloud.testlar.json.tests) ? cloud.testlar.json : (baseTests || { tests: [], passPercent: 70 });
+  if (baseCatalog) setCatalog(baseCatalog);
+  const a = (cloud.ilova && cloud.ilova.json) || {};
+  document.title = a.name || 'Kitobim';
+}
+async function refreshCloud() {
+  try {
+    const before = JSON.stringify(cloud);
+    const fresh = await fetchCloud();
+    if (JSON.stringify(fresh) === before) return;
+    applyCloud(fresh);
+    if (!/^#\/(read|test|cert|login|muallif)/.test(location.hash)) render();
+  } catch (e) { /* internet yo'q — oxirgi saqlangan mazmun bilan ishlaymiz */ }
+}
+function appName() { return (cloud.ilova && cloud.ilova.json && cloud.ilova.json.name) || 'Kitobim'; }
+function appLogo(size) {
+  const l = cloud.ilova && cloud.ilova.json && cloud.ilova.json.logo;
+  return l ? `<img src="${l}" width="${size}" height="${size}" alt="${esc(appName())}" style="border-radius:${Math.round(size * 0.23)}px;object-fit:cover">` : LOGO(size);
 }
 
 async function refreshCatalog() {
@@ -54,8 +94,7 @@ async function refreshCatalog() {
     if (!fresh || !fresh.grades || !bookCount(fresh)) return;
     if (catalog && (fresh.updated || '') <= (catalog.updated || '')) return;
     store.setCachedCatalog(fresh);
-    catalog = fresh; catalogBase = REMOTE_CATALOG;
-    reindex();
+    setCatalog(fresh, REMOTE_CATALOG);
     // O'qish yoki test paytida ekranni almashtirmaymiz
     if (!/^#\/(read|test|cert|login)/.test(location.hash)) render();
   } catch (e) { /* internet yo'q — eski ro'yxat bilan davom etamiz */ }
@@ -96,7 +135,7 @@ function nav(active) {
     ['profile', '#/profile', I.user(22), t().profile]
   ];
   return `<nav class="tabs" aria-label="Menu"><div class="in">
-    <div class="brand">${LOGO(38)}<span>Kitobim</span></div>
+    <div class="brand">${appLogo(38)}<span>${esc(appName())}</span></div>
     ${items.map(([k, h, ic, lb]) =>
     `<button data-go="${h}" ${k === active ? 'aria-current="page"' : ''}><span class="ic">${ic}</span><span>${esc(lb)}</span></button>`).join('')}
     <p class="side-foot sub" style="font-size:12px;padding:0 12px">${t().appAuthor}:<br><a href="https://t.me/${AUTHOR.telegram}" target="_blank" rel="noopener" style="font-weight:600;text-decoration:none">${esc(AUTHOR.name)}</a></p>
@@ -166,9 +205,10 @@ function authorSection() {
 }
 
 // ---------- Ekranlar ----------
+let prefill = null;
 function scrLogin() {
   const s = t();
-  const u = store.user || {};
+  const u = store.user || prefill || {};
   let grade = u.grade || null;
   const featIcons = [I.book(18), I.download(18), I.test(18), I.globe(18)];
   app.className = 'bare';
@@ -176,7 +216,7 @@ function scrLogin() {
     <div class="brand">
       <div class="langs" role="group" aria-label="${s.language}">${LANGS.map((l) =>
         `<button data-lang="${l}" aria-pressed="${l === L()}">${STRINGS[l].langName}</button>`).join('')}</div>
-      <div class="logo-row">${LOGO(72)}<span class="name">Kitobim</span></div>
+      <div class="logo-row">${appLogo(72)}<span class="name">${esc(appName())}</span></div>
       <p class="tag">${s.tagline}</p>
       <div class="feats">${s.feats.map((f, i) => `<div><i>${featIcons[i]}</i>${esc(f)}</div>`).join('')}</div>
     </div>
@@ -216,9 +256,87 @@ function scrLogin() {
     if (name.length < 3) { app.querySelector('#eNm').textContent = s.errName; ok = false; }
     if (digits.length !== 9) { app.querySelector('#ePh').textContent = s.errPhone; ok = false; }
     if (!ok) return;
-    store.setUser({ name, phone: ph.value, grade: grade || 5 });
-    go('#/home');
+    const user = { name, phone: ph.value, grade: grade || 5 };
+    if (!cloudReady()) { store.setUser(user); go('#/home'); return; }
+    stepCode(user, '+998' + digits, e.submitter || app.querySelector('form [type=submit]'));
   };
+  if (pendingLogin) { const pl = pendingLogin; pendingLogin = null; stepPassword(pl); }
+}
+
+// ---------- SMS kod va muallif paroli ----------
+let pendingLogin = null;
+function loginCard(inner) {
+  app.className = 'bare';
+  app.innerHTML = `<main class="login"><div class="brand"><div class="logo-row">${appLogo(72)}<span class="name">${esc(appName())}</span></div></div>
+    <div class="form-wrap"><div class="card col" style="gap:14px">${inner}</div></div></main>`;
+}
+function smsErrorText(e) {
+  const s = t(); const c = (e && (e.code || e.message)) || '';
+  if (/too-many|quota/i.test(c)) return s.smsLimit;
+  if (/invalid-phone/i.test(c)) return s.errPhone;
+  if (/network|offline|unavailable/i.test(c)) return s.smsNet;
+  return s.smsFail + (c ? ` (${c})` : '');
+}
+async function stepCode(user, e164, btn) {
+  const s = t();
+  btn.disabled = true; btn.textContent = s.smsSending;
+  let conf;
+  try {
+    conf = await sendCode(e164);
+  } catch (e) {
+    btn.disabled = false; btn.textContent = s.start;
+    app.querySelector('#ePh').textContent = smsErrorText(e);
+    return;
+  }
+  const done = async (uid) => {
+    const u = Object.assign({}, user, { verified: true, uid: uid || '' });
+    if (isAuthorName(user.name)) return stepPassword(u);
+    store.setUser(u); go('#/home');
+  };
+  if (conf.auto) return done(await conf.confirm());
+  loginCard(`<h1 style="font-size:22px">${s.codeTitle}</h1>
+    <p class="sub">${s.codeSent} <b>${esc(e164)}</b></p>
+    <div class="field"><label for="cd">${s.codeLabel}</label>
+      <input id="cd" class="input" type="text" inputmode="numeric" autocomplete="one-time-code" maxlength="6" placeholder="••••••" style="letter-spacing:8px;font-size:22px;text-align:center">
+      <div class="err" id="eCd"></div></div>
+    <button class="btn" data-ok>${s.codeVerify}</button>
+    <button class="btn ghost" data-change>${s.codeChange}</button>`);
+  const cd = app.querySelector('#cd'); cd.focus();
+  cd.oninput = () => { cd.value = cd.value.replace(/\D/g, '').slice(0, 6); app.querySelector('#eCd').textContent = ''; };
+  app.querySelector('[data-change]').onclick = () => scrLogin();
+  app.querySelector('[data-ok]').onclick = async (ev) => {
+    if (cd.value.length !== 6) { app.querySelector('#eCd').textContent = s.codeWrong; return; }
+    ev.currentTarget.disabled = true;
+    try { await done(await conf.confirm(cd.value)); } catch (e) {
+      ev.currentTarget.disabled = false;
+      app.querySelector('#eCd').textContent = /expired/i.test(e.code || '') ? s.codeExpired : s.codeWrong;
+    }
+  };
+}
+// Muallif ismi yozilsa: parol so'raladi (parolni Firebase serveri tekshiradi)
+function stepPassword(u) {
+  const s = t();
+  loginCard(`<h1 style="font-size:22px">${s.authorTitle}</h1>
+    <p class="sub">${s.authorHint}</p>
+    <div class="field"><label for="pw">${s.authorPass}</label>
+      <input id="pw" class="input" type="password" autocomplete="current-password"><div class="err" id="ePw"></div></div>
+    <button class="btn" data-ok>${s.authorEnter}</button>
+    <button class="btn ghost" data-skip>${s.authorSkip}</button>`);
+  const pw = app.querySelector('#pw'); pw.focus();
+  app.querySelector('[data-skip]').onclick = () => { store.setUser(Object.assign({}, u, { author: false })); go('#/home'); };
+  const submit = async (btn) => {
+    btn.disabled = true;
+    try {
+      await authorSignIn(pw.value);
+      store.setUser(Object.assign({}, u, { author: true }));
+      toast(s.authorWelcome); go('#/home');
+    } catch (e) {
+      btn.disabled = false;
+      app.querySelector('#ePw').textContent = /wrong-password|invalid-credential|invalid-login/i.test(e.code || '') ? s.authorWrong : smsErrorText(e);
+    }
+  };
+  app.querySelector('[data-ok]').onclick = (ev) => submit(ev.currentTarget);
+  pw.onkeydown = (ev) => { if (ev.key === 'Enter') submit(app.querySelector('[data-ok]')); };
 }
 
 function scrHome() {
@@ -542,12 +660,14 @@ function scrProfile() {
     <section class="sec"><h2>${s.schoolLang}</h2>${schoolPills()}</section>
     <section class="sec"><h2>${s.yourGrade}</h2>
       <div class="grade-grid">${Array.from({ length: 11 }, (_, i) => i + 1).map((g) => `<button class="grade" data-g="${g}" aria-pressed="${g === u.grade}">${g}</button>`).join('')}</div></section>
+    ${u.author ? `<section class="sec"><button class="btn" data-go="#/muallif">${I.test(20)}${s.authorPanel}</button>
+      <p class="sub" style="font-size:13px;text-align:center">${s.authorPanelHint}</p></section>` : ''}
     ${authorSection()}
     <button class="btn ghost" data-logout>${I.logout(20)}${s.logout}</button>
     <p class="sub" style="text-align:center;font-size:12px">${s.about} · v${APP_VERSION}</p></main>${nav('profile')}`;
   app.querySelectorAll('[data-lang]').forEach((b) => b.onclick = () => { store.setLang(b.dataset.lang); render(); });
   app.querySelectorAll('[data-g]').forEach((b) => b.onclick = () => { store.setUser(Object.assign({}, u, { grade: +b.dataset.g })); render(); });
-  app.querySelector('[data-logout]').onclick = () => { store.logout(); go('#/login'); };
+  app.querySelector('[data-logout]').onclick = () => { if (u.author) authorSignOut(); store.logout(); go('#/login'); };
   bindSchoolPills();
 }
 
@@ -556,6 +676,11 @@ function render() {
   if (!/^#\/read\//.test(location.hash)) overlay.innerHTML = '';
   const [, route, arg] = (location.hash.match(/^#\/([^/]*)\/?(.*)$/) || []);
   const a = arg ? decodeURIComponent(arg) : '';
+  // SMS bilan tasdiqlanmagan (eski versiyadan qolgan) foydalanuvchi bir marta tasdiqlashi kerak
+  if (store.user && !store.user.verified && cloudReady() && route !== 'login') {
+    const old = store.user; store.logout(); store.setUser(null); prefill = old;
+    return go('#/login');
+  }
   if (!store.user && route !== 'login') return go('#/login');
   document.documentElement.lang = L();
   app.className = /^(login|test|cert)$/.test(route || '') ? 'bare' : '';
@@ -570,6 +695,7 @@ function render() {
     case 'test': return scrTest(a);
     case 'cert': return scrCert(a);
     case 'profile': return scrProfile();
+    case 'muallif': return scrAuthor(panelCtx);
     default: return scrHome();
   }
 }
@@ -582,6 +708,13 @@ document.addEventListener('click', (e) => {
 });
 window.addEventListener('hashchange', render);
 
+const panelCtx = {
+  app, store, esc, I, toast, go,
+  cloud: () => cloud, tests: () => tests, baseCatalog: () => baseCatalog,
+  baseStrings: () => BASE_STRINGS, applyBooks, logo: (z) => appLogo(z),
+  reloadCloud: () => applyCloud(cachedCloud())
+};
+
 loadData()
-  .then(() => { render(); refreshCatalog(); })
+  .then(() => { render(); refreshCatalog(); refreshCloud(); })
   .catch((e) => { console.error(e); app.innerHTML = `<main class="screen no-nav"><div class="card empty">${t().loadError}</div></main>`; });
