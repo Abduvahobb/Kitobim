@@ -10,7 +10,7 @@ concurrency:
 jobs:
   tg:
     runs-on: ubuntu-latest
-    timeout-minutes: 120
+    timeout-minutes: 300
     permissions:
       contents: write
       issues: write
@@ -20,8 +20,11 @@ jobs:
       TG_API_HASH: ${{ secrets.TG_API_HASH }}
       TG_PASSWORD: ${{ secrets.TG_PASSWORD }}
       KANAL: talimxabarlari_fayllar
-      IDLAR: '674,681,688,695,702,703,705,712,747,754,761,762,764,771,671,673,556'
+      IDLAR: '1-2700'
       FILTR: ''
+      MIN_DATE: '2025-08-01'
+      MANIFEST: tg-manifest-hammasi.json
+      REGEX: '^(?!.*(qozoq|qirg|tojik|turkman|qqr|qoraqalpoq|\bkar\b|kazh|\btaj\b|\bturk\b|\bkyr\b|workbook|wokrbook|mashq|metodik)).*(uzb|o.zbek|_uz\b|\buz\b|rus|grade ?\d|student|rki|\d{1,2}[-_ ]?sinf)'
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5

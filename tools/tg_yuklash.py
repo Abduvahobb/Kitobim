@@ -102,7 +102,7 @@ async def main():
             low = name.lower()
             ok = FILTR == [''] or any(f in low for f in FILTR)
             if REGEX:
-                ok = bool(re.search(REGEX, name + ' ' + (m.message or ''), re.I))
+                ok = bool(re.search(REGEX, name, re.I))
             if MIN_DATE and m.date.date().isoformat() < MIN_DATE:
                 ok = False
             if m.file.size > 1_000_000 and ok:
@@ -110,6 +110,10 @@ async def main():
         json.dump(manifest, open(f'{OUT}/{MANIFEST}', 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
         print(f'jami fayl: {len(manifest)}, yuklanadi: {len(todo)}', flush=True)
 
+        have = set(json.loads(gh('release', 'view', RELEASE, '--repo', REPO, '--json', 'assets'))['assets'][i]['name']
+                   for i in range(len(json.loads(gh('release', 'view', RELEASE, '--repo', REPO, '--json', 'assets'))['assets'])))
+        todo = [m for m in todo if f'tg{m.id}.pdf' not in have]
+        print(f'release\'da yo\'q, yuklanadi: {len(todo)}', flush=True)
         sem = asyncio.Semaphore(4)
 
         async def one(m):
@@ -120,6 +124,7 @@ async def main():
                 mb = os.path.getsize(path) / 1048576
                 print(f'{m.id} {m.file.name} {mb:.1f} MB {mb / max(time.time() - t, 0.1):.1f} MB/s', flush=True)
                 await asyncio.to_thread(gh, 'release', 'upload', RELEASE, path, '--clobber', '--repo', REPO)
+                os.remove(path)  # disk to'lib qolmasin
 
         await asyncio.gather(*(one(m) for m in todo))
         gh('release', 'upload', RELEASE, f'{OUT}/{MANIFEST}', '--clobber', '--repo', REPO)
