@@ -1,0 +1,47 @@
+name: Kitoblar bo'limi (o'zbek va ingliz)
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: ['tools/kutubxona.py', '.github/workflows/library.yml']
+
+concurrency:
+  group: kitoblar
+  cancel-in-progress: false
+
+jobs:
+  library:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    permissions:
+      contents: write
+      actions: write
+    env:
+      GH_TOKEN: ${{ github.token }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Kerakli vositalar
+        run: |
+          sudo apt-get install -y -q fonts-dejavu-core >/dev/null
+          pip install -q reportlab
+      - name: O'zbekcha javonlar
+        run: python tools/kutubxona.py uz
+      - name: Ingliz kitoblari (PDF)
+        run: python tools/kutubxona.py en
+      - name: Ro'yxatni joylash
+        run: python tools/kutubxona.py publish
+      - name: Saqlash va ilovani qayta yig'ish
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add public/library.json
+          if git commit -m "Kitoblar bo'limi yangilandi"; then
+            git pull --rebase origin main
+            git push origin HEAD:main
+            gh workflow run build.yml --repo "$GITHUB_REPOSITORY" --ref main
+          fi
