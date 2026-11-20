@@ -1,4 +1,4 @@
-# Kitobim
+# Darsligim
 
 Maktab o‘quvchilari uchun bepul ilova: 1–11-sinf maktab darsliklari (o‘zbek va rus maktablari uchun), testlar va sertifikatlar. Uch tilda: o‘zbek, rus, ingliz.
 
@@ -8,8 +8,8 @@ Maktab o‘quvchilari uchun bepul ilova: 1–11-sinf maktab darsliklari (o‘zbe
 
 Eng so‘nggi versiya **Releases** bo‘limida:
 
-- **Android:** `Kitobim.apk`
-- **Kompyuter (Windows):** `Kitobim-Setup.exe` (o‘rnatiladigan) yoki `Kitobim-portable.exe` (o‘rnatmasdan ishlaydi)
+- **Android:** `Darsligim.apk`
+- **Kompyuter (Windows):** `Darsligim-Setup.exe` (o‘rnatiladigan) yoki `Darsligim-portable.exe` (o‘rnatmasdan ishlaydi)
 
 `main` tarmog‘iga har bir o‘zgarish yuklanganda, ikkala versiya avtomatik qayta yig‘iladi va yangi release chiqadi.
 

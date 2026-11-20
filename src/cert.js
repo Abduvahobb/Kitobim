@@ -31,7 +31,7 @@ export async function drawCertificate(c, t) {
   const logo = await loadImg(iconUrl);
   if (logo) x.drawImage(logo, W / 2 - 165, 130, 90, 90);
   x.fillStyle = '#1B2A41'; x.font = `800 54px ${head}`; x.textAlign = 'left';
-  x.fillText('Kitobim', W / 2 - 55, 195);
+  x.fillText('Darsligim', W / 2 - 55, 195);
 
   x.textAlign = 'center';
   x.fillStyle = '#0B5E4D'; x.font = `700 40px ${body}`;

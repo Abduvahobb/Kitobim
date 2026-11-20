@@ -1,6 +1,6 @@
 {
   "appId": "uz.kitobim.app",
-  "appName": "Kitobim",
+  "appName": "Darsligim",
   "webDir": "dist",
   "android": {
     "allowMixedContent": false

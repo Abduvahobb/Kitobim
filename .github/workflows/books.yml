@@ -31,7 +31,7 @@ jobs:
         run: |
           gh release view kitoblar --repo "$GITHUB_REPOSITORY" >/dev/null 2>&1 || \
             gh release create kitoblar --repo "$GITHUB_REPOSITORY" --title "Kitoblar (darsliklar)" \
-              --notes "Kitobim ilovasi uchun darsliklar. Ilova ularni shu yerdan oladi." --latest=false
+              --notes "Darsligim ilovasi uchun darsliklar. Ilova ularni shu yerdan oladi." --latest=false
       - name: Darsliklarni yuklab olib joylash
         run: python tools/kitoblar.py mirror
       - name: Katalog

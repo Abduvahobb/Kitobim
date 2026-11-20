@@ -70,7 +70,7 @@ function applyCloud(c) {
   tests = (cloud.testlar && cloud.testlar.json && cloud.testlar.json.tests) ? cloud.testlar.json : (baseTests || { tests: [], passPercent: 70 });
   if (baseCatalog) setCatalog(baseCatalog);
   const a = (cloud.ilova && cloud.ilova.json) || {};
-  document.title = a.name || 'Kitobim';
+  document.title = a.name || 'Darsligim';
 }
 async function refreshCloud() {
   try {
@@ -81,7 +81,7 @@ async function refreshCloud() {
     if (!/^#\/(read|test|cert|login|muallif)/.test(location.hash)) render();
   } catch (e) { /* internet yo'q — oxirgi saqlangan mazmun bilan ishlaymiz */ }
 }
-function appName() { return (cloud.ilova && cloud.ilova.json && cloud.ilova.json.name) || 'Kitobim'; }
+function appName() { return (cloud.ilova && cloud.ilova.json && cloud.ilova.json.name) || 'Darsligim'; }
 function appLogo(size) {
   const l = cloud.ilova && cloud.ilova.json && cloud.ilova.json.logo;
   return l ? `<img src="${l}" width="${size}" height="${size}" alt="${esc(appName())}" style="border-radius:${Math.round(size * 0.23)}px;object-fit:cover">` : LOGO(size);
@@ -579,7 +579,7 @@ async function scrCert(id) {
   const box = app.querySelector('#cimg');
   if (!box) return;
   box.innerHTML = `<img class="cert-img" src="${url}" alt="${esc(s.certificate + ': ' + c.name + ', ' + c.title)}">`;
-  app.querySelector('[data-dl]').onclick = () => saveImage(url, `Kitobim-sertifikat-${c.id}.png`).catch(() => toast(s.loadError));
+  app.querySelector('[data-dl]').onclick = () => saveImage(url, `Darsligim-sertifikat-${c.id}.png`).catch(() => toast(s.loadError));
 }
 
 function scrProfile() {

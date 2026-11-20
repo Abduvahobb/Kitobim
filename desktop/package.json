@@ -1,14 +1,14 @@
 {
   "name": "kitobim-desktop",
-  "productName": "Kitobim",
+  "productName": "Darsligim",
   "version": "0.5.0",
-  "description": "Kitobim — maktab darsliklari va kitoblar",
-  "author": "Kitobim",
+  "description": "Darsligim — maktab darsliklari va kitoblar",
+  "author": "Darsligim",
   "main": "main.cjs",
   "private": true,
   "build": {
     "appId": "uz.kitobim.app",
-    "productName": "Kitobim",
+    "productName": "Darsligim",
     "directories": { "output": "release" },
     "files": ["main.cjs", "icon.ico", "web/**/*"],
     "win": { "target": ["nsis", "portable"], "icon": "icon.ico" },
@@ -16,9 +16,9 @@
       "oneClick": false,
       "allowToChangeInstallationDirectory": true,
       "createDesktopShortcut": true,
-      "shortcutName": "Kitobim",
-      "artifactName": "Kitobim-Setup.exe"
+      "shortcutName": "Darsligim",
+      "artifactName": "Darsligim-Setup.exe"
     },
-    "portable": { "artifactName": "Kitobim-portable.exe" }
+    "portable": { "artifactName": "Darsligim-portable.exe" }
   }
 }

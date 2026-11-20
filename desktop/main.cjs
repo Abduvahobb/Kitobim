@@ -1,4 +1,4 @@
-// Kitobim — Windows (kompyuter) versiyasi.
+// Darsligim — Windows (kompyuter) versiyasi.
 // Veb-ilova kompyuterning o'zida ishlaydigan kichik server orqali (http://localhost) ochiladi:
 // SMS orqali kirish (Google reCAPTCHA) faqat shunday manzilda ishlaydi.
 // Server faqat shu kompyuterdan ochiladi (127.0.0.1 / ::1), tarmoqqa chiqmaydi.
@@ -50,7 +50,7 @@ function createWindow() {
     show: false,
     minWidth: 380,
     minHeight: 600,
-    title: 'Kitobim',
+    title: 'Darsligim',
     icon: path.join(__dirname, 'icon.ico'),
     autoHideMenuBar: true,
     backgroundColor: '#F3F6F5',

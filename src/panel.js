@@ -68,7 +68,7 @@ function paneApp(ctx, pane, esc) {
   const a = st.ilova;
   pane.innerHTML = `
     <div class="card col" style="gap:12px">
-      <div class="field"><label for="an">Ilova nomi</label><input id="an" class="input" value="${esc(a.name || 'Kitobim')}"></div>
+      <div class="field"><label for="an">Ilova nomi</label><input id="an" class="input" value="${esc(a.name || 'Darsligim')}"></div>
       <div class="field"><span class="lb">Ilova ichidagi logotip</span>
         <div class="row" style="gap:12px"><span id="lp">${a.logo ? `<img src="${a.logo}" width="64" height="64" style="border-radius:15px" alt="">` : ctx.logo(64)}</span>
         <button class="btn soft" data-logo style="width:auto">Rasm tanlash</button>

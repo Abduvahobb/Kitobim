@@ -64,7 +64,7 @@ jobs:
           python3 - <<'PY'
           import glob, os
           res = 'android/app/src/main/res'
-          # Capacitor'ning standart ochilish rasmlari o'rniga: firma rangi + logotip + "Kitobim"
+          # Capacitor'ning standart ochilish rasmlari o'rniga: firma rangi + logotip + "Darsligim"
           for f in glob.glob(f'{res}/drawable*/splash.png'):
               os.remove(f)
           os.makedirs(f'{res}/drawable-xxhdpi', exist_ok=True)
@@ -156,16 +156,16 @@ jobs:
           }
           GRADLE
             ./gradlew assembleRelease --no-daemon
-            cp app/build/outputs/apk/release/app-release.apk ../out/Kitobim.apk
+            cp app/build/outputs/apk/release/app-release.apk ../out/Darsligim.apk
           else
             echo "::warning::KITOBIM_KEYSTORE topilmadi — vaqtinchalik (debug) imzo ishlatildi"
             ./gradlew assembleDebug --no-daemon
-            cp app/build/outputs/apk/debug/app-debug.apk ../out/Kitobim.apk
+            cp app/build/outputs/apk/debug/app-debug.apk ../out/Darsligim.apk
           fi
       - uses: actions/upload-artifact@v4
         with:
           name: android
-          path: out/Kitobim.apk
+          path: out/Darsligim.apk
 
   windows:
     runs-on: windows-latest
@@ -192,8 +192,8 @@ jobs:
         with:
           name: windows
           path: |
-            desktop/release/Kitobim-Setup.exe
-            desktop/release/Kitobim-portable.exe
+            desktop/release/Darsligim-Setup.exe
+            desktop/release/Darsligim-portable.exe
 
   release:
     needs: [android, windows]
@@ -210,7 +210,7 @@ jobs:
         run: |
           ls -R out
           gh release create "v0.5.${{ github.run_number }}" \
-            out/android/Kitobim.apk out/windows/Kitobim-Setup.exe out/windows/Kitobim-portable.exe \
-            --title "Kitobim v0.5.${{ github.run_number }}" \
-            --notes "Android uchun: Kitobim.apk. Kompyuter uchun: Kitobim-Setup.exe (o'rnatiladigan) yoki Kitobim-portable.exe (o'rnatmasdan ishlaydi)." \
+            out/android/Darsligim.apk out/windows/Darsligim-Setup.exe out/windows/Darsligim-portable.exe \
+            --title "Darsligim v0.5.${{ github.run_number }}" \
+            --notes "Android uchun: Darsligim.apk. Kompyuter uchun: Darsligim-Setup.exe (o'rnatiladigan) yoki Darsligim-portable.exe (o'rnatmasdan ishlaydi)." \
             --latest --repo "$GITHUB_REPOSITORY"
