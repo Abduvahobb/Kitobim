@@ -144,15 +144,31 @@ def uz():
 
 # ---------------- Ingliz kitoblari: matndan telefonbop PDF ----------------
 
+MIRRORS = ['https://aleph.gutenberg.org', 'https://gutenberg.pglaf.org', 'https://mirrors.xmission.com/gutenberg',
+           'https://mirror.csclub.uwaterloo.ca/gutenberg', 'https://gutenberg.readingroo.ms', 'https://www.gutenberg.org']
+
+
+def pg_dir(n):
+    s = str(n)
+    return ('/'.join(s[:-1]) if len(s) > 1 else '0') + '/' + s
+
+
 def fetch_text(n):
-    url = f'https://www.gutenberg.org/cache/epub/{n}/pg{n}.txt'
-    for i in range(4):
+    # gutenberg.org GitHub serverlarini cheklaydi — rasmiy oyna (mirror) serverlardan navbat bilan urinamiz
+    cands = []
+    for m in MIRRORS:
+        cands += [(f'{m}/cache/epub/{n}/pg{n}.txt', 'utf-8'), (f'{m}/{pg_dir(n)}/{n}-0.txt', 'utf-8'),
+                  (f'{m}/{pg_dir(n)}/{n}.txt', 'utf-8'), (f'{m}/{pg_dir(n)}/{n}-8.txt', 'latin-1')]
+    for url, enc in cands:
         try:
-            with urllib.request.urlopen(urllib.request.Request(url, headers=UA), timeout=120) as r:
-                return r.read().decode('utf-8', 'replace')
-        except Exception as e:  # noqa
-            print('  qayta urinish', n, e, flush=True)
-            time.sleep(5 * (i + 1))
+            with urllib.request.urlopen(urllib.request.Request(url, headers=UA), timeout=60) as r:
+                data = r.read()
+            text = data.decode(enc, 'replace')
+            if 'Title:' in text[:5000] and len(text) > 5000:
+                print('  manba:', url, flush=True)
+                return text
+        except Exception:  # noqa
+            continue
     return None
 
 
