@@ -3,7 +3,7 @@ import * as pdfjsLib from 'pdfjs-dist/legacy/build/pdf';
 import workerUrl from 'pdfjs-dist/legacy/build/pdf.worker.min.js?url';
 import { store } from './store.js';
 import { I } from './icons.js';
-import { isNative, nativeBook, nativeEnsure, fetchBook as netFetchBook } from './net.js';
+import { isNative, nativeBook, nativeBookUrl, nativeDelete, nativeEnsure, fetchBook as netFetchBook } from './net.js';
 
 pdfjsLib.GlobalWorkerOptions.workerSrc = workerUrl;
 
@@ -79,12 +79,30 @@ export function openReader(root, book, title, t, onClose, toast) {
   async function load() {
     pagesEl.innerHTML = `<div class="reader-msg"><div class="spin"></div><span data-r="pct">${t.loading}</span></div>`;
     try {
-      buffer = await fetchBook(book, (f) => {
+      const prog = (f) => {
         const el = $('pct');
         if (el) el.textContent = `${t.loading} ${Math.round(f * 100)}%`;
-      });
-      updateSaveBtn();
-      pdf = await pdfjsLib.getDocument({ data: new Uint8Array(buffer.slice(0)) }).promise;
+      };
+      if (isNative()) {
+        // Telefonda: fayl xotiraga to'liq yuklanmaydi (katta kitoblar ham ochiladi)
+        const r = await nativeBookUrl(book, prog);
+        if (!store.isSaved(book.id)) store.markSaved(book.id, { title: book.title, color: book.color, size: r.size });
+        updateSaveBtn();
+        try {
+          pdf = await pdfjsLib.getDocument({ url: r.url, rangeChunkSize: 1 << 20 }).promise;
+        } catch (err) {
+          // Buzilgan yoki chala yuklangan fayl — o'chirib, bir marta qayta yuklaymiz
+          await nativeDelete(r.path);
+          store.removeFile && await store.removeFile(book.id);
+          const r2 = await nativeBookUrl(book, prog);
+          store.markSaved(book.id, { title: book.title, color: book.color, size: r2.size });
+          pdf = await pdfjsLib.getDocument({ url: r2.url, rangeChunkSize: 1 << 20 }).promise;
+        }
+      } else {
+        buffer = await fetchBook(book, prog);
+        updateSaveBtn();
+        pdf = await pdfjsLib.getDocument({ data: new Uint8Array(buffer.slice(0)) }).promise;
+      }
       if (closed) return;
       if (page > pdf.numPages) page = 1;
       $('total').textContent = '/ ' + pdf.numPages;

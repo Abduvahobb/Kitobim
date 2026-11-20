@@ -2,8 +2,8 @@
 // Yangi matn qo'shganda uchala tilga ham yozing.
 export const STRINGS = {
   uz: {
-    info: 'Ma’lumot',
-    infoTitle: 'Ilova haqida',
+    info: 'Muallif',
+    infoTitle: 'Muallif',
     phoneL: 'Telefon',
     devBy: 'Ilovani ishlab chiqqan',
     writeUs: 'Taklif va savollaringizni yozing',
@@ -135,8 +135,8 @@ export const STRINGS = {
     sample: 'Namuna'
   },
   ru: {
-    info: 'О нас',
-    infoTitle: 'О приложении',
+    info: 'Автор',
+    infoTitle: 'Автор',
     phoneL: 'Телефон',
     devBy: 'Разработчик приложения',
     writeUs: 'Пишите нам свои предложения и вопросы',
@@ -268,8 +268,8 @@ export const STRINGS = {
     sample: 'Образец'
   },
   en: {
-    info: 'About',
-    infoTitle: 'About the app',
+    info: 'Author',
+    infoTitle: 'Author',
     phoneL: 'Phone',
     devBy: 'App developer',
     writeUs: 'Send us your ideas and questions',

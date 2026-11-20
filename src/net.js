@@ -44,6 +44,19 @@ async function nativeRead(path) {
   return res.arrayBuffer();
 }
 
+// Faylning faqat boshini o'qib, PDF ekanini tekshiradi (butun faylni xotiraga olmaydi)
+async function nativeLooksPdf(path) {
+  try {
+    const { uri } = await FS().getUri({ path, directory: 'DATA' });
+    const res = await fetch(cap().convertFileSrc(uri));
+    if (!res.body) return isPdf(await res.arrayBuffer());
+    const rd = res.body.getReader();
+    const { value } = await rd.read();
+    try { rd.cancel(); } catch (e) { /* e'tiborsiz */ }
+    return !!value && value.length >= 5 && String.fromCharCode(...value.subarray(0, 5)) === '%PDF-';
+  } catch (e) { return true; } // tekshirib bo'lmasa, PDF o'quvchining o'zi aniqlaydi
+}
+
 export async function nativeExists(path) {
   try { const s = await FS().stat({ path, directory: 'DATA' }); return !!s && (s.size === undefined || s.size > 0); } catch (e) { return false; }
 }
@@ -83,6 +96,16 @@ export async function nativeBook(book, onProgress) {
   throw lastErr || new Error('download failed');
 }
 
+// Kitobni ochish uchun (Android): faylni xotiraga to'liq o'qimaydi — PDF o'quvchiga telefondagi faylning
+// manzilini beradi, u sahifalarni kerak bo'lganda o'qiydi. Shunda 100–300 MB lik kitoblar ham ochiladi.
+export async function nativeBookUrl(book, onProgress) {
+  const path = bookPath(book.id);
+  const had = await nativeExists(path);
+  const size = await nativeEnsure(book, onProgress);
+  const { uri } = await FS().getUri({ path, directory: 'DATA' });
+  return { url: cap().convertFileSrc(uri), size, downloaded: !had, path };
+}
+
 // Butun sinfni yuklashda (Android): kitobni xotiraga o'qimasdan faqat telefonga yuklab qo'yadi.
 // Qaytaradi: fayl hajmi (bayt).
 export async function nativeEnsure(book, onProgress) {
@@ -97,8 +120,9 @@ export async function nativeEnsure(book, onProgress) {
     try {
       await nativeDownload(urls[i], path, onProgress, i < urls.length - 1);
       n = await size();
-      if (n > 20000) return n; // juda kichik fayl — xato sahifasi bo'lishi mumkin
-      throw new Error('fayl juda kichik');
+      // Juda kichik fayl yoki PDF bo'lmagan javob (server xato sahifasi) — keyingi manzilga o'tamiz
+      if (n > 20000 && await nativeLooksPdf(path)) return n;
+      throw new Error('PDF emas');
     } catch (e) {
       lastErr = e;
       await nativeDelete(path);

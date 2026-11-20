@@ -649,7 +649,7 @@ function render() {
     case 'cert': return scrCert(a);
     case 'profile': return scrProfile();
     case 'muallif': return scrAuthor(panelCtx);
-    case 'malumot': return scrInfo();
+    case 'muallif-info': case 'malumot': return scrInfo();
     default: return scrHome();
   }
 }
