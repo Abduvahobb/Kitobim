@@ -1,0 +1,22 @@
+name: Katalogni joylash
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: ['public/catalog.json']
+
+concurrency:
+  group: kitoblar
+  cancel-in-progress: false
+
+jobs:
+  upload:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - name: catalog.json ni "kitoblar" release'iga yuklash
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh release upload kitoblar public/catalog.json --clobber --repo "$GITHUB_REPOSITORY"
