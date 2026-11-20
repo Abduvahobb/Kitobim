@@ -6,7 +6,7 @@ import { openReader, esc, ensureSaved } from './reader.js';
 import { drawCertificate, saveImage } from './cert.js';
 import { REMOTE_CATALOG, APP_VERSION, AUTHOR } from './config.js';
 import { getJson } from './net.js';
-import { cloudReady, cachedCloud, fetchCloud, applyBooks, applyTexts, sendCode, isAuthorName, authorSignIn, authorSignOut } from './cloud.js';
+import { cachedCloud, fetchCloud, applyBooks, applyTexts, isAuthorName, authorSignIn, authorSignOut } from './cloud.js';
 import { scrAuthor } from './panel.js';
 
 const app = document.getElementById('app');
@@ -205,10 +205,9 @@ function authorSection() {
 }
 
 // ---------- Ekranlar ----------
-let prefill = null;
 function scrLogin() {
   const s = t();
-  const u = store.user || prefill || {};
+  const u = store.user || {};
   let grade = u.grade || null;
   const featIcons = [I.book(18), I.download(18), I.test(18), I.globe(18)];
   app.className = 'bare';
@@ -223,10 +222,9 @@ function scrLogin() {
     <div class="form-wrap">
     <form class="card col" style="gap:14px" novalidate>
       <div class="field"><label for="nm">${s.yourName}</label>
-        <input id="nm" class="input" autocomplete="name" placeholder="${s.namePh}" value="${esc(u.name || '')}"><div class="err" id="eNm"></div></div>
-      <div class="field"><label for="ph">${s.yourPhone}</label>
-        <div class="row" style="gap:8px"><span class="prefix">+998</span>
-        <input id="ph" class="input" type="tel" inputmode="numeric" autocomplete="tel-national" placeholder="90 123 45 67" value="${esc(u.phone || '')}"></div><div class="err" id="ePh"></div></div>
+        <input id="nm" class="input" autocomplete="username" placeholder="${s.namePh}" value="${esc(u.name || '')}"><div class="err" id="eNm"></div></div>
+      <div class="field"><label for="pw">${s.yourPass}</label>
+        <input id="pw" class="input" type="password" autocomplete="current-password" placeholder="${s.passPh}"><div class="err" id="ePw"></div></div>
       <div class="field"><span class="lb">${s.yourGrade}</span>
         <div class="grade-grid" id="gr" style="grid-template-columns:repeat(6,minmax(0,1fr))">${Array.from({ length: 11 }, (_, i) => i + 1).map((g) =>
           `<button type="button" class="grade" data-g="${g}" aria-pressed="${g === grade}" style="height:48px;font-size:18px">${g}</button>`).join('')}</div></div>
@@ -241,102 +239,38 @@ function scrLogin() {
     grade = +b.dataset.g;
     app.querySelectorAll('[data-g]').forEach((x) => x.setAttribute('aria-pressed', String(+x.dataset.g === grade)));
   });
-  const ph = app.querySelector('#ph');
-  ph.oninput = () => {
-    const d = ph.value.replace(/\D/g, '').slice(0, 9);
-    ph.value = [d.slice(0, 2), d.slice(2, 5), d.slice(5, 7), d.slice(7, 9)].filter(Boolean).join(' ');
-    app.querySelector('#ePh').textContent = '';
-  };
+  const pw = app.querySelector('#pw');
+  pw.oninput = () => { app.querySelector('#ePw').textContent = ''; };
   app.querySelector('#nm').oninput = () => { app.querySelector('#eNm').textContent = ''; };
-  app.querySelector('form').onsubmit = (e) => {
+  app.querySelector('form').onsubmit = async (e) => {
     e.preventDefault();
+    const btn = app.querySelector('form [type=submit]');
     const name = app.querySelector('#nm').value.trim().replace(/\s+/g, ' ');
-    const digits = ph.value.replace(/\D/g, '');
     let ok = true;
     if (name.length < 3) { app.querySelector('#eNm').textContent = s.errName; ok = false; }
-    if (digits.length !== 9) { app.querySelector('#ePh').textContent = s.errPhone; ok = false; }
+    if (pw.value.length < 4) { app.querySelector('#ePw').textContent = s.errPass; ok = false; }
     if (!ok) return;
-    const user = { name, phone: ph.value, grade: grade || 5 };
-    if (!cloudReady()) { store.setUser(user); go('#/home'); return; }
-    stepCode(user, '+998' + digits, e.submitter || app.querySelector('form [type=submit]'));
-  };
-  if (pendingLogin) { const pl = pendingLogin; pendingLogin = null; stepPassword(pl); }
-}
-
-// ---------- SMS kod va muallif paroli ----------
-let pendingLogin = null;
-function loginCard(inner) {
-  app.className = 'bare';
-  app.innerHTML = `<main class="login"><div class="brand"><div class="logo-row">${appLogo(72)}<span class="name">${esc(appName())}</span></div></div>
-    <div class="form-wrap"><div class="card col" style="gap:14px">${inner}</div></div></main>`;
-}
-function smsErrorText(e) {
-  const s = t(); const c = (e && (e.code || e.message)) || '';
-  if (/too-many|quota/i.test(c)) return s.smsLimit;
-  if (/invalid-phone/i.test(c)) return s.errPhone;
-  if (/network|offline|unavailable/i.test(c)) return s.smsNet;
-  return s.smsFail + (c ? ` (${c})` : '');
-}
-async function stepCode(user, e164, btn) {
-  const s = t();
-  btn.disabled = true; btn.textContent = s.smsSending;
-  let conf;
-  try {
-    conf = await sendCode(e164);
-  } catch (e) {
-    btn.disabled = false; btn.textContent = s.start;
-    app.querySelector('#ePh').textContent = smsErrorText(e);
-    return;
-  }
-  const done = async (uid) => {
-    const u = Object.assign({}, user, { verified: true, uid: uid || '' });
-    if (isAuthorName(user.name)) return stepPassword(u);
-    store.setUser(u); go('#/home');
-  };
-  if (conf.auto) return done(await conf.confirm());
-  loginCard(`<h1 style="font-size:22px">${s.codeTitle}</h1>
-    <p class="sub">${s.codeSent} <b>${esc(e164)}</b></p>
-    <div class="field"><label for="cd">${s.codeLabel}</label>
-      <input id="cd" class="input" type="text" inputmode="numeric" autocomplete="one-time-code" maxlength="6" placeholder="••••••" style="letter-spacing:8px;font-size:22px;text-align:center">
-      <div class="err" id="eCd"></div></div>
-    <button class="btn" data-ok>${s.codeVerify}</button>
-    <button class="btn ghost" data-change>${s.codeChange}</button>`);
-  const cd = app.querySelector('#cd'); cd.focus();
-  cd.oninput = () => { cd.value = cd.value.replace(/\D/g, '').slice(0, 6); app.querySelector('#eCd').textContent = ''; };
-  app.querySelector('[data-change]').onclick = () => scrLogin();
-  app.querySelector('[data-ok]').onclick = async (ev) => {
-    if (cd.value.length !== 6) { app.querySelector('#eCd').textContent = s.codeWrong; return; }
-    ev.currentTarget.disabled = true;
-    try { await done(await conf.confirm(cd.value)); } catch (e) {
-      ev.currentTarget.disabled = false;
-      app.querySelector('#eCd').textContent = /expired/i.test(e.code || '') ? s.codeExpired : s.codeWrong;
-    }
-  };
-}
-// Muallif ismi yozilsa: parol so'raladi (parolni Firebase serveri tekshiradi)
-function stepPassword(u) {
-  const s = t();
-  loginCard(`<h1 style="font-size:22px">${s.authorTitle}</h1>
-    <p class="sub">${s.authorHint}</p>
-    <div class="field"><label for="pw">${s.authorPass}</label>
-      <input id="pw" class="input" type="password" autocomplete="current-password"><div class="err" id="ePw"></div></div>
-    <button class="btn" data-ok>${s.authorEnter}</button>
-    <button class="btn ghost" data-skip>${s.authorSkip}</button>`);
-  const pw = app.querySelector('#pw'); pw.focus();
-  app.querySelector('[data-skip]').onclick = () => { store.setUser(Object.assign({}, u, { author: false })); go('#/home'); };
-  const submit = async (btn) => {
+    const user = { name, grade: grade || 5 };
     btn.disabled = true;
     try {
-      await authorSignIn(pw.value);
-      store.setUser(Object.assign({}, u, { author: true }));
-      toast(s.authorWelcome); go('#/home');
-    } catch (e) {
+      if (isAuthorName(name)) {
+        // Muallif: parolni Firebase serveri tekshiradi
+        await authorSignIn(pw.value);
+        store.setUser(Object.assign(user, { author: true }));
+        toast(s.authorWelcome);
+      } else {
+        // O'quvchi: parol shu qurilmadagi profilni himoya qiladi
+        if (!(await store.checkPassword(name, pw.value))) { btn.disabled = false; app.querySelector('#ePw').textContent = s.passWrong; return; }
+        store.setUser(user);
+      }
+      go('#/home');
+    } catch (err) {
       btn.disabled = false;
-      app.querySelector('#ePw').textContent = /wrong-password|invalid-credential|invalid-login/i.test(e.code || '') ? s.authorWrong : smsErrorText(e);
+      const c = (err && (err.code || err.message)) || '';
+      app.querySelector('#ePw').textContent = /wrong-password|invalid-credential|invalid-login|user-not-found/i.test(c) ? s.authorWrong
+        : /network|offline|unavailable/i.test(c) ? s.netNeeded : s.loginFail + (c ? ` (${c})` : '');
     }
   };
-  app.querySelector('[data-ok]').onclick = (ev) => submit(ev.currentTarget);
-  pw.onkeydown = (ev) => { if (ev.key === 'Enter') submit(app.querySelector('[data-ok]')); };
 }
 
 function scrHome() {
@@ -654,7 +588,7 @@ function scrProfile() {
   app.innerHTML = `<main class="screen">
     <header class="band" style="padding-bottom:24px">
       <div class="row" style="gap:16px"><span class="badge" style="width:64px;height:64px;border-radius:32px;background:rgba(255,255,255,.18);border:2px solid rgba(255,255,255,.5);font-size:26px">${esc((u.name || '?')[0].toUpperCase())}</span>
-      <div class="col" style="gap:2px;min-width:0"><h1 style="font-size:22px">${esc(u.name)}</h1><span class="hi">${u.grade}-${s.grade} · +998 ${esc(u.phone)}</span></div></div></header>
+      <div class="col" style="gap:2px;min-width:0"><h1 style="font-size:22px">${esc(u.name)}</h1><span class="hi">${u.grade}-${s.grade}${u.author ? ' · ' + esc(s.authorPanel) : ''}</span></div></div></header>
     <section class="sec"><h2>${s.language}</h2>
       <div class="seg">${LANGS.map((l) => `<button data-lang="${l}" aria-pressed="${l === L()}">${STRINGS[l].langName}</button>`).join('')}</div></section>
     <section class="sec"><h2>${s.schoolLang}</h2>${schoolPills()}</section>
@@ -676,11 +610,6 @@ function render() {
   if (!/^#\/read\//.test(location.hash)) overlay.innerHTML = '';
   const [, route, arg] = (location.hash.match(/^#\/([^/]*)\/?(.*)$/) || []);
   const a = arg ? decodeURIComponent(arg) : '';
-  // SMS bilan tasdiqlanmagan (eski versiyadan qolgan) foydalanuvchi bir marta tasdiqlashi kerak
-  if (store.user && !store.user.verified && cloudReady() && route !== 'login') {
-    const old = store.user; store.logout(); store.setUser(null); prefill = old;
-    return go('#/login');
-  }
   if (!store.user && route !== 'login') return go('#/login');
   document.documentElement.lang = L();
   app.className = /^(login|test|cert)$/.test(route || '') ? 'bare' : '';

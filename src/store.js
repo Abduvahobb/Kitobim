@@ -13,9 +13,20 @@ function load() {
 }
 
 const data = Object.assign(
-  { lang: 'uz', user: null, progress: {}, certs: [], saved: {}, audio: {} },
+  { lang: 'uz', user: null, progress: {}, certs: [], saved: {}, audio: {}, accounts: {} },
   load()
 );
+
+async function hashPass(key, password) {
+  const text = 'kitobim:' + key + ':' + password;
+  try {
+    const buf = await crypto.subtle.digest('SHA-256', new TextEncoder().encode(text));
+    return Array.from(new Uint8Array(buf)).map((b) => b.toString(16).padStart(2, '0')).join('');
+  } catch (e) {
+    let h = 5381; for (let i = 0; i < text.length; i++) h = ((h << 5) + h + text.charCodeAt(i)) | 0;
+    return 'x' + (h >>> 0).toString(16);
+  }
+}
 
 function persist() {
   try { localStorage.setItem(KEY, JSON.stringify(data)); } catch (e) { /* e'tiborsiz */ }
@@ -28,6 +39,17 @@ export const store = {
   get user() { return data.user; },
   setUser(u) { data.user = u; persist(); },
   logout() { data.user = null; persist(); },
+
+  // O'quvchi paroli: shu qurilmada saqlanadi (o'zi emas, faqat izi — sha256).
+  // Shu ism bilan birinchi kirishda parol eslab qolinadi, keyingi safar o'sha parol so'raladi.
+  async checkPassword(name, password) {
+    const key = String(name).toLowerCase().replace(/\s+/g, ' ').trim();
+    const h = await hashPass(key, password);
+    data.accounts = data.accounts || {};
+    if (data.accounts[key] && data.accounts[key] !== h) return false;
+    data.accounts[key] = h; persist();
+    return true;
+  },
 
   // O'qish joyi: har bir kitob uchun oxirgi ochilgan bet
   progress(id) { return data.progress[id]; },

@@ -1,7 +1,7 @@
-// Bulut (Firebase): SMS orqali kirish, muallif rejimi va muallif o'zgartirgan mazmun.
+// Bulut (Firebase): muallif rejimi va muallif o'zgartirgan mazmun.
 //
 // O'quvchilar mazmunni Firestore REST orqali faqat o'qiydi (SDK yuklanmaydi, tez).
-// Firebase SDK faqat kirishda va muallif saqlaganda kerak bo'ladi — u alohida bo'lak bo'lib yuklanadi.
+// Firebase SDK faqat muallif kirganda va saqlaganda kerak bo'ladi — u alohida bo'lak bo'lib yuklanadi.
 //
 // Firestore'dagi "kitobim" to'plami:
 //   ilova    — { json: { name, logo, icon } }              ilova nomi, ichki logotip, telefon ikonkasi
@@ -58,54 +58,6 @@ export function sdk() {
     });
   }
   return sdkP;
-}
-
-const isNative = () => {
-  const c = window.Capacitor;
-  return !!(c && c.isNativePlatform && c.isNativePlatform());
-};
-
-// ---------- SMS orqali kirish ----------
-// sendCode -> { confirm(code) } qaytaradi. Android'da telefonning o'z Firebase moduli,
-// kompyuter/veb'da Google reCAPTCHA (ko'rinmas) ishlatiladi.
-export async function sendCode(phoneE164) {
-  if (isNative()) return sendCodeNative(phoneE164);
-  const { auth, au } = await sdk();
-  if (!window.__kitobimRecaptcha) {
-    // Ko'rinmas reCAPTCHA uchun doimiy joy (ekran almashganda ham o'chmaydi)
-    let el = document.getElementById('kitobim-rc');
-    if (!el) { el = document.createElement('div'); el.id = 'kitobim-rc'; document.body.appendChild(el); }
-    window.__kitobimRecaptcha = new au.RecaptchaVerifier(auth, el, { size: 'invisible' });
-  }
-  try {
-    const conf = await au.signInWithPhoneNumber(auth, phoneE164, window.__kitobimRecaptcha);
-    return { confirm: async (code) => { const r = await conf.confirm(code); return r.user.uid; } };
-  } catch (e) {
-    try { window.__kitobimRecaptcha.clear(); } catch (x) { /* e'tiborsiz */ }
-    window.__kitobimRecaptcha = null;
-    throw e;
-  }
-}
-
-async function sendCodeNative(phoneE164) {
-  const { FirebaseAuthentication: F } = await import('@capacitor-firebase/authentication');
-  await F.removeAllListeners();
-  return new Promise((resolve, reject) => {
-    let done = false;
-    const finish = (fn, v) => { if (!done) { done = true; fn(v); } };
-    F.addListener('phoneCodeSent', (ev) => finish(resolve, {
-      confirm: async (code) => {
-        const r = await F.confirmVerificationCode({ verificationId: ev.verificationId, verificationCode: code });
-        return r && r.user ? r.user.uid : '';
-      }
-    }));
-    // Ba'zi telefonlarda kod o'zi o'qiladi — unda kod so'ralmaydi
-    F.addListener('phoneVerificationCompleted', (ev) => finish(resolve, {
-      auto: true, confirm: async () => (ev.result && ev.result.user ? ev.result.user.uid : '')
-    }));
-    F.addListener('phoneVerificationFailed', (ev) => finish(reject, new Error((ev && ev.message) || 'phone-failed')));
-    F.signInWithPhoneNumber({ phoneNumber: phoneE164 }).catch((e) => finish(reject, e));
-  });
 }
 
 // ---------- Muallif ----------
