@@ -216,16 +216,22 @@ def make_pdf(path, title, author, paras):
 
     story = [Spacer(1, 120), Paragraph(fmt(title), big), Spacer(1, 14), Paragraph(fmt(author), sub),
              Spacer(1, 150), Paragraph('Kitobim · Public domain text', small), PageBreak()]
-    first_head = True
+    since_break = 0  # oxirgi yangi sahifadan beri nechta paragraf
     for p in paras:
-        lines = [l.strip() for l in p.split('\n')]
+        lines = [l.strip() for l in p.split('\n') if not re.fullmatch(r'\[Illustration[^\]]*\]', l.strip())]
         one = ' '.join(l for l in lines if l)
-        if len(one) <= 80 and len(lines) <= 3 and (HEAD_RE.match(one) or (one.isupper() and re.search('[A-Z]', one) and len(one) <= 60)):
-            if not first_head:
+        if not one:
+            continue
+        chapter = len(one) <= 80 and len(lines) <= 3 and HEAD_RE.match(one)
+        caps = len(one) <= 60 and len(lines) <= 2 and one.isupper() and re.search('[A-Z]', one)
+        if chapter or caps:
+            # Faqat haqiqiy bob sarlavhasi yangi sahifadan boshlanadi (bo'sh sahifalar chiqmasligi uchun)
+            if chapter and since_break >= 3:
                 story.append(PageBreak())
-            first_head = False
+                since_break = 0
             story.append(Paragraph(fmt(one), head))
             continue
+        since_break += 1
         short = sum(1 for l in lines if l) >= 2 and max(len(l) for l in lines) < 55
         if short:  # she'r yoki ro'yxat — qatorlarni saqlaymiz
             story.append(Paragraph('<br/>'.join(fmt(l) for l in lines if l), verse))
