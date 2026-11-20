@@ -3,7 +3,7 @@ on:
   workflow_dispatch:
   push:
     branches: [main]
-    paths: ['tools/kitoblar.py', '.github/workflows/books.yml']
+    paths: ['tools/kitoblar.py']
 
 concurrency:
   group: kitoblar

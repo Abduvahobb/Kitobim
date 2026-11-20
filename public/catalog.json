@@ -1,7 +1,7 @@
 {
  "version": 2,
  "note": "Avtomatik yasalgan (tools/kitoblar.py). Manba: oliygoh.uz",
- "updated": "2026-11-20 15:30",
+ "updated": "2026-11-20 15:33",
  "grades": [
   {
    "grade": 1,
@@ -3307,6 +3307,21 @@
        "cover": "covers/matematika-5-sinf-uz-1-qism.jpg"
       },
       {
+       "id": "matematika-mashq-5-sinf-uz-1-qism",
+       "title": {
+        "uz": "Matematika mashq daftari · 5-sinf · 1-qism",
+        "ru": "Математика, рабочая тетрадь · 5 класс · 1 часть",
+        "en": "Mathematics workbook · Grade 5 · Part 1"
+       },
+       "lang": "uz",
+       "part": 1,
+       "size": 40700043,
+       "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/tg721.pdf",
+       "pages": 221,
+       "cover": "covers/matematika-mashq-5-sinf-uz-1-qism.jpg",
+       "year": 2025
+      },
+      {
        "id": "matematika-5-sinf-uz-2-qism",
        "title": {
         "uz": "Matematika · 5-sinf · 2-qism",
@@ -3887,20 +3902,19 @@
      "color": "#0F7A64",
      "books": [
       {
-       "id": "ona-tili-6-sinf-uz",
+       "id": "ona-tili-6-sinf-uz-2025",
        "title": {
-        "uz": "Ona tili · 6-sinf",
-        "ru": "Родной язык · 6 класс",
-        "en": "Native language · Grade 6"
+        "uz": "O‘zbek tili · 6-sinf",
+        "ru": "Узбекский язык · 6 класс",
+        "en": "Uzbek language · Grade 6"
        },
        "lang": "uz",
        "part": null,
-       "size": 30303354,
-       "src": "https://static.oliygoh.uz/uploads/darsliklar/6/ona-tili-6-sinf-uz.pdf",
-       "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/ona-tili-6-sinf-uz.pdf",
-       "year": 2022,
-       "pages": 224,
-       "cover": "covers/ona-tili-6-sinf-uz.jpg"
+       "size": 42200093,
+       "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/tg754-s.pdf",
+       "year": 2025,
+       "pages": 176,
+       "cover": "covers/ona-tili-6-sinf-uz-2025.jpg"
       }
      ]
     },
@@ -4069,6 +4083,21 @@
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/matematika-6-sinf-uz-1-qism.pdf",
        "pages": 172,
        "cover": "covers/matematika-6-sinf-uz-1-qism.jpg"
+      },
+      {
+       "id": "matematika-mashq-6-sinf-uz-1-qism",
+       "title": {
+        "uz": "Matematika mashq daftari · 6-sinf · 1-qism",
+        "ru": "Математика, рабочая тетрадь · 6 класс · 1 часть",
+        "en": "Mathematics workbook · Grade 6 · Part 1"
+       },
+       "lang": "uz",
+       "part": 1,
+       "size": 35845333,
+       "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/tg742.pdf",
+       "pages": 233,
+       "cover": "covers/matematika-mashq-6-sinf-uz-1-qism.jpg",
+       "year": 2025
       },
       {
        "id": "matematika-6-sinf-uz-2-qism",
@@ -4309,7 +4338,7 @@
      "color": "#B42318",
      "books": [
       {
-       "id": "ingliz-tili-6-sinf-ru",
+       "id": "ingliz-tili-6-sinf-ru-2025",
        "title": {
         "uz": "Ingliz tili · 6-sinf",
         "ru": "Английский язык · 6 класс",
@@ -4317,15 +4346,14 @@
        },
        "lang": "ru",
        "part": null,
-       "size": 13625896,
-       "src": "https://static.oliygoh.uz/uploads/darsliklar/6/ingliz-tili-6-sinf-ru.pdf",
-       "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/ingliz-tili-6-sinf-ru.pdf",
-       "year": 2018,
-       "pages": 160,
-       "cover": "covers/ingliz-tili-6-sinf-ru.jpg"
+       "size": 50358186,
+       "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/tg762-s.pdf",
+       "year": 2025,
+       "pages": 116,
+       "cover": "covers/ingliz-tili-6-sinf-ru-2025.jpg"
       },
       {
-       "id": "ingliz-tili-6-sinf-uz",
+       "id": "ingliz-tili-6-sinf-uz-2025",
        "title": {
         "uz": "Ingliz tili · 6-sinf",
         "ru": "Английский язык · 6 класс",
@@ -4333,12 +4361,11 @@
        },
        "lang": "uz",
        "part": null,
-       "size": 13485686,
-       "src": "https://static.oliygoh.uz/uploads/darsliklar/6/ingliz-tili-6-sinf-uz.pdf",
-       "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/ingliz-tili-6-sinf-uz.pdf",
-       "year": 2018,
-       "pages": 160,
-       "cover": "covers/ingliz-tili-6-sinf-uz.jpg"
+       "size": 50358186,
+       "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/tg762-s.pdf",
+       "year": 2025,
+       "pages": 116,
+       "cover": "covers/ingliz-tili-6-sinf-uz-2025.jpg"
       }
      ]
     },
@@ -5177,7 +5204,7 @@
      "color": "#B42318",
      "books": [
       {
-       "id": "ingliz-tili-7-sinf-ru",
+       "id": "ingliz-tili-7-sinf-ru-2025",
        "title": {
         "uz": "Ingliz tili · 7-sinf",
         "ru": "Английский язык · 7 класс",
@@ -5185,14 +5212,14 @@
        },
        "lang": "ru",
        "part": null,
-       "size": 7454410,
-       "src": "https://static.oliygoh.uz/uploads/darsliklar/7/ingliz-tili-7-sinf-ru.pdf",
-       "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/ingliz-tili-7-sinf-ru.pdf",
-       "pages": 159,
-       "cover": "covers/ingliz-tili-7-sinf-ru.jpg"
+       "size": 15788626,
+       "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/tg703-s.pdf",
+       "pages": 88,
+       "cover": "covers/ingliz-tili-7-sinf-ru-2025.jpg",
+       "year": 2025
       },
       {
-       "id": "ingliz-tili-7-sinf-uz",
+       "id": "ingliz-tili-7-sinf-uz-2025",
        "title": {
         "uz": "Ingliz tili · 7-sinf",
         "ru": "Английский язык · 7 класс",
@@ -5200,12 +5227,11 @@
        },
        "lang": "uz",
        "part": null,
-       "size": 15704574,
-       "src": "https://static.oliygoh.uz/uploads/darsliklar/7/ingliz-tili-7-sinf-uz.pdf",
-       "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/ingliz-tili-7-sinf-uz.pdf",
-       "year": 2019,
-       "pages": 160,
-       "cover": "covers/ingliz-tili-7-sinf-uz.jpg"
+       "size": 15788626,
+       "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/tg703-s.pdf",
+       "year": 2025,
+       "pages": 88,
+       "cover": "covers/ingliz-tili-7-sinf-uz-2025.jpg"
       }
      ]
     },
@@ -5800,7 +5826,7 @@
        "cover": "covers/geometriya-8-sinf-ru.jpg"
       },
       {
-       "id": "geometriya-8-sinf-uz",
+       "id": "geometriya-8-sinf-uz-2025",
        "title": {
         "uz": "Geometriya · 8-sinf",
         "ru": "Геометрия · 8 класс",
@@ -5808,11 +5834,11 @@
        },
        "lang": "uz",
        "part": null,
-       "size": 2944734,
-       "src": "https://static.oliygoh.uz/uploads/darsliklar/8/geometriya-8-sinf-uz.pdf",
-       "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/geometriya-8-sinf-uz.pdf",
+       "size": 5515049,
+       "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/tg615.pdf",
        "pages": 160,
-       "cover": "covers/geometriya-8-sinf-uz.jpg"
+       "cover": "covers/geometriya-8-sinf-uz-2025.jpg",
+       "year": 2025
       }
      ]
     },
@@ -6081,7 +6107,7 @@
      "color": "#B42318",
      "books": [
       {
-       "id": "ingliz-tili-8-sinf-ru",
+       "id": "ingliz-tili-8-sinf-ru-2025",
        "title": {
         "uz": "Ingliz tili · 8-sinf",
         "ru": "Английский язык · 8 класс",
@@ -6089,15 +6115,14 @@
        },
        "lang": "ru",
        "part": null,
-       "size": 7522868,
-       "src": "https://static.oliygoh.uz/uploads/darsliklar/8/ingliz-tili-8-sinf-ru.pdf",
-       "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/ingliz-tili-8-sinf-ru.pdf",
-       "year": 2020,
-       "pages": 160,
-       "cover": "covers/ingliz-tili-8-sinf-ru.jpg"
+       "size": 14464623,
+       "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/tg671-s.pdf",
+       "year": 2025,
+       "pages": 84,
+       "cover": "covers/ingliz-tili-8-sinf-ru-2025.jpg"
       },
       {
-       "id": "ingliz-tili-8-sinf-uz",
+       "id": "ingliz-tili-8-sinf-uz-2025",
        "title": {
         "uz": "Ingliz tili · 8-sinf",
         "ru": "Английский язык · 8 класс",
@@ -6105,12 +6130,11 @@
        },
        "lang": "uz",
        "part": null,
-       "size": 15203882,
-       "src": "https://static.oliygoh.uz/uploads/darsliklar/8/ingliz-tili-8-sinf-uz.pdf",
-       "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/ingliz-tili-8-sinf-uz.pdf",
-       "year": 2020,
-       "pages": 160,
-       "cover": "covers/ingliz-tili-8-sinf-uz.jpg"
+       "size": 14464623,
+       "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/tg671-s.pdf",
+       "year": 2025,
+       "pages": 84,
+       "cover": "covers/ingliz-tili-8-sinf-uz-2025.jpg"
       }
      ]
     },
@@ -6985,7 +7009,7 @@
      "color": "#B42318",
      "books": [
       {
-       "id": "ingliz-tili-9-sinf-uz",
+       "id": "ingliz-tili-9-sinf-uz-2025",
        "title": {
         "uz": "Ingliz tili · 9-sinf",
         "ru": "Английский язык · 9 класс",
@@ -6993,12 +7017,11 @@
        },
        "lang": "uz",
        "part": null,
-       "size": 4065530,
-       "src": "https://static.oliygoh.uz/uploads/darsliklar/9/ingliz-tili-9-sinf-uz.pdf",
-       "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/ingliz-tili-9-sinf-uz.pdf",
-       "year": 2014,
-       "pages": 176,
-       "cover": "covers/ingliz-tili-9-sinf-uz.jpg"
+       "size": 28581754,
+       "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/tg556-s.pdf",
+       "year": 2025,
+       "pages": 152,
+       "cover": "covers/ingliz-tili-9-sinf-uz-2025.jpg"
       }
      ]
     },
