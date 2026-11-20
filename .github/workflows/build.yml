@@ -3,7 +3,7 @@ on:
   workflow_dispatch:
   push:
     branches: [main]
-    paths-ignore: ['tools/**', 'research/**', '.github/workflows/books.yml', '.github/workflows/probe.yml', '.github/workflows/library.yml', 'README.md']
+    paths-ignore: ['tools/**', 'research/**', '.github/workflows/books.yml', 'README.md']
 
 jobs:
   android:
@@ -60,12 +60,57 @@ jobs:
           open(f'{res}/values/ic_launcher_background.xml', 'w').write('<?xml version="1.0" encoding="utf-8"?>\n<resources>\n    <color name="ic_launcher_background">#16A085</color>\n</resources>\n')
           PY
       - name: APK yig'ish
+        env:
+          KS_B64: ${{ secrets.KITOBIM_KEYSTORE }}
+          KS_PASS: ${{ secrets.KITOBIM_KEYSTORE_PASSWORD }}
+          VCODE: ${{ github.run_number }}
         run: |
           cd android
           chmod +x gradlew
-          ./gradlew assembleDebug --no-daemon
           mkdir -p ../out
-          cp app/build/outputs/apk/debug/app-debug.apk ../out/Kitobim.apk
+          # Har bir versiya raqami oldingisidan katta bo'lishi kerak (ustidan yangilash uchun)
+          cat >> app/build.gradle <<'GRADLE'
+
+          android {
+              defaultConfig {
+                  versionCode Integer.parseInt(System.getenv('VCODE') ?: '1') + 100
+                  versionName '0.4.' + (System.getenv('VCODE') ?: '0')
+              }
+          }
+          GRADLE
+          if [ -n "$KS_B64" ] && [ -n "$KS_PASS" ]; then
+            # Doimiy imzo kaliti: yangi versiya eski ilova ustidan o'rnatiladi, ma'lumotlar saqlanadi
+            echo "$KS_B64" | base64 -d > app/kitobim.p12
+            cat >> app/build.gradle <<'GRADLE'
+
+          android {
+              signingConfigs {
+                  kitobim {
+                      storeFile file('kitobim.p12')
+                      storePassword System.getenv('KS_PASS')
+                      keyAlias 'kitobim'
+                      keyPassword System.getenv('KS_PASS')
+                      storeType 'pkcs12'
+                  }
+              }
+              buildTypes {
+                  release {
+                      signingConfig signingConfigs.kitobim
+                      minifyEnabled false
+                  }
+              }
+              lint {
+                  checkReleaseBuilds false
+              }
+          }
+          GRADLE
+            ./gradlew assembleRelease --no-daemon
+            cp app/build/outputs/apk/release/app-release.apk ../out/Kitobim.apk
+          else
+            echo "::warning::KITOBIM_KEYSTORE topilmadi — vaqtinchalik (debug) imzo ishlatildi"
+            ./gradlew assembleDebug --no-daemon
+            cp app/build/outputs/apk/debug/app-debug.apk ../out/Kitobim.apk
+          fi
       - uses: actions/upload-artifact@v4
         with:
           name: android

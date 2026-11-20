@@ -1,6 +1,6 @@
 # Kitobim
 
-Maktab o‘quvchilari uchun bepul ilova: 1–11-sinf maktab darsliklari (o‘zbek va rus maktablari uchun), o‘zbek va ingliz tilidagi kitoblar, testlar va sertifikatlar. Uch tilda: o‘zbek, rus, ingliz.
+Maktab o‘quvchilari uchun bepul ilova: 1–11-sinf maktab darsliklari (o‘zbek va rus maktablari uchun), testlar va sertifikatlar. Uch tilda: o‘zbek, rus, ingliz.
 
 **Ilova muallifi:** Vahobjonov Abduvahob — Telegram: [@Vakhobov47](https://t.me/Vakhobov47)
 
@@ -41,6 +41,3 @@ npm run build    # dist/ papkasiga yig‘ish
 - Android: Capacitor (`capacitor.config.json`)
 - Windows: Electron (`desktop/`)
 
-## Kitoblar bo‘limi
-
-`tools/kutubxona.py` — o‘zbek kitoblari (ziyouz.com, faqat mualliflik huquqi muddati o‘tgan asarlar va xalq ijodi) va ingliz tilidagi jamoat mulki kitoblari ro‘yxatini `public/library.json` ga yozadi.

@@ -1,7 +1,7 @@
 {
   "name": "kitobim-desktop",
   "productName": "Kitobim",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "description": "Kitobim — maktab darsliklari va kitoblar",
   "author": "Kitobim",
   "main": "main.cjs",

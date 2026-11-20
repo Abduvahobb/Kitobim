@@ -4,7 +4,7 @@ import { store } from './store.js';
 import { I, LOGO } from './icons.js';
 import { openReader, esc, ensureSaved } from './reader.js';
 import { drawCertificate, saveImage } from './cert.js';
-import { REMOTE_CATALOG, REMOTE_LIBRARY, APP_VERSION, AUTHOR } from './config.js';
+import { REMOTE_CATALOG, APP_VERSION, AUTHOR } from './config.js';
 import { getJson } from './net.js';
 
 const app = document.getElementById('app');
@@ -13,8 +13,6 @@ document.body.appendChild(overlay);
 
 let catalog = null;
 let catalogBase = '';
-let library = { shelves: [] };  // "Kitoblar" bo'limi: o'zbek va ingliz kitoblari
-let libraryBase = '';
 let tests = { tests: [], passPercent: 70 };
 const books = new Map();      // id -> kitob (fan va sinf ma'lumoti bilan)
 const subjects = new Map();   // id -> fan
@@ -43,34 +41,8 @@ async function loadData() {
   const useCached = cached && cached.grades && bookCount(cached) >= bookCount(local);
   catalog = useCached ? cached : local;
   catalogBase = useCached ? REMOTE_CATALOG : new URL('catalog.json', location.href).href;
-  try {
-    const localLib = await loadJson(new URL('library.json', location.href).href);
-    const cachedLib = store.cachedLibrary();
-    const useC = cachedLib && cachedLib.shelves && libCount(cachedLib) >= libCount(localLib);
-    library = useC ? cachedLib : localLib;
-    libraryBase = useC ? REMOTE_LIBRARY : new URL('library.json', location.href).href;
-  } catch (e) { /* kitoblar bo'limisiz ham ishlaydi */ }
   reindex();
   try { tests = await loadJson(new URL('tests.json', location.href).href); } catch (e) { /* testlarsiz ham ishlaydi */ }
-}
-
-function libCount(l) {
-  let n = 0;
-  for (const s of (l && l.shelves) || []) n += s.books.length;
-  return n;
-}
-
-async function refreshLibrary() {
-  if (!REMOTE_LIBRARY) return;
-  try {
-    const fresh = await getJson(REMOTE_LIBRARY);
-    if (!fresh || !fresh.shelves || !libCount(fresh)) return;
-    if (fresh.updated === library.updated && libCount(fresh) === libCount(library)) return;
-    store.setCachedLibrary(fresh);
-    library = fresh; libraryBase = REMOTE_LIBRARY;
-    reindex();
-    if (/^#\/(books|shelf|home)?$|^#\/(books|shelf)\//.test(location.hash) || !location.hash) render();
-  } catch (e) { /* internet yo'q */ }
 }
 
 async function refreshCatalog() {
@@ -100,13 +72,6 @@ function reindex() {
       }
     }
   }
-  for (const sh of library.shelves || []) {
-    for (const b of sh.books) {
-      b.shelf = sh.id; b.color = b.color || sh.color;
-      b.file = new URL(b.file, libraryBase || location.href).href;
-      books.set(b.id, b);
-    }
-  }
 }
 
 // ---------- Yordamchilar ----------
@@ -122,7 +87,6 @@ function nav(active) {
   const items = [
     ['home', '#/home', I.home(), t().home],
     ['school', '#/school', I.school(), t().school],
-    ['books', '#/books', I.book(), t().booksTab],
     ['library', '#/library', I.library(), t().library],
     ['tests', '#/tests', I.test(), t().tests],
     ['profile', '#/profile', I.user(), t().profile]
@@ -241,9 +205,6 @@ function scrHome() {
         ${gradeGrid(store.user.grade, (g) => '#/school/' + g)}</section>
       <section class="col" style="gap:10px"><h2>${store.user.grade}-${s.subjectsOf}</h2>
         ${subjectGrid(gradeSubjects(store.user.grade))}</section>
-      ${libCount(library) ? `<section class="col" style="gap:10px"><div class="row between"><h2>${s.booksTitle}</h2>
-        <button class="pill" data-go="#/books" style="height:36px">${s.all}</button></div>
-        <div class="subj-grid">${library.shelves.slice(0, 4).map((sh) => shelfTile(sh)).join('')}</div></section>` : ''}
       ${authorSection()}
     </div></main>${nav('home')}`;
 
@@ -365,52 +326,6 @@ function scrSchool(g) {
   if (b) b.onclick = () => startBulk(+b.dataset.bulk);
   const st = app.querySelector('[data-bulkstop]');
   if (st) st.onclick = () => { if (bulk) bulk.stop = true; st.disabled = true; };
-}
-
-// ---------- Kitoblar bo'limi (o'zbek va ingliz) ----------
-function booksLang() { return (store.user && store.user.booksLang) || (L() === 'en' ? 'en' : 'uz'); }
-function shelfTile(sh) {
-  return `<button class="subj" data-go="#/shelf/${sh.id}">
-    <span class="badge" style="background:${sh.color}">${I.book(20)}</span>
-    <span class="col" style="gap:2px;min-width:0"><span class="name">${esc(pick(sh.name, L()))}</span>
-    <span class="cnt">${sh.books.length} ${t().nBooks}</span></span></button>`;
-}
-function scrBooks() {
-  const s = t();
-  const lg = booksLang();
-  const shelves = (library.shelves || []).filter((sh) => sh.lang === lg);
-  app.innerHTML = `<main class="screen">
-    <div class="col" style="gap:4px"><h1>${s.booksTitle}</h1><p class="sub">${s.booksIntro}</p></div>
-    <div class="pills" role="group" aria-label="${s.language}">${[['uz', s.langUz], ['en', s.langEn]].map(([k, lb]) =>
-      `<button class="pill green" data-blang="${k}" aria-pressed="${k === lg}">${lb}</button>`).join('')}</div>
-    ${shelves.length ? shelves.map((sh) => `<section class="col" style="gap:10px">
-      <div class="row between"><h2>${esc(pick(sh.name, L()))}</h2>
-        <button class="pill" data-go="#/shelf/${sh.id}" style="height:36px">${s.all} · ${sh.books.length}</button></div>
-      <div class="list">${sh.books.slice(0, 3).map((b) => bookItem(b)).join('')}</div></section>`).join('')
-      : `<div class="card empty">${s.soon}</div>`}
-  </main>${nav('books')}`;
-  app.querySelectorAll('[data-blang]').forEach((b) => b.onclick = () => {
-    store.setUser(Object.assign({}, store.user, { booksLang: b.dataset.blang })); render();
-  });
-}
-function scrShelf(id) {
-  const s = t();
-  const sh = (library.shelves || []).find((x) => x.id === id);
-  if (!sh) return go('#/books');
-  const src = [...new Set(sh.books.map((b) => b.source).filter(Boolean))].join(', ');
-  app.innerHTML = `<main class="screen">
-    ${backBar(pick(sh.name, L()), sh.books.length + ' ' + s.nBooks)}
-    <label class="card row" style="padding:0 14px;height:50px;gap:10px">${I.search(20)}<span class="sr">${s.filter}</span>
-      <input id="f" type="search" placeholder="${s.filter}" style="border:0;outline:none;background:transparent;flex:1;min-width:0;font-size:15px"></label>
-    <div class="list" id="shelfList">${sh.books.map((b) => bookItem(b)).join('')}</div>
-    ${src ? `<p class="sub" style="font-size:12px;text-align:center">${s.source}: ${esc(src)}</p>` : ''}
-  </main>${nav('books')}`;
-  const f = app.querySelector('#f');
-  f.oninput = () => {
-    const v = f.value.trim().toLowerCase();
-    const list = sh.books.filter((b) => !v || bookTitle(b).toLowerCase().includes(v) || (b.author || '').toLowerCase().includes(v));
-    app.querySelector('#shelfList').innerHTML = list.map((b) => bookItem(b)).join('') || '<div class="empty">—</div>';
-  };
 }
 
 function scrSubject(id) {
@@ -605,8 +520,6 @@ function render() {
     case 'read': return scrRead(a);
     case 'library': return scrLibrary();
     case 'tests': return scrTests(a ? +a : 0);
-    case 'books': return scrBooks();
-    case 'shelf': return scrShelf(a);
     case 'test': return scrTest(a);
     case 'cert': return scrCert(a);
     case 'profile': return scrProfile();
@@ -623,5 +536,5 @@ document.addEventListener('click', (e) => {
 window.addEventListener('hashchange', render);
 
 loadData()
-  .then(() => { render(); refreshCatalog(); refreshLibrary(); })
+  .then(() => { render(); refreshCatalog(); })
   .catch((e) => { console.error(e); app.innerHTML = `<main class="screen no-nav"><div class="card empty">${t().loadError}</div></main>`; });
