@@ -2715,7 +2715,358 @@
      "source": "ziyouz.com"
     }
    ]
+  },
+  {
+   "id": "en-classic",
+   "lang": "en",
+   "name": {
+    "uz": "Ingliz klassikasi",
+    "ru": "Английская классика",
+    "en": "Classics"
+   },
+   "color": "#2E4A7A",
+   "books": [
+    {
+     "id": "en120",
+     "title": "Treasure Island",
+     "author": "Robert Louis Stevenson",
+     "lang": "en",
+     "size": 582952,
+     "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/en-120.pdf",
+     "source": "gutenberg.org"
+    },
+    {
+     "id": "en74",
+     "title": "The Adventures of Tom Sawyer, Complete",
+     "author": "Mark Twain",
+     "lang": "en",
+     "size": 658028,
+     "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/en-74.pdf",
+     "source": "gutenberg.org"
+    },
+    {
+     "id": "en76",
+     "title": "Adventures of Huckleberry Finn",
+     "author": "Mark Twain",
+     "lang": "en",
+     "size": 882302,
+     "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/en-76.pdf",
+     "source": "gutenberg.org"
+    },
+    {
+     "id": "en1661",
+     "title": "The Adventures of Sherlock Holmes",
+     "author": "Arthur Conan Doyle",
+     "lang": "en",
+     "size": 863450,
+     "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/en-1661.pdf",
+     "source": "gutenberg.org"
+    },
+    {
+     "id": "en46",
+     "title": "A Christmas Carol in Prose; Being a Ghost Story of Christmas",
+     "author": "Charles Dickens",
+     "lang": "en",
+     "size": 292980,
+     "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/en-46.pdf",
+     "source": "gutenberg.org"
+    },
+    {
+     "id": "en521",
+     "title": "The Life and Adventures of Robinson Crusoe",
+     "author": "Daniel Defoe",
+     "lang": "en",
+     "size": 858171,
+     "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/en-521.pdf",
+     "source": "gutenberg.org"
+    },
+    {
+     "id": "en829",
+     "title": "Gulliver's Travels into Several Remote Nations of the World",
+     "author": "Jonathan Swift",
+     "lang": "en",
+     "size": 842753,
+     "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/en-829.pdf",
+     "source": "gutenberg.org"
+    },
+    {
+     "id": "en730",
+     "title": "Oliver Twist",
+     "author": "Charles Dickens",
+     "lang": "en",
+     "size": 1324495,
+     "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/en-730.pdf",
+     "source": "gutenberg.org"
+    },
+    {
+     "id": "en103",
+     "title": "Around the World in Eighty Days",
+     "author": "Jules Verne",
+     "lang": "en",
+     "size": 596531,
+     "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/en-103.pdf",
+     "source": "gutenberg.org"
+    },
+    {
+     "id": "en271",
+     "title": "Black Beauty",
+     "author": "Anna Sewell",
+     "lang": "en",
+     "size": 468539,
+     "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/en-271.pdf",
+     "source": "gutenberg.org"
+    },
+    {
+     "id": "en514",
+     "title": "Little Women",
+     "author": "Louisa May Alcott",
+     "lang": "en",
+     "size": 1491417,
+     "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/en-514.pdf",
+     "source": "gutenberg.org"
+    },
+    {
+     "id": "en215",
+     "title": "The call of the wild",
+     "author": "Jack London",
+     "lang": "en",
+     "size": 309415,
+     "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/en-215.pdf",
+     "source": "gutenberg.org"
+    },
+    {
+     "id": "en910",
+     "title": "White Fang",
+     "author": "Jack London",
+     "lang": "en",
+     "size": 610257,
+     "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/en-910.pdf",
+     "source": "gutenberg.org"
+    },
+    {
+     "id": "en1400",
+     "title": "Great Expectations",
+     "author": "Charles Dickens",
+     "lang": "en",
+     "size": 1458235,
+     "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/en-1400.pdf",
+     "source": "gutenberg.org"
+    },
+    {
+     "id": "en1342",
+     "title": "Pride and Prejudice",
+     "author": "Jane Austen",
+     "lang": "en",
+     "size": 1091641,
+     "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/en-1342.pdf",
+     "source": "gutenberg.org"
+    },
+    {
+     "id": "en35",
+     "title": "The Time Machine",
+     "author": "H. G. Wells",
+     "lang": "en",
+     "size": 314239,
+     "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/en-35.pdf",
+     "source": "gutenberg.org"
+    }
+   ]
+  },
+  {
+   "id": "en-kids",
+   "lang": "en",
+   "name": {
+    "uz": "Bolalar kitoblari (ingliz tilida)",
+    "ru": "Детские книги (на английском)",
+    "en": "Children’s books"
+   },
+   "color": "#B42318",
+   "books": [
+    {
+     "id": "en11",
+     "title": "Alice's Adventures in Wonderland",
+     "author": "Lewis Carroll",
+     "lang": "en",
+     "size": 289446,
+     "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/en-11.pdf",
+     "source": "gutenberg.org"
+    },
+    {
+     "id": "en12",
+     "title": "Through the Looking-Glass",
+     "author": "Lewis Carroll",
+     "lang": "en",
+     "size": 323169,
+     "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/en-12.pdf",
+     "source": "gutenberg.org"
+    },
+    {
+     "id": "en16",
+     "title": "Peter Pan",
+     "author": "J. M. Barrie",
+     "lang": "en",
+     "size": 450268,
+     "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/en-16.pdf",
+     "source": "gutenberg.org"
+    },
+    {
+     "id": "en55",
+     "title": "The Wonderful Wizard of Oz",
+     "author": "L. Frank Baum",
+     "lang": "en",
+     "size": 360292,
+     "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/en-55.pdf",
+     "source": "gutenberg.org"
+    },
+    {
+     "id": "en113",
+     "title": "The Secret Garden",
+     "author": "Frances Hodgson Burnett",
+     "lang": "en",
+     "size": 681639,
+     "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/en-113.pdf",
+     "source": "gutenberg.org"
+    },
+    {
+     "id": "en500",
+     "title": "The Adventures of Pinocchio",
+     "author": "Carlo Collodi",
+     "lang": "en",
+     "size": 407090,
+     "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/en-500.pdf",
+     "source": "gutenberg.org"
+    },
+    {
+     "id": "en1448",
+     "title": "Heidi",
+     "author": "Johanna Spyri",
+     "lang": "en",
+     "size": 711347,
+     "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/en-1448.pdf",
+     "source": "gutenberg.org"
+    },
+    {
+     "id": "en2591",
+     "title": "Grimms' Fairy Tales",
+     "author": "Jacob Grimm",
+     "lang": "en",
+     "size": 754054,
+     "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/en-2591.pdf",
+     "source": "gutenberg.org"
+    },
+    {
+     "id": "en1597",
+     "title": "Andersen's Fairy Tales",
+     "author": "H. C. Andersen",
+     "lang": "en",
+     "size": 466404,
+     "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/en-1597.pdf",
+     "source": "gutenberg.org"
+    },
+    {
+     "id": "en236",
+     "title": "The Jungle Book",
+     "author": "Rudyard Kipling",
+     "lang": "en",
+     "size": 444493,
+     "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/en-236.pdf",
+     "source": "gutenberg.org"
+    },
+    {
+     "id": "en289",
+     "title": "The Wind in the Willows",
+     "author": "Kenneth Grahame",
+     "lang": "en",
+     "size": 522064,
+     "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/en-289.pdf",
+     "source": "gutenberg.org"
+    },
+    {
+     "id": "en2781",
+     "title": "Just so stories",
+     "author": "Rudyard Kipling",
+     "lang": "en",
+     "size": 292710,
+     "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/en-2781.pdf",
+     "source": "gutenberg.org"
+    },
+    {
+     "id": "en902",
+     "title": "The Happy Prince, and Other Tales",
+     "author": "Oscar Wilde",
+     "lang": "en",
+     "size": 201761,
+     "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/en-902.pdf",
+     "source": "gutenberg.org"
+    }
+   ]
+  },
+  {
+   "id": "en-easy",
+   "lang": "en",
+   "name": {
+    "uz": "Ingliz tilini o‘rganish uchun",
+    "ru": "Для изучения английского",
+    "en": "Easy English"
+   },
+   "color": "#1E7B4F",
+   "books": [
+    {
+     "id": "en21",
+     "title": "Three hundred Aesop’s fables",
+     "author": "Aesop",
+     "lang": "en",
+     "size": 415932,
+     "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/en-21.pdf",
+     "source": "gutenberg.org"
+    },
+    {
+     "id": "en11757",
+     "title": "The Velveteen Rabbit",
+     "author": "Margery Williams Bianco",
+     "lang": "en",
+     "size": 93598,
+     "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/en-11757.pdf",
+     "source": "gutenberg.org"
+    },
+    {
+     "id": "en14838",
+     "title": "The Tale of Peter Rabbit",
+     "author": "Beatrix Potter",
+     "lang": "en",
+     "size": 77745,
+     "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/en-14838.pdf",
+     "source": "gutenberg.org"
+    },
+    {
+     "id": "en14640",
+     "title": "McGuffey's First Eclectic Reader, Revised Edition",
+     "author": "William Holmes McGuffey",
+     "lang": "en",
+     "size": 152709,
+     "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/en-14640.pdf",
+     "source": "gutenberg.org"
+    },
+    {
+     "id": "en14668",
+     "title": "McGuffey's Second Eclectic Reader",
+     "author": "William Holmes McGuffey",
+     "lang": "en",
+     "size": 272027,
+     "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/en-14668.pdf",
+     "source": "gutenberg.org"
+    },
+    {
+     "id": "en18442",
+     "title": "Fifty Famous Stories Retold",
+     "author": "James Baldwin",
+     "lang": "en",
+     "size": 337487,
+     "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/en-18442.pdf",
+     "source": "gutenberg.org"
+    }
+   ]
   }
  ],
- "updated": "2026-11-20 03:15"
+ "updated": "2026-11-20 03:21"
 }
