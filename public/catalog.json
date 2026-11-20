@@ -1,7 +1,7 @@
 {
  "version": 2,
  "note": "Avtomatik yasalgan (tools/kitoblar.py). Manba: oliygoh.uz",
- "updated": "2026-11-20 15:33",
+ "updated": "2026-11-20 16:02",
  "grades": [
   {
    "grade": 1,
@@ -3318,8 +3318,7 @@
        "size": 40700043,
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/tg721.pdf",
        "pages": 221,
-       "cover": "covers/matematika-mashq-5-sinf-uz-1-qism.jpg",
-       "year": 2025
+       "cover": "covers/matematika-mashq-5-sinf-uz-1-qism.jpg"
       },
       {
        "id": "matematika-5-sinf-uz-2-qism",
@@ -3912,7 +3911,7 @@
        "part": null,
        "size": 42200093,
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/tg754-s.pdf",
-       "year": 2025,
+       "year": 2022,
        "pages": 176,
        "cover": "covers/ona-tili-6-sinf-uz-2025.jpg"
       }
@@ -4096,8 +4095,7 @@
        "size": 35845333,
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/tg742.pdf",
        "pages": 233,
-       "cover": "covers/matematika-mashq-6-sinf-uz-1-qism.jpg",
-       "year": 2025
+       "cover": "covers/matematika-mashq-6-sinf-uz-1-qism.jpg"
       },
       {
        "id": "matematika-6-sinf-uz-2-qism",
@@ -4348,7 +4346,6 @@
        "part": null,
        "size": 50358186,
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/tg762-s.pdf",
-       "year": 2025,
        "pages": 116,
        "cover": "covers/ingliz-tili-6-sinf-ru-2025.jpg"
       },
@@ -4363,7 +4360,6 @@
        "part": null,
        "size": 50358186,
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/tg762-s.pdf",
-       "year": 2025,
        "pages": 116,
        "cover": "covers/ingliz-tili-6-sinf-uz-2025.jpg"
       }
@@ -5215,8 +5211,7 @@
        "size": 15788626,
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/tg703-s.pdf",
        "pages": 88,
-       "cover": "covers/ingliz-tili-7-sinf-ru-2025.jpg",
-       "year": 2025
+       "cover": "covers/ingliz-tili-7-sinf-ru-2025.jpg"
       },
       {
        "id": "ingliz-tili-7-sinf-uz-2025",
@@ -5229,7 +5224,6 @@
        "part": null,
        "size": 15788626,
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/tg703-s.pdf",
-       "year": 2025,
        "pages": 88,
        "cover": "covers/ingliz-tili-7-sinf-uz-2025.jpg"
       }
@@ -5838,7 +5832,7 @@
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/tg615.pdf",
        "pages": 160,
        "cover": "covers/geometriya-8-sinf-uz-2025.jpg",
-       "year": 2025
+       "year": 2019
       }
      ]
     },
@@ -6117,7 +6111,6 @@
        "part": null,
        "size": 14464623,
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/tg671-s.pdf",
-       "year": 2025,
        "pages": 84,
        "cover": "covers/ingliz-tili-8-sinf-ru-2025.jpg"
       },
@@ -6132,7 +6125,6 @@
        "part": null,
        "size": 14464623,
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/tg671-s.pdf",
-       "year": 2025,
        "pages": 84,
        "cover": "covers/ingliz-tili-8-sinf-uz-2025.jpg"
       }
@@ -7019,7 +7011,6 @@
        "part": null,
        "size": 28581754,
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/tg556-s.pdf",
-       "year": 2025,
        "pages": 152,
        "cover": "covers/ingliz-tili-9-sinf-uz-2025.jpg"
       }
