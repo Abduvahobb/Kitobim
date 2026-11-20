@@ -1,0 +1,27 @@
+name: Rasmiy darsliklarni joylash
+on:
+  push:
+    branches: [yangi-kitoblar]
+
+concurrency:
+  group: kitoblar
+  cancel-in-progress: false
+
+jobs:
+  upload:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: yangi-kitoblar
+      - name: PDF fayllarni "kitoblar" release'iga yuklash
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          ls -la yangi
+          for f in yangi/*.pdf; do
+            gh release upload kitoblar "$f" --clobber --repo "$GITHUB_REPOSITORY"
+            echo "yuklandi: $f"
+          done
