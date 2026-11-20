@@ -1,7 +1,4 @@
 {
  "note": "Ilovaning ichiga joylangan kitoblar: internetsiz, darhol ochiladi. Fayllar yig'ish paytida 'kitoblar' release'idan public/books/ ga olinadi.",
- "books": {
-  "matematika-5-sinf-uz-1-qism": "books/matematika-5-sinf-uz-1-qism.pdf",
-  "matematika-5-sinf-uz-2-qism": "books/matematika-5-sinf-uz-2-qism.pdf"
- }
+ "books": {}
 }
