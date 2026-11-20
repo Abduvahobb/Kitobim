@@ -20,8 +20,8 @@ jobs:
       TG_API_HASH: ${{ secrets.TG_API_HASH }}
       TG_PASSWORD: ${{ secrets.TG_PASSWORD }}
       KANAL: talimxabarlari_fayllar
-      IDLAR: '540-780'
-      FILTR: uzb
+      IDLAR: '674,681,688,695,702,703,705,712,747,754,761,762,764,771,671,673,556'
+      FILTR: ''
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5

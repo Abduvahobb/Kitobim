@@ -79,8 +79,14 @@ async def main():
     try:
         if not await client.is_user_authorized():
             await login(client)
-        a, b = map(int, IDLAR.split('-'))
-        msgs = await client.get_messages(KANAL, ids=list(range(a, b + 1)))
+        ids = []
+        for part in IDLAR.split(','):
+            if '-' in part:
+                a, b = map(int, part.split('-'))
+                ids += list(range(a, b + 1))
+            elif part.strip():
+                ids.append(int(part))
+        msgs = await client.get_messages(KANAL, ids=ids)
         os.makedirs(OUT, exist_ok=True)
         manifest, todo = [], []
         for m in msgs:
