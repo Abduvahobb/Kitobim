@@ -1,0 +1,2721 @@
+{
+ "version": 1,
+ "shelves": [
+  {
+   "id": "uz-nasr",
+   "lang": "uz",
+   "name": {
+    "uz": "O‘zbek nasri: klassika",
+    "ru": "Узбекская проза: классика",
+    "en": "Uzbek prose: classics"
+   },
+   "color": "#7A3E2E",
+   "books": [
+    {
+     "id": "z4358",
+     "title": "Hikoyalar, tarjimalar",
+     "author": "Abdulhamid Cho‘lpon",
+     "lang": "uz",
+     "size": 7746982,
+     "file": "https://n.ziyouz.com/kutubxona/category/41-o-zbek-nasri?download=4358:abdulhamid-cho-lpon-hikoyalar-tarjimalar",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z4359",
+     "title": "Diyori bakr",
+     "author": "Abdulla Qodiriy",
+     "lang": "uz",
+     "size": 17266670,
+     "file": "https://n.ziyouz.com/kutubxona/category/41-o-zbek-nasri?download=4359:abdulla-qodiriy-diyori-bakr",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z14050",
+     "title": "G‘irvonlik Mallavoy (1987)",
+     "author": "Abdulla Qodiriy",
+     "lang": "uz",
+     "size": 15825003,
+     "file": "https://n.ziyouz.com/kutubxona/category/41-o-zbek-nasri?download=14050:abdulla-qodiriy-g-irvonlik-mallavoy-1987",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z349",
+     "title": "Jinlar bazmi (hikoyalar)",
+     "author": "Abdulla Qodiriy",
+     "lang": "uz",
+     "size": 55440,
+     "file": "https://n.ziyouz.com/kutubxona/category/41-o-zbek-nasri?download=349:abdulla-qodiriy-jinlar-bazmi-hikoyalar",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z11870",
+     "title": "Mehrobdan chayon (1967)",
+     "author": "Abdulla Qodiriy",
+     "lang": "uz",
+     "size": 9297383,
+     "file": "https://n.ziyouz.com/kutubxona/category/41-o-zbek-nasri?download=11870:abdulla-qodiriy-mehrobdan-chayon-1967",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z350",
+     "title": "Mehrobdan chayon (roman)",
+     "author": "Abdulla Qodiriy",
+     "lang": "uz",
+     "size": 1226023,
+     "file": "https://n.ziyouz.com/kutubxona/category/41-o-zbek-nasri?download=350:abdulla-qodiriy-mehrobdan-chayon-roman",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z13306",
+     "title": "Obid ketmon (1959)",
+     "author": "Abdulla Qodiriy",
+     "lang": "uz",
+     "size": 5609739,
+     "file": "https://n.ziyouz.com/kutubxona/category/41-o-zbek-nasri?download=13306:abdulla-qodiriy-obid-ketmon-1959",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z11871",
+     "title": "O‘tkan kunlar (1974)",
+     "author": "Abdulla Qodiriy",
+     "lang": "uz",
+     "size": 14566416,
+     "file": "https://n.ziyouz.com/kutubxona/category/41-o-zbek-nasri?download=11871:abdulla-qodiriy-o-tkan-kunlar-1974",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z351",
+     "title": "O‘tkan kunlar (roman)",
+     "author": "Abdulla Qodiriy",
+     "lang": "uz",
+     "size": 1578186,
+     "file": "https://n.ziyouz.com/kutubxona/category/41-o-zbek-nasri?download=351:abdulla-qodiriy-o-tkan-kunlar-roman",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z352",
+     "title": "To‘la asarlar to‘plami. 6 jildlik 1-jild",
+     "author": "Abdulla Qodiriy",
+     "lang": "uz",
+     "size": 10136946,
+     "file": "https://n.ziyouz.com/kutubxona/category/41-o-zbek-nasri?download=352:abdulla-qodiriy-to-la-asarlar-to-plami-6-jildlik-1-jild",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z362",
+     "title": "Hind sayyohining qissasi",
+     "author": "Abdurauf Fitrat",
+     "lang": "uz",
+     "size": 484592,
+     "file": "https://n.ziyouz.com/kutubxona/category/41-o-zbek-nasri?download=362:abdurauf-fitrat-hind-sayyohining-qissasi",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z363",
+     "title": "Hindistonda bir farangi ila buxorolik mudarrisning munozarasi",
+     "author": "Abdurauf Fitrat",
+     "lang": "uz",
+     "size": 2788281,
+     "file": "https://n.ziyouz.com/kutubxona/category/41-o-zbek-nasri?download=363:abdurauf-fitrat-hindistonda-bir-farangi-ila-buxorolik-mudarrisning-munozarasi",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z8917",
+     "title": "Tanlangan asarlar. 1-jild",
+     "author": "Abdurauf Fitrat",
+     "lang": "uz",
+     "size": 10404926,
+     "file": "https://n.ziyouz.com/kutubxona/category/41-o-zbek-nasri?download=8917:abdurauf-fitrat-tanlangan-asarlar-1-jild",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z448",
+     "title": "Mukammal asarlar to‘plami. 10 jildlik. 3-jild. Hikoyalar, ocherklar",
+     "author": "Hamid Olimjon",
+     "lang": "uz",
+     "size": 9015292,
+     "file": "https://n.ziyouz.com/kutubxona/category/41-o-zbek-nasri?download=448:hamid-olimjon-mukammal-asarlar-to-plami-10-jildlik-3-jild-hikoyalar-ocherklar&start=200",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z450",
+     "title": "Uchrashuv (roman)",
+     "author": "Hamza Hakimzoda Niyoziy",
+     "lang": "uz",
+     "size": 730260,
+     "file": "https://n.ziyouz.com/kutubxona/category/41-o-zbek-nasri?download=450:hamza-hakimzoda-niyoziy-uchrashuv-roman&start=200",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z451",
+     "title": "Yangi saodat (roman)",
+     "author": "Hamza Hakimzoda Niyoziy",
+     "lang": "uz",
+     "size": 1512589,
+     "file": "https://n.ziyouz.com/kutubxona/category/41-o-zbek-nasri?download=451:hamza-hakimzoda-niyoziy-yangi-saodat-roman&start=200",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z478",
+     "title": "Tanlangan asarlar",
+     "author": "Mahmudxo‘ja Behbudiy",
+     "lang": "uz",
+     "size": 11000504,
+     "file": "https://n.ziyouz.com/kutubxona/category/41-o-zbek-nasri?download=478:mahmudxo-ja-behbudiy-tanlangan-asarlar&start=200",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z10974",
+     "title": "Asarlar. 8 jildlik. 3-jild. Qullar (roman)",
+     "author": "Sadriddin Ayniy",
+     "lang": "uz",
+     "size": 16815886,
+     "file": "https://n.ziyouz.com/kutubxona/category/41-o-zbek-nasri?download=10974:sadriddin-ayniy-asarlar-8-jildlik-3-jild-qullar-roman&start=500",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z662",
+     "title": "Doxunda (roman)",
+     "author": "Sadriddin Ayniy",
+     "lang": "uz",
+     "size": 16914073,
+     "file": "https://n.ziyouz.com/kutubxona/category/41-o-zbek-nasri?download=662:sadriddin-ayniy-doxunda-roman&start=500",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z13308",
+     "title": "Esdaliklar (1953)",
+     "author": "Sadriddin Ayniy",
+     "lang": "uz",
+     "size": 11654216,
+     "file": "https://n.ziyouz.com/kutubxona/category/41-o-zbek-nasri?download=13308:sadriddin-ayniy-esdaliklar-1953&start=500",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z6214",
+     "title": "Eski maktab (qissa)",
+     "author": "Sadriddin Ayniy",
+     "lang": "uz",
+     "size": 1219660,
+     "file": "https://n.ziyouz.com/kutubxona/category/41-o-zbek-nasri?download=6214:sadriddin-ayniy-eski-maktab-qissa&start=500",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z10857",
+     "title": "Eski maktab (qissalar)",
+     "author": "Sadriddin Ayniy",
+     "lang": "uz",
+     "size": 10592595,
+     "file": "https://n.ziyouz.com/kutubxona/category/41-o-zbek-nasri?download=10857:sadriddin-ayniy-eski-maktab-qissalar&start=500",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z663",
+     "title": "Qisqacha tarjimai holim",
+     "author": "Sadriddin Ayniy",
+     "lang": "uz",
+     "size": 3616736,
+     "file": "https://n.ziyouz.com/kutubxona/category/41-o-zbek-nasri?download=663:sadriddin-ayniy-qisqacha-tarjimai-holim&start=500",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z664",
+     "title": "Sudxo‘rning o‘limi (qissa)",
+     "author": "Sadriddin Ayniy",
+     "lang": "uz",
+     "size": 846487,
+     "file": "https://n.ziyouz.com/kutubxona/category/41-o-zbek-nasri?download=664:sadriddin-ayniy-sudxo-rning-o-limi-qissa&start=500",
+     "source": "ziyouz.com"
+    }
+   ]
+  },
+  {
+   "id": "uz-ertak",
+   "lang": "uz",
+   "name": {
+    "uz": "Ertaklar va bolalar uchun",
+    "ru": "Сказки и детям",
+    "en": "Folk tales & children"
+   },
+   "color": "#B45309",
+   "books": [
+    {
+     "id": "z1817",
+     "title": "Boychechak (Bolalar folklori, mejnat qo‘shiqlari)",
+     "author": "Oxunjon Safarov, Kamol Ochilov (nashrga tayyorlovchilar)",
+     "lang": "uz",
+     "size": 6308208,
+     "file": "https://n.ziyouz.com/kutubxona/category/38-o-zbek-xalq-og-zaki-ijodi?download=1817:oxunjon-safarov-kamol-ochilov-nashrga-tayyorlovchilar-boychechak-bolalar-folklori-mejnat-qo-shiqlari",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z6047",
+     "title": "Yonar daryo",
+     "author": "O‘zbek xalq fantastikasi",
+     "lang": "uz",
+     "size": 6415681,
+     "file": "https://n.ziyouz.com/kutubxona/category/38-o-zbek-xalq-og-zaki-ijodi?download=6047:o-zbek-xalq-fantastikasi-yonar-daryo",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z1854",
+     "title": "O‘zbek xalq ijodi. Askiya",
+     "author": "Rasul Muhammadiyev (to‘plovchi)",
+     "lang": "uz",
+     "size": 4984245,
+     "file": "https://n.ziyouz.com/kutubxona/category/38-o-zbek-xalq-og-zaki-ijodi?download=1854:rasul-muhammadiyev-to-plovchi-o-zbek-xalq-ijodi-askiya&start=100",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z1777",
+     "title": "Afandi latifalari",
+     "author": "Xalq og‘zaki ijodi",
+     "lang": "uz",
+     "size": 8559696,
+     "file": "https://n.ziyouz.com/kutubxona/category/38-o-zbek-xalq-og-zaki-ijodi?download=1777:afandi-latifalari",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z10799",
+     "title": "Chittigul (aytishuv, hazillar, o‘yinlar, topishmoqlar)",
+     "author": "Xalq og‘zaki ijodi",
+     "lang": "uz",
+     "size": 2055516,
+     "file": "https://n.ziyouz.com/kutubxona/category/38-o-zbek-xalq-og-zaki-ijodi?download=10799:chittigul-aytishuv-hazillar-o-yinlar-topishmoqlar",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z9427",
+     "title": "Ilon pari (o‘zbek xalq fantastikasi)",
+     "author": "Xalq og‘zaki ijodi",
+     "lang": "uz",
+     "size": 6118666,
+     "file": "https://n.ziyouz.com/kutubxona/category/38-o-zbek-xalq-og-zaki-ijodi?download=9427:ilon-pari-o-zbek-xalq-fantastikasi",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z6045",
+     "title": "Kulsa - gul, yig‘lasa - dur (ertaklar)",
+     "author": "Xalq og‘zaki ijodi",
+     "lang": "uz",
+     "size": 12902013,
+     "file": "https://n.ziyouz.com/kutubxona/category/38-o-zbek-xalq-og-zaki-ijodi?download=6045:kulsa-gul-yig-lasa-dur-ertaklar",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z6046",
+     "title": "Luqmoni hakim (ertaklar, naqllar)",
+     "author": "Xalq og‘zaki ijodi",
+     "lang": "uz",
+     "size": 8400409,
+     "file": "https://n.ziyouz.com/kutubxona/category/38-o-zbek-xalq-og-zaki-ijodi?download=6046:luqmoni-hakim-ertaklar-naqllar",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z1810",
+     "title": "M.Abdurahimov (tuzuvchi). O‘zbek topishmoqlari",
+     "author": "Xalq og‘zaki ijodi",
+     "lang": "uz",
+     "size": 340552,
+     "file": "https://n.ziyouz.com/kutubxona/category/38-o-zbek-xalq-og-zaki-ijodi?download=1810:m-abdurahimov-tuzuvchi-o-zbek-topishmoqlari",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z1811",
+     "title": "M.Afzalov, Z.Husainova, N.Soburov (nashrga tayyorlovchilar). O‘zbek xalq ertaklari. Oyjamol",
+     "author": "Xalq og‘zaki ijodi",
+     "lang": "uz",
+     "size": 1634823,
+     "file": "https://n.ziyouz.com/kutubxona/category/38-o-zbek-xalq-og-zaki-ijodi?download=1811:m-afzalov-z-husainova-n-soburov-nashrga-tayyorlovchilar-o-zbek-xalq-ertaklari-oyjamol",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z1816",
+     "title": "Oltin beshik (ertaklar)",
+     "author": "Xalq og‘zaki ijodi",
+     "lang": "uz",
+     "size": 9504549,
+     "file": "https://n.ziyouz.com/kutubxona/category/38-o-zbek-xalq-og-zaki-ijodi?download=1816:oltin-beshik-ertaklar",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z1856",
+     "title": "Suv qizi (fantastik ertaklar)",
+     "author": "Xalq og‘zaki ijodi",
+     "lang": "uz",
+     "size": 10712978,
+     "file": "https://n.ziyouz.com/kutubxona/category/38-o-zbek-xalq-og-zaki-ijodi?download=1856:suv-qizi-fantastik-ertaklar&start=100",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z1857",
+     "title": "T.Mirzayev, A.Musoqulov, B.Sarimsoqov (tuzuvchilar). O‘zbek xalq maqollari",
+     "author": "Xalq og‘zaki ijodi",
+     "lang": "uz",
+     "size": 746489,
+     "file": "https://n.ziyouz.com/kutubxona/category/38-o-zbek-xalq-og-zaki-ijodi?download=1857:t-mirzayev-a-musoqulov-b-sarimsoqov-tuzuvchilar-o-zbek-xalq-maqollari&start=100",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z1862",
+     "title": "O‘zbek xalq ijodi. Topishmoqlar",
+     "author": "Zubayda Husainova (nashrga tayyorlovchi)",
+     "lang": "uz",
+     "size": 6822070,
+     "file": "https://n.ziyouz.com/kutubxona/category/38-o-zbek-xalq-og-zaki-ijodi?download=1862:zubayda-husainova-nashrga-tayyorlovchi-o-zbek-xalq-ijodi-topishmoqlar&start=100",
+     "source": "ziyouz.com"
+    }
+   ]
+  },
+  {
+   "id": "uz-mumtoz",
+   "lang": "uz",
+   "name": {
+    "uz": "Mumtoz adabiyot",
+    "ru": "Классическая поэзия",
+    "en": "Classical poetry"
+   },
+   "color": "#7B3FB0",
+   "books": [
+    {
+     "id": "z1867",
+     "title": "Devon",
+     "author": "Amiriy",
+     "lang": "uz",
+     "size": 5736813,
+     "file": "https://n.ziyouz.com/kutubxona/category/39-o-zbek-mumtoz-adabiyoti?download=1867:amiriy-devon",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z1868",
+     "title": "Devon",
+     "author": "Anbar Otin",
+     "lang": "uz",
+     "size": 2520282,
+     "file": "https://n.ziyouz.com/kutubxona/category/39-o-zbek-mumtoz-adabiyoti?download=1868:anbar-otin-devon",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z13703",
+     "title": "She’rlar (1963)",
+     "author": "Anbar Otin",
+     "lang": "uz",
+     "size": 1193168,
+     "file": "https://n.ziyouz.com/kutubxona/category/39-o-zbek-mumtoz-adabiyoti?download=13703:anbar-otin-she-rlar-1963",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z6035",
+     "title": "Agar oshiqligim aytsam",
+     "author": "Boborahim Mashrab",
+     "lang": "uz",
+     "size": 1058894,
+     "file": "https://n.ziyouz.com/kutubxona/category/39-o-zbek-mumtoz-adabiyoti?download=6035:boborahim-mashrab-agar-oshiqligim-aytsam",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z1870",
+     "title": "Mabdayi nur",
+     "author": "Boborahim Mashrab",
+     "lang": "uz",
+     "size": 373014,
+     "file": "https://n.ziyouz.com/kutubxona/category/39-o-zbek-mumtoz-adabiyoti?download=1870:boborahim-mashrab-mabdayi-nur",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z1871",
+     "title": "Mehribonim qaydasan",
+     "author": "Boborahim Mashrab",
+     "lang": "uz",
+     "size": 7416084,
+     "file": "https://n.ziyouz.com/kutubxona/category/39-o-zbek-mumtoz-adabiyoti?download=1871:boborahim-mashrab-mehribonim-qaydasan",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z6036",
+     "title": "Tanlangan asarlar",
+     "author": "Dilshodi Barno",
+     "lang": "uz",
+     "size": 1352488,
+     "file": "https://n.ziyouz.com/kutubxona/category/39-o-zbek-mumtoz-adabiyoti?download=6036:dilshodi-barno-tanlangan-asarlar",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z13455",
+     "title": "Ishqingda kuyib jono (2021)",
+     "author": "Furqat",
+     "lang": "uz",
+     "size": 1401443,
+     "file": "https://n.ziyouz.com/kutubxona/category/39-o-zbek-mumtoz-adabiyoti?download=13455:furqat-ishqingda-kuyib-jono-2021",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z6037",
+     "title": "Muhabbat yo‘lida",
+     "author": "Furqat",
+     "lang": "uz",
+     "size": 5422437,
+     "file": "https://n.ziyouz.com/kutubxona/category/39-o-zbek-mumtoz-adabiyoti?download=6037:furqat-muhabbat-yo-lida",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z1872",
+     "title": "Tanlangan asarlar",
+     "author": "Furqat",
+     "lang": "uz",
+     "size": 5408828,
+     "file": "https://n.ziyouz.com/kutubxona/category/39-o-zbek-mumtoz-adabiyoti?download=1872:furqat-tanlangan-asarlar",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z13952",
+     "title": "Tanlangan asarlar (1951)",
+     "author": "Furqat",
+     "lang": "uz",
+     "size": 2501281,
+     "file": "https://n.ziyouz.com/kutubxona/category/39-o-zbek-mumtoz-adabiyoti?download=13952:furqat-tanlangan-asarlar-1951",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z14043",
+     "title": "Tanlangan asarlar (1951)",
+     "author": "Gulxaniy",
+     "lang": "uz",
+     "size": 1432569,
+     "file": "https://n.ziyouz.com/kutubxona/category/39-o-zbek-mumtoz-adabiyoti?download=14043:gulxaniy-tanlangan-asarlar-1951",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z1874",
+     "title": "Zarbulmasal",
+     "author": "Gulxaniy",
+     "lang": "uz",
+     "size": 2502093,
+     "file": "https://n.ziyouz.com/kutubxona/category/39-o-zbek-mumtoz-adabiyoti?download=1874:gulxaniy-zarbulmasal",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z8309",
+     "title": "Zarbulmasal va g‘azallar",
+     "author": "Gulxaniy",
+     "lang": "uz",
+     "size": 2246985,
+     "file": "https://n.ziyouz.com/kutubxona/category/39-o-zbek-mumtoz-adabiyoti?download=8309:gulxaniy-zarbulmasal-va-g-azallar",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z1875",
+     "title": "Gulshanul asror",
+     "author": "Haydar Xorazmiy",
+     "lang": "uz",
+     "size": 1252895,
+     "file": "https://n.ziyouz.com/kutubxona/category/39-o-zbek-mumtoz-adabiyoti?download=1875:haydar-xorazmiy-gulshanul-asror",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z1876",
+     "title": "Devon",
+     "author": "Haziniy",
+     "lang": "uz",
+     "size": 4288579,
+     "file": "https://n.ziyouz.com/kutubxona/category/39-o-zbek-mumtoz-adabiyoti?download=1876:haziniy-devon",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z1877",
+     "title": "Tasadduq yo Rasululloh",
+     "author": "Haziniy",
+     "lang": "uz",
+     "size": 351696,
+     "file": "https://n.ziyouz.com/kutubxona/category/39-o-zbek-mumtoz-adabiyoti?download=1877:haziniy-tasadduq-yo-rasululloh",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z1879",
+     "title": "Devon. 1-kitob",
+     "author": "Hofiz Xorazmiy",
+     "lang": "uz",
+     "size": 6720109,
+     "file": "https://n.ziyouz.com/kutubxona/category/39-o-zbek-mumtoz-adabiyoti?download=1879:hofiz-xorazmiy-devon-1-kitob",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z1880",
+     "title": "Devon. 2-kitob",
+     "author": "Hofiz Xorazmiy",
+     "lang": "uz",
+     "size": 7248437,
+     "file": "https://n.ziyouz.com/kutubxona/category/39-o-zbek-mumtoz-adabiyoti?download=1880:hofiz-xorazmiy-devon-2-kitob",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z1884",
+     "title": "Devon",
+     "author": "Komil Xorazmiy",
+     "lang": "uz",
+     "size": 3558697,
+     "file": "https://n.ziyouz.com/kutubxona/category/39-o-zbek-mumtoz-adabiyoti?download=1884:komil-xorazmiy-devon",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z1885",
+     "title": "Tanlangan asarlar",
+     "author": "Komil Xorazmiy",
+     "lang": "uz",
+     "size": 238534,
+     "file": "https://n.ziyouz.com/kutubxona/category/39-o-zbek-mumtoz-adabiyoti?download=1885:komil-xorazmiy-tanlangan-asarlar",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z1887",
+     "title": "Gul va Navro‘z",
+     "author": "Lutfiy",
+     "lang": "uz",
+     "size": 2303564,
+     "file": "https://n.ziyouz.com/kutubxona/category/39-o-zbek-mumtoz-adabiyoti?download=1887:lutfiy-gul-va-navro-z",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z1888",
+     "title": "Sensan sevarim (Devon)",
+     "author": "Lutfiy",
+     "lang": "uz",
+     "size": 4156568,
+     "file": "https://n.ziyouz.com/kutubxona/category/39-o-zbek-mumtoz-adabiyoti?download=1888:lutfiy-sensan-sevarim-devon",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z1889",
+     "title": "Tanlangan asarlar",
+     "author": "Lutfiy",
+     "lang": "uz",
+     "size": 1885806,
+     "file": "https://n.ziyouz.com/kutubxona/category/39-o-zbek-mumtoz-adabiyoti?download=1889:lutfiy-tanlangan-asarlar",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z1894",
+     "title": "Asarlar. 2-jild. Devon",
+     "author": "Muhammadrizo Ogahiy",
+     "lang": "uz",
+     "size": 7870226,
+     "file": "https://n.ziyouz.com/kutubxona/category/39-o-zbek-mumtoz-adabiyoti?download=1894:muhammadrizo-ogahiy-asarlar-2-jild-devon",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z1895",
+     "title": "Asarlar. 3-jild. Ijodiy tarjimalar",
+     "author": "Muhammadrizo Ogahiy",
+     "lang": "uz",
+     "size": 7543340,
+     "file": "https://n.ziyouz.com/kutubxona/category/39-o-zbek-mumtoz-adabiyoti?download=1895:muhammadrizo-ogahiy-asarlar-3-jild-ijodiy-tarjimalar",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z1896",
+     "title": "Asarlar. 4-jild. Badiiy tarjimalar",
+     "author": "Muhammadrizo Ogahiy",
+     "lang": "uz",
+     "size": 5221398,
+     "file": "https://n.ziyouz.com/kutubxona/category/39-o-zbek-mumtoz-adabiyoti?download=1896:muhammadrizo-ogahiy-asarlar-4-jild-badiiy-tarjimalar",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z1897",
+     "title": "Asarlar. 5-jild. Tarixiy asarlar",
+     "author": "Muhammadrizo Ogahiy",
+     "lang": "uz",
+     "size": 7973248,
+     "file": "https://n.ziyouz.com/kutubxona/category/39-o-zbek-mumtoz-adabiyoti?download=1897:muhammadrizo-ogahiy-asarlar-5-jild-tarixiy-asarlar",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z6038",
+     "title": "Asarlar. 6-jild",
+     "author": "Muhammadrizo Ogahiy",
+     "lang": "uz",
+     "size": 7755711,
+     "file": "https://n.ziyouz.com/kutubxona/category/39-o-zbek-mumtoz-adabiyoti?download=6038:muhammadrizo-ogahiy-asarlar-6-jild",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z6039",
+     "title": "Bog‘ aro",
+     "author": "Muqimiy",
+     "lang": "uz",
+     "size": 5501621,
+     "file": "https://n.ziyouz.com/kutubxona/category/39-o-zbek-mumtoz-adabiyoti?download=6039:muqimiy-bog-aro",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z11348",
+     "title": "Tanlangan asarlar (1953)",
+     "author": "Muqimiy",
+     "lang": "uz",
+     "size": 2716283,
+     "file": "https://n.ziyouz.com/kutubxona/category/39-o-zbek-mumtoz-adabiyoti?download=11348:muqimiy-tanlangan-asarlar-1953",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z1898",
+     "title": "Tanlangan asarlar. 1-jild. Lirika",
+     "author": "Muqimiy",
+     "lang": "uz",
+     "size": 7749831,
+     "file": "https://n.ziyouz.com/kutubxona/category/39-o-zbek-mumtoz-adabiyoti?download=1898:muqimiy-tanlangan-asarlar-1-jild-lirika",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z1899",
+     "title": "Tanlangan asarlar. 2-jild. Hajviyot",
+     "author": "Muqimiy",
+     "lang": "uz",
+     "size": 4794364,
+     "file": "https://n.ziyouz.com/kutubxona/category/39-o-zbek-mumtoz-adabiyoti?download=1899:muqimiy-tanlangan-asarlar-2-jild-hajviyot",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z1900",
+     "title": "Boz va bulbul",
+     "author": "Nishotiy",
+     "lang": "uz",
+     "size": 1157947,
+     "file": "https://n.ziyouz.com/kutubxona/category/39-o-zbek-mumtoz-adabiyoti?download=1900:nishotiy-boz-va-bulbul",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z1901",
+     "title": "Husn va Dil (doston)",
+     "author": "Nishotiy",
+     "lang": "uz",
+     "size": 8380775,
+     "file": "https://n.ziyouz.com/kutubxona/category/39-o-zbek-mumtoz-adabiyoti?download=1901:nishotiy-husn-va-dil-doston",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z1902",
+     "title": "Lirika",
+     "author": "Nishotiy",
+     "lang": "uz",
+     "size": 1121881,
+     "file": "https://n.ziyouz.com/kutubxona/category/39-o-zbek-mumtoz-adabiyoti?download=1902:nishotiy-lirika",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z12546",
+     "title": "Asarlar. 2 jildlik. 1-jild (1968)",
+     "author": "Nodira",
+     "lang": "uz",
+     "size": 4085596,
+     "file": "https://n.ziyouz.com/kutubxona/category/39-o-zbek-mumtoz-adabiyoti?download=12546:nodira-asarlar-2-jildlik-1-jild-1968",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z12547",
+     "title": "Asarlar. 2 jildlik. 2-jild. 1-kitob (1971)",
+     "author": "Nodira",
+     "lang": "uz",
+     "size": 5354096,
+     "file": "https://n.ziyouz.com/kutubxona/category/39-o-zbek-mumtoz-adabiyoti?download=12547:nodira-asarlar-2-jildlik-2-jild-1-kitob-1971",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z1903",
+     "title": "Devon",
+     "author": "Nodira",
+     "lang": "uz",
+     "size": 5534143,
+     "file": "https://n.ziyouz.com/kutubxona/category/39-o-zbek-mumtoz-adabiyoti?download=1903:nodira-devon",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z12548",
+     "title": "Devon (1963)",
+     "author": "Nodira",
+     "lang": "uz",
+     "size": 11401635,
+     "file": "https://n.ziyouz.com/kutubxona/category/39-o-zbek-mumtoz-adabiyoti?download=12548:nodira-devon-1963",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z1904",
+     "title": "G‘azallar",
+     "author": "Nodira",
+     "lang": "uz",
+     "size": 292585,
+     "file": "https://n.ziyouz.com/kutubxona/category/39-o-zbek-mumtoz-adabiyoti?download=1904:nodira-g-azallar",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z12549",
+     "title": "She’rlar (1958)",
+     "author": "Nodira",
+     "lang": "uz",
+     "size": 1806543,
+     "file": "https://n.ziyouz.com/kutubxona/category/39-o-zbek-mumtoz-adabiyoti?download=12549:nodira-she-rlar-1958",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z12550",
+     "title": "She’rlar (1960)",
+     "author": "Nodira",
+     "lang": "uz",
+     "size": 1563200,
+     "file": "https://n.ziyouz.com/kutubxona/category/39-o-zbek-mumtoz-adabiyoti?download=12550:nodira-she-rlar-1960",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z1905",
+     "title": "Qisasi Rabg‘uziy (nasriy bayon)",
+     "author": "Nosiruddin Rabg‘uziy",
+     "lang": "uz",
+     "size": 1224579,
+     "file": "https://n.ziyouz.com/kutubxona/category/39-o-zbek-mumtoz-adabiyoti?download=1905:nosiruddin-rabg-uziy-qisasi-rabg-uziy-nasriy-bayon",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z11349",
+     "title": "Qisasi Rabg‘uziy. 1-kitob",
+     "author": "Nosiruddin Rabg‘uziy",
+     "lang": "uz",
+     "size": 9184507,
+     "file": "https://n.ziyouz.com/kutubxona/category/39-o-zbek-mumtoz-adabiyoti?download=11349:nosiruddin-rabg-uziy-qisasi-rabg-uziy-1-kitob",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z6040",
+     "title": "Qisasi Rabg‘uziy. 2-kitob",
+     "author": "Nosiruddin Rabg‘uziy",
+     "lang": "uz",
+     "size": 8168437,
+     "file": "https://n.ziyouz.com/kutubxona/category/39-o-zbek-mumtoz-adabiyoti?download=6040:nosiruddin-rabg-uziy-qisasi-rabg-uziy-2-kitob",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z1907",
+     "title": "Asarlar. 1-jild. Devon",
+     "author": "Ogahiy",
+     "lang": "uz",
+     "size": 7938848,
+     "file": "https://n.ziyouz.com/kutubxona/category/39-o-zbek-mumtoz-adabiyoti?download=1907:ogahiy-asarlar-1-jild-devon",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z7612",
+     "title": "Firdavs ul-iqbol",
+     "author": "Ogahiy, Munis",
+     "lang": "uz",
+     "size": 27612524,
+     "file": "https://n.ziyouz.com/kutubxona/category/39-o-zbek-mumtoz-adabiyoti?download=7612:ogahiy-munis-firdavs-ul-iqbol",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z1909",
+     "title": "Xusrav va Shirin",
+     "author": "Qutb Xorazmiy",
+     "lang": "uz",
+     "size": 5845054,
+     "file": "https://n.ziyouz.com/kutubxona/category/39-o-zbek-mumtoz-adabiyoti?download=1909:qutb-xorazmiy-xusrav-va-shirin",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z11351",
+     "title": "Jamoling gulshanining bulbuliman",
+     "author": "Rojiy Xorazmiy",
+     "lang": "uz",
+     "size": 5646998,
+     "file": "https://n.ziyouz.com/kutubxona/category/39-o-zbek-mumtoz-adabiyoti?download=11351:rojiy-xorazmiy-jamoling-gulshanining-bulbuliman",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z7936",
+     "title": "Tanlangan asarlar",
+     "author": "Sakkokiy",
+     "lang": "uz",
+     "size": 1467331,
+     "file": "https://n.ziyouz.com/kutubxona/category/39-o-zbek-mumtoz-adabiyoti?download=7936:sakkokiy-tanlangan-asarlar",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z1914",
+     "title": "Savodi ta’lim",
+     "author": "Shermuhammad Munis",
+     "lang": "uz",
+     "size": 3024915,
+     "file": "https://n.ziyouz.com/kutubxona/category/39-o-zbek-mumtoz-adabiyoti?download=1914:shermuhammad-munis-savodi-ta-lim",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z1915",
+     "title": "Saylanma",
+     "author": "Shermuhammad Munis",
+     "lang": "uz",
+     "size": 7054272,
+     "file": "https://n.ziyouz.com/kutubxona/category/39-o-zbek-mumtoz-adabiyoti?download=1915:shermuhammad-munis-saylanma&start=100",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z1916",
+     "title": "Sabotul ojizin",
+     "author": "So‘fi Olloyor",
+     "lang": "uz",
+     "size": 5694261,
+     "file": "https://n.ziyouz.com/kutubxona/category/39-o-zbek-mumtoz-adabiyoti?download=1916:so-fi-olloyor-sabotul-ojizin&start=100",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z1917",
+     "title": "Sabotul-ojizin",
+     "author": "So‘fi Olloyor",
+     "lang": "uz",
+     "size": 466820,
+     "file": "https://n.ziyouz.com/kutubxona/category/39-o-zbek-mumtoz-adabiyoti?download=1917:so-fi-olloyor-sabotul-ojizin&start=100",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z12551",
+     "title": "Uvaysiy, Mahzuna, Nodira (1958)",
+     "author": "Uch shoira",
+     "lang": "uz",
+     "size": 1403016,
+     "file": "https://n.ziyouz.com/kutubxona/category/39-o-zbek-mumtoz-adabiyoti?download=12551:uch-shoira-uvaysiy-mahzuna-nodira-1958&start=100",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z1920",
+     "title": "Devon",
+     "author": "Uvaysiy",
+     "lang": "uz",
+     "size": 5420486,
+     "file": "https://n.ziyouz.com/kutubxona/category/39-o-zbek-mumtoz-adabiyoti?download=1920:uvaysiy-devon&start=100",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z14044",
+     "title": "Ko‘ngil gulzori (1983)",
+     "author": "Uvaysiy",
+     "lang": "uz",
+     "size": 5111177,
+     "file": "https://n.ziyouz.com/kutubxona/category/39-o-zbek-mumtoz-adabiyoti?download=14044:uvaysiy-ko-ngil-gulzori-1983&start=100",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z1921",
+     "title": "Mazmun ma’dani",
+     "author": "Uvaysiy",
+     "lang": "uz",
+     "size": 4015889,
+     "file": "https://n.ziyouz.com/kutubxona/category/39-o-zbek-mumtoz-adabiyoti?download=1921:uvaysiy-mazmun-ma-dani&start=100",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z13311",
+     "title": "Furqat she’riyatidan (1980)",
+     "author": "Xalq og‘zaki ijodi",
+     "lang": "uz",
+     "size": 2524648,
+     "file": "https://n.ziyouz.com/kutubxona/category/39-o-zbek-mumtoz-adabiyoti?download=13311:furqat-she-riyatidan-1980",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z1878",
+     "title": "Hofiz Xorazmiy she’riyatidan",
+     "author": "Xalq og‘zaki ijodi",
+     "lang": "uz",
+     "size": 1988302,
+     "file": "https://n.ziyouz.com/kutubxona/category/39-o-zbek-mumtoz-adabiyoti?download=1878:hofiz-xorazmiy-she-riyatidan",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z12544",
+     "title": "Nodira she’riyatidan (1979)",
+     "author": "Xalq og‘zaki ijodi",
+     "lang": "uz",
+     "size": 2494077,
+     "file": "https://n.ziyouz.com/kutubxona/category/39-o-zbek-mumtoz-adabiyoti?download=12544:nodira-she-riyatidan-1979",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z12545",
+     "title": "Nodira-Komila (2-kitob) (2004)",
+     "author": "Xalq og‘zaki ijodi",
+     "lang": "uz",
+     "size": 3565252,
+     "file": "https://n.ziyouz.com/kutubxona/category/39-o-zbek-mumtoz-adabiyoti?download=12545:nodira-komila-2-kitob-2004",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z11353",
+     "title": "Uvaysiy she’riyatidan",
+     "author": "Xalq og‘zaki ijodi",
+     "lang": "uz",
+     "size": 2652555,
+     "file": "https://n.ziyouz.com/kutubxona/category/39-o-zbek-mumtoz-adabiyoti?download=11353:uvaysiy-she-riyatidan&start=100",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z12552",
+     "title": "Zahiriddin Muhammad Bobur Devoni (2004)",
+     "author": "Xalq og‘zaki ijodi",
+     "lang": "uz",
+     "size": 2402230,
+     "file": "https://n.ziyouz.com/kutubxona/category/39-o-zbek-mumtoz-adabiyoti?download=12552:zahiriddin-muhammad-bobur-devoni-2004&start=100",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z1923",
+     "title": "Devon",
+     "author": "Xojanazar Huvaydo",
+     "lang": "uz",
+     "size": 10310264,
+     "file": "https://n.ziyouz.com/kutubxona/category/39-o-zbek-mumtoz-adabiyoti?download=1923:xojanazar-huvaydo-devon&start=100",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z1924",
+     "title": "Muhabbatnoma",
+     "author": "Xorazmiy",
+     "lang": "uz",
+     "size": 1229034,
+     "file": "https://n.ziyouz.com/kutubxona/category/39-o-zbek-mumtoz-adabiyoti?download=1924:xorazmiy-muhabbatnoma&start=100",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z13313",
+     "title": "Rohati dil",
+     "author": "Xo‘janazar Huvaydo",
+     "lang": "uz",
+     "size": 4087112,
+     "file": "https://n.ziyouz.com/kutubxona/category/39-o-zbek-mumtoz-adabiyoti?download=13313:xo-janazar-huvaydo-rohati-dil&start=100",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z1927",
+     "title": "Chog‘ir va bang",
+     "author": "Yusuf Amiriy",
+     "lang": "uz",
+     "size": 718947,
+     "file": "https://n.ziyouz.com/kutubxona/category/39-o-zbek-mumtoz-adabiyoti?download=1927:yusuf-amiriy-chog-ir-va-bang&start=100",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z1928",
+     "title": "Dahnoma",
+     "author": "Yusuf Amiriy",
+     "lang": "uz",
+     "size": 1747696,
+     "file": "https://n.ziyouz.com/kutubxona/category/39-o-zbek-mumtoz-adabiyoti?download=1928:yusuf-amiriy-dahnoma&start=100",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z1931",
+     "title": "Qutadg‘u bilig",
+     "author": "Yusuf Xos Hojib",
+     "lang": "uz",
+     "size": 1994574,
+     "file": "https://n.ziyouz.com/kutubxona/category/39-o-zbek-mumtoz-adabiyoti?download=1931:yusuf-xos-hojib-qutadg-u-bilig&start=100",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z5255",
+     "title": "Qutadg‘u bilig (akademik nashr)",
+     "author": "Yusuf Xos Hojib",
+     "lang": "uz",
+     "size": 23339624,
+     "file": "https://n.ziyouz.com/kutubxona/category/39-o-zbek-mumtoz-adabiyoti?download=5255:yusuf-xos-hojib-qutadg-u-bilig-akademik-nashr&start=100",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z1930",
+     "title": "Qutadg‘u bilig (nasriy bayoni)",
+     "author": "Yusuf Xos Hojib",
+     "lang": "uz",
+     "size": 11084580,
+     "file": "https://n.ziyouz.com/kutubxona/category/39-o-zbek-mumtoz-adabiyoti?download=1930:yusuf-xos-hojib-qutadg-u-bilig-nasriy-bayoni&start=100",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z6041",
+     "title": "Saodatga eltuvchi bilim",
+     "author": "Yusuf Xos Hojib",
+     "lang": "uz",
+     "size": 6066109,
+     "file": "https://n.ziyouz.com/kutubxona/category/39-o-zbek-mumtoz-adabiyoti?download=6041:yusuf-xos-hojib-saodatga-eltuvchi-bilim&start=100",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z1932",
+     "title": "Boburnoma",
+     "author": "Zahiriddin Muhammad Bobur",
+     "lang": "uz",
+     "size": 20463059,
+     "file": "https://n.ziyouz.com/kutubxona/category/39-o-zbek-mumtoz-adabiyoti?download=1932:zahiriddin-muhammad-bobur-boburnoma&start=100",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z6042",
+     "title": "Boburnoma (akademik nashr)",
+     "author": "Zahiriddin Muhammad Bobur",
+     "lang": "uz",
+     "size": 15889362,
+     "file": "https://n.ziyouz.com/kutubxona/category/39-o-zbek-mumtoz-adabiyoti?download=6042:zahiriddin-muhammad-bobur-boburnoma-akademik-nashr&start=100",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z6043",
+     "title": "Boburnoma (tabdil)",
+     "author": "Zahiriddin Muhammad Bobur",
+     "lang": "uz",
+     "size": 11869039,
+     "file": "https://n.ziyouz.com/kutubxona/category/39-o-zbek-mumtoz-adabiyoti?download=6043:zahiriddin-muhammad-bobur-boburnoma-tabdil&start=100",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z13271",
+     "title": "Devon (1994)",
+     "author": "Zahiriddin Muhammad Bobur",
+     "lang": "uz",
+     "size": 3032160,
+     "file": "https://n.ziyouz.com/kutubxona/category/39-o-zbek-mumtoz-adabiyoti?download=13271:zahiriddin-muhammad-bobur-devon-1994&start=100",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z1933",
+     "title": "E’tiqodiyya",
+     "author": "Zahiriddin Muhammad Bobur",
+     "lang": "uz",
+     "size": 847551,
+     "file": "https://n.ziyouz.com/kutubxona/category/39-o-zbek-mumtoz-adabiyoti?download=1933:zahiriddin-muhammad-bobur-e-tiqodiyya&start=100",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z1934",
+     "title": "G‘azallar, ruboylar",
+     "author": "Zahiriddin Muhammad Bobur",
+     "lang": "uz",
+     "size": 637848,
+     "file": "https://n.ziyouz.com/kutubxona/category/39-o-zbek-mumtoz-adabiyoti?download=1934:zahiriddin-muhammad-bobur-g-azallar-ruboylar&start=100",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z1935",
+     "title": "Kitobul haj",
+     "author": "Zahiriddin Muhammad Bobur",
+     "lang": "uz",
+     "size": 1100970,
+     "file": "https://n.ziyouz.com/kutubxona/category/39-o-zbek-mumtoz-adabiyoti?download=1935:zahiriddin-muhammad-bobur-kitobul-haj&start=100",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z1936",
+     "title": "Kitobus-salot",
+     "author": "Zahiriddin Muhammad Bobur",
+     "lang": "uz",
+     "size": 2206808,
+     "file": "https://n.ziyouz.com/kutubxona/category/39-o-zbek-mumtoz-adabiyoti?download=1936:zahiriddin-muhammad-bobur-kitobus-salot&start=100",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z1937",
+     "title": "Mahrami asror topmadim",
+     "author": "Zahiriddin Muhammad Bobur",
+     "lang": "uz",
+     "size": 2325024,
+     "file": "https://n.ziyouz.com/kutubxona/category/39-o-zbek-mumtoz-adabiyoti?download=1937:zahiriddin-muhammad-bobur-mahrami-asror-topmadim&start=100",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z1938",
+     "title": "Mubayyin",
+     "author": "Zahiriddin Muhammad Bobur",
+     "lang": "uz",
+     "size": 4049596,
+     "file": "https://n.ziyouz.com/kutubxona/category/39-o-zbek-mumtoz-adabiyoti?download=1938:zahiriddin-muhammad-bobur-mubayyin&start=100",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z14046",
+     "title": "Muxtasar (1971)",
+     "author": "Zahiriddin Muhammad Bobur",
+     "lang": "uz",
+     "size": 23413870,
+     "file": "https://n.ziyouz.com/kutubxona/category/39-o-zbek-mumtoz-adabiyoti?download=14046:zahiriddin-muhammad-bobur-muxtasar-1971&start=100",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z13456",
+     "title": "Nazm durdonalari (1996)",
+     "author": "Zahiriddin Muhammad Bobur",
+     "lang": "uz",
+     "size": 3214492,
+     "file": "https://n.ziyouz.com/kutubxona/category/39-o-zbek-mumtoz-adabiyoti?download=13456:zahiriddin-muhammad-bobur-nazm-durdonalari-1996&start=100",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z12553",
+     "title": "Tanlangan asarlar (1976)",
+     "author": "Zahiriddin Muhammad Bobur",
+     "lang": "uz",
+     "size": 1863852,
+     "file": "https://n.ziyouz.com/kutubxona/category/39-o-zbek-mumtoz-adabiyoti?download=12553:zahiriddin-muhammad-bobur-tanlangan-asarlar-1976&start=100",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z10901",
+     "title": "Ajab zamona",
+     "author": "Zavqiy",
+     "lang": "uz",
+     "size": 3570336,
+     "file": "https://n.ziyouz.com/kutubxona/category/39-o-zbek-mumtoz-adabiyoti?download=10901:zavqiy-ajab-zamona&start=100",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z1939",
+     "title": "Tanlangan she’rlar",
+     "author": "Zavqiy",
+     "lang": "uz",
+     "size": 1967434,
+     "file": "https://n.ziyouz.com/kutubxona/category/39-o-zbek-mumtoz-adabiyoti?download=1939:zavqiy-tanlangan-she-rlar&start=100",
+     "source": "ziyouz.com"
+    }
+   ]
+  },
+  {
+   "id": "uz-navoiy",
+   "lang": "uz",
+   "name": {
+    "uz": "Alisher Navoiy asarlari",
+    "ru": "Произведения Алишера Навои",
+    "en": "Works of Alisher Navoi"
+   },
+   "color": "#1F4FA8",
+   "books": [
+    {
+     "id": "z1718",
+     "title": "Arba’in",
+     "author": "Alisher Navoiy",
+     "lang": "uz",
+     "size": 227699,
+     "file": "https://n.ziyouz.com/kutubxona/category/40-alisher-navoiy-asarlari?download=1718:alisher-navoiy-arba-in",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z13262",
+     "title": "Arba’iyn (1991)",
+     "author": "Alisher Navoiy",
+     "lang": "uz",
+     "size": 1108951,
+     "file": "https://n.ziyouz.com/kutubxona/category/40-alisher-navoiy-asarlari?download=13262:alisher-navoiy-arba-iyn-1991",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z1719",
+     "title": "Badoyi’ ul-bidoya",
+     "author": "Alisher Navoiy",
+     "lang": "uz",
+     "size": 2265234,
+     "file": "https://n.ziyouz.com/kutubxona/category/40-alisher-navoiy-asarlari?download=1719:alisher-navoiy-badoyi-ul-bidoya",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z12537",
+     "title": "Hayratul abror (1974)",
+     "author": "Alisher Navoiy",
+     "lang": "uz",
+     "size": 9322995,
+     "file": "https://n.ziyouz.com/kutubxona/category/39-o-zbek-mumtoz-adabiyoti?download=12537:alisher-navoiy-hayratul-abror-1974",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z12538",
+     "title": "Hayratul abrordan (1983)",
+     "author": "Alisher Navoiy",
+     "lang": "uz",
+     "size": 2532270,
+     "file": "https://n.ziyouz.com/kutubxona/category/39-o-zbek-mumtoz-adabiyoti?download=12538:alisher-navoiy-hayratul-abrordan-1983",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z1720",
+     "title": "Hikmatlar",
+     "author": "Alisher Navoiy",
+     "lang": "uz",
+     "size": 1067138,
+     "file": "https://n.ziyouz.com/kutubxona/category/40-alisher-navoiy-asarlari?download=1720:alisher-navoiy-hikmatlar",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z1721",
+     "title": "Holoti Pahlavon Muhammad",
+     "author": "Alisher Navoiy",
+     "lang": "uz",
+     "size": 267735,
+     "file": "https://n.ziyouz.com/kutubxona/category/40-alisher-navoiy-asarlari?download=1721:alisher-navoiy-holoti-pahlavon-muhammad",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z1722",
+     "title": "Holoti Sayyid Hasan Ardasher",
+     "author": "Alisher Navoiy",
+     "lang": "uz",
+     "size": 260847,
+     "file": "https://n.ziyouz.com/kutubxona/category/40-alisher-navoiy-asarlari?download=1722:alisher-navoiy-holoti-sayyid-hasan-ardasher",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z12539",
+     "title": "Layli va Majnun nasriy bayoni (1976)",
+     "author": "Alisher Navoiy",
+     "lang": "uz",
+     "size": 4855074,
+     "file": "https://n.ziyouz.com/kutubxona/category/39-o-zbek-mumtoz-adabiyoti?download=12539:alisher-navoiy-layli-va-majnun-nasriy-bayoni-1976",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z12540",
+     "title": "Lisonut tayr (1983)",
+     "author": "Alisher Navoiy",
+     "lang": "uz",
+     "size": 7689437,
+     "file": "https://n.ziyouz.com/kutubxona/category/39-o-zbek-mumtoz-adabiyoti?download=12540:alisher-navoiy-lisonut-tayr-1983",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z1723",
+     "title": "Lisonut-tayr (nasriy bayoni)",
+     "author": "Alisher Navoiy",
+     "lang": "uz",
+     "size": 529800,
+     "file": "https://n.ziyouz.com/kutubxona/category/40-alisher-navoiy-asarlari?download=1723:alisher-navoiy-lisonut-tayr-nasriy-bayoni",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z1724",
+     "title": "Lisonut-tayr (nazm)",
+     "author": "Alisher Navoiy",
+     "lang": "uz",
+     "size": 1216112,
+     "file": "https://n.ziyouz.com/kutubxona/category/40-alisher-navoiy-asarlari?download=1724:alisher-navoiy-lisonut-tayr-nazm",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z1725",
+     "title": "Mahbubul qulub",
+     "author": "Alisher Navoiy",
+     "lang": "uz",
+     "size": 866399,
+     "file": "https://n.ziyouz.com/kutubxona/category/40-alisher-navoiy-asarlari?download=1725:alisher-navoiy-mahbubul-qulub",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z12541",
+     "title": "Mahbubul qulub (1983)",
+     "author": "Alisher Navoiy",
+     "lang": "uz",
+     "size": 3603464,
+     "file": "https://n.ziyouz.com/kutubxona/category/39-o-zbek-mumtoz-adabiyoti?download=12541:alisher-navoiy-mahbubul-qulub-1983",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z1726",
+     "title": "Majolisun-nafois",
+     "author": "Alisher Navoiy",
+     "lang": "uz",
+     "size": 1416286,
+     "file": "https://n.ziyouz.com/kutubxona/category/40-alisher-navoiy-asarlari?download=1726:alisher-navoiy-majolisun-nafois",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z1727",
+     "title": "Mezonul-avzon",
+     "author": "Alisher Navoiy",
+     "lang": "uz",
+     "size": 2047488,
+     "file": "https://n.ziyouz.com/kutubxona/category/40-alisher-navoiy-asarlari?download=1727:alisher-navoiy-mezonul-avzon",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z1728",
+     "title": "Muhokamatul lug‘atayn",
+     "author": "Alisher Navoiy",
+     "lang": "uz",
+     "size": 707901,
+     "file": "https://n.ziyouz.com/kutubxona/category/40-alisher-navoiy-asarlari?download=1728:alisher-navoiy-muhokamatul-lug-atayn",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z1729",
+     "title": "Mukammal asarlar to‘plami. 1-jild",
+     "author": "Alisher Navoiy",
+     "lang": "uz",
+     "size": 2563530,
+     "file": "https://n.ziyouz.com/kutubxona/category/40-alisher-navoiy-asarlari?download=1729:alisher-navoiy-mukammal-asarlar-to-plami-1-jild",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z1730",
+     "title": "Mukammal asarlar to‘plami. 10-jild",
+     "author": "Alisher Navoiy",
+     "lang": "uz",
+     "size": 2020239,
+     "file": "https://n.ziyouz.com/kutubxona/category/40-alisher-navoiy-asarlari?download=1730:alisher-navoiy-mukammal-asarlar-to-plami-10-jild",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z1731",
+     "title": "Mukammal asarlar to‘plami. 11-jild",
+     "author": "Alisher Navoiy",
+     "lang": "uz",
+     "size": 2598155,
+     "file": "https://n.ziyouz.com/kutubxona/category/40-alisher-navoiy-asarlari?download=1731:alisher-navoiy-mukammal-asarlar-to-plami-11-jild",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z1732",
+     "title": "Mukammal asarlar to‘plami. 12-jild",
+     "author": "Alisher Navoiy",
+     "lang": "uz",
+     "size": 1951633,
+     "file": "https://n.ziyouz.com/kutubxona/category/40-alisher-navoiy-asarlari?download=1732:alisher-navoiy-mukammal-asarlar-to-plami-12-jild",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z1733",
+     "title": "Mukammal asarlar to‘plami. 13-jild",
+     "author": "Alisher Navoiy",
+     "lang": "uz",
+     "size": 1927829,
+     "file": "https://n.ziyouz.com/kutubxona/category/40-alisher-navoiy-asarlari?download=1733:alisher-navoiy-mukammal-asarlar-to-plami-13-jild",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z1734",
+     "title": "Mukammal asarlar to‘plami. 14-jild",
+     "author": "Alisher Navoiy",
+     "lang": "uz",
+     "size": 1945587,
+     "file": "https://n.ziyouz.com/kutubxona/category/40-alisher-navoiy-asarlari?download=1734:alisher-navoiy-mukammal-asarlar-to-plami-14-jild",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z1735",
+     "title": "Mukammal asarlar to‘plami. 15-jild",
+     "author": "Alisher Navoiy",
+     "lang": "uz",
+     "size": 1735046,
+     "file": "https://n.ziyouz.com/kutubxona/category/40-alisher-navoiy-asarlari?download=1735:alisher-navoiy-mukammal-asarlar-to-plami-15-jild",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z1736",
+     "title": "Mukammal asarlar to‘plami. 16-jild",
+     "author": "Alisher Navoiy",
+     "lang": "uz",
+     "size": 3007184,
+     "file": "https://n.ziyouz.com/kutubxona/category/40-alisher-navoiy-asarlari?download=1736:alisher-navoiy-mukammal-asarlar-to-plami-16-jild",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z1737",
+     "title": "Mukammal asarlar to‘plami. 17-jild",
+     "author": "Alisher Navoiy",
+     "lang": "uz",
+     "size": 2549320,
+     "file": "https://n.ziyouz.com/kutubxona/category/40-alisher-navoiy-asarlari?download=1737:alisher-navoiy-mukammal-asarlar-to-plami-17-jild",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z1738",
+     "title": "Mukammal asarlar to‘plami. 18-jild",
+     "author": "Alisher Navoiy",
+     "lang": "uz",
+     "size": 2035343,
+     "file": "https://n.ziyouz.com/kutubxona/category/40-alisher-navoiy-asarlari?download=1738:alisher-navoiy-mukammal-asarlar-to-plami-18-jild",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z1739",
+     "title": "Mukammal asarlar to‘plami. 19-jild",
+     "author": "Alisher Navoiy",
+     "lang": "uz",
+     "size": 2145936,
+     "file": "https://n.ziyouz.com/kutubxona/category/40-alisher-navoiy-asarlari?download=1739:alisher-navoiy-mukammal-asarlar-to-plami-19-jild",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z1740",
+     "title": "Mukammal asarlar to‘plami. 2-jild",
+     "author": "Alisher Navoiy",
+     "lang": "uz",
+     "size": 2491890,
+     "file": "https://n.ziyouz.com/kutubxona/category/40-alisher-navoiy-asarlari?download=1740:alisher-navoiy-mukammal-asarlar-to-plami-2-jild",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z1741",
+     "title": "Mukammal asarlar to‘plami. 20-jild",
+     "author": "Alisher Navoiy",
+     "lang": "uz",
+     "size": 2950574,
+     "file": "https://n.ziyouz.com/kutubxona/category/40-alisher-navoiy-asarlari?download=1741:alisher-navoiy-mukammal-asarlar-to-plami-20-jild",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z1742",
+     "title": "Mukammal asarlar to‘plami. 3-jild",
+     "author": "Alisher Navoiy",
+     "lang": "uz",
+     "size": 2288692,
+     "file": "https://n.ziyouz.com/kutubxona/category/40-alisher-navoiy-asarlari?download=1742:alisher-navoiy-mukammal-asarlar-to-plami-3-jild",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z1743",
+     "title": "Mukammal asarlar to‘plami. 4-jild",
+     "author": "Alisher Navoiy",
+     "lang": "uz",
+     "size": 2137162,
+     "file": "https://n.ziyouz.com/kutubxona/category/40-alisher-navoiy-asarlari?download=1743:alisher-navoiy-mukammal-asarlar-to-plami-4-jild",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z1744",
+     "title": "Mukammal asarlar to‘plami. 5-jild",
+     "author": "Alisher Navoiy",
+     "lang": "uz",
+     "size": 2137228,
+     "file": "https://n.ziyouz.com/kutubxona/category/40-alisher-navoiy-asarlari?download=1744:alisher-navoiy-mukammal-asarlar-to-plami-5-jild",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z1745",
+     "title": "Mukammal asarlar to‘plami. 6-jild",
+     "author": "Alisher Navoiy",
+     "lang": "uz",
+     "size": 2242278,
+     "file": "https://n.ziyouz.com/kutubxona/category/40-alisher-navoiy-asarlari?download=1745:alisher-navoiy-mukammal-asarlar-to-plami-6-jild",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z1746",
+     "title": "Mukammal asarlar to‘plami. 7-jild",
+     "author": "Alisher Navoiy",
+     "lang": "uz",
+     "size": 2244562,
+     "file": "https://n.ziyouz.com/kutubxona/category/40-alisher-navoiy-asarlari?download=1746:alisher-navoiy-mukammal-asarlar-to-plami-7-jild",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z1747",
+     "title": "Mukammal asarlar to‘plami. 8-jild",
+     "author": "Alisher Navoiy",
+     "lang": "uz",
+     "size": 2282596,
+     "file": "https://n.ziyouz.com/kutubxona/category/40-alisher-navoiy-asarlari?download=1747:alisher-navoiy-mukammal-asarlar-to-plami-8-jild",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z1748",
+     "title": "Mukammal asarlar to‘plami. 9-jild",
+     "author": "Alisher Navoiy",
+     "lang": "uz",
+     "size": 2442855,
+     "file": "https://n.ziyouz.com/kutubxona/category/40-alisher-navoiy-asarlari?download=1748:alisher-navoiy-mukammal-asarlar-to-plami-9-jild",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z1749",
+     "title": "Munojot",
+     "author": "Alisher Navoiy",
+     "lang": "uz",
+     "size": 197777,
+     "file": "https://n.ziyouz.com/kutubxona/category/40-alisher-navoiy-asarlari?download=1749:alisher-navoiy-munojot",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z1750",
+     "title": "Munshaot",
+     "author": "Alisher Navoiy",
+     "lang": "uz",
+     "size": 556603,
+     "file": "https://n.ziyouz.com/kutubxona/category/40-alisher-navoiy-asarlari?download=1750:alisher-navoiy-munshaot",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z1751",
+     "title": "Nasoimul muhabbat",
+     "author": "Alisher Navoiy",
+     "lang": "uz",
+     "size": 2684992,
+     "file": "https://n.ziyouz.com/kutubxona/category/40-alisher-navoiy-asarlari?download=1751:alisher-navoiy-nasoimul-muhabbat",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z1752",
+     "title": "Navodir un-nihoya",
+     "author": "Alisher Navoiy",
+     "lang": "uz",
+     "size": 2040533,
+     "file": "https://n.ziyouz.com/kutubxona/category/40-alisher-navoiy-asarlari?download=1752:alisher-navoiy-navodir-un-nihoya",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z13325",
+     "title": "Navoiy dastxati (Navodirun nihoya)",
+     "author": "Alisher Navoiy",
+     "lang": "uz",
+     "size": 129941494,
+     "file": "https://n.ziyouz.com/kutubxona/category/40-alisher-navoiy-asarlari?download=13325:navoiy-dastxati-navodirun-nihoya",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z1753",
+     "title": "Nazmul javohir",
+     "author": "Alisher Navoiy",
+     "lang": "uz",
+     "size": 447961,
+     "file": "https://n.ziyouz.com/kutubxona/category/40-alisher-navoiy-asarlari?download=1753:alisher-navoiy-nazmul-javohir",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z1754",
+     "title": "Qaro ko‘zum (g‘azallar)",
+     "author": "Alisher Navoiy",
+     "lang": "uz",
+     "size": 1761823,
+     "file": "https://n.ziyouz.com/kutubxona/category/40-alisher-navoiy-asarlari?download=1754:alisher-navoiy-qaro-ko-zum-g-azallar",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z1755",
+     "title": "Qit’alar, fardlar, ruboiylar, tuyuqlar",
+     "author": "Alisher Navoiy",
+     "lang": "uz",
+     "size": 1201028,
+     "file": "https://n.ziyouz.com/kutubxona/category/40-alisher-navoiy-asarlari?download=1755:alisher-navoiy-qit-alar-fardlar-ruboiylar-tuyuqlar",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z1756",
+     "title": "Risolai tiyr andoxtan",
+     "author": "Alisher Navoiy",
+     "lang": "uz",
+     "size": 125371,
+     "file": "https://n.ziyouz.com/kutubxona/category/40-alisher-navoiy-asarlari?download=1756:alisher-navoiy-risolai-tiyr-andoxtan",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z12542",
+     "title": "Sab’ai sayyor nasriy bayoni (1977)",
+     "author": "Alisher Navoiy",
+     "lang": "uz",
+     "size": 7645537,
+     "file": "https://n.ziyouz.com/kutubxona/category/39-o-zbek-mumtoz-adabiyoti?download=12542:alisher-navoiy-sab-ai-sayyor-nasriy-bayoni-1977",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z12543",
+     "title": "Saddi Iskandariy nasriy bayoni (1978)",
+     "author": "Alisher Navoiy",
+     "lang": "uz",
+     "size": 13777628,
+     "file": "https://n.ziyouz.com/kutubxona/category/39-o-zbek-mumtoz-adabiyoti?download=12543:alisher-navoiy-saddi-iskandariy-nasriy-bayoni-1978",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z1757",
+     "title": "Siroj-ul muslimin",
+     "author": "Alisher Navoiy",
+     "lang": "uz",
+     "size": 220483,
+     "file": "https://n.ziyouz.com/kutubxona/category/40-alisher-navoiy-asarlari?download=1757:alisher-navoiy-siroj-ul-muslimin",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z1758",
+     "title": "Tarixi anbiyo va hukamo",
+     "author": "Alisher Navoiy",
+     "lang": "uz",
+     "size": 692623,
+     "file": "https://n.ziyouz.com/kutubxona/category/40-alisher-navoiy-asarlari?download=1758:alisher-navoiy-tarixi-anbiyo-va-hukamo",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z1759",
+     "title": "Tarixi muluki ajam",
+     "author": "Alisher Navoiy",
+     "lang": "uz",
+     "size": 410507,
+     "file": "https://n.ziyouz.com/kutubxona/category/40-alisher-navoiy-asarlari?download=1759:alisher-navoiy-tarixi-muluki-ajam",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z1760",
+     "title": "Vaqfiya",
+     "author": "Alisher Navoiy",
+     "lang": "uz",
+     "size": 336891,
+     "file": "https://n.ziyouz.com/kutubxona/category/40-alisher-navoiy-asarlari?download=1760:alisher-navoiy-vaqfiya",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z1761",
+     "title": "Xamsa. Farhod va Shirin (nasriy bayoni)",
+     "author": "Alisher Navoiy",
+     "lang": "uz",
+     "size": 10100534,
+     "file": "https://n.ziyouz.com/kutubxona/category/40-alisher-navoiy-asarlari?download=1761:alisher-navoiy-xamsa-farhod-va-shirin-nasriy-bayoni",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z1762",
+     "title": "Xamsa. Farhod va Shirin (nazm)",
+     "author": "Alisher Navoiy",
+     "lang": "uz",
+     "size": 1929367,
+     "file": "https://n.ziyouz.com/kutubxona/category/40-alisher-navoiy-asarlari?download=1762:alisher-navoiy-xamsa-farhod-va-shirin-nazm",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z1763",
+     "title": "Xamsa. Hayratul-abror (nasriy bayoni)",
+     "author": "Alisher Navoiy",
+     "lang": "uz",
+     "size": 1482430,
+     "file": "https://n.ziyouz.com/kutubxona/category/40-alisher-navoiy-asarlari?download=1763:alisher-navoiy-xamsa-hayratul-abror-nasriy-bayoni",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z1764",
+     "title": "Xamsa. Hayratul-abror (nazm)",
+     "author": "Alisher Navoiy",
+     "lang": "uz",
+     "size": 1395681,
+     "file": "https://n.ziyouz.com/kutubxona/category/40-alisher-navoiy-asarlari?download=1764:alisher-navoiy-xamsa-hayratul-abror-nazm",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z1765",
+     "title": "Xamsa. Layli va Majnun (nasriy bayoni)",
+     "author": "Alisher Navoiy",
+     "lang": "uz",
+     "size": 5156614,
+     "file": "https://n.ziyouz.com/kutubxona/category/40-alisher-navoiy-asarlari?download=1765:alisher-navoiy-xamsa-layli-va-majnun-nasriy-bayoni",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z1766",
+     "title": "Xamsa. Layli va Majnun (nazm)",
+     "author": "Alisher Navoiy",
+     "lang": "uz",
+     "size": 1376891,
+     "file": "https://n.ziyouz.com/kutubxona/category/40-alisher-navoiy-asarlari?download=1766:alisher-navoiy-xamsa-layli-va-majnun-nazm",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z1767",
+     "title": "Xamsa. Sab’ai sayyor (nasriy bayoni)",
+     "author": "Alisher Navoiy",
+     "lang": "uz",
+     "size": 9176595,
+     "file": "https://n.ziyouz.com/kutubxona/category/40-alisher-navoiy-asarlari?download=1767:alisher-navoiy-xamsa-sab-ai-sayyor-nasriy-bayoni",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z1768",
+     "title": "Xamsa. Sab’ai sayyor (nazm)",
+     "author": "Alisher Navoiy",
+     "lang": "uz",
+     "size": 1508989,
+     "file": "https://n.ziyouz.com/kutubxona/category/40-alisher-navoiy-asarlari?download=1768:alisher-navoiy-xamsa-sab-ai-sayyor-nazm",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z1769",
+     "title": "Xamsa. Saddi Iskandariy (nasriy bayoni)",
+     "author": "Alisher Navoiy",
+     "lang": "uz",
+     "size": 14148874,
+     "file": "https://n.ziyouz.com/kutubxona/category/40-alisher-navoiy-asarlari?download=1769:alisher-navoiy-xamsa-saddi-iskandariy-nasriy-bayoni",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z1770",
+     "title": "Xamsa. Saddi Iskandariy (nazm)",
+     "author": "Alisher Navoiy",
+     "lang": "uz",
+     "size": 2239969,
+     "file": "https://n.ziyouz.com/kutubxona/category/40-alisher-navoiy-asarlari?download=1770:alisher-navoiy-xamsa-saddi-iskandariy-nazm",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z1771",
+     "title": "Xamsatul mutahayyirin",
+     "author": "Alisher Navoiy",
+     "lang": "uz",
+     "size": 684057,
+     "file": "https://n.ziyouz.com/kutubxona/category/40-alisher-navoiy-asarlari?download=1771:alisher-navoiy-xamsatul-mutahayyirin",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z10824",
+     "title": "Xazoinul maoniydagi na’t g‘azallar",
+     "author": "Alisher Navoiy",
+     "lang": "uz",
+     "size": 3248507,
+     "file": "https://n.ziyouz.com/kutubxona/category/40-alisher-navoiy-asarlari?download=10824:alisher-navoiy-xazoinul-maoniydagi-na-t-g-azallar",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z1772",
+     "title": "Xazoinul ma’oniy. Badoyi’ ul-vasat",
+     "author": "Alisher Navoiy",
+     "lang": "uz",
+     "size": 1767885,
+     "file": "https://n.ziyouz.com/kutubxona/category/40-alisher-navoiy-asarlari?download=1772:alisher-navoiy-xazoinul-ma-oniy-badoyi-ul-vasat",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z1773",
+     "title": "Xazoinul ma’oniy. Favoid ul-kibar",
+     "author": "Alisher Navoiy",
+     "lang": "uz",
+     "size": 1868242,
+     "file": "https://n.ziyouz.com/kutubxona/category/40-alisher-navoiy-asarlari?download=1773:alisher-navoiy-xazoinul-ma-oniy-favoid-ul-kibar",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z1774",
+     "title": "Xazoinul ma’oniy. G‘aroyib us-sig‘ar",
+     "author": "Alisher Navoiy",
+     "lang": "uz",
+     "size": 1943828,
+     "file": "https://n.ziyouz.com/kutubxona/category/40-alisher-navoiy-asarlari?download=1774:alisher-navoiy-xazoinul-ma-oniy-g-aroyib-us-sig-ar",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z1775",
+     "title": "Xazoinul ma’oniy. Navodir ush-shabob",
+     "author": "Alisher Navoiy",
+     "lang": "uz",
+     "size": 1762560,
+     "file": "https://n.ziyouz.com/kutubxona/category/40-alisher-navoiy-asarlari?download=1775:alisher-navoiy-xazoinul-ma-oniy-navodir-ush-shabob",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z10823",
+     "title": "Sittai zaruriya",
+     "author": "Alisher Navoiy (Foniy)",
+     "lang": "uz",
+     "size": 4792238,
+     "file": "https://n.ziyouz.com/kutubxona/category/40-alisher-navoiy-asarlari?download=10823:alisher-navoiy-foniy-sittai-zaruriya",
+     "source": "ziyouz.com"
+    }
+   ]
+  },
+  {
+   "id": "uz-doston",
+   "lang": "uz",
+   "name": {
+    "uz": "Xalq dostonlari",
+    "ru": "Народные дастаны",
+    "en": "Folk epics (dostons)"
+   },
+   "color": "#0F7A64",
+   "books": [
+    {
+     "id": "z1778",
+     "title": "O‘g‘uznoma",
+     "author": "Baxtiyor Isabek (nashrga tayyorlovchi)",
+     "lang": "uz",
+     "size": 217750,
+     "file": "https://n.ziyouz.com/kutubxona/category/38-o-zbek-xalq-og-zaki-ijodi?download=1778:baxtiyor-isabek-nashrga-tayyorlovchi-o-g-uznoma",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z1779",
+     "title": "Avazning arazi (doston)",
+     "author": "Bekmurod Jo‘raboy o‘g‘li (aytuvchi)",
+     "lang": "uz",
+     "size": 3756631,
+     "file": "https://n.ziyouz.com/kutubxona/category/38-o-zbek-xalq-og-zaki-ijodi?download=1779:bekmurod-jo-raboy-o-g-li-aytuvchi-avazning-arazi-doston",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z1780",
+     "title": "Gulshanbog‘ (doston)",
+     "author": "Bekmurod Jo‘raboy o‘g‘li (aytuvchi)",
+     "lang": "uz",
+     "size": 4386643,
+     "file": "https://n.ziyouz.com/kutubxona/category/38-o-zbek-xalq-og-zaki-ijodi?download=1780:bekmurod-jo-raboy-o-g-li-aytuvchi-gulshanbog-doston",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z5265",
+     "title": "Sarvigul. Avazxon ota yurtida",
+     "author": "Boborayim baxshi Mamatmurodov",
+     "lang": "uz",
+     "size": 3358526,
+     "file": "https://n.ziyouz.com/kutubxona/category/38-o-zbek-xalq-og-zaki-ijodi?download=5265:boborayim-baxshi-mamatmurodov-sarvigul-avazxon-ota-yurtida",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z1782",
+     "title": "Nurali va qari Ahmad (doston)",
+     "author": "Boymurod Boymat o‘g‘li (aytuvchi)",
+     "lang": "uz",
+     "size": 1176636,
+     "file": "https://n.ziyouz.com/kutubxona/category/38-o-zbek-xalq-og-zaki-ijodi?download=1782:boymurod-boymat-o-g-li-aytuvchi-nurali-va-qari-ahmad-doston",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z1783",
+     "title": "Nuralining yoshligi (doston)",
+     "author": "Bozor Omonov (aytuvchi)",
+     "lang": "uz",
+     "size": 1823852,
+     "file": "https://n.ziyouz.com/kutubxona/category/38-o-zbek-xalq-og-zaki-ijodi?download=1783:bozor-omonov-aytuvchi-nuralining-yoshligi-doston",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z1781",
+     "title": "Nuralining yutilishi (doston)",
+     "author": "Bo‘ri baxshi Ahmedov (aytuvchi)",
+     "lang": "uz",
+     "size": 2975322,
+     "file": "https://n.ziyouz.com/kutubxona/category/38-o-zbek-xalq-og-zaki-ijodi?download=1781:bo-ri-baxshi-ahmedov-aytuvchi-nuralining-yutilishi-doston",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z11399",
+     "title": "2 jidlik. 1-jild",
+     "author": "Ergash Jumanbulbul o‘g‘li",
+     "lang": "uz",
+     "size": 11581414,
+     "file": "https://n.ziyouz.com/kutubxona/category/38-o-zbek-xalq-og-zaki-ijodi?download=11399:ergash-jumanbulbul-o-g-li-2-jidlik-1-jild",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z9449",
+     "title": "Bulbul taronalari. 4-jild",
+     "author": "Ergash Jumanbulbul o‘g‘li",
+     "lang": "uz",
+     "size": 12289524,
+     "file": "https://n.ziyouz.com/kutubxona/category/38-o-zbek-xalq-og-zaki-ijodi?download=9449:ergash-jumanbulbul-o-g-li-bulbul-taronalari-4-jild",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z9450",
+     "title": "Bulbul taronalari. 5-jild",
+     "author": "Ergash Jumanbulbul o‘g‘li",
+     "lang": "uz",
+     "size": 6900385,
+     "file": "https://n.ziyouz.com/kutubxona/category/38-o-zbek-xalq-og-zaki-ijodi?download=9450:ergash-jumanbulbul-o-g-li-bulbul-taronalari-5-jild",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z5266",
+     "title": "Dalli. Xushkeldi",
+     "author": "Ergash Jumanbulbul o‘g‘li",
+     "lang": "uz",
+     "size": 8906315,
+     "file": "https://n.ziyouz.com/kutubxona/category/38-o-zbek-xalq-og-zaki-ijodi?download=5266:ergash-jumanbulbul-o-g-li-dalli-xushkeldi",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z1784",
+     "title": "Dalli (doston)",
+     "author": "Ergash Jumanbulbul o‘g‘li (aytuvchi)",
+     "lang": "uz",
+     "size": 15389653,
+     "file": "https://n.ziyouz.com/kutubxona/category/38-o-zbek-xalq-og-zaki-ijodi?download=1784:ergash-jumanbulbul-o-g-li-aytuvchi-dalli-doston",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z6044",
+     "title": "Kuntugmish. Ravshan",
+     "author": "Ergash Jumanbulbul o‘g‘li (aytuvchi)",
+     "lang": "uz",
+     "size": 26510238,
+     "file": "https://n.ziyouz.com/kutubxona/category/38-o-zbek-xalq-og-zaki-ijodi?download=6044:ergash-jumanbulbul-o-g-li-aytuvchi-kuntugmish-ravshan",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z1785",
+     "title": "Kuntug‘mish (doston)",
+     "author": "Ergash Jumanbulbul o‘g‘li (aytuvchi)",
+     "lang": "uz",
+     "size": 4525962,
+     "file": "https://n.ziyouz.com/kutubxona/category/38-o-zbek-xalq-og-zaki-ijodi?download=1785:ergash-jumanbulbul-o-g-li-aytuvchi-kuntug-mish-doston",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z1786",
+     "title": "Oysuluv (doston)",
+     "author": "Ergash Jumanbulbul o‘g‘li (aytuvchi)",
+     "lang": "uz",
+     "size": 1241999,
+     "file": "https://n.ziyouz.com/kutubxona/category/38-o-zbek-xalq-og-zaki-ijodi?download=1786:ergash-jumanbulbul-o-g-li-aytuvchi-oysuluv-doston",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z1787",
+     "title": "Xoldorxon (doston)",
+     "author": "Ergash Jumanbulbul o‘g‘li (aytuvchi)",
+     "lang": "uz",
+     "size": 14551186,
+     "file": "https://n.ziyouz.com/kutubxona/category/38-o-zbek-xalq-og-zaki-ijodi?download=1787:ergash-jumanbulbul-o-g-li-aytuvchi-xoldorxon-doston",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z1788",
+     "title": "Xushkeldi (doston)",
+     "author": "Ergash Jumanbulbul o‘g‘li (aytuvchi)",
+     "lang": "uz",
+     "size": 6022156,
+     "file": "https://n.ziyouz.com/kutubxona/category/38-o-zbek-xalq-og-zaki-ijodi?download=1788:ergash-jumanbulbul-o-g-li-aytuvchi-xushkeldi-doston",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z1789",
+     "title": "Yakka Ahmad (doston)",
+     "author": "Ergash Jumanbulbul o‘g‘li (aytuvchi)",
+     "lang": "uz",
+     "size": 2651103,
+     "file": "https://n.ziyouz.com/kutubxona/category/38-o-zbek-xalq-og-zaki-ijodi?download=1789:ergash-jumanbulbul-o-g-li-aytuvchi-yakka-ahmad-doston",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z1790",
+     "title": "Alpomish (doston). 1-qism",
+     "author": "Fozil Yo‘ldosh o‘g‘li (aytuvchi)",
+     "lang": "uz",
+     "size": 6794317,
+     "file": "https://n.ziyouz.com/kutubxona/category/38-o-zbek-xalq-og-zaki-ijodi?download=1790:fozil-yo-ldosh-o-g-li-aytuvchi-alpomish-doston-1-qism",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z1791",
+     "title": "Alpomish (doston). 2-qism",
+     "author": "Fozil Yo‘ldosh o‘g‘li (aytuvchi)",
+     "lang": "uz",
+     "size": 6655581,
+     "file": "https://n.ziyouz.com/kutubxona/category/38-o-zbek-xalq-og-zaki-ijodi?download=1791:fozil-yo-ldosh-o-g-li-aytuvchi-alpomish-doston-2-qism",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z1792",
+     "title": "Balogardon (doston)",
+     "author": "Fozil Yo‘ldosh o‘g‘li (aytuvchi)",
+     "lang": "uz",
+     "size": 3575367,
+     "file": "https://n.ziyouz.com/kutubxona/category/38-o-zbek-xalq-og-zaki-ijodi?download=1792:fozil-yo-ldosh-o-g-li-aytuvchi-balogardon-doston",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z1793",
+     "title": "Intizor (doston)",
+     "author": "Fozil Yo‘ldosh o‘g‘li (aytuvchi)",
+     "lang": "uz",
+     "size": 6192832,
+     "file": "https://n.ziyouz.com/kutubxona/category/38-o-zbek-xalq-og-zaki-ijodi?download=1793:fozil-yo-ldosh-o-g-li-aytuvchi-intizor-doston",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z1794",
+     "title": "Jizzax qo‘zg‘oloni (doston)",
+     "author": "Fozil Yo‘ldosh o‘g‘li (aytuvchi)",
+     "lang": "uz",
+     "size": 1716015,
+     "file": "https://n.ziyouz.com/kutubxona/category/38-o-zbek-xalq-og-zaki-ijodi?download=1794:fozil-yo-ldosh-o-g-li-aytuvchi-jizzax-qo-zg-oloni-doston",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z1795",
+     "title": "Malika ayyor (doston)",
+     "author": "Fozil Yo‘ldosh o‘g‘li (aytuvchi)",
+     "lang": "uz",
+     "size": 7025161,
+     "file": "https://n.ziyouz.com/kutubxona/category/38-o-zbek-xalq-og-zaki-ijodi?download=1795:fozil-yo-ldosh-o-g-li-aytuvchi-malika-ayyor-doston",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z1796",
+     "title": "Mamatkarim (doston)",
+     "author": "Fozil Yo‘ldosh o‘g‘li (aytuvchi)",
+     "lang": "uz",
+     "size": 1524535,
+     "file": "https://n.ziyouz.com/kutubxona/category/38-o-zbek-xalq-og-zaki-ijodi?download=1796:fozil-yo-ldosh-o-g-li-aytuvchi-mamatkarim-doston",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z1797",
+     "title": "Mashriqo (doston)",
+     "author": "Fozil Yo‘ldosh o‘g‘li (aytuvchi)",
+     "lang": "uz",
+     "size": 2719631,
+     "file": "https://n.ziyouz.com/kutubxona/category/38-o-zbek-xalq-og-zaki-ijodi?download=1797:fozil-yo-ldosh-o-g-li-aytuvchi-mashriqo-doston",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z1798",
+     "title": "Nurali (doston)",
+     "author": "Fozil Yo‘ldosh o‘g‘li (aytuvchi)",
+     "lang": "uz",
+     "size": 3562431,
+     "file": "https://n.ziyouz.com/kutubxona/category/38-o-zbek-xalq-og-zaki-ijodi?download=1798:fozil-yo-ldosh-o-g-li-aytuvchi-nurali-doston",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z1799",
+     "title": "Rustamxon (doston)",
+     "author": "Fozil Yo‘ldosh o‘g‘li (aytuvchi)",
+     "lang": "uz",
+     "size": 6597505,
+     "file": "https://n.ziyouz.com/kutubxona/category/38-o-zbek-xalq-og-zaki-ijodi?download=1799:fozil-yo-ldosh-o-g-li-aytuvchi-rustamxon-doston",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z1800",
+     "title": "Shirin bilan Shakar (doston)",
+     "author": "Fozil Yo‘ldosh o‘g‘li (aytuvchi)",
+     "lang": "uz",
+     "size": 4144234,
+     "file": "https://n.ziyouz.com/kutubxona/category/38-o-zbek-xalq-og-zaki-ijodi?download=1800:fozil-yo-ldosh-o-g-li-aytuvchi-shirin-bilan-shakar-doston",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z1801",
+     "title": "To‘lg‘onoy (doston)",
+     "author": "Fozil Yo‘ldosh o‘g‘li (aytuvchi)",
+     "lang": "uz",
+     "size": 1577384,
+     "file": "https://n.ziyouz.com/kutubxona/category/38-o-zbek-xalq-og-zaki-ijodi?download=1801:fozil-yo-ldosh-o-g-li-aytuvchi-to-lg-onoy-doston",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z1802",
+     "title": "Zulfizar bilan Avazxon (doston)",
+     "author": "Fozil Yo‘ldosh o‘g‘li (aytuvchi)",
+     "lang": "uz",
+     "size": 7259632,
+     "file": "https://n.ziyouz.com/kutubxona/category/38-o-zbek-xalq-og-zaki-ijodi?download=1802:fozil-yo-ldosh-o-g-li-aytuvchi-zulfizar-bilan-avazxon-doston",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z8256",
+     "title": "4 jildlik. 2. Avazxon",
+     "author": "Go‘ro‘g‘li dostonlari",
+     "lang": "uz",
+     "size": 6599718,
+     "file": "https://n.ziyouz.com/kutubxona/category/38-o-zbek-xalq-og-zaki-ijodi?download=8256:go-ro-g-li-dostonlari-4-jildlik-2-avazxon",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z1803",
+     "title": "Og‘a Yunusning olib qochilishi (doston)",
+     "author": "Hazratqul Xudoyberdiyev (aytuvchi)",
+     "lang": "uz",
+     "size": 2349794,
+     "file": "https://n.ziyouz.com/kutubxona/category/38-o-zbek-xalq-og-zaki-ijodi?download=1803:hazratqul-xudoyberdiyev-aytuvchi-og-a-yunusning-olib-qochilishi-doston",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z1804",
+     "title": "Gulyor (Farg‘ona xalq qo‘shiqlari)",
+     "author": "Hoshimjon Razzoqov (to‘plovchi)",
+     "lang": "uz",
+     "size": 4784773,
+     "file": "https://n.ziyouz.com/kutubxona/category/38-o-zbek-xalq-og-zaki-ijodi?download=1804:hoshimjon-razzoqov-to-plovchi-gulyor-farg-ona-xalq-qo-shiqlari",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z1806",
+     "title": "Erali va Sherali (doston)",
+     "author": "Islom Nazar o‘g‘li (aytuvchi)",
+     "lang": "uz",
+     "size": 5101771,
+     "file": "https://n.ziyouz.com/kutubxona/category/38-o-zbek-xalq-og-zaki-ijodi?download=1806:islom-nazar-o-g-li-aytuvchi-erali-va-sherali-doston",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z1807",
+     "title": "Gulixiromon (doston)",
+     "author": "Islom Nazar o‘g‘li (aytuvchi)",
+     "lang": "uz",
+     "size": 8346011,
+     "file": "https://n.ziyouz.com/kutubxona/category/38-o-zbek-xalq-og-zaki-ijodi?download=1807:islom-nazar-o-g-li-aytuvchi-gulixiromon-doston",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z1808",
+     "title": "Orzigul (doston)",
+     "author": "Islom Nazar o‘g‘li (aytuvchi)",
+     "lang": "uz",
+     "size": 3860108,
+     "file": "https://n.ziyouz.com/kutubxona/category/38-o-zbek-xalq-og-zaki-ijodi?download=1808:islom-nazar-o-g-li-aytuvchi-orzigul-doston",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z1809",
+     "title": "Malla savdogar (doston)",
+     "author": "Jo‘ra Eshmirza o‘g‘li (aytuvchi)",
+     "lang": "uz",
+     "size": 3431216,
+     "file": "https://n.ziyouz.com/kutubxona/category/38-o-zbek-xalq-og-zaki-ijodi?download=1809:jo-ra-eshmirza-o-g-li-aytuvchi-malla-savdogar-doston",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z1813",
+     "title": "O‘zbek xalq qo‘shiqlari",
+     "author": "Muzayyana Alaviya (to‘plovchi)",
+     "lang": "uz",
+     "size": 4831884,
+     "file": "https://n.ziyouz.com/kutubxona/category/38-o-zbek-xalq-og-zaki-ijodi?download=1813:muzayyana-alaviya-to-plovchi-o-zbek-xalq-qo-shiqlari",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z1814",
+     "title": "Sovet davri xalq qo‘shiqlari",
+     "author": "Muzayyana Alaviya, Safarboy Ro‘zimboyev (nashrga tayyorlovchilar)",
+     "lang": "uz",
+     "size": 6541621,
+     "file": "https://n.ziyouz.com/kutubxona/category/38-o-zbek-xalq-og-zaki-ijodi?download=1814:muzayyana-alaviya-safarboy-ro-zimboyev-nashrga-tayyorlovchilar-sovet-davri-xalq-qo-shiqlari",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z1815",
+     "title": "Bobo Ravshan (doston)",
+     "author": "Nurboy Abdulhakim (nashrga tayyorlovchi)",
+     "lang": "uz",
+     "size": 1913635,
+     "file": "https://n.ziyouz.com/kutubxona/category/38-o-zbek-xalq-og-zaki-ijodi?download=1815:nurboy-abdulhakim-nashrga-tayyorlovchi-bobo-ravshan-doston",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z11400",
+     "title": "2-jild",
+     "author": "O‘zbek xalq dostonlari",
+     "lang": "uz",
+     "size": 17279293,
+     "file": "https://n.ziyouz.com/kutubxona/category/38-o-zbek-xalq-og-zaki-ijodi?download=11400:o-zbek-xalq-dostonlari-2-jild",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z1818",
+     "title": "Avazxon (doston)",
+     "author": "Po‘lkan (aytuvchi)",
+     "lang": "uz",
+     "size": 2167930,
+     "file": "https://n.ziyouz.com/kutubxona/category/38-o-zbek-xalq-og-zaki-ijodi?download=1818:po-lkan-aytuvchi-avazxon-doston",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z1819",
+     "title": "Chambil qamali (doston)",
+     "author": "Po‘lkan (aytuvchi)",
+     "lang": "uz",
+     "size": 2460685,
+     "file": "https://n.ziyouz.com/kutubxona/category/38-o-zbek-xalq-og-zaki-ijodi?download=1819:po-lkan-aytuvchi-chambil-qamali-doston",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z1820",
+     "title": "Go‘ro‘g‘lining tug‘ilishi (doston)",
+     "author": "Po‘lkan (aytuvchi)",
+     "lang": "uz",
+     "size": 5450825,
+     "file": "https://n.ziyouz.com/kutubxona/category/38-o-zbek-xalq-og-zaki-ijodi?download=1820:po-lkan-aytuvchi-go-ro-g-lining-tug-ilishi-doston",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z1821",
+     "title": "Gulnor pari (doston)",
+     "author": "Po‘lkan (aytuvchi)",
+     "lang": "uz",
+     "size": 7187604,
+     "file": "https://n.ziyouz.com/kutubxona/category/38-o-zbek-xalq-og-zaki-ijodi?download=1821:po-lkan-aytuvchi-gulnor-pari-doston",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z1822",
+     "title": "Hasanxon (doston)",
+     "author": "Po‘lkan (aytuvchi)",
+     "lang": "uz",
+     "size": 2872177,
+     "file": "https://n.ziyouz.com/kutubxona/category/38-o-zbek-xalq-og-zaki-ijodi?download=1822:po-lkan-aytuvchi-hasanxon-doston",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z1823",
+     "title": "Misqol pari (doston)",
+     "author": "Po‘lkan (aytuvchi)",
+     "lang": "uz",
+     "size": 1877599,
+     "file": "https://n.ziyouz.com/kutubxona/category/38-o-zbek-xalq-og-zaki-ijodi?download=1823:po-lkan-aytuvchi-misqol-pari-doston",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z1824",
+     "title": "Xurshidoy (doston)",
+     "author": "Po‘lkan (aytuvchi)",
+     "lang": "uz",
+     "size": 1510131,
+     "file": "https://n.ziyouz.com/kutubxona/category/38-o-zbek-xalq-og-zaki-ijodi?download=1824:po-lkan-aytuvchi-xurshidoy-doston",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z1825",
+     "title": "Yunus pari (doston)",
+     "author": "Po‘lkan (aytuvchi)",
+     "lang": "uz",
+     "size": 4435965,
+     "file": "https://n.ziyouz.com/kutubxona/category/38-o-zbek-xalq-og-zaki-ijodi?download=1825:po-lkan-aytuvchi-yunus-pari-doston",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z1827",
+     "title": "Jorxun maston (doston)",
+     "author": "Qodir Rahimov (aytuvchi)",
+     "lang": "uz",
+     "size": 2886748,
+     "file": "https://n.ziyouz.com/kutubxona/category/38-o-zbek-xalq-og-zaki-ijodi?download=1827:qodir-rahimov-aytuvchi-jorxun-maston-doston",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z1828",
+     "title": "Oychinor (doston)",
+     "author": "Qodir Rahimov (aytuvchi)",
+     "lang": "uz",
+     "size": 2777645,
+     "file": "https://n.ziyouz.com/kutubxona/category/38-o-zbek-xalq-og-zaki-ijodi?download=1828:qodir-rahimov-aytuvchi-oychinor-doston",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z11401",
+     "title": "Gulruh pari",
+     "author": "Qorako‘z oyim",
+     "lang": "uz",
+     "size": 2123059,
+     "file": "https://n.ziyouz.com/kutubxona/category/38-o-zbek-xalq-og-zaki-ijodi?download=11401:qorako-z-oyim-gulruh-pari",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z1829",
+     "title": "Ahmad Sardorning o‘limga mahkum qilinishi (doston)",
+     "author": "Rahmatulla Yusuf o‘g‘li (aytuvchi)",
+     "lang": "uz",
+     "size": 2197487,
+     "file": "https://n.ziyouz.com/kutubxona/category/38-o-zbek-xalq-og-zaki-ijodi?download=1829:rahmatulla-yusuf-o-g-li-aytuvchi-ahmad-sardorning-o-limga-mahkum-qilinishi-doston",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z1830",
+     "title": "Avaz o‘g‘lonning Rumga qochishi (doston)",
+     "author": "Rahmatulla Yusuf o‘g‘li (aytuvchi)",
+     "lang": "uz",
+     "size": 1988085,
+     "file": "https://n.ziyouz.com/kutubxona/category/38-o-zbek-xalq-og-zaki-ijodi?download=1830:rahmatulla-yusuf-o-g-li-aytuvchi-avaz-o-g-lonning-rumga-qochishi-doston",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z1831",
+     "title": "Avazxon (doston)",
+     "author": "Rahmatulla Yusuf o‘g‘li (aytuvchi)",
+     "lang": "uz",
+     "size": 2378710,
+     "file": "https://n.ziyouz.com/kutubxona/category/38-o-zbek-xalq-og-zaki-ijodi?download=1831:rahmatulla-yusuf-o-g-li-aytuvchi-avazxon-doston",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z1832",
+     "title": "Balogardon (doston)",
+     "author": "Rahmatulla Yusuf o‘g‘li (aytuvchi)",
+     "lang": "uz",
+     "size": 1770212,
+     "file": "https://n.ziyouz.com/kutubxona/category/38-o-zbek-xalq-og-zaki-ijodi?download=1832:rahmatulla-yusuf-o-g-li-aytuvchi-balogardon-doston",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z1833",
+     "title": "Besh podshoning Chambilga yov bo‘lib kelishi (doston)",
+     "author": "Rahmatulla Yusuf o‘g‘li (aytuvchi)",
+     "lang": "uz",
+     "size": 1681483,
+     "file": "https://n.ziyouz.com/kutubxona/category/38-o-zbek-xalq-og-zaki-ijodi?download=1833:rahmatulla-yusuf-o-g-li-aytuvchi-besh-podshoning-chambilga-yov-bo-lib-kelishi-doston",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z1834",
+     "title": "Bozirgon (doston)",
+     "author": "Rahmatulla Yusuf o‘g‘li (aytuvchi)",
+     "lang": "uz",
+     "size": 1885420,
+     "file": "https://n.ziyouz.com/kutubxona/category/38-o-zbek-xalq-og-zaki-ijodi?download=1834:rahmatulla-yusuf-o-g-li-aytuvchi-bozirgon-doston",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z1835",
+     "title": "Chortoqli Chambil (doston)",
+     "author": "Rahmatulla Yusuf o‘g‘li (aytuvchi)",
+     "lang": "uz",
+     "size": 1296484,
+     "file": "https://n.ziyouz.com/kutubxona/category/38-o-zbek-xalq-og-zaki-ijodi?download=1835:rahmatulla-yusuf-o-g-li-aytuvchi-chortoqli-chambil-doston",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z1836",
+     "title": "Gavdaroz dev (doston)",
+     "author": "Rahmatulla Yusuf o‘g‘li (aytuvchi)",
+     "lang": "uz",
+     "size": 1376395,
+     "file": "https://n.ziyouz.com/kutubxona/category/38-o-zbek-xalq-og-zaki-ijodi?download=1836:rahmatulla-yusuf-o-g-li-aytuvchi-gavdaroz-dev-doston",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z1837",
+     "title": "Go‘ro‘g‘lining bolaligi (doston)",
+     "author": "Rahmatulla Yusuf o‘g‘li (aytuvchi)",
+     "lang": "uz",
+     "size": 1453104,
+     "file": "https://n.ziyouz.com/kutubxona/category/38-o-zbek-xalq-og-zaki-ijodi?download=1837:rahmatulla-yusuf-o-g-li-aytuvchi-go-ro-g-lining-bolaligi-doston",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z1838",
+     "title": "Go‘ro‘g‘lining o‘limi (doston)",
+     "author": "Rahmatulla Yusuf o‘g‘li (aytuvchi)",
+     "lang": "uz",
+     "size": 1974769,
+     "file": "https://n.ziyouz.com/kutubxona/category/38-o-zbek-xalq-og-zaki-ijodi?download=1838:rahmatulla-yusuf-o-g-li-aytuvchi-go-ro-g-lining-o-limi-doston",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z1839",
+     "title": "Go‘ro‘g‘lining tug‘ilishi (doston)",
+     "author": "Rahmatulla Yusuf o‘g‘li (aytuvchi)",
+     "lang": "uz",
+     "size": 2259558,
+     "file": "https://n.ziyouz.com/kutubxona/category/38-o-zbek-xalq-og-zaki-ijodi?download=1839:rahmatulla-yusuf-o-g-li-aytuvchi-go-ro-g-lining-tug-ilishi-doston",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z1840",
+     "title": "Gulqizoy (doston)",
+     "author": "Rahmatulla Yusuf o‘g‘li (aytuvchi)",
+     "lang": "uz",
+     "size": 1795470,
+     "file": "https://n.ziyouz.com/kutubxona/category/38-o-zbek-xalq-og-zaki-ijodi?download=1840:rahmatulla-yusuf-o-g-li-aytuvchi-gulqizoy-doston",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z1841",
+     "title": "Hasanxon (doston)",
+     "author": "Rahmatulla Yusuf o‘g‘li (aytuvchi)",
+     "lang": "uz",
+     "size": 1406976,
+     "file": "https://n.ziyouz.com/kutubxona/category/38-o-zbek-xalq-og-zaki-ijodi?download=1841:rahmatulla-yusuf-o-g-li-aytuvchi-hasanxon-doston",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z1842",
+     "title": "Nuralining yoshligi (doston)",
+     "author": "Rahmatulla Yusuf o‘g‘li (aytuvchi)",
+     "lang": "uz",
+     "size": 1424279,
+     "file": "https://n.ziyouz.com/kutubxona/category/38-o-zbek-xalq-og-zaki-ijodi?download=1842:rahmatulla-yusuf-o-g-li-aytuvchi-nuralining-yoshligi-doston",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z1843",
+     "title": "Oygulqizning vafoti (doston)",
+     "author": "Rahmatulla Yusuf o‘g‘li (aytuvchi)",
+     "lang": "uz",
+     "size": 1386722,
+     "file": "https://n.ziyouz.com/kutubxona/category/38-o-zbek-xalq-og-zaki-ijodi?download=1843:rahmatulla-yusuf-o-g-li-aytuvchi-oygulqizning-vafoti-doston",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z1844",
+     "title": "Qirq yigit bilan qirq qiz (doston)",
+     "author": "Rahmatulla Yusuf o‘g‘li (aytuvchi)",
+     "lang": "uz",
+     "size": 1218312,
+     "file": "https://n.ziyouz.com/kutubxona/category/38-o-zbek-xalq-og-zaki-ijodi?download=1844:rahmatulla-yusuf-o-g-li-aytuvchi-qirq-yigit-bilan-qirq-qiz-doston",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z1845",
+     "title": "Rayhon arab (doston)",
+     "author": "Rahmatulla Yusuf o‘g‘li (aytuvchi)",
+     "lang": "uz",
+     "size": 1535280,
+     "file": "https://n.ziyouz.com/kutubxona/category/38-o-zbek-xalq-og-zaki-ijodi?download=1845:rahmatulla-yusuf-o-g-li-aytuvchi-rayhon-arab-doston",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z1846",
+     "title": "Ro‘zaxon (doston)",
+     "author": "Rahmatulla Yusuf o‘g‘li (aytuvchi)",
+     "lang": "uz",
+     "size": 1442731,
+     "file": "https://n.ziyouz.com/kutubxona/category/38-o-zbek-xalq-og-zaki-ijodi?download=1846:rahmatulla-yusuf-o-g-li-aytuvchi-ro-zaxon-doston",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z1847",
+     "title": "Sarvinoz (doston)",
+     "author": "Rahmatulla Yusuf o‘g‘li (aytuvchi)",
+     "lang": "uz",
+     "size": 1796553,
+     "file": "https://n.ziyouz.com/kutubxona/category/38-o-zbek-xalq-og-zaki-ijodi?download=1847:rahmatulla-yusuf-o-g-li-aytuvchi-sarvinoz-doston",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z1848",
+     "title": "Shoqalandar (doston)",
+     "author": "Rahmatulla Yusuf o‘g‘li (aytuvchi)",
+     "lang": "uz",
+     "size": 2510172,
+     "file": "https://n.ziyouz.com/kutubxona/category/38-o-zbek-xalq-og-zaki-ijodi?download=1848:rahmatulla-yusuf-o-g-li-aytuvchi-shoqalandar-doston",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z1849",
+     "title": "Sumbulsoch beka (doston)",
+     "author": "Rahmatulla Yusuf o‘g‘li (aytuvchi)",
+     "lang": "uz",
+     "size": 1790061,
+     "file": "https://n.ziyouz.com/kutubxona/category/38-o-zbek-xalq-og-zaki-ijodi?download=1849:rahmatulla-yusuf-o-g-li-aytuvchi-sumbulsoch-beka-doston",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z11924",
+     "title": "Tohir va Zuhra (doston)",
+     "author": "Rahmatulla Yusuf o‘g‘li (aytuvchi)",
+     "lang": "uz",
+     "size": 1753881,
+     "file": "https://n.ziyouz.com/kutubxona/category/38-o-zbek-xalq-og-zaki-ijodi?download=11924:rahmatulla-yusuf-o-g-li-aytuvchi-tohir-va-zuhra-doston",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z1850",
+     "title": "Xiromon Dali (doston)",
+     "author": "Rahmatulla Yusuf o‘g‘li (aytuvchi)",
+     "lang": "uz",
+     "size": 2001699,
+     "file": "https://n.ziyouz.com/kutubxona/category/38-o-zbek-xalq-og-zaki-ijodi?download=1850:rahmatulla-yusuf-o-g-li-aytuvchi-xiromon-dali-doston",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z1851",
+     "title": "Yosqila (doston)",
+     "author": "Rahmatulla Yusuf o‘g‘li (aytuvchi)",
+     "lang": "uz",
+     "size": 1097267,
+     "file": "https://n.ziyouz.com/kutubxona/category/38-o-zbek-xalq-og-zaki-ijodi?download=1851:rahmatulla-yusuf-o-g-li-aytuvchi-yosqila-doston",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z1852",
+     "title": "Yunus va Misqol pari (doston)",
+     "author": "Rahmatulla Yusuf o‘g‘li (aytuvchi)",
+     "lang": "uz",
+     "size": 1585857,
+     "file": "https://n.ziyouz.com/kutubxona/category/38-o-zbek-xalq-og-zaki-ijodi?download=1852:rahmatulla-yusuf-o-g-li-aytuvchi-yunus-va-misqol-pari-doston",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z1853",
+     "title": "Zulfizar (doston)",
+     "author": "Rahmatulla Yusuf o‘g‘li (aytuvchi)",
+     "lang": "uz",
+     "size": 1963109,
+     "file": "https://n.ziyouz.com/kutubxona/category/38-o-zbek-xalq-og-zaki-ijodi?download=1853:rahmatulla-yusuf-o-g-li-aytuvchi-zulfizar-doston&start=100",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z1858",
+     "title": "Balxuvon (doston)",
+     "author": "Umr Safar o‘g‘li (aytuvchi)",
+     "lang": "uz",
+     "size": 2223087,
+     "file": "https://n.ziyouz.com/kutubxona/category/38-o-zbek-xalq-og-zaki-ijodi?download=1858:umr-safar-o-g-li-aytuvchi-balxuvon-doston&start=100",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z1859",
+     "title": "Bo‘tako‘z (doston)",
+     "author": "Usmon Mamatqul o‘g‘li (aytuvchi)",
+     "lang": "uz",
+     "size": 2776902,
+     "file": "https://n.ziyouz.com/kutubxona/category/38-o-zbek-xalq-og-zaki-ijodi?download=1859:usmon-mamatqul-o-g-li-aytuvchi-bo-tako-z-doston&start=100",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z1860",
+     "title": "Shohdorxon (doston)",
+     "author": "Usmon Mamatqul o‘g‘li (aytuvchi)",
+     "lang": "uz",
+     "size": 3067458,
+     "file": "https://n.ziyouz.com/kutubxona/category/38-o-zbek-xalq-og-zaki-ijodi?download=1860:usmon-mamatqul-o-g-li-aytuvchi-shohdorxon-doston&start=100",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z1776",
+     "title": "Abu Muslim jangnomasi (2-kitob)",
+     "author": "Xalq og‘zaki ijodi",
+     "lang": "uz",
+     "size": 5418611,
+     "file": "https://n.ziyouz.com/kutubxona/category/38-o-zbek-xalq-og-zaki-ijodi?download=1776:abu-muslim-jangnomasi-2-kitob",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z5263",
+     "title": "Alp Er To‘nga yoki Afrosiyob jangnomasi",
+     "author": "Xalq og‘zaki ijodi",
+     "lang": "uz",
+     "size": 1303040,
+     "file": "https://n.ziyouz.com/kutubxona/category/38-o-zbek-xalq-og-zaki-ijodi?download=5263:alp-er-to-nga-yoki-afrosiyob-jangnomasi",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z5264",
+     "title": "Asotirlar va rivoyatlar",
+     "author": "Xalq og‘zaki ijodi",
+     "lang": "uz",
+     "size": 4108979,
+     "file": "https://n.ziyouz.com/kutubxona/category/38-o-zbek-xalq-og-zaki-ijodi?download=5264:asotirlar-va-rivoyatlar",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z14047",
+     "title": "Avazxonning o‘limga hukm etilishi (1976)",
+     "author": "Xalq og‘zaki ijodi",
+     "lang": "uz",
+     "size": 3125664,
+     "file": "https://n.ziyouz.com/kutubxona/category/38-o-zbek-xalq-og-zaki-ijodi?download=14047:avazxonning-o-limga-hukm-etilishi-1976",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z1805",
+     "title": "Hotamnoma",
+     "author": "Xalq og‘zaki ijodi",
+     "lang": "uz",
+     "size": 9379342,
+     "file": "https://n.ziyouz.com/kutubxona/category/38-o-zbek-xalq-og-zaki-ijodi?download=1805:hotamnoma",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z5267",
+     "title": "Ipak yo‘li afsonalari",
+     "author": "Xalq og‘zaki ijodi",
+     "lang": "uz",
+     "size": 5361529,
+     "file": "https://n.ziyouz.com/kutubxona/category/38-o-zbek-xalq-og-zaki-ijodi?download=5267:ipak-yo-li-afsonalari",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z1812",
+     "title": "Mirzo Hamdam qissasi",
+     "author": "Xalq og‘zaki ijodi",
+     "lang": "uz",
+     "size": 1848100,
+     "file": "https://n.ziyouz.com/kutubxona/category/38-o-zbek-xalq-og-zaki-ijodi?download=1812:mirzo-hamdam-qissasi",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z5271",
+     "title": "Oy oldida bir yulduz (o‘zbek xalq marosim qo‘shiqlari)",
+     "author": "Xalq og‘zaki ijodi",
+     "lang": "uz",
+     "size": 3604935,
+     "file": "https://n.ziyouz.com/kutubxona/category/38-o-zbek-xalq-og-zaki-ijodi?download=5271:oy-oldida-bir-yulduz-o-zbek-xalq-marosim-qo-shiqlari",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z1826",
+     "title": "Qissai Mashrab",
+     "author": "Xalq og‘zaki ijodi",
+     "lang": "uz",
+     "size": 5227213,
+     "file": "https://n.ziyouz.com/kutubxona/category/38-o-zbek-xalq-og-zaki-ijodi?download=1826:qissai-mashrab",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z5272",
+     "title": "Shahriyori olam (Xorazm xalq dostoni)",
+     "author": "Xalq og‘zaki ijodi",
+     "lang": "uz",
+     "size": 2584454,
+     "file": "https://n.ziyouz.com/kutubxona/category/38-o-zbek-xalq-og-zaki-ijodi?download=5272:shahriyori-olam-xorazm-xalq-dostoni&start=100",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z8437",
+     "title": "Shoda-shoda marvardi (o‘zbek xalq qo‘shiqlari)",
+     "author": "Xalq og‘zaki ijodi",
+     "lang": "uz",
+     "size": 13260341,
+     "file": "https://n.ziyouz.com/kutubxona/category/38-o-zbek-xalq-og-zaki-ijodi?download=8437:shoda-shoda-marvardi-o-zbek-xalq-qo-shiqlari&start=100",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z1855",
+     "title": "Shoh Mashrab qissasi",
+     "author": "Xalq og‘zaki ijodi",
+     "lang": "uz",
+     "size": 2252434,
+     "file": "https://n.ziyouz.com/kutubxona/category/38-o-zbek-xalq-og-zaki-ijodi?download=1855:shoh-mashrab-qissasi&start=100",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z1861",
+     "title": "Yusuf va Ahmad (doston)",
+     "author": "Xalq og‘zaki ijodi",
+     "lang": "uz",
+     "size": 11779911,
+     "file": "https://n.ziyouz.com/kutubxona/category/38-o-zbek-xalq-og-zaki-ijodi?download=1861:yusuf-va-ahmad-doston&start=100",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z5276",
+     "title": "Zufunun qissasi",
+     "author": "Xalq og‘zaki ijodi",
+     "lang": "uz",
+     "size": 3182976,
+     "file": "https://n.ziyouz.com/kutubxona/category/38-o-zbek-xalq-og-zaki-ijodi?download=5276:zufunun-qissasi&start=100",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z5273",
+     "title": "Go‘ro‘g‘li",
+     "author": "Xorazm dostonlari",
+     "lang": "uz",
+     "size": 14118920,
+     "file": "https://n.ziyouz.com/kutubxona/category/38-o-zbek-xalq-og-zaki-ijodi?download=5273:xorazm-dostonlari-go-ro-g-li&start=100",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z5274",
+     "title": "Oshiqnoma. 1-kitob",
+     "author": "Xorazm dostonlari",
+     "lang": "uz",
+     "size": 9728906,
+     "file": "https://n.ziyouz.com/kutubxona/category/38-o-zbek-xalq-og-zaki-ijodi?download=5274:xorazm-dostonlari-oshiqnoma-1-kitob&start=100",
+     "source": "ziyouz.com"
+    },
+    {
+     "id": "z5275",
+     "title": "Oshiqnoma. 5-kitob",
+     "author": "Xorazm dostonlari",
+     "lang": "uz",
+     "size": 8680337,
+     "file": "https://n.ziyouz.com/kutubxona/category/38-o-zbek-xalq-og-zaki-ijodi?download=5275:xorazm-dostonlari-oshiqnoma-5-kitob&start=100",
+     "source": "ziyouz.com"
+    }
+   ]
+  }
+ ],
+ "updated": "2026-11-20 03:15"
+}
