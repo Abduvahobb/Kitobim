@@ -88,7 +88,8 @@ def main(folder):
             continue
         if any(b['id'] == a['id'] for b in s['books']):
             continue
-        i = next(k for k, b in enumerate(s['books']) if b['id'] == anchor)
+        ids = [b['id'] for b in s['books']]
+        i = ids.index(anchor) if anchor in ids else ids.index(a['after'])
         s['books'].insert(i + 1, fresh(msg, s['books'][i], a['id'], a['title'], a.get('part')))
         done.append(f'+ {a["id"]} <- tg{msg}')
     cat['updated'] = datetime.now(timezone.utc).strftime('%Y-%m-%d %H:%M')
