@@ -58,7 +58,7 @@ async def login(client):
                 await qr.recreate()
                 n += 1
             except errors.SessionPasswordNeededError:
-                pw = os.environ.get('TG_PASSWORD')
+                pw = (os.environ.get('TG_PASSWORD') or '').strip('\r\n')
                 if not pw:
                     raise SystemExit("2FA parol kerak: TG_PASSWORD secret qo'shilmagan")
                 await client.sign_in(password=pw)
