@@ -33,9 +33,12 @@ jobs:
           PY
           mkdir -p public/books
           while read -r f; do
-            [ -n "$f" ] && gh release download kitoblar --repo "$GITHUB_REPOSITORY" --pattern "$f" --dir public/books --clobber
-            [ -n "$f" ] && head -c 5 "public/books/$f" | grep -q '%PDF-' && echo "ichiga joylandi: $f ($(du -m public/books/$f | cut -f1) MB)"
+            if [ -n "$f" ]; then
+              gh release download kitoblar --repo "$GITHUB_REPOSITORY" --pattern "$f" --dir public/books --clobber
+              echo "ichiga joylandi: $f ($(du -m public/books/$f | cut -f1) MB)"
+            fi
           done < bundled.txt
+          echo "ichiga joylangan kitoblar ro'yxati tayyor
       - name: Veb-ilovani yig'ish
         run: |
           npm ci || npm install
