@@ -19,6 +19,7 @@ let baseCatalog = null;        // asosiy ro'yxat (muallif o'zgartirishlarisiz)
 let tests = { tests: [], passPercent: 70 };
 let baseTests = null;          // ilova ichidagi testlar
 let cloud = {};                // muallif bulutga saqlagan mazmun
+let bundled = {};              // ilovaning ichiga joylangan kitoblar: id -> fayl
 // Matnlarning asl holati (muallif paneli "asl matn"ni ko'rsatishi uchun)
 const BASE_STRINGS = JSON.parse(JSON.stringify(STRINGS));
 const books = new Map();      // id -> kitob (fan va sinf ma'lumoti bilan)
@@ -50,6 +51,7 @@ async function loadData() {
   const useCached = cached && cached.grades && bookCount(cached) && (cached.updated || '') > (local.updated || '');
   setCatalog(useCached ? cached : local, useCached ? REMOTE_CATALOG : new URL('catalog.json', location.href).href);
   try { baseTests = await loadJson(new URL('tests.json', location.href).href); } catch (e) { /* testlarsiz ham ishlaydi */ }
+  try { bundled = (await loadJson(new URL('bundled.json', location.href).href)).books || {}; } catch (e) { bundled = {}; }
   applyCloud(cachedCloud());
 }
 
@@ -109,6 +111,8 @@ function reindex() {
       for (const b of s.books) {
         b.grade = g.grade; b.subject = s.id; b.color = b.color || s.color;
         b.file = new URL(b.file, catalogBase).href;
+        // Ilova ichida bor kitob: internetsiz, darhol ochiladi
+        if (bundled[b.id]) b.bundled = new URL(bundled[b.id], location.href).href;
         // Muqovalar ilova ichida turadi
         if (b.cover) b.coverUrl = new URL(b.cover, location.href).href;
         books.set(b.id, b);
@@ -162,7 +166,7 @@ function bookMeta(b) {
   if (b.year) bits.push(`<span>${s.edition(b.year)}</span>`);
   if (b.pages) bits.push(`<span>${s.pagesN(b.pages)}</span>`);
   if (b.size) bits.push(`<span>${(b.size / 1048576).toFixed(1)} MB</span>`);
-  if (store.isSaved(b.id)) bits.push(`<span class="ok">${I.check(14)}${s.savedOffline}</span>`);
+  if (store.isSaved(b.id) || b.bundled) bits.push(`<span class="ok">${I.check(14)}${s.savedOffline}</span>`);
   return `<span class="meta">${bits.join('')}</span>`;
 }
 function bookItem(b, extra = '') {
@@ -180,7 +184,7 @@ function bookCard(b) {
   const p = store.progress(b.id);
   const pct = p && p.pages ? Math.round((p.page / p.pages) * 100) : 0;
   return `<button class="bk" data-go="#/read/${encodeURIComponent(b.id)}">
-    ${cover(b, store.isSaved(b.id) ? `<span class="saved" title="${esc(t().savedOffline)}">${I.check(16)}</span>` : '')}
+    ${cover(b, (store.isSaved(b.id) || b.bundled) ? `<span class="saved" title="${esc(t().savedOffline)}">${I.check(16)}</span>` : '')}
     <span class="col" style="gap:6px"><span class="t">${esc(bookTitle(b))}</span>
     ${p ? `<span class="row" style="gap:8px"><span class="bar"><i style="width:${pct}%"></i></span><span class="sub" style="font-size:12px">${pct}%</span></span>` : ''}
     ${bookMeta(b)}</span></button>`;
@@ -370,7 +374,7 @@ function bulkCard(g) {
   const s = t();
   const list = gradeBooks(g);
   if (!list.length) return '';
-  const left = list.filter((b) => !store.isSaved(b.id));
+  const left = list.filter((b) => !store.isSaved(b.id) && !b.bundled);
   const mb = (left.reduce((a, b) => a + (b.size || 0), 0) / 1048576).toFixed(0);
   const on = bulk && bulk.running && bulk.key === bulkKey(g);
   if (on) {
@@ -387,7 +391,7 @@ function bulkCard(g) {
     <span class="sub" style="font-size:13px;text-align:center">${left.length} ${s.books} · ${mb} MB · ${s.downloadGradeHint}</span>${last}</div>`;
 }
 async function startBulk(g) {
-  const list = gradeBooks(g).filter((b) => !store.isSaved(b.id));
+  const list = gradeBooks(g).filter((b) => !store.isSaved(b.id) && !b.bundled);
   if (!list.length) return;
   bulk = { key: bulkKey(g), list, i: 0, frac: 0, ok: 0, fail: 0, running: true, stop: false };
   render();

@@ -23,6 +23,7 @@ export async function fetchBook(book, onProgress) {
 
 // Kitobni qurilmaga saqlab qo'yish (ochmasdan) — "butun sinfni yuklab olish" uchun
 export async function ensureSaved(book, onProgress) {
+  if (book.bundled) return; // ilova ichida bor
   if (isNative()) {
     const size = await nativeEnsure(book, onProgress);
     store.markSaved(book.id, { title: book.title, color: book.color, size });
@@ -64,12 +65,13 @@ export function openReader(root, book, title, t, onClose, toast) {
   </div>`;
 
   const $ = (k) => root.querySelector(`[data-r="${k}"]`);
+  const isSavedHere = () => store.isSaved(book.id) || !!book.bundled;
   const pagesEl = $('pages');
 
   function updateSaveBtn() {
     const b = $('save');
     if (!b) return;
-    const saved = store.isSaved(book.id);
+    const saved = isSavedHere();
     b.style.color = saved ? '#0F7A64' : '';
     b.setAttribute('aria-label', saved ? t.savedOffline : t.saveOffline);
     b.title = saved ? t.savedOffline : t.saveOffline;
@@ -83,7 +85,10 @@ export function openReader(root, book, title, t, onClose, toast) {
         const el = $('pct');
         if (el) el.textContent = `${t.loading} ${Math.round(f * 100)}%`;
       };
-      if (isNative()) {
+      if (book.bundled) {
+        // Ilova ichidagi kitob: yuklab olish shart emas
+        pdf = await pdfjsLib.getDocument({ url: book.bundled, rangeChunkSize: 1 << 20 }).promise;
+      } else if (isNative()) {
         // Telefonda: fayl xotiraga to'liq yuklanmaydi (katta kitoblar ham ochiladi)
         const r = await nativeBookUrl(book, prog);
         if (!store.isSaved(book.id)) store.markSaved(book.id, { title: book.title, color: book.color, size: r.size });
@@ -159,7 +164,7 @@ export function openReader(root, book, title, t, onClose, toast) {
   $('fit').onclick = () => setZoom(1);
   $('pg').onchange = (e) => go(parseInt(e.target.value, 10) || 1);
   $('save').onclick = async () => {
-    if (store.isSaved(book.id)) { toast(t.savedOffline); return; }
+    if (isSavedHere()) { toast(t.savedOffline); return; }
     try {
       if (!buffer) buffer = await fetchBook(book);
       await store.saveFile(book.id, { title: book.title, color: book.color }, buffer.slice(0));

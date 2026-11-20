@@ -22,6 +22,20 @@ jobs:
         run: |
           yes | "$ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager" --licenses >/dev/null || true
           "$ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager" "platforms;android-34" "build-tools;34.0.0"
+      - name: Ilova ichiga joylanadigan kitoblar
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          python3 - <<'PY'
+          import json
+          b = json.load(open('public/bundled.json'))['books']
+          open('bundled.txt', 'w').write('\n'.join(f"{v.split('/')[-1]}" for v in b.values()) + '\n')
+          PY
+          mkdir -p public/books
+          while read -r f; do
+            [ -n "$f" ] && gh release download kitoblar --repo "$GITHUB_REPOSITORY" --pattern "$f" --dir public/books --clobber
+            [ -n "$f" ] && head -c 5 "public/books/$f" | grep -q '%PDF-' && echo "ichiga joylandi: $f ($(du -m public/books/$f | cut -f1) MB)"
+          done < bundled.txt
       - name: Veb-ilovani yig'ish
         run: |
           npm ci || npm install
@@ -175,6 +189,16 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 20
+      - name: Ilova ichiga joylanadigan kitoblar
+        shell: bash
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          mkdir -p public/books
+          for f in $(node -e "const b=require('./public/bundled.json').books;console.log(Object.values(b).map(v=>v.split('/').pop()).join(' '))"); do
+            gh release download kitoblar --repo "$GITHUB_REPOSITORY" --pattern "$f" --dir public/books --clobber
+            echo "ichiga joylandi: $f"
+          done
       - name: Veb-ilovani yig'ish
         run: |
           npm ci

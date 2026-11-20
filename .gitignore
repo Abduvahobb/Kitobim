@@ -7,3 +7,5 @@ desktop/node_modules/
 desktop/icon.ico
 __pycache__/
 research/
+public/books/*.pdf
+!public/books/namuna-ona-tili-5.pdf
