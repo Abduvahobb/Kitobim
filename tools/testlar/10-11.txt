@@ -1,0 +1,575 @@
+@ ona-tili-10 | 10 | ona-tili | Nutq madaniyati va uslubiyat
+? Rasmiy hujjatlarda (ariza, buyruq) qaysi uslub qo'llanadi?
+- badiiy
+- so'zlashuv
++ rasmiy-idoraviy
+- publitsistik
+= Rasmiy hujjatlar rasmiy-idoraviy uslubda yoziladi.
+? Ilmiy uslubning asosiy belgisi nima?
++ Atamalarning ko'p qo'llanishi va fikrning aniqligi
+- Ko'p so'zlashuv iboralari
+- She'riy ohang
+- Hissiy undovlar
+= Ilmiy matnda atamalar va aniq ta'riflar ko'p bo'ladi.
+? Paronimlar nima?
++ Talaffuzi yaqin, ma'nosi har xil so'zlar
+- Ma'nosi bir xil so'zlar
+- Ma'nosi zid so'zlar
+- Eskirgan so'zlar
+= Masalan: asr — asir, shox — shoh.
+? Qaysi biri frazeologizm (ibora)?
++ tarvuzi qo'ltig'idan tushdi
+- katta uy
+- ko'k osmon
+- yangi kitob
+= Iboraning ma'nosi: hafsalasi pir bo'ldi.
+? Qaysi so'z to'g'ri yozilgan?
+- maktap
+- kitop
++ maktab
+- maqtab
+= To'g'ri yozilishi: maktab, kitob.
+
+@ adabiyot-10 | 10 | adabiyot | Hozirgi o'zbek adabiyoti
+? "Ikki eshik orasi" romanining muallifi kim?
+- Said Ahmad
++ O'tkir Hoshimov
+- Tog'ay Murod
+- Pirimqul Qodirov
+= O'tkir Hoshimov romani.
+? "Yulduzli tunlar" romani kim haqida?
+- Amir Temur
++ Zahiriddin Muhammad Bobur
+- Alisher Navoiy
+- Mirzo Ulug'bek
+= Pirimqul Qodirovning Bobur haqidagi romani.
+? "Ulug'bek xazinasi" romanining muallifi kim?
++ Odil Yoqubov
+- Oybek
+- Said Ahmad
+- Abdulla Qahhor
+= Odil Yoqubov romani.
+? "Ufq" trilogiyasining muallifi kim?
+- Odil Yoqubov
++ Said Ahmad
+- G'afur G'ulom
+- Shukur Xolmirzayev
+= "Ufq" — Said Ahmadning uch qismli romani.
+? O'zbekiston Respublikasi Davlat madhiyasi so'zlarining muallifi kim?
+- Erkin Vohidov
++ Abdulla Oripov
+- Muhammad Yusuf
+- Hamid Olimjon
+= Madhiya so'zlari Abdulla Oripovniki, musiqasi Mutal Burhonovniki.
+
+@ algebra-10 | 10 | algebra | Logarifm va trigonometriya
+? log₂ 8 = ?
+- 2
++ 3
+- 4
+- 8
+= 2³ = 8.
+? 2ˣ = 16 bo'lsa, x nechaga teng?
+- 2
+- 3
++ 4
+- 8
+= 2⁴ = 16.
+? sin 90° = ?
+- 0
++ 1
+- −1
+- 1/2
+= sin 90° = 1.
+? cos 60° = ?
++ 1/2
+- √3/2
+- 0
+- 1
+= cos 60° = 1/2.
+? tg 45° = ?
+- 0
++ 1
+- √3
+- 1/2
+= tg 45° = sin 45° / cos 45° = 1.
+
+@ geometriya-10 | 10 | geometriya | Fazoviy jismlar
+? Kubning nechta qirrasi bor?
+- 6
+- 8
++ 12
+- 24
+= Kubning 6 ta yog'i, 8 ta uchi, 12 ta qirrasi bor.
+? Qirrasi a bo'lgan kubning hajmi qanday topiladi?
+- 6a²
++ a³
+- 3a
+- a²
+= V = a³.
+? Shar hajmi formulasi qaysi?
+- 4πr²
++ (4/3)πr³
+- πr²h
+- (1/3)πr²h
+= V = (4/3)πr³.
+? Silindr hajmi formulasi qaysi?
++ πr²h
+- 2πrh
+- (1/3)πr²h
+- πr³
+= Asos yuzi × balandlik.
+? Fazoda kesishmaydigan va parallel bo'lmagan ikki to'g'ri chiziq nima deyiladi?
++ ayqash to'g'ri chiziqlar
+- perpendikulyar to'g'ri chiziqlar
+- ustma-ust tushuvchi to'g'ri chiziqlar
+- parallel to'g'ri chiziqlar
+= Ular bir tekislikda yotmaydi.
+
+@ fizika-10 | 10 | fizika | Mexanika va molekulyar fizika
+? Jism impulsi qaysi formula bilan topiladi?
++ p = m · v
+- p = m · a
+- p = m · g · h
+- p = m · v² / 2
+= Impuls — massa va tezlik ko'paytmasi.
+? Ideal gaz holat tenglamasi qaysi?
++ pV = (m / M)RT
+- pV = mgh
+- p = ρgh
+- F = kx
+= Mendeleyev–Klapeyron tenglamasi.
+? Mutlaq nol harorat taxminan qancha?
+- 0 °C
+- −100 °C
++ −273 °C
+- −373 °C
+= 0 K ≈ −273 °C.
+? Guk qonuni qaysi?
++ F = k · x
+- F = m · a
+- F = G · m₁m₂ / r²
+- F = q · E
+= Elastiklik kuchi deformatsiyaga proporsional.
+? Kulon qonuni nimani ifodalaydi?
++ Nuqtaviy zaryadlarning o'zaro ta'sir kuchini
+- Tok kuchini
+- Jismning tezlanishini
+- Yorug'likning sinishini
+= F = k · q₁q₂ / r².
+
+@ kimyo-10 | 10 | kimyo | Organik kimyo
+? Alkanlarning umumiy formulasi qaysi?
+- CnH2n
++ CnH2n+2
+- CnH2n−2
+- CnHn
+= Masalan: CH₄, C₂H₆, C₃H₈.
+? Etil spirtining formulasi qaysi?
+- CH₃OH
++ C₂H₅OH
+- C₂H₆
+- CH₃COOH
+= Etanol — C₂H₅OH.
+? Sirka kislotaning formulasi qaysi?
++ CH₃COOH
+- HCOOH
+- C₂H₅OH
+- C₆H₆
+= Sirka kislota — CH₃COOH.
+? Benzolning formulasi qaysi?
++ C₆H₆
+- C₆H₁₂
+- C₂H₂
+- CH₄
+= Benzol — aromatik uglevodorod.
+? Organik moddalar tarkibida albatta qaysi element bo'ladi?
+- azot
++ uglerod
+- oltingugurt
+- xlor
+= Organik kimyo — uglerod birikmalari kimyosi.
+
+@ biologiya-10 | 10 | biologiya | Umumiy biologiya
+? Fotosintez jarayonida o'simlik qaysi gazni ajratib chiqaradi?
+- karbonat angidrid
++ kislorod
+- azot
+- vodorod
+= O'simlik CO₂ ni yutib, kislorod chiqaradi.
+? Evolyutsion ta'limot (tabiiy tanlanish) asoschisi kim?
+- Gregor Mendel
++ Charlz Darvin
+- Lui Paster
+- Ilya Mechnikov
+= Darvin "Turlarning paydo bo'lishi" asarini yozgan.
+? Viruslarning o'ziga xos xususiyati nima?
++ Faqat tirik hujayra ichida ko'payadi
+- Mustaqil oziqlanadi
+- Fotosintez qiladi
+- Ko'p hujayrali bo'ladi
+= Viruslar hujayra tuzilishiga ega emas.
+? Ekotizimda yashil o'simliklar qanday rol o'ynaydi?
++ Produtsent — organik modda hosil qiluvchi
+- Konsument — tayyor oziq iste'molchisi
+- Redutsent — parchalovchi
+- Parazit
+= O'simliklar fotosintez orqali organik modda yaratadi.
+? ABO tizimida odam qon guruhlari nechta?
+- 2
+- 3
++ 4
+- 8
+= I (0), II (A), III (B), IV (AB).
+
+@ ozbekiston-tarixi-10 | 10 | ozbekiston-tarixi | Qadimgi va o'rta asrlar
+? Amir Temur qaysi yili vafot etgan?
+- 1370
++ 1405
+- 1449
+- 1336
+= Amir Temur 1405-yilda O'tror shahrida vafot etgan.
+? Mirzo Ulug'bek rasadxonasi qayerda qurilgan?
+- Buxoroda
++ Samarqandda
+- Hirotda
+- Xivada
+= Rasadxona Samarqand yaqinidagi Ko'hak tepaligida qurilgan.
+? "Temur tuzuklari" asari nima haqida?
++ Davlat boshqaruvi qoidalari va Temur faoliyati haqida
+- Tibbiyot haqida
+- Astronomiya haqida
+- She'riyat haqida
+= Asarda davlatni boshqarish tartiblari bayon qilingan.
+? Ahamoniylar davlati qayerda vujudga kelgan?
++ Eronda (Fors)
+- Xitoyda
+- Rimda
+- Misrda
+= Ahamoniylar — qadimgi Fors davlati.
+? Buyuk Ipak yo'li orqali asosan nimalar tashilgan?
++ Ipak, ziravorlar va boshqa mollar
+- Neft
+- Ko'mir
+- Elektr energiyasi
+= Ipak yo'li savdo va madaniy aloqalar yo'li bo'lgan.
+
+@ ingliz-tili-10 | 10 | ingliz-tili | Advanced grammar
+? I'm looking forward to ___ you.
+- see
++ seeing
+- saw
+- be seeing
+= Look forward to + -ing.
+? She ___ in London for five years before she moved to Paris.
+- has lived
++ had lived
+- lives
+- is living
+= An action before another past action — past perfect.
+? You ___ smoke here. It's forbidden.
++ mustn't
+- needn't
+- don't have to
+- can
+= Mustn't — prohibition.
+? What is the opposite of "ancient"?
+- old
++ modern
+- historic
+- antique
+= Ancient — modern.
+? The man ___ car was stolen called the police.
+- who
+- which
++ whose
+- whom
+= "Whose" shows possession.
+
+@ ona-tili-11 | 11 | ona-tili | Imlo va til tarixi
+? O'zbek lotin alifbosida nechta harf bor?
+- 26
++ 29
+- 33
+- 35
+= 29 ta harf va 1 ta tutuq belgisi (’).
+? Qaysi so'z to'g'ri yozilgan?
+- o'qtuvchi
++ o'qituvchi
+- uqituvchi
+- o'qiytuvchi
+= To'g'ri yozilishi: o'qituvchi.
+? O'zbek tiliga davlat tili maqomi qachon berilgan?
+- 1991-yilda
++ 1989-yil 21-oktabrda
+- 1995-yilda
+- 2000-yilda
+= 21-oktabr — O'zbek tili bayrami kuni.
+? Qaysi gapda tinish belgisi to'g'ri qo'yilgan?
++ Bahor keldi, daraxtlar gulladi.
+- Bahor keldi daraxtlar, gulladi.
+- Bahor, keldi daraxtlar gulladi.
+- Bahor keldi daraxtlar gulladi,
+= Qo'shma gap qismlari orasiga vergul qo'yiladi.
+? Qaysi so'zda so'z yasovchi qo'shimcha bor?
++ paxtakor
+- kitoblar
+- uyda
+- keldi
+= -kor qo'shimchasi yangi so'z yasagan.
+
+@ adabiyot-11 | 11 | adabiyot | O'zbek adabiyoti klassikasi
+? "O'tkan kunlar" o'zbek adabiyotida qanday ahamiyatga ega?
++ Birinchi o'zbek romani hisoblanadi
+- Birinchi xalq dostoni
+- Birinchi g'azallar to'plami
+- Birinchi dramatik asar
+= Abdulla Qodiriyning "O'tkan kunlar"i birinchi o'zbek romani sanaladi.
+? "Dunyoning ishlari" asarining muallifi kim?
+- Said Ahmad
++ O'tkir Hoshimov
+- Erkin Vohidov
+- Abdulla Oripov
+= O'tkir Hoshimovning qissasi.
+? "Ruhlar isyoni" dostonining muallifi kim?
+- Abdulla Oripov
++ Erkin Vohidov
+- Muhammad Yusuf
+- G'afur G'ulom
+= Erkin Vohidovning dostoni.
+? "Sinchalak" qissasining muallifi kim?
++ Abdulla Qahhor
+- Oybek
+- Cho'lpon
+- O'tkir Hoshimov
+= Abdulla Qahhor qissasi.
+? Fitratning qaysi asari dramatik asar (drama)?
+- "Hind sayyohining qissasi"
++ "Abulfayzxon"
+- "Munozara"
+- "Sayha"
+= "Abulfayzxon" — Fitratning tarixiy dramasi.
+
+@ algebra-11 | 11 | algebra | Hosila va integral
+? f(x) = x² funksiyaning hosilasi qaysi?
+- x
++ 2x
+- x³/3
+- 2
+= (xⁿ)' = n · xⁿ⁻¹.
+? (sin x)' = ?
+- −cos x
++ cos x
+- sin x
+- −sin x
+= Sinusning hosilasi — kosinus.
+? ∫ 2x dx = ?
+- 2 + C
++ x² + C
+- 2x² + C
+- x + C
+= (x²)' = 2x.
+? f(x) = 3x + 5 funksiyaning hosilasi nechaga teng?
+- 3x
++ 3
+- 5
+- 8
+= O'zgarmasning hosilasi 0, (3x)' = 3.
+? Hosilasi nolga teng bo'lgan nuqtalar nima deyiladi?
++ Kritik (statsionar) nuqtalar
+- Asimptotalar
+- Uzilish nuqtalari
+- Koordinata boshi
+= Ekstremum nuqtalar shular orasidan izlanadi.
+
+@ fizika-11 | 11 | fizika | Zamonaviy fizika
+? Fotoeffekt nazariyasi uchun Nobel mukofotini olgan olim kim?
+- Isaak Nyuton
++ Albert Eynshteyn
+- Maykl Faradey
+- Georg Om
+= Eynshteyn 1921-yilgi Nobel mukofotini fotoeffekt nazariyasi uchun olgan.
+? E = mc² formulasida c nimani bildiradi?
+- massani
++ yorug'likning vakuumdagi tezligini
+- zaryadni
+- issiqlik sig'imini
+= c ≈ 3 · 10⁸ m/s.
+? Atom yadrosi qanday zarralardan iborat?
+- elektron va protonlardan
++ proton va neytronlardan
+- elektron va neytronlardan
+- faqat elektronlardan
+= Elektronlar yadro atrofida harakatlanadi.
+? Qaysi elektromagnit to'lqinlarni ko'z ko'radi?
+- radioto'lqinlar
+- rentgen nurlari
++ yorug'lik
+- ultrabinafsha nurlar
+= Ko'zimiz faqat ko'rinadigan yorug'likni sezadi.
+? Transformator nima uchun ishlatiladi?
++ O'zgaruvchan tok kuchlanishini o'zgartirish uchun
+- Tokni o'zgarmasga aylantirish uchun
+- Issiqlik ishlab chiqarish uchun
+- Yorug'likni kuchaytirish uchun
+= Transformator kuchlanishni oshiradi yoki pasaytiradi.
+
+@ kimyo-11 | 11 | umumiy-kimyo | Umumiy kimyo
+? NaCl da qanday kimyoviy bog'lanish bor?
+- kovalent qutbsiz
++ ion
+- metall
+- vodorod
+= Metall va metallmas o'rtasida ion bog'lanish hosil bo'ladi.
+? Katalizator nima?
++ Reaksiya tezligini o'zgartiradigan, o'zi sarflanmaydigan modda
+- Reaksiyada butunlay sarflanadigan modda
+- Reaksiya mahsuloti
+- Erituvchi
+= Katalizator reaksiyadan so'ng o'zgarishsiz qoladi.
+? Oksidlanish jarayonida atom nima qiladi?
++ Elektron beradi
+- Elektron qabul qiladi
+- Proton qabul qiladi
+- Neytron beradi
+= Oksidlanish — elektron berish, qaytarilish — elektron qabul qilish.
+? Asosiy guruh elementlarida guruh raqami nimani ko'rsatadi?
++ Tashqi qavatdagi elektronlar sonini
+- Neytronlar sonini
+- Atom massasini
+- Izotoplar sonini
+= Masalan, I guruh elementlarida tashqi qavatda 1 ta elektron bor.
+? Qaysi biri inert (nodir) gaz?
+- kislorod
+- azot
++ geliy
+- xlor
+= Geliy, neon, argon — inert gazlar.
+
+@ biologiya-11 | 11 | biologiya | Ekologiya va evolyutsiya
+? Ekologiya nimani o'rganadi?
++ Organizmlarning bir-biri va muhit bilan munosabatini
+- Faqat odam anatomiyasini
+- Faqat hujayra tuzilishini
+- Faqat tog' jinslarini
+= Ekologiya — tirik organizmlar va muhit munosabati haqidagi fan.
+? Mendelning birinchi qonuni qanday ataladi?
++ Birinchi avlod duragaylarining bir xilligi qonuni
+- Belgilarning mustaqil irsiylanishi qonuni
+- Biogenetik qonun
+- Energiyaning saqlanish qonuni
+= Birinchi avlodda barcha duragaylar bir xil bo'ladi.
+? Biosfera haqidagi ta'limot muallifi kim?
++ Vladimir Vernadskiy
+- Charlz Darvin
+- Gregor Mendel
+- Ivan Pavlov
+= Vernadskiy biosferani Yerning tirik qobig'i sifatida o'rgangan.
+? Tabiiy tanlanish nazariyasi kimga tegishli?
++ Charlz Darvin
+- Gregor Mendel
+- Karl Linney
+- Lui Paster
+= Darvinning evolyutsion nazariyasi.
+? Gen nima?
++ DNKning ma'lum belgi haqidagi axborotni saqlovchi qismi
+- Hujayra organoidi
+- Qon hujayrasi
+- Oqsil turi
+= Gen — irsiyat birligi.
+
+@ astronomiya-11 | 11 | astronomiya | Quyosh sistemasi
+? Quyosh sistemasidagi eng katta sayyora qaysi?
+- Saturn
++ Yupiter
+- Yer
+- Neptun
+= Yupiter — eng katta sayyora.
+? Quyoshga eng yaqin sayyora qaysi?
+- Venera
++ Merkuriy
+- Mars
+- Yer
+= Merkuriy Quyoshga eng yaqin joylashgan.
+? Qaysi sayyora "Qizil sayyora" deb ataladi?
+- Venera
++ Mars
+- Yupiter
+- Merkuriy
+= Mars yuzasidagi temir oksidlari unga qizg'ish rang beradi.
+? Yorug'lik yili nimaning o'lchov birligi?
+- vaqtning
++ masofaning
+- tezlikning
+- massaning
+= Yorug'lik bir yilda bosib o'tadigan masofa.
+? Yer o'z o'qi atrofida qancha vaqtda bir marta aylanadi?
+- 1 soatda
++ taxminan 24 soatda
+- 1 oyda
+- 1 yilda
+= Yerning o'z o'qi atrofida aylanishi kecha va kunduzni hosil qiladi.
+
+@ ozbekiston-tarixi-11 | 11 | ozbekiston-tarixi | Mustaqil O'zbekiston
+? O'zbekiston qaysi yili BMTga a'zo bo'lgan?
+- 1991
++ 1992
+- 1995
+- 2000
+= O'zbekiston 1992-yil 2-martda BMTga qabul qilingan.
+? Mustaqillik kuni qachon nishonlanadi?
+- 8-dekabrda
++ 1-sentyabrda
+- 21-martda
+- 9-mayda
+= 1-sentyabr — Mustaqillik kuni.
+? O'zbekiston Konstitutsiyasining yangi tahriri qachon referendum orqali qabul qilingan?
+- 2017-yilda
++ 2023-yil 30-aprelda
+- 2020-yilda
+- 1992-yilda
+= 2023-yil 30-aprelda umumxalq referendumi o'tkazilgan.
+? O'zbekiston davlat bayrog'i qachon qabul qilingan?
++ 1991-yil 18-noyabrda
+- 1992-yil 8-dekabrda
+- 1991-yil 31-avgustda
+- 1992-yil 2-iyulda
+= Bayroq 1991-yil 18-noyabrda qabul qilingan.
+? O'zbekiston Respublikasining birinchi Prezidenti kim?
++ Islom Karimov
+- Shavkat Mirziyoyev
+- Sharof Rashidov
+- Abdulla Aripov
+= Islom Karimov 1991–2016-yillarda Prezident bo'lgan.
+
+@ ingliz-tili-11 | 11 | ingliz-tili | Exam practice
+? Had I known, I ___ you.
+- will help
++ would have helped
+- helped
+- would help
+= Third conditional (inversion): had + past participle, would have + past participle.
+? It's high time we ___.
+- go
++ went
+- gone
+- going
+= "It's high time" + past simple.
+? The news ___ good.
+- are
++ is
+- were
+- be
+= "News" is uncountable and takes a singular verb.
+? She is used to ___ up early.
+- get
++ getting
+- got
+- gets
+= Be used to + -ing.
+? Choose the synonym of "enormous".
+- tiny
++ huge
+- fast
+- quiet
+= Enormous — huge.

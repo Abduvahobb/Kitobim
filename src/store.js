@@ -78,5 +78,12 @@ export const store = {
   },
   setCachedCatalog(c) {
     try { localStorage.setItem(KEY + ':catalog', JSON.stringify(c)); } catch (e) { /* joy yetmasa ham ishlayveradi */ }
+  },
+  // "Kitoblar" bo'limi ro'yxati
+  cachedLibrary() {
+    try { const c = localStorage.getItem(KEY + ':library'); return c ? JSON.parse(c) : null; } catch (e) { return null; }
+  },
+  setCachedLibrary(c) {
+    try { localStorage.setItem(KEY + ':library', JSON.stringify(c)); } catch (e) { /* e'tiborsiz */ }
   }
 };

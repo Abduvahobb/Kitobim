@@ -1,0 +1,639 @@
+@ ona-tili-8 | 8 | ona-tili | Gap bo'laklari
+? To'ldiruvchi qaysi so'roqlarga javob beradi?
+- qanday? qaysi?
++ kimni? nimani? kimga? nimaga?
+- qachon? qayerda?
+- nima qildi?
+= To'ldiruvchi harakat yo'nalgan narsani bildiradi.
+? Aniqlovchi qaysi so'roqlarga javob beradi?
++ qanday? qaysi? kimning?
+- kim? nima?
+- qachon? qayerda?
+- nima qildi?
+= Aniqlovchi narsaning belgisini bildiradi.
+? Hol gapda qaysi bo'lakni izohlaydi?
+- egani
++ kesimni (harakatni)
+- aniqlovchini
+- undalmani
+= Hol harakatning payti, o'rni, sababi, holatini bildiradi.
+? "Bahorda dalalar yashillanadi." gapida "bahorda" qanday bo'lak?
+- ega
+- to'ldiruvchi
++ payt holi
+- aniqlovchi
+= Qachon yashillanadi? — bahorda.
+? Qaysi so'z kirish so'z bo'lib kela oladi?
++ albatta
+- maktabga
+- keldi
+- chiroyli
+= "Albatta, u keladi." — kirish so'z vergul bilan ajratiladi.
+
+@ adabiyot-8 | 8 | adabiyot | XX asr o'zbek adabiyoti
+? "O'tkan kunlar" romani qaysi davr voqealarini tasvirlaydi?
+- Temuriylar davrini
++ XIX asr o'rtalari, Qo'qon xonligi davrini
+- Ikkinchi jahon urushi yillarini
+- Mustaqillik yillarini
+= Roman voqealari XIX asr o'rtalarida Toshkent va Marg'ilonda kechadi.
+? "Navoiy" romanining muallifi kim?
+- G'afur G'ulom
++ Oybek
+- Cho'lpon
+- Abdulla Qodiriy
+= "Navoiy" — Oybekning tarixiy romani.
+? "Sarob" romanining muallifi kim?
+- Oybek
++ Abdulla Qahhor
+- Cho'lpon
+- Said Ahmad
+= "Sarob" — Abdulla Qahhorning romani.
+? Qaysi misolda o'xshatish (tashbeh) bor?
++ Yuzi oydek go'zal
+- Daraxtlar shivirlaydi
+- Ming marta aytdim
+- Sen kel, sen!
+= "-dek" qo'shimchasi yordamida o'xshatish hosil qilingan.
+? Qaysi biri dramatik asar?
+- roman
+- hikoya
++ pyesa
+- g'azal
+= Pyesa sahnada qo'yish uchun yoziladi.
+
+@ algebra-8 | 8 | algebra | Kvadrat tenglamalar
+? Kvadrat tenglama diskriminanti qaysi formula bilan topiladi?
++ D = b² − 4ac
+- D = b² + 4ac
+- D = 4ac − b²
+- D = b − 4ac
+= ax² + bx + c = 0 uchun D = b² − 4ac.
+? x² − 5x + 6 = 0 tenglamaning ildizlari qaysilar?
+- 1 va 6
++ 2 va 3
+- −2 va −3
+- 5 va 6
+= 2 + 3 = 5 va 2 · 3 = 6.
+? √144 = ?
+- 11
++ 12
+- 14
+- 72
+= 12 · 12 = 144.
+? x² = 49 bo'lsa, x nechaga teng?
+- faqat 7
++ 7 yoki −7
+- faqat −7
+- 49
+= 7² = 49 va (−7)² = 49.
+? Viyet teoremasiga ko'ra x² + px + q = 0 ildizlarining yig'indisi nimaga teng?
+- p
++ −p
+- q
+- −q
+= x₁ + x₂ = −p, x₁ · x₂ = q.
+
+@ geometriya-8 | 8 | geometriya | To'rtburchaklar va Pifagor teoremasi
+? Pifagor teoremasi qaysi?
++ c² = a² + b²
+- c = a + b
+- c² = a² − b²
+- c = a · b
+= Gipotenuza kvadrati katetlar kvadratlari yig'indisiga teng.
+? Katetlari 3 va 4 bo'lgan to'g'ri burchakli uchburchakning gipotenuzasi nechaga teng?
+- 6
++ 5
+- 7
+- 12
+= √(9 + 16) = √25 = 5.
+? Parallelogramm yuzi qanday topiladi?
++ asos × balandlik
+- a + b
+- a² · h
+- (a + b) / 2
+= S = a · h.
+? Doira yuzi formulasi qaysi?
+- 2πr
++ πr²
+- πd
+- 2πr²
+= S = πr².
+? Romb diagonallari qanday kesishadi?
++ Perpendikulyar holda
+- Parallel bo'ladi
+- 45° burchak ostida
+- Kesishmaydi
+= Romb diagonallari o'zaro perpendikulyar.
+
+@ fizika-8 | 8 | fizika | Elektr va issiqlik
+? Om qonuni qaysi?
++ I = U / R
+- I = U · R
+- I = R / U
+- U = I / R
+= Tok kuchi kuchlanishga to'g'ri, qarshilikka teskari proporsional.
+? Elektr qarshilik birligi qaysi?
+- amper
+- volt
++ om
+- vatt
+= Qarshilik omlarda (Ω) o'lchanadi.
+? Tok kuchi birligi qaysi?
++ amper
+- volt
+- om
+- kulon
+= Tok kuchi amperlarda (A) o'lchanadi.
+? Suvning solishtirma issiqlik sig'imi taxminan qancha?
++ 4200 J/(kg·°C)
+- 420 J/(kg·°C)
+- 42 000 J/(kg·°C)
+- 1000 J/(kg·°C)
+= 1 kg suvni 1 °C ga isitish uchun ≈ 4200 J kerak.
+? Qaysi materiallar elektr tokini yaxshi o'tkazadi?
+- shisha
+- rezina
++ metallar
+- quruq yog'och
+= Metallarda erkin elektronlar ko'p.
+
+@ kimyo-8 | 8 | kimyo | Atom va modda miqdori
+? Kislorodning tartib raqami nechaga teng?
+- 6
++ 8
+- 16
+- 12
+= Kislorod davriy jadvalda 8-o'rinda.
+? Avogadro soni taxminan nechaga teng?
+- 6,02 · 10²²
++ 6,02 · 10²³
+- 3 · 10⁸
+- 9,8
+= 1 mol moddada 6,02 · 10²³ ta zarracha bor.
+? Suvning molyar massasi nechaga teng?
+- 16 g/mol
++ 18 g/mol
+- 20 g/mol
+- 10 g/mol
+= 2 · 1 + 16 = 18 g/mol.
+? Kislota eritmasida lakmus qanday rangga kiradi?
+- ko'k
++ qizil
+- yashil
+- rangsiz
+= Kislotali muhitda lakmus qizaradi.
+? Qaysi element metall?
+- oltingugurt
++ natriy
+- xlor
+- azot
+= Natriy — ishqoriy metall.
+
+@ biologiya-8 | 8 | biologiya | Odam va uning salomatligi
+? Odam yuragi nechta kameradan iborat?
+- 2
+- 3
++ 4
+- 5
+= Ikki bo'lmacha va ikki qorincha.
+? Qonga qizil rang beradigan modda qaysi?
+- xlorofill
++ gemoglobin
+- insulin
+- melanin
+= Gemoglobin eritrotsitlarda kislorod tashiydi.
+? Odam skeletidagi eng katta (uzun) suyak qaysi?
++ son suyagi
+- umurtqa
+- qovurg'a
+- bosh suyagi
+= Son suyagi — eng uzun va mustahkam suyak.
+? Insulin qaysi bezda ishlab chiqariladi?
+- qalqonsimon bez
++ oshqozon osti bezi
+- so'lak bezi
+- buyrak usti bezi
+= Insulin qondagi qand miqdorini boshqaradi.
+? Kislorod qonga qaysi a'zoda o'tadi?
+- oshqozonda
++ o'pkada
+- jigarda
+- buyrakda
+= O'pka pufakchalarida gaz almashinuvi boradi.
+
+@ geografiya-8 | 8 | geografiya | O'zbekiston geografiyasi
+? O'zbekiston tarkibida nechta viloyat bor?
+- 10
++ 12
+- 14
+- 13
+= 12 viloyat, Qoraqalpog'iston Respublikasi va Toshkent shahri.
+? Qurib borayotgan va ekologik muammoga aylangan suv havzasi qaysi?
+- Issiqko'l
++ Orol dengizi
+- Kaspiy dengizi
+- Balxash ko'li
+= Orol dengizi XX asrning ikkinchi yarmidan qurib bormoqda.
+? Qizilqum cho'li qaysi daryolar oralig'ida joylashgan?
++ Amudaryo va Sirdaryo
+- Volga va Ural
+- Chirchiq va Ohangaron
+- Zarafshon va Qashqadaryo
+= Qizilqum Amudaryo va Sirdaryo oralig'ida.
+? Farg'ona vodiysidagi viloyatlar qaysilar?
++ Andijon, Farg'ona, Namangan
+- Buxoro, Navoiy, Xorazm
+- Surxondaryo, Qashqadaryo, Jizzax
+- Toshkent, Sirdaryo, Samarqand
+= Farg'ona vodiysida uch viloyat joylashgan.
+? O'zbekiston iqlimi qanday?
++ Keskin kontinental
+- Ekvatorial
+- Musson
+- Dengiz iqlimi
+= Yozi issiq va quruq, qishi nisbatan sovuq.
+
+@ ozbekiston-tarixi-8 | 8 | ozbekiston-tarixi | XVI–XIX asrlar
+? Boburiylar sulolasi qaysi mamlakatda hukmronlik qilgan?
+- Eronda
++ Hindistonda
+- Turkiyada
+- Misrda
+= Bobur Hindistonda Boburiylar davlatiga asos solgan.
+? Bobur Panipat jangida qaysi yili g'alaba qozongan?
+- 1494
++ 1526
+- 1530
+- 1600
+= 1526-yil Panipat jangidan so'ng Boburiylar davlati tashkil topdi.
+? XVIII–XIX asrlarda hozirgi O'zbekiston hududida qaysi davlatlar bo'lgan?
++ Buxoro amirligi, Xiva va Qo'qon xonliklari
+- Somoniylar va G'aznaviylar
+- Ahamoniylar va Salavkiylar
+- Rim va Vizantiya
+= Bu uch davlat XIX asrda mavjud bo'lgan.
+? Shayboniylar davlatiga kim asos solgan?
+- Bobur
++ Muhammad Shayboniyxon
+- Amir Temur
+- Abdullaxon II
+= XVI asr boshida Muhammad Shayboniyxon asos solgan.
+? Turkiston general-gubernatorligi qaysi yili tashkil etilgan?
+- 1757
++ 1867
+- 1917
+- 1924
+= 1867-yilda markazi Toshkent bo'lgan general-gubernatorlik tuzilgan.
+
+@ ingliz-tili-8 | 8 | ingliz-tili | Grammar practice
+? I wish I ___ more time.
+- have
++ had
+- has
+- having
+= Wish about the present: wish + past simple.
+? He said, "I am tired." → He said that he ___ tired.
+- is
++ was
+- were
+- be
+= In reported speech "am" changes to "was".
+? This is the ___ book I have ever read.
+- interesting
+- more interesting
++ most interesting
+- interestinger
+= Superlative of long adjectives: the most + adjective.
+? She is good ___ maths.
+- in
+- on
++ at
+- of
+= Good at something.
+? Neither Tom ___ Ann came to the party.
+- or
++ nor
+- and
+- but
+= Neither ... nor.
+
+@ ona-tili-9 | 9 | ona-tili | Qo'shma gap
+? Qo'shma gapning turlari qaysilar?
++ Bog'langan, ergashgan va bog'lovchisiz
+- Sodda va yoyiq
+- Darak va so'roq
+- Yig'iq va yoyiq
+= Qo'shma gaplar uch turga bo'linadi.
+? "Qor yog'di, yerlar oqardi." qanday qo'shma gap?
+- bog'langan
+- ergashgan
++ bog'lovchisiz
+- sodda gap
+= Qismlar bog'lovchisiz, faqat ohang va vergul bilan bog'langan.
+? Bog'langan qo'shma gap qismlari nima yordamida bog'lanadi?
++ teng bog'lovchilar (va, lekin, ammo) yordamida
+- faqat ko'makchilar yordamida
+- faqat undalmalar yordamida
+- hech narsa yordamida bog'lanmaydi
+= Masalan: "Quyosh chiqdi va havo isidi."
+? "Agar harakat qilsang, natijaga erishasan." gapida bosh gap qaysi?
+- "Agar harakat qilsang"
++ "natijaga erishasan"
+- ikkala qism ham bosh gap
+- bosh gap yo'q
+= "Agar harakat qilsang" — shart ergash gap.
+? Ko'chirma gap qanday belgilar ichida yoziladi?
+- qavs
++ qo'shtirnoq
+- tire
+- vergul
+= Ko'chirma gap qo'shtirnoq ichiga olinadi.
+
+@ adabiyot-9 | 9 | adabiyot | Mumtoz adabiyot
+? "Devonu lug'otit turk" asarining muallifi kim?
+- Yusuf Xos Hojib
++ Mahmud Koshg'ariy
+- Ahmad Yugnakiy
+- Alisher Navoiy
+= XI asrda Mahmud Koshg'ariy yozgan turkiy tillar lug'ati.
+? "Hayratul abror" dostoni Navoiyning qaysi asari tarkibiga kiradi?
+- "Xazoyin ul-maoniy"
++ "Xamsa"
+- "Mahbub ul-qulub"
+- "Boburnoma"
+= "Hayratul abror" — "Xamsa"ning birinchi dostoni.
+? Lutfiy qaysi davr shoiri?
+- X asr
++ XIV–XV asrlar
+- XIX asr
+- XX asr
+= Lutfiy XIV–XV asrlarda yashagan.
+? "Mahbub ul-qulub" asarining muallifi kim?
++ Alisher Navoiy
+- Bobur
+- Ogahiy
+- Muqimiy
+= Navoiyning so'nggi yirik nasriy asari.
+? Masnaviy qanday she'riy shakl?
++ Har bir bayt o'zaro qofiyalanadigan (aa, bb, vv) shakl
+- To'rt misrali she'r
+- Faqat ikki misradan iborat she'r
+- Nasriy asar
+= Dostonlar ko'pincha masnaviy shaklida yoziladi.
+
+@ algebra-9 | 9 | algebra | Progressiyalar va funksiyalar
+? Arifmetik progressiyada a₁ = 2, d = 3. a₅ nechaga teng?
+- 12
++ 14
+- 15
+- 17
+= a₅ = a₁ + 4d = 2 + 12 = 14.
+? Geometrik progressiyada b₁ = 3, q = 2. b₄ nechaga teng?
+- 12
++ 24
+- 48
+- 9
+= b₄ = 3 · 2³ = 24.
+? y = x² funksiyaning grafigi qanday chiziq?
+- to'g'ri chiziq
++ parabola
+- giperbola
+- aylana
+= Kvadrat funksiya grafigi — parabola.
+? 2x − 3 > 5 tengsizlikning yechimi qaysi?
+- x > 1
++ x > 4
+- x < 4
+- x > 8
+= 2x > 8, x > 4.
+? sin²α + cos²α = ?
+- 0
++ 1
+- 2
+- sin 2α
+= Asosiy trigonometrik ayniyat.
+
+@ geometriya-9 | 9 | geometriya | Aylana va trigonometriya
+? Aylana uzunligi formulasi qaysi?
+- πr²
++ 2πr
+- πr
+- 4πr
+= C = 2πr.
+? sin 30° = ?
++ 1/2
+- √3/2
+- 1
+- 0
+= sin 30° = 1/2.
+? Uchburchakning tashqi burchagi nimaga teng?
++ O'ziga qo'shni bo'lmagan ikki ichki burchak yig'indisiga
+- 180° ga
+- 90° ga
+- Qo'shni ichki burchakka
+= Tashqi burchak haqidagi teorema.
+? Muntazam oltiburchakning har bir ichki burchagi necha gradus?
+- 108°
++ 120°
+- 135°
+- 150°
+= (6 − 2) · 180° / 6 = 120°.
+? Vektor nima?
++ Yo'nalishga ega kesma
+- Har qanday nuqta
+- Aylananing radiusi
+- Burchak turi
+= Vektorning uzunligi va yo'nalishi bor.
+
+@ fizika-9 | 9 | fizika | Mexanika
+? Nyutonning ikkinchi qonuni qaysi?
++ F = m · a
+- F = m / a
+- F = m + a
+- E = m · c²
+= Kuch massa va tezlanish ko'paytmasiga teng.
+? Yorug'likning vakuumdagi tezligi taxminan qancha?
+- 300 m/s
+- 3000 km/s
++ 300 000 km/s
+- 340 m/s
+= c ≈ 3 · 10⁸ m/s.
+? Kinetik energiya formulasi qaysi?
+- mgh
++ mv²/2
+- F · s
+- m · v
+= Harakatdagi jismning energiyasi.
+? Tovushning havodagi tezligi taxminan qancha?
++ 340 m/s
+- 3 · 10⁸ m/s
+- 1500 m/s
+- 34 m/s
+= Odatdagi sharoitda ≈ 340 m/s.
+? Ish birligi qaysi?
+- nyuton
++ joul
+- vatt
+- paskal
+= Ish va energiya joulda (J) o'lchanadi.
+
+@ kimyo-9 | 9 | kimyo | Metallar va metallmaslar
+? Metanning formulasi qaysi?
++ CH₄
+- C₂H₆
+- CO₂
+- C₂H₂
+= Metan — eng oddiy uglevodorod, tabiiy gazning asosiy qismi.
+? pH = 7 bo'lgan eritma qanday muhitga ega?
+- kislotali
+- ishqoriy
++ neytral
+- juda kislotali
+= Toza suvning pH qiymati 7 ga yaqin.
+? Ammiakning formulasi qaysi?
++ NH₃
+- NO₂
+- N₂
+- HNO₃
+= Ammiak — azot va vodorod birikmasi.
+? Temirning kimyoviy belgisi qaysi?
++ Fe
+- F
+- Te
+- Ir
+= Fe — lotincha "ferrum" so'zidan.
+? Havoning eng katta qismini qaysi gaz tashkil etadi?
+- kislorod
++ azot
+- karbonat angidrid
+- argon
+= Havoning taxminan 78 foizi azot.
+
+@ biologiya-9 | 9 | biologiya | Hujayra va genetika
+? Hujayraning "energiya stansiyasi" qaysi organoid?
+- yadro
+- ribosoma
++ mitoxondriya
+- vakuola
+= Mitoxondriyada energiya (ATF) hosil bo'ladi.
+? Irsiy axborot qaysi molekulada saqlanadi?
+- oqsil
++ DNK
+- glyukoza
+- yog'
+= DNK — irsiyat molekulasi.
+? Genetika fanining asoschisi kim?
+- Charlz Darvin
++ Gregor Mendel
+- Ivan Pavlov
+- Lui Paster
+= Mendel no'xat ustidagi tajribalari bilan irsiyat qonunlarini ochgan.
+? Odamning tana (somatik) hujayralarida nechta xromosoma bor?
+- 23
++ 46
+- 44
+- 48
+= 23 juft — 46 ta xromosoma.
+? Oqsil sintezi asosan hujayraning qaysi organoidida boradi?
++ ribosomada
+- lizosomada
+- vakuolada
+- hujayra po'stida
+= Ribosomalar aminokislotalardan oqsil yig'adi.
+
+@ geografiya-9 | 9 | geografiya | Jahon geografiyasi
+? Yaponiyaning poytaxti qaysi shahar?
+- Pekin
++ Tokio
+- Seul
+- Bangkok
+= Tokio — Yaponiya poytaxti.
+? OPEK tashkiloti nima bilan bog'liq?
++ Neft eksport qiluvchi mamlakatlar bilan
+- Paxta yetishtiruvchi mamlakatlar bilan
+- Sport musobaqalari bilan
+- Kosmik tadqiqotlar bilan
+= OPEK — Neft eksport qiluvchi mamlakatlar tashkiloti.
+? O'zbekiston dengizga chiqish nuqtai nazaridan qanday davlat?
++ Ikki karra dengizga chiqa olmaydigan davlat
+- Orol davlat
+- Yarimorolda joylashgan davlat
+- Okean bo'yidagi davlat
+= O'zbekiston ham, uning barcha qo'shnilari ham ochiq dengizga chiqmaydi.
+? Afrikadagi eng uzun daryo qaysi?
++ Nil
+- Amazonka
+- Missisipi
+- Yanszi
+= Nil Afrikaning shimoli-sharqidan O'rta yer dengiziga quyiladi.
+? Mehnat resurslari nima?
++ Mehnatga layoqatli aholi
+- Faqat tabiiy boyliklar
+- Faqat yer osti boyliklari
+- Faqat zavod va fabrikalar
+= Mehnat resurslari — ishlashga qodir aholi qismi.
+
+@ ozbekiston-tarixi-9 | 9 | ozbekiston-tarixi | XIX oxiri – XX asr
+? Jadidchilik harakatining asosiy maqsadi nima edi?
++ Ta'limni isloh qilish, yangi usul maktablarini ochish
+- Faqat savdoni rivojlantirish
+- Harbiy yurishlar
+- Eski tartibni saqlab qolish
+= Jadidlar xalqni ma'rifatli qilishni maqsad qilgan.
+? "Padarkush" dramasining muallifi kim?
+- Fitrat
++ Mahmudxo'ja Behbudiy
+- Cho'lpon
+- Hamza
+= "Padarkush" — birinchi o'zbek dramasi, Behbudiy asari.
+? O'zbekiston SSR qaysi yili tashkil topgan?
+- 1917
++ 1924
+- 1936
+- 1941
+= 1924-yilgi milliy-hududiy chegaralanishdan so'ng.
+? Ikkinchi jahon urushi qaysi yillarda bo'lgan?
+- 1914–1918
++ 1939–1945
+- 1941–1950
+- 1929–1933
+= Ikkinchi jahon urushi 1939-yilda boshlanib, 1945-yilda tugagan.
+? O'zbekiston Respublikasi Konstitutsiyasi qachon qabul qilingan?
+- 1991-yil 31-avgustda
++ 1992-yil 8-dekabrda
+- 1995-yil 1-sentyabrda
+- 2000-yil 9-mayda
+= 8-dekabr — Konstitutsiya kuni.
+
+@ ingliz-tili-9 | 9 | ingliz-tili | Conditionals and passive
+? If I ___ rich, I would travel the world.
+- am
++ were
+- will be
+- have been
+= Second conditional: if + past simple (were), would + verb.
+? The book ___ by millions of people.
+- has read
++ has been read
+- have read
+- is reading
+= Present perfect passive: has been + past participle.
+? Choose the synonym of "happy".
+- sad
++ glad
+- angry
+- tired
+= Happy — glad.
+? He suggested ___ to the cinema.
+- to go
++ going
+- go
+- went
+= Suggest + -ing.
+? By the time we arrived, the film ___.
+- starts
++ had started
+- has started
+- will start
+= An earlier past action — past perfect.

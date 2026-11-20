@@ -1,0 +1,703 @@
+@ adabiyot-5 | 5 | adabiyot | Xalq og'zaki ijodi
+? Ertak qanday asar?
++ Xalq og'zaki ijodi namunasi
+- Tarixiy hujjat
+- Ilmiy maqola
+- Qonun matni
+= Ertaklar xalq tomonidan yaratilgan va og'zaki tarqalgan.
+? "Alpomish" qanday asar?
+- Roman
++ Xalq dostoni
+- Hikoya
+- Masal
+= "Alpomish" — o'zbek xalq qahramonlik dostoni.
+? Maqol nima?
++ Qisqa, ibratli xalq hikmati
+- Katta hajmli roman
+- Sahna asari
+- Ilmiy atama
+= Masalan: "Bilim — baxt kaliti".
+? Topishmoq nima?
++ Javobi yashirin, topish kerak bo'lgan qisqa savol
+- Uzun she'r
+- Tarixiy voqea bayoni
+- Qo'shiq turi
+= Topishmoqda narsa nomi aytilmay, belgilari orqali tasvirlanadi.
+? "O'tkan kunlar" romanining muallifi kim?
+- Cho'lpon
++ Abdulla Qodiriy
+- Oybek
+- G'afur G'ulom
+= "O'tkan kunlar" — Abdulla Qodiriyning romani.
+
+@ biologiya-5 | 5 | biologiya | O'simliklar
+? O'simlik bargiga yashil rang beradigan modda qaysi?
++ xlorofill
+- gemoglobin
+- kraxmal
+- melanin
+= Xlorofill fotosintezda quyosh nurini yutadi.
+? Gul o'simlikda qanday vazifani bajaradi?
++ Ko'payish — urug' va meva hosil qilish
+- Tuproqdan suv shimish
+- O'simlikni tik tutish
+- Faqat bezak
+= Gul — o'simlikning ko'payish a'zosi.
+? Qaysi o'simlik ko'p yillik?
+- bug'doy
++ olma daraxti
+- sabzi
+- makkajo'xori
+= Daraxtlar ko'p yil yashaydi.
+? Barg sathidagi mayda teshikchalar nima deyiladi?
++ og'izchalar (ustitsalar)
+- ildiz tukchalari
+- tomirlar
+- po'stloq
+= Og'izchalar orqali gaz almashinuvi va suv bug'lanishi boradi.
+? Urug' unib chiqishi uchun nima kerak?
++ Suv, havo va issiqlik
+- Faqat sovuq
+- Faqat quruq tuproq
+- Faqat tuz
+= Urug' namlik, havo va iliq haroratda unadi.
+
+@ geografiya-5 | 5 | geografiya | Yer va xarita
+? Yer sharida nechta materik bor?
+- 4
+- 5
++ 6
+- 7
+= Yevrosiyo, Afrika, Shimoliy Amerika, Janubiy Amerika, Avstraliya, Antarktida.
+? Eng katta okean qaysi?
+- Atlantika okeani
+- Hind okeani
++ Tinch okeani
+- Shimoliy Muz okeani
+= Tinch okeani — eng katta va eng chuqur okean.
+? Ekvator Yerni qanday yarim sharlarga ajratadi?
++ Shimoliy va janubiy
+- Sharqiy va g'arbiy
+- Ichki va tashqi
+- Issiq va sovuq
+= Ekvator — shimoliy va janubiy yarim sharlar chegarasi.
+? Globus nima?
++ Yerning kichraytirilgan modeli
+- Osmon xaritasi
+- Kompas turi
+- Ob-havo asbobi
+= Globus Yerning shaklini aks ettiradi.
+? Xaritada shimol odatda qaysi tomonda bo'ladi?
++ Yuqorida
+- Pastda
+- Chapda
+- O'ngda
+= Xaritalarda odatda shimol yuqorida joylashadi.
+
+@ ingliz-tili-5 | 5 | ingliz-tili | Grammar basics
+? I saw ___ elephant at the zoo.
+- a
++ an
+- many
+- two
+= We use "an" before a vowel sound: an elephant.
+? What is the comparative of "tall"?
++ taller
+- more tall
+- tallest
+- talles
+= Short adjectives: tall — taller — the tallest.
+? She can ___ English very well.
+- speaks
++ speak
+- speaking
+- spoke
+= After "can" we use the base form of the verb.
+? What is the past simple of "see"?
+- seed
++ saw
+- seen
+- sees
+= See — saw — seen.
+? Which sentence is correct?
++ There is a book on the desk.
+- There are a book on the desk.
+- There be a book on the desk.
+- There am a book on the desk.
+= With a singular noun we use "there is".
+
+@ tarix-5 | 5 | tarixdan-hikoyalar | Buyuk ajdodlarimiz
+? Amir Temur davlatining poytaxti qaysi shahar bo'lgan?
+- Buxoro
++ Samarqand
+- Xiva
+- Toshkent
+= Amir Temur Samarqandni poytaxt qilgan.
+? Mirzo Ulug'bek nimasi bilan mashhur?
++ Samarqanddagi rasadxonasi va astronomiya asarlari bilan
+- Dengiz sayohatlari bilan
+- Tibbiyot kitobi bilan
+- Romanlari bilan
+= Ulug'bek buyuk astronom, rasadxona qurdirgan.
+? "Algebra" so'zi qaysi olimning kitobi nomidan kelib chiqqan?
++ Muhammad al-Xorazmiy
+- Ibn Sino
+- Abu Rayhon Beruniy
+- Alisher Navoiy
+= Al-Xorazmiyning "Al-jabr va-l-muqobala" kitobidan.
+? "Tib qonunlari" asarining muallifi kim?
+- Beruniy
++ Ibn Sino
+- Ulug'bek
+- Bobur
+= Abu Ali ibn Sino — buyuk tabib va olim.
+? O'zbekiston mustaqilligi qaysi yili e'lon qilingan?
+- 1990-yil
++ 1991-yil
+- 1992-yil
+- 1995-yil
+= 1991-yil 31-avgustda; Mustaqillik kuni 1-sentyabrda nishonlanadi.
+
+@ ona-tili-6 | 6 | ona-tili | Leksikologiya
+? Shakli bir xil, ma'nosi har xil so'zlar nima deyiladi?
+- sinonimlar
+- antonimlar
++ omonimlar
+- paronimlar
+= Masalan: "ot" (hayvon) va "ot" (ism).
+? Qaysi juftlik sinonimlar?
++ yuz – bet
+- katta – kichik
+- issiq – sovuq
+- kun – tun
+= Yuz va bet ma'nosi yaqin so'zlar; qolganlari antonimlar.
+? "Qo'li ochiq" iborasi qanday ma'noni bildiradi?
++ saxiy
+- dangasa
+- qo'rqoq
+- kasal
+= "Qo'li ochiq" — saxiy, bag'rikeng odam.
+? Qaysi so'z eskirgan so'z (arxaizm)?
+- kompyuter
++ sipoh
+- telefon
+- avtobus
+= "Sipoh" — eskicha "askar" ma'nosidagi so'z.
+? Qaysi so'z boshqa tildan o'zlashgan?
++ kompyuter
+- non
+- suv
+- ota
+= "Kompyuter" ingliz tilidan o'zlashgan.
+
+@ adabiyot-6 | 6 | adabiyot | Mumtoz adabiyot
+? "Xamsa" asarining muallifi kim?
+- Bobur
+- Lutfiy
++ Alisher Navoiy
+- Furqat
+= "Xamsa" — Alisher Navoiyning besh dostondan iborat asari.
+? "Xamsa" nechta dostondan iborat?
+- 3
+- 4
++ 5
+- 7
+= Xamsa — "beshlik" degani: besh doston.
+? "Boburnoma" qanday asar?
++ Memuar (esdalik) asari
+- She'riy doston
+- Ertak
+- Drama
+= Bobur o'z hayoti va zamonasi voqealarini yozgan.
+? Ruboiy necha misradan iborat?
+- 2
++ 4
+- 6
+- 8
+= Ruboiy — to'rt misrali she'r.
+? "Qutadg'u bilig" asarining muallifi kim?
+- Mahmud Koshg'ariy
++ Yusuf Xos Hojib
+- Ahmad Yugnakiy
+- Alisher Navoiy
+= "Qutadg'u bilig" — XI asrda Yusuf Xos Hojib yozgan doston.
+
+@ matematika-6 | 6 | matematika | Ratsional sonlar va tenglamalar
+? −5 + 8 = ?
+- −13
+- −3
++ 3
+- 13
+= 8 − 5 = 3.
+? 0,25 qaysi oddiy kasrga teng?
+- 1/2
++ 1/4
+- 2/5
+- 1/25
+= 0,25 = 25/100 = 1/4.
+? 120 ning 15 foizi nechaga teng?
+- 12
++ 18
+- 15
+- 20
+= 120 · 0,15 = 18.
+? 2x + 5 = 17 tenglamani yeching.
+- 5
++ 6
+- 7
+- 11
+= 2x = 12, x = 6.
+? 12 va 18 sonlarining eng katta umumiy bo'luvchisi (EKUB) nechaga teng?
+- 3
++ 6
+- 9
+- 36
+= 12 = 2·2·3, 18 = 2·3·3; EKUB = 2·3 = 6.
+
+@ fizika-6 | 6 | fizika | Fizikaga kirish
+? Uzunlikning XBS (SI) dagi asosiy birligi qaysi?
+- santimetr
++ metr
+- kilometr
+- millimetr
+= SI da uzunlik metrda o'lchanadi.
+? Tezlik qaysi formula bilan topiladi?
++ v = s / t
+- v = s · t
+- v = t / s
+- v = s + t
+= Tezlik — bosib o'tilgan yo'lning vaqtga nisbati.
+? Avtomobil 3 soatda 180 km yo'l bosdi. Uning tezligi qancha?
+- 50 km/soat
++ 60 km/soat
+- 90 km/soat
+- 540 km/soat
+= v = 180 / 3 = 60 km/soat.
+? Massa nima yordamida o'lchanadi?
+- termometr
++ tarozi
+- spidometr
+- barometr
+= Massani tarozi bilan o'lchaymiz.
+? Xona haroratida qaysi modda gaz holatida bo'ladi?
+- temir
+- suv
++ havo
+- tuz
+= Havo — gazlar aralashmasi.
+
+@ geografiya-6 | 6 | geografiya | Yer qobiqlari
+? Dunyodagi eng baland cho'qqi qaysi?
+- Elbrus
++ Jomolungma (Everest)
+- Kilimanjaro
+- Hazrat Sulton
+= Jomolungma — Himolay tog'larida, 8848 metrdan baland.
+? O'zbekistondagi eng baland nuqta qaysi?
++ Hazrat Sulton cho'qqisi
+- Jomolungma
+- Chimyon
+- Elbrus
+= Hazrat Sulton cho'qqisi Hisor tizmasida joylashgan.
+? O'zbekistonning ikki yirik daryosi qaysilar?
++ Amudaryo va Sirdaryo
+- Volga va Dnepr
+- Nil va Kongo
+- Ob va Yenisey
+= Amudaryo va Sirdaryo Orol dengizi havzasiga oqadi.
+? Geografik kenglik nimadan boshlab hisoblanadi?
++ Ekvatordan
+- Bosh meridiandan
+- Qutbdan
+- Tropikdan
+= Kenglik ekvatordan shimol va janubga hisoblanadi.
+? Atmosfera nima?
++ Yerning havo qobig'i
+- Yerning suv qobig'i
+- Yerning tosh qobig'i
+- Yer yadrosi
+= Atmosfera — Yerni o'rab turgan havo qatlami.
+
+@ tarix-6 | 6 | tarix | Qadimgi dunyo tarixi
+? Qadimgi Misr hukmdorlari qanday atalgan?
++ fir'avn
+- imperator
+- xon
+- konsul
+= Qadimgi Misr podsholari fir'avn deb atalgan.
+? Olimpiya o'yinlari dastlab qayerda o'tkazilgan?
+- Qadimgi Rimda
++ Qadimgi Yunonistonda
+- Qadimgi Misrda
+- Qadimgi Hindistonda
+= Olimpiya o'yinlari Yunonistondagi Olimpiyada o'tkazilgan.
+? "Avesto" qaysi dinning muqaddas kitobi?
+- buddaviylik
++ zardushtiylik
+- xristianlik
+- iudaizm
+= "Avesto" — zardushtiylarning muqaddas kitobi.
+? Buyuk Ipak yo'li qaysi hududlarni bog'lagan?
++ Xitoyni O'rta yer dengizi mamlakatlari bilan
+- Amerika va Yevropani
+- Afrika va Avstraliyani
+- Faqat Yevropa shaharlarini
+= Ipak yo'li Sharq va G'arbni bog'lagan savdo yo'li.
+? Aleksandr Makedonskiy qaysi davlatning podshosi bo'lgan?
+- Fors
++ Makedoniya
+- Rim
+- Misr
+= U Makedoniya podshosi bo'lib, katta saltanat tuzgan.
+
+@ ingliz-tili-6 | 6 | ingliz-tili | Tenses
+? I ___ my homework now.
+- do
++ am doing
+- did
+- does
+= "Now" — present continuous.
+? What is the superlative of "good"?
+- gooder
+- better
++ the best
+- the goodest
+= Good — better — the best.
+? Have you ever ___ to London?
+- go
+- went
++ been
+- going
+= Present perfect: have been.
+? I was born ___ 2012.
++ in
+- on
+- at
+- by
+= We use "in" with years.
+? "Can you help me?" Choose the polite answer.
++ Yes, of course.
+- No, I am.
+- Yes, I do it yesterday.
+- I can't to help.
+= "Yes, of course" is a correct polite answer.
+
+@ ona-tili-7 | 7 | ona-tili | Morfologiya
+? Fe'lning harakat nomi shakli qaysi qo'shimcha bilan yasaladi?
+- -lar
++ -moq
+- -chi
+- -li
+= O'qimoq, yozmoq, kelmoq.
+? Qaysi so'z ravish?
++ hozir
+- hozirgi
+- hozirlik
+- hozirlamoq
+= "Hozir" harakatning paytini bildiradi — ravish.
+? "O'qidi" fe'li qaysi zamonda?
++ o'tgan zamon
+- hozirgi zamon
+- kelasi zamon
+- zamon ko'rsatilmagan
+= -di qo'shimchasi o'tgan zamonni bildiradi.
+? Qaysi so'z ko'makchi?
++ bilan
+- va
+- lekin
+- ham
+= "Bilan" — ko'makchi; "va", "lekin" — bog'lovchi; "ham" — yuklama.
+? Qaysi so'z bog'lovchi?
+- uchun
++ va
+- kabi
+- sari
+= "Va" — biriktiruv bog'lovchisi.
+
+@ adabiyot-7 | 7 | adabiyot | Yangi o'zbek adabiyoti
+? "Kecha va kunduz" romanining muallifi kim?
+- Abdulla Qodiriy
++ Cho'lpon
+- Fitrat
+- Oybek
+= "Kecha va kunduz" — Abdulhamid Cho'lpon romani.
+? "Mehrobdan chayon" romanining muallifi kim?
++ Abdulla Qodiriy
+- Cho'lpon
+- Abdulla Qahhor
+- Oybek
+= Abdulla Qodiriyning ikkinchi romani.
+? G'azal qanday she'r?
++ Baytlardan tuzilgan, qofiyalanadigan lirik she'r
+- To'rt misrali she'r
+- Nasriy asar
+- Sahna asari
+= G'azal baytlardan iborat, qofiya: aa, ba, va...
+? "Shum bola" qissasining muallifi kim?
+- Oybek
++ G'afur G'ulom
+- Hamid Olimjon
+- Abdulla Qahhor
+= "Shum bola" — G'afur G'ulom qissasi.
+? Jonsiz narsaga inson xususiyatini berish qanday badiiy san'at?
+- o'xshatish
++ jonlantirish (tashxis)
+- mubolag'a
+- takror
+= Masalan: "Daraxtlar shivirlaydi".
+
+@ algebra-7 | 7 | algebra | Ko'phadlar
+? (a + b)² = ?
+- a² + b²
++ a² + 2ab + b²
+- a² − 2ab + b²
+- 2a + 2b
+= Yig'indining kvadrati formulasi.
+? 2³ · 2² = ?
+- 2⁶
++ 2⁵
+- 4⁵
+- 2¹
+= Asoslari bir xil darajalar ko'paytirilsa, ko'rsatkichlar qo'shiladi: 3 + 2 = 5.
+? 3x − 7 = 8 bo'lsa, x nechaga teng?
+- 3
++ 5
+- 15
+- 1/5
+= 3x = 15, x = 5.
+? y = 2x + 1 funksiyada x = 3 bo'lsa, y nechaga teng?
+- 6
++ 7
+- 5
+- 9
+= y = 2 · 3 + 1 = 7.
+? x² − 9 ni ko'paytuvchilarga ajrating.
+- (x − 3)²
++ (x − 3)(x + 3)
+- (x + 9)(x − 1)
+- x(x − 9)
+= Kvadratlar ayirmasi: a² − b² = (a − b)(a + b).
+
+@ geometriya-7 | 7 | geometriya | Burchaklar va uchburchaklar
+? Uchburchak ichki burchaklarining yig'indisi necha gradus?
+- 90°
++ 180°
+- 270°
+- 360°
+= Har qanday uchburchakda burchaklar yig'indisi 180°.
+? To'g'ri burchak necha gradus?
+- 45°
++ 90°
+- 180°
+- 360°
+= To'g'ri burchak 90° ga teng.
+? Qo'shni burchaklar yig'indisi necha gradus?
+- 90°
++ 180°
+- 360°
+- 270°
+= Qo'shni burchaklar yoyiq burchakni tashkil etadi.
+? Teng yonli uchburchakda asosdagi burchaklar qanday bo'ladi?
++ Teng bo'ladi
+- Har doim 90° bo'ladi
+- Yig'indisi 90° bo'ladi
+- Har xil bo'ladi
+= Teng yonli uchburchakning asosdagi burchaklari teng.
+? Vertikal burchaklar haqida qaysi gap to'g'ri?
++ Ular teng
+- Yig'indisi 90°
+- Har doim to'g'ri burchak
+- Har doim o'tmas burchak
+= Vertikal burchaklar teng bo'ladi.
+
+@ fizika-7 | 7 | fizika | Kuch, zichlik, bosim
+? Kuchning XBS (SI) dagi birligi qaysi?
+- joul
++ nyuton
+- vatt
+- paskal
+= Kuch nyutonlarda (N) o'lchanadi.
+? Zichlik formulasi qaysi?
++ ρ = m / V
+- ρ = m · V
+- ρ = V / m
+- ρ = F / S
+= Zichlik — massaning hajmga nisbati.
+? Bosim birligi qaysi?
+- nyuton
++ paskal
+- joul
+- vatt
+= 1 Pa = 1 N/m².
+? Yerda erkin tushish tezlanishi taxminan qancha?
+- 1 m/s²
+- 5 m/s²
++ 9,8 m/s²
+- 98 m/s²
+= g ≈ 9,8 m/s².
+? Suvning zichligi taxminan qancha?
+- 100 kg/m³
++ 1000 kg/m³
+- 10 kg/m³
+- 7800 kg/m³
+= Toza suvning zichligi ≈ 1000 kg/m³.
+
+@ kimyo-7 | 7 | kimyo | Kimyoga kirish
+? Suvning kimyoviy formulasi qaysi?
+- CO₂
++ H₂O
+- O₂
+- NaCl
+= Suv molekulasi 2 ta vodorod va 1 ta kislorod atomidan iborat.
+? Kimyoviy elementlar davriy jadvalini kim yaratgan?
+- Lomonosov
++ Mendeleyev
+- Nyuton
+- Lavuazye
+= D. I. Mendeleyev 1869-yilda davriy qonunni kashf etgan.
+? Osh tuzining formulasi qaysi?
+- KCl
++ NaCl
+- CaCO₃
+- H₂SO₄
+= Osh tuzi — natriy xlorid, NaCl.
+? Kislorodning kimyoviy belgisi qaysi?
+- K
++ O
+- Os
+- Ox
+= Kislorod — O.
+? Qaysi biri kimyoviy hodisa?
+- muzning erishi
++ qog'ozning yonishi
+- shishaning sinishi
+- suvning bug'lanishi
+= Yonishda yangi moddalar hosil bo'ladi — bu kimyoviy hodisa.
+
+@ biologiya-7 | 7 | biologiya | Hayvonot olami
+? Hasharotlarning nechta oyog'i bor?
+- 4
++ 6
+- 8
+- 10
+= Hasharotlarning 3 juft, ya'ni 6 ta oyog'i bor.
+? O'rgimchakning nechta oyog'i bor?
+- 6
++ 8
+- 10
+- 4
+= O'rgimchaklar hasharot emas, ularning 8 ta oyog'i bor.
+? Qaysi hayvon sutemizuvchi?
+- akula
++ delfin
+- timsoh
+- pingvin
+= Delfin bolasini sut bilan boqadi va o'pka bilan nafas oladi.
+? Baliqlar nima yordamida nafas oladi?
+- o'pka
++ jabra
+- teri
+- traxeya
+= Baliqlar suvda erigan kislorodni jabralar orqali oladi.
+? Qushlarning tanasi nima bilan qoplangan?
+- tangacha
+- jun
++ pat
+- chig'anoq
+= Qushlarning tanasi pat bilan qoplangan.
+
+@ geografiya-7 | 7 | geografiya | Materiklar
+? Eng katta materik qaysi?
+- Afrika
++ Yevrosiyo
+- Shimoliy Amerika
+- Antarktida
+= Yevrosiyo — eng katta materik.
+? Sahroi Kabir cho'li qaysi materikda?
+- Yevrosiyo
++ Afrika
+- Avstraliya
+- Janubiy Amerika
+= Sahroi Kabir (Sahara) Shimoliy Afrikada.
+? Amazonka daryosi qaysi materikda?
+- Afrika
+- Shimoliy Amerika
++ Janubiy Amerika
+- Avstraliya
+= Amazonka — Janubiy Amerikadagi eng sersuv daryo.
+? Eng sovuq materik qaysi?
+- Yevrosiyo
+- Shimoliy Amerika
++ Antarktida
+- Avstraliya
+= Antarktida deyarli butunlay muz bilan qoplangan.
+? Avstraliya materigi qaysi yarim sharlarda joylashgan?
++ Janubiy va sharqiy
+- Shimoliy va g'arbiy
+- Shimoliy va sharqiy
+- Janubiy va g'arbiy
+= Avstraliya ekvatordan janubda va bosh meridiandan sharqda.
+
+@ ozbekiston-tarixi-7 | 7 | ozbekiston-tarixi | O'rta asrlar
+? Amir Temur qaysi yili tug'ilgan?
+- 1220
++ 1336
+- 1405
+- 1483
+= Amir Temur 1336-yilda Kesh (Shahrisabz) yaqinida tug'ilgan.
+? Chingizxon qo'shinlari Movarounnahrga qachon bostirib kirgan?
+- 1206-yilda
++ 1219–1220-yillarda
+- 1370-yilda
+- 1500-yilda
+= Mo'g'ullar 1219–1220-yillarda O'rta Osiyoni bosib olgan.
+? Mo'g'ul bosqinchilariga qarshi qahramonona kurashgan Xorazmshoh kim?
+- Amir Temur
++ Jaloliddin Manguberdi
+- Bobur
+- Ulug'bek
+= Jaloliddin Manguberdi mo'g'ullarga qarshi kurashgan.
+? Somoniylar davlatining poytaxti qaysi shahar bo'lgan?
+- Samarqand
++ Buxoro
+- Urganch
+- Termiz
+= Somoniylar davrida Buxoro poytaxt bo'lgan.
+? Abu Rayhon Beruniy qaysi yurtda tug'ilgan?
+- Buxoroda
++ Xorazmda
+- Farg'onada
+- Toshkentda
+= Beruniy 973-yilda Xorazmning Kot shahrida tug'ilgan.
+
+@ ingliz-tili-7 | 7 | ingliz-tili | Grammar in use
+? If it rains, we ___ at home.
+- stayed
++ will stay
+- would stay
+- stays
+= First conditional: if + present simple, will + verb.
+? She has lived here ___ 2015.
+- for
++ since
+- from
+- at
+= "Since" + a point in time.
+? I ___ TV when you called.
+- watch
++ was watching
+- have watched
+- will watch
+= An action in progress in the past — past continuous.
+? The letter ___ yesterday.
+- wrote
+- is written
++ was written
+- writes
+= Past simple passive: was/were + past participle.
+? You are a student, ___?
++ aren't you
+- are you
+- don't you
+- isn't it
+= Positive sentence — negative question tag.

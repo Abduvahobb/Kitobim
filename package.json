@@ -1,8 +1,8 @@
 {
   "name": "kitobim",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "private": true,
-  "description": "Kitobim — 1–11-sinf maktab darsliklari va testlar",
+  "description": "Kitobim — 1–11-sinf darsliklari, o‘zbek va ingliz kitoblari, testlar",
   "type": "module",
   "scripts": {
     "dev": "vite",

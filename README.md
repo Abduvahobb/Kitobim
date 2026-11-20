@@ -1,6 +1,8 @@
 # Kitobim
 
-Maktab o‘quvchilari uchun bepul ilova: 1–11-sinf maktab darsliklari (o‘zbek va rus maktablari uchun), testlar va sertifikatlar. Uch tilda: o‘zbek, rus, ingliz.
+Maktab o‘quvchilari uchun bepul ilova: 1–11-sinf maktab darsliklari (o‘zbek va rus maktablari uchun), o‘zbek va ingliz tilidagi kitoblar, testlar va sertifikatlar. Uch tilda: o‘zbek, rus, ingliz.
+
+**Ilova muallifi:** Vahobjonov Abduvahob — Telegram: [@Vakhobov47](https://t.me/Vakhobov47)
 
 ## Yuklab olish
 
@@ -25,7 +27,7 @@ Barcha kitoblar ro‘yxati `public/catalog.json` faylida. Har bir fan ichidagi `
 
 ## Test qo‘shish
 
-Testlar `public/tests.json` faylida. `answer` — to‘g‘ri javobning tartib raqami (0 dan boshlanadi), `why` — izoh. 70% va undan yuqori natija uchun sertifikat beriladi.
+Testlar `tools/testlar/*.txt` fayllarida yoziladi, so‘ng `python3 tools/testlar.py` buyrug‘i ularni `public/tests.json` ga aylantiradi. `answer` — to‘g‘ri javobning tartib raqami (0 dan boshlanadi), `why` — izoh. 70% va undan yuqori natija uchun sertifikat beriladi.
 
 ## Dasturchilar uchun
 
@@ -38,3 +40,7 @@ npm run build    # dist/ papkasiga yig‘ish
 - Veb-ilova: Vite + oddiy JavaScript, PDF o‘quvchi — pdf.js
 - Android: Capacitor (`capacitor.config.json`)
 - Windows: Electron (`desktop/`)
+
+## Kitoblar bo‘limi
+
+`tools/kutubxona.py` — o‘zbek kitoblari (ziyouz.com, faqat mualliflik huquqi muddati o‘tgan asarlar va xalq ijodi) va ingliz tilidagi jamoat mulki kitoblari ro‘yxatini `public/library.json` ga yozadi.

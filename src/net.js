@@ -57,7 +57,11 @@ export const bookPath = (id) => `kitoblar/${id.replace(/[^a-zA-Z0-9._-]/g, '_')}
 // Kitobni olish (Android): telefonda bo'lsa — o'sha yerdan, bo'lmasa yuklab olib saqlaydi.
 export async function nativeBook(book, onProgress) {
   const path = bookPath(book.id);
-  if (await nativeExists(path)) return { buffer: await nativeRead(path), downloaded: true };
+  if (await nativeExists(path)) {
+    const buffer = await nativeRead(path);
+    if (isPdf(buffer)) return { buffer, downloaded: true };
+    await nativeDelete(path); // buzilgan fayl — qayta yuklaymiz
+  }
   if (!isRemote(book.file)) {
     const r = await fetch(book.file);
     if (!r.ok) throw new Error('HTTP ' + r.status);
@@ -71,6 +75,30 @@ export async function nativeBook(book, onProgress) {
       const buffer = await nativeRead(path);
       if (!isPdf(buffer)) throw new Error('PDF emas');
       return { buffer, downloaded: true };
+    } catch (e) {
+      lastErr = e;
+      await nativeDelete(path);
+    }
+  }
+  throw lastErr || new Error('download failed');
+}
+
+// Butun sinfni yuklashda (Android): kitobni xotiraga o'qimasdan faqat telefonga yuklab qo'yadi.
+// Qaytaradi: fayl hajmi (bayt).
+export async function nativeEnsure(book, onProgress) {
+  const path = bookPath(book.id);
+  const size = async () => { try { return (await FS().stat({ path, directory: 'DATA' })).size || 0; } catch (e) { return 0; } };
+  let n = await size();
+  if (n > 20000) return n;
+  if (n) await nativeDelete(path);
+  const urls = bookUrls(book);
+  let lastErr = null;
+  for (let i = 0; i < urls.length; i++) {
+    try {
+      await nativeDownload(urls[i], path, onProgress, i < urls.length - 1);
+      n = await size();
+      if (n > 20000) return n; // juda kichik fayl — xato sahifasi bo'lishi mumkin
+      throw new Error('fayl juda kichik');
     } catch (e) {
       lastErr = e;
       await nativeDelete(path);

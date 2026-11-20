@@ -2,9 +2,9 @@ import './style.css';
 import { STRINGS, LANGS, pick } from './i18n.js';
 import { store } from './store.js';
 import { I, LOGO } from './icons.js';
-import { openReader, esc } from './reader.js';
+import { openReader, esc, ensureSaved } from './reader.js';
 import { drawCertificate, saveImage } from './cert.js';
-import { REMOTE_CATALOG, APP_VERSION, AUTHOR } from './config.js';
+import { REMOTE_CATALOG, REMOTE_LIBRARY, APP_VERSION, AUTHOR } from './config.js';
 import { getJson } from './net.js';
 
 const app = document.getElementById('app');
@@ -12,6 +12,9 @@ const overlay = document.createElement('div');
 document.body.appendChild(overlay);
 
 let catalog = null;
+let catalogBase = '';
+let library = { shelves: [] };  // "Kitoblar" bo'limi: o'zbek va ingliz kitoblari
+let libraryBase = '';
 let tests = { tests: [], passPercent: 70 };
 const books = new Map();      // id -> kitob (fan va sinf ma'lumoti bilan)
 const subjects = new Map();   // id -> fan
@@ -38,8 +41,36 @@ async function loadData() {
   const local = await loadJson(new URL('catalog.json', location.href).href);
   const cached = store.cachedCatalog();
   const useCached = cached && cached.grades && bookCount(cached) >= bookCount(local);
-  indexCatalog(useCached ? cached : local, useCached ? REMOTE_CATALOG : new URL('catalog.json', location.href).href);
+  catalog = useCached ? cached : local;
+  catalogBase = useCached ? REMOTE_CATALOG : new URL('catalog.json', location.href).href;
+  try {
+    const localLib = await loadJson(new URL('library.json', location.href).href);
+    const cachedLib = store.cachedLibrary();
+    const useC = cachedLib && cachedLib.shelves && libCount(cachedLib) >= libCount(localLib);
+    library = useC ? cachedLib : localLib;
+    libraryBase = useC ? REMOTE_LIBRARY : new URL('library.json', location.href).href;
+  } catch (e) { /* kitoblar bo'limisiz ham ishlaydi */ }
+  reindex();
   try { tests = await loadJson(new URL('tests.json', location.href).href); } catch (e) { /* testlarsiz ham ishlaydi */ }
+}
+
+function libCount(l) {
+  let n = 0;
+  for (const s of (l && l.shelves) || []) n += s.books.length;
+  return n;
+}
+
+async function refreshLibrary() {
+  if (!REMOTE_LIBRARY) return;
+  try {
+    const fresh = await getJson(REMOTE_LIBRARY);
+    if (!fresh || !fresh.shelves || !libCount(fresh)) return;
+    if (fresh.updated === library.updated && libCount(fresh) === libCount(library)) return;
+    store.setCachedLibrary(fresh);
+    library = fresh; libraryBase = REMOTE_LIBRARY;
+    reindex();
+    if (/^#\/(books|shelf|home)?$|^#\/(books|shelf)\//.test(location.hash) || !location.hash) render();
+  } catch (e) { /* internet yo'q */ }
 }
 
 async function refreshCatalog() {
@@ -49,14 +80,14 @@ async function refreshCatalog() {
     if (!fresh || !fresh.grades || !bookCount(fresh)) return;
     if (catalog && fresh.updated === catalog.updated && bookCount(fresh) === bookCount(catalog)) return;
     store.setCachedCatalog(fresh);
-    indexCatalog(fresh, REMOTE_CATALOG);
+    catalog = fresh; catalogBase = REMOTE_CATALOG;
+    reindex();
     // O'qish yoki test paytida ekranni almashtirmaymiz
     if (!/^#\/(read|test|cert|login)/.test(location.hash)) render();
   } catch (e) { /* internet yo'q — eski ro'yxat bilan davom etamiz */ }
 }
 
-function indexCatalog(c, base) {
-  catalog = c;
+function reindex() {
   books.clear(); subjects.clear();
   for (const g of catalog.grades) {
     for (const s of g.subjects) {
@@ -64,9 +95,16 @@ function indexCatalog(c, base) {
       subjects.set(s.id, s);
       for (const b of s.books) {
         b.grade = g.grade; b.subject = s.id; b.color = b.color || s.color;
-        b.file = new URL(b.file, base).href;
+        b.file = new URL(b.file, catalogBase).href;
         books.set(b.id, b);
       }
+    }
+  }
+  for (const sh of library.shelves || []) {
+    for (const b of sh.books) {
+      b.shelf = sh.id; b.color = b.color || sh.color;
+      b.file = new URL(b.file, libraryBase || location.href).href;
+      books.set(b.id, b);
     }
   }
 }
@@ -84,6 +122,7 @@ function nav(active) {
   const items = [
     ['home', '#/home', I.home(), t().home],
     ['school', '#/school', I.school(), t().school],
+    ['books', '#/books', I.book(), t().booksTab],
     ['library', '#/library', I.library(), t().library],
     ['tests', '#/tests', I.test(), t().tests],
     ['profile', '#/profile', I.user(), t().profile]
@@ -117,14 +156,16 @@ function gradeGrid(selected, hrefFor) {
   return h + '</div>';
 }
 
-function authorCard() {
+// "Ilova muallifi" bo'limi
+function authorSection() {
   const s = t();
-  return `<section class="card row" style="gap:14px">
-    <span class="badge" style="background:#1B2A41">${I.user(20)}</span>
-    <span class="grow col" style="gap:2px"><span class="sub" style="font-size:12px">${s.author}</span>
-      <b style="font-size:16px">${esc(AUTHOR.name)}</b>
-      <a href="https://t.me/${AUTHOR.telegram}" class="row" style="gap:6px;font-size:14px;font-weight:600;text-decoration:none;min-height:32px">${I.telegram(18)}Telegram: @${AUTHOR.telegram}</a></span>
-  </section>`;
+  return `<section class="col" style="gap:10px" aria-labelledby="authorH"><h2 id="authorH">${s.appAuthor}</h2>
+    <div class="card row" style="gap:14px">
+    <span class="badge" style="background:#1B2A41;width:48px;height:48px;border-radius:24px">${I.user(22)}</span>
+    <span class="grow col" style="gap:2px">
+      <b style="font-size:17px">${esc(AUTHOR.name)}</b>
+      <a href="https://t.me/${AUTHOR.telegram}" target="_blank" rel="noopener" class="row" style="gap:6px;font-size:15px;font-weight:600;text-decoration:none;min-height:36px">${I.telegram(18)}Telegram: @${AUTHOR.telegram}</a></span>
+  </div></section>`;
 }
 
 // ---------- Ekranlar ----------
@@ -150,7 +191,7 @@ function scrLogin() {
       <button class="btn" type="submit">${s.start}</button>
     </form>
     <p class="sub" style="font-size:12px;text-align:center">${s.terms}</p>
-    <p class="sub" style="font-size:12px;text-align:center">${s.author}: ${esc(AUTHOR.name)} · <a href="https://t.me/${AUTHOR.telegram}">@${AUTHOR.telegram}</a></p></main>`;
+    <p class="sub" style="font-size:12px;text-align:center">${s.appAuthor}: ${esc(AUTHOR.name)} · Telegram: <a href="https://t.me/${AUTHOR.telegram}" target="_blank" rel="noopener">@${AUTHOR.telegram}</a></p></main>`;
 
   app.querySelectorAll('[data-lang]').forEach((b) => b.onclick = () => { store.setLang(b.dataset.lang); scrLogin(); });
   app.querySelectorAll('[data-g]').forEach((b) => b.onclick = () => {
@@ -200,6 +241,10 @@ function scrHome() {
         ${gradeGrid(store.user.grade, (g) => '#/school/' + g)}</section>
       <section class="col" style="gap:10px"><h2>${store.user.grade}-${s.subjectsOf}</h2>
         ${subjectGrid(gradeSubjects(store.user.grade))}</section>
+      ${libCount(library) ? `<section class="col" style="gap:10px"><div class="row between"><h2>${s.booksTitle}</h2>
+        <button class="pill" data-go="#/books" style="height:36px">${s.all}</button></div>
+        <div class="subj-grid">${library.shelves.slice(0, 4).map((sh) => shelfTile(sh)).join('')}</div></section>` : ''}
+      ${authorSection()}
     </div></main>${nav('home')}`;
 
   const q = app.querySelector('#q');
@@ -214,7 +259,9 @@ function scrHome() {
         <span class="badge" style="background:${sb.color}">${esc(pick(sb.name, L())[0])}</span>
         <span class="grow col" style="gap:2px"><span class="t">${esc(pick(sb.name, L()))}</span><span class="s">${sb.grade}-${s.grade}</span></span>${I.chevron(20)}</button>`);
     }
-    for (const b of books.values()) if (bookTitle(b).toLowerCase().includes(v)) found.push(bookItem(b));
+    for (const b of books.values()) {
+      if (bookTitle(b).toLowerCase().includes(v) || (b.author && pick(b.author, L()).toLowerCase().includes(v))) found.push(bookItem(b));
+    }
     res.innerHTML = found.slice(0, 40).join('') || `<div class="empty">—</div>`;
   };
 }
@@ -250,19 +297,120 @@ function subjectGrid(list) {
     }).join('')}</div>` : `<div class="card empty">${s.soon}</div>`;
 }
 
+// ---------- Butun sinfni yuklab olish ----------
+let bulk = null; // { key, list, i, frac, ok, fail, running, stop }
+function gradeBooks(g) {
+  const out = [];
+  for (const sb of gradeSubjects(g)) for (const b of sb.books) if (!b.lang || b.lang === schoolLang()) out.push(b);
+  return out;
+}
+function bulkKey(g) { return g + ':' + schoolLang(); }
+function bulkCard(g) {
+  const s = t();
+  const list = gradeBooks(g);
+  if (!list.length) return '';
+  const left = list.filter((b) => !store.isSaved(b.id));
+  const mb = (left.reduce((a, b) => a + (b.size || 0), 0) / 1048576).toFixed(0);
+  const on = bulk && bulk.running && bulk.key === bulkKey(g);
+  if (on) {
+    const pct = Math.round(((bulk.i + bulk.frac) / bulk.list.length) * 100);
+    return `<div class="card col" id="bulk" style="gap:10px">
+      <div class="row between"><b>${s.downloading}: <span id="bulkN">${bulk.i + 1}/${bulk.list.length}</span></b><span class="sub" id="bulkP">${pct}%</span></div>
+      <span class="bar" style="flex:none;height:8px;display:block"><i id="bulkBar" style="width:${pct}%"></i></span>
+      <button class="btn ghost" data-bulkstop style="height:44px">${s.cancel}</button></div>`;
+  }
+  if (!left.length) return `<div class="card row" style="gap:10px;color:#145A39;background:#E6F4EC;border-color:#BFE3CC">${I.check(20)}<span style="font-size:14px">${s.allSaved}</span></div>`;
+  const last = bulk && !bulk.running && bulk.key === bulkKey(g) && bulk.fail ? `<span class="sub" style="font-size:13px">${bulk.ok} ${s.savedCount} · ${bulk.fail} ${s.failedCount}</span>` : '';
+  return `<div class="card col" id="bulk" style="gap:10px">
+    <button class="btn soft" data-bulk="${g}">${I.download(20)}${s.downloadGrade}</button>
+    <span class="sub" style="font-size:13px;text-align:center">${left.length} ${s.books} · ${mb} MB · ${s.downloadGradeHint}</span>${last}</div>`;
+}
+async function startBulk(g) {
+  const list = gradeBooks(g).filter((b) => !store.isSaved(b.id));
+  if (!list.length) return;
+  bulk = { key: bulkKey(g), list, i: 0, frac: 0, ok: 0, fail: 0, running: true, stop: false };
+  render();
+  for (bulk.i = 0; bulk.i < list.length && !bulk.stop; bulk.i++) {
+    bulk.frac = 0; updateBulk();
+    try {
+      await ensureSaved(list[bulk.i], (f) => { bulk.frac = f; updateBulk(); });
+      bulk.ok++;
+    } catch (e) { bulk.fail++; }
+  }
+  bulk.i = Math.min(bulk.i, list.length - 1);
+  bulk.running = false;
+  if (/^#\/school/.test(location.hash) || /^#\/home/.test(location.hash)) render();
+}
+function updateBulk() {
+  const n = document.getElementById('bulkN'), p = document.getElementById('bulkP'), bar = document.getElementById('bulkBar');
+  if (!n || !bulk) return;
+  const pct = Math.round(((bulk.i + bulk.frac) / bulk.list.length) * 100);
+  n.textContent = `${bulk.i + 1}/${bulk.list.length}`; p.textContent = pct + '%'; bar.style.width = pct + '%';
+}
+
 function scrSchool(g) {
   const s = t();
   g = g || store.user.grade || 5;
-  const gr = catalog.grades.find((x) => x.grade === g);
   const list = gradeSubjects(g);
   app.innerHTML = `<main class="screen">
     <div class="col" style="gap:4px"><h1>${s.schoolBooks}</h1><p class="sub">${s.chooseGrade}</p></div>
     ${gradeGrid(g, (n) => '#/school/' + n)}
     ${schoolPills()}
+    ${bulkCard(g)}
     <h2>${g}-${s.subjectsOf}</h2>
     ${subjectGrid(list)}
   </main>${nav('school')}`;
   bindSchoolPills();
+  const b = app.querySelector('[data-bulk]');
+  if (b) b.onclick = () => startBulk(+b.dataset.bulk);
+  const st = app.querySelector('[data-bulkstop]');
+  if (st) st.onclick = () => { if (bulk) bulk.stop = true; st.disabled = true; };
+}
+
+// ---------- Kitoblar bo'limi (o'zbek va ingliz) ----------
+function booksLang() { return (store.user && store.user.booksLang) || (L() === 'en' ? 'en' : 'uz'); }
+function shelfTile(sh) {
+  return `<button class="subj" data-go="#/shelf/${sh.id}">
+    <span class="badge" style="background:${sh.color}">${I.book(20)}</span>
+    <span class="col" style="gap:2px;min-width:0"><span class="name">${esc(pick(sh.name, L()))}</span>
+    <span class="cnt">${sh.books.length} ${t().nBooks}</span></span></button>`;
+}
+function scrBooks() {
+  const s = t();
+  const lg = booksLang();
+  const shelves = (library.shelves || []).filter((sh) => sh.lang === lg);
+  app.innerHTML = `<main class="screen">
+    <div class="col" style="gap:4px"><h1>${s.booksTitle}</h1><p class="sub">${s.booksIntro}</p></div>
+    <div class="pills" role="group" aria-label="${s.language}">${[['uz', s.langUz], ['en', s.langEn]].map(([k, lb]) =>
+      `<button class="pill green" data-blang="${k}" aria-pressed="${k === lg}">${lb}</button>`).join('')}</div>
+    ${shelves.length ? shelves.map((sh) => `<section class="col" style="gap:10px">
+      <div class="row between"><h2>${esc(pick(sh.name, L()))}</h2>
+        <button class="pill" data-go="#/shelf/${sh.id}" style="height:36px">${s.all} · ${sh.books.length}</button></div>
+      <div class="list">${sh.books.slice(0, 3).map((b) => bookItem(b)).join('')}</div></section>`).join('')
+      : `<div class="card empty">${s.soon}</div>`}
+  </main>${nav('books')}`;
+  app.querySelectorAll('[data-blang]').forEach((b) => b.onclick = () => {
+    store.setUser(Object.assign({}, store.user, { booksLang: b.dataset.blang })); render();
+  });
+}
+function scrShelf(id) {
+  const s = t();
+  const sh = (library.shelves || []).find((x) => x.id === id);
+  if (!sh) return go('#/books');
+  const src = [...new Set(sh.books.map((b) => b.source).filter(Boolean))].join(', ');
+  app.innerHTML = `<main class="screen">
+    ${backBar(pick(sh.name, L()), sh.books.length + ' ' + s.nBooks)}
+    <label class="card row" style="padding:0 14px;height:50px;gap:10px">${I.search(20)}<span class="sr">${s.filter}</span>
+      <input id="f" type="search" placeholder="${s.filter}" style="border:0;outline:none;background:transparent;flex:1;min-width:0;font-size:15px"></label>
+    <div class="list" id="shelfList">${sh.books.map((b) => bookItem(b)).join('')}</div>
+    ${src ? `<p class="sub" style="font-size:12px;text-align:center">${s.source}: ${esc(src)}</p>` : ''}
+  </main>${nav('books')}`;
+  const f = app.querySelector('#f');
+  f.oninput = () => {
+    const v = f.value.trim().toLowerCase();
+    const list = sh.books.filter((b) => !v || bookTitle(b).toLowerCase().includes(v) || (b.author || '').toLowerCase().includes(v));
+    app.querySelector('#shelfList').innerHTML = list.map((b) => bookItem(b)).join('') || '<div class="empty">—</div>';
+  };
 }
 
 function scrSubject(id) {
@@ -310,14 +458,18 @@ function scrLibrary() {
   app.querySelectorAll('[data-del]').forEach((b) => b.onclick = async () => { await store.removeFile(b.dataset.del); scrLibrary(); });
 }
 
-function scrTests() {
+function scrTests(g) {
   const s = t();
-  const list = tests.tests.slice().sort((a, b) => (a.grade === store.user.grade ? -1 : 0) - (b.grade === store.user.grade ? -1 : 0));
+  g = g || store.user.grade || 5;
+  const list = tests.tests.filter((x) => x.grade === g);
+  const done = new Set(store.certs.map((c) => c.test));
   app.innerHTML = `<main class="screen">
     <div class="col" style="gap:4px"><h1>${s.tests}</h1><p class="sub">${s.testsIntro}</p></div>
+    ${gradeGrid(g, (n) => '#/tests/' + n)}
+    ${L() !== 'uz' ? `<p class="sub" style="font-size:13px">${s.testsLangNote}</p>` : ''}
     <div class="list">${list.map((x) => `<button class="item" data-go="#/test/${x.id}">
       <span class="badge" style="background:${(subjects.get(x.subject) || {}).color || '#0F7A64'}">${I.test(20)}</span>
-      <span class="grow col" style="gap:2px"><span class="t">${esc(pick(x.title, L()))}</span><span class="s">${x.questions.length} ${s.questions}</span></span>${I.chevron(20)}</button>`).join('') || `<div class="card empty">${s.soon}</div>`}</div>
+      <span class="grow col" style="gap:2px"><span class="t">${esc(pick(x.title, L()))}</span><span class="s">${x.questions.length} ${s.questions}${done.has(x.id) ? ' · ' + s.correct + ' ✓' : ''}</span></span>${I.chevron(20)}</button>`).join('') || `<div class="card empty">${s.soon}</div>`}</div>
   </main>${nav('tests')}`;
 }
 
@@ -326,14 +478,22 @@ function scrTest(id) {
   const s = t();
   const tt = tests.tests.find((x) => x.id === id);
   if (!tt) return go('#/tests');
-  if (!run || run.id !== id) run = { id, i: 0, picked: null, right: 0, done: false, certId: null };
+  if (!run || run.id !== id) {
+    // Javob variantlari har safar aralashtiriladi
+    const order = tt.questions.map((q) => {
+      const a = q.options.map((_, k) => k);
+      for (let k = a.length - 1; k > 0; k--) { const j = Math.floor(Math.random() * (k + 1)); [a[k], a[j]] = [a[j], a[k]]; }
+      return a;
+    });
+    run = { id, i: 0, picked: null, right: 0, done: false, certId: null, order };
+  }
   const title = pick(tt.title, L());
 
   if (run.done) {
     const pct = Math.round((run.right / tt.questions.length) * 100);
     const pass = pct >= (tests.passPercent || 70);
     app.innerHTML = `<main class="screen no-nav" style="text-align:center">
-      <div class="row"><button class="icon-btn" data-go="#/tests" aria-label="${s.back}">${I.close()}</button></div>
+      <div class="row"><button class="icon-btn" data-go="#/tests/${tt.grade}" aria-label="${s.back}">${I.close()}</button></div>
       <div class="score ${pass ? '' : 'low'}">${run.right}/${tt.questions.length}</div>
       <h1>${pass ? s.congrats : s.result + ': ' + pct + '%'}</h1>
       <p class="sub" style="font-size:15px">${pass ? s.passed : s.failed}</p>
@@ -354,8 +514,9 @@ function scrTest(id) {
       <span class="bar"><i style="width:${(run.i / tt.questions.length) * 100}%"></i></span></div>
     <div class="card col" style="gap:6px;padding:20px"><span style="font-size:12px;font-weight:600;color:#0F7A64">${s.question}</span>
       <h2 style="font-size:21px;line-height:1.35">${esc(q.q)}</h2></div>
-    <div class="list">${q.options.map((o, k) => {
-      let cls = '', note = '', mark = 'ABCD'[k];
+    <div class="list">${run.order[run.i].map((k, pos) => {
+      const o = q.options[k];
+      let cls = '', note = '', mark = 'ABCD'[pos];
       if (answered && k === q.answer) { cls = 'right'; note = s.correct; mark = I.check(18); }
       else if (answered && k === run.picked) { cls = 'wrong'; note = s.yourAnswer; mark = I.x(18); }
       return `<button class="opt ${cls}" data-opt="${k}" ${answered ? 'aria-disabled="true"' : ''}><span class="k">${mark}</span>${esc(o)}${note ? `<span class="note">${note}</span>` : ''}</button>`;
@@ -419,7 +580,7 @@ function scrProfile() {
     <section class="col" style="gap:10px"><h2>${s.schoolLang}</h2>${schoolPills()}</section>
     <section class="col" style="gap:10px"><h2>${s.yourGrade}</h2>
       <div class="grade-grid">${Array.from({ length: 11 }, (_, i) => i + 1).map((g) => `<button class="grade" data-g="${g}" aria-pressed="${g === u.grade}">${g}</button>`).join('')}</div></section>
-    ${authorCard()}
+    ${authorSection()}
     <button class="btn ghost" data-logout>${I.logout(20)}${s.logout}</button>
     <p class="sub" style="text-align:center;font-size:12px">${s.about} · v${APP_VERSION}</p></main>${nav('profile')}`;
   app.querySelectorAll('[data-lang]').forEach((b) => b.onclick = () => { store.setLang(b.dataset.lang); render(); });
@@ -443,7 +604,9 @@ function render() {
     case 'subject': return scrSubject(a);
     case 'read': return scrRead(a);
     case 'library': return scrLibrary();
-    case 'tests': return scrTests();
+    case 'tests': return scrTests(a ? +a : 0);
+    case 'books': return scrBooks();
+    case 'shelf': return scrShelf(a);
     case 'test': return scrTest(a);
     case 'cert': return scrCert(a);
     case 'profile': return scrProfile();
@@ -460,5 +623,5 @@ document.addEventListener('click', (e) => {
 window.addEventListener('hashchange', render);
 
 loadData()
-  .then(() => { render(); refreshCatalog(); })
+  .then(() => { render(); refreshCatalog(); refreshLibrary(); })
   .catch((e) => { console.error(e); app.innerHTML = `<main class="screen no-nav"><div class="card empty">${t().loadError}</div></main>`; });

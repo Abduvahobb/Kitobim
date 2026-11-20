@@ -1,0 +1,513 @@
+# Format: "@ id | sinf | fan | mavzu"; "? savol"; "+ to'g'ri javob"; "- noto'g'ri javob"; "= izoh"
+
+@ ona-tili-1 | 1 | ona-tili | Harflar va tovushlar
+? O'zbek lotin alifbosida nechta unli harf bor?
+- 5
++ 6
+- 7
+- 8
+= Unli harflar: a, e, i, o, u, o' — jami 6 ta.
+? Qaysi so'z unli tovush bilan boshlanadi?
+- kitob
+- maktab
++ olma
+- daftar
+= "Olma" so'zi "o" unlisi bilan boshlanadi.
+? "Ona" so'zida nechta bo'g'in bor?
+- 1
++ 2
+- 3
+- 4
+= o-na: so'zdagi bo'g'inlar soni unlilar soniga teng.
+? Gap qanday harf bilan boshlanadi?
++ Bosh harf bilan
+- Kichik harf bilan
+- Raqam bilan
+- Tinish belgisi bilan
+= Har bir gap bosh harf bilan boshlanadi.
+? Qaysi biri ikki harf bilan yoziladigan bitta tovush?
+- ab
++ sh
+- ka
+- to
+= sh, ch, ng — ikki harf bilan yoziladigan tovushlar.
+
+@ matematika-1 | 1 | matematika | Qo'shish va ayirish
+? 7 + 2 = ?
+- 8
++ 9
+- 10
+- 6
+= 7 ga 2 ni qo'shsak, 9 bo'ladi.
+? 10 − 4 = ?
++ 6
+- 5
+- 7
+- 4
+= 10 dan 4 ni ayirsak, 6 qoladi.
+? Qaysi son 8 dan katta?
+- 5
+- 7
++ 9
+- 3
+= 9 soni 8 dan bitta ortiq.
+? 3 + 3 + 3 = ?
+- 6
++ 9
+- 12
+- 8
+= 3 + 3 = 6, 6 + 3 = 9.
+? Uchburchakning nechta burchagi bor?
+- 2
++ 3
+- 4
+- 5
+= Uchburchakning 3 ta burchagi va 3 ta tomoni bor.
+
+@ olam-1 | 1 | atrofimizdagi-olam | Atrofimizdagi olam
+? Yilda nechta fasl bor?
+- 3
++ 4
+- 5
+- 12
+= Bahor, yoz, kuz va qish — 4 fasl.
+? Haftada necha kun bor?
+- 5
+- 6
++ 7
+- 10
+= Dushanbadan yakshanbagacha — 7 kun.
+? Qaysi biri uy hayvoni?
+- bo'ri
+- tulki
++ sigir
+- ayiq
+= Sigir — uy hayvoni, qolganlari yovvoyi hayvonlar.
+? Qishdan keyin qaysi fasl keladi?
+- kuz
++ bahor
+- yoz
+- yana qish
+= Fasllar tartibi: qish, bahor, yoz, kuz.
+? O'simliklar o'sishi uchun nima kerak?
++ Suv, yorug'lik va havo
+- Faqat qorong'ilik
+- Faqat tuz
+- Hech narsa kerak emas
+= O'simliklar suv, yorug'lik va havo bilan o'sadi.
+
+@ ingliz-tili-1 | 1 | ingliz-tili | First words
+? How many letters are there in the English alphabet?
+- 24
++ 26
+- 28
+- 33
+= The English alphabet has 26 letters, from A to Z.
+? Which word is a colour?
++ red
+- cat
+- run
+- big
+= Red is a colour.
+? One, two, three... What comes next?
+- five
++ four
+- six
+- ten
+= One, two, three, four.
+? What is "kitob" in English?
+- pen
++ book
+- bag
+- desk
+= Kitob — book.
+? Which word is an animal?
++ dog
+- apple
+- chair
+- blue
+= A dog is an animal.
+
+@ ona-tili-2 | 2 | ona-tili | So'z va gap
+? Qaysi so'z narsaning nomini bildiradi?
++ daftar
+- chiroyli
+- yugurdi
+- tez
+= "Daftar" narsaning nomi — u ot.
+? "Kitob" so'zining ko'plik shakli qanday?
+- kitobla
++ kitoblar
+- kitobi
+- kitobda
+= Ko'plik -lar qo'shimchasi bilan yasaladi: kitoblar.
+? Qaysi so'z belgini bildiradi?
+- uy
++ qizil
+- o'qidi
+- bola
+= "Qizil" narsaning belgisini (rangini) bildiradi.
+? So'roq gap oxirida qaysi belgi qo'yiladi?
+- nuqta
+- vergul
++ so'roq belgisi
+- tire
+= So'roq gap oxirida so'roq belgisi (?) qo'yiladi.
+? Qaysi so'z bo'g'inlarga to'g'ri ajratilgan?
+- ma-kt-ab
++ mak-tab
+- m-aktab
+- makt-ab
+= maktab: mak-tab — har bir bo'g'inda bitta unli bor.
+
+@ matematika-2 | 2 | matematika | 100 ichida hisob
+? 35 + 27 = ?
+- 52
++ 62
+- 61
+- 72
+= 35 + 27 = 62.
+? 4 × 5 = ?
+- 9
+- 15
++ 20
+- 25
+= 4 ni 5 marta qo'shsak, 20 bo'ladi.
+? 1 metr necha santimetr?
+- 10
++ 100
+- 1000
+- 50
+= 1 m = 100 sm.
+? 50 − 18 = ?
+- 42
+- 38
++ 32
+- 22
+= 50 − 18 = 32.
+? Kvadratning nechta tomoni bor?
+- 3
++ 4
+- 5
+- 6
+= Kvadratning 4 ta teng tomoni bor.
+
+@ tabiiy-fanlar-2 | 2 | tabiiy-fanlar | Tabiat hodisalari
+? Suv qanday holatlarda bo'ladi?
++ Qattiq, suyuq va gaz holatida
+- Faqat suyuq holatda
+- Faqat qattiq holatda
+- Faqat gaz holatida
+= Muz — qattiq, suv — suyuq, bug' — gaz holat.
+? Quyosh qaysi tomondan chiqadi?
+- g'arbdan
++ sharqdan
+- shimoldan
+- janubdan
+= Quyosh sharqdan chiqib, g'arbga botadi.
+? Qaysi biri hasharot?
+- chumchuq
++ kapalak
+- baliq
+- quyon
+= Kapalak — hasharot, uning 6 ta oyog'i bor.
+? Odam nafas olganda havodagi qaysi gaz kerak?
++ kislorod
+- is gazi
+- vodorod
+- geliy
+= Odam va hayvonlar nafas olish uchun kislorod kerak.
+? Suv necha gradusda muzlaydi?
++ 0 °C
+- 10 °C
+- 100 °C
+- 50 °C
+= Toza suv 0 °C da muzlaydi.
+
+@ ingliz-tili-2 | 2 | ingliz-tili | Simple sentences
+? I ___ a pupil.
++ am
+- is
+- are
+- be
+= I am, he/she/it is, we/you/they are.
+? What is the plural of "cat"?
+- cat
++ cats
+- cates
+- caties
+= Most nouns take -s in the plural: cats.
+? What is "olma" in English?
+- orange
++ apple
+- banana
+- pear
+= Olma — apple.
+? How many days are there in a week?
+- five
+- six
++ seven
+- eight
+= A week has seven days.
+? Which word is a number?
++ ten
+- tree
+- tea
+- tent
+= Ten is a number (10).
+
+@ ona-tili-3 | 3 | ona-tili | Gap bo'laklari
+? Gapning bosh bo'laklari qaysilar?
++ Ega va kesim
+- Aniqlovchi va hol
+- To'ldiruvchi va hol
+- Aniqlovchi va to'ldiruvchi
+= Gapning bosh bo'laklari — ega va kesim.
+? "Bola kitob o'qidi." gapida ega qaysi?
++ bola
+- kitob
+- o'qidi
+- gapda ega yo'q
+= Kim o'qidi? — bola. Bu ega.
+? Qaysi so'z harakatni bildiradi?
+- daraxt
+- katta
++ yozdi
+- besh
+= "Yozdi" harakatni bildiradi — u fe'l.
+? "Katta" so'zining zid ma'noli so'zi (antonimi) qaysi?
+- ulkan
++ kichik
+- baland
+- uzun
+= Katta — kichik: ma'nolari zid so'zlar.
+? "Chiroyli" so'ziga ma'nodosh (sinonim) so'z qaysi?
+- xunuk
++ go'zal
+- katta
+- sekin
+= Chiroyli — go'zal: ma'nosi yaqin so'zlar.
+
+@ matematika-3 | 3 | matematika | Ko'paytirish va bo'lish
+? 6 × 7 = ?
+- 36
++ 42
+- 48
+- 49
+= 6 × 7 = 42.
+? 72 : 8 = ?
+- 8
++ 9
+- 7
+- 6
+= 8 × 9 = 72, demak 72 : 8 = 9.
+? 1 soat necha daqiqa?
+- 30
++ 60
+- 100
+- 24
+= 1 soat = 60 daqiqa.
+? To'g'ri to'rtburchakning tomonlari 5 sm va 3 sm. Uning perimetri qancha?
+- 8 sm
+- 15 sm
++ 16 sm
+- 30 sm
+= P = 2 · (5 + 3) = 16 sm.
+? 300 + 450 = ?
+- 650
++ 750
+- 700
+- 850
+= 300 + 450 = 750.
+
+@ tabiiy-fanlar-3 | 3 | tabiiy-fanlar | Yer va tirik tabiat
+? Yer Quyosh atrofini qancha vaqtda aylanib chiqadi?
+- 1 kunda
+- 1 oyda
++ 1 yilda
+- 1 haftada
+= Yer Quyosh atrofini bir yilda aylanib chiqadi.
+? O'simlikning qaysi qismi tuproqdan suv shimadi?
+- barg
+- gul
++ ildiz
+- meva
+= Ildiz tuproqdan suv va mineral moddalarni shimadi.
+? Qaysi hayvon sutemizuvchi?
++ ot
+- tovuq
+- ilon
+- baqa
+= Ot bolasini sut bilan boqadi — u sutemizuvchi.
+? Kompas strelkasining ko'k (yoki qora) uchi qaysi tomonni ko'rsatadi?
++ shimolni
+- sharqni
+- g'arbni
+- faqat pastni
+= Kompas strelkasi shimol tomonni ko'rsatadi.
+? Qaysi biri tirik organizm emas?
+- daraxt
+- mushuk
++ tosh
+- qo'ziqorin
+= Tosh o'smaydi, oziqlanmaydi va ko'paymaydi.
+
+@ ingliz-tili-3 | 3 | ingliz-tili | To be
+? She ___ my sister.
+- am
++ is
+- are
+- be
+= He, she, it — is.
+? There ___ three apples on the table.
+- is
++ are
+- am
+- be
+= With plural nouns we use "there are".
+? What is the opposite of "big"?
+- tall
++ small
+- long
+- old
+= Big — small.
+? It is 7:00. It's ___ o'clock.
+- six
++ seven
+- eight
+- eleven
+= 7:00 — seven o'clock.
+? Which word is a day of the week?
+- March
++ Monday
+- summer
+- morning
+= Monday is a day of the week.
+
+@ ona-tili-4 | 4 | ona-tili | So'z turkumlari
+? Qaysi so'z son turkumiga kiradi?
++ yetti
+- yashil
+- yugur
+- yer
+= "Yetti" sanoqni bildiradi — u son.
+? Qaysi so'z olmosh?
++ men
+- mehnat
+- mehribon
+- mevali
+= "Men" — kishilik olmoshi.
+? "Bolalar maktabga ketdi." gapida kesim qaysi?
+- bolalar
+- maktabga
++ ketdi
+- gapda kesim yo'q
+= Bolalar nima qildi? — ketdi. Bu kesim.
+? Undalma gapda qanday ajratiladi?
++ Vergul bilan
+- Qavs bilan
+- Ikki nuqta bilan
+- Ajratilmaydi
+= Undalma gapda vergul bilan ajratiladi: "Aziz do'stim, kel."
+? Qaysi so'z qo'shma so'z?
+- maktab
++ belbog'
+- o'quvchi
+- gulchi
+= Belbog' ikki o'zakdan tuzilgan: bel + bog'.
+
+@ matematika-4 | 4 | matematika | Ko'p xonali sonlar va kasrlar
+? 125 × 4 = ?
+- 400
++ 500
+- 450
+- 520
+= 125 × 4 = 500.
+? 1 kilogramm necha gramm?
+- 100
++ 1000
+- 10
+- 10 000
+= 1 kg = 1000 g.
+? 3/4 kasrning surati qaysi son?
++ 3
+- 4
+- 7
+- 12
+= Kasr chizig'ining ustidagi son — surat.
+? Kvadratning tomoni 6 sm. Uning yuzi qancha?
+- 24 sm²
++ 36 sm²
+- 12 sm²
+- 30 sm²
+= S = 6 · 6 = 36 sm².
+? 1000 − 365 = ?
+- 735
++ 635
+- 645
+- 665
+= 1000 − 365 = 635.
+
+@ tabiiy-fanlar-4 | 4 | tabiiy-fanlar | Quyosh sistemasi va tabiat
+? Quyosh sistemasida nechta sayyora bor?
+- 7
++ 8
+- 9
+- 10
+= Merkuriy, Venera, Yer, Mars, Yupiter, Saturn, Uran, Neptun — 8 ta sayyora.
+? Yerning tabiiy yo'ldoshi qaysi?
++ Oy
+- Mars
+- Quyosh
+- Venera
+= Oy — Yerning yagona tabiiy yo'ldoshi.
+? Dengiz sathida suv necha gradusda qaynaydi?
+- 50 °C
+- 80 °C
++ 100 °C
+- 200 °C
+= Odatdagi bosimda suv 100 °C da qaynaydi.
+? Yashil barglarda quyosh nuri yordamida oziq moddalar hosil bo'lishi nima deyiladi?
+- nafas olish
++ fotosintez
+- bug'lanish
+- changlanish
+= Bu jarayon fotosintez deyiladi.
+? O'zbekistonning poytaxti qaysi shahar?
+- Samarqand
+- Buxoro
++ Toshkent
+- Andijon
+= O'zbekiston Respublikasining poytaxti — Toshkent.
+
+@ ingliz-tili-4 | 4 | ingliz-tili | Past and present
+? Yesterday I ___ to school.
+- go
+- goes
++ went
+- going
+= "Yesterday" — past simple: go → went.
+? ___ you like ice cream?
++ Do
+- Does
+- Is
+- Are
+= Questions with "you" in present simple start with "Do".
+? Look! The children ___ in the garden.
++ are playing
+- play
+- plays
+- played
+= "Look!" shows an action happening now — present continuous.
+? What is the plural of "child"?
+- childs
++ children
+- childes
+- childrens
+= Child — children (irregular plural).
+? Which month comes after May?
+- April
++ June
+- July
+- March
+= May is followed by June.

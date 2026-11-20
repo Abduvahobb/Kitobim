@@ -3,7 +3,7 @@ import * as pdfjsLib from 'pdfjs-dist/legacy/build/pdf';
 import workerUrl from 'pdfjs-dist/legacy/build/pdf.worker.min.js?url';
 import { store } from './store.js';
 import { I } from './icons.js';
-import { isNative, nativeBook, fetchBook as netFetchBook } from './net.js';
+import { isNative, nativeBook, nativeEnsure, fetchBook as netFetchBook } from './net.js';
 
 pdfjsLib.GlobalWorkerOptions.workerSrc = workerUrl;
 
@@ -19,6 +19,18 @@ export async function fetchBook(book, onProgress) {
   const local = await store.loadFile(book.id);
   if (local) return local;
   return netFetchBook(book, onProgress);
+}
+
+// Kitobni qurilmaga saqlab qo'yish (ochmasdan) — "butun sinfni yuklab olish" uchun
+export async function ensureSaved(book, onProgress) {
+  if (isNative()) {
+    const size = await nativeEnsure(book, onProgress);
+    store.markSaved(book.id, { title: book.title, color: book.color, size });
+    return;
+  }
+  if (store.isSaved(book.id)) return;
+  const buf = await netFetchBook(book, onProgress);
+  await store.saveFile(book.id, { title: book.title, color: book.color }, buf);
 }
 
 export function openReader(root, book, title, t, onClose, toast) {

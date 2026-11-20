@@ -1,40 +1,5320 @@
 {
-  "version": 1,
-  "passPercent": 70,
-  "tests": [
+ "version": 2,
+ "passPercent": 70,
+ "tests": [
+  {
+   "id": "ona-tili-1",
+   "grade": 1,
+   "subject": "1-ona-tili",
+   "title": {
+    "uz": "Ona tili, 1-sinf: Harflar va tovushlar",
+    "ru": "Родной язык, 1 класс",
+    "en": "Native language, Grade 1"
+   },
+   "questions": [
     {
-      "id": "ona-tili-5-ot",
-      "grade": 5,
-      "subject": "5-ona-tili",
-      "title": { "uz": "Ona tili, 5-sinf: Ot so‘z turkumi", "ru": "Родной язык, 5 класс: Имя существительное", "en": "Native language, Grade 5: Nouns" },
-      "questions": [
-        { "q": "Quyidagi so‘zlardan qaysi biri ot?", "options": ["Kitob", "Chiroyli", "Yugurmoq", "Tez"], "answer": 0, "why": "«Kitob» narsa nomini bildiradi va nima? so‘rog‘iga javob beradi." },
-        { "q": "Ot qaysi so‘roqlarga javob beradi?", "options": ["qanday? qanaqa?", "kim? nima? qayer?", "nima qildi? nima qilyapti?", "qachon? qancha?"], "answer": 1, "why": "Ot shaxs, narsa va joy nomini bildiradi, shuning uchun kim? nima? qayer? so‘roqlariga javob beradi." },
-        { "q": "Qaysi qatorda faqat atoqli otlar berilgan?", "options": ["daryo, shahar, shoir", "kitob, Toshkent, daftar", "Navoiy, Andijon, Sirdaryo", "bola, Amudaryo, tog‘"], "answer": 2, "why": "Navoiy, Andijon, Sirdaryo — kishi, shahar va daryoning maxsus nomlari." },
-        { "q": "Atoqli otlar qanday yoziladi?", "options": ["Bosh harf bilan", "Kichik harf bilan", "Hammasi bosh harflar bilan", "Qo‘shtirnoq ichida"], "answer": 0, "why": "Atoqli otlar doimo bosh harf bilan yoziladi." },
-        { "q": "«O‘quvchi» so‘zi qaysi so‘roqqa javob beradi?", "options": ["nima?", "qayer?", "kim?", "qanday?"], "answer": 2, "why": "Shaxs nomini bildiruvchi otlar kim? so‘rog‘iga javob beradi." },
-        { "q": "Qaysi so‘z turdosh ot?", "options": ["Samarqand", "shahar", "Farg‘ona", "Zarafshon"], "answer": 1, "why": "«Shahar» bir turdagi barcha narsalarning umumiy nomi, qolganlari esa atoqli otlar." },
-        { "q": "«Maktab» so‘zi qaysi so‘z turkumiga kiradi?", "options": ["Sifat", "Fe’l", "Ravish", "Ot"], "answer": 3, "why": "«Maktab» joy nomini bildiradi va nima? qayer? so‘roqlariga javob beradi." },
-        { "q": "Qaysi so‘z ot emas?", "options": ["Daraxt", "Yashil", "Bahor", "Do‘st"], "answer": 1, "why": "«Yashil» belgini bildiradi va qanday? so‘rog‘iga javob beradi — bu sifat." },
-        { "q": "Otning ko‘plik shakli qaysi qo‘shimcha bilan yasaladi?", "options": ["-chi", "-li", "-lar", "-dagi"], "answer": 2, "why": "Ko‘plik -lar qo‘shimchasi bilan yasaladi: kitoblar, maktablar." },
-        { "q": "«Daryo» so‘zi qaysi so‘roqqa javob beradi?", "options": ["nima?", "kim?", "qanday?", "nima qildi?"], "answer": 0, "why": "«Daryo» narsa (tabiat hodisasi) nomi, u nima? so‘rog‘iga javob beradi." }
-      ]
+     "q": "O‘zbek lotin alifbosida nechta unli harf bor?",
+     "options": [
+      "5",
+      "6",
+      "7",
+      "8"
+     ],
+     "answer": 1,
+     "why": "Unli harflar: a, e, i, o, u, o‘ — jami 6 ta."
     },
     {
-      "id": "matematika-5-kasr",
-      "grade": 5,
-      "subject": "5-matematika",
-      "title": { "uz": "Matematika, 5-sinf: Oddiy kasrlar", "ru": "Математика, 5 класс: Обыкновенные дроби", "en": "Mathematics, Grade 5: Fractions" },
-      "questions": [
-        { "q": "1/2 + 1/4 = ?", "options": ["2/6", "3/4", "1/6", "2/4"], "answer": 1, "why": "1/2 = 2/4, shuning uchun 2/4 + 1/4 = 3/4." },
-        { "q": "Qaysi kasr eng katta?", "options": ["2/3", "1/2", "3/4", "5/8"], "answer": 2, "why": "3/4 = 0,75; 2/3 ≈ 0,67; 5/8 = 0,625; 1/2 = 0,5." },
-        { "q": "6/8 kasrni qisqartiring.", "options": ["3/4", "2/3", "1/2", "4/6"], "answer": 0, "why": "Surat va maxrajni 2 ga bo‘lamiz: 6/8 = 3/4." },
-        { "q": "2/5 kasrning maxraji nechiga teng?", "options": ["2", "7", "3", "5"], "answer": 3, "why": "Kasr chizig‘i ostidagi son — maxraj, bu yerda 5." },
-        { "q": "1 butun 1/2 ni noto‘g‘ri kasr ko‘rinishida yozing.", "options": ["2/3", "3/2", "1/2", "4/2"], "answer": 1, "why": "1 butun 1/2 = 2/2 + 1/2 = 3/2." },
-        { "q": "3/10 kasr o‘nli kasr ko‘rinishida qanday yoziladi?", "options": ["0,3", "0,03", "3,0", "0,13"], "answer": 0, "why": "O‘ndan uch — 0,3." },
-        { "q": "5/6 − 1/6 = ?", "options": ["4/12", "1", "2/3", "5/36"], "answer": 2, "why": "5/6 − 1/6 = 4/6 = 2/3." },
-        { "q": "1/3 ni 2 ga ko‘paytiring.", "options": ["2/6", "1/6", "3/2", "2/3"], "answer": 3, "why": "1/3 · 2 = 2/3." }
-      ]
+     "q": "Qaysi so‘z unli tovush bilan boshlanadi?",
+     "options": [
+      "kitob",
+      "maktab",
+      "olma",
+      "daftar"
+     ],
+     "answer": 2,
+     "why": "\"Olma\" so‘zi \"o\" unlisi bilan boshlanadi."
+    },
+    {
+     "q": "\"Ona\" so‘zida nechta bo‘g‘in bor?",
+     "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+     ],
+     "answer": 1,
+     "why": "o-na: so‘zdagi bo‘g‘inlar soni unlilar soniga teng."
+    },
+    {
+     "q": "Gap qanday harf bilan boshlanadi?",
+     "options": [
+      "Bosh harf bilan",
+      "Kichik harf bilan",
+      "Raqam bilan",
+      "Tinish belgisi bilan"
+     ],
+     "answer": 0,
+     "why": "Har bir gap bosh harf bilan boshlanadi."
+    },
+    {
+     "q": "Qaysi biri ikki harf bilan yoziladigan bitta tovush?",
+     "options": [
+      "ab",
+      "sh",
+      "ka",
+      "to"
+     ],
+     "answer": 1,
+     "why": "sh, ch, ng — ikki harf bilan yoziladigan tovushlar."
     }
-  ]
+   ]
+  },
+  {
+   "id": "matematika-1",
+   "grade": 1,
+   "subject": "1-matematika",
+   "title": {
+    "uz": "Matematika, 1-sinf: Qo‘shish va ayirish",
+    "ru": "Математика, 1 класс",
+    "en": "Mathematics, Grade 1"
+   },
+   "questions": [
+    {
+     "q": "7 + 2 = ?",
+     "options": [
+      "8",
+      "9",
+      "10",
+      "6"
+     ],
+     "answer": 1,
+     "why": "7 ga 2 ni qo‘shsak, 9 bo‘ladi."
+    },
+    {
+     "q": "10 − 4 = ?",
+     "options": [
+      "6",
+      "5",
+      "7",
+      "4"
+     ],
+     "answer": 0,
+     "why": "10 dan 4 ni ayirsak, 6 qoladi."
+    },
+    {
+     "q": "Qaysi son 8 dan katta?",
+     "options": [
+      "5",
+      "7",
+      "9",
+      "3"
+     ],
+     "answer": 2,
+     "why": "9 soni 8 dan bitta ortiq."
+    },
+    {
+     "q": "3 + 3 + 3 = ?",
+     "options": [
+      "6",
+      "9",
+      "12",
+      "8"
+     ],
+     "answer": 1,
+     "why": "3 + 3 = 6, 6 + 3 = 9."
+    },
+    {
+     "q": "Uchburchakning nechta burchagi bor?",
+     "options": [
+      "2",
+      "3",
+      "4",
+      "5"
+     ],
+     "answer": 1,
+     "why": "Uchburchakning 3 ta burchagi va 3 ta tomoni bor."
+    }
+   ]
+  },
+  {
+   "id": "olam-1",
+   "grade": 1,
+   "subject": "1-atrofimizdagi-olam",
+   "title": {
+    "uz": "Atrofimizdagi olam, 1-sinf: Atrofimizdagi olam",
+    "ru": "Окружающий мир, 1 класс",
+    "en": "The world around us, Grade 1"
+   },
+   "questions": [
+    {
+     "q": "Yilda nechta fasl bor?",
+     "options": [
+      "3",
+      "4",
+      "5",
+      "12"
+     ],
+     "answer": 1,
+     "why": "Bahor, yoz, kuz va qish — 4 fasl."
+    },
+    {
+     "q": "Haftada necha kun bor?",
+     "options": [
+      "5",
+      "6",
+      "7",
+      "10"
+     ],
+     "answer": 2,
+     "why": "Dushanbadan yakshanbagacha — 7 kun."
+    },
+    {
+     "q": "Qaysi biri uy hayvoni?",
+     "options": [
+      "bo‘ri",
+      "tulki",
+      "sigir",
+      "ayiq"
+     ],
+     "answer": 2,
+     "why": "Sigir — uy hayvoni, qolganlari yovvoyi hayvonlar."
+    },
+    {
+     "q": "Qishdan keyin qaysi fasl keladi?",
+     "options": [
+      "kuz",
+      "bahor",
+      "yoz",
+      "yana qish"
+     ],
+     "answer": 1,
+     "why": "Fasllar tartibi: qish, bahor, yoz, kuz."
+    },
+    {
+     "q": "O‘simliklar o‘sishi uchun nima kerak?",
+     "options": [
+      "Suv, yorug‘lik va havo",
+      "Faqat qorong‘ilik",
+      "Faqat tuz",
+      "Hech narsa kerak emas"
+     ],
+     "answer": 0,
+     "why": "O‘simliklar suv, yorug‘lik va havo bilan o‘sadi."
+    }
+   ]
+  },
+  {
+   "id": "ingliz-tili-1",
+   "grade": 1,
+   "subject": "1-ingliz-tili",
+   "title": {
+    "uz": "Ingliz tili, 1-sinf: First words",
+    "ru": "Английский язык, 1 класс",
+    "en": "English, Grade 1"
+   },
+   "questions": [
+    {
+     "q": "How many letters are there in the English alphabet?",
+     "options": [
+      "24",
+      "26",
+      "28",
+      "33"
+     ],
+     "answer": 1,
+     "why": "The English alphabet has 26 letters, from A to Z."
+    },
+    {
+     "q": "Which word is a colour?",
+     "options": [
+      "red",
+      "cat",
+      "run",
+      "big"
+     ],
+     "answer": 0,
+     "why": "Red is a colour."
+    },
+    {
+     "q": "One, two, three... What comes next?",
+     "options": [
+      "five",
+      "four",
+      "six",
+      "ten"
+     ],
+     "answer": 1,
+     "why": "One, two, three, four."
+    },
+    {
+     "q": "What is \"kitob\" in English?",
+     "options": [
+      "pen",
+      "book",
+      "bag",
+      "desk"
+     ],
+     "answer": 1,
+     "why": "Kitob — book."
+    },
+    {
+     "q": "Which word is an animal?",
+     "options": [
+      "dog",
+      "apple",
+      "chair",
+      "blue"
+     ],
+     "answer": 0,
+     "why": "A dog is an animal."
+    }
+   ]
+  },
+  {
+   "id": "ona-tili-2",
+   "grade": 2,
+   "subject": "2-ona-tili",
+   "title": {
+    "uz": "Ona tili, 2-sinf: So‘z va gap",
+    "ru": "Родной язык, 2 класс",
+    "en": "Native language, Grade 2"
+   },
+   "questions": [
+    {
+     "q": "Qaysi so‘z narsaning nomini bildiradi?",
+     "options": [
+      "daftar",
+      "chiroyli",
+      "yugurdi",
+      "tez"
+     ],
+     "answer": 0,
+     "why": "\"Daftar\" narsaning nomi — u ot."
+    },
+    {
+     "q": "\"Kitob\" so‘zining ko‘plik shakli qanday?",
+     "options": [
+      "kitobla",
+      "kitoblar",
+      "kitobi",
+      "kitobda"
+     ],
+     "answer": 1,
+     "why": "Ko‘plik -lar qo‘shimchasi bilan yasaladi: kitoblar."
+    },
+    {
+     "q": "Qaysi so‘z belgini bildiradi?",
+     "options": [
+      "uy",
+      "qizil",
+      "o‘qidi",
+      "bola"
+     ],
+     "answer": 1,
+     "why": "\"Qizil\" narsaning belgisini (rangini) bildiradi."
+    },
+    {
+     "q": "So‘roq gap oxirida qaysi belgi qo‘yiladi?",
+     "options": [
+      "nuqta",
+      "vergul",
+      "so‘roq belgisi",
+      "tire"
+     ],
+     "answer": 2,
+     "why": "So‘roq gap oxirida so‘roq belgisi (?) qo‘yiladi."
+    },
+    {
+     "q": "Qaysi so‘z bo‘g‘inlarga to‘g‘ri ajratilgan?",
+     "options": [
+      "ma-kt-ab",
+      "mak-tab",
+      "m-aktab",
+      "makt-ab"
+     ],
+     "answer": 1,
+     "why": "maktab: mak-tab — har bir bo‘g‘inda bitta unli bor."
+    }
+   ]
+  },
+  {
+   "id": "matematika-2",
+   "grade": 2,
+   "subject": "2-matematika",
+   "title": {
+    "uz": "Matematika, 2-sinf: 100 ichida hisob",
+    "ru": "Математика, 2 класс",
+    "en": "Mathematics, Grade 2"
+   },
+   "questions": [
+    {
+     "q": "35 + 27 = ?",
+     "options": [
+      "52",
+      "62",
+      "61",
+      "72"
+     ],
+     "answer": 1,
+     "why": "35 + 27 = 62."
+    },
+    {
+     "q": "4 × 5 = ?",
+     "options": [
+      "9",
+      "15",
+      "20",
+      "25"
+     ],
+     "answer": 2,
+     "why": "4 ni 5 marta qo‘shsak, 20 bo‘ladi."
+    },
+    {
+     "q": "1 metr necha santimetr?",
+     "options": [
+      "10",
+      "100",
+      "1000",
+      "50"
+     ],
+     "answer": 1,
+     "why": "1 m = 100 sm."
+    },
+    {
+     "q": "50 − 18 = ?",
+     "options": [
+      "42",
+      "38",
+      "32",
+      "22"
+     ],
+     "answer": 2,
+     "why": "50 − 18 = 32."
+    },
+    {
+     "q": "Kvadratning nechta tomoni bor?",
+     "options": [
+      "3",
+      "4",
+      "5",
+      "6"
+     ],
+     "answer": 1,
+     "why": "Kvadratning 4 ta teng tomoni bor."
+    }
+   ]
+  },
+  {
+   "id": "tabiiy-fanlar-2",
+   "grade": 2,
+   "subject": "2-tabiiy-fanlar",
+   "title": {
+    "uz": "Tabiiy fanlar, 2-sinf: Tabiat hodisalari",
+    "ru": "Естественные науки, 2 класс",
+    "en": "Natural science, Grade 2"
+   },
+   "questions": [
+    {
+     "q": "Suv qanday holatlarda bo‘ladi?",
+     "options": [
+      "Qattiq, suyuq va gaz holatida",
+      "Faqat suyuq holatda",
+      "Faqat qattiq holatda",
+      "Faqat gaz holatida"
+     ],
+     "answer": 0,
+     "why": "Muz — qattiq, suv — suyuq, bug‘ — gaz holat."
+    },
+    {
+     "q": "Quyosh qaysi tomondan chiqadi?",
+     "options": [
+      "g‘arbdan",
+      "sharqdan",
+      "shimoldan",
+      "janubdan"
+     ],
+     "answer": 1,
+     "why": "Quyosh sharqdan chiqib, g‘arbga botadi."
+    },
+    {
+     "q": "Qaysi biri hasharot?",
+     "options": [
+      "chumchuq",
+      "kapalak",
+      "baliq",
+      "quyon"
+     ],
+     "answer": 1,
+     "why": "Kapalak — hasharot, uning 6 ta oyog‘i bor."
+    },
+    {
+     "q": "Odam nafas olganda havodagi qaysi gaz kerak?",
+     "options": [
+      "kislorod",
+      "is gazi",
+      "vodorod",
+      "geliy"
+     ],
+     "answer": 0,
+     "why": "Odam va hayvonlar nafas olish uchun kislorod kerak."
+    },
+    {
+     "q": "Suv necha gradusda muzlaydi?",
+     "options": [
+      "0 °C",
+      "10 °C",
+      "100 °C",
+      "50 °C"
+     ],
+     "answer": 0,
+     "why": "Toza suv 0 °C da muzlaydi."
+    }
+   ]
+  },
+  {
+   "id": "ingliz-tili-2",
+   "grade": 2,
+   "subject": "2-ingliz-tili",
+   "title": {
+    "uz": "Ingliz tili, 2-sinf: Simple sentences",
+    "ru": "Английский язык, 2 класс",
+    "en": "English, Grade 2"
+   },
+   "questions": [
+    {
+     "q": "I ___ a pupil.",
+     "options": [
+      "am",
+      "is",
+      "are",
+      "be"
+     ],
+     "answer": 0,
+     "why": "I am, he/she/it is, we/you/they are."
+    },
+    {
+     "q": "What is the plural of \"cat\"?",
+     "options": [
+      "cat",
+      "cats",
+      "cates",
+      "caties"
+     ],
+     "answer": 1,
+     "why": "Most nouns take -s in the plural: cats."
+    },
+    {
+     "q": "What is \"olma\" in English?",
+     "options": [
+      "orange",
+      "apple",
+      "banana",
+      "pear"
+     ],
+     "answer": 1,
+     "why": "Olma — apple."
+    },
+    {
+     "q": "How many days are there in a week?",
+     "options": [
+      "five",
+      "six",
+      "seven",
+      "eight"
+     ],
+     "answer": 2,
+     "why": "A week has seven days."
+    },
+    {
+     "q": "Which word is a number?",
+     "options": [
+      "ten",
+      "tree",
+      "tea",
+      "tent"
+     ],
+     "answer": 0,
+     "why": "Ten is a number (10)."
+    }
+   ]
+  },
+  {
+   "id": "ona-tili-3",
+   "grade": 3,
+   "subject": "3-ona-tili",
+   "title": {
+    "uz": "Ona tili, 3-sinf: Gap bo‘laklari",
+    "ru": "Родной язык, 3 класс",
+    "en": "Native language, Grade 3"
+   },
+   "questions": [
+    {
+     "q": "Gapning bosh bo‘laklari qaysilar?",
+     "options": [
+      "Ega va kesim",
+      "Aniqlovchi va hol",
+      "To‘ldiruvchi va hol",
+      "Aniqlovchi va to‘ldiruvchi"
+     ],
+     "answer": 0,
+     "why": "Gapning bosh bo‘laklari — ega va kesim."
+    },
+    {
+     "q": "\"Bola kitob o‘qidi.\" gapida ega qaysi?",
+     "options": [
+      "bola",
+      "kitob",
+      "o‘qidi",
+      "gapda ega yo‘q"
+     ],
+     "answer": 0,
+     "why": "Kim o‘qidi? — bola. Bu ega."
+    },
+    {
+     "q": "Qaysi so‘z harakatni bildiradi?",
+     "options": [
+      "daraxt",
+      "katta",
+      "yozdi",
+      "besh"
+     ],
+     "answer": 2,
+     "why": "\"Yozdi\" harakatni bildiradi — u fe’l."
+    },
+    {
+     "q": "\"Katta\" so‘zining zid ma’noli so‘zi (antonimi) qaysi?",
+     "options": [
+      "ulkan",
+      "kichik",
+      "baland",
+      "uzun"
+     ],
+     "answer": 1,
+     "why": "Katta — kichik: ma’nolari zid so‘zlar."
+    },
+    {
+     "q": "\"Chiroyli\" so‘ziga ma’nodosh (sinonim) so‘z qaysi?",
+     "options": [
+      "xunuk",
+      "go‘zal",
+      "katta",
+      "sekin"
+     ],
+     "answer": 1,
+     "why": "Chiroyli — go‘zal: ma’nosi yaqin so‘zlar."
+    }
+   ]
+  },
+  {
+   "id": "matematika-3",
+   "grade": 3,
+   "subject": "3-matematika",
+   "title": {
+    "uz": "Matematika, 3-sinf: Ko‘paytirish va bo‘lish",
+    "ru": "Математика, 3 класс",
+    "en": "Mathematics, Grade 3"
+   },
+   "questions": [
+    {
+     "q": "6 × 7 = ?",
+     "options": [
+      "36",
+      "42",
+      "48",
+      "49"
+     ],
+     "answer": 1,
+     "why": "6 × 7 = 42."
+    },
+    {
+     "q": "72 : 8 = ?",
+     "options": [
+      "8",
+      "9",
+      "7",
+      "6"
+     ],
+     "answer": 1,
+     "why": "8 × 9 = 72, demak 72 : 8 = 9."
+    },
+    {
+     "q": "1 soat necha daqiqa?",
+     "options": [
+      "30",
+      "60",
+      "100",
+      "24"
+     ],
+     "answer": 1,
+     "why": "1 soat = 60 daqiqa."
+    },
+    {
+     "q": "To‘g‘ri to‘rtburchakning tomonlari 5 sm va 3 sm. Uning perimetri qancha?",
+     "options": [
+      "8 sm",
+      "15 sm",
+      "16 sm",
+      "30 sm"
+     ],
+     "answer": 2,
+     "why": "P = 2 · (5 + 3) = 16 sm."
+    },
+    {
+     "q": "300 + 450 = ?",
+     "options": [
+      "650",
+      "750",
+      "700",
+      "850"
+     ],
+     "answer": 1,
+     "why": "300 + 450 = 750."
+    }
+   ]
+  },
+  {
+   "id": "tabiiy-fanlar-3",
+   "grade": 3,
+   "subject": "3-tabiiy-fanlar",
+   "title": {
+    "uz": "Tabiiy fanlar, 3-sinf: Yer va tirik tabiat",
+    "ru": "Естественные науки, 3 класс",
+    "en": "Natural science, Grade 3"
+   },
+   "questions": [
+    {
+     "q": "Yer Quyosh atrofini qancha vaqtda aylanib chiqadi?",
+     "options": [
+      "1 kunda",
+      "1 oyda",
+      "1 yilda",
+      "1 haftada"
+     ],
+     "answer": 2,
+     "why": "Yer Quyosh atrofini bir yilda aylanib chiqadi."
+    },
+    {
+     "q": "O‘simlikning qaysi qismi tuproqdan suv shimadi?",
+     "options": [
+      "barg",
+      "gul",
+      "ildiz",
+      "meva"
+     ],
+     "answer": 2,
+     "why": "Ildiz tuproqdan suv va mineral moddalarni shimadi."
+    },
+    {
+     "q": "Qaysi hayvon sutemizuvchi?",
+     "options": [
+      "ot",
+      "tovuq",
+      "ilon",
+      "baqa"
+     ],
+     "answer": 0,
+     "why": "Ot bolasini sut bilan boqadi — u sutemizuvchi."
+    },
+    {
+     "q": "Kompas strelkasining ko‘k (yoki qora) uchi qaysi tomonni ko‘rsatadi?",
+     "options": [
+      "shimolni",
+      "sharqni",
+      "g‘arbni",
+      "faqat pastni"
+     ],
+     "answer": 0,
+     "why": "Kompas strelkasi shimol tomonni ko‘rsatadi."
+    },
+    {
+     "q": "Qaysi biri tirik organizm emas?",
+     "options": [
+      "daraxt",
+      "mushuk",
+      "tosh",
+      "qo‘ziqorin"
+     ],
+     "answer": 2,
+     "why": "Tosh o‘smaydi, oziqlanmaydi va ko‘paymaydi."
+    }
+   ]
+  },
+  {
+   "id": "ingliz-tili-3",
+   "grade": 3,
+   "subject": "3-ingliz-tili",
+   "title": {
+    "uz": "Ingliz tili, 3-sinf: To be",
+    "ru": "Английский язык, 3 класс",
+    "en": "English, Grade 3"
+   },
+   "questions": [
+    {
+     "q": "She ___ my sister.",
+     "options": [
+      "am",
+      "is",
+      "are",
+      "be"
+     ],
+     "answer": 1,
+     "why": "He, she, it — is."
+    },
+    {
+     "q": "There ___ three apples on the table.",
+     "options": [
+      "is",
+      "are",
+      "am",
+      "be"
+     ],
+     "answer": 1,
+     "why": "With plural nouns we use \"there are\"."
+    },
+    {
+     "q": "What is the opposite of \"big\"?",
+     "options": [
+      "tall",
+      "small",
+      "long",
+      "old"
+     ],
+     "answer": 1,
+     "why": "Big — small."
+    },
+    {
+     "q": "It is 7:00. It's ___ o'clock.",
+     "options": [
+      "six",
+      "seven",
+      "eight",
+      "eleven"
+     ],
+     "answer": 1,
+     "why": "7:00 — seven o'clock."
+    },
+    {
+     "q": "Which word is a day of the week?",
+     "options": [
+      "March",
+      "Monday",
+      "summer",
+      "morning"
+     ],
+     "answer": 1,
+     "why": "Monday is a day of the week."
+    }
+   ]
+  },
+  {
+   "id": "ona-tili-4",
+   "grade": 4,
+   "subject": "4-ona-tili",
+   "title": {
+    "uz": "Ona tili, 4-sinf: So‘z turkumlari",
+    "ru": "Родной язык, 4 класс",
+    "en": "Native language, Grade 4"
+   },
+   "questions": [
+    {
+     "q": "Qaysi so‘z son turkumiga kiradi?",
+     "options": [
+      "yetti",
+      "yashil",
+      "yugur",
+      "yer"
+     ],
+     "answer": 0,
+     "why": "\"Yetti\" sanoqni bildiradi — u son."
+    },
+    {
+     "q": "Qaysi so‘z olmosh?",
+     "options": [
+      "men",
+      "mehnat",
+      "mehribon",
+      "mevali"
+     ],
+     "answer": 0,
+     "why": "\"Men\" — kishilik olmoshi."
+    },
+    {
+     "q": "\"Bolalar maktabga ketdi.\" gapida kesim qaysi?",
+     "options": [
+      "bolalar",
+      "maktabga",
+      "ketdi",
+      "gapda kesim yo‘q"
+     ],
+     "answer": 2,
+     "why": "Bolalar nima qildi? — ketdi. Bu kesim."
+    },
+    {
+     "q": "Undalma gapda qanday ajratiladi?",
+     "options": [
+      "Vergul bilan",
+      "Qavs bilan",
+      "Ikki nuqta bilan",
+      "Ajratilmaydi"
+     ],
+     "answer": 0,
+     "why": "Undalma gapda vergul bilan ajratiladi: \"Aziz do‘stim, kel.\""
+    },
+    {
+     "q": "Qaysi so‘z qo‘shma so‘z?",
+     "options": [
+      "maktab",
+      "belbog‘",
+      "o‘quvchi",
+      "gulchi"
+     ],
+     "answer": 1,
+     "why": "Belbog‘ ikki o‘zakdan tuzilgan: bel + bog‘."
+    }
+   ]
+  },
+  {
+   "id": "matematika-4",
+   "grade": 4,
+   "subject": "4-matematika",
+   "title": {
+    "uz": "Matematika, 4-sinf: Ko‘p xonali sonlar va kasrlar",
+    "ru": "Математика, 4 класс",
+    "en": "Mathematics, Grade 4"
+   },
+   "questions": [
+    {
+     "q": "125 × 4 = ?",
+     "options": [
+      "400",
+      "500",
+      "450",
+      "520"
+     ],
+     "answer": 1,
+     "why": "125 × 4 = 500."
+    },
+    {
+     "q": "1 kilogramm necha gramm?",
+     "options": [
+      "100",
+      "1000",
+      "10",
+      "10 000"
+     ],
+     "answer": 1,
+     "why": "1 kg = 1000 g."
+    },
+    {
+     "q": "3/4 kasrning surati qaysi son?",
+     "options": [
+      "3",
+      "4",
+      "7",
+      "12"
+     ],
+     "answer": 0,
+     "why": "Kasr chizig‘ining ustidagi son — surat."
+    },
+    {
+     "q": "Kvadratning tomoni 6 sm. Uning yuzi qancha?",
+     "options": [
+      "24 sm²",
+      "36 sm²",
+      "12 sm²",
+      "30 sm²"
+     ],
+     "answer": 1,
+     "why": "S = 6 · 6 = 36 sm²."
+    },
+    {
+     "q": "1000 − 365 = ?",
+     "options": [
+      "735",
+      "635",
+      "645",
+      "665"
+     ],
+     "answer": 1,
+     "why": "1000 − 365 = 635."
+    }
+   ]
+  },
+  {
+   "id": "tabiiy-fanlar-4",
+   "grade": 4,
+   "subject": "4-tabiiy-fanlar",
+   "title": {
+    "uz": "Tabiiy fanlar, 4-sinf: Quyosh sistemasi va tabiat",
+    "ru": "Естественные науки, 4 класс",
+    "en": "Natural science, Grade 4"
+   },
+   "questions": [
+    {
+     "q": "Quyosh sistemasida nechta sayyora bor?",
+     "options": [
+      "7",
+      "8",
+      "9",
+      "10"
+     ],
+     "answer": 1,
+     "why": "Merkuriy, Venera, Yer, Mars, Yupiter, Saturn, Uran, Neptun — 8 ta sayyora."
+    },
+    {
+     "q": "Yerning tabiiy yo‘ldoshi qaysi?",
+     "options": [
+      "Oy",
+      "Mars",
+      "Quyosh",
+      "Venera"
+     ],
+     "answer": 0,
+     "why": "Oy — Yerning yagona tabiiy yo‘ldoshi."
+    },
+    {
+     "q": "Dengiz sathida suv necha gradusda qaynaydi?",
+     "options": [
+      "50 °C",
+      "80 °C",
+      "100 °C",
+      "200 °C"
+     ],
+     "answer": 2,
+     "why": "Odatdagi bosimda suv 100 °C da qaynaydi."
+    },
+    {
+     "q": "Yashil barglarda quyosh nuri yordamida oziq moddalar hosil bo‘lishi nima deyiladi?",
+     "options": [
+      "nafas olish",
+      "fotosintez",
+      "bug‘lanish",
+      "changlanish"
+     ],
+     "answer": 1,
+     "why": "Bu jarayon fotosintez deyiladi."
+    },
+    {
+     "q": "O‘zbekistonning poytaxti qaysi shahar?",
+     "options": [
+      "Samarqand",
+      "Buxoro",
+      "Toshkent",
+      "Andijon"
+     ],
+     "answer": 2,
+     "why": "O‘zbekiston Respublikasining poytaxti — Toshkent."
+    }
+   ]
+  },
+  {
+   "id": "ingliz-tili-4",
+   "grade": 4,
+   "subject": "4-ingliz-tili",
+   "title": {
+    "uz": "Ingliz tili, 4-sinf: Past and present",
+    "ru": "Английский язык, 4 класс",
+    "en": "English, Grade 4"
+   },
+   "questions": [
+    {
+     "q": "Yesterday I ___ to school.",
+     "options": [
+      "go",
+      "goes",
+      "went",
+      "going"
+     ],
+     "answer": 2,
+     "why": "\"Yesterday\" — past simple: go → went."
+    },
+    {
+     "q": "___ you like ice cream?",
+     "options": [
+      "Do",
+      "Does",
+      "Is",
+      "Are"
+     ],
+     "answer": 0,
+     "why": "Questions with \"you\" in present simple start with \"Do\"."
+    },
+    {
+     "q": "Look! The children ___ in the garden.",
+     "options": [
+      "are playing",
+      "play",
+      "plays",
+      "played"
+     ],
+     "answer": 0,
+     "why": "\"Look!\" shows an action happening now — present continuous."
+    },
+    {
+     "q": "What is the plural of \"child\"?",
+     "options": [
+      "childs",
+      "children",
+      "childes",
+      "childrens"
+     ],
+     "answer": 1,
+     "why": "Child — children (irregular plural)."
+    },
+    {
+     "q": "Which month comes after May?",
+     "options": [
+      "April",
+      "June",
+      "July",
+      "March"
+     ],
+     "answer": 1,
+     "why": "May is followed by June."
+    }
+   ]
+  },
+  {
+   "id": "ona-tili-5-ot",
+   "grade": 5,
+   "subject": "5-ona-tili",
+   "title": {
+    "uz": "Ona tili, 5-sinf: Ot so‘z turkumi",
+    "ru": "Родной язык, 5 класс: Имя существительное",
+    "en": "Native language, Grade 5: Nouns"
+   },
+   "questions": [
+    {
+     "q": "Quyidagi so‘zlardan qaysi biri ot?",
+     "options": [
+      "Kitob",
+      "Chiroyli",
+      "Yugurmoq",
+      "Tez"
+     ],
+     "answer": 0,
+     "why": "«Kitob» narsa nomini bildiradi va nima? so‘rog‘iga javob beradi."
+    },
+    {
+     "q": "Ot qaysi so‘roqlarga javob beradi?",
+     "options": [
+      "qanday? qanaqa?",
+      "kim? nima? qayer?",
+      "nima qildi? nima qilyapti?",
+      "qachon? qancha?"
+     ],
+     "answer": 1,
+     "why": "Ot shaxs, narsa va joy nomini bildiradi, shuning uchun kim? nima? qayer? so‘roqlariga javob beradi."
+    },
+    {
+     "q": "Qaysi qatorda faqat atoqli otlar berilgan?",
+     "options": [
+      "daryo, shahar, shoir",
+      "kitob, Toshkent, daftar",
+      "Navoiy, Andijon, Sirdaryo",
+      "bola, Amudaryo, tog‘"
+     ],
+     "answer": 2,
+     "why": "Navoiy, Andijon, Sirdaryo — kishi, shahar va daryoning maxsus nomlari."
+    },
+    {
+     "q": "Atoqli otlar qanday yoziladi?",
+     "options": [
+      "Bosh harf bilan",
+      "Kichik harf bilan",
+      "Hammasi bosh harflar bilan",
+      "Qo‘shtirnoq ichida"
+     ],
+     "answer": 0,
+     "why": "Atoqli otlar doimo bosh harf bilan yoziladi."
+    },
+    {
+     "q": "«O‘quvchi» so‘zi qaysi so‘roqqa javob beradi?",
+     "options": [
+      "nima?",
+      "qayer?",
+      "kim?",
+      "qanday?"
+     ],
+     "answer": 2,
+     "why": "Shaxs nomini bildiruvchi otlar kim? so‘rog‘iga javob beradi."
+    },
+    {
+     "q": "Qaysi so‘z turdosh ot?",
+     "options": [
+      "Samarqand",
+      "shahar",
+      "Farg‘ona",
+      "Zarafshon"
+     ],
+     "answer": 1,
+     "why": "«Shahar» bir turdagi barcha narsalarning umumiy nomi, qolganlari esa atoqli otlar."
+    },
+    {
+     "q": "«Maktab» so‘zi qaysi so‘z turkumiga kiradi?",
+     "options": [
+      "Sifat",
+      "Fe’l",
+      "Ravish",
+      "Ot"
+     ],
+     "answer": 3,
+     "why": "«Maktab» joy nomini bildiradi va nima? qayer? so‘roqlariga javob beradi."
+    },
+    {
+     "q": "Qaysi so‘z ot emas?",
+     "options": [
+      "Daraxt",
+      "Yashil",
+      "Bahor",
+      "Do‘st"
+     ],
+     "answer": 1,
+     "why": "«Yashil» belgini bildiradi va qanday? so‘rog‘iga javob beradi — bu sifat."
+    },
+    {
+     "q": "Otning ko‘plik shakli qaysi qo‘shimcha bilan yasaladi?",
+     "options": [
+      "-chi",
+      "-li",
+      "-lar",
+      "-dagi"
+     ],
+     "answer": 2,
+     "why": "Ko‘plik -lar qo‘shimchasi bilan yasaladi: kitoblar, maktablar."
+    },
+    {
+     "q": "«Daryo» so‘zi qaysi so‘roqqa javob beradi?",
+     "options": [
+      "nima?",
+      "kim?",
+      "qanday?",
+      "nima qildi?"
+     ],
+     "answer": 0,
+     "why": "«Daryo» narsa (tabiat hodisasi) nomi, u nima? so‘rog‘iga javob beradi."
+    }
+   ]
+  },
+  {
+   "id": "matematika-5-kasr",
+   "grade": 5,
+   "subject": "5-matematika",
+   "title": {
+    "uz": "Matematika, 5-sinf: Oddiy kasrlar",
+    "ru": "Математика, 5 класс: Обыкновенные дроби",
+    "en": "Mathematics, Grade 5: Fractions"
+   },
+   "questions": [
+    {
+     "q": "1/2 + 1/4 = ?",
+     "options": [
+      "2/6",
+      "3/4",
+      "1/6",
+      "2/4"
+     ],
+     "answer": 1,
+     "why": "1/2 = 2/4, shuning uchun 2/4 + 1/4 = 3/4."
+    },
+    {
+     "q": "Qaysi kasr eng katta?",
+     "options": [
+      "2/3",
+      "1/2",
+      "3/4",
+      "5/8"
+     ],
+     "answer": 2,
+     "why": "3/4 = 0,75; 2/3 ≈ 0,67; 5/8 = 0,625; 1/2 = 0,5."
+    },
+    {
+     "q": "6/8 kasrni qisqartiring.",
+     "options": [
+      "3/4",
+      "2/3",
+      "1/2",
+      "4/6"
+     ],
+     "answer": 0,
+     "why": "Surat va maxrajni 2 ga bo‘lamiz: 6/8 = 3/4."
+    },
+    {
+     "q": "2/5 kasrning maxraji nechiga teng?",
+     "options": [
+      "2",
+      "7",
+      "3",
+      "5"
+     ],
+     "answer": 3,
+     "why": "Kasr chizig‘i ostidagi son — maxraj, bu yerda 5."
+    },
+    {
+     "q": "1 butun 1/2 ni noto‘g‘ri kasr ko‘rinishida yozing.",
+     "options": [
+      "2/3",
+      "3/2",
+      "1/2",
+      "4/2"
+     ],
+     "answer": 1,
+     "why": "1 butun 1/2 = 2/2 + 1/2 = 3/2."
+    },
+    {
+     "q": "3/10 kasr o‘nli kasr ko‘rinishida qanday yoziladi?",
+     "options": [
+      "0,3",
+      "0,03",
+      "3,0",
+      "0,13"
+     ],
+     "answer": 0,
+     "why": "O‘ndan uch — 0,3."
+    },
+    {
+     "q": "5/6 − 1/6 = ?",
+     "options": [
+      "4/12",
+      "1",
+      "2/3",
+      "5/36"
+     ],
+     "answer": 2,
+     "why": "5/6 − 1/6 = 4/6 = 2/3."
+    },
+    {
+     "q": "1/3 ni 2 ga ko‘paytiring.",
+     "options": [
+      "2/6",
+      "1/6",
+      "3/2",
+      "2/3"
+     ],
+     "answer": 3,
+     "why": "1/3 · 2 = 2/3."
+    }
+   ]
+  },
+  {
+   "id": "adabiyot-5",
+   "grade": 5,
+   "subject": "5-adabiyot",
+   "title": {
+    "uz": "Adabiyot, 5-sinf: Xalq og‘zaki ijodi",
+    "ru": "Литература, 5 класс",
+    "en": "Literature, Grade 5"
+   },
+   "questions": [
+    {
+     "q": "Ertak qanday asar?",
+     "options": [
+      "Xalq og‘zaki ijodi namunasi",
+      "Tarixiy hujjat",
+      "Ilmiy maqola",
+      "Qonun matni"
+     ],
+     "answer": 0,
+     "why": "Ertaklar xalq tomonidan yaratilgan va og‘zaki tarqalgan."
+    },
+    {
+     "q": "\"Alpomish\" qanday asar?",
+     "options": [
+      "Roman",
+      "Xalq dostoni",
+      "Hikoya",
+      "Masal"
+     ],
+     "answer": 1,
+     "why": "\"Alpomish\" — o‘zbek xalq qahramonlik dostoni."
+    },
+    {
+     "q": "Maqol nima?",
+     "options": [
+      "Qisqa, ibratli xalq hikmati",
+      "Katta hajmli roman",
+      "Sahna asari",
+      "Ilmiy atama"
+     ],
+     "answer": 0,
+     "why": "Masalan: \"Bilim — baxt kaliti\"."
+    },
+    {
+     "q": "Topishmoq nima?",
+     "options": [
+      "Javobi yashirin, topish kerak bo‘lgan qisqa savol",
+      "Uzun she’r",
+      "Tarixiy voqea bayoni",
+      "Qo‘shiq turi"
+     ],
+     "answer": 0,
+     "why": "Topishmoqda narsa nomi aytilmay, belgilari orqali tasvirlanadi."
+    },
+    {
+     "q": "\"O‘tkan kunlar\" romanining muallifi kim?",
+     "options": [
+      "Cho‘lpon",
+      "Abdulla Qodiriy",
+      "Oybek",
+      "G‘afur G‘ulom"
+     ],
+     "answer": 1,
+     "why": "\"O‘tkan kunlar\" — Abdulla Qodiriyning romani."
+    }
+   ]
+  },
+  {
+   "id": "biologiya-5",
+   "grade": 5,
+   "subject": "5-biologiya",
+   "title": {
+    "uz": "Biologiya, 5-sinf: O‘simliklar",
+    "ru": "Биология, 5 класс",
+    "en": "Biology, Grade 5"
+   },
+   "questions": [
+    {
+     "q": "O‘simlik bargiga yashil rang beradigan modda qaysi?",
+     "options": [
+      "xlorofill",
+      "gemoglobin",
+      "kraxmal",
+      "melanin"
+     ],
+     "answer": 0,
+     "why": "Xlorofill fotosintezda quyosh nurini yutadi."
+    },
+    {
+     "q": "Gul o‘simlikda qanday vazifani bajaradi?",
+     "options": [
+      "Ko‘payish — urug‘ va meva hosil qilish",
+      "Tuproqdan suv shimish",
+      "O‘simlikni tik tutish",
+      "Faqat bezak"
+     ],
+     "answer": 0,
+     "why": "Gul — o‘simlikning ko‘payish a’zosi."
+    },
+    {
+     "q": "Qaysi o‘simlik ko‘p yillik?",
+     "options": [
+      "bug‘doy",
+      "olma daraxti",
+      "sabzi",
+      "makkajo‘xori"
+     ],
+     "answer": 1,
+     "why": "Daraxtlar ko‘p yil yashaydi."
+    },
+    {
+     "q": "Barg sathidagi mayda teshikchalar nima deyiladi?",
+     "options": [
+      "og‘izchalar (ustitsalar)",
+      "ildiz tukchalari",
+      "tomirlar",
+      "po‘stloq"
+     ],
+     "answer": 0,
+     "why": "Og‘izchalar orqali gaz almashinuvi va suv bug‘lanishi boradi."
+    },
+    {
+     "q": "Urug‘ unib chiqishi uchun nima kerak?",
+     "options": [
+      "Suv, havo va issiqlik",
+      "Faqat sovuq",
+      "Faqat quruq tuproq",
+      "Faqat tuz"
+     ],
+     "answer": 0,
+     "why": "Urug‘ namlik, havo va iliq haroratda unadi."
+    }
+   ]
+  },
+  {
+   "id": "geografiya-5",
+   "grade": 5,
+   "subject": "5-geografiya",
+   "title": {
+    "uz": "Geografiya, 5-sinf: Yer va xarita",
+    "ru": "География, 5 класс",
+    "en": "Geography, Grade 5"
+   },
+   "questions": [
+    {
+     "q": "Yer sharida nechta materik bor?",
+     "options": [
+      "4",
+      "5",
+      "6",
+      "7"
+     ],
+     "answer": 2,
+     "why": "Yevrosiyo, Afrika, Shimoliy Amerika, Janubiy Amerika, Avstraliya, Antarktida."
+    },
+    {
+     "q": "Eng katta okean qaysi?",
+     "options": [
+      "Atlantika okeani",
+      "Hind okeani",
+      "Tinch okeani",
+      "Shimoliy Muz okeani"
+     ],
+     "answer": 2,
+     "why": "Tinch okeani — eng katta va eng chuqur okean."
+    },
+    {
+     "q": "Ekvator Yerni qanday yarim sharlarga ajratadi?",
+     "options": [
+      "Shimoliy va janubiy",
+      "Sharqiy va g‘arbiy",
+      "Ichki va tashqi",
+      "Issiq va sovuq"
+     ],
+     "answer": 0,
+     "why": "Ekvator — shimoliy va janubiy yarim sharlar chegarasi."
+    },
+    {
+     "q": "Globus nima?",
+     "options": [
+      "Yerning kichraytirilgan modeli",
+      "Osmon xaritasi",
+      "Kompas turi",
+      "Ob-havo asbobi"
+     ],
+     "answer": 0,
+     "why": "Globus Yerning shaklini aks ettiradi."
+    },
+    {
+     "q": "Xaritada shimol odatda qaysi tomonda bo‘ladi?",
+     "options": [
+      "Yuqorida",
+      "Pastda",
+      "Chapda",
+      "O‘ngda"
+     ],
+     "answer": 0,
+     "why": "Xaritalarda odatda shimol yuqorida joylashadi."
+    }
+   ]
+  },
+  {
+   "id": "ingliz-tili-5",
+   "grade": 5,
+   "subject": "5-ingliz-tili",
+   "title": {
+    "uz": "Ingliz tili, 5-sinf: Grammar basics",
+    "ru": "Английский язык, 5 класс",
+    "en": "English, Grade 5"
+   },
+   "questions": [
+    {
+     "q": "I saw ___ elephant at the zoo.",
+     "options": [
+      "a",
+      "an",
+      "many",
+      "two"
+     ],
+     "answer": 1,
+     "why": "We use \"an\" before a vowel sound: an elephant."
+    },
+    {
+     "q": "What is the comparative of \"tall\"?",
+     "options": [
+      "taller",
+      "more tall",
+      "tallest",
+      "talles"
+     ],
+     "answer": 0,
+     "why": "Short adjectives: tall — taller — the tallest."
+    },
+    {
+     "q": "She can ___ English very well.",
+     "options": [
+      "speaks",
+      "speak",
+      "speaking",
+      "spoke"
+     ],
+     "answer": 1,
+     "why": "After \"can\" we use the base form of the verb."
+    },
+    {
+     "q": "What is the past simple of \"see\"?",
+     "options": [
+      "seed",
+      "saw",
+      "seen",
+      "sees"
+     ],
+     "answer": 1,
+     "why": "See — saw — seen."
+    },
+    {
+     "q": "Which sentence is correct?",
+     "options": [
+      "There is a book on the desk.",
+      "There are a book on the desk.",
+      "There be a book on the desk.",
+      "There am a book on the desk."
+     ],
+     "answer": 0,
+     "why": "With a singular noun we use \"there is\"."
+    }
+   ]
+  },
+  {
+   "id": "tarix-5",
+   "grade": 5,
+   "subject": "5-tarixdan-hikoyalar",
+   "title": {
+    "uz": "Tarixdan hikoyalar, 5-sinf: Buyuk ajdodlarimiz",
+    "ru": "Рассказы из истории, 5 класс",
+    "en": "Stories from history, Grade 5"
+   },
+   "questions": [
+    {
+     "q": "Amir Temur davlatining poytaxti qaysi shahar bo‘lgan?",
+     "options": [
+      "Buxoro",
+      "Samarqand",
+      "Xiva",
+      "Toshkent"
+     ],
+     "answer": 1,
+     "why": "Amir Temur Samarqandni poytaxt qilgan."
+    },
+    {
+     "q": "Mirzo Ulug‘bek nimasi bilan mashhur?",
+     "options": [
+      "Samarqanddagi rasadxonasi va astronomiya asarlari bilan",
+      "Dengiz sayohatlari bilan",
+      "Tibbiyot kitobi bilan",
+      "Romanlari bilan"
+     ],
+     "answer": 0,
+     "why": "Ulug‘bek buyuk astronom, rasadxona qurdirgan."
+    },
+    {
+     "q": "\"Algebra\" so‘zi qaysi olimning kitobi nomidan kelib chiqqan?",
+     "options": [
+      "Muhammad al-Xorazmiy",
+      "Ibn Sino",
+      "Abu Rayhon Beruniy",
+      "Alisher Navoiy"
+     ],
+     "answer": 0,
+     "why": "Al-Xorazmiyning \"Al-jabr va-l-muqobala\" kitobidan."
+    },
+    {
+     "q": "\"Tib qonunlari\" asarining muallifi kim?",
+     "options": [
+      "Beruniy",
+      "Ibn Sino",
+      "Ulug‘bek",
+      "Bobur"
+     ],
+     "answer": 1,
+     "why": "Abu Ali ibn Sino — buyuk tabib va olim."
+    },
+    {
+     "q": "O‘zbekiston mustaqilligi qaysi yili e’lon qilingan?",
+     "options": [
+      "1990-yil",
+      "1991-yil",
+      "1992-yil",
+      "1995-yil"
+     ],
+     "answer": 1,
+     "why": "1991-yil 31-avgustda; Mustaqillik kuni 1-sentyabrda nishonlanadi."
+    }
+   ]
+  },
+  {
+   "id": "ona-tili-6",
+   "grade": 6,
+   "subject": "6-ona-tili",
+   "title": {
+    "uz": "Ona tili, 6-sinf: Leksikologiya",
+    "ru": "Родной язык, 6 класс",
+    "en": "Native language, Grade 6"
+   },
+   "questions": [
+    {
+     "q": "Shakli bir xil, ma’nosi har xil so‘zlar nima deyiladi?",
+     "options": [
+      "sinonimlar",
+      "antonimlar",
+      "omonimlar",
+      "paronimlar"
+     ],
+     "answer": 2,
+     "why": "Masalan: \"ot\" (hayvon) va \"ot\" (ism)."
+    },
+    {
+     "q": "Qaysi juftlik sinonimlar?",
+     "options": [
+      "yuz – bet",
+      "katta – kichik",
+      "issiq – sovuq",
+      "kun – tun"
+     ],
+     "answer": 0,
+     "why": "Yuz va bet ma’nosi yaqin so‘zlar; qolganlari antonimlar."
+    },
+    {
+     "q": "\"Qo‘li ochiq\" iborasi qanday ma’noni bildiradi?",
+     "options": [
+      "saxiy",
+      "dangasa",
+      "qo‘rqoq",
+      "kasal"
+     ],
+     "answer": 0,
+     "why": "\"Qo‘li ochiq\" — saxiy, bag‘rikeng odam."
+    },
+    {
+     "q": "Qaysi so‘z eskirgan so‘z (arxaizm)?",
+     "options": [
+      "kompyuter",
+      "sipoh",
+      "telefon",
+      "avtobus"
+     ],
+     "answer": 1,
+     "why": "\"Sipoh\" — eskicha \"askar\" ma’nosidagi so‘z."
+    },
+    {
+     "q": "Qaysi so‘z boshqa tildan o‘zlashgan?",
+     "options": [
+      "kompyuter",
+      "non",
+      "suv",
+      "ota"
+     ],
+     "answer": 0,
+     "why": "\"Kompyuter\" ingliz tilidan o‘zlashgan."
+    }
+   ]
+  },
+  {
+   "id": "adabiyot-6",
+   "grade": 6,
+   "subject": "6-adabiyot",
+   "title": {
+    "uz": "Adabiyot, 6-sinf: Mumtoz adabiyot",
+    "ru": "Литература, 6 класс",
+    "en": "Literature, Grade 6"
+   },
+   "questions": [
+    {
+     "q": "\"Xamsa\" asarining muallifi kim?",
+     "options": [
+      "Bobur",
+      "Lutfiy",
+      "Alisher Navoiy",
+      "Furqat"
+     ],
+     "answer": 2,
+     "why": "\"Xamsa\" — Alisher Navoiyning besh dostondan iborat asari."
+    },
+    {
+     "q": "\"Xamsa\" nechta dostondan iborat?",
+     "options": [
+      "3",
+      "4",
+      "5",
+      "7"
+     ],
+     "answer": 2,
+     "why": "Xamsa — \"beshlik\" degani: besh doston."
+    },
+    {
+     "q": "\"Boburnoma\" qanday asar?",
+     "options": [
+      "Memuar (esdalik) asari",
+      "She’riy doston",
+      "Ertak",
+      "Drama"
+     ],
+     "answer": 0,
+     "why": "Bobur o‘z hayoti va zamonasi voqealarini yozgan."
+    },
+    {
+     "q": "Ruboiy necha misradan iborat?",
+     "options": [
+      "2",
+      "4",
+      "6",
+      "8"
+     ],
+     "answer": 1,
+     "why": "Ruboiy — to‘rt misrali she’r."
+    },
+    {
+     "q": "\"Qutadg‘u bilig\" asarining muallifi kim?",
+     "options": [
+      "Mahmud Koshg‘ariy",
+      "Yusuf Xos Hojib",
+      "Ahmad Yugnakiy",
+      "Alisher Navoiy"
+     ],
+     "answer": 1,
+     "why": "\"Qutadg‘u bilig\" — XI asrda Yusuf Xos Hojib yozgan doston."
+    }
+   ]
+  },
+  {
+   "id": "matematika-6",
+   "grade": 6,
+   "subject": "6-matematika",
+   "title": {
+    "uz": "Matematika, 6-sinf: Ratsional sonlar va tenglamalar",
+    "ru": "Математика, 6 класс",
+    "en": "Mathematics, Grade 6"
+   },
+   "questions": [
+    {
+     "q": "−5 + 8 = ?",
+     "options": [
+      "−13",
+      "−3",
+      "3",
+      "13"
+     ],
+     "answer": 2,
+     "why": "8 − 5 = 3."
+    },
+    {
+     "q": "0,25 qaysi oddiy kasrga teng?",
+     "options": [
+      "1/2",
+      "1/4",
+      "2/5",
+      "1/25"
+     ],
+     "answer": 1,
+     "why": "0,25 = 25/100 = 1/4."
+    },
+    {
+     "q": "120 ning 15 foizi nechaga teng?",
+     "options": [
+      "12",
+      "18",
+      "15",
+      "20"
+     ],
+     "answer": 1,
+     "why": "120 · 0,15 = 18."
+    },
+    {
+     "q": "2x + 5 = 17 tenglamani yeching.",
+     "options": [
+      "5",
+      "6",
+      "7",
+      "11"
+     ],
+     "answer": 1,
+     "why": "2x = 12, x = 6."
+    },
+    {
+     "q": "12 va 18 sonlarining eng katta umumiy bo‘luvchisi (EKUB) nechaga teng?",
+     "options": [
+      "3",
+      "6",
+      "9",
+      "36"
+     ],
+     "answer": 1,
+     "why": "12 = 2·2·3, 18 = 2·3·3; EKUB = 2·3 = 6."
+    }
+   ]
+  },
+  {
+   "id": "fizika-6",
+   "grade": 6,
+   "subject": "6-fizika",
+   "title": {
+    "uz": "Fizika, 6-sinf: Fizikaga kirish",
+    "ru": "Физика, 6 класс",
+    "en": "Physics, Grade 6"
+   },
+   "questions": [
+    {
+     "q": "Uzunlikning XBS (SI) dagi asosiy birligi qaysi?",
+     "options": [
+      "santimetr",
+      "metr",
+      "kilometr",
+      "millimetr"
+     ],
+     "answer": 1,
+     "why": "SI da uzunlik metrda o‘lchanadi."
+    },
+    {
+     "q": "Tezlik qaysi formula bilan topiladi?",
+     "options": [
+      "v = s / t",
+      "v = s · t",
+      "v = t / s",
+      "v = s + t"
+     ],
+     "answer": 0,
+     "why": "Tezlik — bosib o‘tilgan yo‘lning vaqtga nisbati."
+    },
+    {
+     "q": "Avtomobil 3 soatda 180 km yo‘l bosdi. Uning tezligi qancha?",
+     "options": [
+      "50 km/soat",
+      "60 km/soat",
+      "90 km/soat",
+      "540 km/soat"
+     ],
+     "answer": 1,
+     "why": "v = 180 / 3 = 60 km/soat."
+    },
+    {
+     "q": "Massa nima yordamida o‘lchanadi?",
+     "options": [
+      "termometr",
+      "tarozi",
+      "spidometr",
+      "barometr"
+     ],
+     "answer": 1,
+     "why": "Massani tarozi bilan o‘lchaymiz."
+    },
+    {
+     "q": "Xona haroratida qaysi modda gaz holatida bo‘ladi?",
+     "options": [
+      "temir",
+      "suv",
+      "havo",
+      "tuz"
+     ],
+     "answer": 2,
+     "why": "Havo — gazlar aralashmasi."
+    }
+   ]
+  },
+  {
+   "id": "geografiya-6",
+   "grade": 6,
+   "subject": "6-geografiya",
+   "title": {
+    "uz": "Geografiya, 6-sinf: Yer qobiqlari",
+    "ru": "География, 6 класс",
+    "en": "Geography, Grade 6"
+   },
+   "questions": [
+    {
+     "q": "Dunyodagi eng baland cho‘qqi qaysi?",
+     "options": [
+      "Elbrus",
+      "Jomolungma (Everest)",
+      "Kilimanjaro",
+      "Hazrat Sulton"
+     ],
+     "answer": 1,
+     "why": "Jomolungma — Himolay tog‘larida, 8848 metrdan baland."
+    },
+    {
+     "q": "O‘zbekistondagi eng baland nuqta qaysi?",
+     "options": [
+      "Hazrat Sulton cho‘qqisi",
+      "Jomolungma",
+      "Chimyon",
+      "Elbrus"
+     ],
+     "answer": 0,
+     "why": "Hazrat Sulton cho‘qqisi Hisor tizmasida joylashgan."
+    },
+    {
+     "q": "O‘zbekistonning ikki yirik daryosi qaysilar?",
+     "options": [
+      "Amudaryo va Sirdaryo",
+      "Volga va Dnepr",
+      "Nil va Kongo",
+      "Ob va Yenisey"
+     ],
+     "answer": 0,
+     "why": "Amudaryo va Sirdaryo Orol dengizi havzasiga oqadi."
+    },
+    {
+     "q": "Geografik kenglik nimadan boshlab hisoblanadi?",
+     "options": [
+      "Ekvatordan",
+      "Bosh meridiandan",
+      "Qutbdan",
+      "Tropikdan"
+     ],
+     "answer": 0,
+     "why": "Kenglik ekvatordan shimol va janubga hisoblanadi."
+    },
+    {
+     "q": "Atmosfera nima?",
+     "options": [
+      "Yerning havo qobig‘i",
+      "Yerning suv qobig‘i",
+      "Yerning tosh qobig‘i",
+      "Yer yadrosi"
+     ],
+     "answer": 0,
+     "why": "Atmosfera — Yerni o‘rab turgan havo qatlami."
+    }
+   ]
+  },
+  {
+   "id": "tarix-6",
+   "grade": 6,
+   "subject": "6-tarix",
+   "title": {
+    "uz": "Tarix, 6-sinf: Qadimgi dunyo tarixi",
+    "ru": "История, 6 класс",
+    "en": "History, Grade 6"
+   },
+   "questions": [
+    {
+     "q": "Qadimgi Misr hukmdorlari qanday atalgan?",
+     "options": [
+      "fir’avn",
+      "imperator",
+      "xon",
+      "konsul"
+     ],
+     "answer": 0,
+     "why": "Qadimgi Misr podsholari fir’avn deb atalgan."
+    },
+    {
+     "q": "Olimpiya o‘yinlari dastlab qayerda o‘tkazilgan?",
+     "options": [
+      "Qadimgi Rimda",
+      "Qadimgi Yunonistonda",
+      "Qadimgi Misrda",
+      "Qadimgi Hindistonda"
+     ],
+     "answer": 1,
+     "why": "Olimpiya o‘yinlari Yunonistondagi Olimpiyada o‘tkazilgan."
+    },
+    {
+     "q": "\"Avesto\" qaysi dinning muqaddas kitobi?",
+     "options": [
+      "buddaviylik",
+      "zardushtiylik",
+      "xristianlik",
+      "iudaizm"
+     ],
+     "answer": 1,
+     "why": "\"Avesto\" — zardushtiylarning muqaddas kitobi."
+    },
+    {
+     "q": "Buyuk Ipak yo‘li qaysi hududlarni bog‘lagan?",
+     "options": [
+      "Xitoyni O‘rta yer dengizi mamlakatlari bilan",
+      "Amerika va Yevropani",
+      "Afrika va Avstraliyani",
+      "Faqat Yevropa shaharlarini"
+     ],
+     "answer": 0,
+     "why": "Ipak yo‘li Sharq va G‘arbni bog‘lagan savdo yo‘li."
+    },
+    {
+     "q": "Aleksandr Makedonskiy qaysi davlatning podshosi bo‘lgan?",
+     "options": [
+      "Fors",
+      "Makedoniya",
+      "Rim",
+      "Misr"
+     ],
+     "answer": 1,
+     "why": "U Makedoniya podshosi bo‘lib, katta saltanat tuzgan."
+    }
+   ]
+  },
+  {
+   "id": "ingliz-tili-6",
+   "grade": 6,
+   "subject": "6-ingliz-tili",
+   "title": {
+    "uz": "Ingliz tili, 6-sinf: Tenses",
+    "ru": "Английский язык, 6 класс",
+    "en": "English, Grade 6"
+   },
+   "questions": [
+    {
+     "q": "I ___ my homework now.",
+     "options": [
+      "do",
+      "am doing",
+      "did",
+      "does"
+     ],
+     "answer": 1,
+     "why": "\"Now\" — present continuous."
+    },
+    {
+     "q": "What is the superlative of \"good\"?",
+     "options": [
+      "gooder",
+      "better",
+      "the best",
+      "the goodest"
+     ],
+     "answer": 2,
+     "why": "Good — better — the best."
+    },
+    {
+     "q": "Have you ever ___ to London?",
+     "options": [
+      "go",
+      "went",
+      "been",
+      "going"
+     ],
+     "answer": 2,
+     "why": "Present perfect: have been."
+    },
+    {
+     "q": "I was born ___ 2012.",
+     "options": [
+      "in",
+      "on",
+      "at",
+      "by"
+     ],
+     "answer": 0,
+     "why": "We use \"in\" with years."
+    },
+    {
+     "q": "\"Can you help me?\" Choose the polite answer.",
+     "options": [
+      "Yes, of course.",
+      "No, I am.",
+      "Yes, I do it yesterday.",
+      "I can't to help."
+     ],
+     "answer": 0,
+     "why": "\"Yes, of course\" is a correct polite answer."
+    }
+   ]
+  },
+  {
+   "id": "ona-tili-7",
+   "grade": 7,
+   "subject": "7-ona-tili",
+   "title": {
+    "uz": "Ona tili, 7-sinf: Morfologiya",
+    "ru": "Родной язык, 7 класс",
+    "en": "Native language, Grade 7"
+   },
+   "questions": [
+    {
+     "q": "Fe’lning harakat nomi shakli qaysi qo‘shimcha bilan yasaladi?",
+     "options": [
+      "-lar",
+      "-moq",
+      "-chi",
+      "-li"
+     ],
+     "answer": 1,
+     "why": "O‘qimoq, yozmoq, kelmoq."
+    },
+    {
+     "q": "Qaysi so‘z ravish?",
+     "options": [
+      "hozir",
+      "hozirgi",
+      "hozirlik",
+      "hozirlamoq"
+     ],
+     "answer": 0,
+     "why": "\"Hozir\" harakatning paytini bildiradi — ravish."
+    },
+    {
+     "q": "\"O‘qidi\" fe’li qaysi zamonda?",
+     "options": [
+      "o‘tgan zamon",
+      "hozirgi zamon",
+      "kelasi zamon",
+      "zamon ko‘rsatilmagan"
+     ],
+     "answer": 0,
+     "why": "-di qo‘shimchasi o‘tgan zamonni bildiradi."
+    },
+    {
+     "q": "Qaysi so‘z ko‘makchi?",
+     "options": [
+      "bilan",
+      "va",
+      "lekin",
+      "ham"
+     ],
+     "answer": 0,
+     "why": "\"Bilan\" — ko‘makchi; \"va\", \"lekin\" — bog‘lovchi; \"ham\" — yuklama."
+    },
+    {
+     "q": "Qaysi so‘z bog‘lovchi?",
+     "options": [
+      "uchun",
+      "va",
+      "kabi",
+      "sari"
+     ],
+     "answer": 1,
+     "why": "\"Va\" — biriktiruv bog‘lovchisi."
+    }
+   ]
+  },
+  {
+   "id": "adabiyot-7",
+   "grade": 7,
+   "subject": "7-adabiyot",
+   "title": {
+    "uz": "Adabiyot, 7-sinf: Yangi o‘zbek adabiyoti",
+    "ru": "Литература, 7 класс",
+    "en": "Literature, Grade 7"
+   },
+   "questions": [
+    {
+     "q": "\"Kecha va kunduz\" romanining muallifi kim?",
+     "options": [
+      "Abdulla Qodiriy",
+      "Cho‘lpon",
+      "Fitrat",
+      "Oybek"
+     ],
+     "answer": 1,
+     "why": "\"Kecha va kunduz\" — Abdulhamid Cho‘lpon romani."
+    },
+    {
+     "q": "\"Mehrobdan chayon\" romanining muallifi kim?",
+     "options": [
+      "Abdulla Qodiriy",
+      "Cho‘lpon",
+      "Abdulla Qahhor",
+      "Oybek"
+     ],
+     "answer": 0,
+     "why": "Abdulla Qodiriyning ikkinchi romani."
+    },
+    {
+     "q": "G‘azal qanday she’r?",
+     "options": [
+      "Baytlardan tuzilgan, qofiyalanadigan lirik she’r",
+      "To‘rt misrali she’r",
+      "Nasriy asar",
+      "Sahna asari"
+     ],
+     "answer": 0,
+     "why": "G‘azal baytlardan iborat, qofiya: aa, ba, va..."
+    },
+    {
+     "q": "\"Shum bola\" qissasining muallifi kim?",
+     "options": [
+      "Oybek",
+      "G‘afur G‘ulom",
+      "Hamid Olimjon",
+      "Abdulla Qahhor"
+     ],
+     "answer": 1,
+     "why": "\"Shum bola\" — G‘afur G‘ulom qissasi."
+    },
+    {
+     "q": "Jonsiz narsaga inson xususiyatini berish qanday badiiy san’at?",
+     "options": [
+      "o‘xshatish",
+      "jonlantirish (tashxis)",
+      "mubolag‘a",
+      "takror"
+     ],
+     "answer": 1,
+     "why": "Masalan: \"Daraxtlar shivirlaydi\"."
+    }
+   ]
+  },
+  {
+   "id": "algebra-7",
+   "grade": 7,
+   "subject": "7-algebra",
+   "title": {
+    "uz": "Algebra, 7-sinf: Ko‘phadlar",
+    "ru": "Алгебра, 7 класс",
+    "en": "Algebra, Grade 7"
+   },
+   "questions": [
+    {
+     "q": "(a + b)² = ?",
+     "options": [
+      "a² + b²",
+      "a² + 2ab + b²",
+      "a² − 2ab + b²",
+      "2a + 2b"
+     ],
+     "answer": 1,
+     "why": "Yig‘indining kvadrati formulasi."
+    },
+    {
+     "q": "2³ · 2² = ?",
+     "options": [
+      "2⁶",
+      "2⁵",
+      "4⁵",
+      "2¹"
+     ],
+     "answer": 1,
+     "why": "Asoslari bir xil darajalar ko‘paytirilsa, ko‘rsatkichlar qo‘shiladi: 3 + 2 = 5."
+    },
+    {
+     "q": "3x − 7 = 8 bo‘lsa, x nechaga teng?",
+     "options": [
+      "3",
+      "5",
+      "15",
+      "1/5"
+     ],
+     "answer": 1,
+     "why": "3x = 15, x = 5."
+    },
+    {
+     "q": "y = 2x + 1 funksiyada x = 3 bo‘lsa, y nechaga teng?",
+     "options": [
+      "6",
+      "7",
+      "5",
+      "9"
+     ],
+     "answer": 1,
+     "why": "y = 2 · 3 + 1 = 7."
+    },
+    {
+     "q": "x² − 9 ni ko‘paytuvchilarga ajrating.",
+     "options": [
+      "(x − 3)²",
+      "(x − 3)(x + 3)",
+      "(x + 9)(x − 1)",
+      "x(x − 9)"
+     ],
+     "answer": 1,
+     "why": "Kvadratlar ayirmasi: a² − b² = (a − b)(a + b)."
+    }
+   ]
+  },
+  {
+   "id": "geometriya-7",
+   "grade": 7,
+   "subject": "7-geometriya",
+   "title": {
+    "uz": "Geometriya, 7-sinf: Burchaklar va uchburchaklar",
+    "ru": "Геометрия, 7 класс",
+    "en": "Geometry, Grade 7"
+   },
+   "questions": [
+    {
+     "q": "Uchburchak ichki burchaklarining yig‘indisi necha gradus?",
+     "options": [
+      "90°",
+      "180°",
+      "270°",
+      "360°"
+     ],
+     "answer": 1,
+     "why": "Har qanday uchburchakda burchaklar yig‘indisi 180°."
+    },
+    {
+     "q": "To‘g‘ri burchak necha gradus?",
+     "options": [
+      "45°",
+      "90°",
+      "180°",
+      "360°"
+     ],
+     "answer": 1,
+     "why": "To‘g‘ri burchak 90° ga teng."
+    },
+    {
+     "q": "Qo‘shni burchaklar yig‘indisi necha gradus?",
+     "options": [
+      "90°",
+      "180°",
+      "360°",
+      "270°"
+     ],
+     "answer": 1,
+     "why": "Qo‘shni burchaklar yoyiq burchakni tashkil etadi."
+    },
+    {
+     "q": "Teng yonli uchburchakda asosdagi burchaklar qanday bo‘ladi?",
+     "options": [
+      "Teng bo‘ladi",
+      "Har doim 90° bo‘ladi",
+      "Yig‘indisi 90° bo‘ladi",
+      "Har xil bo‘ladi"
+     ],
+     "answer": 0,
+     "why": "Teng yonli uchburchakning asosdagi burchaklari teng."
+    },
+    {
+     "q": "Vertikal burchaklar haqida qaysi gap to‘g‘ri?",
+     "options": [
+      "Ular teng",
+      "Yig‘indisi 90°",
+      "Har doim to‘g‘ri burchak",
+      "Har doim o‘tmas burchak"
+     ],
+     "answer": 0,
+     "why": "Vertikal burchaklar teng bo‘ladi."
+    }
+   ]
+  },
+  {
+   "id": "fizika-7",
+   "grade": 7,
+   "subject": "7-fizika",
+   "title": {
+    "uz": "Fizika, 7-sinf: Kuch, zichlik, bosim",
+    "ru": "Физика, 7 класс",
+    "en": "Physics, Grade 7"
+   },
+   "questions": [
+    {
+     "q": "Kuchning XBS (SI) dagi birligi qaysi?",
+     "options": [
+      "joul",
+      "nyuton",
+      "vatt",
+      "paskal"
+     ],
+     "answer": 1,
+     "why": "Kuch nyutonlarda (N) o‘lchanadi."
+    },
+    {
+     "q": "Zichlik formulasi qaysi?",
+     "options": [
+      "ρ = m / V",
+      "ρ = m · V",
+      "ρ = V / m",
+      "ρ = F / S"
+     ],
+     "answer": 0,
+     "why": "Zichlik — massaning hajmga nisbati."
+    },
+    {
+     "q": "Bosim birligi qaysi?",
+     "options": [
+      "nyuton",
+      "paskal",
+      "joul",
+      "vatt"
+     ],
+     "answer": 1,
+     "why": "1 Pa = 1 N/m²."
+    },
+    {
+     "q": "Yerda erkin tushish tezlanishi taxminan qancha?",
+     "options": [
+      "1 m/s²",
+      "5 m/s²",
+      "9,8 m/s²",
+      "98 m/s²"
+     ],
+     "answer": 2,
+     "why": "g ≈ 9,8 m/s²."
+    },
+    {
+     "q": "Suvning zichligi taxminan qancha?",
+     "options": [
+      "100 kg/m³",
+      "1000 kg/m³",
+      "10 kg/m³",
+      "7800 kg/m³"
+     ],
+     "answer": 1,
+     "why": "Toza suvning zichligi ≈ 1000 kg/m³."
+    }
+   ]
+  },
+  {
+   "id": "kimyo-7",
+   "grade": 7,
+   "subject": "7-kimyo",
+   "title": {
+    "uz": "Kimyo, 7-sinf: Kimyoga kirish",
+    "ru": "Химия, 7 класс",
+    "en": "Chemistry, Grade 7"
+   },
+   "questions": [
+    {
+     "q": "Suvning kimyoviy formulasi qaysi?",
+     "options": [
+      "CO₂",
+      "H₂O",
+      "O₂",
+      "NaCl"
+     ],
+     "answer": 1,
+     "why": "Suv molekulasi 2 ta vodorod va 1 ta kislorod atomidan iborat."
+    },
+    {
+     "q": "Kimyoviy elementlar davriy jadvalini kim yaratgan?",
+     "options": [
+      "Lomonosov",
+      "Mendeleyev",
+      "Nyuton",
+      "Lavuazye"
+     ],
+     "answer": 1,
+     "why": "D. I. Mendeleyev 1869-yilda davriy qonunni kashf etgan."
+    },
+    {
+     "q": "Osh tuzining formulasi qaysi?",
+     "options": [
+      "KCl",
+      "NaCl",
+      "CaCO₃",
+      "H₂SO₄"
+     ],
+     "answer": 1,
+     "why": "Osh tuzi — natriy xlorid, NaCl."
+    },
+    {
+     "q": "Kislorodning kimyoviy belgisi qaysi?",
+     "options": [
+      "K",
+      "O",
+      "Os",
+      "Ox"
+     ],
+     "answer": 1,
+     "why": "Kislorod — O."
+    },
+    {
+     "q": "Qaysi biri kimyoviy hodisa?",
+     "options": [
+      "muzning erishi",
+      "qog‘ozning yonishi",
+      "shishaning sinishi",
+      "suvning bug‘lanishi"
+     ],
+     "answer": 1,
+     "why": "Yonishda yangi moddalar hosil bo‘ladi — bu kimyoviy hodisa."
+    }
+   ]
+  },
+  {
+   "id": "biologiya-7",
+   "grade": 7,
+   "subject": "7-biologiya",
+   "title": {
+    "uz": "Biologiya, 7-sinf: Hayvonot olami",
+    "ru": "Биология, 7 класс",
+    "en": "Biology, Grade 7"
+   },
+   "questions": [
+    {
+     "q": "Hasharotlarning nechta oyog‘i bor?",
+     "options": [
+      "4",
+      "6",
+      "8",
+      "10"
+     ],
+     "answer": 1,
+     "why": "Hasharotlarning 3 juft, ya’ni 6 ta oyog‘i bor."
+    },
+    {
+     "q": "O‘rgimchakning nechta oyog‘i bor?",
+     "options": [
+      "6",
+      "8",
+      "10",
+      "4"
+     ],
+     "answer": 1,
+     "why": "O‘rgimchaklar hasharot emas, ularning 8 ta oyog‘i bor."
+    },
+    {
+     "q": "Qaysi hayvon sutemizuvchi?",
+     "options": [
+      "akula",
+      "delfin",
+      "timsoh",
+      "pingvin"
+     ],
+     "answer": 1,
+     "why": "Delfin bolasini sut bilan boqadi va o‘pka bilan nafas oladi."
+    },
+    {
+     "q": "Baliqlar nima yordamida nafas oladi?",
+     "options": [
+      "o‘pka",
+      "jabra",
+      "teri",
+      "traxeya"
+     ],
+     "answer": 1,
+     "why": "Baliqlar suvda erigan kislorodni jabralar orqali oladi."
+    },
+    {
+     "q": "Qushlarning tanasi nima bilan qoplangan?",
+     "options": [
+      "tangacha",
+      "jun",
+      "pat",
+      "chig‘anoq"
+     ],
+     "answer": 2,
+     "why": "Qushlarning tanasi pat bilan qoplangan."
+    }
+   ]
+  },
+  {
+   "id": "geografiya-7",
+   "grade": 7,
+   "subject": "7-geografiya",
+   "title": {
+    "uz": "Geografiya, 7-sinf: Materiklar",
+    "ru": "География, 7 класс",
+    "en": "Geography, Grade 7"
+   },
+   "questions": [
+    {
+     "q": "Eng katta materik qaysi?",
+     "options": [
+      "Afrika",
+      "Yevrosiyo",
+      "Shimoliy Amerika",
+      "Antarktida"
+     ],
+     "answer": 1,
+     "why": "Yevrosiyo — eng katta materik."
+    },
+    {
+     "q": "Sahroi Kabir cho‘li qaysi materikda?",
+     "options": [
+      "Yevrosiyo",
+      "Afrika",
+      "Avstraliya",
+      "Janubiy Amerika"
+     ],
+     "answer": 1,
+     "why": "Sahroi Kabir (Sahara) Shimoliy Afrikada."
+    },
+    {
+     "q": "Amazonka daryosi qaysi materikda?",
+     "options": [
+      "Afrika",
+      "Shimoliy Amerika",
+      "Janubiy Amerika",
+      "Avstraliya"
+     ],
+     "answer": 2,
+     "why": "Amazonka — Janubiy Amerikadagi eng sersuv daryo."
+    },
+    {
+     "q": "Eng sovuq materik qaysi?",
+     "options": [
+      "Yevrosiyo",
+      "Shimoliy Amerika",
+      "Antarktida",
+      "Avstraliya"
+     ],
+     "answer": 2,
+     "why": "Antarktida deyarli butunlay muz bilan qoplangan."
+    },
+    {
+     "q": "Avstraliya materigi qaysi yarim sharlarda joylashgan?",
+     "options": [
+      "Janubiy va sharqiy",
+      "Shimoliy va g‘arbiy",
+      "Shimoliy va sharqiy",
+      "Janubiy va g‘arbiy"
+     ],
+     "answer": 0,
+     "why": "Avstraliya ekvatordan janubda va bosh meridiandan sharqda."
+    }
+   ]
+  },
+  {
+   "id": "ozbekiston-tarixi-7",
+   "grade": 7,
+   "subject": "7-ozbekiston-tarixi",
+   "title": {
+    "uz": "O‘zbekiston tarixi, 7-sinf: O‘rta asrlar",
+    "ru": "История Узбекистана, 7 класс",
+    "en": "History of Uzbekistan, Grade 7"
+   },
+   "questions": [
+    {
+     "q": "Amir Temur qaysi yili tug‘ilgan?",
+     "options": [
+      "1220",
+      "1336",
+      "1405",
+      "1483"
+     ],
+     "answer": 1,
+     "why": "Amir Temur 1336-yilda Kesh (Shahrisabz) yaqinida tug‘ilgan."
+    },
+    {
+     "q": "Chingizxon qo‘shinlari Movarounnahrga qachon bostirib kirgan?",
+     "options": [
+      "1206-yilda",
+      "1219–1220-yillarda",
+      "1370-yilda",
+      "1500-yilda"
+     ],
+     "answer": 1,
+     "why": "Mo‘g‘ullar 1219–1220-yillarda O‘rta Osiyoni bosib olgan."
+    },
+    {
+     "q": "Mo‘g‘ul bosqinchilariga qarshi qahramonona kurashgan Xorazmshoh kim?",
+     "options": [
+      "Amir Temur",
+      "Jaloliddin Manguberdi",
+      "Bobur",
+      "Ulug‘bek"
+     ],
+     "answer": 1,
+     "why": "Jaloliddin Manguberdi mo‘g‘ullarga qarshi kurashgan."
+    },
+    {
+     "q": "Somoniylar davlatining poytaxti qaysi shahar bo‘lgan?",
+     "options": [
+      "Samarqand",
+      "Buxoro",
+      "Urganch",
+      "Termiz"
+     ],
+     "answer": 1,
+     "why": "Somoniylar davrida Buxoro poytaxt bo‘lgan."
+    },
+    {
+     "q": "Abu Rayhon Beruniy qaysi yurtda tug‘ilgan?",
+     "options": [
+      "Buxoroda",
+      "Xorazmda",
+      "Farg‘onada",
+      "Toshkentda"
+     ],
+     "answer": 1,
+     "why": "Beruniy 973-yilda Xorazmning Kot shahrida tug‘ilgan."
+    }
+   ]
+  },
+  {
+   "id": "ingliz-tili-7",
+   "grade": 7,
+   "subject": "7-ingliz-tili",
+   "title": {
+    "uz": "Ingliz tili, 7-sinf: Grammar in use",
+    "ru": "Английский язык, 7 класс",
+    "en": "English, Grade 7"
+   },
+   "questions": [
+    {
+     "q": "If it rains, we ___ at home.",
+     "options": [
+      "stayed",
+      "will stay",
+      "would stay",
+      "stays"
+     ],
+     "answer": 1,
+     "why": "First conditional: if + present simple, will + verb."
+    },
+    {
+     "q": "She has lived here ___ 2015.",
+     "options": [
+      "for",
+      "since",
+      "from",
+      "at"
+     ],
+     "answer": 1,
+     "why": "\"Since\" + a point in time."
+    },
+    {
+     "q": "I ___ TV when you called.",
+     "options": [
+      "watch",
+      "was watching",
+      "have watched",
+      "will watch"
+     ],
+     "answer": 1,
+     "why": "An action in progress in the past — past continuous."
+    },
+    {
+     "q": "The letter ___ yesterday.",
+     "options": [
+      "wrote",
+      "is written",
+      "was written",
+      "writes"
+     ],
+     "answer": 2,
+     "why": "Past simple passive: was/were + past participle."
+    },
+    {
+     "q": "You are a student, ___?",
+     "options": [
+      "aren't you",
+      "are you",
+      "don't you",
+      "isn't it"
+     ],
+     "answer": 0,
+     "why": "Positive sentence — negative question tag."
+    }
+   ]
+  },
+  {
+   "id": "ona-tili-8",
+   "grade": 8,
+   "subject": "8-ona-tili",
+   "title": {
+    "uz": "Ona tili, 8-sinf: Gap bo‘laklari",
+    "ru": "Родной язык, 8 класс",
+    "en": "Native language, Grade 8"
+   },
+   "questions": [
+    {
+     "q": "To‘ldiruvchi qaysi so‘roqlarga javob beradi?",
+     "options": [
+      "qanday? qaysi?",
+      "kimni? nimani? kimga? nimaga?",
+      "qachon? qayerda?",
+      "nima qildi?"
+     ],
+     "answer": 1,
+     "why": "To‘ldiruvchi harakat yo‘nalgan narsani bildiradi."
+    },
+    {
+     "q": "Aniqlovchi qaysi so‘roqlarga javob beradi?",
+     "options": [
+      "qanday? qaysi? kimning?",
+      "kim? nima?",
+      "qachon? qayerda?",
+      "nima qildi?"
+     ],
+     "answer": 0,
+     "why": "Aniqlovchi narsaning belgisini bildiradi."
+    },
+    {
+     "q": "Hol gapda qaysi bo‘lakni izohlaydi?",
+     "options": [
+      "egani",
+      "kesimni (harakatni)",
+      "aniqlovchini",
+      "undalmani"
+     ],
+     "answer": 1,
+     "why": "Hol harakatning payti, o‘rni, sababi, holatini bildiradi."
+    },
+    {
+     "q": "\"Bahorda dalalar yashillanadi.\" gapida \"bahorda\" qanday bo‘lak?",
+     "options": [
+      "ega",
+      "to‘ldiruvchi",
+      "payt holi",
+      "aniqlovchi"
+     ],
+     "answer": 2,
+     "why": "Qachon yashillanadi? — bahorda."
+    },
+    {
+     "q": "Qaysi so‘z kirish so‘z bo‘lib kela oladi?",
+     "options": [
+      "albatta",
+      "maktabga",
+      "keldi",
+      "chiroyli"
+     ],
+     "answer": 0,
+     "why": "\"Albatta, u keladi.\" — kirish so‘z vergul bilan ajratiladi."
+    }
+   ]
+  },
+  {
+   "id": "adabiyot-8",
+   "grade": 8,
+   "subject": "8-adabiyot",
+   "title": {
+    "uz": "Adabiyot, 8-sinf: XX asr o‘zbek adabiyoti",
+    "ru": "Литература, 8 класс",
+    "en": "Literature, Grade 8"
+   },
+   "questions": [
+    {
+     "q": "\"O‘tkan kunlar\" romani qaysi davr voqealarini tasvirlaydi?",
+     "options": [
+      "Temuriylar davrini",
+      "XIX asr o‘rtalari, Qo‘qon xonligi davrini",
+      "Ikkinchi jahon urushi yillarini",
+      "Mustaqillik yillarini"
+     ],
+     "answer": 1,
+     "why": "Roman voqealari XIX asr o‘rtalarida Toshkent va Marg‘ilonda kechadi."
+    },
+    {
+     "q": "\"Navoiy\" romanining muallifi kim?",
+     "options": [
+      "G‘afur G‘ulom",
+      "Oybek",
+      "Cho‘lpon",
+      "Abdulla Qodiriy"
+     ],
+     "answer": 1,
+     "why": "\"Navoiy\" — Oybekning tarixiy romani."
+    },
+    {
+     "q": "\"Sarob\" romanining muallifi kim?",
+     "options": [
+      "Oybek",
+      "Abdulla Qahhor",
+      "Cho‘lpon",
+      "Said Ahmad"
+     ],
+     "answer": 1,
+     "why": "\"Sarob\" — Abdulla Qahhorning romani."
+    },
+    {
+     "q": "Qaysi misolda o‘xshatish (tashbeh) bor?",
+     "options": [
+      "Yuzi oydek go‘zal",
+      "Daraxtlar shivirlaydi",
+      "Ming marta aytdim",
+      "Sen kel, sen!"
+     ],
+     "answer": 0,
+     "why": "\"-dek\" qo‘shimchasi yordamida o‘xshatish hosil qilingan."
+    },
+    {
+     "q": "Qaysi biri dramatik asar?",
+     "options": [
+      "roman",
+      "hikoya",
+      "pyesa",
+      "g‘azal"
+     ],
+     "answer": 2,
+     "why": "Pyesa sahnada qo‘yish uchun yoziladi."
+    }
+   ]
+  },
+  {
+   "id": "algebra-8",
+   "grade": 8,
+   "subject": "8-algebra",
+   "title": {
+    "uz": "Algebra, 8-sinf: Kvadrat tenglamalar",
+    "ru": "Алгебра, 8 класс",
+    "en": "Algebra, Grade 8"
+   },
+   "questions": [
+    {
+     "q": "Kvadrat tenglama diskriminanti qaysi formula bilan topiladi?",
+     "options": [
+      "D = b² − 4ac",
+      "D = b² + 4ac",
+      "D = 4ac − b²",
+      "D = b − 4ac"
+     ],
+     "answer": 0,
+     "why": "ax² + bx + c = 0 uchun D = b² − 4ac."
+    },
+    {
+     "q": "x² − 5x + 6 = 0 tenglamaning ildizlari qaysilar?",
+     "options": [
+      "1 va 6",
+      "2 va 3",
+      "−2 va −3",
+      "5 va 6"
+     ],
+     "answer": 1,
+     "why": "2 + 3 = 5 va 2 · 3 = 6."
+    },
+    {
+     "q": "√144 = ?",
+     "options": [
+      "11",
+      "12",
+      "14",
+      "72"
+     ],
+     "answer": 1,
+     "why": "12 · 12 = 144."
+    },
+    {
+     "q": "x² = 49 bo‘lsa, x nechaga teng?",
+     "options": [
+      "faqat 7",
+      "7 yoki −7",
+      "faqat −7",
+      "49"
+     ],
+     "answer": 1,
+     "why": "7² = 49 va (−7)² = 49."
+    },
+    {
+     "q": "Viyet teoremasiga ko‘ra x² + px + q = 0 ildizlarining yig‘indisi nimaga teng?",
+     "options": [
+      "p",
+      "−p",
+      "q",
+      "−q"
+     ],
+     "answer": 1,
+     "why": "x₁ + x₂ = −p, x₁ · x₂ = q."
+    }
+   ]
+  },
+  {
+   "id": "geometriya-8",
+   "grade": 8,
+   "subject": "8-geometriya",
+   "title": {
+    "uz": "Geometriya, 8-sinf: To‘rtburchaklar va Pifagor teoremasi",
+    "ru": "Геометрия, 8 класс",
+    "en": "Geometry, Grade 8"
+   },
+   "questions": [
+    {
+     "q": "Pifagor teoremasi qaysi?",
+     "options": [
+      "c² = a² + b²",
+      "c = a + b",
+      "c² = a² − b²",
+      "c = a · b"
+     ],
+     "answer": 0,
+     "why": "Gipotenuza kvadrati katetlar kvadratlari yig‘indisiga teng."
+    },
+    {
+     "q": "Katetlari 3 va 4 bo‘lgan to‘g‘ri burchakli uchburchakning gipotenuzasi nechaga teng?",
+     "options": [
+      "6",
+      "5",
+      "7",
+      "12"
+     ],
+     "answer": 1,
+     "why": "√(9 + 16) = √25 = 5."
+    },
+    {
+     "q": "Parallelogramm yuzi qanday topiladi?",
+     "options": [
+      "asos × balandlik",
+      "a + b",
+      "a² · h",
+      "(a + b) / 2"
+     ],
+     "answer": 0,
+     "why": "S = a · h."
+    },
+    {
+     "q": "Doira yuzi formulasi qaysi?",
+     "options": [
+      "2πr",
+      "πr²",
+      "πd",
+      "2πr²"
+     ],
+     "answer": 1,
+     "why": "S = πr²."
+    },
+    {
+     "q": "Romb diagonallari qanday kesishadi?",
+     "options": [
+      "Perpendikulyar holda",
+      "Parallel bo‘ladi",
+      "45° burchak ostida",
+      "Kesishmaydi"
+     ],
+     "answer": 0,
+     "why": "Romb diagonallari o‘zaro perpendikulyar."
+    }
+   ]
+  },
+  {
+   "id": "fizika-8",
+   "grade": 8,
+   "subject": "8-fizika",
+   "title": {
+    "uz": "Fizika, 8-sinf: Elektr va issiqlik",
+    "ru": "Физика, 8 класс",
+    "en": "Physics, Grade 8"
+   },
+   "questions": [
+    {
+     "q": "Om qonuni qaysi?",
+     "options": [
+      "I = U / R",
+      "I = U · R",
+      "I = R / U",
+      "U = I / R"
+     ],
+     "answer": 0,
+     "why": "Tok kuchi kuchlanishga to‘g‘ri, qarshilikka teskari proporsional."
+    },
+    {
+     "q": "Elektr qarshilik birligi qaysi?",
+     "options": [
+      "amper",
+      "volt",
+      "om",
+      "vatt"
+     ],
+     "answer": 2,
+     "why": "Qarshilik omlarda (Ω) o‘lchanadi."
+    },
+    {
+     "q": "Tok kuchi birligi qaysi?",
+     "options": [
+      "amper",
+      "volt",
+      "om",
+      "kulon"
+     ],
+     "answer": 0,
+     "why": "Tok kuchi amperlarda (A) o‘lchanadi."
+    },
+    {
+     "q": "Suvning solishtirma issiqlik sig‘imi taxminan qancha?",
+     "options": [
+      "4200 J/(kg·°C)",
+      "420 J/(kg·°C)",
+      "42 000 J/(kg·°C)",
+      "1000 J/(kg·°C)"
+     ],
+     "answer": 0,
+     "why": "1 kg suvni 1 °C ga isitish uchun ≈ 4200 J kerak."
+    },
+    {
+     "q": "Qaysi materiallar elektr tokini yaxshi o‘tkazadi?",
+     "options": [
+      "shisha",
+      "rezina",
+      "metallar",
+      "quruq yog‘och"
+     ],
+     "answer": 2,
+     "why": "Metallarda erkin elektronlar ko‘p."
+    }
+   ]
+  },
+  {
+   "id": "kimyo-8",
+   "grade": 8,
+   "subject": "8-kimyo",
+   "title": {
+    "uz": "Kimyo, 8-sinf: Atom va modda miqdori",
+    "ru": "Химия, 8 класс",
+    "en": "Chemistry, Grade 8"
+   },
+   "questions": [
+    {
+     "q": "Kislorodning tartib raqami nechaga teng?",
+     "options": [
+      "6",
+      "8",
+      "16",
+      "12"
+     ],
+     "answer": 1,
+     "why": "Kislorod davriy jadvalda 8-o‘rinda."
+    },
+    {
+     "q": "Avogadro soni taxminan nechaga teng?",
+     "options": [
+      "6,02 · 10²²",
+      "6,02 · 10²³",
+      "3 · 10⁸",
+      "9,8"
+     ],
+     "answer": 1,
+     "why": "1 mol moddada 6,02 · 10²³ ta zarracha bor."
+    },
+    {
+     "q": "Suvning molyar massasi nechaga teng?",
+     "options": [
+      "16 g/mol",
+      "18 g/mol",
+      "20 g/mol",
+      "10 g/mol"
+     ],
+     "answer": 1,
+     "why": "2 · 1 + 16 = 18 g/mol."
+    },
+    {
+     "q": "Kislota eritmasida lakmus qanday rangga kiradi?",
+     "options": [
+      "ko‘k",
+      "qizil",
+      "yashil",
+      "rangsiz"
+     ],
+     "answer": 1,
+     "why": "Kislotali muhitda lakmus qizaradi."
+    },
+    {
+     "q": "Qaysi element metall?",
+     "options": [
+      "oltingugurt",
+      "natriy",
+      "xlor",
+      "azot"
+     ],
+     "answer": 1,
+     "why": "Natriy — ishqoriy metall."
+    }
+   ]
+  },
+  {
+   "id": "biologiya-8",
+   "grade": 8,
+   "subject": "8-biologiya",
+   "title": {
+    "uz": "Biologiya, 8-sinf: Odam va uning salomatligi",
+    "ru": "Биология, 8 класс",
+    "en": "Biology, Grade 8"
+   },
+   "questions": [
+    {
+     "q": "Odam yuragi nechta kameradan iborat?",
+     "options": [
+      "2",
+      "3",
+      "4",
+      "5"
+     ],
+     "answer": 2,
+     "why": "Ikki bo‘lmacha va ikki qorincha."
+    },
+    {
+     "q": "Qonga qizil rang beradigan modda qaysi?",
+     "options": [
+      "xlorofill",
+      "gemoglobin",
+      "insulin",
+      "melanin"
+     ],
+     "answer": 1,
+     "why": "Gemoglobin eritrotsitlarda kislorod tashiydi."
+    },
+    {
+     "q": "Odam skeletidagi eng katta (uzun) suyak qaysi?",
+     "options": [
+      "son suyagi",
+      "umurtqa",
+      "qovurg‘a",
+      "bosh suyagi"
+     ],
+     "answer": 0,
+     "why": "Son suyagi — eng uzun va mustahkam suyak."
+    },
+    {
+     "q": "Insulin qaysi bezda ishlab chiqariladi?",
+     "options": [
+      "qalqonsimon bez",
+      "oshqozon osti bezi",
+      "so‘lak bezi",
+      "buyrak usti bezi"
+     ],
+     "answer": 1,
+     "why": "Insulin qondagi qand miqdorini boshqaradi."
+    },
+    {
+     "q": "Kislorod qonga qaysi a’zoda o‘tadi?",
+     "options": [
+      "oshqozonda",
+      "o‘pkada",
+      "jigarda",
+      "buyrakda"
+     ],
+     "answer": 1,
+     "why": "O‘pka pufakchalarida gaz almashinuvi boradi."
+    }
+   ]
+  },
+  {
+   "id": "geografiya-8",
+   "grade": 8,
+   "subject": "8-geografiya",
+   "title": {
+    "uz": "Geografiya, 8-sinf: O‘zbekiston geografiyasi",
+    "ru": "География, 8 класс",
+    "en": "Geography, Grade 8"
+   },
+   "questions": [
+    {
+     "q": "O‘zbekiston tarkibida nechta viloyat bor?",
+     "options": [
+      "10",
+      "12",
+      "14",
+      "13"
+     ],
+     "answer": 1,
+     "why": "12 viloyat, Qoraqalpog‘iston Respublikasi va Toshkent shahri."
+    },
+    {
+     "q": "Qurib borayotgan va ekologik muammoga aylangan suv havzasi qaysi?",
+     "options": [
+      "Issiqko‘l",
+      "Orol dengizi",
+      "Kaspiy dengizi",
+      "Balxash ko‘li"
+     ],
+     "answer": 1,
+     "why": "Orol dengizi XX asrning ikkinchi yarmidan qurib bormoqda."
+    },
+    {
+     "q": "Qizilqum cho‘li qaysi daryolar oralig‘ida joylashgan?",
+     "options": [
+      "Amudaryo va Sirdaryo",
+      "Volga va Ural",
+      "Chirchiq va Ohangaron",
+      "Zarafshon va Qashqadaryo"
+     ],
+     "answer": 0,
+     "why": "Qizilqum Amudaryo va Sirdaryo oralig‘ida."
+    },
+    {
+     "q": "Farg‘ona vodiysidagi viloyatlar qaysilar?",
+     "options": [
+      "Andijon, Farg‘ona, Namangan",
+      "Buxoro, Navoiy, Xorazm",
+      "Surxondaryo, Qashqadaryo, Jizzax",
+      "Toshkent, Sirdaryo, Samarqand"
+     ],
+     "answer": 0,
+     "why": "Farg‘ona vodiysida uch viloyat joylashgan."
+    },
+    {
+     "q": "O‘zbekiston iqlimi qanday?",
+     "options": [
+      "Keskin kontinental",
+      "Ekvatorial",
+      "Musson",
+      "Dengiz iqlimi"
+     ],
+     "answer": 0,
+     "why": "Yozi issiq va quruq, qishi nisbatan sovuq."
+    }
+   ]
+  },
+  {
+   "id": "ozbekiston-tarixi-8",
+   "grade": 8,
+   "subject": "8-ozbekiston-tarixi",
+   "title": {
+    "uz": "O‘zbekiston tarixi, 8-sinf: XVI–XIX asrlar",
+    "ru": "История Узбекистана, 8 класс",
+    "en": "History of Uzbekistan, Grade 8"
+   },
+   "questions": [
+    {
+     "q": "Boburiylar sulolasi qaysi mamlakatda hukmronlik qilgan?",
+     "options": [
+      "Eronda",
+      "Hindistonda",
+      "Turkiyada",
+      "Misrda"
+     ],
+     "answer": 1,
+     "why": "Bobur Hindistonda Boburiylar davlatiga asos solgan."
+    },
+    {
+     "q": "Bobur Panipat jangida qaysi yili g‘alaba qozongan?",
+     "options": [
+      "1494",
+      "1526",
+      "1530",
+      "1600"
+     ],
+     "answer": 1,
+     "why": "1526-yil Panipat jangidan so‘ng Boburiylar davlati tashkil topdi."
+    },
+    {
+     "q": "XVIII–XIX asrlarda hozirgi O‘zbekiston hududida qaysi davlatlar bo‘lgan?",
+     "options": [
+      "Buxoro amirligi, Xiva va Qo‘qon xonliklari",
+      "Somoniylar va G‘aznaviylar",
+      "Ahamoniylar va Salavkiylar",
+      "Rim va Vizantiya"
+     ],
+     "answer": 0,
+     "why": "Bu uch davlat XIX asrda mavjud bo‘lgan."
+    },
+    {
+     "q": "Shayboniylar davlatiga kim asos solgan?",
+     "options": [
+      "Bobur",
+      "Muhammad Shayboniyxon",
+      "Amir Temur",
+      "Abdullaxon II"
+     ],
+     "answer": 1,
+     "why": "XVI asr boshida Muhammad Shayboniyxon asos solgan."
+    },
+    {
+     "q": "Turkiston general-gubernatorligi qaysi yili tashkil etilgan?",
+     "options": [
+      "1757",
+      "1867",
+      "1917",
+      "1924"
+     ],
+     "answer": 1,
+     "why": "1867-yilda markazi Toshkent bo‘lgan general-gubernatorlik tuzilgan."
+    }
+   ]
+  },
+  {
+   "id": "ingliz-tili-8",
+   "grade": 8,
+   "subject": "8-ingliz-tili",
+   "title": {
+    "uz": "Ingliz tili, 8-sinf: Grammar practice",
+    "ru": "Английский язык, 8 класс",
+    "en": "English, Grade 8"
+   },
+   "questions": [
+    {
+     "q": "I wish I ___ more time.",
+     "options": [
+      "have",
+      "had",
+      "has",
+      "having"
+     ],
+     "answer": 1,
+     "why": "Wish about the present: wish + past simple."
+    },
+    {
+     "q": "He said, \"I am tired.\" → He said that he ___ tired.",
+     "options": [
+      "is",
+      "was",
+      "were",
+      "be"
+     ],
+     "answer": 1,
+     "why": "In reported speech \"am\" changes to \"was\"."
+    },
+    {
+     "q": "This is the ___ book I have ever read.",
+     "options": [
+      "interesting",
+      "more interesting",
+      "most interesting",
+      "interestinger"
+     ],
+     "answer": 2,
+     "why": "Superlative of long adjectives: the most + adjective."
+    },
+    {
+     "q": "She is good ___ maths.",
+     "options": [
+      "in",
+      "on",
+      "at",
+      "of"
+     ],
+     "answer": 2,
+     "why": "Good at something."
+    },
+    {
+     "q": "Neither Tom ___ Ann came to the party.",
+     "options": [
+      "or",
+      "nor",
+      "and",
+      "but"
+     ],
+     "answer": 1,
+     "why": "Neither ... nor."
+    }
+   ]
+  },
+  {
+   "id": "ona-tili-9",
+   "grade": 9,
+   "subject": "9-ona-tili",
+   "title": {
+    "uz": "Ona tili, 9-sinf: Qo‘shma gap",
+    "ru": "Родной язык, 9 класс",
+    "en": "Native language, Grade 9"
+   },
+   "questions": [
+    {
+     "q": "Qo‘shma gapning turlari qaysilar?",
+     "options": [
+      "Bog‘langan, ergashgan va bog‘lovchisiz",
+      "Sodda va yoyiq",
+      "Darak va so‘roq",
+      "Yig‘iq va yoyiq"
+     ],
+     "answer": 0,
+     "why": "Qo‘shma gaplar uch turga bo‘linadi."
+    },
+    {
+     "q": "\"Qor yog‘di, yerlar oqardi.\" qanday qo‘shma gap?",
+     "options": [
+      "bog‘langan",
+      "ergashgan",
+      "bog‘lovchisiz",
+      "sodda gap"
+     ],
+     "answer": 2,
+     "why": "Qismlar bog‘lovchisiz, faqat ohang va vergul bilan bog‘langan."
+    },
+    {
+     "q": "Bog‘langan qo‘shma gap qismlari nima yordamida bog‘lanadi?",
+     "options": [
+      "teng bog‘lovchilar (va, lekin, ammo) yordamida",
+      "faqat ko‘makchilar yordamida",
+      "faqat undalmalar yordamida",
+      "hech narsa yordamida bog‘lanmaydi"
+     ],
+     "answer": 0,
+     "why": "Masalan: \"Quyosh chiqdi va havo isidi.\""
+    },
+    {
+     "q": "\"Agar harakat qilsang, natijaga erishasan.\" gapida bosh gap qaysi?",
+     "options": [
+      "\"Agar harakat qilsang\"",
+      "\"natijaga erishasan\"",
+      "ikkala qism ham bosh gap",
+      "bosh gap yo‘q"
+     ],
+     "answer": 1,
+     "why": "\"Agar harakat qilsang\" — shart ergash gap."
+    },
+    {
+     "q": "Ko‘chirma gap qanday belgilar ichida yoziladi?",
+     "options": [
+      "qavs",
+      "qo‘shtirnoq",
+      "tire",
+      "vergul"
+     ],
+     "answer": 1,
+     "why": "Ko‘chirma gap qo‘shtirnoq ichiga olinadi."
+    }
+   ]
+  },
+  {
+   "id": "adabiyot-9",
+   "grade": 9,
+   "subject": "9-adabiyot",
+   "title": {
+    "uz": "Adabiyot, 9-sinf: Mumtoz adabiyot",
+    "ru": "Литература, 9 класс",
+    "en": "Literature, Grade 9"
+   },
+   "questions": [
+    {
+     "q": "\"Devonu lug‘otit turk\" asarining muallifi kim?",
+     "options": [
+      "Yusuf Xos Hojib",
+      "Mahmud Koshg‘ariy",
+      "Ahmad Yugnakiy",
+      "Alisher Navoiy"
+     ],
+     "answer": 1,
+     "why": "XI asrda Mahmud Koshg‘ariy yozgan turkiy tillar lug‘ati."
+    },
+    {
+     "q": "\"Hayratul abror\" dostoni Navoiyning qaysi asari tarkibiga kiradi?",
+     "options": [
+      "\"Xazoyin ul-maoniy\"",
+      "\"Xamsa\"",
+      "\"Mahbub ul-qulub\"",
+      "\"Boburnoma\""
+     ],
+     "answer": 1,
+     "why": "\"Hayratul abror\" — \"Xamsa\"ning birinchi dostoni."
+    },
+    {
+     "q": "Lutfiy qaysi davr shoiri?",
+     "options": [
+      "X asr",
+      "XIV–XV asrlar",
+      "XIX asr",
+      "XX asr"
+     ],
+     "answer": 1,
+     "why": "Lutfiy XIV–XV asrlarda yashagan."
+    },
+    {
+     "q": "\"Mahbub ul-qulub\" asarining muallifi kim?",
+     "options": [
+      "Alisher Navoiy",
+      "Bobur",
+      "Ogahiy",
+      "Muqimiy"
+     ],
+     "answer": 0,
+     "why": "Navoiyning so‘nggi yirik nasriy asari."
+    },
+    {
+     "q": "Masnaviy qanday she’riy shakl?",
+     "options": [
+      "Har bir bayt o‘zaro qofiyalanadigan (aa, bb, vv) shakl",
+      "To‘rt misrali she’r",
+      "Faqat ikki misradan iborat she’r",
+      "Nasriy asar"
+     ],
+     "answer": 0,
+     "why": "Dostonlar ko‘pincha masnaviy shaklida yoziladi."
+    }
+   ]
+  },
+  {
+   "id": "algebra-9",
+   "grade": 9,
+   "subject": "9-algebra",
+   "title": {
+    "uz": "Algebra, 9-sinf: Progressiyalar va funksiyalar",
+    "ru": "Алгебра, 9 класс",
+    "en": "Algebra, Grade 9"
+   },
+   "questions": [
+    {
+     "q": "Arifmetik progressiyada a₁ = 2, d = 3. a₅ nechaga teng?",
+     "options": [
+      "12",
+      "14",
+      "15",
+      "17"
+     ],
+     "answer": 1,
+     "why": "a₅ = a₁ + 4d = 2 + 12 = 14."
+    },
+    {
+     "q": "Geometrik progressiyada b₁ = 3, q = 2. b₄ nechaga teng?",
+     "options": [
+      "12",
+      "24",
+      "48",
+      "9"
+     ],
+     "answer": 1,
+     "why": "b₄ = 3 · 2³ = 24."
+    },
+    {
+     "q": "y = x² funksiyaning grafigi qanday chiziq?",
+     "options": [
+      "to‘g‘ri chiziq",
+      "parabola",
+      "giperbola",
+      "aylana"
+     ],
+     "answer": 1,
+     "why": "Kvadrat funksiya grafigi — parabola."
+    },
+    {
+     "q": "2x − 3 > 5 tengsizlikning yechimi qaysi?",
+     "options": [
+      "x > 1",
+      "x > 4",
+      "x < 4",
+      "x > 8"
+     ],
+     "answer": 1,
+     "why": "2x > 8, x > 4."
+    },
+    {
+     "q": "sin²α + cos²α = ?",
+     "options": [
+      "0",
+      "1",
+      "2",
+      "sin 2α"
+     ],
+     "answer": 1,
+     "why": "Asosiy trigonometrik ayniyat."
+    }
+   ]
+  },
+  {
+   "id": "geometriya-9",
+   "grade": 9,
+   "subject": "9-geometriya",
+   "title": {
+    "uz": "Geometriya, 9-sinf: Aylana va trigonometriya",
+    "ru": "Геометрия, 9 класс",
+    "en": "Geometry, Grade 9"
+   },
+   "questions": [
+    {
+     "q": "Aylana uzunligi formulasi qaysi?",
+     "options": [
+      "πr²",
+      "2πr",
+      "πr",
+      "4πr"
+     ],
+     "answer": 1,
+     "why": "C = 2πr."
+    },
+    {
+     "q": "sin 30° = ?",
+     "options": [
+      "1/2",
+      "√3/2",
+      "1",
+      "0"
+     ],
+     "answer": 0,
+     "why": "sin 30° = 1/2."
+    },
+    {
+     "q": "Uchburchakning tashqi burchagi nimaga teng?",
+     "options": [
+      "O‘ziga qo‘shni bo‘lmagan ikki ichki burchak yig‘indisiga",
+      "180° ga",
+      "90° ga",
+      "Qo‘shni ichki burchakka"
+     ],
+     "answer": 0,
+     "why": "Tashqi burchak haqidagi teorema."
+    },
+    {
+     "q": "Muntazam oltiburchakning har bir ichki burchagi necha gradus?",
+     "options": [
+      "108°",
+      "120°",
+      "135°",
+      "150°"
+     ],
+     "answer": 1,
+     "why": "(6 − 2) · 180° / 6 = 120°."
+    },
+    {
+     "q": "Vektor nima?",
+     "options": [
+      "Yo‘nalishga ega kesma",
+      "Har qanday nuqta",
+      "Aylananing radiusi",
+      "Burchak turi"
+     ],
+     "answer": 0,
+     "why": "Vektorning uzunligi va yo‘nalishi bor."
+    }
+   ]
+  },
+  {
+   "id": "fizika-9",
+   "grade": 9,
+   "subject": "9-fizika",
+   "title": {
+    "uz": "Fizika, 9-sinf: Mexanika",
+    "ru": "Физика, 9 класс",
+    "en": "Physics, Grade 9"
+   },
+   "questions": [
+    {
+     "q": "Nyutonning ikkinchi qonuni qaysi?",
+     "options": [
+      "F = m · a",
+      "F = m / a",
+      "F = m + a",
+      "E = m · c²"
+     ],
+     "answer": 0,
+     "why": "Kuch massa va tezlanish ko‘paytmasiga teng."
+    },
+    {
+     "q": "Yorug‘likning vakuumdagi tezligi taxminan qancha?",
+     "options": [
+      "300 m/s",
+      "3000 km/s",
+      "300 000 km/s",
+      "340 m/s"
+     ],
+     "answer": 2,
+     "why": "c ≈ 3 · 10⁸ m/s."
+    },
+    {
+     "q": "Kinetik energiya formulasi qaysi?",
+     "options": [
+      "mgh",
+      "mv²/2",
+      "F · s",
+      "m · v"
+     ],
+     "answer": 1,
+     "why": "Harakatdagi jismning energiyasi."
+    },
+    {
+     "q": "Tovushning havodagi tezligi taxminan qancha?",
+     "options": [
+      "340 m/s",
+      "3 · 10⁸ m/s",
+      "1500 m/s",
+      "34 m/s"
+     ],
+     "answer": 0,
+     "why": "Odatdagi sharoitda ≈ 340 m/s."
+    },
+    {
+     "q": "Ish birligi qaysi?",
+     "options": [
+      "nyuton",
+      "joul",
+      "vatt",
+      "paskal"
+     ],
+     "answer": 1,
+     "why": "Ish va energiya joulda (J) o‘lchanadi."
+    }
+   ]
+  },
+  {
+   "id": "kimyo-9",
+   "grade": 9,
+   "subject": "9-kimyo",
+   "title": {
+    "uz": "Kimyo, 9-sinf: Metallar va metallmaslar",
+    "ru": "Химия, 9 класс",
+    "en": "Chemistry, Grade 9"
+   },
+   "questions": [
+    {
+     "q": "Metanning formulasi qaysi?",
+     "options": [
+      "CH₄",
+      "C₂H₆",
+      "CO₂",
+      "C₂H₂"
+     ],
+     "answer": 0,
+     "why": "Metan — eng oddiy uglevodorod, tabiiy gazning asosiy qismi."
+    },
+    {
+     "q": "pH = 7 bo‘lgan eritma qanday muhitga ega?",
+     "options": [
+      "kislotali",
+      "ishqoriy",
+      "neytral",
+      "juda kislotali"
+     ],
+     "answer": 2,
+     "why": "Toza suvning pH qiymati 7 ga yaqin."
+    },
+    {
+     "q": "Ammiakning formulasi qaysi?",
+     "options": [
+      "NH₃",
+      "NO₂",
+      "N₂",
+      "HNO₃"
+     ],
+     "answer": 0,
+     "why": "Ammiak — azot va vodorod birikmasi."
+    },
+    {
+     "q": "Temirning kimyoviy belgisi qaysi?",
+     "options": [
+      "Fe",
+      "F",
+      "Te",
+      "Ir"
+     ],
+     "answer": 0,
+     "why": "Fe — lotincha \"ferrum\" so‘zidan."
+    },
+    {
+     "q": "Havoning eng katta qismini qaysi gaz tashkil etadi?",
+     "options": [
+      "kislorod",
+      "azot",
+      "karbonat angidrid",
+      "argon"
+     ],
+     "answer": 1,
+     "why": "Havoning taxminan 78 foizi azot."
+    }
+   ]
+  },
+  {
+   "id": "biologiya-9",
+   "grade": 9,
+   "subject": "9-biologiya",
+   "title": {
+    "uz": "Biologiya, 9-sinf: Hujayra va genetika",
+    "ru": "Биология, 9 класс",
+    "en": "Biology, Grade 9"
+   },
+   "questions": [
+    {
+     "q": "Hujayraning \"energiya stansiyasi\" qaysi organoid?",
+     "options": [
+      "yadro",
+      "ribosoma",
+      "mitoxondriya",
+      "vakuola"
+     ],
+     "answer": 2,
+     "why": "Mitoxondriyada energiya (ATF) hosil bo‘ladi."
+    },
+    {
+     "q": "Irsiy axborot qaysi molekulada saqlanadi?",
+     "options": [
+      "oqsil",
+      "DNK",
+      "glyukoza",
+      "yog‘"
+     ],
+     "answer": 1,
+     "why": "DNK — irsiyat molekulasi."
+    },
+    {
+     "q": "Genetika fanining asoschisi kim?",
+     "options": [
+      "Charlz Darvin",
+      "Gregor Mendel",
+      "Ivan Pavlov",
+      "Lui Paster"
+     ],
+     "answer": 1,
+     "why": "Mendel no‘xat ustidagi tajribalari bilan irsiyat qonunlarini ochgan."
+    },
+    {
+     "q": "Odamning tana (somatik) hujayralarida nechta xromosoma bor?",
+     "options": [
+      "23",
+      "46",
+      "44",
+      "48"
+     ],
+     "answer": 1,
+     "why": "23 juft — 46 ta xromosoma."
+    },
+    {
+     "q": "Oqsil sintezi asosan hujayraning qaysi organoidida boradi?",
+     "options": [
+      "ribosomada",
+      "lizosomada",
+      "vakuolada",
+      "hujayra po‘stida"
+     ],
+     "answer": 0,
+     "why": "Ribosomalar aminokislotalardan oqsil yig‘adi."
+    }
+   ]
+  },
+  {
+   "id": "geografiya-9",
+   "grade": 9,
+   "subject": "9-geografiya",
+   "title": {
+    "uz": "Geografiya, 9-sinf: Jahon geografiyasi",
+    "ru": "География, 9 класс",
+    "en": "Geography, Grade 9"
+   },
+   "questions": [
+    {
+     "q": "Yaponiyaning poytaxti qaysi shahar?",
+     "options": [
+      "Pekin",
+      "Tokio",
+      "Seul",
+      "Bangkok"
+     ],
+     "answer": 1,
+     "why": "Tokio — Yaponiya poytaxti."
+    },
+    {
+     "q": "OPEK tashkiloti nima bilan bog‘liq?",
+     "options": [
+      "Neft eksport qiluvchi mamlakatlar bilan",
+      "Paxta yetishtiruvchi mamlakatlar bilan",
+      "Sport musobaqalari bilan",
+      "Kosmik tadqiqotlar bilan"
+     ],
+     "answer": 0,
+     "why": "OPEK — Neft eksport qiluvchi mamlakatlar tashkiloti."
+    },
+    {
+     "q": "O‘zbekiston dengizga chiqish nuqtai nazaridan qanday davlat?",
+     "options": [
+      "Ikki karra dengizga chiqa olmaydigan davlat",
+      "Orol davlat",
+      "Yarimorolda joylashgan davlat",
+      "Okean bo‘yidagi davlat"
+     ],
+     "answer": 0,
+     "why": "O‘zbekiston ham, uning barcha qo‘shnilari ham ochiq dengizga chiqmaydi."
+    },
+    {
+     "q": "Afrikadagi eng uzun daryo qaysi?",
+     "options": [
+      "Nil",
+      "Amazonka",
+      "Missisipi",
+      "Yanszi"
+     ],
+     "answer": 0,
+     "why": "Nil Afrikaning shimoli-sharqidan O‘rta yer dengiziga quyiladi."
+    },
+    {
+     "q": "Mehnat resurslari nima?",
+     "options": [
+      "Mehnatga layoqatli aholi",
+      "Faqat tabiiy boyliklar",
+      "Faqat yer osti boyliklari",
+      "Faqat zavod va fabrikalar"
+     ],
+     "answer": 0,
+     "why": "Mehnat resurslari — ishlashga qodir aholi qismi."
+    }
+   ]
+  },
+  {
+   "id": "ozbekiston-tarixi-9",
+   "grade": 9,
+   "subject": "9-ozbekiston-tarixi",
+   "title": {
+    "uz": "O‘zbekiston tarixi, 9-sinf: XIX oxiri – XX asr",
+    "ru": "История Узбекистана, 9 класс",
+    "en": "History of Uzbekistan, Grade 9"
+   },
+   "questions": [
+    {
+     "q": "Jadidchilik harakatining asosiy maqsadi nima edi?",
+     "options": [
+      "Ta’limni isloh qilish, yangi usul maktablarini ochish",
+      "Faqat savdoni rivojlantirish",
+      "Harbiy yurishlar",
+      "Eski tartibni saqlab qolish"
+     ],
+     "answer": 0,
+     "why": "Jadidlar xalqni ma’rifatli qilishni maqsad qilgan."
+    },
+    {
+     "q": "\"Padarkush\" dramasining muallifi kim?",
+     "options": [
+      "Fitrat",
+      "Mahmudxo‘ja Behbudiy",
+      "Cho‘lpon",
+      "Hamza"
+     ],
+     "answer": 1,
+     "why": "\"Padarkush\" — birinchi o‘zbek dramasi, Behbudiy asari."
+    },
+    {
+     "q": "O‘zbekiston SSR qaysi yili tashkil topgan?",
+     "options": [
+      "1917",
+      "1924",
+      "1936",
+      "1941"
+     ],
+     "answer": 1,
+     "why": "1924-yilgi milliy-hududiy chegaralanishdan so‘ng."
+    },
+    {
+     "q": "Ikkinchi jahon urushi qaysi yillarda bo‘lgan?",
+     "options": [
+      "1914–1918",
+      "1939–1945",
+      "1941–1950",
+      "1929–1933"
+     ],
+     "answer": 1,
+     "why": "Ikkinchi jahon urushi 1939-yilda boshlanib, 1945-yilda tugagan."
+    },
+    {
+     "q": "O‘zbekiston Respublikasi Konstitutsiyasi qachon qabul qilingan?",
+     "options": [
+      "1991-yil 31-avgustda",
+      "1992-yil 8-dekabrda",
+      "1995-yil 1-sentyabrda",
+      "2000-yil 9-mayda"
+     ],
+     "answer": 1,
+     "why": "8-dekabr — Konstitutsiya kuni."
+    }
+   ]
+  },
+  {
+   "id": "ingliz-tili-9",
+   "grade": 9,
+   "subject": "9-ingliz-tili",
+   "title": {
+    "uz": "Ingliz tili, 9-sinf: Conditionals and passive",
+    "ru": "Английский язык, 9 класс",
+    "en": "English, Grade 9"
+   },
+   "questions": [
+    {
+     "q": "If I ___ rich, I would travel the world.",
+     "options": [
+      "am",
+      "were",
+      "will be",
+      "have been"
+     ],
+     "answer": 1,
+     "why": "Second conditional: if + past simple (were), would + verb."
+    },
+    {
+     "q": "The book ___ by millions of people.",
+     "options": [
+      "has read",
+      "has been read",
+      "have read",
+      "is reading"
+     ],
+     "answer": 1,
+     "why": "Present perfect passive: has been + past participle."
+    },
+    {
+     "q": "Choose the synonym of \"happy\".",
+     "options": [
+      "sad",
+      "glad",
+      "angry",
+      "tired"
+     ],
+     "answer": 1,
+     "why": "Happy — glad."
+    },
+    {
+     "q": "He suggested ___ to the cinema.",
+     "options": [
+      "to go",
+      "going",
+      "go",
+      "went"
+     ],
+     "answer": 1,
+     "why": "Suggest + -ing."
+    },
+    {
+     "q": "By the time we arrived, the film ___.",
+     "options": [
+      "starts",
+      "had started",
+      "has started",
+      "will start"
+     ],
+     "answer": 1,
+     "why": "An earlier past action — past perfect."
+    }
+   ]
+  },
+  {
+   "id": "ona-tili-10",
+   "grade": 10,
+   "subject": "10-ona-tili",
+   "title": {
+    "uz": "Ona tili, 10-sinf: Nutq madaniyati va uslubiyat",
+    "ru": "Родной язык, 10 класс",
+    "en": "Native language, Grade 10"
+   },
+   "questions": [
+    {
+     "q": "Rasmiy hujjatlarda (ariza, buyruq) qaysi uslub qo‘llanadi?",
+     "options": [
+      "badiiy",
+      "so‘zlashuv",
+      "rasmiy-idoraviy",
+      "publitsistik"
+     ],
+     "answer": 2,
+     "why": "Rasmiy hujjatlar rasmiy-idoraviy uslubda yoziladi."
+    },
+    {
+     "q": "Ilmiy uslubning asosiy belgisi nima?",
+     "options": [
+      "Atamalarning ko‘p qo‘llanishi va fikrning aniqligi",
+      "Ko‘p so‘zlashuv iboralari",
+      "She’riy ohang",
+      "Hissiy undovlar"
+     ],
+     "answer": 0,
+     "why": "Ilmiy matnda atamalar va aniq ta’riflar ko‘p bo‘ladi."
+    },
+    {
+     "q": "Paronimlar nima?",
+     "options": [
+      "Talaffuzi yaqin, ma’nosi har xil so‘zlar",
+      "Ma’nosi bir xil so‘zlar",
+      "Ma’nosi zid so‘zlar",
+      "Eskirgan so‘zlar"
+     ],
+     "answer": 0,
+     "why": "Masalan: asr — asir, shox — shoh."
+    },
+    {
+     "q": "Qaysi biri frazeologizm (ibora)?",
+     "options": [
+      "tarvuzi qo‘ltig‘idan tushdi",
+      "katta uy",
+      "ko‘k osmon",
+      "yangi kitob"
+     ],
+     "answer": 0,
+     "why": "Iboraning ma’nosi: hafsalasi pir bo‘ldi."
+    },
+    {
+     "q": "Qaysi so‘z to‘g‘ri yozilgan?",
+     "options": [
+      "maktap",
+      "kitop",
+      "maktab",
+      "maqtab"
+     ],
+     "answer": 2,
+     "why": "To‘g‘ri yozilishi: maktab, kitob."
+    }
+   ]
+  },
+  {
+   "id": "adabiyot-10",
+   "grade": 10,
+   "subject": "10-adabiyot",
+   "title": {
+    "uz": "Adabiyot, 10-sinf: Hozirgi o‘zbek adabiyoti",
+    "ru": "Литература, 10 класс",
+    "en": "Literature, Grade 10"
+   },
+   "questions": [
+    {
+     "q": "\"Ikki eshik orasi\" romanining muallifi kim?",
+     "options": [
+      "Said Ahmad",
+      "O‘tkir Hoshimov",
+      "Tog‘ay Murod",
+      "Pirimqul Qodirov"
+     ],
+     "answer": 1,
+     "why": "O‘tkir Hoshimov romani."
+    },
+    {
+     "q": "\"Yulduzli tunlar\" romani kim haqida?",
+     "options": [
+      "Amir Temur",
+      "Zahiriddin Muhammad Bobur",
+      "Alisher Navoiy",
+      "Mirzo Ulug‘bek"
+     ],
+     "answer": 1,
+     "why": "Pirimqul Qodirovning Bobur haqidagi romani."
+    },
+    {
+     "q": "\"Ulug‘bek xazinasi\" romanining muallifi kim?",
+     "options": [
+      "Odil Yoqubov",
+      "Oybek",
+      "Said Ahmad",
+      "Abdulla Qahhor"
+     ],
+     "answer": 0,
+     "why": "Odil Yoqubov romani."
+    },
+    {
+     "q": "\"Ufq\" trilogiyasining muallifi kim?",
+     "options": [
+      "Odil Yoqubov",
+      "Said Ahmad",
+      "G‘afur G‘ulom",
+      "Shukur Xolmirzayev"
+     ],
+     "answer": 1,
+     "why": "\"Ufq\" — Said Ahmadning uch qismli romani."
+    },
+    {
+     "q": "O‘zbekiston Respublikasi Davlat madhiyasi so‘zlarining muallifi kim?",
+     "options": [
+      "Erkin Vohidov",
+      "Abdulla Oripov",
+      "Muhammad Yusuf",
+      "Hamid Olimjon"
+     ],
+     "answer": 1,
+     "why": "Madhiya so‘zlari Abdulla Oripovniki, musiqasi Mutal Burhonovniki."
+    }
+   ]
+  },
+  {
+   "id": "algebra-10",
+   "grade": 10,
+   "subject": "10-algebra",
+   "title": {
+    "uz": "Algebra, 10-sinf: Logarifm va trigonometriya",
+    "ru": "Алгебра, 10 класс",
+    "en": "Algebra, Grade 10"
+   },
+   "questions": [
+    {
+     "q": "log₂ 8 = ?",
+     "options": [
+      "2",
+      "3",
+      "4",
+      "8"
+     ],
+     "answer": 1,
+     "why": "2³ = 8."
+    },
+    {
+     "q": "2ˣ = 16 bo‘lsa, x nechaga teng?",
+     "options": [
+      "2",
+      "3",
+      "4",
+      "8"
+     ],
+     "answer": 2,
+     "why": "2⁴ = 16."
+    },
+    {
+     "q": "sin 90° = ?",
+     "options": [
+      "0",
+      "1",
+      "−1",
+      "1/2"
+     ],
+     "answer": 1,
+     "why": "sin 90° = 1."
+    },
+    {
+     "q": "cos 60° = ?",
+     "options": [
+      "1/2",
+      "√3/2",
+      "0",
+      "1"
+     ],
+     "answer": 0,
+     "why": "cos 60° = 1/2."
+    },
+    {
+     "q": "tg 45° = ?",
+     "options": [
+      "0",
+      "1",
+      "√3",
+      "1/2"
+     ],
+     "answer": 1,
+     "why": "tg 45° = sin 45° / cos 45° = 1."
+    }
+   ]
+  },
+  {
+   "id": "geometriya-10",
+   "grade": 10,
+   "subject": "10-geometriya",
+   "title": {
+    "uz": "Geometriya, 10-sinf: Fazoviy jismlar",
+    "ru": "Геометрия, 10 класс",
+    "en": "Geometry, Grade 10"
+   },
+   "questions": [
+    {
+     "q": "Kubning nechta qirrasi bor?",
+     "options": [
+      "6",
+      "8",
+      "12",
+      "24"
+     ],
+     "answer": 2,
+     "why": "Kubning 6 ta yog‘i, 8 ta uchi, 12 ta qirrasi bor."
+    },
+    {
+     "q": "Qirrasi a bo‘lgan kubning hajmi qanday topiladi?",
+     "options": [
+      "6a²",
+      "a³",
+      "3a",
+      "a²"
+     ],
+     "answer": 1,
+     "why": "V = a³."
+    },
+    {
+     "q": "Shar hajmi formulasi qaysi?",
+     "options": [
+      "4πr²",
+      "(4/3)πr³",
+      "πr²h",
+      "(1/3)πr²h"
+     ],
+     "answer": 1,
+     "why": "V = (4/3)πr³."
+    },
+    {
+     "q": "Silindr hajmi formulasi qaysi?",
+     "options": [
+      "πr²h",
+      "2πrh",
+      "(1/3)πr²h",
+      "πr³"
+     ],
+     "answer": 0,
+     "why": "Asos yuzi × balandlik."
+    },
+    {
+     "q": "Fazoda kesishmaydigan va parallel bo‘lmagan ikki to‘g‘ri chiziq nima deyiladi?",
+     "options": [
+      "ayqash to‘g‘ri chiziqlar",
+      "perpendikulyar to‘g‘ri chiziqlar",
+      "ustma-ust tushuvchi to‘g‘ri chiziqlar",
+      "parallel to‘g‘ri chiziqlar"
+     ],
+     "answer": 0,
+     "why": "Ular bir tekislikda yotmaydi."
+    }
+   ]
+  },
+  {
+   "id": "fizika-10",
+   "grade": 10,
+   "subject": "10-fizika",
+   "title": {
+    "uz": "Fizika, 10-sinf: Mexanika va molekulyar fizika",
+    "ru": "Физика, 10 класс",
+    "en": "Physics, Grade 10"
+   },
+   "questions": [
+    {
+     "q": "Jism impulsi qaysi formula bilan topiladi?",
+     "options": [
+      "p = m · v",
+      "p = m · a",
+      "p = m · g · h",
+      "p = m · v² / 2"
+     ],
+     "answer": 0,
+     "why": "Impuls — massa va tezlik ko‘paytmasi."
+    },
+    {
+     "q": "Ideal gaz holat tenglamasi qaysi?",
+     "options": [
+      "pV = (m / M)RT",
+      "pV = mgh",
+      "p = ρgh",
+      "F = kx"
+     ],
+     "answer": 0,
+     "why": "Mendeleyev–Klapeyron tenglamasi."
+    },
+    {
+     "q": "Mutlaq nol harorat taxminan qancha?",
+     "options": [
+      "0 °C",
+      "−100 °C",
+      "−273 °C",
+      "−373 °C"
+     ],
+     "answer": 2,
+     "why": "0 K ≈ −273 °C."
+    },
+    {
+     "q": "Guk qonuni qaysi?",
+     "options": [
+      "F = k · x",
+      "F = m · a",
+      "F = G · m₁m₂ / r²",
+      "F = q · E"
+     ],
+     "answer": 0,
+     "why": "Elastiklik kuchi deformatsiyaga proporsional."
+    },
+    {
+     "q": "Kulon qonuni nimani ifodalaydi?",
+     "options": [
+      "Nuqtaviy zaryadlarning o‘zaro ta’sir kuchini",
+      "Tok kuchini",
+      "Jismning tezlanishini",
+      "Yorug‘likning sinishini"
+     ],
+     "answer": 0,
+     "why": "F = k · q₁q₂ / r²."
+    }
+   ]
+  },
+  {
+   "id": "kimyo-10",
+   "grade": 10,
+   "subject": "10-kimyo",
+   "title": {
+    "uz": "Kimyo, 10-sinf: Organik kimyo",
+    "ru": "Химия, 10 класс",
+    "en": "Chemistry, Grade 10"
+   },
+   "questions": [
+    {
+     "q": "Alkanlarning umumiy formulasi qaysi?",
+     "options": [
+      "CnH2n",
+      "CnH2n+2",
+      "CnH2n−2",
+      "CnHn"
+     ],
+     "answer": 1,
+     "why": "Masalan: CH₄, C₂H₆, C₃H₈."
+    },
+    {
+     "q": "Etil spirtining formulasi qaysi?",
+     "options": [
+      "CH₃OH",
+      "C₂H₅OH",
+      "C₂H₆",
+      "CH₃COOH"
+     ],
+     "answer": 1,
+     "why": "Etanol — C₂H₅OH."
+    },
+    {
+     "q": "Sirka kislotaning formulasi qaysi?",
+     "options": [
+      "CH₃COOH",
+      "HCOOH",
+      "C₂H₅OH",
+      "C₆H₆"
+     ],
+     "answer": 0,
+     "why": "Sirka kislota — CH₃COOH."
+    },
+    {
+     "q": "Benzolning formulasi qaysi?",
+     "options": [
+      "C₆H₆",
+      "C₆H₁₂",
+      "C₂H₂",
+      "CH₄"
+     ],
+     "answer": 0,
+     "why": "Benzol — aromatik uglevodorod."
+    },
+    {
+     "q": "Organik moddalar tarkibida albatta qaysi element bo‘ladi?",
+     "options": [
+      "azot",
+      "uglerod",
+      "oltingugurt",
+      "xlor"
+     ],
+     "answer": 1,
+     "why": "Organik kimyo — uglerod birikmalari kimyosi."
+    }
+   ]
+  },
+  {
+   "id": "biologiya-10",
+   "grade": 10,
+   "subject": "10-biologiya",
+   "title": {
+    "uz": "Biologiya, 10-sinf: Umumiy biologiya",
+    "ru": "Биология, 10 класс",
+    "en": "Biology, Grade 10"
+   },
+   "questions": [
+    {
+     "q": "Fotosintez jarayonida o‘simlik qaysi gazni ajratib chiqaradi?",
+     "options": [
+      "karbonat angidrid",
+      "kislorod",
+      "azot",
+      "vodorod"
+     ],
+     "answer": 1,
+     "why": "O‘simlik CO₂ ni yutib, kislorod chiqaradi."
+    },
+    {
+     "q": "Evolyutsion ta’limot (tabiiy tanlanish) asoschisi kim?",
+     "options": [
+      "Gregor Mendel",
+      "Charlz Darvin",
+      "Lui Paster",
+      "Ilya Mechnikov"
+     ],
+     "answer": 1,
+     "why": "Darvin \"Turlarning paydo bo‘lishi\" asarini yozgan."
+    },
+    {
+     "q": "Viruslarning o‘ziga xos xususiyati nima?",
+     "options": [
+      "Faqat tirik hujayra ichida ko‘payadi",
+      "Mustaqil oziqlanadi",
+      "Fotosintez qiladi",
+      "Ko‘p hujayrali bo‘ladi"
+     ],
+     "answer": 0,
+     "why": "Viruslar hujayra tuzilishiga ega emas."
+    },
+    {
+     "q": "Ekotizimda yashil o‘simliklar qanday rol o‘ynaydi?",
+     "options": [
+      "Produtsent — organik modda hosil qiluvchi",
+      "Konsument — tayyor oziq iste’molchisi",
+      "Redutsent — parchalovchi",
+      "Parazit"
+     ],
+     "answer": 0,
+     "why": "O‘simliklar fotosintez orqali organik modda yaratadi."
+    },
+    {
+     "q": "ABO tizimida odam qon guruhlari nechta?",
+     "options": [
+      "2",
+      "3",
+      "4",
+      "8"
+     ],
+     "answer": 2,
+     "why": "I (0), II (A), III (B), IV (AB)."
+    }
+   ]
+  },
+  {
+   "id": "ozbekiston-tarixi-10",
+   "grade": 10,
+   "subject": "10-ozbekiston-tarixi",
+   "title": {
+    "uz": "O‘zbekiston tarixi, 10-sinf: Qadimgi va o‘rta asrlar",
+    "ru": "История Узбекистана, 10 класс",
+    "en": "History of Uzbekistan, Grade 10"
+   },
+   "questions": [
+    {
+     "q": "Amir Temur qaysi yili vafot etgan?",
+     "options": [
+      "1370",
+      "1405",
+      "1449",
+      "1336"
+     ],
+     "answer": 1,
+     "why": "Amir Temur 1405-yilda O‘tror shahrida vafot etgan."
+    },
+    {
+     "q": "Mirzo Ulug‘bek rasadxonasi qayerda qurilgan?",
+     "options": [
+      "Buxoroda",
+      "Samarqandda",
+      "Hirotda",
+      "Xivada"
+     ],
+     "answer": 1,
+     "why": "Rasadxona Samarqand yaqinidagi Ko‘hak tepaligida qurilgan."
+    },
+    {
+     "q": "\"Temur tuzuklari\" asari nima haqida?",
+     "options": [
+      "Davlat boshqaruvi qoidalari va Temur faoliyati haqida",
+      "Tibbiyot haqida",
+      "Astronomiya haqida",
+      "She’riyat haqida"
+     ],
+     "answer": 0,
+     "why": "Asarda davlatni boshqarish tartiblari bayon qilingan."
+    },
+    {
+     "q": "Ahamoniylar davlati qayerda vujudga kelgan?",
+     "options": [
+      "Eronda (Fors)",
+      "Xitoyda",
+      "Rimda",
+      "Misrda"
+     ],
+     "answer": 0,
+     "why": "Ahamoniylar — qadimgi Fors davlati."
+    },
+    {
+     "q": "Buyuk Ipak yo‘li orqali asosan nimalar tashilgan?",
+     "options": [
+      "Ipak, ziravorlar va boshqa mollar",
+      "Neft",
+      "Ko‘mir",
+      "Elektr energiyasi"
+     ],
+     "answer": 0,
+     "why": "Ipak yo‘li savdo va madaniy aloqalar yo‘li bo‘lgan."
+    }
+   ]
+  },
+  {
+   "id": "ingliz-tili-10",
+   "grade": 10,
+   "subject": "10-ingliz-tili",
+   "title": {
+    "uz": "Ingliz tili, 10-sinf: Advanced grammar",
+    "ru": "Английский язык, 10 класс",
+    "en": "English, Grade 10"
+   },
+   "questions": [
+    {
+     "q": "I'm looking forward to ___ you.",
+     "options": [
+      "see",
+      "seeing",
+      "saw",
+      "be seeing"
+     ],
+     "answer": 1,
+     "why": "Look forward to + -ing."
+    },
+    {
+     "q": "She ___ in London for five years before she moved to Paris.",
+     "options": [
+      "has lived",
+      "had lived",
+      "lives",
+      "is living"
+     ],
+     "answer": 1,
+     "why": "An action before another past action — past perfect."
+    },
+    {
+     "q": "You ___ smoke here. It's forbidden.",
+     "options": [
+      "mustn't",
+      "needn't",
+      "don't have to",
+      "can"
+     ],
+     "answer": 0,
+     "why": "Mustn't — prohibition."
+    },
+    {
+     "q": "What is the opposite of \"ancient\"?",
+     "options": [
+      "old",
+      "modern",
+      "historic",
+      "antique"
+     ],
+     "answer": 1,
+     "why": "Ancient — modern."
+    },
+    {
+     "q": "The man ___ car was stolen called the police.",
+     "options": [
+      "who",
+      "which",
+      "whose",
+      "whom"
+     ],
+     "answer": 2,
+     "why": "\"Whose\" shows possession."
+    }
+   ]
+  },
+  {
+   "id": "ona-tili-11",
+   "grade": 11,
+   "subject": "11-ona-tili",
+   "title": {
+    "uz": "Ona tili, 11-sinf: Imlo va til tarixi",
+    "ru": "Родной язык, 11 класс",
+    "en": "Native language, Grade 11"
+   },
+   "questions": [
+    {
+     "q": "O‘zbek lotin alifbosida nechta harf bor?",
+     "options": [
+      "26",
+      "29",
+      "33",
+      "35"
+     ],
+     "answer": 1,
+     "why": "29 ta harf va 1 ta tutuq belgisi (’)."
+    },
+    {
+     "q": "Qaysi so‘z to‘g‘ri yozilgan?",
+     "options": [
+      "o‘qtuvchi",
+      "o‘qituvchi",
+      "uqituvchi",
+      "o‘qiytuvchi"
+     ],
+     "answer": 1,
+     "why": "To‘g‘ri yozilishi: o‘qituvchi."
+    },
+    {
+     "q": "O‘zbek tiliga davlat tili maqomi qachon berilgan?",
+     "options": [
+      "1991-yilda",
+      "1989-yil 21-oktabrda",
+      "1995-yilda",
+      "2000-yilda"
+     ],
+     "answer": 1,
+     "why": "21-oktabr — O‘zbek tili bayrami kuni."
+    },
+    {
+     "q": "Qaysi gapda tinish belgisi to‘g‘ri qo‘yilgan?",
+     "options": [
+      "Bahor keldi, daraxtlar gulladi.",
+      "Bahor keldi daraxtlar, gulladi.",
+      "Bahor, keldi daraxtlar gulladi.",
+      "Bahor keldi daraxtlar gulladi,"
+     ],
+     "answer": 0,
+     "why": "Qo‘shma gap qismlari orasiga vergul qo‘yiladi."
+    },
+    {
+     "q": "Qaysi so‘zda so‘z yasovchi qo‘shimcha bor?",
+     "options": [
+      "paxtakor",
+      "kitoblar",
+      "uyda",
+      "keldi"
+     ],
+     "answer": 0,
+     "why": "-kor qo‘shimchasi yangi so‘z yasagan."
+    }
+   ]
+  },
+  {
+   "id": "adabiyot-11",
+   "grade": 11,
+   "subject": "11-adabiyot",
+   "title": {
+    "uz": "Adabiyot, 11-sinf: O‘zbek adabiyoti klassikasi",
+    "ru": "Литература, 11 класс",
+    "en": "Literature, Grade 11"
+   },
+   "questions": [
+    {
+     "q": "\"O‘tkan kunlar\" o‘zbek adabiyotida qanday ahamiyatga ega?",
+     "options": [
+      "Birinchi o‘zbek romani hisoblanadi",
+      "Birinchi xalq dostoni",
+      "Birinchi g‘azallar to‘plami",
+      "Birinchi dramatik asar"
+     ],
+     "answer": 0,
+     "why": "Abdulla Qodiriyning \"O‘tkan kunlar\"i birinchi o‘zbek romani sanaladi."
+    },
+    {
+     "q": "\"Dunyoning ishlari\" asarining muallifi kim?",
+     "options": [
+      "Said Ahmad",
+      "O‘tkir Hoshimov",
+      "Erkin Vohidov",
+      "Abdulla Oripov"
+     ],
+     "answer": 1,
+     "why": "O‘tkir Hoshimovning qissasi."
+    },
+    {
+     "q": "\"Ruhlar isyoni\" dostonining muallifi kim?",
+     "options": [
+      "Abdulla Oripov",
+      "Erkin Vohidov",
+      "Muhammad Yusuf",
+      "G‘afur G‘ulom"
+     ],
+     "answer": 1,
+     "why": "Erkin Vohidovning dostoni."
+    },
+    {
+     "q": "\"Sinchalak\" qissasining muallifi kim?",
+     "options": [
+      "Abdulla Qahhor",
+      "Oybek",
+      "Cho‘lpon",
+      "O‘tkir Hoshimov"
+     ],
+     "answer": 0,
+     "why": "Abdulla Qahhor qissasi."
+    },
+    {
+     "q": "Fitratning qaysi asari dramatik asar (drama)?",
+     "options": [
+      "\"Hind sayyohining qissasi\"",
+      "\"Abulfayzxon\"",
+      "\"Munozara\"",
+      "\"Sayha\""
+     ],
+     "answer": 1,
+     "why": "\"Abulfayzxon\" — Fitratning tarixiy dramasi."
+    }
+   ]
+  },
+  {
+   "id": "algebra-11",
+   "grade": 11,
+   "subject": "11-algebra",
+   "title": {
+    "uz": "Algebra, 11-sinf: Hosila va integral",
+    "ru": "Алгебра, 11 класс",
+    "en": "Algebra, Grade 11"
+   },
+   "questions": [
+    {
+     "q": "f(x) = x² funksiyaning hosilasi qaysi?",
+     "options": [
+      "x",
+      "2x",
+      "x³/3",
+      "2"
+     ],
+     "answer": 1,
+     "why": "(xⁿ)’ = n · xⁿ⁻¹."
+    },
+    {
+     "q": "(sin x)’ = ?",
+     "options": [
+      "−cos x",
+      "cos x",
+      "sin x",
+      "−sin x"
+     ],
+     "answer": 1,
+     "why": "Sinusning hosilasi — kosinus."
+    },
+    {
+     "q": "∫ 2x dx = ?",
+     "options": [
+      "2 + C",
+      "x² + C",
+      "2x² + C",
+      "x + C"
+     ],
+     "answer": 1,
+     "why": "(x²)’ = 2x."
+    },
+    {
+     "q": "f(x) = 3x + 5 funksiyaning hosilasi nechaga teng?",
+     "options": [
+      "3x",
+      "3",
+      "5",
+      "8"
+     ],
+     "answer": 1,
+     "why": "O‘zgarmasning hosilasi 0, (3x)’ = 3."
+    },
+    {
+     "q": "Hosilasi nolga teng bo‘lgan nuqtalar nima deyiladi?",
+     "options": [
+      "Kritik (statsionar) nuqtalar",
+      "Asimptotalar",
+      "Uzilish nuqtalari",
+      "Koordinata boshi"
+     ],
+     "answer": 0,
+     "why": "Ekstremum nuqtalar shular orasidan izlanadi."
+    }
+   ]
+  },
+  {
+   "id": "fizika-11",
+   "grade": 11,
+   "subject": "11-fizika",
+   "title": {
+    "uz": "Fizika, 11-sinf: Zamonaviy fizika",
+    "ru": "Физика, 11 класс",
+    "en": "Physics, Grade 11"
+   },
+   "questions": [
+    {
+     "q": "Fotoeffekt nazariyasi uchun Nobel mukofotini olgan olim kim?",
+     "options": [
+      "Isaak Nyuton",
+      "Albert Eynshteyn",
+      "Maykl Faradey",
+      "Georg Om"
+     ],
+     "answer": 1,
+     "why": "Eynshteyn 1921-yilgi Nobel mukofotini fotoeffekt nazariyasi uchun olgan."
+    },
+    {
+     "q": "E = mc² formulasida c nimani bildiradi?",
+     "options": [
+      "massani",
+      "yorug‘likning vakuumdagi tezligini",
+      "zaryadni",
+      "issiqlik sig‘imini"
+     ],
+     "answer": 1,
+     "why": "c ≈ 3 · 10⁸ m/s."
+    },
+    {
+     "q": "Atom yadrosi qanday zarralardan iborat?",
+     "options": [
+      "elektron va protonlardan",
+      "proton va neytronlardan",
+      "elektron va neytronlardan",
+      "faqat elektronlardan"
+     ],
+     "answer": 1,
+     "why": "Elektronlar yadro atrofida harakatlanadi."
+    },
+    {
+     "q": "Qaysi elektromagnit to‘lqinlarni ko‘z ko‘radi?",
+     "options": [
+      "radioto‘lqinlar",
+      "rentgen nurlari",
+      "yorug‘lik",
+      "ultrabinafsha nurlar"
+     ],
+     "answer": 2,
+     "why": "Ko‘zimiz faqat ko‘rinadigan yorug‘likni sezadi."
+    },
+    {
+     "q": "Transformator nima uchun ishlatiladi?",
+     "options": [
+      "O‘zgaruvchan tok kuchlanishini o‘zgartirish uchun",
+      "Tokni o‘zgarmasga aylantirish uchun",
+      "Issiqlik ishlab chiqarish uchun",
+      "Yorug‘likni kuchaytirish uchun"
+     ],
+     "answer": 0,
+     "why": "Transformator kuchlanishni oshiradi yoki pasaytiradi."
+    }
+   ]
+  },
+  {
+   "id": "kimyo-11",
+   "grade": 11,
+   "subject": "11-umumiy-kimyo",
+   "title": {
+    "uz": "Umumiy kimyo, 11-sinf: Umumiy kimyo",
+    "ru": "Общая химия, 11 класс",
+    "en": "General chemistry, Grade 11"
+   },
+   "questions": [
+    {
+     "q": "NaCl da qanday kimyoviy bog‘lanish bor?",
+     "options": [
+      "kovalent qutbsiz",
+      "ion",
+      "metall",
+      "vodorod"
+     ],
+     "answer": 1,
+     "why": "Metall va metallmas o‘rtasida ion bog‘lanish hosil bo‘ladi."
+    },
+    {
+     "q": "Katalizator nima?",
+     "options": [
+      "Reaksiya tezligini o‘zgartiradigan, o‘zi sarflanmaydigan modda",
+      "Reaksiyada butunlay sarflanadigan modda",
+      "Reaksiya mahsuloti",
+      "Erituvchi"
+     ],
+     "answer": 0,
+     "why": "Katalizator reaksiyadan so‘ng o‘zgarishsiz qoladi."
+    },
+    {
+     "q": "Oksidlanish jarayonida atom nima qiladi?",
+     "options": [
+      "Elektron beradi",
+      "Elektron qabul qiladi",
+      "Proton qabul qiladi",
+      "Neytron beradi"
+     ],
+     "answer": 0,
+     "why": "Oksidlanish — elektron berish, qaytarilish — elektron qabul qilish."
+    },
+    {
+     "q": "Asosiy guruh elementlarida guruh raqami nimani ko‘rsatadi?",
+     "options": [
+      "Tashqi qavatdagi elektronlar sonini",
+      "Neytronlar sonini",
+      "Atom massasini",
+      "Izotoplar sonini"
+     ],
+     "answer": 0,
+     "why": "Masalan, I guruh elementlarida tashqi qavatda 1 ta elektron bor."
+    },
+    {
+     "q": "Qaysi biri inert (nodir) gaz?",
+     "options": [
+      "kislorod",
+      "azot",
+      "geliy",
+      "xlor"
+     ],
+     "answer": 2,
+     "why": "Geliy, neon, argon — inert gazlar."
+    }
+   ]
+  },
+  {
+   "id": "biologiya-11",
+   "grade": 11,
+   "subject": "11-biologiya",
+   "title": {
+    "uz": "Biologiya, 11-sinf: Ekologiya va evolyutsiya",
+    "ru": "Биология, 11 класс",
+    "en": "Biology, Grade 11"
+   },
+   "questions": [
+    {
+     "q": "Ekologiya nimani o‘rganadi?",
+     "options": [
+      "Organizmlarning bir-biri va muhit bilan munosabatini",
+      "Faqat odam anatomiyasini",
+      "Faqat hujayra tuzilishini",
+      "Faqat tog‘ jinslarini"
+     ],
+     "answer": 0,
+     "why": "Ekologiya — tirik organizmlar va muhit munosabati haqidagi fan."
+    },
+    {
+     "q": "Mendelning birinchi qonuni qanday ataladi?",
+     "options": [
+      "Birinchi avlod duragaylarining bir xilligi qonuni",
+      "Belgilarning mustaqil irsiylanishi qonuni",
+      "Biogenetik qonun",
+      "Energiyaning saqlanish qonuni"
+     ],
+     "answer": 0,
+     "why": "Birinchi avlodda barcha duragaylar bir xil bo‘ladi."
+    },
+    {
+     "q": "Biosfera haqidagi ta’limot muallifi kim?",
+     "options": [
+      "Vladimir Vernadskiy",
+      "Charlz Darvin",
+      "Gregor Mendel",
+      "Ivan Pavlov"
+     ],
+     "answer": 0,
+     "why": "Vernadskiy biosferani Yerning tirik qobig‘i sifatida o‘rgangan."
+    },
+    {
+     "q": "Tabiiy tanlanish nazariyasi kimga tegishli?",
+     "options": [
+      "Charlz Darvin",
+      "Gregor Mendel",
+      "Karl Linney",
+      "Lui Paster"
+     ],
+     "answer": 0,
+     "why": "Darvinning evolyutsion nazariyasi."
+    },
+    {
+     "q": "Gen nima?",
+     "options": [
+      "DNKning ma’lum belgi haqidagi axborotni saqlovchi qismi",
+      "Hujayra organoidi",
+      "Qon hujayrasi",
+      "Oqsil turi"
+     ],
+     "answer": 0,
+     "why": "Gen — irsiyat birligi."
+    }
+   ]
+  },
+  {
+   "id": "astronomiya-11",
+   "grade": 11,
+   "subject": "11-astronomiya",
+   "title": {
+    "uz": "Astronomiya, 11-sinf: Quyosh sistemasi",
+    "ru": "Астрономия, 11 класс",
+    "en": "Astronomy, Grade 11"
+   },
+   "questions": [
+    {
+     "q": "Quyosh sistemasidagi eng katta sayyora qaysi?",
+     "options": [
+      "Saturn",
+      "Yupiter",
+      "Yer",
+      "Neptun"
+     ],
+     "answer": 1,
+     "why": "Yupiter — eng katta sayyora."
+    },
+    {
+     "q": "Quyoshga eng yaqin sayyora qaysi?",
+     "options": [
+      "Venera",
+      "Merkuriy",
+      "Mars",
+      "Yer"
+     ],
+     "answer": 1,
+     "why": "Merkuriy Quyoshga eng yaqin joylashgan."
+    },
+    {
+     "q": "Qaysi sayyora \"Qizil sayyora\" deb ataladi?",
+     "options": [
+      "Venera",
+      "Mars",
+      "Yupiter",
+      "Merkuriy"
+     ],
+     "answer": 1,
+     "why": "Mars yuzasidagi temir oksidlari unga qizg‘ish rang beradi."
+    },
+    {
+     "q": "Yorug‘lik yili nimaning o‘lchov birligi?",
+     "options": [
+      "vaqtning",
+      "masofaning",
+      "tezlikning",
+      "massaning"
+     ],
+     "answer": 1,
+     "why": "Yorug‘lik bir yilda bosib o‘tadigan masofa."
+    },
+    {
+     "q": "Yer o‘z o‘qi atrofida qancha vaqtda bir marta aylanadi?",
+     "options": [
+      "1 soatda",
+      "taxminan 24 soatda",
+      "1 oyda",
+      "1 yilda"
+     ],
+     "answer": 1,
+     "why": "Yerning o‘z o‘qi atrofida aylanishi kecha va kunduzni hosil qiladi."
+    }
+   ]
+  },
+  {
+   "id": "ozbekiston-tarixi-11",
+   "grade": 11,
+   "subject": "11-ozbekiston-tarixi",
+   "title": {
+    "uz": "O‘zbekiston tarixi, 11-sinf: Mustaqil O‘zbekiston",
+    "ru": "История Узбекистана, 11 класс",
+    "en": "History of Uzbekistan, Grade 11"
+   },
+   "questions": [
+    {
+     "q": "O‘zbekiston qaysi yili BMTga a’zo bo‘lgan?",
+     "options": [
+      "1991",
+      "1992",
+      "1995",
+      "2000"
+     ],
+     "answer": 1,
+     "why": "O‘zbekiston 1992-yil 2-martda BMTga qabul qilingan."
+    },
+    {
+     "q": "Mustaqillik kuni qachon nishonlanadi?",
+     "options": [
+      "8-dekabrda",
+      "1-sentyabrda",
+      "21-martda",
+      "9-mayda"
+     ],
+     "answer": 1,
+     "why": "1-sentyabr — Mustaqillik kuni."
+    },
+    {
+     "q": "O‘zbekiston Konstitutsiyasining yangi tahriri qachon referendum orqali qabul qilingan?",
+     "options": [
+      "2017-yilda",
+      "2023-yil 30-aprelda",
+      "2020-yilda",
+      "1992-yilda"
+     ],
+     "answer": 1,
+     "why": "2023-yil 30-aprelda umumxalq referendumi o‘tkazilgan."
+    },
+    {
+     "q": "O‘zbekiston davlat bayrog‘i qachon qabul qilingan?",
+     "options": [
+      "1991-yil 18-noyabrda",
+      "1992-yil 8-dekabrda",
+      "1991-yil 31-avgustda",
+      "1992-yil 2-iyulda"
+     ],
+     "answer": 0,
+     "why": "Bayroq 1991-yil 18-noyabrda qabul qilingan."
+    },
+    {
+     "q": "O‘zbekiston Respublikasining birinchi Prezidenti kim?",
+     "options": [
+      "Islom Karimov",
+      "Shavkat Mirziyoyev",
+      "Sharof Rashidov",
+      "Abdulla Aripov"
+     ],
+     "answer": 0,
+     "why": "Islom Karimov 1991–2016-yillarda Prezident bo‘lgan."
+    }
+   ]
+  },
+  {
+   "id": "ingliz-tili-11",
+   "grade": 11,
+   "subject": "11-ingliz-tili",
+   "title": {
+    "uz": "Ingliz tili, 11-sinf: Exam practice",
+    "ru": "Английский язык, 11 класс",
+    "en": "English, Grade 11"
+   },
+   "questions": [
+    {
+     "q": "Had I known, I ___ you.",
+     "options": [
+      "will help",
+      "would have helped",
+      "helped",
+      "would help"
+     ],
+     "answer": 1,
+     "why": "Third conditional (inversion): had + past participle, would have + past participle."
+    },
+    {
+     "q": "It's high time we ___.",
+     "options": [
+      "go",
+      "went",
+      "gone",
+      "going"
+     ],
+     "answer": 1,
+     "why": "\"It's high time\" + past simple."
+    },
+    {
+     "q": "The news ___ good.",
+     "options": [
+      "are",
+      "is",
+      "were",
+      "be"
+     ],
+     "answer": 1,
+     "why": "\"News\" is uncountable and takes a singular verb."
+    },
+    {
+     "q": "She is used to ___ up early.",
+     "options": [
+      "get",
+      "getting",
+      "got",
+      "gets"
+     ],
+     "answer": 1,
+     "why": "Be used to + -ing."
+    },
+    {
+     "q": "Choose the synonym of \"enormous\".",
+     "options": [
+      "tiny",
+      "huge",
+      "fast",
+      "quiet"
+     ],
+     "answer": 1,
+     "why": "Enormous — huge."
+    }
+   ]
+  }
+ ]
 }
