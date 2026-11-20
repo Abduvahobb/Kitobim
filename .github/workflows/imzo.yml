@@ -1,0 +1,27 @@
+name: Imzo izlari (Firebase uchun SHA-1 / SHA-256)
+on:
+  push:
+    branches: [imzo-izi]
+
+jobs:
+  sha:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      issues: write
+    env:
+      GH_TOKEN: ${{ github.token }}
+      KS_B64: ${{ secrets.KITOBIM_KEYSTORE }}
+      KS_PASS: ${{ secrets.KITOBIM_KEYSTORE_PASSWORD }}
+    steps:
+      - name: Kalit izlarini chiqarish (izlar ochiq ma'lumot, kalitning o'zi chiqmaydi)
+        run: |
+          if [ -z "$KS_B64" ]; then
+            body="KITOBIM_KEYSTORE secret yo'q — APK vaqtinchalik imzo bilan yig'ilmoqda."
+          else
+            echo "$KS_B64" | base64 -d > k.p12
+            body=$(keytool -list -v -keystore k.p12 -storetype PKCS12 -storepass "$KS_PASS" | grep -E "SHA1:|SHA256:")
+            rm -f k.p12
+          fi
+          echo "$body"
+          gh issue create --repo "$GITHUB_REPOSITORY" --title "Imzo izlari (Firebase)" --body "$body"
