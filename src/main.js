@@ -1,3 +1,4 @@
+import './polyfill.js';
 import './style.css';
 import { STRINGS, LANGS, pick } from './i18n.js';
 import { store } from './store.js';

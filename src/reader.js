@@ -86,6 +86,8 @@ export function openReader(root, book, title, t, onClose, toast) {
     if (closed) throw last;
     try { return await pdfjsLib.getDocument({ url: r.url, disableRange: true, disableStream: true }).promise; } catch (e) { last = e; console.warn('full', e); }
     if (closed) throw last;
+    // Juda katta faylni to'liq xotiraga o'qish telefonni "qotiradi" — faqat 60 MB gacha
+    if (r.size && r.size > 60 * 1024 * 1024) throw last;
     const data = await nativeReadAll(r.path);
     return await pdfjsLib.getDocument({ data }).promise;
   }
