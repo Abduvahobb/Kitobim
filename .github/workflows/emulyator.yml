@@ -9,14 +9,14 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        api: [30, 34]
+        api: [34]
     runs-on: ubuntu-latest
-    timeout-minutes: 60
+    timeout-minutes: 350
     permissions:
       contents: write
     env:
       GH_TOKEN: ${{ github.token }}
-      KITOBLAR: 'ingliz-tili-5-sinf-uz-yangi tabiiy-fanlar-5-sinf-uz-2024 matematika-5-sinf-uz-1-qism adabiyot-10-sinf-uz-2024 ingliz-tili-11-sinf-uz-2025 matematika-4-sinf-uz-3-qism-2023 biologiya-7-sinf-uz-2022 fizika-10-sinf-ru-2025 ingliz-tili-5-sinf-uz-yangi'
+      KITOBLAR: 'ALL'
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4

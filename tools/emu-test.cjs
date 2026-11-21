@@ -1,7 +1,9 @@
 // Android emulyatorida ilovani ochib, kitoblarni sinash (WebView DevTools, to'g'ridan-to'g'ri CDP).
 const WebSocket = require('ws');
 const fs = require('fs');
-const ids = process.argv.slice(2);
+let ids = process.argv.slice(2);
+const { execSync } = require('child_process');
+const ALL = ids[0] === 'ALL';
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 
 (async () => {
@@ -30,21 +32,26 @@ const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
     document.querySelector('form [type=submit]').click();
     await new Promise((r) => setTimeout(r, 4000)); return 'ok ' + location.hash; })()`);
   console.log('login:', login);
+  if (ALL) {
+    ids = await ev(`fetch('catalog.json').then(r => r.json()).then(c => c.grades.flatMap(g => g.subjects.flatMap(s => s.books.map(b => b.id))))`);
+    console.log('jami kitob:', ids.length);
+  }
+  const bad = [];
   for (const b of ids) {
     logs.length = 0;
     await ev(`location.hash = '#/read/${b}'`);
     const t0 = Date.now(); let st = '';
-    while (Date.now() - t0 < 240000) {
+    while (Date.now() - t0 < (ALL ? 180000 : 240000)) {
       await sleep(3000);
       st = await ev(`(() => { const c = [...document.querySelectorAll('canvas')].filter((x) => x.width > 50).length;
         const m = document.querySelector('.reader-msg'); return (c ? 'OCHILDI ' : '') + (m ? m.innerText.replace(/\\s+/g, ' ') : ''); })()`);
       if (String(st).startsWith('OCHILDI') || /bo.lmadi/.test(st)) break;
     }
     console.log(`== ${b} (${Math.round((Date.now() - t0) / 1000)}s): ${st}`);
-    for (const l of logs.slice(-15)) console.log('   ', l);
-    const shot = await cmd('Page.captureScreenshot', { format: 'png' });
-    if (shot.result) fs.writeFileSync(`emu-${b}.png`, Buffer.from(shot.result.data, 'base64'));
+    if (!String(st).startsWith('OCHILDI')) { bad.push(b); for (const l of logs.filter((x) => !/Group|\[dir\]|console\.group/.test(x)).slice(-8)) console.log('   ', l); }
+    if (ALL) { try { execSync('adb shell run-as uz.kitobim.app rm -rf files/kitoblar', { stdio: 'ignore' }); } catch (e) { /* */ } }
     await ev(`location.hash = '#/home'`); await sleep(1500);
   }
+  console.log('OCHILMAGAN:', bad.length, bad.join(' '));
   ws.close();
 })().catch((e) => { console.error('XATO', e); process.exit(1); });
