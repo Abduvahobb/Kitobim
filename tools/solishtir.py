@@ -56,7 +56,7 @@ def main(mfile, out):
     res = json.load(open(out)) if os.path.exists(out) else {}
     for tg, olds in mp.items():
         new = f'{TMP}/{tg}.pdf'
-        if not get(BASE + f'{tg}.pdf', new):
+        if not get(BASE + f'tg{tg}.pdf', new):
             for o in olds:
                 res[o] = {'tg': tg, 'error': 'yangi fayl yuklanmadi'}
             continue
