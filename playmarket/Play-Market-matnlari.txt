@@ -1,0 +1,77 @@
+DARSLIGIM — PLAY MARKET DO'KON SAHIFASI MATNLARI
+================================================
+
+ILOVA NOMI (App name, 30 belgigacha)
+  Darsligim — maktab darsliklari
+
+QISQA TAVSIF (Short description, 80 belgigacha)
+  O'zbekcha:  1–11-sinf maktab darsliklari va testlar. Bepul, internetsiz ham o'qing
+  Русский:    Школьные учебники и тесты для 1–11 классов. Бесплатно, читайте офлайн
+  English:    School textbooks and quizzes for grades 1–11. Free, read offline
+
+TO'LIQ TAVSIF (Full description)
+
+--- O'zbekcha ---
+Darsligim — O'zbekiston maktablari uchun 1–11-sinf darsliklari bitta ilovada.
+
+Ilovada nimalar bor:
+• 1-sinfdan 11-sinfgacha barcha fanlar bo'yicha 450 dan ortiq darslik
+• O'zbek va rus tilidagi maktablar uchun alohida darsliklar
+• Darslikni bir marta yuklab oling — keyin internetsiz o'qing
+• Butun sinf darsliklarini bitta tugma bilan yuklab olish
+• Sahifani kattalashtirish, kerakli betga o'tish, qayerda to'xtaganingizni eslab qolish
+• Fanlar bo'yicha testlar va natijaga qarab sertifikat
+• O'zbek, rus va ingliz tilidagi interfeys
+
+Kirish oson: ism-familiya, telefon raqami va sinfingizni kiritasiz — parol va SMS kod kerak emas. Ma'lumotlaringiz faqat telefoningizda saqlanadi.
+
+Darsliklar Maktabgacha va maktab ta'limi vazirligi tomonidan bepul tarqatiladigan rasmiy elektron nusxalardir. Ilova ularni o'quvchilar uchun qulay shaklda jamlaydi va bepul taqdim etadi.
+
+Ilova muallifi: Vahobjonov Abduvahob
+Taklif va savollar: Telegram @Vakhobov47
+
+--- Русский ---
+Darsligim — школьные учебники для 1–11 классов Узбекистана в одном приложении.
+
+Что есть в приложении:
+• Более 450 учебников по всем предметам с 1 по 11 класс
+• Отдельные учебники для школ с узбекским и русским языком обучения
+• Скачайте учебник один раз — и читайте без интернета
+• Загрузка всех учебников класса одной кнопкой
+• Масштабирование, переход на нужную страницу, запоминание места чтения
+• Тесты по предметам и сертификат по результатам
+• Интерфейс на узбекском, русском и английском языках
+
+Простой вход: имя, номер телефона и класс — без пароля и SMS-кода. Данные хранятся только на вашем телефоне.
+
+Учебники являются официальными электронными копиями, которые Министерство дошкольного и школьного образования распространяет бесплатно. Приложение собирает их в удобном виде для учеников и предоставляет бесплатно.
+
+Автор приложения: Вахобжонов Абдувахоб
+Предложения и вопросы: Telegram @Vakhobov47
+
+--- English ---
+Darsligim brings Uzbekistan's school textbooks for grades 1–11 into one app.
+
+What's inside:
+• More than 450 textbooks for every subject from grade 1 to grade 11
+• Separate textbooks for Uzbek-language and Russian-language schools
+• Download a textbook once, then read it offline
+• Download all textbooks for a grade with one tap
+• Zoom, jump to any page, and pick up where you left off
+• Subject quizzes with a certificate for your result
+• Interface in Uzbek, Russian and English
+
+Simple sign-in: your name, phone number and grade — no password or SMS code. Your details stay on your phone.
+
+The textbooks are the official electronic copies distributed free of charge by the Ministry of Preschool and School Education. The app collects them in a convenient form for students and is free to use.
+
+Developer: Abduvahob Vahobjonov
+Questions and suggestions: Telegram @Vakhobov47
+
+KATEGORIYA: Ta'lim (Education)
+TEG / KALIT SO'ZLAR: darslik, maktab, o'quvchi, test, kitob
+
+RASMLAR (shu papkada):
+  ikonka-512.png          — Ilova ikonkasi (512×512)
+  banner-1024x500.png     — Feature graphic (1024×500)
+  skrinshot-1…6.png       — Telefon skrinshotlari (1080×1920), shu tartibda yuklang
