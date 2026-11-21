@@ -35,7 +35,44 @@ def diff(a, b, n):
     return res
 
 
+ALIAS = {
+ "6-sinf-adabiyot-1-qism": "adabiyot-6-sinf-uz",
+ "10-sinf-adabiyot-1-qism": "adabiyot-10-sinf-uz",
+ "11-sinf-umumiy-kimyo": "kimyo-11-sinf-uz",
+ "10-sinf-organik-kimyo": "kimyo-10-sinf-uz",
+ "11-sinf-tadbirkorlik": "tadbirkorlik-asoslari-11-sinf-uz",
+ "11-sinf-davlat-va-huquq": "davlat-va-huquq-asoslari-11-sinf-uz",
+ "10-sinf-davlat-va-huquq": "huquq-10-sinf-uz",
+ "11-sinf-chaquvga-qadar-boshlangich-tayyorgarlik": "chaqiruvga-qadar-boshlangich-tayyorgarlik-11-sinf-uz",
+ "10-sinf-chaquvga-qadar-boshlangich-tayyorgarlik": "chaqiruvga-qadar-boshlangich-tayyorgarlik-10-sinf-uz",
+ "9-sinf-iqtisodiy-bilimlar": "iqtisodiyot-9-sinf-uz",
+ "8-sinf-ozbekiston-davlati-va-huquqi-asoslari": "davlat-va-huquq-asoslari-8-sinf-uz",
+ "9-sinf-konstitutsiyaviy-huquq-asoslari": "davlat-va-huquq-asoslari-9-sinf-uz",
+ "8-sinf-odam-va-uning-salomatligi": "biologiya-8-sinf-uz",
+ "8-sinf-ijtimoiy-iqtisodiy-geografiya": "geografiya-8-sinf-uz",
+ "9-sinf-jahon-ijtimoiy-iqtisodiy-geografiyasi": "geografiya-9-sinf-uz",
+ "6-sinf-qadimgi-dunyo-tarixi": "tarix-6-sinf-uz",
+ "5-sinf-jismoniy-tarbiya-5-6": "jismoniy-tarbiya-5-sinf-uz",
+ "4-sinf-oqish": "oqish-savodxonligi-4-sinf-uz-1-qism",
+ "3-sinf-oqish": "oqish-savodxonligi-3-sinf-uz-1-qism",
+ "2-sinf-oqish": "oqish-savodxonligi-2-sinf-uz-1-qism",
+ "1-sinf-oqish": "oqish-savodxonligi-1-sinf-uz-1-qism",
+ "4-sinf-tabiatshunoslik": "tabiiy-fanlar-4-sinf-uz-1-qism",
+ "3-sinf-tabiatshunoslik": "tabiiy-fanlar-3-sinf-uz-1-qism",
+ "2-sinf-atrofimizdagi-olam": "tabiiy-fanlar-2-sinf-uz",
+ "1-sinf-atrofimizdagi-olam": "tabiiy-fanlar-1-sinf-uz-1-qism",
+ "1-sinf-matematika": "matematika-1-sinf-uz-1-qism",
+ "1-sinf-nutq-ostirish-maxsus": "nutq-ostirish-1-sinf-uz",
+ "6-sinf-jismoniy-tarbiya": "jismoniy-tarbiya-5-sinf-uz",
+ "10-sinf-matematika": "algebra-10-sinf-uz"
+}
+
+
 def match(slug):
+    if slug in ALIAS:
+        for x in (ALIAS[slug] + '-2025', ALIAS[slug]):
+            if x in BOOKS:
+                return x
     m = re.match(r'(\d+)-sinf-(.+?)(?:-(\d)-qism)?$', slug)
     if not m:
         return None
