@@ -10,7 +10,7 @@ jobs:
       fail-fast: false
       matrix:
         include:
-          - { api: 34, bolak: 0, k: 'oqish-savodxonligi-1-sinf-ru-2-qism tarbiya-1-sinf-ru matematika-3-sinf-ru-1-qism rus-tili-4-sinf-uz informatika-5-sinf-ru ingliz-tili-6-sinf-ru-2025 ingliz-tili-6-sinf-uz-2025 tarbiya-6-sinf-ru geometriya-7-sinf-ru geometriya-7-sinf-uz biologiya-7-sinf-ru biologiya-7-sinf-uz' }
+          - { api: 34, bolak: 0, k: 'tabiiy-fanlar-5-sinf-uz-2024-asl tasviriy-sanat-5-sinf-uz-2024-asl texnologiya-5-sinf-uz-2024-asl botanika-6-sinf-uz-2024-asl adabiyot-10-sinf-uz-2024-asl adabiyot-10-sinf-uz-2-qism-2024-asl chaqiruvga-qadar-boshlangich-tayyorgarlik-10-sinf-uz-2024-asl informatika-10-sinf-ru' }
     runs-on: ubuntu-latest
     timeout-minutes: 75
     permissions:
