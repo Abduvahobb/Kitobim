@@ -1,0 +1,24 @@
+name: Siqilgan kitoblarni aslidagi bilan solishtirish
+on:
+  push:
+    branches: [siq-tekshir]
+jobs:
+  t:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    permissions:
+      contents: write
+    env:
+      GH_TOKEN: ${{ github.token }}
+    strategy:
+      fail-fast: false
+      matrix:
+        k: [0, 1, 2, 3]
+    steps:
+      - uses: actions/checkout@v4
+      - run: sudo apt-get install -y -q poppler-utils >/dev/null && pip install --quiet pillow
+      - run: |
+          awk 'NR % 4 == ${{ matrix.k }}' tools/siq-tekshir.txt > qism.txt
+          python3 tools/siq_tekshir.py qism.txt
+          cp siq-tekshir.json siq-tekshir-${{ matrix.k }}.json
+          gh release upload kitoblar siq-tekshir-${{ matrix.k }}.json --clobber --repo "$GITHUB_REPOSITORY"
