@@ -172,8 +172,10 @@ jobs:
               }
           }
           GRADLE
-            ./gradlew assembleRelease --no-daemon
+            ./gradlew assembleRelease bundleRelease --no-daemon
             cp app/build/outputs/apk/release/app-release.apk ../out/Darsligim.apk
+            # Play Market uchun (Google Play Console'ga shu yuklanadi)
+            cp app/build/outputs/bundle/release/app-release.aab ../out/Darsligim.aab
           else
             echo "::warning::KITOBIM_KEYSTORE topilmadi — vaqtinchalik (debug) imzo ishlatildi"
             ./gradlew assembleDebug --no-daemon
@@ -182,7 +184,9 @@ jobs:
       - uses: actions/upload-artifact@v4
         with:
           name: android
-          path: out/Darsligim.apk
+          path: |
+            out/Darsligim.apk
+            out/Darsligim.aab
 
   windows:
     runs-on: windows-latest
@@ -237,7 +241,7 @@ jobs:
         run: |
           ls -R out
           gh release create "v0.5.${{ github.run_number }}" \
-            out/android/Darsligim.apk out/windows/Darsligim-Setup.exe out/windows/Darsligim-portable.exe \
+            out/android/Darsligim.apk out/android/Darsligim.aab out/windows/Darsligim-Setup.exe out/windows/Darsligim-portable.exe \
             --title "Darsligim v0.5.${{ github.run_number }}" \
-            --notes "Android uchun: Darsligim.apk. Kompyuter uchun: Darsligim-Setup.exe (o'rnatiladigan) yoki Darsligim-portable.exe (o'rnatmasdan ishlaydi)." \
+            --notes "Android uchun: Darsligim.apk. Play Market uchun: Darsligim.aab. Kompyuter uchun: Darsligim-Setup.exe (o'rnatiladigan) yoki Darsligim-portable.exe (o'rnatmasdan ishlaydi)." \
             --latest --repo "$GITHUB_REPOSITORY"
