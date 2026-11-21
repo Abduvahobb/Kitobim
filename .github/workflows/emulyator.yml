@@ -17,7 +17,7 @@ jobs:
       contents: write
     env:
       GH_TOKEN: ${{ github.token }}
-      KITOBLAR: 'matematika-2-sinf-uz-4-qism adabiyot-5-sinf-ru-2-qism tarbiya-9-sinf-ru informatika-9-sinf-ru matematika-2-sinf-uz-4-qism'
+      KITOBLAR: 'informatika-9-sinf-ru informatika-9-sinf-uz adabiyot-10-sinf-ru geografiya-10-sinf-uz tarbiya-8-sinf-ru informatika-8-sinf-ru tarbiya-9-sinf-uz matematika-2-sinf-ru-3-qism ozbekiston-tarixi-11-sinf-ru informatika-6-sinf-ru'
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4

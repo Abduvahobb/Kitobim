@@ -82,7 +82,8 @@ export function openReader(root, book, title, t, onClose, toast) {
   // Telefondagi faylni ochish: 1) bo'laklab o'qish, 2) butun faylni bir martada, 3) fayl tizimi orqali
   async function openLocal(r) {
     let last;
-    try { return await pdfjsLib.getDocument({ url: r.url, rangeChunkSize: 1 << 20 }).promise; } catch (e) { last = e; console.warn('range', e); }
+    // Faqat kerakli bo'laklar o'qiladi (butun fayl xotiraga olinmaydi) — 100–250 MB lik kitoblar ham
+    try { return await pdfjsLib.getDocument({ url: r.url, rangeChunkSize: 1 << 20, disableAutoFetch: true, disableStream: true }).promise; } catch (e) { last = e; console.warn('range', e); }
     if (closed) throw last;
     try { return await pdfjsLib.getDocument({ url: r.url, disableRange: true, disableStream: true }).promise; } catch (e) { last = e; console.warn('full', e); }
     if (closed) throw last;
