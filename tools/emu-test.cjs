@@ -3,8 +3,9 @@ const WebSocket = require('ws');
 const fs = require('fs');
 let ids = process.argv.slice(2);
 const { execSync } = require('child_process');
-const ALL = ids[0] === 'ALL' || /^ALL:\d+$/.test(ids[0] || '');
-const LIMIT = /^ALL:(\d+)$/.test(ids[0] || '') ? +ids[0].slice(4) : 0;
+const ALL = /^ALL/.test(ids[0] || '');
+// ALL:<boshlanish>:<soni> — katalogdagi kitoblarning bir bo'lagi
+const [, FROM = '0', COUNT = '0'] = (ids[0] || '').split(':');
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 
 (async () => {
@@ -67,7 +68,7 @@ const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
   console.log('login:', login);
   if (ALL) {
     ids = await ev(`fetch('catalog.json').then(r => r.json()).then(c => c.grades.flatMap(g => g.subjects.flatMap(s => s.books.map(b => b.id))))`);
-    if (LIMIT) ids = ids.slice(0, LIMIT);
+    if (+COUNT) ids = ids.slice(+FROM, +FROM + +COUNT);
     console.log('jami kitob:', ids.length);
   }
   const bad = [];
@@ -75,7 +76,7 @@ const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
     logs.length = 0;
     await ev(`location.hash = '#/read/${b}'`);
     const t0 = Date.now(); let st = '';
-    while (Date.now() - t0 < (ALL ? 180000 : 240000)) {
+    while (Date.now() - t0 < (ALL ? 150000 : 240000)) {
       await sleep(3000);
       st = await ev(`(() => { const c = [...document.querySelectorAll('canvas')].filter((x) => x.width > 50).length;
         const m = document.querySelector('.reader-msg'); return (c ? 'OCHILDI ' : '') + (m ? m.innerText.replace(/\\s+/g, ' ') : ''); })()`);
@@ -88,7 +89,9 @@ const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
         .filter((l) => /sandboxed|uz\.kitobim/.test(l)).map((l) => Math.round(parseInt(l.trim(), 10) / 1024)).join('+');
       mem = ` [heap ${h.result ? Math.round(h.result.usedSize / 1048576) : '?'}MB, rss ${rss}MB]`;
     } catch (e) { mem = ' [mem ?]'; }
-    console.log(`== ${b} (${Math.round((Date.now() - t0) / 1000)}s)${mem}: ${st}`);
+    const line = `== ${b} (${Math.round((Date.now() - t0) / 1000)}s)${mem}: ${st}`;
+    console.log(line);
+    fs.appendFileSync('natija.txt', line + '\n');
     if (!String(st).startsWith('OCHILDI')) { bad.push(b); for (const l of logs.filter((x) => !/Group|\[dir\]|console\.group/.test(x)).slice(-8)) console.log('   ', l); }
     if (ALL) { try { execSync(`adb shell "run-as uz.kitobim.app sh -c 'rm -f files/kitoblar/*'" < /dev/null`, { stdio: 'ignore', timeout: 20000 }); } catch (e) { /* */ } }
     await ev(`location.hash = '#/home'`); await sleep(1500);

@@ -10,13 +10,14 @@ jobs:
       fail-fast: false
       matrix:
         api: [34]
+        bolak: [0, 58, 116, 174, 232, 290, 348, 406]
     runs-on: ubuntu-latest
-    timeout-minutes: 350
+    timeout-minutes: 75
     permissions:
       contents: write
     env:
       GH_TOKEN: ${{ github.token }}
-      KITOBLAR: 'ALL'
+      KITOBLAR: 'ALL:${{ matrix.bolak }}:58'
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
@@ -53,6 +54,8 @@ jobs:
           script: bash tools/emu-run.sh
       - if: always()
         run: |
-          cat logcat.txt | tail -60 || true
-          cp emu.log emu-${{ matrix.api }}.log 2>/dev/null; cp logcat.txt logcat-${{ matrix.api }}.txt 2>/dev/null; gzip -c logcat-full.txt > logcat-full-${{ matrix.api }}.txt.gz 2>/dev/null
-          for f in emu-${{ matrix.api }}.log logcat-${{ matrix.api }}.txt logcat-full-${{ matrix.api }}.txt.gz; do [ -f "$f" ] && gh release upload kitoblar "$f" --clobber --repo "$GITHUB_REPOSITORY"; done; true
+          set +e
+          cp natija.txt natija-${{ matrix.bolak }}.txt
+          gh release upload kitoblar natija-${{ matrix.bolak }}.txt --clobber --repo "$GITHUB_REPOSITORY"
+          tail -5 emu.log
+          true
