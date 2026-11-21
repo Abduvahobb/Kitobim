@@ -1,0 +1,119 @@
+{
+ "note": "2-bosqich: 10–11-sinf va 7-sinf (rasmiy kanal, bet-betma solishtirilgan). Ilovadagi nashr eskiroq yoki chala bo'lgan kitoblar.",
+ "replace": {
+  "290": {
+   "ids": [
+    "adabiyot-10-sinf-uz"
+   ],
+   "title": {
+    "uz": "Adabiyot · 10-sinf · 1-qism",
+    "ru": "Литература · 10 класс · 1 часть",
+    "en": "Literature · Grade 10 · Part 1"
+   },
+   "part": 1,
+   "year": 2022
+  },
+  "390": {
+   "ids": [
+    "fizika-10-sinf-ru"
+   ],
+   "year": 2022
+  },
+  "422": {
+   "ids": [
+    "ingliz-tili-10-sinf-uz",
+    "ingliz-tili-10-sinf-ru"
+   ]
+  },
+  "445": {
+   "ids": [
+    "ingliz-tili-11-sinf-uz",
+    "ingliz-tili-11-sinf-ru"
+   ]
+  }
+ },
+ "add": {
+  "296": {
+   "after": "adabiyot-10-sinf-uz",
+   "id": "adabiyot-10-sinf-uz-2-qism-2025",
+   "title": {
+    "uz": "Adabiyot · 10-sinf · 2-qism",
+    "ru": "Литература · 10 класс · 2 часть",
+    "en": "Literature · Grade 10 · Part 2"
+   },
+   "part": 2,
+   "year": 2022
+  },
+  "426": {
+   "after": "ona-tili-11-sinf-uz",
+   "id": "ona-tili-11-sinf-uz-2-qism-2025",
+   "title": {
+    "uz": "Ona tili · 11-sinf · 2-qism",
+    "ru": "Родной язык · 11 класс · 2 часть",
+    "en": "Native language · Grade 11 · Part 2"
+   },
+   "part": 2,
+   "year": 2020
+  },
+  "674": {
+   "after": "biologiya-7-sinf-uz",
+   "id": "biologiya-7-sinf-uz-2022",
+   "title": {
+    "uz": "Biologiya · 7-sinf (2022, to‘liq nashr)",
+    "ru": "Биология · 7 класс (2022, полное издание)",
+    "en": "Biology · Grade 7 (2022, full edition)"
+   },
+   "year": 2022
+  },
+  "675": {
+   "after": "biologiya-7-sinf-ru",
+   "id": "biologiya-7-sinf-ru-2022",
+   "title": {
+    "uz": "Biologiya · 7-sinf (2022, to‘liq nashr)",
+    "ru": "Биология · 7 класс (2022, полное издание)",
+    "en": "Biology · Grade 7 (2022, full edition)"
+   },
+   "year": 2022
+  },
+  "681": {
+   "after": "fizika-7-sinf-uz",
+   "id": "fizika-7-sinf-uz-2022",
+   "title": {
+    "uz": "Fizika · 7-sinf (2022, to‘liq nashr)",
+    "ru": "Физика · 7 класс (2022, полное издание)",
+    "en": "Physics · Grade 7 (2022, full edition)"
+   },
+   "year": 2022
+  },
+  "682": {
+   "after": "fizika-7-sinf-ru",
+   "id": "fizika-7-sinf-ru-2022",
+   "title": {
+    "uz": "Fizika · 7-sinf (2022, to‘liq nashr)",
+    "ru": "Физика · 7 класс (2022, полное издание)",
+    "en": "Physics · Grade 7 (2022, full edition)"
+   },
+   "year": 2022
+  },
+  "688": {
+   "after": "kimyo-7-sinf-uz",
+   "id": "kimyo-7-sinf-uz-2022",
+   "title": {
+    "uz": "Kimyo · 7-sinf (2022, to‘liq nashr)",
+    "ru": "Химия · 7 класс (2022, полное издание)",
+    "en": "Chemistry · Grade 7 (2022, full edition)"
+   },
+   "year": 2022
+  },
+  "689": {
+   "after": "kimyo-7-sinf-ru",
+   "id": "kimyo-7-sinf-ru-2022",
+   "title": {
+    "uz": "Kimyo · 7-sinf (2022, to‘liq nashr)",
+    "ru": "Химия · 7 класс (2022, полное издание)",
+    "en": "Chemistry · Grade 7 (2022, full edition)"
+   },
+   "year": 2022
+  }
+ }
+}

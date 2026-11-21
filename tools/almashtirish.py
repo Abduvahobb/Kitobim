@@ -35,7 +35,7 @@ def make_cover(pdf, bid):
 
 def main(folder):
     cat = json.load(open(CATALOG, encoding='utf-8'))
-    mp = json.load(open(MAP, encoding='utf-8'))
+    mp = json.load(open(sys.argv[2] if len(sys.argv) > 2 else MAP, encoding='utf-8'))
     where = {}
     for g in cat['grades']:
         for s in g['subjects']:
@@ -43,14 +43,24 @@ def main(folder):
                 where[b['id']] = s
     done, missing, nofile = [], [], []
 
-    def fresh(msg, base_book, new_id, title=None, part=None):
-        pdf = os.path.join(folder, f'tg{msg}.pdf')
+    def pdf_of(msg):
+        # siqilgan nusxa (tgNNN-s.pdf) bo'lsa, o'shani ishlatamiz
+        for n in (f'tg{msg}-s.pdf', f'tg{msg}.pdf'):
+            if os.path.exists(os.path.join(folder, n)):
+                return n
+        return None
+
+    def fresh(msg, base_book, new_id, title=None, part=None, year=None):
+        name = pdf_of(msg)
+        pdf = os.path.join(folder, name)
         b = dict(base_book)
         b.pop('src', None)
         b['id'] = new_id
-        b['file'] = BASE + f'tg{msg}.pdf'
+        b['file'] = BASE + name
         b['size'] = os.path.getsize(pdf)
-        b['year'] = 2025
+        b.pop('year', None)
+        if year:
+            b['year'] = year
         if title:
             b['title'] = title
         if part is not None:
@@ -66,19 +76,23 @@ def main(folder):
         return b
 
     for msg, olds in mp['replace'].items():
-        if not os.path.exists(os.path.join(folder, f'tg{msg}.pdf')):
+        if not pdf_of(msg):
             nofile.append(msg)
             continue
+        if isinstance(olds, dict):
+            spec, olds = olds, olds['ids']
+        else:
+            spec = {}
         for old in olds:
             s = where.get(old)
             if not s:
                 missing.append(old)
                 continue
             i = next(k for k, b in enumerate(s['books']) if b['id'] == old)
-            s['books'][i] = fresh(msg, s['books'][i], old + '-2025')
+            s['books'][i] = fresh(msg, s['books'][i], old + '-2025', spec.get('title'), spec.get('part'), spec.get('year'))
             done.append(f'{old} <- tg{msg}')
     for msg, a in mp.get('add', {}).items():
-        if not os.path.exists(os.path.join(folder, f'tg{msg}.pdf')):
+        if not pdf_of(msg):
             nofile.append(msg)
             continue
         anchor = a['after'] + '-2025'
@@ -90,7 +104,7 @@ def main(folder):
             continue
         ids = [b['id'] for b in s['books']]
         i = ids.index(anchor) if anchor in ids else ids.index(a['after'])
-        s['books'].insert(i + 1, fresh(msg, s['books'][i], a['id'], a['title'], a.get('part')))
+        s['books'].insert(i + 1, fresh(msg, s['books'][i], a['id'], a['title'], a.get('part'), a.get('year')))
         done.append(f'+ {a["id"]} <- tg{msg}')
     cat['updated'] = datetime.now(timezone.utc).strftime('%Y-%m-%d %H:%M')
     json.dump(cat, open(CATALOG, 'w', encoding='utf-8'), ensure_ascii=False, indent=1)

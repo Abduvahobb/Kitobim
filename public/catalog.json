@@ -1,7 +1,7 @@
 {
  "version": 2,
  "note": "Avtomatik yasalgan (tools/kitoblar.py). Manba: oliygoh.uz",
- "updated": "2026-11-20 16:02",
+ "updated": "2026-11-21 04:08",
  "grades": [
   {
    "grade": 1,
@@ -4945,9 +4945,9 @@
       {
        "id": "fizika-7-sinf-ru",
        "title": {
-        "uz": "Fizika · 7-sinf",
-        "ru": "Физика · 7 класс",
-        "en": "Physics · Grade 7"
+        "uz": "Fizika · 7-sinf (2026, yangi nashr)",
+        "ru": "Физика · 7 класс (2026, новое издание)",
+        "en": "Physics · Grade 7 (2026, new edition)"
        },
        "lang": "ru",
        "part": null,
@@ -4959,11 +4959,26 @@
        "cover": "covers/fizika-7-sinf-ru.jpg"
       },
       {
+       "id": "fizika-7-sinf-ru-2022",
+       "title": {
+        "uz": "Fizika · 7-sinf (2022, to‘liq nashr)",
+        "ru": "Физика · 7 класс (2022, полное издание)",
+        "en": "Physics · Grade 7 (2022, full edition)"
+       },
+       "lang": "ru",
+       "part": null,
+       "size": 46208182,
+       "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/tg682-s.pdf",
+       "pages": 192,
+       "cover": "covers/fizika-7-sinf-ru-2022.jpg",
+       "year": 2022
+      },
+      {
        "id": "fizika-7-sinf-uz",
        "title": {
-        "uz": "Fizika · 7-sinf",
-        "ru": "Физика · 7 класс",
-        "en": "Physics · Grade 7"
+        "uz": "Fizika · 7-sinf (2026, yangi nashr)",
+        "ru": "Физика · 7 класс (2026, новое издание)",
+        "en": "Physics · Grade 7 (2026, new edition)"
        },
        "lang": "uz",
        "part": null,
@@ -4973,6 +4988,21 @@
        "year": 2026,
        "pages": 37,
        "cover": "covers/fizika-7-sinf-uz.jpg"
+      },
+      {
+       "id": "fizika-7-sinf-uz-2022",
+       "title": {
+        "uz": "Fizika · 7-sinf (2022, to‘liq nashr)",
+        "ru": "Физика · 7 класс (2022, полное издание)",
+        "en": "Physics · Grade 7 (2022, full edition)"
+       },
+       "lang": "uz",
+       "part": null,
+       "size": 46479224,
+       "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/tg681-s.pdf",
+       "pages": 192,
+       "cover": "covers/fizika-7-sinf-uz-2022.jpg",
+       "year": 2022
       }
      ]
     },
@@ -4988,9 +5018,9 @@
       {
        "id": "kimyo-7-sinf-ru",
        "title": {
-        "uz": "Kimyo · 7-sinf",
-        "ru": "Химия · 7 класс",
-        "en": "Chemistry · Grade 7"
+        "uz": "Kimyo · 7-sinf (2026, yangi nashr)",
+        "ru": "Химия · 7 класс (2026, новое издание)",
+        "en": "Chemistry · Grade 7 (2026, new edition)"
        },
        "lang": "ru",
        "part": null,
@@ -5002,11 +5032,26 @@
        "cover": "covers/kimyo-7-sinf-ru.jpg"
       },
       {
+       "id": "kimyo-7-sinf-ru-2022",
+       "title": {
+        "uz": "Kimyo · 7-sinf (2022, to‘liq nashr)",
+        "ru": "Химия · 7 класс (2022, полное издание)",
+        "en": "Chemistry · Grade 7 (2022, full edition)"
+       },
+       "lang": "ru",
+       "part": null,
+       "size": 20300004,
+       "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/tg689-s.pdf",
+       "pages": 176,
+       "cover": "covers/kimyo-7-sinf-ru-2022.jpg",
+       "year": 2022
+      },
+      {
        "id": "kimyo-7-sinf-uz",
        "title": {
-        "uz": "Kimyo · 7-sinf",
-        "ru": "Химия · 7 класс",
-        "en": "Chemistry · Grade 7"
+        "uz": "Kimyo · 7-sinf (2026, yangi nashr)",
+        "ru": "Химия · 7 класс (2026, новое издание)",
+        "en": "Chemistry · Grade 7 (2026, new edition)"
        },
        "lang": "uz",
        "part": null,
@@ -5016,6 +5061,21 @@
        "year": 2026,
        "pages": 38,
        "cover": "covers/kimyo-7-sinf-uz.jpg"
+      },
+      {
+       "id": "kimyo-7-sinf-uz-2022",
+       "title": {
+        "uz": "Kimyo · 7-sinf (2022, to‘liq nashr)",
+        "ru": "Химия · 7 класс (2022, полное издание)",
+        "en": "Chemistry · Grade 7 (2022, full edition)"
+       },
+       "lang": "uz",
+       "part": null,
+       "size": 20092286,
+       "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/tg688-s.pdf",
+       "pages": 176,
+       "cover": "covers/kimyo-7-sinf-uz-2022.jpg",
+       "year": 2022
       }
      ]
     },
@@ -5031,9 +5091,9 @@
       {
        "id": "biologiya-7-sinf-ru",
        "title": {
-        "uz": "Biologiya · 7-sinf",
-        "ru": "Биология · 7 класс",
-        "en": "Biology · Grade 7"
+        "uz": "Biologiya · 7-sinf (2026, yangi nashr)",
+        "ru": "Биология · 7 класс (2026, новое издание)",
+        "en": "Biology · Grade 7 (2026, new edition)"
        },
        "lang": "ru",
        "part": null,
@@ -5045,11 +5105,26 @@
        "cover": "covers/biologiya-7-sinf-ru.jpg"
       },
       {
+       "id": "biologiya-7-sinf-ru-2022",
+       "title": {
+        "uz": "Biologiya · 7-sinf (2022, to‘liq nashr)",
+        "ru": "Биология · 7 класс (2022, полное издание)",
+        "en": "Biology · Grade 7 (2022, full edition)"
+       },
+       "lang": "ru",
+       "part": null,
+       "size": 109942074,
+       "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/tg675-s.pdf",
+       "pages": 176,
+       "cover": "covers/biologiya-7-sinf-ru-2022.jpg",
+       "year": 2022
+      },
+      {
        "id": "biologiya-7-sinf-uz",
        "title": {
-        "uz": "Biologiya · 7-sinf",
-        "ru": "Биология · 7 класс",
-        "en": "Biology · Grade 7"
+        "uz": "Biologiya · 7-sinf (2026, yangi nashr)",
+        "ru": "Биология · 7 класс (2026, новое издание)",
+        "en": "Biology · Grade 7 (2026, new edition)"
        },
        "lang": "uz",
        "part": null,
@@ -5059,6 +5134,21 @@
        "year": 2026,
        "pages": 46,
        "cover": "covers/biologiya-7-sinf-uz.jpg"
+      },
+      {
+       "id": "biologiya-7-sinf-uz-2022",
+       "title": {
+        "uz": "Biologiya · 7-sinf (2022, to‘liq nashr)",
+        "ru": "Биология · 7 класс (2022, полное издание)",
+        "en": "Biology · Grade 7 (2022, full edition)"
+       },
+       "lang": "uz",
+       "part": null,
+       "size": 100319806,
+       "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/tg674-s.pdf",
+       "pages": 176,
+       "cover": "covers/biologiya-7-sinf-uz-2022.jpg",
+       "year": 2022
       }
      ]
     },
@@ -7468,20 +7558,34 @@
        "cover": "covers/adabiyot-10-sinf-ru.jpg"
       },
       {
-       "id": "adabiyot-10-sinf-uz",
+       "id": "adabiyot-10-sinf-uz-2025",
        "title": {
-        "uz": "Adabiyot · 10-sinf",
-        "ru": "Литература · 10 класс",
-        "en": "Literature · Grade 10"
+        "uz": "Adabiyot · 10-sinf · 1-qism",
+        "ru": "Литература · 10 класс · 1 часть",
+        "en": "Literature · Grade 10 · Part 1"
        },
        "lang": "uz",
-       "part": null,
-       "size": 5018100,
-       "src": "https://static.oliygoh.uz/uploads/darsliklar/10/adabiyot-10-sinf-uz.pdf",
-       "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/adabiyot-10-sinf-uz.pdf",
-       "year": 2022,
-       "pages": 85,
-       "cover": "covers/adabiyot-10-sinf-uz.jpg"
+       "part": 1,
+       "size": 9948069,
+       "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/tg290-s.pdf",
+       "pages": 144,
+       "cover": "covers/adabiyot-10-sinf-uz-2025.jpg",
+       "year": 2022
+      },
+      {
+       "id": "adabiyot-10-sinf-uz-2-qism-2025",
+       "title": {
+        "uz": "Adabiyot · 10-sinf · 2-qism",
+        "ru": "Литература · 10 класс · 2 часть",
+        "en": "Literature · Grade 10 · Part 2"
+       },
+       "lang": "uz",
+       "part": 2,
+       "size": 12120149,
+       "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/tg296-s.pdf",
+       "pages": 168,
+       "cover": "covers/adabiyot-10-sinf-uz-2-qism-2025.jpg",
+       "year": 2022
       }
      ]
     },
@@ -7581,7 +7685,7 @@
      "color": "#8A5410",
      "books": [
       {
-       "id": "fizika-10-sinf-ru",
+       "id": "fizika-10-sinf-ru-2025",
        "title": {
         "uz": "Fizika · 10-sinf",
         "ru": "Физика · 10 класс",
@@ -7589,12 +7693,11 @@
        },
        "lang": "ru",
        "part": null,
-       "size": 6125494,
-       "src": "https://static.oliygoh.uz/uploads/darsliklar/10/fizika-10-sinf-ru.pdf",
-       "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/fizika-10-sinf-ru.pdf",
-       "year": 2017,
-       "pages": 176,
-       "cover": "covers/fizika-10-sinf-ru.jpg"
+       "size": 162410603,
+       "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/tg390-s.pdf",
+       "pages": 192,
+       "cover": "covers/fizika-10-sinf-ru-2025.jpg",
+       "year": 2022
       },
       {
        "id": "fizika-10-sinf-uz",
@@ -7838,7 +7941,7 @@
      "color": "#B42318",
      "books": [
       {
-       "id": "ingliz-tili-10-sinf-ru",
+       "id": "ingliz-tili-10-sinf-ru-2025",
        "title": {
         "uz": "Ingliz tili · 10-sinf",
         "ru": "Английский язык · 10 класс",
@@ -7846,15 +7949,13 @@
        },
        "lang": "ru",
        "part": null,
-       "size": 5997270,
-       "src": "https://static.oliygoh.uz/uploads/darsliklar/10/ingliz-tili-10-sinf-ru.pdf",
-       "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/ingliz-tili-10-sinf-ru.pdf",
-       "year": 2017,
-       "pages": 224,
-       "cover": "covers/ingliz-tili-10-sinf-ru.jpg"
+       "size": 27915766,
+       "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/tg422-s.pdf",
+       "pages": 160,
+       "cover": "covers/ingliz-tili-10-sinf-ru-2025.jpg"
       },
       {
-       "id": "ingliz-tili-10-sinf-uz",
+       "id": "ingliz-tili-10-sinf-uz-2025",
        "title": {
         "uz": "Ingliz tili · 10-sinf",
         "ru": "Английский язык · 10 класс",
@@ -7862,12 +7963,10 @@
        },
        "lang": "uz",
        "part": null,
-       "size": 5037377,
-       "src": "https://static.oliygoh.uz/uploads/darsliklar/10/ingliz-tili-10-sinf-uz.pdf",
-       "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/ingliz-tili-10-sinf-uz.pdf",
-       "year": 2017,
-       "pages": 224,
-       "cover": "covers/ingliz-tili-10-sinf-uz.jpg"
+       "size": 27915766,
+       "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/tg422-s.pdf",
+       "pages": 160,
+       "cover": "covers/ingliz-tili-10-sinf-uz-2025.jpg"
       }
      ]
     },
@@ -8142,9 +8241,9 @@
       {
        "id": "ona-tili-11-sinf-uz",
        "title": {
-        "uz": "Ona tili · 11-sinf",
-        "ru": "Родной язык · 11 класс",
-        "en": "Native language · Grade 11"
+        "uz": "Ona tili · 11-sinf · o‘qituvchi uchun metodik qo‘llanma",
+        "ru": "Родной язык · 11 класс · методическое пособие для учителя",
+        "en": "Native language · Grade 11 · Teacher’s guide"
        },
        "lang": "uz",
        "part": null,
@@ -8154,6 +8253,21 @@
        "year": 2020,
        "pages": 385,
        "cover": "covers/ona-tili-11-sinf-uz.jpg"
+      },
+      {
+       "id": "ona-tili-11-sinf-uz-2-qism-2025",
+       "title": {
+        "uz": "Ona tili · 11-sinf · 2-qism",
+        "ru": "Родной язык · 11 класс · 2 часть",
+        "en": "Native language · Grade 11 · Part 2"
+       },
+       "lang": "uz",
+       "part": 2,
+       "size": 2542250,
+       "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/tg426-s.pdf",
+       "pages": 96,
+       "cover": "covers/ona-tili-11-sinf-uz-2-qism-2025.jpg",
+       "year": 2020
       }
      ]
     },
@@ -8579,7 +8693,7 @@
      "color": "#B42318",
      "books": [
       {
-       "id": "ingliz-tili-11-sinf-ru",
+       "id": "ingliz-tili-11-sinf-ru-2025",
        "title": {
         "uz": "Ingliz tili · 11-sinf",
         "ru": "Английский язык · 11 класс",
@@ -8587,14 +8701,13 @@
        },
        "lang": "ru",
        "part": null,
-       "size": 72426614,
-       "src": "https://static.oliygoh.uz/uploads/darsliklar/11/ingliz-tili-11-sinf-ru.pdf",
-       "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/ingliz-tili-11-sinf-ru.pdf",
-       "pages": 224,
-       "cover": "covers/ingliz-tili-11-sinf-ru.jpg"
+       "size": 79435937,
+       "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/tg445-s.pdf",
+       "pages": 156,
+       "cover": "covers/ingliz-tili-11-sinf-ru-2025.jpg"
       },
       {
-       "id": "ingliz-tili-11-sinf-uz",
+       "id": "ingliz-tili-11-sinf-uz-2025",
        "title": {
         "uz": "Ingliz tili · 11-sinf",
         "ru": "Английский язык · 11 класс",
@@ -8602,11 +8715,10 @@
        },
        "lang": "uz",
        "part": null,
-       "size": 72667238,
-       "src": "https://static.oliygoh.uz/uploads/darsliklar/11/ingliz-tili-11-sinf-uz.pdf",
-       "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/ingliz-tili-11-sinf-uz.pdf",
-       "pages": 224,
-       "cover": "covers/ingliz-tili-11-sinf-uz.jpg"
+       "size": 79435937,
+       "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/tg445-s.pdf",
+       "pages": 156,
+       "cover": "covers/ingliz-tili-11-sinf-uz-2025.jpg"
       }
      ]
     },
