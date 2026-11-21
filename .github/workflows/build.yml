@@ -142,7 +142,7 @@ jobs:
           android {
               defaultConfig {
                   versionCode Integer.parseInt(System.getenv('VCODE') ?: '1') + 100
-                  versionName '0.5.' + (System.getenv('VCODE') ?: '0')
+                  versionName '1.0.' + (System.getenv('VCODE') ?: '0')
               }
           }
           GRADLE
@@ -240,8 +240,8 @@ jobs:
           GH_TOKEN: ${{ github.token }}
         run: |
           ls -R out
-          gh release create "v0.5.${{ github.run_number }}" \
+          gh release create "v1.0.${{ github.run_number }}" \
             out/android/Darsligim.apk out/android/Darsligim.aab out/windows/Darsligim-Setup.exe out/windows/Darsligim-portable.exe \
-            --title "Darsligim v0.5.${{ github.run_number }}" \
+            --title "Darsligim v1.0.${{ github.run_number }}" \
             --notes "Android uchun: Darsligim.apk. Play Market uchun: Darsligim.aab. Kompyuter uchun: Darsligim-Setup.exe (o'rnatiladigan) yoki Darsligim-portable.exe (o'rnatmasdan ishlaydi)." \
             --latest --repo "$GITHUB_REPOSITORY"
