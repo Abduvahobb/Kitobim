@@ -20,7 +20,7 @@ const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
   const cmd = (method, params = {}) => new Promise((r) => { const i = ++id; pend.set(i, r); ws.send(JSON.stringify({ id: i, method, params })); });
   const ev = async (expr) => { const r = await cmd('Runtime.evaluate', { expression: expr, awaitPromise: true, returnByValue: true }); return r.result && r.result.result ? r.result.result.value : r; };
   await cmd('Runtime.enable');
-  console.log('isNative:', await ev('!!(window.Capacitor && Capacitor.isNativePlatform() && Capacitor.Plugins.Filesystem)'));
+  console.log('UA:', await ev('navigator.userAgent'));
   await ev(`location.hash = '#/login'`); await sleep(3000);
   const login = await ev(`(async () => {
     const nm = document.querySelector('#nm'); if (!nm) return 'login yo\\'q: ' + location.hash;

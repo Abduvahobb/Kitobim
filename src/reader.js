@@ -1,11 +1,11 @@
 // PDF o'quvchi: kitob sahifalarini asl holida (rasm, jadval, bet raqamlari bilan) ko'rsatadi.
 import * as pdfjsLib from 'pdfjs-dist/legacy/build/pdf';
-import workerUrl from 'pdfjs-dist/legacy/build/pdf.worker.min.js?url';
 import { store } from './store.js';
 import { I } from './icons.js';
 import { isNative, nativeBook, nativeBookUrl, nativeDelete, nativeEnsure, nativeReadAll, bookPath, fetchBook as netFetchBook } from './net.js';
 
-pdfjsLib.GlobalWorkerOptions.workerSrc = workerUrl;
+// es2017 ga o'girilgan ishchi fayl (tools/worker.mjs) — eski telefonlarda ham ishlaydi
+pdfjsLib.GlobalWorkerOptions.workerSrc = new URL('pdf.worker.es2017.js', location.href).href;
 
 // Kitob faylini olib kelish: avval qurilmadagi nusxadan, bo'lmasa internetdan.
 export async function fetchBook(book, onProgress) {

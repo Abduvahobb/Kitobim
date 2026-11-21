@@ -6,13 +6,17 @@ on:
 
 jobs:
   emu:
+    strategy:
+      fail-fast: false
+      matrix:
+        api: [30, 34]
     runs-on: ubuntu-latest
     timeout-minutes: 60
     permissions:
       contents: write
     env:
       GH_TOKEN: ${{ github.token }}
-      KITOBLAR: 'ingliz-tili-5-sinf-uz-yangi tabiiy-fanlar-5-sinf-uz-2024 matematika-5-sinf-uz-1-qism adabiyot-10-sinf-uz-2024 ingliz-tili-11-sinf-uz-2025 biologiya-7-sinf-uz-2022'
+      KITOBLAR: 'ingliz-tili-5-sinf-uz-yangi tabiiy-fanlar-5-sinf-uz-2024 matematika-5-sinf-uz-1-qism adabiyot-10-sinf-uz-2024 ingliz-tili-11-sinf-uz-2025 matematika-4-sinf-uz-3-qism-2023 biologiya-7-sinf-uz-2022 fizika-10-sinf-ru-2025 ingliz-tili-5-sinf-uz-yangi'
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
@@ -40,13 +44,15 @@ jobs:
       - name: Emulyator
         uses: reactivecircus/android-emulator-runner@v2
         with:
-          api-level: 30
+          api-level: ${{ matrix.api }}
           arch: x86_64
           target: google_apis
-          emulator-options: -no-window -gpu swiftshader_indirect -noaudio -no-boot-anim -memory 3072
+          force-avd-creation: false
+          emulator-options: -no-snapshot -no-window -gpu swiftshader_indirect -noaudio -no-boot-anim -memory 3072
           disable-animations: true
           script: bash tools/emu-run.sh
       - if: always()
         run: |
           cat logcat.txt | tail -60 || true
-          for f in emu.log logcat.txt emu-*.png; do [ -f "$f" ] && gh release upload kitoblar "$f" --clobber --repo "$GITHUB_REPOSITORY"; done; true
+          cp emu.log emu-${{ matrix.api }}.log 2>/dev/null; cp logcat.txt logcat-${{ matrix.api }}.txt 2>/dev/null
+          for f in emu-${{ matrix.api }}.log logcat-${{ matrix.api }}.txt; do [ -f "$f" ] && gh release upload kitoblar "$f" --clobber --repo "$GITHUB_REPOSITORY"; done; true

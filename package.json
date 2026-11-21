@@ -6,11 +6,13 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "node tools/worker.mjs && vite build",
     "preview": "vite preview"
   },
   "dependencies": {
-    "@capacitor/core": "^6.2.0",
+    "@capacitor/core": "6.2.0",
+    "@capacitor/filesystem": "6.0.4",
+    "@capacitor/share": "6.0.4",
     "@fontsource/inter": "^5.3.0",
     "@fontsource/nunito": "^5.3.0",
     "firebase": "^11.10.0",

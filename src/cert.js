@@ -1,3 +1,6 @@
+import { Capacitor } from '@capacitor/core';
+import { Filesystem } from '@capacitor/filesystem';
+import { Share } from '@capacitor/share';
 // Sertifikatni rasm (PNG) sifatida chizish va saqlash.
 import iconUrl from '../public/icon.png?url';
 
@@ -58,11 +61,9 @@ export async function drawCertificate(c, t) {
 
 // Rasmni saqlash: Android'da ulashish oynasi orqali, kompyuterda yuklab olish orqali.
 export async function saveImage(dataUrl, filename) {
-  const cap = window.Capacitor;
-  const P = cap && cap.Plugins;
-  if (cap && cap.isNativePlatform && cap.isNativePlatform() && P && P.Filesystem && P.Share) {
-    const res = await P.Filesystem.writeFile({ path: filename, data: dataUrl.split(',')[1], directory: 'CACHE' });
-    await P.Share.share({ title: filename, url: res.uri });
+  if (Capacitor.isNativePlatform() && Capacitor.isPluginAvailable('Filesystem') && Capacitor.isPluginAvailable('Share')) {
+    const res = await Filesystem.writeFile({ path: filename, data: dataUrl.split(',')[1], directory: 'CACHE' });
+    await Share.share({ title: filename, url: res.uri });
     return;
   }
   const a = document.createElement('a');

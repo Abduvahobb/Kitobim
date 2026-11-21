@@ -9,3 +9,4 @@ __pycache__/
 research/
 public/books/*.pdf
 !public/books/namuna-ona-tili-5.pdf
+public/pdf.worker.es2017.js

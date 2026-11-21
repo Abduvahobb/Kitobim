@@ -2,12 +2,26 @@
 // Android'da fayllar telefonning o'z vositasi bilan yuklab olinadi va telefonda saqlanadi
 // (shunda ochilgan kitob keyin internetsiz ham ochiladi). Kompyuterda oddiy yuklash ishlatiladi.
 
-const cap = () => window.Capacitor;
-const FS = () => cap() && cap().Plugins && cap().Plugins.Filesystem;
+import { Capacitor } from '@capacitor/core';
+import { Filesystem } from '@capacitor/filesystem';
+
+// Eslatma: plaginlar @capacitor/core orqali ro'yxatdan o'tkaziladi. window.Capacitor.Plugins
+// Capacitor 6 da bo'sh bo'ladi — shuning uchun avval telefon yo'li umuman ishlamay, kitoblar
+// brauzer usulida (GitHub'dan CORS sababli "Failed to fetch") yuklanardi.
+const cap = () => Capacitor;
+const FS = () => Filesystem;
 
 export function isNative() {
-  const c = cap();
-  return !!(c && c.isNativePlatform && c.isNativePlatform() && FS());
+  try { return Capacitor.isNativePlatform() && Capacitor.isPluginAvailable('Filesystem'); } catch (e) { return false; }
+}
+
+// downloadFile papkani o'zi yaratmaydi
+const madeDirs = new Set();
+async function ensureDir(path) {
+  const dir = path.includes('/') ? path.slice(0, path.lastIndexOf('/')) : '';
+  if (!dir || madeDirs.has(dir)) return;
+  try { await Filesystem.mkdir({ path: dir, directory: 'DATA', recursive: true }); } catch (e) { /* allaqachon bor */ }
+  madeDirs.add(dir);
 }
 
 const isRemote = (url) => /^https?:/i.test(url) && !url.startsWith(location.origin);
@@ -22,6 +36,7 @@ async function nativeDownload(url, path, onProgress, quick) {
       });
     } catch (e) { handle = null; }
   }
+  await ensureDir(path);
   try {
     const opts = { url, path, directory: 'DATA', recursive: true, progress: !!onProgress };
     // Asosiy server javob bermasa, uzoq kutmasdan zaxira serverga o'tamiz
