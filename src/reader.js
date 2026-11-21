@@ -3,7 +3,7 @@ import * as pdfjsLib from 'pdfjs-dist/legacy/build/pdf';
 import workerUrl from 'pdfjs-dist/legacy/build/pdf.worker.min.js?url';
 import { store } from './store.js';
 import { I } from './icons.js';
-import { isNative, nativeBook, nativeBookUrl, nativeDelete, nativeEnsure, fetchBook as netFetchBook } from './net.js';
+import { isNative, nativeBook, nativeBookUrl, nativeDelete, nativeEnsure, bookPath, fetchBook as netFetchBook } from './net.js';
 
 pdfjsLib.GlobalWorkerOptions.workerSrc = workerUrl;
 
@@ -78,6 +78,7 @@ export function openReader(root, book, title, t, onClose, toast) {
   }
   updateSaveBtn();
 
+  let tries = 0;
   async function load() {
     pagesEl.innerHTML = `<div class="reader-msg"><div class="spin"></div><span data-r="pct">${t.loading}</span></div>`;
     try {
@@ -90,7 +91,7 @@ export function openReader(root, book, title, t, onClose, toast) {
         pdf = await pdfjsLib.getDocument({ url: book.bundled, rangeChunkSize: 1 << 20 }).promise;
       } else if (isNative()) {
         // Telefonda: fayl xotiraga to'liq yuklanmaydi (katta kitoblar ham ochiladi)
-        const r = await nativeBookUrl(book, prog);
+        const r = await nativeBookUrl(book, prog, { reverse: tries % 2 === 1 });
         if (!store.isSaved(book.id)) store.markSaved(book.id, { title: book.title, color: book.color, size: r.size });
         updateSaveBtn();
         try {
@@ -99,7 +100,7 @@ export function openReader(root, book, title, t, onClose, toast) {
           // Buzilgan yoki chala yuklangan fayl — o'chirib, bir marta qayta yuklaymiz
           await nativeDelete(r.path);
           store.removeFile && await store.removeFile(book.id);
-          const r2 = await nativeBookUrl(book, prog);
+          const r2 = await nativeBookUrl(book, prog, { reverse: true });
           store.markSaved(book.id, { title: book.title, color: book.color, size: r2.size });
           pdf = await pdfjsLib.getDocument({ url: r2.url, rangeChunkSize: 1 << 20 }).promise;
         }
@@ -116,8 +117,11 @@ export function openReader(root, book, title, t, onClose, toast) {
       await render();
     } catch (e) {
       console.error(e);
-      pagesEl.innerHTML = `<div class="reader-msg"><p>${t.loadError}</p><button class="btn" style="max-width:220px" data-r="retry">${t.retry}</button></div>`;
-      $('retry').onclick = load;
+      // Ochilmagan fayl telefonda qolib ketmasin: keyingi urinishda qaytadan yuklanadi
+      if (isNative() && !book.bundled) { try { await nativeDelete(bookPath(book.id)); } catch (x) { /* */ } }
+      const why = String((e && (e.message || e.name)) || e || '').slice(0, 120);
+      pagesEl.innerHTML = `<div class="reader-msg"><p>${t.loadError}</p><button class="btn" style="max-width:220px" data-r="retry">${t.retry}</button><small style="opacity:.55;margin-top:10px;font-size:11px;word-break:break-all">${why.replace(/[<>&]/g, '')}</small></div>`;
+      $('retry').onclick = () => { tries++; load(); };
     }
   }
 

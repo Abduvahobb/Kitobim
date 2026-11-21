@@ -57,6 +57,19 @@ async function nativeLooksPdf(path) {
   } catch (e) { return true; } // tekshirib bo'lmasa, PDF o'quvchining o'zi aniqlaydi
 }
 
+// Fayl oxirida %%EOF bormi (yuklash yarmida uzilib qolmaganmi). Tekshirib bo'lmasa — true.
+async function nativeLooksComplete(path, n) {
+  try {
+    const { uri } = await FS().getUri({ path, directory: 'DATA' });
+    const res = await fetch(cap().convertFileSrc(uri), { headers: { Range: `bytes=${Math.max(0, n - 4096)}-${n - 1}` } });
+    if (res.status !== 206) return true;
+    const tail = new Uint8Array(await res.arrayBuffer());
+    let txt = '';
+    for (let i = 0; i < tail.length; i++) txt += String.fromCharCode(tail[i]);
+    return txt.includes('%%EOF');
+  } catch (e) { return true; }
+}
+
 export async function nativeExists(path) {
   try { const s = await FS().stat({ path, directory: 'DATA' }); return !!s && (s.size === undefined || s.size > 0); } catch (e) { return false; }
 }
@@ -98,30 +111,35 @@ export async function nativeBook(book, onProgress) {
 
 // Kitobni ochish uchun (Android): faylni xotiraga to'liq o'qimaydi — PDF o'quvchiga telefondagi faylning
 // manzilini beradi, u sahifalarni kerak bo'lganda o'qiydi. Shunda 100–300 MB lik kitoblar ham ochiladi.
-export async function nativeBookUrl(book, onProgress) {
+export async function nativeBookUrl(book, onProgress, opts = {}) {
   const path = bookPath(book.id);
   const had = await nativeExists(path);
-  const size = await nativeEnsure(book, onProgress);
+  const size = await nativeEnsure(book, onProgress, opts);
   const { uri } = await FS().getUri({ path, directory: 'DATA' });
   return { url: cap().convertFileSrc(uri), size, downloaded: !had, path };
 }
 
 // Butun sinfni yuklashda (Android): kitobni xotiraga o'qimasdan faqat telefonga yuklab qo'yadi.
 // Qaytaradi: fayl hajmi (bayt).
-export async function nativeEnsure(book, onProgress) {
+export async function nativeEnsure(book, onProgress, opts = {}) {
   const path = bookPath(book.id);
   const size = async () => { try { return (await FS().stat({ path, directory: 'DATA' })).size || 0; } catch (e) { return 0; } };
   let n = await size();
   if (n > 20000) return n;
   if (n) await nativeDelete(path);
-  const urls = bookUrls(book);
+  let urls = bookUrls(book);
+  // Qayta urinishda manzillar tartibi teskari: avvalgi server chala fayl bergan bo'lishi mumkin
+  if (opts.reverse) urls = urls.slice().reverse();
   let lastErr = null;
   for (let i = 0; i < urls.length; i++) {
     try {
       await nativeDownload(urls[i], path, onProgress, i < urls.length - 1);
       n = await size();
       // Juda kichik fayl yoki PDF bo'lmagan javob (server xato sahifasi) — keyingi manzilga o'tamiz
-      if (n > 20000 && await nativeLooksPdf(path)) return n;
+      if (n > 20000 && await nativeLooksPdf(path)) {
+        if (await nativeLooksComplete(path, n)) return n;
+        throw new Error('chala yuklandi');
+      }
       throw new Error('PDF emas');
     } catch (e) {
       lastErr = e;
