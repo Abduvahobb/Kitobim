@@ -236,8 +236,6 @@ function scrLogin() {
       <div class="field"><label for="ph">${s.yourPhone}</label>
         <div class="row" style="gap:8px"><span class="input" style="flex:0 0 auto;width:auto;display:flex;align-items:center;color:var(--ink-2)">+998</span>
         <input id="ph" class="input" type="tel" inputmode="numeric" autocomplete="tel-national" placeholder="90 123 45 67" maxlength="14" value="${esc(u.phone ? u.phone.replace(/^\+998/, '') : '')}"></div><div class="err" id="ePh"></div></div>
-      <div class="field" id="pwf" style="display:none"><label for="pw">${s.yourPass}</label>
-        <input id="pw" class="input" type="password" autocomplete="current-password" placeholder="${s.passPh}"><div class="err" id="ePw"></div></div>
       <div class="field"><span class="lb">${s.yourGrade}</span>
         <div class="grade-grid" id="gr" style="grid-template-columns:repeat(6,minmax(0,1fr))">${Array.from({ length: 11 }, (_, i) => i + 1).map((g) =>
           `<button type="button" class="grade" data-g="${g}" aria-pressed="${g === grade}" style="height:48px;font-size:18px">${g}</button>`).join('')}</div></div>
@@ -252,44 +250,26 @@ function scrLogin() {
     grade = +b.dataset.g;
     app.querySelectorAll('[data-g]').forEach((x) => x.setAttribute('aria-pressed', String(+x.dataset.g === grade)));
   });
-  const pw = app.querySelector('#pw');
-  const pwf = app.querySelector('#pwf');
   const ph = app.querySelector('#ph');
-  // Parol maydoni faqat muallif ismi yozilganda ko'rinadi; boshqalar telefon va ism bilan kiradi
-  const syncPw = () => { pwf.style.display = isAuthorName(app.querySelector('#nm').value.trim().replace(/\s+/g, ' ')) ? '' : 'none'; };
-  pw.oninput = () => { app.querySelector('#ePw').textContent = ''; };
   ph.oninput = () => { app.querySelector('#ePh').textContent = ''; };
-  app.querySelector('#nm').oninput = () => { app.querySelector('#eNm').textContent = ''; syncPw(); };
-  syncPw();
+  app.querySelector('#nm').oninput = () => { app.querySelector('#eNm').textContent = ''; };
   app.querySelector('form').onsubmit = async (e) => {
     e.preventDefault();
     const btn = app.querySelector('form [type=submit]');
     const name = app.querySelector('#nm').value.trim().replace(/\s+/g, ' ');
-    const author = isAuthorName(name);
     let digits = ph.value.replace(/\D/g, '');
     if (digits.length === 12 && digits.startsWith('998')) digits = digits.slice(3);
     let ok = true;
     if (name.length < 3) { app.querySelector('#eNm').textContent = s.errName; ok = false; }
-    if (digits.length !== 9 && !(author && !digits)) { app.querySelector('#ePh').textContent = s.errPhone; ok = false; }
-    if (author && pw.value.length < 4) { app.querySelector('#ePw').textContent = s.errPass; ok = false; }
+    if (digits.length !== 9) { app.querySelector('#ePh').textContent = s.errPhone; ok = false; }
     if (!ok) return;
     // Telefon raqami faqat shu telefonda saqlanadi, hech qayerga yuborilmaydi
-    const user = { name, phone: digits ? '+998' + digits : '', grade: grade || 5 };
     btn.disabled = true;
     try {
-      if (author) {
-        // Muallif: parolni Firebase serveri tekshiradi
-        await authorSignIn(pw.value);
-        store.setUser(Object.assign(user, { author: true }));
-      } else {
-        store.setUser(user);
-      }
+      store.setUser({ name, phone: '+998' + digits, grade: grade || 5 });
       go('#/home');
     } catch (err) {
       btn.disabled = false;
-      const c = (err && (err.code || err.message)) || '';
-      app.querySelector('#ePw').textContent = /wrong-password|invalid-credential|invalid-login|user-not-found/i.test(c) ? s.authorWrong
-        : /network|offline|unavailable/i.test(c) ? s.netNeeded : s.loginFail + (c ? ` (${c})` : '');
     }
   };
 }
@@ -674,7 +654,7 @@ function render() {
     case 'test': return scrTest(a);
     case 'cert': return scrCert(a);
     case 'profile': return scrProfile();
-    case 'muallif': return scrAuthor(panelCtx);
+    case 'muallif': return store.user.author ? scrAuthor(panelCtx) : go('#/home');
     case 'muallif-info': case 'malumot': return scrInfo();
     default: return scrHome();
   }
@@ -694,6 +674,9 @@ const panelCtx = {
   baseStrings: () => BASE_STRINGS, applyBooks, logo: (z) => appLogo(z),
   reloadCloud: () => applyCloud(cachedCloud())
 };
+
+// Muallif kirishi olib tashlandi: avval muallif bo'lib kirgan qurilmada ham oddiy foydalanuvchi bo'ladi
+if (store.user && store.user.author) { const u = Object.assign({}, store.user); delete u.author; store.setUser(u); }
 
 loadData()
   .then(() => { render(); refreshCatalog(); refreshCloud(); })
