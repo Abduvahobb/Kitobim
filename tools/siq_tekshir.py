@@ -24,13 +24,17 @@ for line in open(sys.argv[1]):
     if not (get(comp, 'c.pdf') and get(orig, 'o.pdf')):
         r['error'] = 'yuklanmadi'; res.append(r); print(r, flush=True); continue
     n = min(pages('c.pdf'), pages('o.pdf'))
-    diffs = []
+    diffs = []; dark = []
     for p in sorted({max(1, n * k // 10) for k in range(1, 10)}):
         a, b = img('o.pdf', p, 'a'), img('c.pdf', p, 'b')
         if a is None or b is None: diffs.append(99); continue
         if a.size != b.size: b = b.resize(a.size)
         diffs.append(round(ImageStat.Stat(ImageChops.difference(a, b)).mean[0], 2))
-    r['diffs'] = diffs; r['max'] = max(diffs)
+        # Qora (matn) piksellar ulushi: matn yo'qolsa siqilganda keskin kamayadi
+        da = sum(a.point(lambda v: 1 if v < 110 else 0).getdata()) / (a.width * a.height)
+        db = sum(b.point(lambda v: 1 if v < 110 else 0).getdata()) / (b.width * b.height)
+        if da > 0.01: dark.append(round(db / da, 2))
+    r['diffs'] = diffs; r['max'] = max(diffs); r['dark'] = dark; r['dark_min'] = min(dark) if dark else None
     res.append(r); print(r, flush=True)
     os.remove('c.pdf'); os.remove('o.pdf')
 json.dump(res, open('siq-tekshir.json', 'w'), indent=1)
