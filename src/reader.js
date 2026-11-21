@@ -149,12 +149,18 @@ export function openReader(root, book, title, t, onClose, toast) {
     const fit = pagesEl.clientWidth > 700 ? Math.min(fitW, availH / base.height) : fitW;
     const cssScale = fit * zoom;
     const dpr = Math.min(window.devicePixelRatio || 1, 3);
-    const vp = p.getViewport({ scale: cssScale * dpr });
+    // Kanva hajmi cheklanadi (≈8 mln piksel): katta kattalashtirishda telefon xotirasi to'lib,
+    // ilova yopilib qolmasin. Ko'rinish o'lchami o'zgarmaydi, faqat aniqlik biroz pasayadi.
+    let sc = cssScale * dpr;
+    const MAX_PX = 8e6;
+    if (base.width * base.height * sc * sc > MAX_PX) sc = Math.sqrt(MAX_PX / (base.width * base.height));
+    const vp = p.getViewport({ scale: sc });
     const canvas = pagesEl.querySelector('canvas');
+    if (!canvas) return;
     canvas.width = Math.floor(vp.width);
     canvas.height = Math.floor(vp.height);
-    canvas.style.width = Math.floor(vp.width / dpr) + 'px';
-    canvas.style.height = Math.floor(vp.height / dpr) + 'px';
+    canvas.style.width = Math.floor(base.width * cssScale) + 'px';
+    canvas.style.height = Math.floor(base.height * cssScale) + 'px';
     if (renderTask) { try { renderTask.cancel(); } catch (e) { /* */ } }
     renderTask = p.render({ canvasContext: canvas.getContext('2d'), viewport: vp });
     try { await renderTask.promise; } catch (e) { return; }
