@@ -1,0 +1,25 @@
+name: Asl faylni tekshirish
+on:
+  push:
+    branches: [sinov]
+jobs:
+  t:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    env:
+      GH_TOKEN: ${{ github.token }}
+    steps:
+      - uses: actions/checkout@v4
+      - run: sudo apt-get install -y -q poppler-utils ghostscript >/dev/null
+      - run: |
+          set +e
+          while read -r nom url; do
+            curl -sfL -A 'Mozilla/5.0' -o a.pdf "$url"; ls -la a.pdf
+            pdftoppm -f 30 -l 30 -r 30 -png a.pdf "asl-$nom"
+            gs -q -dNOPAUSE -dBATCH -dSAFER -sDEVICE=pdfwrite -dCompatibilityLevel=1.6 -dPDFSETTINGS=/ebook -dColorImageResolution=150 -dGrayImageResolution=150 -dColorConversionStrategy=/sRGB -dProcessColorModel=/DeviceRGB -dDetectDuplicateImages=true -dCompressFonts=true -sOutputFile=b.pdf a.pdf
+            pdftoppm -f 30 -l 30 -r 30 -png b.pdf "gs-$nom"
+            gs --version
+          done < tools/sinov.txt
+          ls *.png
+          for f in *.png; do gh release upload kitoblar "$f" --clobber --repo "$GITHUB_REPOSITORY"; done
