@@ -1,0 +1,43 @@
+name: infoedu.uz dan darsliklarni olish
+# tools/ie-olish.txt dagi har bir qator: "<nom> <url>". PDF yuklanadi, kerak bo'lsa siqiladi
+# va "kitoblar" release'iga ie-<nom>.pdf bo'lib joylanadi.
+on:
+  push:
+    branches: [ie-olish]
+
+concurrency:
+  group: kitoblar
+  cancel-in-progress: false
+
+jobs:
+  get:
+    runs-on: ubuntu-latest
+    timeout-minutes: 300
+    permissions:
+      contents: write
+    env:
+      GH_TOKEN: ${{ github.token }}
+    steps:
+      - uses: actions/checkout@v4
+      - run: sudo apt-get install -y -q ghostscript poppler-utils >/dev/null
+      - name: Olish
+        run: |
+          mkdir -p w
+          while read -r nom url; do
+            [ -n "$nom" ] || continue
+            f="w/ie-$nom.pdf"; s="w/s.pdf"
+            curl -sfL --retry 3 -A 'Mozilla/5.0' -o "$f" "$url" || { echo "::warning::$nom yuklanmadi"; continue; }
+            a=$(pdfinfo "$f" | awk '/^Pages/{print $2}')
+            mb=$(du -m "$f" | cut -f1)
+            if [ "$mb" -gt 15 ]; then
+              gs -q -dNOPAUSE -dBATCH -dSAFER -sDEVICE=pdfwrite -dCompatibilityLevel=1.6 \
+                 -dPDFSETTINGS=/ebook -dColorImageResolution=150 -dGrayImageResolution=150 \
+                 -dColorConversionStrategy=/sRGB -dProcessColorModel=/DeviceRGB \
+                 -dDetectDuplicateImages=true -dCompressFonts=true -sOutputFile="$s" "$f" || true
+              b=$(pdfinfo "$s" 2>/dev/null | awk '/^Pages/{print $2}')
+              if [ "$a" = "$b" ] && [ $(stat -c%s "$s") -lt $(stat -c%s "$f") ]; then mv "$s" "$f"; fi
+            fi
+            echo "$nom: $mb MB -> $(du -m $f | cut -f1) MB, $a bet"
+            gh release upload kitoblar "$f" --clobber --repo "$GITHUB_REPOSITORY"
+            rm -f "$f" "$s"
+          done < tools/ie-olish.txt
