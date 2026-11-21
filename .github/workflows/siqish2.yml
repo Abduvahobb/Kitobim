@@ -1,0 +1,53 @@
+name: Og'ir darsliklarni siqish (parallel)
+# Telefonda xotiraga og'ir kelgan katta PDF'larni 150 dpi ga siqadi: "<nom>-s.pdf".
+# Bet soni o'zgarsa yoki hajm sezilarli kamaymasa — fayl joylanmaydi.
+on:
+  push:
+    branches: [siqish2]
+
+jobs:
+  siq:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    permissions:
+      contents: write
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - k: 0
+            f: 'informatika-9-sinf-ru.pdf texnologiya-6-sinf-ru.pdf tarbiya-3-sinf-ru.pdf ozbekiston-tarixi-11-sinf-uz.pdf fransuz-tili-5-sinf-uz.pdf fransuz-tili-10-sinf-uz.pdf kimyo-11-sinf-uz.pdf matematika-3-sinf-ru-3-qism.pdf kimyo-11-sinf-ru.pdf algebra-9-sinf-ru.pdf fransuz-tili-11-sinf-ru.pdf informatika-7-sinf-ru.pdf algebra-8-sinf-ru.pdf geometriya-10-sinf-uz.pdf'
+          - k: 1
+            f: 'adabiyot-10-sinf-ru.pdf adabiyot-7-sinf-ru.pdf tabiatshunoslik-4-sinf-ru.pdf rus-tili-7-sinf-ru.pdf fizika-9-sinf-ru.pdf fransuz-tili-10-sinf-ru.pdf rus-tili-3-sinf-ru-2-qism.pdf ozbekiston-tarixi-11-sinf-ru.pdf geografiya-7-sinf-ru.pdf rus-tili-1-sinf-ru-2-qism.pdf fizika-10-sinf-uz.pdf matematika-11-sinf-ru-1-qism.pdf kimyo-10-sinf-uz.pdf matematika-2-sinf-ru-2-qism.pdf'
+          - k: 2
+            f: 'tarbiya-9-sinf-uz.pdf ozbek-tili-8-sinf-ru.pdf oqish-savodxonligi-2-sinf-ru-1-qism.pdf matematika-2-sinf-ru-3-qism.pdf informatika-6-sinf-ru.pdf fizika-8-sinf-ru.pdf tarixdan-hikoyalar-5-sinf-uz.pdf tarbiya-9-sinf-ru.pdf informatika-8-sinf-ru.pdf matematika-11-sinf-uz-1-qism.pdf geografiya-10-sinf-ru.pdf matematika-1-sinf-ru-3-qism.pdf matematika-1-sinf-ru-2-qism.pdf informatika-10-sinf-ru.pdf oqish-savodxonligi-4-sinf-uz-1-qism.pdf'
+          - k: 3
+            f: 'geografiya-10-sinf-uz.pdf tarbiya-8-sinf-ru.pdf informatika-9-sinf-uz.pdf fizika-9-sinf-uz.pdf fransuz-tili-5-sinf-ru.pdf rus-tili-6-sinf-ru.pdf rus-tili-3-sinf-ru-4-qism.pdf rus-tili-10-sinf-ru.pdf matematika-2-sinf-ru-4-qism.pdf rus-tili-2-sinf-ru-1-qism.pdf fransuz-tili-11-sinf-uz.pdf jahon-tarixi-9-sinf-ru.pdf texnologiya-1-sinf-ru.pdf oqish-savodxonligi-4-sinf-ru-1-qism.pdf'
+    env:
+      GH_TOKEN: ${{ github.token }}
+      FAYLLAR: ${{ matrix.f }}
+    steps:
+      - run: sudo apt-get install -y -q ghostscript poppler-utils >/dev/null
+      - name: Siqish
+        run: |
+          set +e
+          mkdir -p in out
+          : > siqish-${{ matrix.k }}.txt
+          for f in $FAYLLAR; do
+            gh release download kitoblar --repo "$GITHUB_REPOSITORY" --pattern "$f" --dir in --clobber
+            s="${f%.pdf}-s.pdf"
+            gs -q -dNOPAUSE -dBATCH -dSAFER -sDEVICE=pdfwrite -dCompatibilityLevel=1.6 \
+               -dPDFSETTINGS=/ebook -dColorImageResolution=150 -dGrayImageResolution=150 -dMonoImageResolution=300 \
+               -dColorConversionStrategy=/sRGB -dProcessColorModel=/DeviceRGB \
+               -dDetectDuplicateImages=true -dCompressFonts=true \
+               -sOutputFile="out/$s" "in/$f"
+            a=$(pdfinfo "in/$f" | awk '/^Pages/{print $2}'); b=$(pdfinfo "out/$s" 2>/dev/null | awk '/^Pages/{print $2}')
+            x=$(stat -c%s "in/$f"); y=$(stat -c%s "out/$s" 2>/dev/null || echo 0)
+            if [ "$a" = "$b" ] && [ "$y" -gt 0 ] && [ $((y * 100 / x)) -lt 85 ]; then
+              gh release upload kitoblar "out/$s" --repo "$GITHUB_REPOSITORY" --clobber && echo "OK $f $x $y $a" | tee -a siqish-${{ matrix.k }}.txt
+            else
+              echo "SKIP $f $x $y $a $b" | tee -a siqish-${{ matrix.k }}.txt
+            fi
+            rm -f "in/$f" "out/$s"
+          done
+          gh release upload kitoblar siqish-${{ matrix.k }}.txt --repo "$GITHUB_REPOSITORY" --clobber
