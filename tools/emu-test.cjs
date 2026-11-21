@@ -8,7 +8,7 @@ const LIMIT = /^ALL:(\d+)$/.test(ids[0] || '') ? +ids[0].slice(4) : 0;
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 
 (async () => {
-  let ws, id = 0; const pend = new Map(); const logs = [];
+  let ws, id = 0, crashes = 0; const pend = new Map(); const logs = [];
   async function connect() {
     for (let k = 0; k < 20; k++) {
       try {
@@ -27,7 +27,24 @@ const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
         console.log('target:', tgt.url);
         await new Promise((r) => { const i = ++id; pend.set(i, r); ws.send(JSON.stringify({ id: i, method: 'Runtime.enable' })); });
         return;
-      } catch (e) { console.log('   ulanish:', e.message); await sleep(3000); }
+      } catch (e) {
+        console.log('   ulanish:', e.message);
+        // DevTools soketini qayta topamiz; ilova yopilib qolgan bo'lsa — qayta ochamiz
+        try {
+          const unix = execSync('adb shell cat /proc/net/unix', { timeout: 15000 }).toString();
+          const m = unix.match(/webview_devtools_remote_\d+/);
+          const alive = execSync('adb shell pidof uz.kitobim.app || true', { timeout: 15000 }).toString().trim();
+          if (!alive) {
+            crashes++;
+            console.log('   !!! ILOVA YOPILIB QOLGAN — qayta ochilmoqda');
+            execSync('adb shell am start -n uz.kitobim.app/.MainActivity', { timeout: 15000 });
+            await sleep(15000);
+            continue;
+          }
+          if (m) execSync(`adb forward tcp:9222 localabstract:${m[0]}`, { timeout: 15000 });
+        } catch (x) { console.log('   adb:', x.message.slice(0, 100)); }
+        await sleep(3000);
+      }
     }
     throw new Error('DevTools ga ulanib bo\'lmadi');
   }
@@ -77,6 +94,7 @@ const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
     await ev(`location.hash = '#/home'`); await sleep(1500);
   }
   console.log('OCHILMAGAN:', bad.length, bad.join(' '));
+  console.log('ILOVA YOPILISHLARI:', crashes);
   clearInterval(keep);
   ws.close();
 })().catch((e) => { console.error('XATO', e); process.exit(1); });
