@@ -122,7 +122,7 @@ export function openReader(root, book, title, t, onClose, toast) {
         updateSaveBtn();
         pdf = await pdfjsLib.getDocument({ data: new Uint8Array(buffer.slice(0)) }).promise;
       }
-      if (closed) return;
+      if (closed) { dispose(); return; }
       if (page > pdf.numPages) page = 1;
       $('total').textContent = '/ ' + pdf.numPages;
       $('pg').max = pdf.numPages;
@@ -173,7 +173,7 @@ export function openReader(root, book, title, t, onClose, toast) {
   }
   function setZoom(z) { zoom = Math.min(4, Math.max(1, z)); render(); }
 
-  $('close').onclick = () => { closed = true; onClose(); };
+  $('close').onclick = () => { dispose(); onClose(); };
   $('prev').onclick = () => go(page - 1);
   $('next').onclick = () => go(page + 1);
   $('zin').onclick = () => setZoom(zoom + 0.5);
@@ -236,8 +236,21 @@ export function openReader(root, book, title, t, onClose, toast) {
   const onResize = () => { if (!closed) render(); else window.removeEventListener('resize', onResize); };
   window.addEventListener('resize', onResize);
 
+  // Kitob yopilganda xotirani bo'shatish: aks holda har ochilgan kitob (pdf.js hujjati va ishchisi)
+  // xotirada qolib, bir necha o'nta kitobdan keyin ilova yopilib qolardi
+  function dispose() {
+    closed = true;
+    window.removeEventListener('keydown', onKey);
+    window.removeEventListener('resize', onResize);
+    if (renderTask) { try { renderTask.cancel(); } catch (e) { /* */ } }
+    if (pdf) { try { pdf.destroy(); } catch (e) { /* */ } pdf = null; }
+    buffer = null;
+    const cv = root.querySelector && root.querySelector('canvas');
+    if (cv) { cv.width = 0; cv.height = 0; }
+  }
+
   load();
-  return () => { closed = true; window.removeEventListener('keydown', onKey); window.removeEventListener('resize', onResize); };
+  return dispose;
 }
 
 function dist(t) { return Math.hypot(t[0].clientX - t[1].clientX, t[0].clientY - t[1].clientY); }

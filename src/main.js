@@ -451,11 +451,13 @@ function scrSubject(id) {
   bindSchoolPills();
 }
 
+let readerDispose = null;
 function scrRead(id) {
   const b = books.get(id);
   if (!b) return go('#/home');
   app.innerHTML = '';
-  openReader(overlay, b, bookTitle(b), t(), () => { overlay.innerHTML = ''; history.length > 1 ? history.back() : go('#/home'); }, toast);
+  if (readerDispose) readerDispose();
+  readerDispose = openReader(overlay, b, bookTitle(b), t(), () => { readerDispose = null; overlay.innerHTML = ''; history.length > 1 ? history.back() : go('#/home'); }, toast);
 }
 
 let libTab = 'reading';
@@ -640,7 +642,11 @@ function scrInfo() {
 
 // ---------- Marshrutlash ----------
 function render() {
-  if (!/^#\/read\//.test(location.hash)) overlay.innerHTML = '';
+  if (!/^#\/read\//.test(location.hash)) {
+    // O'quvchidan chiqildi (orqaga tugmasi va h.k.) — kitob xotiradan bo'shatiladi
+    if (readerDispose) { readerDispose(); readerDispose = null; }
+    overlay.innerHTML = '';
+  }
   const [, route, arg] = (location.hash.match(/^#\/([^/]*)\/?(.*)$/) || []);
   const a = arg ? decodeURIComponent(arg) : '';
   if (!store.user && route !== 'login') return go('#/login');
