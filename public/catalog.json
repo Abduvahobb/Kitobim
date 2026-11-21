@@ -1,7 +1,7 @@
 {
  "version": 2,
  "note": "Avtomatik yasalgan (tools/kitoblar.py). Manba: oliygoh.uz",
- "updated": "2026-11-21 04:08",
+ "updated": "2026-11-21 04:25",
  "grades": [
   {
    "grade": 1,
@@ -275,6 +275,36 @@
        "cover": "covers/matematika-1-sinf-ru-4-qism.jpg"
       },
       {
+       "id": "matematika-1-sinf-uz-1-qism",
+       "title": {
+        "uz": "Matematika · 1-sinf · 1-qism",
+        "ru": "Математика · 1 класс · 1 часть",
+        "en": "Mathematics · Grade 1 · Part 1"
+       },
+       "lang": "uz",
+       "part": 1,
+       "size": 3468582,
+       "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/ie-1-sinf-matematika.pdf",
+       "pages": 94,
+       "cover": "covers/matematika-1-sinf-uz-1-qism.jpg",
+       "year": 2023
+      },
+      {
+       "id": "matematika-1-sinf-uz-2-qism",
+       "title": {
+        "uz": "Matematika · 1-sinf · 2-qism",
+        "ru": "Математика · 1 класс · 2 часть",
+        "en": "Mathematics · Grade 1 · Part 2"
+       },
+       "lang": "uz",
+       "part": 2,
+       "size": 3676851,
+       "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/ie-1-sinf-matematika-2-qism.pdf",
+       "pages": 72,
+       "cover": "covers/matematika-1-sinf-uz-2-qism.jpg",
+       "year": 2023
+      },
+      {
        "id": "matematika-1-sinf-uz-3-qism",
        "title": {
         "uz": "Matematika · 1-sinf · 3-qism",
@@ -289,6 +319,21 @@
        "year": 2024,
        "pages": 83,
        "cover": "covers/matematika-1-sinf-uz-3-qism.jpg"
+      },
+      {
+       "id": "matematika-1-sinf-uz-4-qism",
+       "title": {
+        "uz": "Matematika · 1-sinf · 4-qism",
+        "ru": "Математика · 1 класс · 4 часть",
+        "en": "Mathematics · Grade 1 · Part 4"
+       },
+       "lang": "uz",
+       "part": 4,
+       "size": 2232249,
+       "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/ie-1-sinf-matematika-4-qism.pdf",
+       "pages": 74,
+       "cover": "covers/matematika-1-sinf-uz-4-qism.jpg",
+       "year": 2023
       }
      ]
     },
@@ -330,6 +375,21 @@
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/tabiiy-fanlar-1-sinf-uz-1-qism.pdf",
        "pages": 56,
        "cover": "covers/tabiiy-fanlar-1-sinf-uz-1-qism.jpg"
+      },
+      {
+       "id": "tabiiy-fanlar-1-sinf-uz-2-qism",
+       "title": {
+        "uz": "Tabiiy fanlar · 1-sinf · 2-qism",
+        "ru": "Естественные науки · 1 класс · 2 часть",
+        "en": "Natural science · Grade 1 · Part 2"
+       },
+       "lang": "uz",
+       "part": 2,
+       "size": 7765794,
+       "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/ie-1-sinf-tabiiy-fanlar-2-qism.pdf",
+       "pages": 54,
+       "cover": "covers/tabiiy-fanlar-1-sinf-uz-2-qism.jpg",
+       "year": 2024
       }
      ]
     },
@@ -343,7 +403,7 @@
      "color": "#B42318",
      "books": [
       {
-       "id": "ingliz-tili-1-sinf-ru",
+       "id": "ingliz-tili-1-sinf-ru-yangi",
        "title": {
         "uz": "Ingliz tili · 1-sinf",
         "ru": "Английский язык · 1 класс",
@@ -351,15 +411,13 @@
        },
        "lang": "ru",
        "part": null,
-       "size": 15862629,
-       "src": "https://static.oliygoh.uz/uploads/darsliklar/1/ingliz-tili-1-sinf-ru.pdf",
-       "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/ingliz-tili-1-sinf-ru.pdf",
-       "year": 2021,
-       "pages": 104,
-       "cover": "covers/ingliz-tili-1-sinf-ru.jpg"
+       "size": 23659266,
+       "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/ie-1-sinf-ingliz-tili.pdf",
+       "pages": 110,
+       "cover": "covers/ingliz-tili-1-sinf-ru-yangi.jpg"
       },
       {
-       "id": "ingliz-tili-1-sinf-uz",
+       "id": "ingliz-tili-1-sinf-uz-yangi",
        "title": {
         "uz": "Ingliz tili · 1-sinf",
         "ru": "Английский язык · 1 класс",
@@ -367,12 +425,10 @@
        },
        "lang": "uz",
        "part": null,
-       "size": 15885417,
-       "src": "https://static.oliygoh.uz/uploads/darsliklar/1/ingliz-tili-1-sinf-uz.pdf",
-       "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/ingliz-tili-1-sinf-uz.pdf",
-       "year": 2021,
-       "pages": 104,
-       "cover": "covers/ingliz-tili-1-sinf-uz.jpg"
+       "size": 23659266,
+       "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/ie-1-sinf-ingliz-tili.pdf",
+       "pages": 110,
+       "cover": "covers/ingliz-tili-1-sinf-uz-yangi.jpg"
       }
      ]
     },
@@ -571,7 +627,7 @@
        "cover": "covers/jismoniy-tarbiya-1-sinf-ru.jpg"
       },
       {
-       "id": "jismoniy-tarbiya-1-sinf-uz",
+       "id": "jismoniy-tarbiya-1-sinf-uz-2023",
        "title": {
         "uz": "Jismoniy tarbiya · 1-sinf",
         "ru": "Физическая культура · 1 класс",
@@ -579,11 +635,11 @@
        },
        "lang": "uz",
        "part": null,
-       "size": 6403996,
-       "src": "https://static.oliygoh.uz/uploads/darsliklar/1/jismoniy-tarbiya-1-sinf-uz.pdf",
-       "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/jismoniy-tarbiya-1-sinf-uz.pdf",
-       "pages": 64,
-       "cover": "covers/jismoniy-tarbiya-1-sinf-uz.jpg"
+       "size": 1619263,
+       "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/ie-1-sinf-jismoniy-tarbiya.pdf",
+       "pages": 52,
+       "cover": "covers/jismoniy-tarbiya-1-sinf-uz-2023.jpg",
+       "year": 2023
       }
      ]
     },
@@ -1186,20 +1242,34 @@
        "cover": "covers/tabiiy-fanlar-2-sinf-ru.jpg"
       },
       {
-       "id": "tabiiy-fanlar-2-sinf-uz",
+       "id": "tabiiy-fanlar-2-sinf-uz-2023",
        "title": {
-        "uz": "Tabiiy fanlar · 2-sinf",
-        "ru": "Естественные науки · 2 класс",
-        "en": "Natural science · Grade 2"
+        "uz": "Tabiiy fanlar · 2-sinf · 1-qism",
+        "ru": "Естественные науки · 2 класс · 1 часть",
+        "en": "Natural science · Grade 2 · Part 1"
        },
        "lang": "uz",
-       "part": null,
-       "size": 31689743,
-       "src": "https://static.oliygoh.uz/uploads/darsliklar/2/tabiiy-fanlar-2-sinf-uz.pdf",
-       "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/tabiiy-fanlar-2-sinf-uz.pdf",
-       "year": 2021,
-       "pages": 120,
-       "cover": "covers/tabiiy-fanlar-2-sinf-uz.jpg"
+       "part": 1,
+       "size": 3631233,
+       "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/ie-2-sinf-atrofimizdagi-olam.pdf",
+       "pages": 102,
+       "cover": "covers/tabiiy-fanlar-2-sinf-uz-2023.jpg",
+       "year": 2023
+      },
+      {
+       "id": "tabiiy-fanlar-2-sinf-uz-2-qism-2023",
+       "title": {
+        "uz": "Tabiiy fanlar · 2-sinf · 2-qism",
+        "ru": "Естественные науки · 2 класс · 2 часть",
+        "en": "Natural science · Grade 2 · Part 2"
+       },
+       "lang": "uz",
+       "part": 2,
+       "size": 3379265,
+       "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/ie-2-sinf-tabiiy-fanlar-2-qism.pdf",
+       "pages": 106,
+       "cover": "covers/tabiiy-fanlar-2-sinf-uz-2-qism-2023.jpg",
+       "year": 2023
       }
      ]
     },
@@ -1213,7 +1283,7 @@
      "color": "#B42318",
      "books": [
       {
-       "id": "ingliz-tili-2-sinf-ru",
+       "id": "ingliz-tili-2-sinf-ru-yangi",
        "title": {
         "uz": "Ingliz tili · 2-sinf",
         "ru": "Английский язык · 2 класс",
@@ -1221,14 +1291,13 @@
        },
        "lang": "ru",
        "part": null,
-       "size": 26716645,
-       "src": "https://static.oliygoh.uz/uploads/darsliklar/2/ingliz-tili-2-sinf-ru.pdf",
-       "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/ingliz-tili-2-sinf-ru.pdf",
-       "pages": 121,
-       "cover": "covers/ingliz-tili-2-sinf-ru.jpg"
+       "size": 54596393,
+       "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/ie-2-sinf-ingliz-tili.pdf",
+       "pages": 110,
+       "cover": "covers/ingliz-tili-2-sinf-ru-yangi.jpg"
       },
       {
-       "id": "ingliz-tili-2-sinf-uz",
+       "id": "ingliz-tili-2-sinf-uz-yangi",
        "title": {
         "uz": "Ingliz tili · 2-sinf",
         "ru": "Английский язык · 2 класс",
@@ -1236,11 +1305,10 @@
        },
        "lang": "uz",
        "part": null,
-       "size": 27691070,
-       "src": "https://static.oliygoh.uz/uploads/darsliklar/2/ingliz-tili-2-sinf-uz.pdf",
-       "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/ingliz-tili-2-sinf-uz.pdf",
-       "pages": 121,
-       "cover": "covers/ingliz-tili-2-sinf-uz.jpg"
+       "size": 54596393,
+       "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/ie-2-sinf-ingliz-tili.pdf",
+       "pages": 110,
+       "cover": "covers/ingliz-tili-2-sinf-uz-yangi.jpg"
       }
      ]
     },
@@ -1395,7 +1463,7 @@
        "cover": "covers/tarbiya-2-sinf-ru.jpg"
       },
       {
-       "id": "tarbiya-2-sinf-uz",
+       "id": "tarbiya-2-sinf-uz-2023",
        "title": {
         "uz": "Tarbiya · 2-sinf",
         "ru": "Воспитание · 2 класс",
@@ -1403,11 +1471,11 @@
        },
        "lang": "uz",
        "part": null,
-       "size": 34821870,
-       "src": "https://static.oliygoh.uz/uploads/darsliklar/2/tarbiya-2-sinf-uz.pdf",
-       "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/tarbiya-2-sinf-uz.pdf",
-       "pages": 80,
-       "cover": "covers/tarbiya-2-sinf-uz.jpg"
+       "size": 4392236,
+       "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/ie-2-sinf-tarbiya.pdf",
+       "pages": 114,
+       "cover": "covers/tarbiya-2-sinf-uz-2023.jpg",
+       "year": 2023
       }
      ]
     },
@@ -1437,7 +1505,7 @@
        "cover": "covers/jismoniy-tarbiya-2-sinf-ru.jpg"
       },
       {
-       "id": "jismoniy-tarbiya-2-sinf-uz",
+       "id": "jismoniy-tarbiya-2-sinf-uz-2023",
        "title": {
         "uz": "Jismoniy tarbiya · 2-sinf",
         "ru": "Физическая культура · 2 класс",
@@ -1445,12 +1513,11 @@
        },
        "lang": "uz",
        "part": null,
-       "size": 2670577,
-       "src": "https://static.oliygoh.uz/uploads/darsliklar/2/jismoniy-tarbiya-2-sinf-uz.pdf",
-       "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/jismoniy-tarbiya-2-sinf-uz.pdf",
-       "year": 2018,
-       "pages": 136,
-       "cover": "covers/jismoniy-tarbiya-2-sinf-uz.jpg"
+       "size": 1446617,
+       "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/ie-2-sinf-jismoniy-tarbiya.pdf",
+       "pages": 52,
+       "cover": "covers/jismoniy-tarbiya-2-sinf-uz-2023.jpg",
+       "year": 2023
       }
      ]
     },
@@ -1480,7 +1547,7 @@
        "cover": "covers/musiqa-2-sinf-ru.jpg"
       },
       {
-       "id": "musiqa-2-sinf-uz",
+       "id": "musiqa-2-sinf-uz-2023",
        "title": {
         "uz": "Musiqa · 2-sinf",
         "ru": "Музыка · 2 класс",
@@ -1488,12 +1555,11 @@
        },
        "lang": "uz",
        "part": null,
-       "size": 7145743,
-       "src": "https://static.oliygoh.uz/uploads/darsliklar/2/musiqa-2-sinf-uz.pdf",
-       "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/musiqa-2-sinf-uz.pdf",
-       "year": 2021,
-       "pages": 80,
-       "cover": "covers/musiqa-2-sinf-uz.jpg"
+       "size": 2640539,
+       "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/ie-2-sinf-musiqa.pdf",
+       "pages": 74,
+       "cover": "covers/musiqa-2-sinf-uz-2023.jpg",
+       "year": 2023
       }
      ]
     },
@@ -1525,9 +1591,9 @@
       {
        "id": "tasviriy-sanat-2-sinf-uz",
        "title": {
-        "uz": "Tasviriy san’at · 2-sinf",
-        "ru": "Изобразительное искусство · 2 класс",
-        "en": "Fine arts · Grade 2"
+        "uz": "Tasviriy san’at · 2-sinf (2026, yangi nashr)",
+        "ru": "Изобразительное искусство · 2 класс (2026, новое издание)",
+        "en": "Fine arts · Grade 2 (2026, new edition)"
        },
        "lang": "uz",
        "part": null,
@@ -1537,6 +1603,21 @@
        "year": 2026,
        "pages": 22,
        "cover": "covers/tasviriy-sanat-2-sinf-uz.jpg"
+      },
+      {
+       "id": "tasviriy-sanat-2-sinf-uz-2023",
+       "title": {
+        "uz": "Tasviriy san’at · 2-sinf (2023, to‘liq nashr)",
+        "ru": "Изобразительное искусство · 2 класс (2023, полное издание)",
+        "en": "Fine arts · Grade 2 (2023, full edition)"
+       },
+       "lang": "uz",
+       "part": null,
+       "size": 2840916,
+       "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/ie-2-sinf-tasviriy-sanat.pdf",
+       "pages": 66,
+       "cover": "covers/tasviriy-sanat-2-sinf-uz-2023.jpg",
+       "year": 2023
       }
      ]
     },
@@ -1566,7 +1647,7 @@
        "cover": "covers/texnologiya-2-sinf-ru.jpg"
       },
       {
-       "id": "texnologiya-2-sinf-uz",
+       "id": "texnologiya-2-sinf-uz-2023",
        "title": {
         "uz": "Texnologiya · 2-sinf",
         "ru": "Технология · 2 класс",
@@ -1574,12 +1655,11 @@
        },
        "lang": "uz",
        "part": null,
-       "size": 38126705,
-       "src": "https://static.oliygoh.uz/uploads/darsliklar/2/texnologiya-2-sinf-uz.pdf",
-       "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/texnologiya-2-sinf-uz.pdf",
-       "year": 2021,
-       "pages": 80,
-       "cover": "covers/texnologiya-2-sinf-uz.jpg"
+       "size": 2611138,
+       "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/ie-2-sinf-texnologiya.pdf",
+       "pages": 70,
+       "cover": "covers/texnologiya-2-sinf-uz-2023.jpg",
+       "year": 2023
       }
      ]
     }
@@ -1966,7 +2046,8 @@
        "src": "https://static.oliygoh.uz/uploads/darsliklar/3/matematika-3-sinf-uz-2-qism.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/matematika-3-sinf-uz-2-qism.pdf",
        "pages": 101,
-       "cover": "covers/matematika-3-sinf-uz-2-qism.jpg"
+       "cover": "covers/matematika-3-sinf-uz-2-qism.jpg",
+       "year": 2023
       },
       {
        "id": "matematika-3-sinf-uz-3-qism",
@@ -2071,7 +2152,7 @@
      "color": "#B42318",
      "books": [
       {
-       "id": "ingliz-tili-3-sinf-ru",
+       "id": "ingliz-tili-3-sinf-ru-2022",
        "title": {
         "uz": "Ingliz tili · 3-sinf",
         "ru": "Английский язык · 3 класс",
@@ -2079,14 +2160,14 @@
        },
        "lang": "ru",
        "part": null,
-       "size": 15943428,
-       "src": "https://static.oliygoh.uz/uploads/darsliklar/3/ingliz-tili-3-sinf-ru.pdf",
-       "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/ingliz-tili-3-sinf-ru.pdf",
-       "pages": 81,
-       "cover": "covers/ingliz-tili-3-sinf-ru.jpg"
+       "size": 6055561,
+       "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/ie-3-sinf-ingliz-tili.pdf",
+       "pages": 109,
+       "cover": "covers/ingliz-tili-3-sinf-ru-2022.jpg",
+       "year": 2022
       },
       {
-       "id": "ingliz-tili-3-sinf-uz",
+       "id": "ingliz-tili-3-sinf-uz-2022",
        "title": {
         "uz": "Ingliz tili · 3-sinf",
         "ru": "Английский язык · 3 класс",
@@ -2094,11 +2175,11 @@
        },
        "lang": "uz",
        "part": null,
-       "size": 32806227,
-       "src": "https://static.oliygoh.uz/uploads/darsliklar/3/ingliz-tili-3-sinf-uz.pdf",
-       "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/ingliz-tili-3-sinf-uz.pdf",
-       "pages": 120,
-       "cover": "covers/ingliz-tili-3-sinf-uz.jpg"
+       "size": 6055561,
+       "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/ie-3-sinf-ingliz-tili.pdf",
+       "pages": 109,
+       "cover": "covers/ingliz-tili-3-sinf-uz-2022.jpg",
+       "year": 2022
       }
      ]
     },
@@ -2459,9 +2540,9 @@
       {
        "id": "ona-tili-4-sinf-uz-1-qism",
        "title": {
-        "uz": "Ona tili · 4-sinf · 1-qism",
-        "ru": "Родной язык · 4 класс · 1 часть",
-        "en": "Native language · Grade 4 · Part 1"
+        "uz": "Ona tili · 4-sinf · 1-qism (2026, yangi nashr)",
+        "ru": "Родной язык · 4 класс · 1 часть (2026, новое издание)",
+        "en": "Native language · Grade 4 · Part 1 (2026, new edition)"
        },
        "lang": "uz",
        "part": 1,
@@ -2471,6 +2552,66 @@
        "year": 2026,
        "pages": 61,
        "cover": "covers/ona-tili-4-sinf-uz-1-qism.jpg"
+      },
+      {
+       "id": "ona-tili-4-sinf-uz-1-qism-2023",
+       "title": {
+        "uz": "Ona tili · 4-sinf · 1-qism (2023, to‘liq nashr)",
+        "ru": "Родной язык · 4 класс · 1 часть (2023, полное издание)",
+        "en": "Native language · Grade 4 · Part 1 (2023, full edition)"
+       },
+       "lang": "uz",
+       "part": 1,
+       "size": 2213344,
+       "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/ie-4-sinf-ona-tili.pdf",
+       "pages": 90,
+       "cover": "covers/ona-tili-4-sinf-uz-1-qism-2023.jpg",
+       "year": 2023
+      },
+      {
+       "id": "ona-tili-4-sinf-uz-2-qism-2023",
+       "title": {
+        "uz": "Ona tili · 4-sinf · 2-qism (2023, to‘liq nashr)",
+        "ru": "Родной язык · 4 класс · 2 часть (2023, полное издание)",
+        "en": "Native language · Grade 4 · Part 2 (2023, full edition)"
+       },
+       "lang": "uz",
+       "part": 2,
+       "size": 2789191,
+       "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/ie-4-sinf-ona-tili-2-qism.pdf",
+       "pages": 88,
+       "cover": "covers/ona-tili-4-sinf-uz-2-qism-2023.jpg",
+       "year": 2023
+      },
+      {
+       "id": "ona-tili-4-sinf-uz-3-qism-2023",
+       "title": {
+        "uz": "Ona tili · 4-sinf · 3-qism (2023, to‘liq nashr)",
+        "ru": "Родной язык · 4 класс · 3 часть (2023, полное издание)",
+        "en": "Native language · Grade 4 · Part 3 (2023, full edition)"
+       },
+       "lang": "uz",
+       "part": 3,
+       "size": 3002812,
+       "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/ie-4-sinf-ona-tili-3-qism.pdf",
+       "pages": 98,
+       "cover": "covers/ona-tili-4-sinf-uz-3-qism-2023.jpg",
+       "year": 2023
+      },
+      {
+       "id": "ona-tili-4-sinf-uz-4-qism-2023",
+       "title": {
+        "uz": "Ona tili · 4-sinf · 4-qism (2023, to‘liq nashr)",
+        "ru": "Родной язык · 4 класс · 4 часть (2023, полное издание)",
+        "en": "Native language · Grade 4 · Part 4 (2023, full edition)"
+       },
+       "lang": "uz",
+       "part": 4,
+       "size": 2629339,
+       "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/ie-4-sinf-ona-tili-4-qism.pdf",
+       "pages": 86,
+       "cover": "covers/ona-tili-4-sinf-uz-4-qism-2023.jpg",
+       "year": 2023
       }
      ]
     },
@@ -2502,9 +2643,9 @@
       {
        "id": "oqish-savodxonligi-4-sinf-uz-1-qism",
        "title": {
-        "uz": "O‘qish savodxonligi · 4-sinf · 1-qism",
-        "ru": "Грамотность чтения · 4 класс · 1 часть",
-        "en": "Reading literacy · Grade 4 · Part 1"
+        "uz": "O‘qish savodxonligi · 4-sinf · 1-qism (2026, yangi nashr)",
+        "ru": "Грамотность чтения · 4 класс · 1 часть (2026, новое издание)",
+        "en": "Reading literacy · Grade 4 · Part 1 (2026, new edition)"
        },
        "lang": "uz",
        "part": 1,
@@ -2514,6 +2655,66 @@
        "year": 2026,
        "pages": 64,
        "cover": "covers/oqish-savodxonligi-4-sinf-uz-1-qism.jpg"
+      },
+      {
+       "id": "oqish-savodxonligi-4-sinf-uz-1-qism-2023",
+       "title": {
+        "uz": "O‘qish savodxonligi · 4-sinf · 1-qism (2023, to‘liq nashr)",
+        "ru": "Грамотность чтения · 4 класс · 1 часть (2023, полное издание)",
+        "en": "Reading literacy · Grade 4 · Part 1 (2023, full edition)"
+       },
+       "lang": "uz",
+       "part": 1,
+       "size": 2336728,
+       "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/ie-4-sinf-oqish.pdf",
+       "pages": 82,
+       "cover": "covers/oqish-savodxonligi-4-sinf-uz-1-qism-2023.jpg",
+       "year": 2023
+      },
+      {
+       "id": "oqish-savodxonligi-4-sinf-uz-2-qism-2023",
+       "title": {
+        "uz": "O‘qish savodxonligi · 4-sinf · 2-qism (2023, to‘liq nashr)",
+        "ru": "Грамотность чтения · 4 класс · 2 часть (2023, полное издание)",
+        "en": "Reading literacy · Grade 4 · Part 2 (2023, full edition)"
+       },
+       "lang": "uz",
+       "part": 2,
+       "size": 2589772,
+       "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/ie-4-sinf-oqish-savodxonligi-2-qism.pdf",
+       "pages": 80,
+       "cover": "covers/oqish-savodxonligi-4-sinf-uz-2-qism-2023.jpg",
+       "year": 2023
+      },
+      {
+       "id": "oqish-savodxonligi-4-sinf-uz-3-qism-2023",
+       "title": {
+        "uz": "O‘qish savodxonligi · 4-sinf · 3-qism (2023, to‘liq nashr)",
+        "ru": "Грамотность чтения · 4 класс · 3 часть (2023, полное издание)",
+        "en": "Reading literacy · Grade 4 · Part 3 (2023, full edition)"
+       },
+       "lang": "uz",
+       "part": 3,
+       "size": 2265729,
+       "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/ie-4-sinf-oqish-savodxonligi-3-qism.pdf",
+       "pages": 82,
+       "cover": "covers/oqish-savodxonligi-4-sinf-uz-3-qism-2023.jpg",
+       "year": 2023
+      },
+      {
+       "id": "oqish-savodxonligi-4-sinf-uz-4-qism-2023",
+       "title": {
+        "uz": "O‘qish savodxonligi · 4-sinf · 4-qism (2023, to‘liq nashr)",
+        "ru": "Грамотность чтения · 4 класс · 4 часть (2023, полное издание)",
+        "en": "Reading literacy · Grade 4 · Part 4 (2023, full edition)"
+       },
+       "lang": "uz",
+       "part": 4,
+       "size": 2461878,
+       "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/ie-4-sinf-oqish-savodxonligi-4-qism.pdf",
+       "pages": 82,
+       "cover": "covers/oqish-savodxonligi-4-sinf-uz-4-qism-2023.jpg",
+       "year": 2023
       }
      ]
     },
@@ -2615,9 +2816,9 @@
       {
        "id": "matematika-4-sinf-uz-1-qism",
        "title": {
-        "uz": "Matematika · 4-sinf · 1-qism",
-        "ru": "Математика · 4 класс · 1 часть",
-        "en": "Mathematics · Grade 4 · Part 1"
+        "uz": "Matematika · 4-sinf · 1-qism (2026, yangi nashr)",
+        "ru": "Математика · 4 класс · 1 часть (2026, новое издание)",
+        "en": "Mathematics · Grade 4 · Part 1 (2026, new edition)"
        },
        "lang": "uz",
        "part": 1,
@@ -2627,6 +2828,66 @@
        "year": 2026,
        "pages": 79,
        "cover": "covers/matematika-4-sinf-uz-1-qism.jpg"
+      },
+      {
+       "id": "matematika-4-sinf-uz-1-qism-2023",
+       "title": {
+        "uz": "Matematika · 4-sinf · 1-qism (2023, to‘liq nashr)",
+        "ru": "Математика · 4 класс · 1 часть (2023, полное издание)",
+        "en": "Mathematics · Grade 4 · Part 1 (2023, full edition)"
+       },
+       "lang": "uz",
+       "part": 1,
+       "size": 3700941,
+       "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/ie-4-sinf-matematika.pdf",
+       "pages": 130,
+       "cover": "covers/matematika-4-sinf-uz-1-qism-2023.jpg",
+       "year": 2023
+      },
+      {
+       "id": "matematika-4-sinf-uz-2-qism-2023",
+       "title": {
+        "uz": "Matematika · 4-sinf · 2-qism (2023, to‘liq nashr)",
+        "ru": "Математика · 4 класс · 2 часть (2023, полное издание)",
+        "en": "Mathematics · Grade 4 · Part 2 (2023, full edition)"
+       },
+       "lang": "uz",
+       "part": 2,
+       "size": 2964783,
+       "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/ie-4-sinf-matematika-2-qism.pdf",
+       "pages": 102,
+       "cover": "covers/matematika-4-sinf-uz-2-qism-2023.jpg",
+       "year": 2023
+      },
+      {
+       "id": "matematika-4-sinf-uz-3-qism-2023",
+       "title": {
+        "uz": "Matematika · 4-sinf · 3-qism (2023, to‘liq nashr)",
+        "ru": "Математика · 4 класс · 3 часть (2023, полное издание)",
+        "en": "Mathematics · Grade 4 · Part 3 (2023, full edition)"
+       },
+       "lang": "uz",
+       "part": 3,
+       "size": 3328562,
+       "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/ie-4-sinf-matematika-3-qism.pdf",
+       "pages": 122,
+       "cover": "covers/matematika-4-sinf-uz-3-qism-2023.jpg",
+       "year": 2023
+      },
+      {
+       "id": "matematika-4-sinf-uz-4-qism-2023",
+       "title": {
+        "uz": "Matematika · 4-sinf · 4-qism (2023, to‘liq nashr)",
+        "ru": "Математика · 4 класс · 4 часть (2023, полное издание)",
+        "en": "Mathematics · Grade 4 · Part 4 (2023, full edition)"
+       },
+       "lang": "uz",
+       "part": 4,
+       "size": 2882738,
+       "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/ie-4-sinf-matematika-4-qism.pdf",
+       "pages": 94,
+       "cover": "covers/matematika-4-sinf-uz-4-qism-2023.jpg",
+       "year": 2023
       }
      ]
     },
@@ -2699,7 +2960,7 @@
      "color": "#B42318",
      "books": [
       {
-       "id": "ingliz-tili-4-sinf-uz",
+       "id": "ingliz-tili-4-sinf-uz-yangi",
        "title": {
         "uz": "Ingliz tili · 4-sinf",
         "ru": "Английский язык · 4 класс",
@@ -2707,11 +2968,10 @@
        },
        "lang": "uz",
        "part": null,
-       "size": 16140391,
-       "src": "https://static.oliygoh.uz/uploads/darsliklar/4/ingliz-tili-4-sinf-uz.pdf",
-       "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/ingliz-tili-4-sinf-uz.pdf",
-       "pages": 82,
-       "cover": "covers/ingliz-tili-4-sinf-uz.jpg"
+       "size": 6051772,
+       "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/ie-4-sinf-ingliz-tili.pdf",
+       "pages": 110,
+       "cover": "covers/ingliz-tili-4-sinf-uz-yangi.jpg"
       }
      ]
     },
@@ -2856,9 +3116,9 @@
       {
        "id": "tarbiya-4-sinf-uz",
        "title": {
-        "uz": "Tarbiya · 4-sinf",
-        "ru": "Воспитание · 4 класс",
-        "en": "Upbringing · Grade 4"
+        "uz": "Tarbiya · 4-sinf (2026, yangi nashr)",
+        "ru": "Воспитание · 4 класс (2026, новое издание)",
+        "en": "Upbringing · Grade 4 (2026, new edition)"
        },
        "lang": "uz",
        "part": null,
@@ -2868,6 +3128,21 @@
        "year": 2026,
        "pages": 14,
        "cover": "covers/tarbiya-4-sinf-uz.jpg"
+      },
+      {
+       "id": "tarbiya-4-sinf-uz-2023",
+       "title": {
+        "uz": "Tarbiya · 4-sinf (2023, to‘liq nashr)",
+        "ru": "Воспитание · 4 класс (2023, полное издание)",
+        "en": "Upbringing · Grade 4 (2023, full edition)"
+       },
+       "lang": "uz",
+       "part": null,
+       "size": 2950560,
+       "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/ie-4-sinf-tarbiya.pdf",
+       "pages": 82,
+       "cover": "covers/tarbiya-4-sinf-uz-2023.jpg",
+       "year": 2023
       }
      ]
     },
@@ -2897,7 +3172,7 @@
        "cover": "covers/jismoniy-tarbiya-4-sinf-ru.jpg"
       },
       {
-       "id": "jismoniy-tarbiya-4-sinf-uz",
+       "id": "jismoniy-tarbiya-4-sinf-uz-2023",
        "title": {
         "uz": "Jismoniy tarbiya · 4-sinf",
         "ru": "Физическая культура · 4 класс",
@@ -2905,12 +3180,11 @@
        },
        "lang": "uz",
        "part": null,
-       "size": 3252125,
-       "src": "https://static.oliygoh.uz/uploads/darsliklar/4/jismoniy-tarbiya-4-sinf-uz.pdf",
-       "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/jismoniy-tarbiya-4-sinf-uz.pdf",
-       "year": 2003,
-       "pages": 176,
-       "cover": "covers/jismoniy-tarbiya-4-sinf-uz.jpg"
+       "size": 1487017,
+       "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/ie-4-sinf-jismoniy-tarbiya.pdf",
+       "pages": 52,
+       "cover": "covers/jismoniy-tarbiya-4-sinf-uz-2023.jpg",
+       "year": 2023
       }
      ]
     },
@@ -2942,9 +3216,9 @@
       {
        "id": "musiqa-4-sinf-uz",
        "title": {
-        "uz": "Musiqa · 4-sinf",
-        "ru": "Музыка · 4 класс",
-        "en": "Music · Grade 4"
+        "uz": "Musiqa · 4-sinf (2026, yangi nashr)",
+        "ru": "Музыка · 4 класс (2026, новое издание)",
+        "en": "Music · Grade 4 (2026, new edition)"
        },
        "lang": "uz",
        "part": null,
@@ -2954,6 +3228,21 @@
        "year": 2026,
        "pages": 19,
        "cover": "covers/musiqa-4-sinf-uz.jpg"
+      },
+      {
+       "id": "musiqa-4-sinf-uz-2023",
+       "title": {
+        "uz": "Musiqa · 4-sinf (2023, to‘liq nashr)",
+        "ru": "Музыка · 4 класс (2023, полное издание)",
+        "en": "Music · Grade 4 (2023, full edition)"
+       },
+       "lang": "uz",
+       "part": null,
+       "size": 2391682,
+       "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/ie-4-sinf-musiqa.pdf",
+       "pages": 74,
+       "cover": "covers/musiqa-4-sinf-uz-2023.jpg",
+       "year": 2023
       }
      ]
     },
@@ -2985,9 +3274,9 @@
       {
        "id": "tasviriy-sanat-4-sinf-uz",
        "title": {
-        "uz": "Tasviriy san’at · 4-sinf",
-        "ru": "Изобразительное искусство · 4 класс",
-        "en": "Fine arts · Grade 4"
+        "uz": "Tasviriy san’at · 4-sinf (2026, yangi nashr)",
+        "ru": "Изобразительное искусство · 4 класс (2026, новое издание)",
+        "en": "Fine arts · Grade 4 (2026, new edition)"
        },
        "lang": "uz",
        "part": null,
@@ -2997,6 +3286,21 @@
        "year": 2026,
        "pages": 31,
        "cover": "covers/tasviriy-sanat-4-sinf-uz.jpg"
+      },
+      {
+       "id": "tasviriy-sanat-4-sinf-uz-2023",
+       "title": {
+        "uz": "Tasviriy san’at · 4-sinf (2023, to‘liq nashr)",
+        "ru": "Изобразительное искусство · 4 класс (2023, полное издание)",
+        "en": "Fine arts · Grade 4 (2023, full edition)"
+       },
+       "lang": "uz",
+       "part": null,
+       "size": 4060240,
+       "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/ie-4-sinf-tasviriy-sanat.pdf",
+       "pages": 88,
+       "cover": "covers/tasviriy-sanat-4-sinf-uz-2023.jpg",
+       "year": 2023
       }
      ]
     },
@@ -3026,7 +3330,7 @@
        "cover": "covers/texnologiya-4-sinf-ru.jpg"
       },
       {
-       "id": "texnologiya-4-sinf-uz",
+       "id": "texnologiya-4-sinf-uz-2023",
        "title": {
         "uz": "Texnologiya · 4-sinf",
         "ru": "Технология · 4 класс",
@@ -3034,12 +3338,11 @@
        },
        "lang": "uz",
        "part": null,
-       "size": 10792175,
-       "src": "https://static.oliygoh.uz/uploads/darsliklar/4/texnologiya-4-sinf-uz.pdf",
-       "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/texnologiya-4-sinf-uz.pdf",
-       "year": 2020,
-       "pages": 113,
-       "cover": "covers/texnologiya-4-sinf-uz.jpg"
+       "size": 3645520,
+       "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/ie-4-sinf-texnologiya.pdf",
+       "pages": 86,
+       "cover": "covers/texnologiya-4-sinf-uz-2023.jpg",
+       "year": 2023
       }
      ]
     }
@@ -3362,7 +3665,7 @@
        "cover": "covers/tabiatshunoslik-5-sinf-ru.jpg"
       },
       {
-       "id": "tabiiy-fanlar-5-sinf-uz",
+       "id": "tabiiy-fanlar-5-sinf-uz-2024",
        "title": {
         "uz": "Tabiiy fanlar · 5-sinf",
         "ru": "Естественные науки · 5 класс",
@@ -3370,11 +3673,11 @@
        },
        "lang": "uz",
        "part": null,
-       "size": 31425184,
-       "src": "https://static.oliygoh.uz/uploads/darsliklar/5/tabiiy-fanlar-5-sinf-uz.pdf",
-       "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/tabiiy-fanlar-5-sinf-uz.pdf",
-       "pages": 160,
-       "cover": "covers/tabiiy-fanlar-5-sinf-uz.jpg"
+       "size": 19668106,
+       "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/ie-5-sinf-tabiiy-fanlar.pdf",
+       "pages": 166,
+       "cover": "covers/tabiiy-fanlar-5-sinf-uz-2024.jpg",
+       "year": 2024
       }
      ]
     },
@@ -3474,7 +3777,7 @@
      "color": "#B42318",
      "books": [
       {
-       "id": "ingliz-tili-5-sinf-ru",
+       "id": "ingliz-tili-5-sinf-ru-yangi",
        "title": {
         "uz": "Ingliz tili · 5-sinf",
         "ru": "Английский язык · 5 класс",
@@ -3482,15 +3785,13 @@
        },
        "lang": "ru",
        "part": null,
-       "size": 13541317,
-       "src": "https://static.oliygoh.uz/uploads/darsliklar/5/ingliz-tili-5-sinf-ru.pdf",
-       "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/ingliz-tili-5-sinf-ru.pdf",
-       "year": 2017,
-       "pages": 160,
-       "cover": "covers/ingliz-tili-5-sinf-ru.jpg"
+       "size": 23044714,
+       "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/ie-5-sinf-ingliz-tili.pdf",
+       "pages": 110,
+       "cover": "covers/ingliz-tili-5-sinf-ru-yangi.jpg"
       },
       {
-       "id": "ingliz-tili-5-sinf-uz",
+       "id": "ingliz-tili-5-sinf-uz-yangi",
        "title": {
         "uz": "Ingliz tili · 5-sinf",
         "ru": "Английский язык · 5 класс",
@@ -3498,12 +3799,10 @@
        },
        "lang": "uz",
        "part": null,
-       "size": 10365911,
-       "src": "https://static.oliygoh.uz/uploads/darsliklar/5/ingliz-tili-5-sinf-uz.pdf",
-       "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/ingliz-tili-5-sinf-uz.pdf",
-       "year": 2017,
-       "pages": 160,
-       "cover": "covers/ingliz-tili-5-sinf-uz.jpg"
+       "size": 23044714,
+       "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/ie-5-sinf-ingliz-tili.pdf",
+       "pages": 110,
+       "cover": "covers/ingliz-tili-5-sinf-uz-yangi.jpg"
       }
      ]
     },
@@ -3743,7 +4042,7 @@
        "cover": "covers/musiqa-5-sinf-ru.jpg"
       },
       {
-       "id": "musiqa-5-sinf-uz",
+       "id": "musiqa-5-sinf-uz-2024",
        "title": {
         "uz": "Musiqa · 5-sinf",
         "ru": "Музыка · 5 класс",
@@ -3751,11 +4050,11 @@
        },
        "lang": "uz",
        "part": null,
-       "size": 17981566,
-       "src": "https://static.oliygoh.uz/uploads/darsliklar/5/musiqa-5-sinf-uz.pdf",
-       "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/musiqa-5-sinf-uz.pdf",
-       "pages": 55,
-       "cover": "covers/musiqa-5-sinf-uz.jpg"
+       "size": 15448204,
+       "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/ie-5-sinf-musiqa.pdf",
+       "pages": 98,
+       "cover": "covers/musiqa-5-sinf-uz-2024.jpg",
+       "year": 2024
       }
      ]
     },
@@ -3828,7 +4127,7 @@
        "cover": "covers/tasviriy-sanat-5-sinf-ru.jpg"
       },
       {
-       "id": "tasviriy-sanat-5-sinf-uz",
+       "id": "tasviriy-sanat-5-sinf-uz-2024",
        "title": {
         "uz": "Tasviriy san’at · 5-sinf",
         "ru": "Изобразительное искусство · 5 класс",
@@ -3836,11 +4135,11 @@
        },
        "lang": "uz",
        "part": null,
-       "size": 12076469,
-       "src": "https://static.oliygoh.uz/uploads/darsliklar/5/tasviriy-sanat-5-sinf-uz.pdf",
-       "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/tasviriy-sanat-5-sinf-uz.pdf",
-       "pages": 34,
-       "cover": "covers/tasviriy-sanat-5-sinf-uz.jpg"
+       "size": 11072783,
+       "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/ie-5-sinf-tasviriy-sanat.pdf",
+       "pages": 134,
+       "cover": "covers/tasviriy-sanat-5-sinf-uz-2024.jpg",
+       "year": 2024
       }
      ]
     },
@@ -3869,7 +4168,7 @@
        "cover": "covers/texnologiya-5-sinf-ru.jpg"
       },
       {
-       "id": "texnologiya-5-sinf-uz",
+       "id": "texnologiya-5-sinf-uz-2024",
        "title": {
         "uz": "Texnologiya · 5-sinf",
         "ru": "Технология · 5 класс",
@@ -3877,12 +4176,11 @@
        },
        "lang": "uz",
        "part": null,
-       "size": 86932228,
-       "src": "https://static.oliygoh.uz/uploads/darsliklar/5/texnologiya-5-sinf-uz.pdf",
-       "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/texnologiya-5-sinf-uz.pdf",
-       "year": 2020,
-       "pages": 240,
-       "cover": "covers/texnologiya-5-sinf-uz.jpg"
+       "size": 9626168,
+       "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/ie-5-sinf-texnologiya.pdf",
+       "pages": 130,
+       "cover": "covers/texnologiya-5-sinf-uz-2024.jpg",
+       "year": 2024
       }
      ]
     }
@@ -4224,7 +4522,7 @@
        "cover": "covers/botanika-6-sinf-ru.jpg"
       },
       {
-       "id": "botanika-6-sinf-uz",
+       "id": "botanika-6-sinf-uz-2024",
        "title": {
         "uz": "Biologiya · 6-sinf",
         "ru": "Биология · 6 класс",
@@ -4232,11 +4530,11 @@
        },
        "lang": "uz",
        "part": null,
-       "size": 79306874,
-       "src": "https://static.oliygoh.uz/uploads/darsliklar/6/botanika-6-sinf-uz.pdf",
-       "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/botanika-6-sinf-uz.pdf",
-       "pages": 144,
-       "cover": "covers/botanika-6-sinf-uz.jpg"
+       "size": 11762378,
+       "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/ie-6-sinf-botanika.pdf",
+       "pages": 174,
+       "cover": "covers/botanika-6-sinf-uz-2024.jpg",
+       "year": 2024
       }
      ]
     },
@@ -4485,7 +4783,7 @@
        "size": 12807048,
        "src": "https://static.oliygoh.uz/uploads/darsliklar/6/informatika-6-sinf-uz.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/informatika-6-sinf-uz.pdf",
-       "year": 2019,
+       "year": 2023,
        "pages": 276,
        "cover": "covers/informatika-6-sinf-uz.jpg"
       }
@@ -5440,7 +5738,7 @@
        "size": 6408876,
        "src": "https://static.oliygoh.uz/uploads/darsliklar/7/informatika-7-sinf-uz.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/informatika-7-sinf-uz.pdf",
-       "year": 2019,
+       "year": 2023,
        "pages": 180,
        "cover": "covers/informatika-7-sinf-uz.jpg"
       }
@@ -5685,7 +5983,7 @@
        "cover": "covers/zoologiya-7-sinf-ru.jpg"
       },
       {
-       "id": "zoologiya-7-sinf-uz",
+       "id": "zoologiya-7-sinf-uz-2022",
        "title": {
         "uz": "Zoologiya · 7-sinf",
         "ru": "Зоология · 7 класс",
@@ -5693,12 +5991,11 @@
        },
        "lang": "uz",
        "part": null,
-       "size": 5437531,
-       "src": "https://static.oliygoh.uz/uploads/darsliklar/7/zoologiya-7-sinf-uz.pdf",
-       "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/zoologiya-7-sinf-uz.pdf",
-       "year": 2017,
-       "pages": 208,
-       "cover": "covers/zoologiya-7-sinf-uz.jpg"
+       "size": 31452422,
+       "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/ie-7-sinf-zoologiya.pdf",
+       "pages": 176,
+       "cover": "covers/zoologiya-7-sinf-uz-2022.jpg",
+       "year": 2022
       }
      ]
     }
@@ -6164,7 +6461,7 @@
        "cover": "covers/jahon-tarixi-8-sinf-ru.jpg"
       },
       {
-       "id": "jahon-tarixi-8-sinf-uz",
+       "id": "jahon-tarixi-8-sinf-uz-2024",
        "title": {
         "uz": "Jahon tarixi · 8-sinf",
         "ru": "Всемирная история · 8 класс",
@@ -6172,12 +6469,11 @@
        },
        "lang": "uz",
        "part": null,
-       "size": 13427550,
-       "src": "https://static.oliygoh.uz/uploads/darsliklar/8/jahon-tarixi-8-sinf-uz.pdf",
-       "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/jahon-tarixi-8-sinf-uz.pdf",
-       "year": 2024,
-       "pages": 114,
-       "cover": "covers/jahon-tarixi-8-sinf-uz.jpg"
+       "size": 15440566,
+       "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/ie-8-sinf-jahon-tarixi.pdf",
+       "pages": 160,
+       "cover": "covers/jahon-tarixi-8-sinf-uz-2024.jpg",
+       "year": 2024
       }
      ]
     },
@@ -6340,7 +6636,7 @@
        "size": 9470984,
        "src": "https://static.oliygoh.uz/uploads/darsliklar/8/informatika-8-sinf-uz.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/informatika-8-sinf-uz.pdf",
-       "year": 2019,
+       "year": 2023,
        "pages": 188,
        "cover": "covers/informatika-8-sinf-uz.jpg"
       }
@@ -7022,7 +7318,7 @@
        "cover": "covers/ozbekiston-tarixi-9-sinf-ru.jpg"
       },
       {
-       "id": "ozbekiston-tarixi-9-sinf-uz",
+       "id": "ozbekiston-tarixi-9-sinf-uz-2024",
        "title": {
         "uz": "O‘zbekiston tarixi · 9-sinf",
         "ru": "История Узбекистана · 9 класс",
@@ -7030,12 +7326,11 @@
        },
        "lang": "uz",
        "part": null,
-       "size": 13156935,
-       "src": "https://static.oliygoh.uz/uploads/darsliklar/9/ozbekiston-tarixi-9-sinf-uz.pdf",
-       "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/ozbekiston-tarixi-9-sinf-uz.pdf",
-       "year": 2024,
-       "pages": 138,
-       "cover": "covers/ozbekiston-tarixi-9-sinf-uz.jpg"
+       "size": 20251705,
+       "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/ie-9-sinf-ozbekiston-tarixi.pdf",
+       "pages": 190,
+       "cover": "covers/ozbekiston-tarixi-9-sinf-uz-2024.jpg",
+       "year": 2024
       }
      ]
     },
@@ -7341,7 +7636,8 @@
        "src": "https://static.oliygoh.uz/uploads/darsliklar/9/davlat-va-huquq-asoslari-9-sinf-uz.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/davlat-va-huquq-asoslari-9-sinf-uz.pdf",
        "pages": 126,
-       "cover": "covers/davlat-va-huquq-asoslari-9-sinf-uz.jpg"
+       "cover": "covers/davlat-va-huquq-asoslari-9-sinf-uz.jpg",
+       "year": 2024
       }
      ]
     },
@@ -7558,7 +7854,7 @@
        "cover": "covers/adabiyot-10-sinf-ru.jpg"
       },
       {
-       "id": "adabiyot-10-sinf-uz-2025",
+       "id": "adabiyot-10-sinf-uz-2024",
        "title": {
         "uz": "Adabiyot · 10-sinf · 1-qism",
         "ru": "Литература · 10 класс · 1 часть",
@@ -7566,14 +7862,14 @@
        },
        "lang": "uz",
        "part": 1,
-       "size": 9948069,
-       "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/tg290-s.pdf",
-       "pages": 144,
-       "cover": "covers/adabiyot-10-sinf-uz-2025.jpg",
-       "year": 2022
+       "size": 11380520,
+       "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/ie-10-sinf-adabiyot-1-qism.pdf",
+       "pages": 146,
+       "cover": "covers/adabiyot-10-sinf-uz-2024.jpg",
+       "year": 2024
       },
       {
-       "id": "adabiyot-10-sinf-uz-2-qism-2025",
+       "id": "adabiyot-10-sinf-uz-2-qism-2024",
        "title": {
         "uz": "Adabiyot · 10-sinf · 2-qism",
         "ru": "Литература · 10 класс · 2 часть",
@@ -7581,11 +7877,11 @@
        },
        "lang": "uz",
        "part": 2,
-       "size": 12120149,
-       "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/tg296-s.pdf",
-       "pages": 168,
-       "cover": "covers/adabiyot-10-sinf-uz-2-qism-2025.jpg",
-       "year": 2022
+       "size": 10360388,
+       "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/ie-10-sinf-adabiyot-2-qism.pdf",
+       "pages": 170,
+       "cover": "covers/adabiyot-10-sinf-uz-2-qism-2024.jpg",
+       "year": 2024
       }
      ]
     },
@@ -8090,7 +8386,7 @@
        "size": 14743849,
        "src": "https://static.oliygoh.uz/uploads/darsliklar/10/informatika-10-sinf-uz.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/informatika-10-sinf-uz.pdf",
-       "year": 2019,
+       "year": 2023,
        "pages": 376,
        "cover": "covers/informatika-10-sinf-uz.jpg"
       }
@@ -8164,7 +8460,7 @@
        "cover": "covers/chaqiruvga-qadar-boshlangich-tayyorgarlik-10-sinf-ru.jpg"
       },
       {
-       "id": "chaqiruvga-qadar-boshlangich-tayyorgarlik-10-sinf-uz",
+       "id": "chaqiruvga-qadar-boshlangich-tayyorgarlik-10-sinf-uz-2024",
        "title": {
         "uz": "Chaqiruvga qadar boshlang‘ich tayyorgarlik · 10-sinf",
         "ru": "Начальная допризывная подготовка · 10 класс",
@@ -8172,12 +8468,11 @@
        },
        "lang": "uz",
        "part": null,
-       "size": 38770626,
-       "src": "https://static.oliygoh.uz/uploads/darsliklar/10/chaqiruvga-qadar-boshlangich-tayyorgarlik-10-sinf-uz.pdf",
-       "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/chaqiruvga-qadar-boshlangich-tayyorgarlik-10-sinf-uz.pdf",
-       "year": 2022,
-       "pages": 160,
-       "cover": "covers/chaqiruvga-qadar-boshlangich-tayyorgarlik-10-sinf-uz.jpg"
+       "size": 9726694,
+       "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/ie-10-sinf-chaquvga-qadar-boshlangich-tayyorgarlik.pdf",
+       "pages": 158,
+       "cover": "covers/chaqiruvga-qadar-boshlangich-tayyorgarlik-10-sinf-uz-2024.jpg",
+       "year": 2024
       }
      ]
     },
@@ -8253,6 +8548,21 @@
        "year": 2020,
        "pages": 385,
        "cover": "covers/ona-tili-11-sinf-uz.jpg"
+      },
+      {
+       "id": "ona-tili-11-sinf-uz-1-qism-2018",
+       "title": {
+        "uz": "Ona tili · 11-sinf · 1-qism",
+        "ru": "Родной язык · 11 класс · 1 часть",
+        "en": "Native language · Grade 11 · Part 1"
+       },
+       "lang": "uz",
+       "part": 1,
+       "size": 1373689,
+       "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/ie-11-sinf-ona-tili-1-qism.pdf",
+       "pages": 112,
+       "cover": "covers/ona-tili-11-sinf-uz-1-qism-2018.jpg",
+       "year": 2018
       },
       {
        "id": "ona-tili-11-sinf-uz-2-qism-2025",
@@ -8842,7 +9152,7 @@
        "size": 14743849,
        "src": "https://static.oliygoh.uz/uploads/darsliklar/11/informatika-11-sinf-uz.pdf",
        "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/informatika-11-sinf-uz.pdf",
-       "year": 2019,
+       "year": 2023,
        "pages": 376,
        "cover": "covers/informatika-11-sinf-uz.jpg"
       }

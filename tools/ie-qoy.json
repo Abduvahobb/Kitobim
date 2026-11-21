@@ -1,0 +1,407 @@
+[
+ {
+  "slug": "1-sinf-ingliz-tili",
+  "replace": [
+   "ingliz-tili-1-sinf-uz",
+   "ingliz-tili-1-sinf-ru"
+  ],
+  "year": null
+ },
+ {
+  "slug": "1-sinf-jismoniy-tarbiya",
+  "replace": [
+   "jismoniy-tarbiya-1-sinf-uz"
+  ],
+  "year": 2023
+ },
+ {
+  "slug": "1-sinf-matematika",
+  "id": "matematika-1-sinf-uz-1-qism",
+  "before": "matematika-1-sinf-uz-3-qism",
+  "part": 1,
+  "year": 2023
+ },
+ {
+  "slug": "1-sinf-matematika-2-qism",
+  "id": "matematika-1-sinf-uz-2-qism",
+  "before": "matematika-1-sinf-uz-3-qism",
+  "part": 2,
+  "year": 2023
+ },
+ {
+  "slug": "1-sinf-matematika-4-qism",
+  "id": "matematika-1-sinf-uz-4-qism",
+  "after": "matematika-1-sinf-uz-3-qism",
+  "part": 4,
+  "year": 2023
+ },
+ {
+  "slug": "1-sinf-tabiiy-fanlar-2-qism",
+  "id": "tabiiy-fanlar-1-sinf-uz-2-qism",
+  "after": "tabiiy-fanlar-1-sinf-uz-1-qism",
+  "part": 2,
+  "year": 2024
+ },
+ {
+  "slug": "2-sinf-atrofimizdagi-olam",
+  "replace": [
+   "tabiiy-fanlar-2-sinf-uz"
+  ],
+  "year": 2023,
+  "part": 1
+ },
+ {
+  "slug": "2-sinf-tabiiy-fanlar-2-qism",
+  "id": "tabiiy-fanlar-2-sinf-uz-2-qism-2023",
+  "after": "tabiiy-fanlar-2-sinf-uz-2023",
+  "part": 2,
+  "year": 2023
+ },
+ {
+  "slug": "2-sinf-ingliz-tili",
+  "replace": [
+   "ingliz-tili-2-sinf-uz",
+   "ingliz-tili-2-sinf-ru"
+  ],
+  "year": null
+ },
+ {
+  "slug": "2-sinf-jismoniy-tarbiya",
+  "replace": [
+   "jismoniy-tarbiya-2-sinf-uz"
+  ],
+  "year": 2023
+ },
+ {
+  "slug": "2-sinf-musiqa",
+  "replace": [
+   "musiqa-2-sinf-uz"
+  ],
+  "year": 2023
+ },
+ {
+  "slug": "2-sinf-tarbiya",
+  "replace": [
+   "tarbiya-2-sinf-uz"
+  ],
+  "year": 2023
+ },
+ {
+  "slug": "2-sinf-texnologiya",
+  "replace": [
+   "texnologiya-2-sinf-uz"
+  ],
+  "year": 2023
+ },
+ {
+  "slug": "2-sinf-tasviriy-sanat",
+  "id": "tasviriy-sanat-2-sinf-uz-2023",
+  "after": "tasviriy-sanat-2-sinf-uz",
+  "year": 2023,
+  "note": {
+   "uz": "2023, to‘liq nashr",
+   "ru": "2023, полное издание",
+   "en": "2023, full edition"
+  }
+ },
+ {
+  "slug": "3-sinf-ingliz-tili",
+  "replace": [
+   "ingliz-tili-3-sinf-uz",
+   "ingliz-tili-3-sinf-ru"
+  ],
+  "year": 2022
+ },
+ {
+  "slug": "4-sinf-ingliz-tili",
+  "replace": [
+   "ingliz-tili-4-sinf-uz"
+  ],
+  "year": null
+ },
+ {
+  "slug": "4-sinf-jismoniy-tarbiya",
+  "replace": [
+   "jismoniy-tarbiya-4-sinf-uz"
+  ],
+  "year": 2023
+ },
+ {
+  "slug": "4-sinf-texnologiya",
+  "replace": [
+   "texnologiya-4-sinf-uz"
+  ],
+  "year": 2023
+ },
+ {
+  "slug": "4-sinf-musiqa",
+  "id": "musiqa-4-sinf-uz-2023",
+  "after": "musiqa-4-sinf-uz",
+  "year": 2023,
+  "note": {
+   "uz": "2023, to‘liq nashr",
+   "ru": "2023, полное издание",
+   "en": "2023, full edition"
+  }
+ },
+ {
+  "slug": "4-sinf-tarbiya",
+  "id": "tarbiya-4-sinf-uz-2023",
+  "after": "tarbiya-4-sinf-uz",
+  "year": 2023,
+  "note": {
+   "uz": "2023, to‘liq nashr",
+   "ru": "2023, полное издание",
+   "en": "2023, full edition"
+  }
+ },
+ {
+  "slug": "4-sinf-tasviriy-sanat",
+  "id": "tasviriy-sanat-4-sinf-uz-2023",
+  "after": "tasviriy-sanat-4-sinf-uz",
+  "year": 2023,
+  "note": {
+   "uz": "2023, to‘liq nashr",
+   "ru": "2023, полное издание",
+   "en": "2023, full edition"
+  }
+ },
+ {
+  "slug": "4-sinf-matematika",
+  "id": "matematika-4-sinf-uz-1-qism-2023",
+  "after": "matematika-4-sinf-uz-1-qism",
+  "part": 1,
+  "year": 2023,
+  "note": {
+   "uz": "2023, to‘liq nashr",
+   "ru": "2023, полное издание",
+   "en": "2023, full edition"
+  }
+ },
+ {
+  "slug": "4-sinf-matematika-2-qism",
+  "id": "matematika-4-sinf-uz-2-qism-2023",
+  "after": "matematika-4-sinf-uz-1-qism-2023",
+  "part": 2,
+  "year": 2023,
+  "note": {
+   "uz": "2023, to‘liq nashr",
+   "ru": "2023, полное издание",
+   "en": "2023, full edition"
+  }
+ },
+ {
+  "slug": "4-sinf-matematika-3-qism",
+  "id": "matematika-4-sinf-uz-3-qism-2023",
+  "after": "matematika-4-sinf-uz-2-qism-2023",
+  "part": 3,
+  "year": 2023,
+  "note": {
+   "uz": "2023, to‘liq nashr",
+   "ru": "2023, полное издание",
+   "en": "2023, full edition"
+  }
+ },
+ {
+  "slug": "4-sinf-matematika-4-qism",
+  "id": "matematika-4-sinf-uz-4-qism-2023",
+  "after": "matematika-4-sinf-uz-3-qism-2023",
+  "part": 4,
+  "year": 2023,
+  "note": {
+   "uz": "2023, to‘liq nashr",
+   "ru": "2023, полное издание",
+   "en": "2023, full edition"
+  }
+ },
+ {
+  "slug": "4-sinf-ona-tili",
+  "id": "ona-tili-4-sinf-uz-1-qism-2023",
+  "after": "ona-tili-4-sinf-uz-1-qism",
+  "part": 1,
+  "year": 2023,
+  "note": {
+   "uz": "2023, to‘liq nashr",
+   "ru": "2023, полное издание",
+   "en": "2023, full edition"
+  }
+ },
+ {
+  "slug": "4-sinf-ona-tili-2-qism",
+  "id": "ona-tili-4-sinf-uz-2-qism-2023",
+  "after": "ona-tili-4-sinf-uz-1-qism-2023",
+  "part": 2,
+  "year": 2023,
+  "note": {
+   "uz": "2023, to‘liq nashr",
+   "ru": "2023, полное издание",
+   "en": "2023, full edition"
+  }
+ },
+ {
+  "slug": "4-sinf-ona-tili-3-qism",
+  "id": "ona-tili-4-sinf-uz-3-qism-2023",
+  "after": "ona-tili-4-sinf-uz-2-qism-2023",
+  "part": 3,
+  "year": 2023,
+  "note": {
+   "uz": "2023, to‘liq nashr",
+   "ru": "2023, полное издание",
+   "en": "2023, full edition"
+  }
+ },
+ {
+  "slug": "4-sinf-ona-tili-4-qism",
+  "id": "ona-tili-4-sinf-uz-4-qism-2023",
+  "after": "ona-tili-4-sinf-uz-3-qism-2023",
+  "part": 4,
+  "year": 2023,
+  "note": {
+   "uz": "2023, to‘liq nashr",
+   "ru": "2023, полное издание",
+   "en": "2023, full edition"
+  }
+ },
+ {
+  "slug": "4-sinf-oqish",
+  "id": "oqish-savodxonligi-4-sinf-uz-1-qism-2023",
+  "after": "oqish-savodxonligi-4-sinf-uz-1-qism",
+  "part": 1,
+  "year": 2023,
+  "note": {
+   "uz": "2023, to‘liq nashr",
+   "ru": "2023, полное издание",
+   "en": "2023, full edition"
+  }
+ },
+ {
+  "slug": "4-sinf-oqish-savodxonligi-2-qism",
+  "id": "oqish-savodxonligi-4-sinf-uz-2-qism-2023",
+  "after": "oqish-savodxonligi-4-sinf-uz-1-qism-2023",
+  "part": 2,
+  "year": 2023,
+  "note": {
+   "uz": "2023, to‘liq nashr",
+   "ru": "2023, полное издание",
+   "en": "2023, full edition"
+  }
+ },
+ {
+  "slug": "4-sinf-oqish-savodxonligi-3-qism",
+  "id": "oqish-savodxonligi-4-sinf-uz-3-qism-2023",
+  "after": "oqish-savodxonligi-4-sinf-uz-2-qism-2023",
+  "part": 3,
+  "year": 2023,
+  "note": {
+   "uz": "2023, to‘liq nashr",
+   "ru": "2023, полное издание",
+   "en": "2023, full edition"
+  }
+ },
+ {
+  "slug": "4-sinf-oqish-savodxonligi-4-qism",
+  "id": "oqish-savodxonligi-4-sinf-uz-4-qism-2023",
+  "after": "oqish-savodxonligi-4-sinf-uz-3-qism-2023",
+  "part": 4,
+  "year": 2023,
+  "note": {
+   "uz": "2023, to‘liq nashr",
+   "ru": "2023, полное издание",
+   "en": "2023, full edition"
+  }
+ },
+ {
+  "slug": "5-sinf-ingliz-tili",
+  "replace": [
+   "ingliz-tili-5-sinf-uz",
+   "ingliz-tili-5-sinf-ru"
+  ],
+  "year": null
+ },
+ {
+  "slug": "5-sinf-musiqa",
+  "replace": [
+   "musiqa-5-sinf-uz"
+  ],
+  "year": 2024
+ },
+ {
+  "slug": "5-sinf-tabiiy-fanlar",
+  "replace": [
+   "tabiiy-fanlar-5-sinf-uz"
+  ],
+  "year": 2024
+ },
+ {
+  "slug": "5-sinf-tasviriy-sanat",
+  "replace": [
+   "tasviriy-sanat-5-sinf-uz"
+  ],
+  "year": 2024
+ },
+ {
+  "slug": "5-sinf-texnologiya",
+  "replace": [
+   "texnologiya-5-sinf-uz"
+  ],
+  "year": 2024
+ },
+ {
+  "slug": "6-sinf-botanika",
+  "replace": [
+   "botanika-6-sinf-uz"
+  ],
+  "year": 2024
+ },
+ {
+  "slug": "7-sinf-zoologiya",
+  "replace": [
+   "zoologiya-7-sinf-uz"
+  ],
+  "year": 2022
+ },
+ {
+  "slug": "8-sinf-jahon-tarixi",
+  "replace": [
+   "jahon-tarixi-8-sinf-uz"
+  ],
+  "year": 2024
+ },
+ {
+  "slug": "9-sinf-ozbekiston-tarixi",
+  "replace": [
+   "ozbekiston-tarixi-9-sinf-uz"
+  ],
+  "year": 2024
+ },
+ {
+  "slug": "10-sinf-adabiyot-1-qism",
+  "replace": [
+   "adabiyot-10-sinf-uz-2025"
+  ],
+  "year": 2024,
+  "part": 1
+ },
+ {
+  "slug": "10-sinf-adabiyot-2-qism",
+  "replace": [
+   "adabiyot-10-sinf-uz-2-qism-2025"
+  ],
+  "year": 2024,
+  "part": 2
+ },
+ {
+  "slug": "10-sinf-chaquvga-qadar-boshlangich-tayyorgarlik",
+  "replace": [
+   "chaqiruvga-qadar-boshlangich-tayyorgarlik-10-sinf-uz"
+  ],
+  "year": 2024
+ },
+ {
+  "slug": "11-sinf-ona-tili-1-qism",
+  "id": "ona-tili-11-sinf-uz-1-qism-2018",
+  "before": "ona-tili-11-sinf-uz-2-qism-2025",
+  "part": 1,
+  "year": 2018
+ }
+]
