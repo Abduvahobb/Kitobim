@@ -49,7 +49,7 @@ const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
     }
     console.log(`== ${b} (${Math.round((Date.now() - t0) / 1000)}s): ${st}`);
     if (!String(st).startsWith('OCHILDI')) { bad.push(b); for (const l of logs.filter((x) => !/Group|\[dir\]|console\.group/.test(x)).slice(-8)) console.log('   ', l); }
-    if (ALL) { try { execSync('adb shell run-as uz.kitobim.app rm -rf files/kitoblar', { stdio: 'ignore' }); } catch (e) { /* */ } }
+    if (ALL) { try { execSync(`adb shell "run-as uz.kitobim.app sh -c 'rm -f files/kitoblar/*'"`, { stdio: 'ignore' }); } catch (e) { /* */ } }
     await ev(`location.hash = '#/home'`); await sleep(1500);
   }
   console.log('OCHILMAGAN:', bad.length, bad.join(' '));

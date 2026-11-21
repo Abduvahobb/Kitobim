@@ -15,13 +15,13 @@ export function isNative() {
   try { return Capacitor.isNativePlatform() && Capacitor.isPluginAvailable('Filesystem'); } catch (e) { return false; }
 }
 
-// downloadFile papkani o'zi yaratmaydi
-const madeDirs = new Set();
+// downloadFile papkani o'zi yaratmaydi. Har safar tekshiramiz: papka o'chirilgan bo'lishi mumkin
+// (masalan, "yuklanganlarni tozalash" yoki telefon xotirasini tozalash).
 async function ensureDir(path) {
   const dir = path.includes('/') ? path.slice(0, path.lastIndexOf('/')) : '';
-  if (!dir || madeDirs.has(dir)) return;
+  if (!dir) return;
+  try { await Filesystem.stat({ path: dir, directory: 'DATA' }); return; } catch (e) { /* yo'q */ }
   try { await Filesystem.mkdir({ path: dir, directory: 'DATA', recursive: true }); } catch (e) { /* allaqachon bor */ }
-  madeDirs.add(dir);
 }
 
 const isRemote = (url) => /^https?:/i.test(url) && !url.startsWith(location.origin);
