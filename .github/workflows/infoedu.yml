@@ -7,32 +7,17 @@ on:
 jobs:
   list:
     runs-on: ubuntu-latest
-    timeout-minutes: 60
+    timeout-minutes: 340
     permissions:
       contents: write
     env:
       GH_TOKEN: ${{ github.token }}
     steps:
       - uses: actions/checkout@v4
-      - name: Ro'yxat
-        run: |
-          mkdir -p o
-          p=1
-          while :; do
-            code=$(curl -s -o o/p$p.json -w '%{http_code}' "https://api.infoedu.uz/wp-json/wp/v2/textbooks?per_page=100&page=$p")
-            echo "sahifa $p: $code $(wc -c < o/p$p.json)"
-            [ "$code" = 200 ] || { rm -f o/p$p.json; break; }
-            p=$((p+1))
-          done
-          python3 -c "
-          import json,glob
-          a=[]
-          for f in sorted(glob.glob('o/p*.json')): a+=json.load(open(f))
-          json.dump(a,open('infoedu.json','w'),ensure_ascii=False)
-          print(len(a))
-          print(json.dumps(a[0],ensure_ascii=False)[:3000])
-          "
-          curl -s 'https://infoedu.uz/darsliklar/5/5-sinf-ingliz-tili' -o page.html
-          grep -oE 'https?://[^"]+\.pdf' page.html | sort -u | head -20
-          grep -oE '"[^"]*(pdf|file|download)[^"]*"' page.html | sort -u | head -40
-          gh release upload kitoblar infoedu.json page.html --clobber --repo "$GITHUB_REPOSITORY"
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: sudo apt-get install -y -q poppler-utils >/dev/null && pip install --quiet pillow
+      - run: python3 tools/infoedu.py
+      - if: always()
+        run: gh release upload kitoblar infoedu-natija.json --clobber --repo "$GITHUB_REPOSITORY"
