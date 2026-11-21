@@ -70,6 +70,17 @@ async function nativeLooksComplete(path, n) {
   } catch (e) { return true; }
 }
 
+// Faylni Filesystem orqali to'liq o'qish (WebView ichki serveri ishlamasa — zaxira yo'l)
+export async function nativeReadAll(path) {
+  const r = await FS().readFile({ path, directory: 'DATA' });
+  const b64 = typeof r.data === 'string' ? r.data : '';
+  if (!b64) throw new Error('fayl o\'qilmadi');
+  const bin = atob(b64);
+  const out = new Uint8Array(bin.length);
+  for (let i = 0; i < bin.length; i++) out[i] = bin.charCodeAt(i);
+  return out;
+}
+
 export async function nativeExists(path) {
   try { const s = await FS().stat({ path, directory: 'DATA' }); return !!s && (s.size === undefined || s.size > 0); } catch (e) { return false; }
 }

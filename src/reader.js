@@ -3,7 +3,7 @@ import * as pdfjsLib from 'pdfjs-dist/legacy/build/pdf';
 import workerUrl from 'pdfjs-dist/legacy/build/pdf.worker.min.js?url';
 import { store } from './store.js';
 import { I } from './icons.js';
-import { isNative, nativeBook, nativeBookUrl, nativeDelete, nativeEnsure, bookPath, fetchBook as netFetchBook } from './net.js';
+import { isNative, nativeBook, nativeBookUrl, nativeDelete, nativeEnsure, nativeReadAll, bookPath, fetchBook as netFetchBook } from './net.js';
 
 pdfjsLib.GlobalWorkerOptions.workerSrc = workerUrl;
 
@@ -79,6 +79,17 @@ export function openReader(root, book, title, t, onClose, toast) {
   updateSaveBtn();
 
   let tries = 0;
+  // Telefondagi faylni ochish: 1) bo'laklab o'qish, 2) butun faylni bir martada, 3) fayl tizimi orqali
+  async function openLocal(r) {
+    let last;
+    try { return await pdfjsLib.getDocument({ url: r.url, rangeChunkSize: 1 << 20 }).promise; } catch (e) { last = e; console.warn('range', e); }
+    if (closed) throw last;
+    try { return await pdfjsLib.getDocument({ url: r.url, disableRange: true, disableStream: true }).promise; } catch (e) { last = e; console.warn('full', e); }
+    if (closed) throw last;
+    const data = await nativeReadAll(r.path);
+    return await pdfjsLib.getDocument({ data }).promise;
+  }
+
   async function load() {
     pagesEl.innerHTML = `<div class="reader-msg"><div class="spin"></div><span data-r="pct">${t.loading}</span></div>`;
     try {
@@ -95,14 +106,14 @@ export function openReader(root, book, title, t, onClose, toast) {
         if (!store.isSaved(book.id)) store.markSaved(book.id, { title: book.title, color: book.color, size: r.size });
         updateSaveBtn();
         try {
-          pdf = await pdfjsLib.getDocument({ url: r.url, rangeChunkSize: 1 << 20 }).promise;
+          pdf = await openLocal(r);
         } catch (err) {
-          // Buzilgan yoki chala yuklangan fayl — o'chirib, bir marta qayta yuklaymiz
+          // Buzilgan yoki chala yuklangan fayl — o'chirib, bir marta boshqa serverdan qayta yuklaymiz
           await nativeDelete(r.path);
           store.removeFile && await store.removeFile(book.id);
           const r2 = await nativeBookUrl(book, prog, { reverse: true });
           store.markSaved(book.id, { title: book.title, color: book.color, size: r2.size });
-          pdf = await pdfjsLib.getDocument({ url: r2.url, rangeChunkSize: 1 << 20 }).promise;
+          pdf = await openLocal(r2);
         }
       } else {
         buffer = await fetchBook(book, prog);
