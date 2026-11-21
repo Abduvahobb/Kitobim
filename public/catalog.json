@@ -1,7 +1,7 @@
 {
  "version": 2,
  "note": "Avtomatik yasalgan (tools/kitoblar.py). Manba: oliygoh.uz",
- "updated": "2026-11-21 16:00",
+ "updated": "2026-11-21 16:03",
  "grades": [
   {
    "grade": 1,
@@ -3683,7 +3683,7 @@
        "cover": "covers/tabiatshunoslik-5-sinf-ru.jpg"
       },
       {
-       "id": "tabiiy-fanlar-5-sinf-uz-2024",
+       "id": "tabiiy-fanlar-5-sinf-uz-2024-asl",
        "title": {
         "uz": "Tabiiy fanlar · 5-sinf",
         "ru": "Естественные науки · 5 класс",
@@ -4146,7 +4146,7 @@
        "cover": "covers/tasviriy-sanat-5-sinf-ru.jpg"
       },
       {
-       "id": "tasviriy-sanat-5-sinf-uz-2024",
+       "id": "tasviriy-sanat-5-sinf-uz-2024-asl",
        "title": {
         "uz": "Tasviriy san’at · 5-sinf",
         "ru": "Изобразительное искусство · 5 класс",
@@ -4187,7 +4187,7 @@
        "cover": "covers/texnologiya-5-sinf-ru.jpg"
       },
       {
-       "id": "texnologiya-5-sinf-uz-2024",
+       "id": "texnologiya-5-sinf-uz-2024-asl",
        "title": {
         "uz": "Texnologiya · 5-sinf",
         "ru": "Технология · 5 класс",
@@ -4541,7 +4541,7 @@
        "cover": "covers/botanika-6-sinf-ru.jpg"
       },
       {
-       "id": "botanika-6-sinf-uz-2024",
+       "id": "botanika-6-sinf-uz-2024-asl",
        "title": {
         "uz": "Biologiya · 6-sinf",
         "ru": "Биология · 6 класс",
@@ -7868,7 +7868,7 @@
        "cover": "covers/adabiyot-10-sinf-ru.jpg"
       },
       {
-       "id": "adabiyot-10-sinf-uz-2024",
+       "id": "adabiyot-10-sinf-uz-2024-asl",
        "title": {
         "uz": "Adabiyot · 10-sinf · 1-qism",
         "ru": "Литература · 10 класс · 1 часть",
@@ -7883,7 +7883,7 @@
        "year": 2024
       },
       {
-       "id": "adabiyot-10-sinf-uz-2-qism-2024",
+       "id": "adabiyot-10-sinf-uz-2-qism-2024-asl",
        "title": {
         "uz": "Adabiyot · 10-sinf · 2-qism",
         "ru": "Литература · 10 класс · 2 часть",
@@ -8471,7 +8471,7 @@
        "cover": "covers/chaqiruvga-qadar-boshlangich-tayyorgarlik-10-sinf-ru.jpg"
       },
       {
-       "id": "chaqiruvga-qadar-boshlangich-tayyorgarlik-10-sinf-uz-2024",
+       "id": "chaqiruvga-qadar-boshlangich-tayyorgarlik-10-sinf-uz-2024-asl",
        "title": {
         "uz": "Chaqiruvga qadar boshlang‘ich tayyorgarlik · 10-sinf",
         "ru": "Начальная допризывная подготовка · 10 класс",
