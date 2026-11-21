@@ -3,6 +3,8 @@
 // so'ng shu manzildan yangi ro'yxatni oladi — yangi kitob qo'shilsa, ilovani qayta o'rnatish shart emas.
 // Bo'sh qoldirilsa, faqat ilova ichidagi public/catalog.json ishlatiladi.
 export const REMOTE_CATALOG = 'https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/catalog.json';
+// GitHub ochilmaydigan tarmoqlar uchun zaxira nusxa (jsDelivr CDN, main shoxobchadagi fayl)
+export const REMOTE_CATALOG_MIRROR = 'https://cdn.jsdelivr.net/gh/Abduvahobb/Kitobim@main/public/catalog.json';
 
 export const APP_VERSION = '1.0.0';
 

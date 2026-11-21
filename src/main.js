@@ -4,7 +4,7 @@ import { store } from './store.js';
 import { I, LOGO, subjIcon } from './icons.js';
 import { openReader, esc, ensureSaved } from './reader.js';
 import { drawCertificate, saveImage } from './cert.js';
-import { REMOTE_CATALOG, APP_VERSION, AUTHOR } from './config.js';
+import { REMOTE_CATALOG, REMOTE_CATALOG_MIRROR, APP_VERSION, AUTHOR } from './config.js';
 import { getJson } from './net.js';
 import { cachedCloud, fetchCloud, applyBooks, applyTexts, isAuthorName, authorSignIn, authorSignOut } from './cloud.js';
 import { scrAuthor } from './panel.js';
@@ -92,11 +92,15 @@ function appLogo(size) {
 async function refreshCatalog() {
   if (!REMOTE_CATALOG) return;
   try {
-    const fresh = await getJson(REMOTE_CATALOG);
+    let fresh = null;
+    // GitHub ochilmasa — zaxira (jsDelivr CDN) dan olamiz
+    for (const u of [REMOTE_CATALOG, REMOTE_CATALOG_MIRROR]) {
+      try { fresh = await getJson(u); if (fresh && fresh.grades) break; } catch (e) { fresh = null; }
+    }
     if (!fresh || !fresh.grades || !bookCount(fresh)) return;
     if (catalog && (fresh.updated || '') <= (catalog.updated || '')) return;
     store.setCachedCatalog(fresh);
-    setCatalog(fresh, REMOTE_CATALOG);
+    setCatalog(fresh, REMOTE_CATALOG); // kitob manzillari to'liq (https://...), shuning uchun asos farq qilmaydi
     // O'qish yoki test paytida ekranni almashtirmaymiz
     if (!/^#\/(read|test|cert|login)/.test(location.hash)) render();
   } catch (e) { /* internet yo'q — eski ro'yxat bilan davom etamiz */ }
