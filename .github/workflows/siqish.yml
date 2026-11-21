@@ -12,12 +12,12 @@ concurrency:
 jobs:
   siq:
     runs-on: ubuntu-latest
-    timeout-minutes: 90
+    timeout-minutes: 300
     permissions:
       contents: write
     env:
       GH_TOKEN: ${{ github.token }}
-      FAYLLAR: 'tg762.pdf tg754.pdf tg556.pdf tg671.pdf tg703.pdf'
+      FAYLLAR: 'tg290.pdf tg296.pdf tg426.pdf tg422.pdf tg682.pdf tg390.pdf tg445.pdf tg681.pdf tg674.pdf tg688.pdf tg689.pdf tg675.pdf'
     steps:
       - run: sudo apt-get install -y -q ghostscript poppler-utils >/dev/null
       - name: Siqish
