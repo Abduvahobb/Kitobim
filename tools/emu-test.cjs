@@ -3,7 +3,8 @@ const WebSocket = require('ws');
 const fs = require('fs');
 let ids = process.argv.slice(2);
 const { execSync } = require('child_process');
-const ALL = ids[0] === 'ALL';
+const ALL = ids[0] === 'ALL' || /^ALL:\d+$/.test(ids[0] || '');
+const LIMIT = /^ALL:(\d+)$/.test(ids[0] || '') ? +ids[0].slice(4) : 0;
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 
 (async () => {
@@ -49,6 +50,7 @@ const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
   console.log('login:', login);
   if (ALL) {
     ids = await ev(`fetch('catalog.json').then(r => r.json()).then(c => c.grades.flatMap(g => g.subjects.flatMap(s => s.books.map(b => b.id))))`);
+    if (LIMIT) ids = ids.slice(0, LIMIT);
     console.log('jami kitob:', ids.length);
   }
   const bad = [];

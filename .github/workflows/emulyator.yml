@@ -16,7 +16,7 @@ jobs:
       contents: write
     env:
       GH_TOKEN: ${{ github.token }}
-      KITOBLAR: 'ALL'
+      KITOBLAR: 'ALL:15'
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
