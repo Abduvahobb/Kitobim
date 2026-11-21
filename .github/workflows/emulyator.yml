@@ -10,15 +10,7 @@ jobs:
       fail-fast: false
       matrix:
         include:
-          - { api: 34, bolak: 0, k: 'ALL:0:58' }
-          - { api: 34, bolak: 58, k: 'ALL:58:58' }
-          - { api: 34, bolak: 116, k: 'ALL:116:58' }
-          - { api: 34, bolak: 174, k: 'ALL:174:58' }
-          - { api: 34, bolak: 232, k: 'ALL:232:58' }
-          - { api: 34, bolak: 290, k: 'ALL:290:58' }
-          - { api: 34, bolak: 348, k: 'ALL:348:58' }
-          - { api: 34, bolak: 406, k: 'ALL:406:58' }
-          - { api: 30, bolak: 1030, k: 'ALL:0:456:9' }
+          - { api: 34, bolak: 0, k: 'oqish-savodxonligi-1-sinf-ru-2-qism tarbiya-1-sinf-ru matematika-3-sinf-ru-1-qism rus-tili-4-sinf-uz informatika-5-sinf-ru ingliz-tili-6-sinf-ru-2025 ingliz-tili-6-sinf-uz-2025 tarbiya-6-sinf-ru geometriya-7-sinf-ru geometriya-7-sinf-uz biologiya-7-sinf-ru biologiya-7-sinf-uz' }
     runs-on: ubuntu-latest
     timeout-minutes: 75
     permissions:
