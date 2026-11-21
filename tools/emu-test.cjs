@@ -76,10 +76,11 @@ const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
     logs.length = 0;
     await ev(`location.hash = '#/read/${b}'`);
     const t0 = Date.now(); let st = '';
-    while (Date.now() - t0 < (ALL ? 150000 : 240000)) {
+    while (Date.now() - t0 < (ALL ? 150000 : 420000)) {
       await sleep(3000);
       st = await ev(`(() => { const c = [...document.querySelectorAll('canvas')].filter((x) => x.width > 50).length;
         const m = document.querySelector('.reader-msg'); return (c ? 'OCHILDI ' : '') + (m ? m.innerText.replace(/\\s+/g, ' ') : ''); })()`);
+      if (!ALL && (Date.now() - t0) % 30000 < 3500) console.log('   ...', Math.round((Date.now() - t0) / 1000) + 's', st);
       if (String(st).startsWith('OCHILDI') || /bo.lmadi/.test(st)) break;
     }
     let mem = '';
