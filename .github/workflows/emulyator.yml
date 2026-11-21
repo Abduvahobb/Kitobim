@@ -16,7 +16,7 @@ jobs:
       contents: write
     env:
       GH_TOKEN: ${{ github.token }}
-      KITOBLAR: 'ALL'
+      KITOBLAR: 'ALL:40'
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
@@ -54,5 +54,5 @@ jobs:
       - if: always()
         run: |
           cat logcat.txt | tail -60 || true
-          cp emu.log emu-${{ matrix.api }}.log 2>/dev/null; cp logcat.txt logcat-${{ matrix.api }}.txt 2>/dev/null
-          for f in emu-${{ matrix.api }}.log logcat-${{ matrix.api }}.txt; do [ -f "$f" ] && gh release upload kitoblar "$f" --clobber --repo "$GITHUB_REPOSITORY"; done; true
+          cp emu.log emu-${{ matrix.api }}.log 2>/dev/null; cp logcat.txt logcat-${{ matrix.api }}.txt 2>/dev/null; gzip -c logcat-full.txt > logcat-full-${{ matrix.api }}.txt.gz 2>/dev/null
+          for f in emu-${{ matrix.api }}.log logcat-${{ matrix.api }}.txt logcat-full-${{ matrix.api }}.txt.gz; do [ -f "$f" ] && gh release upload kitoblar "$f" --clobber --repo "$GITHUB_REPOSITORY"; done; true
