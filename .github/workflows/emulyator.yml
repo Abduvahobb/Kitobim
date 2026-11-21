@@ -10,14 +10,14 @@ jobs:
       fail-fast: false
       matrix:
         api: [34]
-        bolak: [0]
+        bolak: [0, 58, 116, 174, 232, 290, 348, 406]
     runs-on: ubuntu-latest
     timeout-minutes: 75
     permissions:
       contents: write
     env:
       GH_TOKEN: ${{ github.token }}
-      KITOBLAR: 'informatika-9-sinf-ru informatika-9-sinf-uz adabiyot-10-sinf-ru geografiya-10-sinf-uz tarbiya-8-sinf-ru informatika-8-sinf-ru tarbiya-9-sinf-uz matematika-2-sinf-ru-3-qism ozbekiston-tarixi-11-sinf-ru informatika-6-sinf-ru'
+      KITOBLAR: 'ALL:${{ matrix.bolak }}:58'
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
