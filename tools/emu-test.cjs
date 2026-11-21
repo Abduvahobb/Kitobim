@@ -61,7 +61,7 @@ const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
   const login = await ev(`(async () => {
     const nm = document.querySelector('#nm'); if (!nm) return 'login yo\\'q: ' + location.hash;
     const set = (el, v) => { el.value = v; el.dispatchEvent(new Event('input', { bubbles: true })); };
-    set(nm, 'Sinov Oquvchi'); set(document.querySelector('#pw'), 'sinov1234');
+    set(nm, 'Sinov Oquvchi'); set(document.querySelector('#ph'), '901234567');
     document.querySelector('.grade[data-g="5"]').click();
     document.querySelector('form [type=submit]').click();
     await new Promise((r) => setTimeout(r, 4000)); return 'ok ' + location.hash; })()`);
