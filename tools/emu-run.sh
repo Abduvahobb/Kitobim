@@ -3,8 +3,14 @@
 adb install -r android/app/build/outputs/apk/debug/app-debug.apk
 adb logcat -c
 adb shell am start -n uz.kitobim.app/.MainActivity
-sleep 30
-S=$(adb shell cat /proc/net/unix | grep -o 'webview_devtools_remote_[0-9]*' | head -1)
+S=""
+for i in $(seq 1 40); do
+  sleep 5
+  S=$(adb shell cat /proc/net/unix | grep -o 'webview_devtools_remote_[0-9]*' | head -1)
+  [ -n "$S" ] && break
+  [ $((i % 8)) = 0 ] && adb shell am start -n uz.kitobim.app/.MainActivity
+done
+sleep 8
 echo "socket: $S"
 adb forward tcp:9222 localabstract:$S
 curl -s http://127.0.0.1:9222/json/list | head -c 600; echo
