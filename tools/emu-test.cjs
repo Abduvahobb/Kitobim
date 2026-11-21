@@ -64,7 +64,14 @@ const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
         const m = document.querySelector('.reader-msg'); return (c ? 'OCHILDI ' : '') + (m ? m.innerText.replace(/\\s+/g, ' ') : ''); })()`);
       if (String(st).startsWith('OCHILDI') || /bo.lmadi/.test(st)) break;
     }
-    console.log(`== ${b} (${Math.round((Date.now() - t0) / 1000)}s): ${st}`);
+    let mem = '';
+    try {
+      const h = await cmd('Runtime.getHeapUsage');
+      const rss = execSync('adb shell ps -A -o RSS,NAME', { timeout: 15000 }).toString().split('\n')
+        .filter((l) => /sandboxed|uz\.kitobim/.test(l)).map((l) => Math.round(parseInt(l.trim(), 10) / 1024)).join('+');
+      mem = ` [heap ${h.result ? Math.round(h.result.usedSize / 1048576) : '?'}MB, rss ${rss}MB]`;
+    } catch (e) { mem = ' [mem ?]'; }
+    console.log(`== ${b} (${Math.round((Date.now() - t0) / 1000)}s)${mem}: ${st}`);
     if (!String(st).startsWith('OCHILDI')) { bad.push(b); for (const l of logs.filter((x) => !/Group|\[dir\]|console\.group/.test(x)).slice(-8)) console.log('   ', l); }
     if (ALL) { try { execSync(`adb shell "run-as uz.kitobim.app sh -c 'rm -f files/kitoblar/*'" < /dev/null`, { stdio: 'ignore', timeout: 20000 }); } catch (e) { /* */ } }
     await ev(`location.hash = '#/home'`); await sleep(1500);
