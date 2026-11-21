@@ -1,7 +1,7 @@
 {
  "version": 2,
  "note": "Avtomatik yasalgan (tools/kitoblar.py). Manba: oliygoh.uz",
- "updated": "2026-11-21 15:21",
+ "updated": "2026-11-21 16:00",
  "grades": [
   {
    "grade": 1,
@@ -3691,12 +3691,11 @@
        },
        "lang": "uz",
        "part": null,
-       "size": 19668106,
-       "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/ie-5-sinf-tabiiy-fanlar.pdf",
+       "size": 53726759,
+       "file": "https://api.infoedu.uz/wp-content/uploads/2026/10/5-sinf-tabiiy-fanlar.pdf",
        "pages": 166,
        "cover": "covers/tabiiy-fanlar-5-sinf-uz-2024.jpg",
-       "year": 2024,
-       "src": "https://api.infoedu.uz/wp-content/uploads/2026/10/5-sinf-tabiiy-fanlar.pdf"
+       "year": 2024
       }
      ]
     },
@@ -4155,12 +4154,11 @@
        },
        "lang": "uz",
        "part": null,
-       "size": 11072783,
-       "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/ie-5-sinf-tasviriy-sanat.pdf",
+       "size": 25614799,
+       "file": "https://api.infoedu.uz/wp-content/uploads/2026/10/5-sinf-tasviriy-sanat.pdf",
        "pages": 134,
        "cover": "covers/tasviriy-sanat-5-sinf-uz-2024.jpg",
-       "year": 2024,
-       "src": "https://api.infoedu.uz/wp-content/uploads/2026/10/5-sinf-tasviriy-sanat.pdf"
+       "year": 2024
       }
      ]
     },
@@ -4197,12 +4195,11 @@
        },
        "lang": "uz",
        "part": null,
-       "size": 9626168,
-       "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/ie-5-sinf-texnologiya.pdf",
+       "size": 21662185,
+       "file": "https://api.infoedu.uz/wp-content/uploads/2026/10/5-sinf-texnologiya.pdf",
        "pages": 130,
        "cover": "covers/texnologiya-5-sinf-uz-2024.jpg",
-       "year": 2024,
-       "src": "https://api.infoedu.uz/wp-content/uploads/2026/10/5-sinf-texnologiya.pdf"
+       "year": 2024
       }
      ]
     }
@@ -4552,12 +4549,11 @@
        },
        "lang": "uz",
        "part": null,
-       "size": 11762378,
-       "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/ie-6-sinf-botanika.pdf",
+       "size": 25701776,
+       "file": "https://api.infoedu.uz/wp-content/uploads/2026/10/6-sinf-botanika.pdf",
        "pages": 174,
        "cover": "covers/botanika-6-sinf-uz-2024.jpg",
-       "year": 2024,
-       "src": "https://api.infoedu.uz/wp-content/uploads/2026/10/6-sinf-botanika.pdf"
+       "year": 2024
       }
      ]
     },
@@ -7880,12 +7876,11 @@
        },
        "lang": "uz",
        "part": 1,
-       "size": 11380520,
-       "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/ie-10-sinf-adabiyot-1-qism.pdf",
+       "size": 22833850,
+       "file": "https://api.infoedu.uz/wp-content/uploads/2026/10/10-sinf-adabiyot-1-qism.pdf",
        "pages": 146,
        "cover": "covers/adabiyot-10-sinf-uz-2024.jpg",
-       "year": 2024,
-       "src": "https://api.infoedu.uz/wp-content/uploads/2026/10/10-sinf-adabiyot-1-qism.pdf"
+       "year": 2024
       },
       {
        "id": "adabiyot-10-sinf-uz-2-qism-2024",
@@ -7896,12 +7891,11 @@
        },
        "lang": "uz",
        "part": 2,
-       "size": 10360388,
-       "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/ie-10-sinf-adabiyot-2-qism.pdf",
+       "size": 20273963,
+       "file": "https://api.infoedu.uz/wp-content/uploads/2026/10/10-sinf-adabiyot-2-qism.pdf",
        "pages": 170,
        "cover": "covers/adabiyot-10-sinf-uz-2-qism-2024.jpg",
-       "year": 2024,
-       "src": "https://api.infoedu.uz/wp-content/uploads/2026/10/10-sinf-adabiyot-2-qism.pdf"
+       "year": 2024
       }
      ]
     },
@@ -8485,12 +8479,11 @@
        },
        "lang": "uz",
        "part": null,
-       "size": 9726694,
-       "file": "https://github.com/Abduvahobb/Kitobim/releases/download/kitoblar/ie-10-sinf-chaquvga-qadar-boshlangich-tayyorgarlik.pdf",
+       "size": 19829164,
+       "file": "https://api.infoedu.uz/wp-content/uploads/2026/10/10-sinf-chaquvga-qadar-boshlangich-tayyorgarlik.pdf",
        "pages": 158,
        "cover": "covers/chaqiruvga-qadar-boshlangich-tayyorgarlik-10-sinf-uz-2024.jpg",
-       "year": 2024,
-       "src": "https://api.infoedu.uz/wp-content/uploads/2026/10/10-sinf-chaquvga-qadar-boshlangich-tayyorgarlik.pdf"
+       "year": 2024
       }
      ]
     },
