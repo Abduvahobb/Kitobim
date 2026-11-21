@@ -1,0 +1,24 @@
+name: Darsliklarni solishtirish
+# tools/moslik.json dagi har bir (kanal fayli -> katalogdagi kitob) juftligini solishtiradi
+# va natijani "kitoblar" release'iga solishtirish.json bo'lib joylaydi.
+on:
+  push:
+    branches: [solishtir]
+
+jobs:
+  cmp:
+    runs-on: ubuntu-latest
+    timeout-minutes: 300
+    permissions:
+      contents: write
+    env:
+      GH_TOKEN: ${{ github.token }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: sudo apt-get install -y -q poppler-utils >/dev/null && pip install --quiet pillow
+      - run: python3 tools/solishtir.py tools/moslik.json solishtirish.json
+      - if: always()
+        run: gh release upload kitoblar solishtirish.json --clobber --repo "$GITHUB_REPOSITORY"
