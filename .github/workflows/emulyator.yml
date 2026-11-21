@@ -9,15 +9,23 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        api: [34]
-        bolak: [0]
+        include:
+          - { api: 34, bolak: 0, k: 'ALL:0:58' }
+          - { api: 34, bolak: 58, k: 'ALL:58:58' }
+          - { api: 34, bolak: 116, k: 'ALL:116:58' }
+          - { api: 34, bolak: 174, k: 'ALL:174:58' }
+          - { api: 34, bolak: 232, k: 'ALL:232:58' }
+          - { api: 34, bolak: 290, k: 'ALL:290:58' }
+          - { api: 34, bolak: 348, k: 'ALL:348:58' }
+          - { api: 34, bolak: 406, k: 'ALL:406:58' }
+          - { api: 30, bolak: 1030, k: 'ALL:0:456:9' }
     runs-on: ubuntu-latest
     timeout-minutes: 75
     permissions:
       contents: write
     env:
       GH_TOKEN: ${{ github.token }}
-      KITOBLAR: 'jismoniy-tarbiya-3-sinf-uz adabiyot-5-sinf-uz-1-qism informatika-10-sinf-ru'
+      KITOBLAR: ${{ matrix.k }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4

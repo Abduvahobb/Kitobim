@@ -5,7 +5,7 @@ let ids = process.argv.slice(2);
 const { execSync } = require('child_process');
 const ALL = /^ALL/.test(ids[0] || '');
 // ALL:<boshlanish>:<soni> — katalogdagi kitoblarning bir bo'lagi
-const [, FROM = '0', COUNT = '0'] = (ids[0] || '').split(':');
+const [, FROM = '0', COUNT = '0', STEP = '1'] = (ids[0] || '').split(':');
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 
 (async () => {
@@ -66,9 +66,12 @@ const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
     document.querySelector('form [type=submit]').click();
     await new Promise((r) => setTimeout(r, 4000)); return 'ok ' + location.hash; })()`);
   console.log('login:', login);
+  // Muallif paneli yopiqligini tekshirish
+  console.log('muallif sahifasi:', await ev(`(async () => { location.hash = '#/muallif'; await new Promise(r => setTimeout(r, 1500)); return location.hash; })()`));
+  console.log('profil:', await ev(`(async () => { location.hash = '#/profile'; await new Promise(r => setTimeout(r, 1500)); return document.querySelector('.band') ? document.querySelector('.band').innerText.replace(/\\s+/g, ' ') : '?'; })()`));
   if (ALL) {
     ids = await ev(`fetch('catalog.json').then(r => r.json()).then(c => c.grades.flatMap(g => g.subjects.flatMap(s => s.books.map(b => b.id))))`);
-    if (+COUNT) ids = ids.slice(+FROM, +FROM + +COUNT);
+    if (+COUNT) ids = ids.slice(+FROM, +FROM + +COUNT).filter((_, i) => i % +STEP === 0);
     console.log('jami kitob:', ids.length);
   }
   const bad = [];
