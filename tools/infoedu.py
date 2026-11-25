@@ -108,9 +108,11 @@ def main():
     for m in media:
         url = m['source_url']
         slug = re.sub(r'\.pdf$', '', url.rsplit('/', 1)[-1])
-        if slug in res:
+        # Oldingi tekshiruvdan beri o'zgarmagan fayl qayta yuklanmaydi
+        if slug in res and res[slug].get('modified') == m.get('modified') and 'error' not in res[slug]:
             continue
-        r = {'url': url, 'title': m.get('title', {}).get('rendered'), 'date': m.get('date')}
+        r = {'url': url, 'title': m.get('title', {}).get('rendered'), 'date': m.get('date'), 'modified': m.get('modified'),
+             'yangi': slug not in res}
         new = f'{TMP}/n.pdf'
         if not get(url, new):
             r['error'] = 'yuklanmadi'

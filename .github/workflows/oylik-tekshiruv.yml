@@ -1,0 +1,30 @@
+name: Oylik tekshiruv (infoedu.uz yangi nashrlar)
+# Har oyning 1-kuni infoedu.uz dagi darsliklarni ilovadagilar bilan solishtiradi.
+# Hech narsani o'zgartirmaydi: natija "kitoblar" release'iga infoedu-natija.json bo'lib joylanadi,
+# keyin muallif qaysi kitobni almashtirishni o'zi hal qiladi.
+on:
+  schedule:
+    - cron: '0 3 1 * *'
+  workflow_dispatch:
+
+jobs:
+  tekshir:
+    runs-on: ubuntu-latest
+    timeout-minutes: 340
+    permissions:
+      contents: write
+    env:
+      GH_TOKEN: ${{ github.token }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: sudo apt-get install -y -q poppler-utils >/dev/null && pip install --quiet pillow
+      - name: Oldingi natija (o'zgarmagan fayllar qayta yuklanmaydi)
+        run: gh release download kitoblar --pattern infoedu-natija.json --repo "$GITHUB_REPOSITORY" || true
+      - run: python3 tools/infoedu.py
+      - if: always()
+        run: |
+          date -u +%Y-%m-%dT%H:%MZ > oylik-tekshiruv-sana.txt
+          gh release upload kitoblar infoedu-natija.json oylik-tekshiruv-sana.txt --clobber --repo "$GITHUB_REPOSITORY"
